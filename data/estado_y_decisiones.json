@@ -331,5 +331,10 @@
       "alcance": "Rotación actual en M5-5D-v1.0."
     }
   ],
-  "nota": "Las entradas de salud fechadas en agosto requieren confirmación actual antes de prescribir."
+  "nota": "Las entradas de salud fechadas en agosto requieren confirmación actual antes de prescribir.",
+  "nota_operativa_activa": {
+    "fecha": "2026-11-09",
+    "estado": "SESION_D_PARCIAL_PENDIENTE_MITAD_2",
+    "detalle": "El 2026-11-09 al mediodía se completó la 1.ª mitad del Día D (compuestos pesados: Sentadilla búlgara Smith 32.5 kg x 8,8,7 @1 y RDL Smith 72.5 kg x 6,6,6 @1/0.5). Queda pendiente la 2.ª mitad (analíticos: D03 Curl femoral sentado 3x8-12, D04 Extensión de rodilla 2x12-15, D05 Abducción en cable 2x15-20) para la tarde del 2026-11-09 o mañana 2026-11-10 (pudiendo completarse sola o fusionada con el Día B satélite)."
+  }
 }

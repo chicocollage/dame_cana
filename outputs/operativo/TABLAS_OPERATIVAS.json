@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-11-09T12:18:18+00:00",
+  "generado_utc": "2026-11-09T16:02:35+00:00",
   "vistas": [
     {
       "name": "Resumen",
@@ -18,11 +18,11 @@
         ],
         [
           "Última sesión local",
-          "2026-11-05 · C"
+          "2026-11-09 · D"
         ],
         [
           "Siguiente día según registro local",
-          "B"
+          "E"
         ],
         [
           "Entradas conocidas pendientes",
@@ -30,15 +30,15 @@
         ],
         [
           "Sesiones",
-          41
+          42
         ],
         [
           "Filas de series",
-          591
+          604
         ],
         [
           "Filas con repeticiones positivas",
-          527
+          533
         ],
         [
           "Máquinas sin ID",
@@ -46,7 +46,7 @@
         ],
         [
           "Series sin grupo comparable",
-          588
+          601
         ],
         [
           "Entrenador y autoridad",
@@ -1649,6 +1649,15 @@
           true,
           "app_export",
           "session_2026-11-05_dia_c.json"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Día D (INCOMPLETO 1/2: solo compuestos D01+D02; faltan D03, D04, D05)",
+          "session-1794228597842",
+          true,
+          "app_export",
+          "2026-11-09-dia-d-parcial-1794228597842.json"
         ]
       ]
     },
@@ -11718,6 +11727,227 @@
           "mw3ioyyb-3ejwe0",
           "mw3ioyyb-3ejwe0__E5__S2",
           null
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Sentadilla búlgara en Smith",
+          1,
+          32.5,
+          8,
+          1.0,
+          "total_kg",
+          "Adelantar el pie de apoyo hasta que la tibia quede vertical abajo; inclinar el tronco sin perder lordosis neutra; pierna trasera pasiva ('muerta'). Hacer las 3 series seguidas de la pierna más costosa (2 min descanso entre ellas), descansar 2.5–3 min y hacer las 3 series de la otra pierna. [Variante hoy G08-V1: Paso largo (tibia vertical abajo), inclinación de tronco 15°–25° al frente, pausa estricta de 1 s en el fondo y ejecución en bloque por pierna (3 series seguidas del mismo lado con 2 min de descanso antes de cambiar de pierna).]",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E1__S1",
+          "Ejecutado en bloque por pierna con nuevo protocolo anti-ahogo."
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Sentadilla búlgara en Smith",
+          2,
+          32.5,
+          8,
+          1.0,
+          "total_kg",
+          "Adelantar el pie de apoyo hasta que la tibia quede vertical abajo; inclinar el tronco sin perder lordosis neutra; pierna trasera pasiva ('muerta'). Hacer las 3 series seguidas de la pierna más costosa (2 min descanso entre ellas), descansar 2.5–3 min y hacer las 3 series de la otra pierna. [Variante hoy G08-V1: Paso largo (tibia vertical abajo), inclinación de tronco 15°–25° al frente, pausa estricta de 1 s en el fondo y ejecución en bloque por pierna (3 series seguidas del mismo lado con 2 min de descanso antes de cambiar de pierna).]",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E1__S2",
+          "Ejecutado en bloque por pierna con nuevo protocolo anti-ahogo."
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Sentadilla búlgara en Smith",
+          3,
+          32.5,
+          7,
+          1.0,
+          "total_kg",
+          "Adelantar el pie de apoyo hasta que la tibia quede vertical abajo; inclinar el tronco sin perder lordosis neutra; pierna trasera pasiva ('muerta'). Hacer las 3 series seguidas de la pierna más costosa (2 min descanso entre ellas), descansar 2.5–3 min y hacer las 3 series de la otra pierna. [Variante hoy G08-V1: Paso largo (tibia vertical abajo), inclinación de tronco 15°–25° al frente, pausa estricta de 1 s en el fondo y ejecución en bloque por pierna (3 series seguidas del mismo lado con 2 min de descanso antes de cambiar de pierna).]",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E1__S3",
+          "Ejecutado en bloque por pierna con nuevo protocolo anti-ahogo."
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Peso muerto rumano en Smith (RDL)",
+          1,
+          72.5,
+          6,
+          1.0,
+          "total_kg",
+          "Smith (discos añadidos de ambos lados, barra no incluida)",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E2__S1",
+          null
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Peso muerto rumano en Smith (RDL)",
+          2,
+          72.5,
+          6,
+          1.0,
+          "total_kg",
+          "Smith (discos añadidos de ambos lados, barra no incluida)",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E2__S2",
+          null
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Peso muerto rumano en Smith (RDL)",
+          3,
+          72.5,
+          6,
+          0.5,
+          "total_kg",
+          "Smith (discos añadidos de ambos lados, barra no incluida)",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E2__S3",
+          null
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Curl femoral sentado",
+          1,
+          36.0,
+          null,
+          null,
+          "total_kg",
+          "Inclinarse ligeramente hacia delante sujetando los agarres con pecho alto y sacro anclado. [Variante hoy L02-V1: Torso inclinado 10°–15° al frente desde la cadera con columna neutra (pelvis en anteversión).]",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E3__S1",
+          "PENDIENTE (sesión partida a la mitad)"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Curl femoral sentado",
+          2,
+          36.0,
+          null,
+          null,
+          "total_kg",
+          "Inclinarse ligeramente hacia delante sujetando los agarres con pecho alto y sacro anclado. [Variante hoy L02-V1: Torso inclinado 10°–15° al frente desde la cadera con columna neutra (pelvis en anteversión).]",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E3__S2",
+          "PENDIENTE (sesión partida a la mitad)"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Curl femoral sentado",
+          3,
+          36.0,
+          null,
+          null,
+          "total_kg",
+          "Inclinarse ligeramente hacia delante sujetando los agarres con pecho alto y sacro anclado. [Variante hoy L02-V1: Torso inclinado 10°–15° al frente desde la cadera con columna neutra (pelvis en anteversión).]",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E3__S3",
+          "PENDIENTE (sesión partida a la mitad)"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Extensión de rodilla en máquina",
+          1,
+          50.0,
+          null,
+          null,
+          "total_kg",
+          "Máquina con placas · Respaldo 6",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E4__S1",
+          "PENDIENTE (sesión partida a la mitad)"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Extensión de rodilla en máquina",
+          2,
+          50.0,
+          null,
+          null,
+          "total_kg",
+          "Máquina con placas · Respaldo 6",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E4__S2",
+          "PENDIENTE (sesión partida a la mitad)"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Abducción unilateral en cable",
+          1,
+          9.0,
+          null,
+          null,
+          "total_kg",
+          "Polea baja con tobillera",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E5__S1",
+          "PENDIENTE (sesión partida a la mitad)"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Abducción unilateral en cable",
+          2,
+          9.0,
+          null,
+          null,
+          "total_kg",
+          "Polea baja con tobillera",
+          null,
+          null,
+          null,
+          "session-1794228597842",
+          "session-1794228597842__E5__S2",
+          "PENDIENTE (sesión partida a la mitad)"
         ]
       ]
     },

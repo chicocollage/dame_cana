@@ -1,0 +1,270 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-11-09T15:58:28.346561Z",
+  "session": {
+    "id": "session-1794228597842",
+    "title": "Día D (PARCIAL 1/2: Compuestos) — Nuclear 3 · Glúteo y Cadena Posterior",
+    "date": "2026-11-09T12:49:57.842532Z",
+    "updated_at": "2026-11-09T15:57:30.346346Z",
+    "finished": true,
+    "partial_session": true,
+    "pending_slots": ["D03", "D04", "D05"],
+    "notes": "Sesión incompleta (50%): ejecutados los 2 compuestos pesados (Sentadilla búlgara 32.5 kg y RDL 72.5 kg). Pendientes los 3 analíticos (Curl femoral sentado, Extensión de rodilla, Abducción en cable) para esta tarde o mañana.",
+    "source_note": "# Día D — Nuclear 3 · Glúteo y Cadena Posterior (Unilateral y cadera)\n\nSentadilla búlgara en Smith — 3 × 8–12/lado\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-29; 30 kg × 11 @1; 30 kg × 10 @1; 30 kg × 10 @1.\nHoy: Mantener 30 kg. Objetivo hoy: progresar a 12 reps por serie con RIR 1–2 hacia el tope de 12. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: pausa ~1 s en estiramiento sin rebote; prohibido RIR 0; si hay fatiga axial/articular, aplicar orden inverso tras el analítico del día].\nConfiguración: Adelantar el pie de apoyo hasta que la tibia quede vertical abajo; inclinar el tronco sin perder lordosis neutra; pierna trasera pasiva ('muerta'). Hacer las 3 series seguidas de la pierna más costosa (2 min descanso entre ellas), descansar 2.5–3 min y hacer las 3 series de la otra pierna. [Variante hoy G08-V1: Paso largo (tibia vertical abajo), inclinación de tronco 15°–25° al frente, pausa estricta de 1 s en el fondo y ejecución en bloque por pierna (3 series seguidas del mismo lado con 2 min de descanso antes de cambiar de pierna).]\nObjetivo: Máximo brazo de momento en flexión profunda de cadera (>90°); estiramiento extremo de las fibras inferiores del glúteo mayor para rellenar y levantar el polo inferior sobre el pliegue glúteo, sin limitante cardiorrespiratorio. — La espinilla permanece prácticamente vertical; el tercio inferior de la subida construye la base baja del glúteo. Al colgar la barra tras cada serie: postura de trípode (manos apoyadas en barra/rack) + 3 exhalaciones largas vaciando CO2.\nRegistra: Carga, reps, RIR y sensaciones con variante G08-V1.\n\nPeso muerto rumano en Smith (RDL) — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-29; 70 kg × 10 @1; 70 kg × 10 @1; 70 kg × 10 @1.\nHoy: Doble progresión completada (3 series a 10, 10, 10 reps con 70 kg). Sugerencia hoy: subir al menor incremento físico disponible de esa estación (confírmalo; no lo inventes) y consolidar 6–8 reps @1–2. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: pausa ~1 s en estiramiento sin rebote; prohibido RIR 0; si hay fatiga axial/articular, aplicar orden inverso tras el analítico del día].\nConfiguración: Smith (discos añadidos de ambos lados, barra no incluida)\nObjetivo: Bisagra pura (rodilla fija 15°–20°), proyectando isquiones atrás/arriba con pausa 1 s en máximo estiramiento → Busca: hipertrofiar el origen isquiático e inserción glútea inferior para rellenar el escalón justo debajo del pliegue\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nCurl femoral sentado — 3 × 8–12\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-29; 36 kg × 11 @1; 36 kg × 11 @1; 36 kg × 11 @1.\nHoy: Mantener 36 kg. Objetivo hoy: progresar a 12 reps por serie con RIR 1–2 hacia el tope de 12. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: pausa ~1 s en máximo estiramiento sin rebote; RIR 0 solo en la última serie y sin molestia tendinosa].\nConfiguración: Inclinarse ligeramente hacia delante sujetando los agarres con pecho alto y sacro anclado. [Variante hoy L02-V1: Torso inclinado 10°–15° al frente desde la cadera con columna neutra (pelvis en anteversión).]\nObjetivo: Aumenta la flexión coxofemoral y maximiza la elongación sarcomérica en el origen proximal de los isquiosurales (tuberosidad isquiática), engrosando el muslo posterior alto para suavizar el escalón bajo el pliegue glúteo. — Tensión extrema en la inserción alta del femoral (transición isquio-glútea) durante toda la serie.\nRegistra: Carga, reps, RIR y sensaciones con variante L02-V1.\n\nExtensión de rodilla en máquina — 2 × 12–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-29; 50 kg × 14 @1; 50 kg × 15 @1.\nHoy: Mantener 50 kg. Objetivo hoy: cerrar las 15 reps en todas las series (14 -> 15 reps) con RIR 1–2 para completar doble progresión antes de subir carga. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%].\nConfiguración: Máquina con placas · Respaldo 6\nObjetivo: Eje de giro alineado con la rodilla; pausa de 1 s arriba; bajada en 2 s\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nAbducción unilateral en cable — 2 × 15–20/lado\nRIR 1–2 · Descanso 60–90 s\nÚltimo registro: 2026-10-29; 9 kg × 15 @1; 9 kg × 15.\nHoy: Mantener 9 kg. Objetivo hoy: progresar a 16–17 reps por serie con RIR 1–2 hacia el tope de 20. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%].\nConfiguración: Polea baja con tobillera\nRegistra: Carga, reps, RIR y ajustes exactos si varían.",
+    "exercise_count": 5,
+    "planned_set_count": 13,
+    "recorded_set_count": 6
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Sentadilla búlgara en Smith",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Adelantar el pie de apoyo hasta que la tibia quede vertical abajo; inclinar el tronco sin perder lordosis neutra; pierna trasera pasiva ('muerta'). Hacer las 3 series seguidas de la pierna más costosa (2 min descanso entre ellas), descansar 2.5–3 min y hacer las 3 series de la otra pierna. [Variante hoy G08-V1: Paso largo (tibia vertical abajo), inclinación de tronco 15°–25° al frente, pausa estricta de 1 s en el fondo y ejecución en bloque por pierna (3 series seguidas del mismo lado con 2 min de descanso antes de cambiar de pierna).]",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "120–240 s",
+        "coach_cue": "[PROGRESIÓN S1] ● BASE INICIAL · S1 META 8 REPS\nMantener 30 kg. Objetivo hoy: progresar a 12 reps por serie con RIR 1–2 hacia el tope de 12. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: pausa ~1 s en estiramiento sin rebote; prohibido RIR 0; si hay fatiga axial/articular, aplicar orden inverso tras el analítico del día]. · Máximo brazo de momento en flexión profunda de cadera (>90°); estiramiento extremo de las fibras inferiores del glúteo mayor para rellenar y levantar el polo inferior sobre el pliegue glúteo, sin limitante cardiorrespiratorio. — La espinilla permanece prácticamente vertical; el tercio inferior de la subida construye la base baja del glúteo. Al colgar la barra tras cada serie: postura de trípode (manos apoyadas en barra/rack) + 3 exhalaciones largas vaciando CO2.\nÚltimo: 2026-10-29; 30 kg × 11 @1; 30 kg × 10 @1; 30 kg × 10 @1."
+      },
+      "result": {
+        "movement_notes": "Ejecutado en bloque por pierna con nuevo protocolo anti-ahogo.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "32.5",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "32.5",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "32.5",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "7",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Peso muerto rumano en Smith (RDL)",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Smith (discos añadidos de ambos lados, barra no incluida)",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "120–240 s",
+        "coach_cue": "[PROGRESIÓN S1] ● BASE INICIAL · S1 META 6 REPS\nDoble progresión completada (3 series a 10, 10, 10 reps con 70 kg). Sugerencia hoy: subir al menor incremento físico disponible de esa estación (confírmalo; no lo inventes) y consolidar 6–8 reps @1–2. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: pausa ~1 s en estiramiento sin rebote; prohibido RIR 0; si hay fatiga axial/articular, aplicar orden inverso tras el analítico del día]. · Bisagra pura (rodilla fija 15°–20°), proyectando isquiones atrás/arriba con pausa 1 s en máximo estiramiento → Busca: hipertrofiar el origen isquiático e inserción glútea inferior para rellenar el escalón justo debajo del pliegue\nÚltimo: 2026-10-29; 70 kg × 10 @1; 70 kg × 10 @1; 70 kg × 10 @1."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "72.5",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "6",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "72.5",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "6",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "72.5",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "6",
+            "rir": "0.5"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Curl femoral sentado",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Inclinarse ligeramente hacia delante sujetando los agarres con pecho alto y sacro anclado. [Variante hoy L02-V1: Torso inclinado 10°–15° al frente desde la cadera con columna neutra (pelvis en anteversión).]",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "[PROGRESIÓN S1] ↗ +1 REP EN S1: 36 KG × 12\nMantener 36 kg. Objetivo hoy: progresar a 12 reps por serie con RIR 1–2 hacia el tope de 12. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: pausa ~1 s en máximo estiramiento sin rebote; RIR 0 solo en la última serie y sin molestia tendinosa]. · Aumenta la flexión coxofemoral y maximiza la elongación sarcomérica en el origen proximal de los isquiosurales (tuberosidad isquiática), engrosando el muslo posterior alto para suavizar el escalón bajo el pliegue glúteo. — Tensión extrema en la inserción alta del femoral (transición isquio-glútea) durante toda la serie.\nÚltimo: 2026-10-29; 36 kg × 11 @1; 36 kg × 11 @1; 36 kg × 11 @1."
+      },
+      "result": {
+        "movement_notes": "PENDIENTE (sesión partida a la mitad)",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          },
+          {
+            "index": 3,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Extensión de rodilla en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina con placas · Respaldo 6",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "[PROGRESIÓN S1] ● BASE INICIAL · S1 META 12 REPS\nMantener 50 kg. Objetivo hoy: cerrar las 15 reps en todas las series (14 -> 15 reps) con RIR 1–2 para completar doble progresión antes de subir carga. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%]. · Eje de giro alineado con la rodilla; pausa de 1 s arriba; bajada en 2 s\nÚltimo: 2026-10-29; 50 kg × 14 @1; 50 kg × 15 @1."
+      },
+      "result": {
+        "movement_notes": "PENDIENTE (sesión partida a la mitad)",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Abducción unilateral en cable",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Polea baja con tobillera",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 15,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "60–90 s",
+        "coach_cue": "[PROGRESIÓN S1] ↗ +1 REP EN S1: 9 KG × 16\nMantener 9 kg. Objetivo hoy: progresar a 16–17 reps por serie con RIR 1–2 hacia el tope de 20. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%].\nÚltimo: 2026-10-29; 9 kg × 15 @1; 9 kg × 15."
+      },
+      "result": {
+        "movement_notes": "PENDIENTE (sesión partida a la mitad)",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-11-09T12:18:18+00:00",
+  "generado_utc": "2026-11-09T16:02:35+00:00",
   "vistas": [
     {
       "name": "Inicio",
@@ -18,11 +18,11 @@
         ],
         [
           "Última sesión local",
-          "2026-11-05 · C"
+          "2026-11-09 · D"
         ],
         [
           "Siguiente día según registro local",
-          "B"
+          "E"
         ],
         [
           "Entradas conocidas pendientes",
@@ -30,15 +30,15 @@
         ],
         [
           "Sesiones",
-          41
+          42
         ],
         [
           "Filas de series",
-          591
+          604
         ],
         [
           "Filas con repeticiones positivas",
-          527
+          533
         ],
         [
           "Máquinas sin ID",
@@ -46,7 +46,7 @@
         ],
         [
           "Series sin grupo comparable",
-          588
+          601
         ],
         [
           "Entrenador y autoridad",
@@ -3927,6 +3927,61 @@
           "unknown",
           "pendiente",
           "mw3ioyyb-3ejwe0__E5"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Sentadilla búlgara en Smith",
+          3,
+          "S1: 32.5 kg; reps 8; RIR 1.0 | S2: 32.5 kg; reps 8; RIR 1.0 | S3: 32.5 kg; reps 7; RIR 1.0",
+          null,
+          "total_kg",
+          "pendiente",
+          "session-1794228597842__E1"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Peso muerto rumano en Smith (RDL)",
+          3,
+          "S1: 72.5 kg; reps 6; RIR 1.0 | S2: 72.5 kg; reps 6; RIR 1.0 | S3: 72.5 kg; reps 6; RIR 0.5",
+          null,
+          "total_kg",
+          "pendiente",
+          "session-1794228597842__E2"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Curl femoral sentado",
+          0,
+          "S1: 36.0 kg; reps sin dato; RIR sin dato | S2: 36.0 kg; reps sin dato; RIR sin dato | S3: 36.0 kg; reps sin dato; RIR sin dato",
+          null,
+          "total_kg",
+          "pendiente",
+          "session-1794228597842__E3"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Extensión de rodilla en máquina",
+          0,
+          "S1: 50.0 kg; reps sin dato; RIR sin dato | S2: 50.0 kg; reps sin dato; RIR sin dato",
+          null,
+          "total_kg",
+          "pendiente",
+          "session-1794228597842__E4"
+        ],
+        [
+          "2026-11-09",
+          "D",
+          "Abducción unilateral en cable",
+          0,
+          "S1: 9.0 kg; reps sin dato; RIR sin dato | S2: 9.0 kg; reps sin dato; RIR sin dato",
+          null,
+          "total_kg",
+          "pendiente",
+          "session-1794228597842__E5"
         ],
         [
           "2026-07-30",

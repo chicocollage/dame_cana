@@ -1,12 +1,12 @@
 {
   "schema": "dame_cana_contexto_entrenador.v1",
-  "generado_utc": "2026-11-09T12:18:18+00:00",
+  "generado_utc": "2026-11-09T16:02:35+00:00",
   "autoridad": "local",
   "entrenador": "Antigravity / Gemini",
   "fuentes": [
     {
       "ruta": "AGENTS.md",
-      "sha256": "7a7488e54c3158c95438a97f6871ad9c93595167732ec63aa3c428e26017dafa"
+      "sha256": "32ef9dcdb984cd922eeeba873c093f8396d5828b3b98f1f38b00ab36b8f4cad8"
     },
     {
       "ruta": "README.md",
@@ -14,7 +14,7 @@
     },
     {
       "ruta": "data/registro.json",
-      "sha256": "9b20d6b407e609121709bd7ca90c7acf0256da79bf29094685cd57a95f3d2c23"
+      "sha256": "628ab0942c494156baf0eb673bb6d95fc04df0c093d2ce27020688e1e26816ad"
     },
     {
       "ruta": "data/programa.json",
@@ -26,7 +26,7 @@
     },
     {
       "ruta": "data/nutricion.json",
-      "sha256": "64ca7bf803de8415f0340c88f919b0fb41929deb6a2e5ee7e08dd66cd099033a"
+      "sha256": "2a63177729762234c943cf3de724afe332f9c045740bba83d133823759f2680f"
     },
     {
       "ruta": "data/maquinas.json",
@@ -46,7 +46,7 @@
     },
     {
       "ruta": "data/estado_y_decisiones.json",
-      "sha256": "17025324046e406059b793d2fbd811e121296f63e2cf2f2ff9889f80431def3e"
+      "sha256": "16ac9e0227932c63244302dd02f61a690b9085ad2e7f357692e579af3038dec2"
     },
     {
       "ruta": "data/confirmaciones_usuario.json",
@@ -100,11 +100,11 @@
     ],
     [
       "Última sesión local",
-      "2026-11-05 · C"
+      "2026-11-09 · D"
     ],
     [
       "Siguiente día según registro local",
-      "B"
+      "E"
     ],
     [
       "Entradas conocidas pendientes",
@@ -112,15 +112,15 @@
     ],
     [
       "Sesiones",
-      41
+      42
     ],
     [
       "Filas de series",
-      591
+      604
     ],
     [
       "Filas con repeticiones positivas",
-      527
+      533
     ],
     [
       "Máquinas sin ID",
@@ -128,7 +128,7 @@
     ],
     [
       "Series sin grupo comparable",
-      588
+      601
     ],
     [
       "Entrenador y autoridad",
@@ -153,10 +153,10 @@
     "nutricion_sfr": "3 a 4 bolos anabólicos de 40-50 g de proteína (>3-4 g leucina) evitando tomas fragmentadas (<25 g)"
   },
   "calidad": {
-    "sesiones": 41,
-    "series": 591,
-    "ultimo_dia": "C",
-    "siguiente_dia": "B",
+    "sesiones": 42,
+    "series": 604,
+    "ultimo_dia": "D",
+    "siguiente_dia": "E",
     "recuentos_historicos_distintos": [
       {
         "session_id": "msppelcx-yful6r",
@@ -232,26 +232,31 @@
         "session_id": "mvnryssk-6js0us",
         "recuento_declarado": 8,
         "filas_de_series": 11
+      },
+      {
+        "session_id": "session-1794228597842",
+        "recuento_declarado": 6,
+        "filas_de_series": 13
       }
     ],
-    "series_con_repeticiones": 527,
-    "series_sin_repeticiones": 64,
+    "series_con_repeticiones": 533,
+    "series_sin_repeticiones": 71,
     "ultima_sesion": {
-      "session_id": "mw3ioyyb-3ejwe0",
-      "fecha": "2026-11-05",
-      "dia": "C",
-      "titulo": "Día C"
+      "session_id": "session-1794228597842",
+      "fecha": "2026-11-09",
+      "dia": "D",
+      "titulo": "Día D (INCOMPLETO 1/2: solo compuestos D01+D02; faltan D03, D04, D05)"
     },
     "campos_ausentes_en_series": {
-      "exercise_id": 588,
-      "machine_id": 588,
-      "comparability_group": 588,
-      "machine_settings": 433
+      "exercise_id": 601,
+      "machine_id": 601,
+      "comparability_group": 601,
+      "machine_settings": 446
     },
     "bases_de_carga": {
       "unknown": 307,
       "bodyweight": 4,
-      "total_kg": 225,
+      "total_kg": 238,
       "unknown_kg_basis": 12,
       "per_side_kg": 24,
       "per_side": 3,
@@ -328,11 +333,11 @@
     },
     {
       "nombre": "Sesiones",
-      "filas": 41
+      "filas": 42
     },
     {
       "nombre": "Series",
-      "filas": 591
+      "filas": 604
     },
     {
       "nombre": "Opciones",
@@ -358,7 +363,7 @@
     },
     {
       "nombre": "Mi historial",
-      "filas": 235
+      "filas": 240
     },
     {
       "nombre": "Seguimiento",

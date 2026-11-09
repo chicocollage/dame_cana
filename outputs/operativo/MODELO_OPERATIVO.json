@@ -7240,6 +7240,132 @@
       "series_con_reps": 2,
       "observaciones": [],
       "procedencia": "session_2026-11-05_dia_c.json"
+    },
+    {
+      "id": "session-1794228597842__E1",
+      "session_id": "session-1794228597842",
+      "orden": 1,
+      "fecha": "2026-11-09",
+      "dia": "D",
+      "nombre_original": "Sentadilla búlgara en Smith",
+      "nombre": "Sentadilla búlgara en Smith",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Adelantar el pie de apoyo hasta que la tibia quede vertical abajo; inclinar el tronco sin perder lordosis neutra; pierna trasera pasiva ('muerta'). Hacer las 3 series seguidas de la pierna más costosa (2 min descanso entre ellas), descansar 2.5–3 min y hacer las 3 series de la otra pierna. [Variante hoy G08-V1: Paso largo (tibia vertical abajo), inclinación de tronco 15°–25° al frente, pausa estricta de 1 s en el fondo y ejecución en bloque por pierna (3 series seguidas del mismo lado con 2 min de descanso antes de cambiar de pierna).]",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "session-1794228597842__E1__S1",
+        "session-1794228597842__E1__S2",
+        "session-1794228597842__E1__S3"
+      ],
+      "series_con_reps": 3,
+      "observaciones": [
+        "Ejecutado en bloque por pierna con nuevo protocolo anti-ahogo."
+      ],
+      "procedencia": "2026-11-09-dia-d-parcial-1794228597842.json"
+    },
+    {
+      "id": "session-1794228597842__E2",
+      "session_id": "session-1794228597842",
+      "orden": 2,
+      "fecha": "2026-11-09",
+      "dia": "D",
+      "nombre_original": "Peso muerto rumano en Smith (RDL)",
+      "nombre": "Peso muerto rumano en Smith (RDL)",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Smith (discos añadidos de ambos lados, barra no incluida)",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "session-1794228597842__E2__S1",
+        "session-1794228597842__E2__S2",
+        "session-1794228597842__E2__S3"
+      ],
+      "series_con_reps": 3,
+      "observaciones": [],
+      "procedencia": "2026-11-09-dia-d-parcial-1794228597842.json"
+    },
+    {
+      "id": "session-1794228597842__E3",
+      "session_id": "session-1794228597842",
+      "orden": 3,
+      "fecha": "2026-11-09",
+      "dia": "D",
+      "nombre_original": "Curl femoral sentado",
+      "nombre": "Curl femoral sentado",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Inclinarse ligeramente hacia delante sujetando los agarres con pecho alto y sacro anclado. [Variante hoy L02-V1: Torso inclinado 10°–15° al frente desde la cadera con columna neutra (pelvis en anteversión).]",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "session-1794228597842__E3__S1",
+        "session-1794228597842__E3__S2",
+        "session-1794228597842__E3__S3"
+      ],
+      "series_con_reps": 0,
+      "observaciones": [
+        "PENDIENTE (sesión partida a la mitad)"
+      ],
+      "procedencia": "2026-11-09-dia-d-parcial-1794228597842.json"
+    },
+    {
+      "id": "session-1794228597842__E4",
+      "session_id": "session-1794228597842",
+      "orden": 4,
+      "fecha": "2026-11-09",
+      "dia": "D",
+      "nombre_original": "Extensión de rodilla en máquina",
+      "nombre": "Extensión de rodilla en máquina",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Máquina con placas · Respaldo 6",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "session-1794228597842__E4__S1",
+        "session-1794228597842__E4__S2"
+      ],
+      "series_con_reps": 0,
+      "observaciones": [
+        "PENDIENTE (sesión partida a la mitad)"
+      ],
+      "procedencia": "2026-11-09-dia-d-parcial-1794228597842.json"
+    },
+    {
+      "id": "session-1794228597842__E5",
+      "session_id": "session-1794228597842",
+      "orden": 5,
+      "fecha": "2026-11-09",
+      "dia": "D",
+      "nombre_original": "Abducción unilateral en cable",
+      "nombre": "Abducción unilateral en cable",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Polea baja con tobillera",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "session-1794228597842__E5__S1",
+        "session-1794228597842__E5__S2"
+      ],
+      "series_con_reps": 0,
+      "observaciones": [
+        "PENDIENTE (sesión partida a la mitad)"
+      ],
+      "procedencia": "2026-11-09-dia-d-parcial-1794228597842.json"
     }
   ],
   "decisiones": [
