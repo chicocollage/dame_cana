@@ -1,0 +1,37 @@
+{
+  "name": "DameCañaTN · Edición Titanio Nocturno",
+  "short_name": "DameCañaTN",
+  "description": "APEX Stealth Chrono-Lab — Telemetría biomecánica y registro táctil de fuerza en Titanio Grado 5.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090b0d",
+  "theme_color": "#090b0d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "dclog-icon.svg?v=tn1",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "dclog-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "dclog-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "dclog-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

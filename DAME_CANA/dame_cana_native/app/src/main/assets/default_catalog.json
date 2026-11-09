@@ -1,0 +1,50 @@
+[
+  {
+    "machine_id": "MACH_SQUAT_01",
+    "familia_slot": "Cuádriceps",
+    "nombre_visible_estacion": "Sentadilla Libre / Guiada",
+    "marca_modelo": "Gimnasio Habitual",
+    "load_basis": "WEIGHT_PLATE",
+    "ajustes_reproducibles": "Barra a la altura de los hombros, pies ancho de caderas"
+  },
+  {
+    "machine_id": "MACH_BENCH_01",
+    "familia_slot": "Pecho / Empuje",
+    "nombre_visible_estacion": "Press Banca Plano",
+    "marca_modelo": "Gimnasio Habitual",
+    "load_basis": "WEIGHT_PLATE",
+    "ajustes_reproducibles": "Agarre medio, escápulas retraídas"
+  },
+  {
+    "machine_id": "MACH_PULLDOWN_01",
+    "familia_slot": "Espalda / Tracción",
+    "nombre_visible_estacion": "Jalón al Pecho en Polea",
+    "marca_modelo": "Gimnasio Habitual",
+    "load_basis": "SELECTORIZED",
+    "ajustes_reproducibles": "Rodillo en tope 3, agarre prono ancho"
+  },
+  {
+    "machine_id": "MACH_HIPTHRUST_01",
+    "familia_slot": "Glúteo Mayor",
+    "nombre_visible_estacion": "Hip Thrust en Máquina / Barra",
+    "marca_modelo": "Gimnasio Habitual",
+    "load_basis": "WEIGHT_PLATE",
+    "ajustes_reproducibles": "Escápulas apoyadas en banco, almohadilla en cadera"
+  },
+  {
+    "machine_id": "MACH_SHOULDER_PRESS_01",
+    "familia_slot": "Hombro / Deltoides",
+    "nombre_visible_estacion": "Press Militar con Mancuernas / Barra",
+    "marca_modelo": "Gimnasio Habitual",
+    "load_basis": "DUMBBELL",
+    "ajustes_reproducibles": "Banco a 85 grados"
+  },
+  {
+    "machine_id": "MACH_CABLE_KICKBACK_01",
+    "familia_slot": "Glúteo Medio/Menor",
+    "nombre_visible_estacion": "Patada de Glúteo en Polea",
+    "marca_modelo": "Gimnasio Habitual",
+    "load_basis": "SELECTORIZED",
+    "ajustes_reproducibles": "Tobillera en altura 1, movimiento en diagonal"
+  }
+]

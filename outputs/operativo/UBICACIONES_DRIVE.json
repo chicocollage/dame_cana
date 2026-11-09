@@ -1,0 +1,23 @@
+{
+  "carpeta_backups": "1Itwpa-kLJCZk2yMMEFsAzGgM3DN6rl4v",
+  "carpeta_raiz_dame_cana": "1JY0WpBYP6sVNZuoog484kRfSJN7IHlzs",
+  "actualizacion": "2026-10-22",
+  "archivos": [
+    {
+      "local": "outputs/operativo/RESPALDO_OPERATIVO_LOCAL.zip",
+      "id": "1O59U1-7TcedndbMs9DDIBgLczvNPJuIh",
+      "url": "https://drive.google.com/file/d/1O59U1-7TcedndbMs9DDIBgLczvNPJuIh/view?usp=drivesdk"
+    },
+    {
+      "local": "outputs/operativo/DAME_CANA_OPERATIVO_LOCAL.xlsx",
+      "id": "1fz5LLU9Pebfe_Z8EbOReYSPj4xKuAnAi",
+      "url": "https://docs.google.com/spreadsheets/d/1fz5LLU9Pebfe_Z8EbOReYSPj4xKuAnAi/edit?usp=drivesdk"
+    },
+    {
+      "local": "outputs/operativo/MANIFIESTO_RESPALDO.json",
+      "id": "128KNEW6w_icTw5-kpYug0Ak1gCwfgzYX",
+      "url": "https://drive.google.com/file/d/128KNEW6w_icTw5-kpYug0Ak1gCwfgzYX/view?usp=drivesdk"
+    }
+  ],
+  "carpeta_gemini_web": "1AXWdMB04mas8yrBHES4taOY-TfpCf0Jg"
+}

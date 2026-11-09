@@ -1,0 +1,1099 @@
+{
+  "schema": "training_history.v1",
+  "exported_at": "2026-10-12T13:38:35.933Z",
+  "session_schema": "training_log.v1",
+  "summary": {
+    "session_count": 5,
+    "finished_session_count": 0,
+    "recorded_set_count": 0,
+    "date_from": "2026-08-01T20:05:26.181Z",
+    "date_to": "2026-08-09T01:06:27.189Z"
+  },
+  "sessions": [
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-12T13:38:35.933Z",
+      "session": {
+        "id": "msaswkkl-9gxghc",
+        "title": "Día A · Glúteo y torso",
+        "date": "2026-08-01T20:05:26.181Z",
+        "updated_at": "2026-08-01T20:05:26.181Z",
+        "finished": false,
+        "source_note": "# Día A · Glúteo y torso\n\n1. Hip thrust en máquina — 3 × 8–10 · RIR 2 · descanso 2–3 min · Pausa breve arriba sin hiperextender la zona lumbar.\n2. Sentadilla búlgara — 3 × 8–12 por lado · RIR 2 · descanso 2 min\n3. Remo con pecho apoyado — 3 × 8–12 · RIR 1–2 · descanso 2 min\n4. Elevación lateral en cable — 3 × 12–20 · RIR 1 · descanso 90 s",
+        "exercise_count": 4,
+        "planned_set_count": 12,
+        "recorded_set_count": 0
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "2–3 min",
+            "coach_cue": "Pausa breve arriba sin hiperextender la zona lumbar."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Sentadilla búlgara",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": true,
+            "target_rir": "2",
+            "rest": "2 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Remo con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Elevación lateral en cable",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1",
+            "rest": "90 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-12T13:38:35.933Z",
+      "session": {
+        "id": "msasyves-jci8xq",
+        "title": "Entrenamiento de hoy",
+        "date": "2026-08-01T20:07:13.540Z",
+        "updated_at": "2026-08-01T20:07:13.540Z",
+        "finished": false,
+        "source_note": "Duración: 20–25 minutos. No sustituye al Día C.\n\nExtensión de tríceps overhead en cable — 2 × 10–15\nRIR 2 · Descanso 90–120 s\nPressdown en polea — 2 × 10–15\nRIR 1–2 · Descanso 90 s\nCrunch en cable o máquina abdominal — 2 × 8–15\nRIR 2 · Descanso 90–120 s\nPlancha lateral — 2 × 20–40 s por lado\nTermina con margen · Descanso 60–90 s\n\nEjecución: puedes alternar el ejercicio 1 con el 3 y el 2 con el 4 para reducir el tiempo. Haz antes una serie ligera de aproximación en overhead y crunch.",
+        "exercise_count": 4,
+        "planned_set_count": 8,
+        "recorded_set_count": 0
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Extensión de tríceps overhead en cable",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Pressdown en polea",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Crunch en cable o máquina abdominal",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Plancha lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 20,
+            "reps_max": 40,
+            "per_side": true,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": "s"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-12T13:38:35.933Z",
+      "session": {
+        "id": "msbmqe33-txdwfe",
+        "title": "Entrenamiento de hoy",
+        "date": "2026-08-02T10:00:26.319Z",
+        "updated_at": "2026-08-02T10:00:48.113Z",
+        "finished": false,
+        "source_note": "Duración: 20–25 minutos. No sustituye al Día C.\n\nExtensión de tríceps en TRX — 2 × 10–15\nRIR 2 · Descanso 90–120 s\nPressdown en polea — 2 × 10–15\nRIR 1–2 · Descanso 90 s\nCrunch en cable o máquina abdominal — 2 × 8–15\nRIR 2 · Descanso 90–120 s\nPlancha lateral — 2 × 20–40 s por lado\nTermina con margen · Descanso 60–90 s\n\nEjecución: puedes alternar el ejercicio 1 con el 3 y el 2 con el 4 para reducir el tiempo. Haz antes una serie ligera de aproximación en overhead y crunch.",
+        "exercise_count": 4,
+        "planned_set_count": 8,
+        "recorded_set_count": 0
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Extensión de tríceps en TRX",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "trx",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Pressdown en polea",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Crunch en cable o máquina abdominal",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Plancha lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 20,
+            "reps_max": 40,
+            "per_side": true,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": "s"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-12T13:38:35.933Z",
+      "session": {
+        "id": "msbvikbk-jea0l4",
+        "title": "Día A · Glúteo y torso",
+        "date": "2026-08-02T14:06:17.696Z",
+        "updated_at": "2026-08-02T14:06:17.698Z",
+        "finished": false,
+        "source_note": "# Día A · Glúteo y torso\n\n1. Hip thrust en máquina — 3 × 8–10 · RIR 2 · descanso 2–3 min · Pausa breve arriba sin hiperextender la zona lumbar.\n2. Sentadilla búlgara — 3 × 8–12 por lado · RIR 2 · descanso 2 min\n3. Remo con pecho apoyado — 3 × 8–12 · RIR 1–2 · descanso 2 min\n4. Elevación lateral en cable — 3 × 12–20 · RIR 1 · descanso 90 s",
+        "exercise_count": 4,
+        "planned_set_count": 12,
+        "recorded_set_count": 0
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "2–3 min",
+            "coach_cue": "Pausa breve arriba sin hiperextender la zona lumbar."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Sentadilla búlgara",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": true,
+            "target_rir": "2",
+            "rest": "2 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Remo con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Elevación lateral en cable",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1",
+            "rest": "90 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-12T13:38:35.933Z",
+      "session": {
+        "id": "msl3qn79-epqpbx",
+        "title": "Día A · Glúteo y torso",
+        "date": "2026-08-09T01:06:27.189Z",
+        "updated_at": "2026-08-18T13:13:16.368Z",
+        "finished": false,
+        "source_note": "# Día A · Glúteo y torso\n\n1. Hip thrust en máquina — 3 × 8–10 · RIR 2 · descanso 2–3 min · Pausa breve arriba sin hiperextender la zona lumbar.\n2. Sentadilla búlgara — 3 × 8–12 por lado · RIR 2 · descanso 2 min\n3. Remo con pecho apoyado — 3 × 8–12 · RIR 1–2 · descanso 2 min\n4. Elevación lateral en cable — 3 × 12–20 · RIR 1 · descanso 90 s",
+        "exercise_count": 4,
+        "planned_set_count": 12,
+        "recorded_set_count": 0
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust con barra",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "2–3 min",
+            "coach_cue": "Pausa breve arriba sin hiperextender la zona lumbar."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Sentadilla búlgara",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": true,
+            "target_rir": "2",
+            "rest": "2 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Remo con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Elevación lateral en cable",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1",
+            "rest": "90 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

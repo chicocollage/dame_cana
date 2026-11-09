@@ -1,0 +1,1181 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="theme-color" content="#DAD7CD" />
+    <title>Atlas de Biohacks · DameCaña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" href="dclog-icon.svg?v=tn17" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: light only;
+        --aire-stone: #DAD7CD;
+        --aire-paper: #E9E8E1;
+        --aire-input: #F5F4EF;
+        --aire-ink: #16181C;
+        --aire-ink-soft: #585954;
+        --aire-ink-faint: #B2B0A8;
+        --aire-lime: #CCFF00;
+        --aire-orange: #EB4818;
+        --aire-cyan-pill: #DDE7E5;
+        --body: "Inter", system-ui, -apple-system, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, monospace;
+      }
+
+      * { box-sizing: border-box; text-shadow: none !important; }
+      html { background: var(--aire-stone); scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--aire-ink);
+        background-color: var(--aire-stone);
+        font-family: var(--body);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      button, input { font: inherit; color: inherit; }
+
+      /* Cabecera Pegajosa */
+      .app-header {
+        position: sticky;
+        z-index: 40;
+        top: 0;
+        display: flex;
+        min-height: 58px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px max(16px, calc((100% - 860px) / 2 + 16px));
+        background: rgba(218, 215, 205, 0.92);
+        border-bottom: 1px solid rgba(22, 24, 28, 0.12);
+        backdrop-filter: blur(10px);
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: var(--aire-ink);
+        font: 900 16px/1 var(--mono);
+        letter-spacing: -0.02em;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 32px;
+        height: 32px;
+        place-items: center;
+        border-radius: 10px;
+        color: var(--aire-ink);
+        background: var(--aire-lime);
+        border: 1.6px solid var(--aire-ink);
+        font: 900 13px/1 var(--mono);
+      }
+
+      .header-nav {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .header-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        min-height: 32px;
+        padding: 5px 11px;
+        border-radius: 999px;
+        border: 1.5px solid var(--aire-ink);
+        background: var(--aire-paper);
+        color: var(--aire-ink);
+        font: 700 11px/1 var(--mono);
+        text-decoration: none;
+        transition: transform 0.12s ease;
+      }
+      .header-pill:active { transform: scale(0.96); }
+      .header-pill.is-current {
+        background: var(--aire-lime);
+        font-weight: 800;
+      }
+
+      main {
+        width: min(100%, 860px);
+        margin: 0 auto;
+        padding: 18px 16px 88px;
+      }
+
+      /* Hero del Atlas */
+      .hero-card {
+        position: relative;
+        overflow: hidden;
+        padding: 20px 18px;
+        border-radius: 26px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-paper);
+        box-shadow: 0 14px 30px rgba(22, 24, 28, 0.08);
+      }
+
+      .hero-anat {
+        position: absolute;
+        top: 6px;
+        right: 4px;
+        width: 124px;
+        height: 150px;
+        pointer-events: none;
+        opacity: 0.68;
+        mix-blend-mode: multiply;
+        -webkit-mask-image: radial-gradient(ellipse 88% 86% at 62% 45%, #000 54%, rgba(0,0,0,0.4) 80%, transparent 100%);
+        mask-image: radial-gradient(ellipse 88% 86% at 62% 45%, #000 54%, rgba(0,0,0,0.4) 80%, transparent 100%);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 10px;
+        border: 1.3px solid var(--aire-ink);
+        border-radius: 999px;
+        background: var(--aire-cyan-pill);
+        color: var(--aire-ink);
+        font: 800 9.5px/1 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--aire-orange);
+      }
+
+      h1 {
+        margin: 10px 0 6px;
+        max-width: 72%;
+        font: 900 clamp(22px, 5.4vw, 30px)/1.06 var(--mono);
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+      }
+
+      .hero-sub {
+        margin: 0;
+        max-width: 72%;
+        color: var(--aire-ink-soft);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      /* Conmutador 25 Palancas vs Matriz Táctica + Buscador */
+      .control-deck {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 14px;
+      }
+
+      .mode-switch-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 5px;
+        border-radius: 20px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-paper);
+      }
+
+      .mode-btn {
+        min-height: 42px;
+        padding: 8px 10px;
+        border-radius: 14px;
+        border: 1.4px solid transparent;
+        background: var(--aire-input);
+        color: var(--aire-ink-soft);
+        font: 800 11.5px/1.15 var(--mono);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        transition: all 0.14s ease;
+      }
+      .mode-btn.is-active {
+        background: var(--aire-lime);
+        color: var(--aire-ink);
+        border-color: var(--aire-ink);
+        box-shadow: 0 2px 0 var(--aire-ink);
+      }
+
+      .search-bar {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .search-bar i {
+        position: absolute;
+        left: 14px;
+        color: var(--aire-ink-soft);
+        font-size: 16px;
+        pointer-events: none;
+      }
+      .search-bar input {
+        width: 100%;
+        min-height: 44px;
+        padding: 8px 14px 8px 38px;
+        border-radius: 16px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-input);
+        color: var(--aire-ink);
+        font: 600 12.5px/1.2 var(--mono);
+        outline: none;
+      }
+      .search-bar input:focus {
+        border-color: var(--aire-orange);
+      }
+
+      /* Carrusel de Píldoras de Dominio */
+      .domain-strip {
+        display: flex;
+        gap: 6px;
+        overflow-x: auto;
+        padding: 2px 2px 6px;
+        scrollbar-width: none;
+      }
+      .domain-strip::-webkit-scrollbar { display: none; }
+
+      .domain-pill {
+        flex-shrink: 0;
+        min-height: 32px;
+        padding: 5px 12px;
+        border-radius: 999px;
+        border: 1.4px solid var(--aire-ink);
+        background: var(--aire-paper);
+        color: var(--aire-ink-soft);
+        font: 700 10.5px/1 var(--mono);
+        cursor: pointer;
+        transition: all 0.12s ease;
+      }
+      .domain-pill.is-active {
+        background: var(--aire-ink);
+        color: var(--aire-lime);
+      }
+
+      /* Tarjetas de Biohack (Mano 3 Editorial) */
+      .hacks-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 14px;
+        margin-top: 14px;
+      }
+
+      .hack-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 18px 16px;
+        border-radius: 26px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-paper);
+        box-shadow: 0 14px 30px rgba(22, 24, 28, 0.08);
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .hack-card.is-highlighted {
+        border-width: 2.2px;
+        box-shadow: 0 0 0 4px var(--aire-lime), 0 18px 36px rgba(22, 24, 28, 0.16);
+      }
+
+      .hack-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .hack-badge-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .hack-num {
+        display: grid;
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+        place-items: center;
+        border-radius: 12px;
+        border: 1.8px solid var(--aire-ink);
+        background: var(--aire-input);
+        color: var(--aire-ink);
+        font: 900 14px/1 var(--mono);
+      }
+
+      .hack-domain-tag {
+        padding: 3px 9px;
+        border-radius: 999px;
+        border: 1.2px solid rgba(22, 24, 28, 0.28);
+        background: rgba(245, 244, 239, 0.75);
+        color: var(--aire-ink-soft);
+        font: 800 9px/1.1 var(--mono);
+        text-transform: uppercase;
+      }
+
+      /* Cronómetro en Vivo integrado en cada tarjeta */
+      .hack-timer-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        min-height: 32px;
+        padding: 4px 11px;
+        border-radius: 999px;
+        border: 1.5px solid var(--aire-ink);
+        background: var(--aire-lime);
+        color: var(--aire-ink);
+        font: 800 11px/1 var(--mono);
+        cursor: pointer;
+        box-shadow: 0 2px 0 var(--aire-ink);
+        white-space: nowrap;
+      }
+      .hack-timer-btn[data-running="true"] {
+        background: var(--aire-ink);
+        color: var(--aire-lime);
+      }
+
+      .hack-title {
+        margin: 0;
+        font: 900 17px/1.16 var(--mono);
+        letter-spacing: -0.02em;
+        color: var(--aire-ink);
+      }
+
+      .hack-goal {
+        margin: 0;
+        color: var(--aire-ink-soft);
+        font-size: 12.5px;
+        line-height: 1.45;
+      }
+
+      .hack-target-box {
+        padding: 9px 11px;
+        border-radius: 14px;
+        border: 1.3px solid var(--aire-ink);
+        background: var(--aire-cyan-pill);
+        font-size: 12px;
+        line-height: 1.4;
+      }
+      .hack-target-box strong {
+        display: block;
+        font: 800 9px/1 var(--mono);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--aire-ink-soft);
+        margin-bottom: 3px;
+      }
+
+      .hack-steps {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+      }
+      .hack-steps li {
+        display: grid;
+        grid-template-columns: 22px 1fr;
+        gap: 8px;
+        align-items: start;
+        font-size: 12.5px;
+        line-height: 1.42;
+        padding: 7px 9px;
+        border-radius: 12px;
+        background: rgba(245, 244, 239, 0.72);
+      }
+      .hack-steps li b {
+        display: grid;
+        width: 22px;
+        height: 22px;
+        place-items: center;
+        border-radius: 7px;
+        background: var(--aire-ink);
+        color: var(--aire-input);
+        font: 800 10.5px/1 var(--mono);
+      }
+
+      .hack-footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6px;
+        margin-top: auto;
+        padding-top: 4px;
+      }
+
+      .hack-check {
+        padding: 8px 10px;
+        border-radius: 12px;
+        border-left: 3.5px solid #5B7A00;
+        background: #E5EBD0;
+        font-size: 11.5px;
+        line-height: 1.38;
+      }
+      .hack-check strong {
+        font: 800 9px/1 var(--mono);
+        text-transform: uppercase;
+        color: #3D5200;
+        display: block;
+        margin-bottom: 2px;
+      }
+
+      .hack-warn {
+        padding: 7px 10px;
+        border-radius: 12px;
+        border-left: 3.5px solid var(--aire-orange);
+        background: rgba(235, 72, 24, 0.08);
+        font-size: 11.5px;
+        line-height: 1.35;
+        color: var(--aire-ink);
+      }
+      .hack-warn strong {
+        font: 800 9px/1 var(--mono);
+        text-transform: uppercase;
+        color: var(--aire-orange);
+        margin-right: 4px;
+      }
+
+      /* Vista de Matriz Táctica de Decisión Rápida */
+      .matrix-section {
+        margin-top: 14px;
+      }
+      .matrix-section[hidden],
+      .hacks-section[hidden] {
+        display: none !important;
+      }
+
+      .matrix-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .matrix-row {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr auto;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 16px;
+        border-radius: 22px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-paper);
+        box-shadow: 0 8px 20px rgba(22, 24, 28, 0.06);
+      }
+
+      .matrix-symptom strong {
+        display: block;
+        font: 800 13.5px/1.2 var(--mono);
+        color: var(--aire-ink);
+      }
+      .matrix-symptom span {
+        display: block;
+        margin-top: 2px;
+        color: var(--aire-ink-soft);
+        font-size: 11.5px;
+      }
+
+      .matrix-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .matrix-jump-btn {
+        padding: 6px 11px;
+        border-radius: 12px;
+        border: 1.5px solid var(--aire-ink);
+        background: var(--aire-lime);
+        color: var(--aire-ink);
+        font: 800 11px/1.1 var(--mono);
+        cursor: pointer;
+        box-shadow: 0 2px 0 var(--aire-ink);
+      }
+      .matrix-jump-btn.is-alt {
+        background: var(--aire-input);
+        box-shadow: none;
+        font-weight: 700;
+      }
+
+      .matrix-window {
+        padding: 4px 9px;
+        border-radius: 999px;
+        background: var(--aire-input);
+        border: 1.2px solid rgba(22, 24, 28, 0.25);
+        font: 700 10px/1 var(--mono);
+        color: var(--aire-ink-soft);
+        white-space: nowrap;
+      }
+
+      .golden-rule-card {
+        margin-top: 16px;
+        padding: 16px 18px;
+        border-radius: 22px;
+        border: 1.8px solid var(--aire-ink);
+        border-left: 6px solid var(--aire-orange);
+        background: var(--aire-input);
+      }
+      .golden-rule-card strong {
+        display: block;
+        font: 900 11px/1 var(--mono);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--aire-orange);
+        margin-bottom: 4px;
+      }
+      .golden-rule-card p {
+        margin: 0;
+        font-size: 12.5px;
+        line-height: 1.45;
+      }
+
+      @media (max-width: 640px) {
+        h1, .hero-sub { max-width: 68%; }
+        .hacks-grid { grid-template-columns: 1fr; }
+        .matrix-row { grid-template-columns: 1fr; gap: 8px; }
+        .matrix-window { justify-self: start; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="./" aria-label="Volver al entrenamiento">
+        <span class="brand-mark" aria-hidden="true">DC</span>
+        <span>DameCaña</span>
+      </a>
+      <nav class="header-nav" aria-label="Navegación rápida">
+        <a class="header-pill" href="./"><i class="ph-bold ph-barbell"></i> <span>Entreno</span></a>
+        <a class="header-pill" href="checkin.html"><i class="ph-bold ph-clipboard-text"></i> <span>Check-in</span></a>
+        <a class="header-pill is-current" href="biohacks.html"><i class="ph-bold ph-lightning"></i> <span>Biohacks</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-card">
+        <img class="hero-anat" src="assets/mano3/espalda_trapecio_superior.webp" alt="" loading="lazy" />
+        <div class="eyebrow">MANUAL TÁCTICO DE BOLSILLO · 25 PALANCAS</div>
+        <h1>Atlas de Hacks Fisiológicos</h1>
+        <p class="hero-sub">
+          Freno vagal inmediato, desbloqueo articular reflejo, potenciación neural pre-serie y ergogenia limpia con cronómetro en vivo.
+        </p>
+      </section>
+
+      <section class="control-deck" aria-label="Controles del Atlas">
+        <div class="mode-switch-row" role="tablist">
+          <button type="button" class="mode-btn is-active" id="tabHacksBtn" role="tab" aria-selected="true">
+            <i class="ph-bold ph-lightning"></i> <span>25 Palancas (Protocolos)</span>
+          </button>
+          <button type="button" class="mode-btn" id="tabMatrixBtn" role="tab" aria-selected="false">
+            <i class="ph-bold ph-compass"></i> <span>Matriz Rápida (Síntoma → Hack)</span>
+          </button>
+        </div>
+
+        <div id="hacksFilterWrap">
+          <div class="search-bar">
+            <i class="ph-bold ph-magnifying-glass"></i>
+            <input type="search" id="hackSearchInput" placeholder="Buscar por síntoma, nervio vago, fuerza, bicarbonato, sueño, RDL…" autocomplete="off" />
+          </div>
+          <div class="domain-strip" id="domainStrip" role="group" aria-label="Filtrar por dominio"></div>
+        </div>
+      </section>
+
+      <section class="hacks-section" id="hacksView">
+        <div class="hacks-grid" id="hacksGrid"></div>
+      </section>
+
+      <section class="matrix-section" id="matrixView" hidden>
+        <div class="matrix-list" id="matrixList"></div>
+        <aside class="golden-rule-card">
+          <strong>Regla de oro de aplicación en sala</strong>
+          <p>No apliques 5 hacks a la vez. Selecciona <strong>1 biomecánico</strong> (freno vagal o desbloqueo articular) y <strong>1 bioquímico</strong> (bombeo o foco) por sesión. Verifica la señal fisiológica antes de fijarlo en tu rutina.</p>
+        </aside>
+      </section>
+    </main>
+
+    <script>
+      const DOMAINS = [
+        { id: "all", label: "Todos (25)" },
+        { id: "I", label: "I · Freno Vagal" },
+        { id: "II", label: "II · Drenaje" },
+        { id: "III", label: "III · Quita-Contracturas" },
+        { id: "IV", label: "IV · Café Mecánico & Fuerza" },
+        { id: "V", label: "V · Bombas & Bombeo" },
+        { id: "VI", label: "VI · Foco sin Cafeína" },
+        { id: "VII", label: "VII · Digestión & Glucosa" },
+        { id: "VIII", label: "VIII · Termo & Sueño" },
+        { id: "IX", label: "Post-Entreno 90-90" }
+      ];
+
+      const HACKS = [
+        {
+          num: 1, domain: "I", domainLabel: "I · Freno Vagal Inmediato",
+          title: "Punto Vagal de la Oreja (Cymba Conchae → Nervio Vago)",
+          seconds: 60, timeLabel: "60s",
+          goal: "Apagar los nervios internos o el 'runrún' antes de dormir o tras entrenar tarde tocando la única zona auricular inervada directamente por el nervio vago.",
+          target: "Hueco superior en forma de barquito (cymba conchae) justo encima del conducto auditivo de la oreja IZQUIERDA.",
+          steps: [
+            "Coloca la yema del dedo índice en el hueco superior de la concha de la oreja IZQUIERDA.",
+            "Estira la piel suavemente (sin aplastar el cartílago) hacia arriba/atrás o haz círculos lentos (1 vuelta/s).",
+            "Respira lento por la nariz (4s inhalar / 7s soltar aire) durante 60 segundos."
+          ],
+          check: "Sale un suspiro profundo espontáneo a los 30–45s, salivación fluida y caen 5–10 pulsaciones.",
+          warn: "No introduzcas objetos en el canal auditivo; todo el estímulo es en el cuenco superior externo."
+        },
+        {
+          num: 2, domain: "I", domainLabel: "I · Freno Vagal Inmediato",
+          title: "Reflejo de Buceo en Seco (Frío en Ojos/Pómulos + Apnea)",
+          seconds: 30, timeLabel: "30s",
+          goal: "Frenar en seco el corazón acelerado, un pico de estrés agudo o el agobio físico entre series pesadas en 15–20 segundos.",
+          target: "Exclusivamente en la 'máscara de buceo' (frente, ojos y pómulos: ramas V1 y V2 del trigémino).",
+          steps: [
+            "Coge una botella/bolsa fría. Toma aire normal y suéltalo sin forzar.",
+            "En apnea suave, apoya ojos y pómulos en el frío durante 15–20 segundos inclinando el torso ligeramente adelante.",
+            "Retira el frío y respira lento por la nariz: el tronco encefálico frena el nodo sinusal en seco."
+          ],
+          check: "El pulso cae un 15–25% en menos de 15 segundos (visible en directo en el reloj).",
+          warn: "Aplica el frío en ojos/pómulos, NUNCA en el cuello (el frío cervical activa el simpático y acelera el pulso)."
+        },
+        {
+          num: 3, domain: "I", domainLabel: "I · Freno Vagal Inmediato",
+          title: "Engaño al Sensor de Presión del Cuello (ECM + Vacío Suave)",
+          seconds: 40, timeLabel: "40s",
+          goal: "Bajar la tensión arterial y quitar la sensación de latido fuerte en cuello o sienes modulando el barorreceptor carotídeo.",
+          target: "Vientre muscular lateral del cuello (ECM derecho) a la altura del cartílago tiroides.",
+          steps: [
+            "Gira la cabeza ligeramente a la IZQUIERDA para relajar el ECM del lado derecho.",
+            "Con dos dedos planos, desliza suavemente la piel y fascia hacia fuera (sin presionar hacia dentro la arteria).",
+            "Suelta el aire, pinza nariz/boca y haz una succión suave con glotis cerrada durante 6 segundos."
+          ],
+          check: "Calor repentino en las manos y desaparición inmediata del latido molesto en las sienes.",
+          warn: "Siempre en UN SOLO LADO y deslizando superficialmente hacia fuera; jamás presiones la carótida hacia dentro."
+        },
+        {
+          num: 4, domain: "II", domainLabel: "II · Drenaje y Descompresión",
+          title: "El Desagüe General Linfático (Clavícula Izquierda + Aspiradora)",
+          seconds: 45, timeLabel: "45s",
+          goal: "Deshinchar abdomen pesado y piernas retenidas abriendo el conducto torácico bajo la clavícula izquierda con succión diafragmática.",
+          target: "Fosa supraclavicular/infraclavicular IZQUIERDA (ángulo venoso yugulo-subclavio).",
+          steps: [
+            "Coloca las yemas de 3 dedos bajo la clavícula IZQUIERDA y bombea suave hacia abajo 15 segundos.",
+            "Exhala todo el aire por la boca hasta vaciarte y cierra boca y nariz.",
+            "Abre las costillas metiendo el abdomen (vacío abdominal) durante 10 segundos para succionar linfa hacia arriba."
+          ],
+          check: "Gorgoteo hidroaéreo en epigastrio y sensación inmediata de cintura más ligera.",
+          warn: "Desbloquea siempre primero la clavícula izquierda antes de ejecutar la succión costal."
+        },
+        {
+          num: 5, domain: "II", domainLabel: "II · Drenaje y Descompresión",
+          title: "Destapador Nasal Instantáneo (Paladar + Apnea con Cabeceo)",
+          seconds: 45, timeLabel: "45s",
+          goal: "Descongestionar las fosas nasales en 30 segundos sin sprays vasoconstrictores mediante hipercapnia controlada y movilización del vómer.",
+          target: "Bóveda del paladar duro con el pulgar + pinzado nasal externo.",
+          steps: [
+            "Coloca el pulgar en el techo del paladar duro y empuja firme hacia ARRIBA y ADELANTE durante 10 segundos.",
+            "Suelta el aire normal, pinza la nariz con los dedos y mantén apnea.",
+            "Asiente arriba y abajo 15–20 segundos hasta notar hambre de aire; suelta y respira SOLO por la nariz muy suave."
+          ],
+          check: "Vasoconstricción simpática de los cornetes: la vía nasal se abre de golpe a los 10 segundos.",
+          warn: "Al soltar la nariz, prohibido dar una bocanada bucal: inhala lento por la nariz para mantener el óxido nítrico paranasal."
+        },
+        {
+          num: 6, domain: "II", domainLabel: "II · Drenaje y Descompresión",
+          title: "Desatascador de Cabeza Pesada / Abombada (Base del Cráneo)",
+          seconds: 60, timeLabel: "60s",
+          goal: "Aliviar la sensación de cabeza embotada o pesada liberando el drenaje venoso del agujero rasgado posterior (vena yugular interna).",
+          target: "Fosas suboccipitales (dos huecos blandos justo bajo el hueso occipital, detrás de las mastoides).",
+          steps: [
+            "Apoya las yemas de los dedos en los dos huecos bajo la base del cráneo.",
+            "Retrae suavemente la barbilla (doble mentón ligero sin tensión) y tracciona el cráneo hacia el techo.",
+            "Pega la lengua al paladar y traga saliva con fuerza 4 veces seguidas para bombear el retorno venoso."
+          ],
+          check: "Bajada inmediata de presión frontal y retroocular en menos de 60 segundos.",
+          warn: "No aprietes con fuerza: deja que el propio peso de la cabeza descanse sobre las yemas."
+        },
+        {
+          num: 7, domain: "III", domainLabel: "III · Quita-Contracturas Reflejo",
+          title: "Truco de los Ojos para Cuello Pillado / Tortícolis (Oculocefálico)",
+          seconds: 40, timeLabel: "40s",
+          goal: "Liberar el bloqueo al girar el cuello en 40 segundos usando el reflejo oculocefálico para inhibir los suboccipitales.",
+          target: "Acoplamiento neurológico entre musculatura extraocular y vértebras C1–C2.",
+          steps: [
+            "Si molesta al girar a la DERECHA, gira suave hasta justo antes del tope y pon dos dedos en tu sien derecha.",
+            "Empuja flojísimo la cabeza contra tus dedos hacia la derecha (solo 10% de fuerza, isométrico sin movimiento).",
+            "A LA VEZ, mira con los ojos todo lo que puedas hacia el lado CONTRARIO (IZQUIERDA) durante 20 segundos. Relaja y prueba."
+          ],
+          check: "Ganas de golpe 15–20° de rotación cervical libre sin haber forzado el estiramiento.",
+          warn: "El empuje isométrico debe ser mínimo (10% de esfuerzo); si aprietas fuerte activarás los trapecios."
+        },
+        {
+          num: 8, domain: "III", domainLabel: "III · Quita-Contracturas Reflejo",
+          title: "Arrastrar la Piel para Soltar Músculos Rígidos (Corpúsculos de Ruffini)",
+          seconds: 60, timeLabel: "60s",
+          goal: "Soltar isquios, tobillos o lumbares 'acartonados' antes de RDL o sentadilla mediante cizalla dérmica tangencial.",
+          target: "Piel superficial sobre la articulación o fascia tensa (tobillo, hueco poplíteo o fascia toracolumbar).",
+          steps: [
+            "Apoya la palma de la mano seca y plana sobre la zona rígida (ej. tendón de Aquiles o lumbar).",
+            "Sin apretar hacia dentro (cero compresión), arrastra la piel DE LADO hacia la dirección en que ceda mejor.",
+            "Mantén la tracción tangencial de la piel 45 segundos mientras mueves lento la articulación en su rango."
+          ],
+          check: "Aumento instantáneo de varios centímetros en dorsiflexión o bisagra de cadera por inhibición medular gamma.",
+          warn: "Cero dolor: si comprimes profundo, el cuerpo activa reflejo miotático defensivo."
+        },
+        {
+          num: 9, domain: "III", domainLabel: "III · Quita-Contracturas Reflejo",
+          title: "Descolgar la Mandíbula para Soltar Trapecios y Cuello (ATM)",
+          seconds: 45, timeLabel: "45s",
+          goal: "Desactivar el exceso de tono en trapecio superior y cervicales causado por apretar la mandíbula (cadena trigémino-cervical).",
+          target: "Ángulo mandibular (gonion, justo debajo de las orejas) y músculos maseteros.",
+          steps: [
+            "Pega la lengua al paladar, pon el puño bajo la barbilla e intenta abrir la boca suave contra el puño 6 segundos.",
+            "Retira el puño, mantén los labios cerrados pero separa los molares 3 milímetros por dentro.",
+            "Engancha los dedos tras el ángulo de la mandíbula y tracciona muy suave hacia ABAJO durante 25 segundos."
+          ],
+          check: "Los hombros descienden solos 1–2 cm y desaparece la rigidez suboccipital.",
+          warn: "Siempre con labios sellados y dientes separados pocos milímetros; nunca abras la boca al máximo."
+        },
+        {
+          num: 10, domain: "IV", domainLabel: "IV · Café Mecánico y Fuerza",
+          title: "El 'Café Visual' para Quitar el Sueño (Mirada Fija Arriba +20°)",
+          seconds: 45, timeLabel: "45s",
+          goal: "Despejar la modorra o niebla mental antes de una serie clave activando el locus coeruleus mediante elevación ocular.",
+          target: "Músculo recto superior del ojo y circuito troncoencefálico de alerta noradrenérgica.",
+          steps: [
+            "Coloca tu pulgar a 40 cm de la cara y súbelo un palmo por encima de la línea horizontal de los ojos (+20°).",
+            "Sin levantar la barbilla, eleva los ojos y clava la fóvea en un detalle minúsculo de la uña durante 45 segundos.",
+            "Mantén respiración nasal activa reprimiendo el parpadeo."
+          ],
+          check: "Desaparece la pesadez palpebral y sube la nitidez atencional en menos de 1 minuto.",
+          warn: "Evítalo de noche si planeas dormir en la hora siguiente."
+        },
+        {
+          num: 11, domain: "IV", domainLabel: "IV · Café Mecánico y Fuerza",
+          title: "Multiplicador de Fuerza Pre-Serie (Irradiación Puños + Mandíbula 5s)",
+          seconds: 20, timeLabel: "20s",
+          goal: "Notar la barra o máquina más ligera en tu serie efectiva mediante irradiación motora cortical (ley de Sherrington).",
+          target: "Representación cortical motora gigante de manos (prensión) y aparato masticatorio.",
+          steps: [
+            "15 segundos antes de iniciar la serie pesada, pega la lengua al paladar y aprieta molares traseros al 30%.",
+            "Aprieta ambos puños (o los agarres de la máquina) al 100% de fuerza isométrica durante 5 segundos exactos.",
+            "Suelta, toma una respiración profunda e inicia la serie dentro de la ventana de 15 segundos de potenciación."
+          ],
+          check: "La primera repetición sale con mayor velocidad concéntrica y menor percepción de esfuerzo.",
+          warn: "Exactamente 5 segundos: más tiempo fatiga los flexores del antebrazo en lugar de potenciar el SNC."
+        },
+        {
+          num: 12, domain: "IV", domainLabel: "IV · Café Mecánico y Fuerza",
+          title: "Chute de Adrenalina Natural en 45s (20 Respiraciones + Empuje)",
+          seconds: 45, timeLabel: "45s",
+          goal: "Disparar catecolaminas endógenas, calor y activación cuando llegas al gimnasio frío o apático.",
+          target: "Quimiorreceptores centrales de CO₂ y médula suprarrenal.",
+          steps: [
+            "Sentado en el banco, realiza 20 respiraciones seguidas potentes: inhala profundo (1s) y suelta pasivo (1s).",
+            "En la respiración 20, llena pulmones a tope, cierra glotis y contrae abdomen suave durante 10 segundos.",
+            "Exhala y levántate hacia la estación."
+          ],
+          check: "Subida inmediata de temperatura periférica, alerta simpática limpia y ganas de mover carga.",
+          warn: "Ejecútalo SIEMPRE sentado en banco (nunca de pie con barra cargada) por la hipocapnia transitoria."
+        },
+        {
+          num: 13, domain: "V", domainLabel: "V · Bombas Químicas y Bombeo",
+          title: "El 'Suero de Bombeo' Pre-Entreno (1.000 mg Sodio + Taurina + Agua)",
+          seconds: 30, timeLabel: "30m pre",
+          goal: "Evitar caídas de tensión tras RDL/Hack, eliminar calambres y maximizar la turgencia intracelular desde el calentamiento.",
+          target: "Volumen plasmático intravascular (Sodio) + osmorregulación y manejo de Ca²⁺ sarcoplásmico (Taurina).",
+          steps: [
+            "30 min antes de entrenar, mezcla en 500 ml de agua: media cucharadita de sal (~2.5 g sal = 1.000 mg Na) + chorrito de limón.",
+            "Añade 2 a 3 g de Taurina pura (o usa 250 ml de Red Bull que ya aporta 1.000 mg de Taurina + completa con agua hasta 500 ml + media cucharadita de sal).",
+            "Bébelo en 5–10 minutos antes de iniciar el calentamiento."
+          ],
+          check: "Vascularización marcada, bombeo denso y cero mareo ortostático al salir de series pesadas de pierna.",
+          warn: "Si existe hipertensión clínica diagnosticada, limita el sodio añadido a 300 mg."
+        },
+        {
+          num: 14, domain: "V", domainLabel: "V · Bombas Químicas y Bombeo",
+          title: "El 'Desatascador de Arterias' Oral (Nitratos + Cero Colutorio)",
+          seconds: 30, timeLabel: "75m pre",
+          goal: "Maximizar la vasodilatación por Óxido Nítrico (vía nitrato → nitrito → NO) reduciendo el coste de oxígeno del ejercicio.",
+          target: "Bacterias nitrato-reductoras de las criptas dorsales de la lengua.",
+          steps: [
+            "Elimina colutorios antibacterianos fuertes (clorhexidina/Listerine) al menos 12h antes: destruyen la flora lingual.",
+            "75–90 min antes de entrenar, toma 200–250 ml de zumo de remolacha (o 70 ml de concentrado / puñado de rúcula).",
+            "Retén cada sorbo 5–10 segundos en la boca mezclándolo con saliva antes de tragar."
+          ],
+          check: "Menor subida de pulsaciones a igualdad de tonelaje y mayor resistencia en series de 10–15 reps.",
+          warn: "Un solo enjuague con colutorio antiséptico anula hasta el 80% de la conversión de nitratos."
+        },
+        {
+          num: 15, domain: "V", domainLabel: "V · Bombas Químicas y Bombeo",
+          title: "El 'Apaga-Fuegos' del Ardor Muscular (Microdosis Bicarbonato Citrato)",
+          seconds: 30, timeLabel: "45m pre",
+          goal: "Amortiguar la acidosis por iones H⁺ en series largas (Hack, búlgara, abducción 15–20 reps) para rascar 2–3 repeticiones extra.",
+          target: "Gradiente de pH extracelular que acelera el cotransporte MCT de lactato/H⁺ fuera de la fibra.",
+          steps: [
+            "En 300 ml de agua, disuelve media a una cucharadita rasa de bicarbonato sódico (3–4 g).",
+            "Exprime medio limón encima y espera 15 segundos a que cese la efervescencia (forma citrato/bicarbonato sin gas gástrico).",
+            "Bebe la mezcla 45–60 minutos antes de la sesión."
+          ],
+          check: "El bloqueo por quemazón periférica en series de 12–20 repeticiones aparece notablemente más tarde.",
+          warn: "Usa microdosis tamponada con limón (3–4 g); nunca tomes una cucharada sopera de golpe para evitar diarrea osmótica."
+        },
+        {
+          num: 16, domain: "VI", domainLabel: "VI · Foco Limpio Sin Cafeína",
+          title: "El Café 'Francotirador' (Cafeína + L-Teanina + L-Tirosina)",
+          seconds: 30, timeLabel: "30m pre",
+          goal: "Obtener todo el empuje ergogénico del café eliminando la taquicardia, el temblor fino y el bajón posterior.",
+          target: "Ondas alfa corticales (L-Teanina) + reserva de catecolaminas bajo estrés (L-Tirosina).",
+          steps: [
+            "Junto con tu espresso o café pre-entreno, añade 200 mg de L-Teanina.",
+            "En días de falta de sueño o alta demanda cognitiva/motora, suma 500–1.000 mg de L-Tirosina.",
+            "Inicia la sesión 30 minutos después."
+          ],
+          check: "Foco técnico limpio durante 3 horas sin manos frías ni ansiedad entre series.",
+          warn: "Deja pasar al menos 60 min desde que te despiertas antes de la primera dosis de cafeína."
+        },
+        {
+          num: 17, domain: "VI", domainLabel: "VI · Foco Limpio Sin Cafeína",
+          title: "Chispa Muscular para Entrenar Tarde (Alfa-GPC / Yemas Líquidas)",
+          seconds: 30, timeLabel: "45m pre",
+          goal: "Potenciar la velocidad de contracción y el reclutamiento motor entrenando después de las 16:00 sin alterar el sueño nocturno.",
+          target: "Síntesis de Acetilcolina en la placa neuromuscular y corteza motora.",
+          steps: [
+            "Opción suplemento: 300–600 mg de Alfa-GPC o Citicolina 45 minutos antes del entreno vespertino.",
+            "Opción alimento real: 3 huevos con la yema líquida (fosfatidilcolina intacta) 2 horas antes.",
+            "Entrena con máxima intención de velocidad concéntrica."
+          ],
+          check: "Mente despierta y contracción explosiva con frecuencia cardíaca basal intacta a la hora de dormir.",
+          warn: "Sustituto ideal de cualquier pre-entreno con estimulantes a partir de media tarde."
+        },
+        {
+          num: 18, domain: "VI", domainLabel: "VI · Foco Limpio Sin Cafeína",
+          title: "El 'Engaño a la Boca' cuando estás Vacío (Enjuague Carbohidrato 10s)",
+          seconds: 20, timeLabel: "10s",
+          goal: "Recuperar hasta un 10% de producción de fuerza al instante a mitad de sesión o en ayunas sin digestión pesada.",
+          target: "Receptores linguales T1R2/T1R3 que proyectan directo al cuerpo estriado y corteza motora anterior.",
+          steps: [
+            "Prepara agua con una cucharadita de azúcar, miel o maltodextrina.",
+            "Justo antes de una serie crítica cuando te notes vacío, toma un sorbo y ENJUÁGATE durante 10 segundos bañando toda la lengua.",
+            "Trágalo o escúpelo: la desinhibición central ocurre de forma inmediata por vía aferente."
+          ],
+          check: "Desaparición instantánea de la sensación de 'piernas de plomo' durante los siguientes 10–15 minutos.",
+          warn: "No funciona con edulcorantes acalóricos: los receptores T1R distinguen la molécula energética real."
+        },
+        {
+          num: 19, domain: "VII", domainLabel: "VII · Digestión y Glucosa",
+          title: "Escudo contra el Sueño Post-Comida (Vinagre + Secuencia de Platos)",
+          seconds: 30, timeLabel: "Pre-comida",
+          goal: "Comer arroz, pasta o patata al mediodía sin sufrir el pico de insulina ni la modorra postprandial.",
+          target: "Inhibición parcial de alfa-amilasa salival (ácido acético) y retardo mecánico del vaciamiento gástrico.",
+          steps: [
+            "Antes de comer (o en el aliño), toma 1 cucharada de vinagre de manzana diluida en un vaso de agua.",
+            "Inicia SIEMPRE la comida con los primeros 5 bocados de fibra/verdura y proteína/grasa.",
+            "Deja el almidón (arroz, patata, pasta, pan) para la segunda mitad de la comida."
+          ],
+          check: "Reducción de hasta el 35–40% del pico glucémico; energía mental plana y estable toda la tarde.",
+          warn: "Diluye siempre el vinagre en agua para proteger el esmalte dental."
+        },
+        {
+          num: 20, domain: "VII", domainLabel: "VII · Digestión y Glucosa",
+          title: "Arrancador de Digestiones Pesadas (Amargos Linguales + Jengibre)",
+          seconds: 30, timeLabel: "5m pre",
+          goal: "Evitar que las comidas grandes de superávit se queden paradas en el estómago generando pesadez o reflujo.",
+          target: "Receptores linguales amargos TAS2R → reflejo vagal cefálico de secreción de HCl y motilidad antral.",
+          steps: [
+            "5 minutos antes de una comida copiosa, mastica unas hojas de rúcula, un trocito de jengibre fresco o limón.",
+            "Mantén el estímulo amargo/picante en la lengua 15 segundos antes de tragar.",
+            "Durante la comida evita beber medio litro de agua helada de golpe; usa pequeños sorbos templados."
+          ],
+          check: "Vaciamiento gástrico ágil sin distensión epigástrica.",
+          warn: "Especialmente útil en comidas ricas en proteína y grasa antes o después de entrenar."
+        },
+        {
+          num: 21, domain: "VII", domainLabel: "VII · Digestión y Glucosa",
+          title: "La Aspiradora Muscular de Azúcar (10 min Paseo o Flexión de Sóleo)",
+          seconds: 45, timeLabel: "10m post",
+          goal: "Dirigir la glucosa recién ingerida directamente al glucógeno muscular sin depender de un pico alto de insulina.",
+          target: "Translocación de transportadores GLUT4 mediada por calcio contráctil y AMPK en el músculo sóleo.",
+          steps: [
+            "En los primeros 15 minutos tras terminar de comer, camina suave durante 10 minutos.",
+            "Si estás sentado frente al ordenador, apoya las puntas de los pies y eleva/baja talones de forma continua 5–10 minutos.",
+            "Mantén una cadencia cómoda y rítmica sin fatiga."
+          ],
+          check: "Abdomen deshinchado tras comer y ausencia total de somnolencia a los 45 minutos.",
+          warn: "Debe ser actividad oxidativa muy suave; el ejercicio intenso recién comido roba flujo esplácnico."
+        },
+        {
+          num: 22, domain: "VIII", domainLabel: "VIII · Termorregulación y Sueño",
+          title: "El 'Refrigerante Cerebral' Nocturno (3–5 g Glicina + Magnesio Bisglicinato)",
+          seconds: 30, timeLabel: "45m pre-cama",
+          goal: "Entrar rápido en sueño profundo de ondas lentas y evitar despertares nocturnos tras días de pierna pesados.",
+          target: "Receptores NMDA en el núcleo supraquiasmático → vasodilatación periférica para reducir 1 °C la temperatura central.",
+          steps: [
+            "45 min antes de dormir, disuelve en medio vaso de agua 3 a 5 g de Glicina en polvo (sabor dulce suave).",
+            "Acompáñalo de 300–400 mg de Magnesio Bisglicinato.",
+            "Duerme con los pies despejados o fuera del edredón para disipar calor."
+          ],
+          check: "Sensación de descanso reparador profundo al despertar, incluso con las mismas horas de cama.",
+          warn: "Usa siempre Bisglicinato o Treonato; evita el Óxido de magnesio (baja biodisponibilidad y efecto laxante)."
+        },
+        {
+          num: 23, domain: "VIII", domainLabel: "VIII · Termorregulación y Sueño",
+          title: "La Trampa Térmica de la Ducha Caliente (Efecto Radiador)",
+          seconds: 30, timeLabel: "60m pre-cama",
+          goal: "Acortar a la mitad la latencia del sueño vaciando el calor central del cuerpo por termodinámica vascular.",
+          target: "Plexos arteriovenosos glabrados de palmas, plantas de los pies y nuca.",
+          steps: [
+            "60 minutos antes de acostarte, date una ducha caliente de 5–10 minutos calentando bien nuca, manos y pies.",
+            "Sal a una habitación fresca (18–20 °C) sin abrigarte en exceso los primeros minutos.",
+            "La piel vasodilatada actúa como un radiador que desploma la temperatura interna del núcleo."
+          ],
+          check: "Pesadez natural de párpados y caída rápida en sueño a los 20–25 minutos.",
+          warn: "Ducharse con agua muy fría de noche produce vasoconstricción cutánea, atrapa el calor dentro y desvela."
+        },
+        {
+          num: 24, domain: "VIII", domainLabel: "VIII · Termorregulación y Sueño",
+          title: "El Interruptor Maestro Circadiano (Luz Exterior Matutina + Cero Techo)",
+          seconds: 30, timeLabel: "5-10m AM",
+          goal: "Sincronizar el pico matutino de cortisol y programar la liberación de melatonina 15 horas después.",
+          target: "Células ganglionares intrínsecamente fotosensibles (ipRGC con melanopsina) en la hemirretina inferior.",
+          steps: [
+            "POR LA MAÑANA: Sal al exterior (balcón o calle, sin gafas de sol ni ventana de por medio) 5–10 minutos recién levantado.",
+            "POR LA NOCHE (desde las 22:00): Apaga las luces blancas de TECHO y usa solo iluminación baja/cálida.",
+            "Reduce el brillo de pantallas al mínimo en la última hora."
+          ],
+          check: "Al tercer día consecutivo te despiertas con tono muscular activo antes de la alarma.",
+          warn: "Nunca mires directamente al sol; basta recibir la claridad ambiental del cielo abierto."
+        },
+        {
+          num: 25, domain: "IX", domainLabel: "Post-Entreno · Freno Parasimpático",
+          title: "Descarga Venosa 90-90 y Freno Parasimpático Inmediato",
+          seconds: 180, timeLabel: "3 min",
+          goal: "Apagar el tono simpático al terminar la última serie, descomprimir L4-L5/L5-S1 e iniciar la ventana anabólica antes de salir del gimnasio.",
+          target: "Acortamiento pasivo del psoas-ilíaco + barorreceptores cardiopulmonares + suspiro fisiológico doble.",
+          steps: [
+            "Túmbate boca arriba en esterilla con pantorrillas sobre un banco plano (caderas a 90° y rodillas a 90°), pelvis neutra y palmas arriba.",
+            "Inhala profundo por nariz (3s) + añade una 2ª mini-inhalación nasal corta encima + exhala pasivo y largo por boca (6–8s).",
+            "Completa de 10 a 15 ciclos (~3 minutos) con mirada desenfocada."
+          ],
+          check: "Caída brusca de frecuencia cardíaca, deglución refleja y sensación de piernas ligeras.",
+          warn: "Al terminar, no te levantes de golpe: rueda primero sobre tu costado derecho 15 segundos para evitar mareo ortostático."
+        }
+      ];
+
+      const MATRIX = [
+        { symptom: "Bajar pulsaciones / taquicardia", sub: "Intra-serie o tras esfuerzo máximo en Hack/RDL", main: 1, mainLabel: "#01 Oreja Cymba", alt: 2, altLabel: "#02 Buceo Frío", window: "30–60 seg" },
+        { symptom: "Cuello cargado / trapecio tenso", sub: "Antes de press inclinado, remo o sentadilla", main: 7, mainLabel: "#07 Ojos-Cuello", alt: 9, altLabel: "#09 Soltar Mandíbula", window: "45 seg" },
+        { symptom: "Tobillo o isquio rígido en calentamiento", sub: "Ganar ROM limpio sin perder fuerza por estiramiento pasivo", main: 8, mainLabel: "#08 Arrastre Piel Ruffini", alt: 6, altLabel: "#06 Base Cráneo", window: "60 seg" },
+        { symptom: "Falta de chispa o activación neural", sub: "Fatiga mental justo antes de la serie efectiva", main: 10, mainLabel: "#10 Café Visual +20°", alt: 11, altLabel: "#11 Puños + Mandíbula 5s", window: "20–45 seg" },
+        { symptom: "Máximo bombeo y estabilidad tensional", sub: "Llenado celular y cero mareo en pierna pesada", main: 13, mainLabel: "#13 Suero Sodio+Taurina", alt: 14, altLabel: "#14 Nitratos Orales", window: "30–75 min pre" },
+        { symptom: "Retrasar ardor muscular por H+", sub: "Series de 12–20 reps (abducción, búlgara, brazos)", main: 15, mainLabel: "#15 Bicarbonato+Limón", alt: 18, altLabel: "#18 Enjuague Carbos 10s", window: "45 min pre / 10s" },
+        { symptom: "Foco limpio entrenando por la tarde", sub: "Velocidad muscular sin arruinar el sueño nocturno", main: 17, mainLabel: "#17 Alfa-GPC / Yemas", alt: 16, altLabel: "#16 Café + L-Teanina", window: "45 min pre" },
+        { symptom: "Desconexión y apagado post-entreno", sub: "Frenar cortisol y descomprimir columna lumbar", main: 25, mainLabel: "#25 Descarga 90-90", alt: 1, altLabel: "#01 Oreja Cymba", window: "Inmediato post" },
+        { symptom: "Modorra o pesadez tras comer", sub: "Evitar letargo digestivo tras comida rica en carbos", main: 21, mainLabel: "#21 Bomba Sóleo GLUT4", alt: 19, altLabel: "#19 Vinagre + Orden", window: "10 min post-comida" },
+        { symptom: "Facilitar sueño profundo tras entrenar", sub: "Enfriar núcleo cerebral y relajar el SNC", main: 22, mainLabel: "#22 Glicina + Magnesio", alt: 23, altLabel: "#23 Ducha Radiador", window: "45–60 min pre-cama" }
+      ];
+
+      let activeDomain = "all";
+      let searchQuery = "";
+      let activeTimers = new Map();
+
+      function playFinishBeep() {
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          [587.33, 880].forEach((freq, i) => {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = "triangle";
+            osc.frequency.value = freq;
+            gain.gain.setValueAtTime(0.18, ctx.currentTime + i * 0.16);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.16 + 0.28);
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.start(ctx.currentTime + i * 0.16);
+            osc.stop(ctx.currentTime + i * 0.16 + 0.3);
+          });
+        } catch (_) {}
+      }
+
+      function formatSec(sec) {
+        if (sec >= 60) {
+          const m = Math.floor(sec / 60);
+          const s = String(sec % 60).padStart(2, "0");
+          return `${m}:${s}`;
+        }
+        return `${sec}s`;
+      }
+
+      function toggleHackTimer(num, totalSeconds, btn) {
+        if (activeTimers.has(num)) {
+          clearInterval(activeTimers.get(num));
+          activeTimers.delete(num);
+          btn.dataset.running = "false";
+          btn.innerHTML = `<i class="ph-bold ph-play"></i> <span>${formatSec(totalSeconds)}</span>`;
+          return;
+        }
+        let rem = totalSeconds;
+        btn.dataset.running = "true";
+        btn.innerHTML = `<i class="ph-bold ph-stop"></i> <span>${formatSec(rem)}</span>`;
+        const id = setInterval(() => {
+          rem -= 1;
+          if (rem <= 0) {
+            clearInterval(id);
+            activeTimers.delete(num);
+            btn.dataset.running = "false";
+            btn.innerHTML = `<i class="ph-bold ph-check"></i> <span>¡Listo!</span>`;
+            playFinishBeep();
+            setTimeout(() => {
+              if (!activeTimers.has(num)) {
+                btn.innerHTML = `<i class="ph-bold ph-play"></i> <span>${formatSec(totalSeconds)}</span>`;
+              }
+            }, 2600);
+          } else {
+            btn.innerHTML = `<i class="ph-bold ph-stop"></i> <span>${formatSec(rem)}</span>`;
+          }
+        }, 1000);
+        activeTimers.set(num, id);
+      }
+
+      function renderDomains() {
+        const strip = document.getElementById("domainStrip");
+        strip.innerHTML = DOMAINS.map((d) => `
+          <button type="button" class="domain-pill ${d.id === activeDomain ? "is-active" : ""}" data-domain="${d.id}">
+            ${d.label}
+          </button>
+        `).join("");
+      }
+
+      function renderHacks() {
+        const grid = document.getElementById("hacksGrid");
+        const q = searchQuery.trim().toLowerCase();
+        const filtered = HACKS.filter((h) => {
+          if (activeDomain !== "all" && h.domain !== activeDomain) return false;
+          if (!q) return true;
+          const hay = `${h.num} ${h.title} ${h.domainLabel} ${h.goal} ${h.target} ${h.steps.join(" ")} ${h.check}`.toLowerCase();
+          return hay.includes(q);
+        });
+
+        grid.innerHTML = filtered.map((h) => `
+          <article class="hack-card" id="hack-card-${h.num}">
+            <div class="hack-head">
+              <div class="hack-badge-group">
+                <span class="hack-num">#${String(h.num).padStart(2, "0")}</span>
+                <span class="hack-domain-tag">${h.domainLabel}</span>
+              </div>
+              <button type="button" class="hack-timer-btn" data-timer-num="${h.num}" data-timer-sec="${h.seconds}" title="Iniciar cronómetro de práctica">
+                <i class="ph-bold ph-play"></i> <span>${formatSec(h.seconds)}</span>
+              </button>
+            </div>
+            <h2 class="hack-title">${h.title}</h2>
+            <p class="hack-goal">${h.goal}</p>
+            <div class="hack-target-box">
+              <strong>Punto de contacto / Mecanismo</strong>
+              <span>${h.target}</span>
+            </div>
+            <ol class="hack-steps">
+              ${h.steps.map((s, i) => `<li><b>${i + 1}</b><span>${s}</span></li>`).join("")}
+            </ol>
+            <div class="hack-footer-grid">
+              <div class="hack-check">
+                <strong>✓ Señal fisiológica de éxito</strong>
+                <span>${h.check}</span>
+              </div>
+              <div class="hack-warn">
+                <strong>! Precaución:</strong><span>${h.warn}</span>
+              </div>
+            </div>
+          </article>
+        `).join("");
+      }
+
+      function renderMatrix() {
+        const list = document.getElementById("matrixList");
+        list.innerHTML = MATRIX.map((row) => `
+          <div class="matrix-row">
+            <div class="matrix-symptom">
+              <strong>${row.symptom}</strong>
+              <span>${row.sub}</span>
+            </div>
+            <div class="matrix-actions">
+              <button type="button" class="matrix-jump-btn" data-jump-hack="${row.main}">${row.mainLabel}</button>
+              <button type="button" class="matrix-jump-btn is-alt" data-jump-hack="${row.alt}">Alt: ${row.altLabel}</button>
+            </div>
+            <span class="matrix-window">${row.window}</span>
+          </div>
+        `).join("");
+      }
+
+      function setView(mode) {
+        const isHacks = mode === "hacks";
+        document.getElementById("tabHacksBtn").classList.toggle("is-active", isHacks);
+        document.getElementById("tabHacksBtn").setAttribute("aria-selected", String(isHacks));
+        document.getElementById("tabMatrixBtn").classList.toggle("is-active", !isHacks);
+        document.getElementById("tabMatrixBtn").setAttribute("aria-selected", String(!isHacks));
+        document.getElementById("hacksView").hidden = !isHacks;
+        document.getElementById("hacksFilterWrap").hidden = !isHacks;
+        document.getElementById("matrixView").hidden = isHacks;
+      }
+
+      document.getElementById("tabHacksBtn").addEventListener("click", () => setView("hacks"));
+      document.getElementById("tabMatrixBtn").addEventListener("click", () => setView("matrix"));
+
+      document.getElementById("domainStrip").addEventListener("click", (e) => {
+        const pill = e.target.closest("[data-domain]");
+        if (!pill) return;
+        activeDomain = pill.getAttribute("data-domain");
+        renderDomains();
+        renderHacks();
+      });
+
+      document.getElementById("hackSearchInput").addEventListener("input", (e) => {
+        searchQuery = e.target.value || "";
+        renderHacks();
+      });
+
+      document.getElementById("hacksGrid").addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-timer-num]");
+        if (!btn) return;
+        const num = Number(btn.getAttribute("data-timer-num"));
+        const sec = Number(btn.getAttribute("data-timer-sec"));
+        toggleHackTimer(num, sec, btn);
+      });
+
+      document.getElementById("matrixList").addEventListener("click", (e) => {
+        const jump = e.target.closest("[data-jump-hack]");
+        if (!jump) return;
+        const num = Number(jump.getAttribute("data-jump-hack"));
+        activeDomain = "all";
+        searchQuery = "";
+        document.getElementById("hackSearchInput").value = "";
+        renderDomains();
+        renderHacks();
+        setView("hacks");
+        setTimeout(() => {
+          const card = document.getElementById(`hack-card-${num}`);
+          if (card) {
+            card.scrollIntoView({ behavior: "smooth", block: "center" });
+            card.classList.add("is-highlighted");
+            setTimeout(() => card.classList.remove("is-highlighted"), 2400);
+          }
+        }, 60);
+      });
+
+      renderDomains();
+      renderHacks();
+      renderMatrix();
+    </script>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,4875 @@
+{
+  "sessions": [
+    {
+      "date": "2026-07-29",
+      "day": null,
+      "title": "Sesión exploratoria de gimnasio",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "variant": "Máquina hip thrust/glute drive con discos",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 60,
+              "reps": 9,
+              "rir": "2"
+            },
+            {
+              "kg": 60,
+              "reps": 9,
+              "rir": "2"
+            }
+          ],
+          "note": "Primera referencia; ajustes y contabilización exacta de la carga no registrados."
+        },
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith/multipower",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "0-1"
+            },
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "0-1"
+            }
+          ],
+          "note": "Dos series por lado. Peso efectivo de la guía y montaje pendientes."
+        },
+        {
+          "name": "Rear Kick",
+          "variant": "Matrix Rear Kick; identificación parcial",
+          "sets": [
+            {
+              "kg": null,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": null,
+              "reps": 10,
+              "rir": "2"
+            }
+          ],
+          "note": "Dos series por lado; carga no registrada; dificultad para localizar el glúteo."
+        },
+        {
+          "name": "Abducción sentada",
+          "variant": "Máquina de abducción sentada",
+          "sets": [
+            {
+              "kg": null,
+              "reps": 20,
+              "rir": "0"
+            }
+          ],
+          "note": "Observación parcial: carga referida entre 18 y 22 kg; 20 repeticiones @0. Número real de series y correspondencia carga-serie no documentados."
+        },
+        {
+          "name": "Hiperextensión 45° unilateral",
+          "variant": "Banco 45°",
+          "sets": [
+            {
+              "kg": null,
+              "reps": 20,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": 20,
+              "rir": ""
+            }
+          ],
+          "note": "Dos series por lado; RIR no registrado."
+        }
+      ]
+    },
+    {
+      "date": "2026-07-30",
+      "day": null,
+      "title": "Entrenamiento general sin desglose",
+      "exercises": []
+    },
+    {
+      "date": "2026-08-01",
+      "day": "B",
+      "title": "Día B — Cadena posterior y torso",
+      "exercises": [
+        {
+          "name": "Peso muerto rumano en Smith",
+          "variant": "Smith/multipower",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 8,
+              "rir": "4"
+            },
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "2"
+            }
+          ],
+          "note": "Cuádriceps demasiado presentes; ligera carga lumbar transitoria al terminar; técnica y recorrido por recalibrar."
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "Máquina de curl femoral sentado",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 23,
+              "reps": 10,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado",
+          "variant": "Máquina con pecho apoyado",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 8,
+              "rir": "3"
+            },
+            {
+              "kg": 40,
+              "reps": 8,
+              "rir": "3"
+            }
+          ],
+          "note": "Ajustes y encaje de la máquina pendientes."
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "Peck-deck inverso",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "3"
+            },
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "3"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl predicador",
+          "variant": "Máquina de curl predicador",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "2"
+            }
+          ],
+          "note": "23×10 @4 se realizó como aproximación y no se cuenta como serie de trabajo. Serie de trabajo válida: 36×10 @2."
+        },
+        {
+          "name": "Extensión de rodilla",
+          "variant": "Máquina de extensión de rodilla",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 13,
+              "rir": "2"
+            }
+          ],
+          "note": "Incluyó una pausa; próxima exposición debe ser continua para comparabilidad."
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Variante/máquina no registrada",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 15,
+              "rir": "2"
+            }
+          ],
+          "note": "Rango completo; variante exacta pendiente."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "day": "C",
+      "title": "Día C adaptado — Glúteo, pecho y hombros",
+      "exercises": []
+    },
+    {
+      "date": "2026-08-05",
+      "day": null,
+      "title": "Día A1 — Glúteo, femoral y abdomen",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "2"
+            }
+          ],
+          "note": "No focus total (por Félix)"
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "Technogym",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 23,
+              "reps": 12,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Crunch cargado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 0,
+              "reps": 15,
+              "rir": ""
+            },
+            {
+              "kg": 0,
+              "reps": 15,
+              "rir": ""
+            }
+          ],
+          "note": "El archivo original exportó load_kg='0' en ambas series; no se reinterpreta como autocarga ni como carga externa distinta. RIR no registrado."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "day": "C",
+      "title": "Día C — Glúteo y torso",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina de abducción sentada",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina convergente",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 20,
+              "reps": 8,
+              "rir": ""
+            }
+          ],
+          "note": "Se añadió una tercera serie por gusto. Tercera serie: 20 kg × 8; RIR no registrado."
+        },
+        {
+          "name": "Pullover en polea con brazos rectos",
+          "variant": "Polea",
+          "sets": [
+            {
+              "kg": 32,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": "Se realizaron 2 series. Primera: 32 kg × 12 @2. Segunda confirmada como realizada, pero carga/repeticiones/RIR no registrados."
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 5,
+              "reps": 10,
+              "rir": "0"
+            },
+            {
+              "kg": 5,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo posterior con pecho apoyado",
+          "variant": "Pecho apoyado",
+          "sets": [
+            {
+              "kg": 7.5,
+              "reps": 10,
+              "rir": ""
+            }
+          ],
+          "note": "RIR no registrado."
+        }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "day": "A",
+      "title": "Día extra",
+      "exercises": [
+        {
+          "name": "Flexiones. Autocarga",
+          "variant": "Autocarga",
+          "sets": [
+            {
+              "kg": null,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": null,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": null,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": null,
+              "reps": 12,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "day": "A",
+      "title": "Día A",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 60,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 9,
+              "rir": "0"
+            }
+          ],
+          "note": "Aún puedo mejorar tecnica"
+        },
+        {
+          "name": "Sentadilla Hack Matrix profunda",
+          "variant": "Máquina Matrix",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": "Creo que puedo con más, aunque al bajar cuesta más"
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Convergente",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 50,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": "Creo que en la próxima podre subir"
+        },
+        {
+          "name": "Jalón medio o neutro",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 29,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": "Hice una serie con polea a 5 kilos, voy sobrado pero la siguiente placa es demasiado ya para más de 4 re"
+        },
+        {
+          "name": "Extensión de tríceps overhead",
+          "variant": "Polea con cuerda (1 mano)",
+          "sets": [
+            {
+              "kg": 18,
+              "reps": 7,
+              "rir": "0"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Crunch cargado",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 29,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 29,
+              "reps": 12,
+              "rir": "2"
+            }
+          ],
+          "note": "No me convence demasiado la máquina (adjuntaré foto)"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "day": "B",
+      "title": "Día B",
+      "exercises": [
+        {
+          "name": "Peso muerto rumano en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 29,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl predicador",
+          "variant": "",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de rodilla",
+          "variant": "",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "day": "B",
+      "title": "Día B",
+      "exercises": [
+        {
+          "name": "Peso muerto rumano en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 29,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl predicador",
+          "variant": "",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de rodilla",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 15,
+              "rir": ""
+            },
+            {
+              "kg": 60,
+              "reps": 15,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "day": "C",
+      "title": "Día C",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Pullover en polea con brazos rectos",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo posterior con pecho apoyado",
+          "variant": "Mancuernas",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "day": "C",
+      "title": "Día C",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 9,
+              "rir": "0"
+            },
+            {
+              "kg": 30,
+              "reps": 8,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "3"
+            },
+            {
+              "kg": 43,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 43,
+              "reps": 12,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 30,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 8,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Pullover en polea con brazos rectos",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 32,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 10,
+              "rir": "3"
+            },
+            {
+              "kg": 27,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo posterior con pecho apoyado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "0"
+            },
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "day": "A",
+      "title": "Sesión libre",
+      "exercises": [
+        {
+          "name": "locura del fraselargapara comprobaciónes",
+          "variant": "",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "day": "A",
+      "title": "Día A",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 11,
+              "rir": "2"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Parece que controlo mejor el movimiento"
+        },
+        {
+          "name": "Sentadilla Hack Matrix",
+          "variant": "Máquina Matrix",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 9,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 7,
+              "rir": "0"
+            },
+            {
+              "kg": 70,
+              "reps": 6,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Jalón medio o neutro",
+          "variant": "Polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 13,
+              "rir": "2"
+            },
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 9,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 18,
+              "rir": "0"
+            },
+            {
+              "kg": 23,
+              "reps": 18,
+              "rir": "0"
+            },
+            {
+              "kg": 18,
+              "reps": 20,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de tríceps overhead",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": ""
+            }
+          ],
+          "note": "A un mano, con cuerda"
+        },
+        {
+          "name": "Crunch cargado",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 29,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": null,
+              "rir": "1"
+            }
+          ],
+          "note": "Cadencia estricta"
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "day": "B",
+      "title": "Día B",
+      "exercises": [
+        {
+          "name": "Peso muerto rumano en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 29,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 29,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 12,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl kinesiologico mancuerna",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 10,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 10,
+              "reps": 12,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de rodilla",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 12,
+              "rir": "0"
+            },
+            {
+              "kg": 43,
+              "reps": 12,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "day": "C",
+      "title": "Día C",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "0"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 8,
+              "rir": "0"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Las cargas anteriores registrada son dobles a las que aparecen"
+        },
+        {
+          "name": "Pullover en polea con brazos rectos",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 9,
+              "reps": 12,
+              "rir": "2"
+            }
+          ],
+          "note": "1 mano"
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 20,
+              "rir": "0"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "0"
+            },
+            {
+              "kg": 27,
+              "reps": 12,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo bajo con maquina",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "day": "A",
+      "title": "Día A — Cadena Anterior & Empuje / Glúteo",
+      "exercises": [
+        {
+          "name": "Hip thrust con barra",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 45,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 45,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": "Es La primera vez que tengo que sustitutir la máquina por barra"
+        },
+        {
+          "name": "Hack squat profunda",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 8,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Jalón medio/neutro",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press inclinado en Smith 15-30°",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral en máquina",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 16,
+              "rir": "0"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "0"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de tríceps overhead en cable",
+          "variant": "Cable",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Crunch en cable o máquina",
+          "variant": "Cable",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "day": "B",
+      "title": "Día B",
+      "exercises": [
+        {
+          "name": "B01. Peso muerto rumano en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 70,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "B02. Curl femoral sentado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 29,
+              "reps": 12,
+              "rir": "0"
+            },
+            {
+              "kg": 29,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "B03. Remo con pecho apoyado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 55,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 55,
+              "reps": 8,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "B04. Peck-deck inverso",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 18,
+              "rir": "1"
+            },
+            {
+              "kg": 23,
+              "reps": 18,
+              "rir": "1"
+            },
+            {
+              "kg": 23,
+              "reps": 18,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "B05. Curl predicador (o Kinesiológico)",
+          "variant": "Mancuernas",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "B06. Extensión de rodilla",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 43,
+              "reps": 14,
+              "rir": "0"
+            },
+            {
+              "kg": 43,
+              "reps": 14,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "B07. Gemelo con rodilla extendida",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 80,
+              "reps": 12,
+              "rir": "0"
+            },
+            {
+              "kg": 80,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "day": "A",
+      "title": "unilateral + abducción + torso + pantorrilla",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 17,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "0"
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 70,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 8,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Pullover en polea con brazos rectos",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "0"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "0"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo posterior con pecho apoyado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "2"
+            },
+            {
+              "kg": 20,
+              "reps": 10,
+              "rir": "2"
+            }
+          ],
+          "note": "No la hice, apunto el peso de referencia anterior"
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "day": "A",
+      "title": "Día A",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 80,
+              "reps": 8,
+              "rir": "2"
+            },
+            {
+              "kg": 80,
+              "reps": 8,
+              "rir": "2"
+            },
+            {
+              "kg": 85,
+              "reps": 9,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Sentadilla Hack Matrix",
+          "variant": "Máquina Matrix",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 9,
+              "rir": "0"
+            },
+            {
+              "kg": 40,
+              "reps": 8,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press maquina",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 9,
+              "rir": "0"
+            },
+            {
+              "kg": 43,
+              "reps": 9,
+              "rir": "0"
+            },
+            {
+              "kg": 43,
+              "reps": 9,
+              "rir": "0"
+            }
+          ],
+          "note": "Dejando en tensión una mano"
+        },
+        {
+          "name": "Jalón medio o neutro",
+          "variant": "Polea",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 12,
+              "rir": "0"
+            },
+            {
+              "kg": 43,
+              "reps": 9,
+              "rir": "0"
+            },
+            {
+              "kg": 43,
+              "reps": 9,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de tríceps overhead",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 18,
+              "reps": 9,
+              "rir": "0"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Crunch cargado",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "day": "B",
+      "title": "Día B",
+      "exercises": [
+        {
+          "name": "Peso muerto rumano en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 1,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 29,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": 1,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "3"
+            },
+            {
+              "kg": 55,
+              "reps": 13,
+              "rir": "0"
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 20,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl predicador",
+          "variant": "",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de rodilla",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "day": "C",
+      "title": "Día C",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "0"
+            },
+            {
+              "kg": 30,
+              "reps": 8,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 16,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "0"
+            },
+            {
+              "kg": 70,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Pullover en polea con brazos rectos",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 13,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 18,
+              "rir": "0"
+            },
+            {
+              "kg": 27,
+              "reps": 16,
+              "rir": "2"
+            },
+            {
+              "kg": 27,
+              "reps": 18,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo posterior con pecho apoyado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 20,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "day": "A",
+      "title": "Día A",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 80,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 80,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 80,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Sentadilla Hack Matrix",
+          "variant": "Máquina Matrix",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Jalón medio o neutro",
+          "variant": "Polea",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 16,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 16,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de tríceps overhead",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Crunch cargado",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 14,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "day": "B",
+      "title": "Día B",
+      "exercises": [
+        {
+          "name": "Peso muerto rumano en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 29,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 23,
+              "reps": 16,
+              "rir": "2"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 55,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl predicador",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de rodilla",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 80,
+              "reps": 14,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "day": "C",
+      "title": "Día C · Glúteos y brazos",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "2"
+            },
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "2"
+            },
+            {
+              "kg": 43,
+              "reps": 20,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 9,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl bayesiano en cable",
+          "variant": "Cable",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 8,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de tríceps Katana unilateral",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 9,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Pullover en polea con ambos brazos",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 18,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo posterior con pecho apoyado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 20,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 80,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "day": "A",
+      "title": "Sesión en vivo",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 80,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 85,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 85,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Hack squat profunda",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press convergente horizontal",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Jalón medio/neutro",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 20,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 19,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de tríceps overhead en cable",
+          "variant": "Cable",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 8,
+              "rir": "1"
+            }
+          ],
+          "note": "Tipo katana a una mano"
+        },
+        {
+          "name": "Crunch en cable o máquina",
+          "variant": "Maquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "day": "B",
+      "title": "Día B · Cadena posterior y torso",
+      "exercises": [
+        {
+          "name": "Peso muerto rumano en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 75,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 75,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 75,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 29,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 29,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": "Con agarre mano invertido (pulgar abajo)"
+        },
+        {
+          "name": "Curl predicador en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 14,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de rodilla",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Gemelo con rodilla extendida en Hack",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 80,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 80,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 80,
+              "reps": 14,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "day": "C",
+      "title": "Día C",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 19,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Última serie rest pause 15segundo,"
+        },
+        {
+          "name": "Pullover en polea con brazos rectos",
+          "variant": "Polea",
+          "sets": [
+            {
+              "kg": 41,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 20,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 20,
+              "rir": "1"
+            },
+            {
+              "kg": 24,
+              "reps": 20,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo posterior con pecho apoyado",
+          "variant": "Low row máquina",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Low row máquina (foto)"
+        },
+        {
+          "name": "Gemelo con rodilla extendida",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 80,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "day": "B",
+      "title": "Día B",
+      "exercises": [
+        {
+          "name": "Extensión de tríceps Katana unilateral",
+          "variant": "Polea",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "0"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": "Bb"
+        },
+        {
+          "name": "Dual-cable cross pushdown",
+          "variant": "Polea (unilateral con posición bilateral)",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 11,
+              "rir": "0"
+            },
+            {
+              "kg": 14,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": 9,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Las dos series las hice unilateralmente manteniendo posiciones bilateral."
+        },
+        {
+          "name": "Curl bayesiano en cable",
+          "variant": "Polea",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 9,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Realizado en posicion número 3"
+        },
+        {
+          "name": "Curl predicador en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": "Realizada en posición número 4. Hoy la carga baja debido a que añadí un par de series de bayesianoio"
+        },
+        {
+          "name": "Elevación lateral unilateral en cable",
+          "variant": "Polea",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": "No lo he realizado. Informa al sistema y propon nueva ubicacion"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "day": "B",
+      "title": "Día B — Satélite de Detalle, Congestión & Movilidad",
+      "exercises": [
+        {
+          "name": "Elevación lateral unilateral en cable",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 9,
+              "reps": 12,
+              "rir": "0"
+            },
+            {
+              "kg": 9,
+              "reps": 12,
+              "rir": "0"
+            }
+          ],
+          "note": "No hice el agarre por detrás, si no por delante. Corregiré la próxima"
+        },
+        {
+          "name": "Kickback diagonal de glúteo en polea baja",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 23,
+              "reps": 15,
+              "rir": "2"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": "El agarre lo tomó con las palmas empujando el agarre (pulgar abajo), con rotación interna del brazo (comprueba si es realmente efectivo esta técnica y si es así. Conviertela en la canónica"
+        },
+        {
+          "name": "Cossack squat fluida (peso corporal)",
+          "variant": "Mancuernas",
+          "sets": [
+            {
+              "kg": null,
+              "reps": 15,
+              "rir": "0"
+            },
+            {
+              "kg": null,
+              "reps": 15,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Encogimientos trapecio en Smith con inclinacion hacia delante",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 12,
+              "rir": "0"
+            }
+          ],
+          "note": "Este ejercicio lo he añadido porque parece que en la app no estaba registrado. Cuando procese este registro, comprueba si está el ejercicio en el sistema, si no añádelo, teniendo en cuenta esta variedad en la que se inclina el cuerpo hacia delante. Añade técnicas, y todo lo que debe tener un ejércicio registrado en el sistema. Para cambiarlo y que aparezca también recogido en la app, no hagas cambio de momento. Recoge este tipo de pequeños cambios para ir acumulando hasta que sea necesaria una actualización de la app."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "day": "A",
+      "title": "Día A — Nuclear 1 · Glúteo y Cuádriceps (Cadera y rodilla pesadas)",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina / discos",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 90,
+              "reps": 7,
+              "rir": "1"
+            },
+            {
+              "kg": 90,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 90,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Sentadilla Hack Matrix profunda",
+          "variant": "Máquina Matrix",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 8,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 8,
+              "rir": "1"
+            }
+          ],
+          "note": "he disminuido repeticiones porque he hecho una parada de 0,5 s abajo. Y el Agotamiento era mayor."
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": "Aquí también es ajustado la ejecución y he realizado una isometría más marcada  de 2 s. , por lo que el agotamiento es mayor."
+        },
+        {
+          "name": "Gemelo en Hack con piernas estiradas",
+          "variant": "",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": "No hice el ejercicio, porque al comenzar sentía una contracción muy intensa del gemelo, como si me fuera a montar o algo. No sé, muy raro. ¿Me sabrias decir qué puede ser?"
+        },
+        {
+          "name": "Crunch cargado en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 9,
+              "rir": "2"
+            },
+            {
+              "kg": 50,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "day": "C",
+      "title": "Día C",
+      "exercises": [
+        {
+          "name": "Press convergente inclinado moderado",
+          "variant": "DHZ Chest Press banco inclinado (discos)",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 9,
+              "rir": "0"
+            }
+          ],
+          "note": "Aclaraciones. Durante el ciclo de 3 días, registraba las cargas del press convergente en esta ficha. Realmente He hecho por primera vez esta máquina hoy. Te subo junto al log de training foto de la máquina, porque esta va a ser la que hare en esta rutina 5D. Identificala,y si no esta en el catalogo añádelo."
+        },
+        {
+          "name": "Jalón medio o neutro",
+          "variant": "Polea alta agarre neutro/medio",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 8,
+              "rir": "0"
+            },
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Hecha en último lugar, la reduccion de la carga se deberá a que en la anteriores sesiones no arrastraba fatiga de un ejercicio de espalda anterior."
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina convergente horizontal",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": "Como dije en las notas del press convergente inclinado, todo los registros anteriores a hoy, correspondían a este. Así que si puedes, corrigelos. Si necesitas aclaración, pídela."
+        },
+        {
+          "name": "Remo con pecho apoyado (banco o máquina)",
+          "variant": "Máquina ROW pecho apoyado",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 11,
+              "rir": "0"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Pullover en polea alta con brazos rectos",
+          "variant": "Polea alta brazos rectos",
+          "sets": [
+            {
+              "kg": 41,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 41,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "day": "B",
+      "title": "Día B",
+      "exercises": [
+        {
+          "name": "Extensión de tríceps overhead en cable (Katana)",
+          "variant": "Polea / cable con cuerda / Tipo katana unilateral",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 9,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "NOTAS Generales(No vinculada solo a este movimiento) para este entrenamiento realice hacks de zumo remolacha, y tb el de bicarbonato en tiempo correcto. He notado un buen entrenamiento sin quemazón en las últimas repeticiones, aunque no una gran congestión... Tambien realice el de calmar el cuerpo tumbado y respirando. Nota técnica. A la app seria conveniente añadirle un slot para notas generales del entrenamiento como esta."
+        },
+        {
+          "name": "Curl bayesiano en cable",
+          "variant": "Polea baja (posición 3) con maneral D / Brazo detrás del torso",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Elevación lateral unilateral en cable",
+          "variant": "Polea a altura de rodilla / Unilateral con maneral o muñequera / Cable por detrás del torso",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 9,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Quite una serie de aquí e hice dos Serie de elevación lateral con máquina Registrada más abajo, pero en realidad fue el cuarto ejercicio"
+        },
+        {
+          "name": "Reverse crunch o elevación de piernas",
+          "variant": "Banco inclinado, con rotación lateral alterada y espiracion forzada en bloqueo arriba",
+          "sets": [
+            {
+              "kg": null,
+              "reps": 6,
+              "rir": "1"
+            },
+            {
+              "kg": null,
+              "reps": 6,
+              "rir": "1"
+            }
+          ],
+          "note": "En banco inclinado, con rotación lateral alterada y espiracion forzada en bloqueo arriba."
+        },
+        {
+          "name": "Pressdown en cable",
+          "variant": "Cruces en X en centro de dos poleas (Dual-cable cross pushdown)",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": "Lo hice en centro de dos poleas, cruces en X. No se si este es el slot adecuado... Analízalo."
+        },
+        {
+          "name": "Elevación lateral en máquina",
+          "variant": "Máquina de elevación lateral",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 18,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": "Registrada aquí pero ejecutada como cuarto ejercicio en realidad (2 series complementarias)"
+        },
+        {
+          "name": "Apertura inversa en cable",
+          "variant": "Cruce de poleas para deltoides posterior",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 20,
+              "rir": "1"
+            },
+            {
+              "kg": 32,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 32,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Forward-Lean Shrug en Smith",
+          "variant": "Encogimientos en Smith con inclinación hacia delante",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "day": "D",
+      "title": "Día D",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 11,
+              "rir": "0"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Parece que me cuesta avanzar en este ejercicio."
+        },
+        {
+          "name": "Peso muerto rumano en Smith (RDL)",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 70,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "Mancuernas",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 10,
+              "rir": "0"
+            },
+            {
+              "kg": 36,
+              "reps": 9,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de rodilla en máquina",
+          "variant": "Mancuernas",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "0"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 14,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "day": "E",
+      "title": "Día E – Satélite 2 – Brazos, Deltoides Posterior y Detalle (Acortamiento y bombeo)",
+      "exercises": [
+        {
+          "name": "Curl predicador en cable o máquina",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de tríceps en polea con cuerda",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Peck-deck inverso o remo posterior abierto",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 32,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 32,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 32,
+              "reps": 16,
+              "rir": "1"
+            }
+          ],
+          "note": "La próxima placa 36 y la siguiente 41"
+        },
+        {
+          "name": "Elevación lateral en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 18,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 18,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina (vaciado metabólico)",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 30,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "day": "A",
+      "title": "Día A - Nuclear 1 / Glúteo y Cuádriceps",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina / discos",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            },
+            {
+              "kg": null,
+              "reps": null,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Sentadilla Hack Matrix profunda",
+          "variant": "G04-V1",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 45,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 45,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 18,
+              "rir": "1"
+            }
+          ],
+          "note": "Placa real 43 kg (corregido desde 47 kg erróneo; la torre salta 36 -> 43 -> 50 kg)."
+        },
+        {
+          "name": "Crunch cargado en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 14,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "day": "C",
+      "title": "Día C — Nuclear 2 — Torso Pesado (Espalda y pectoral)",
+      "exercises": [
+        {
+          "name": "Press convergente inclinado moderado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": ""
+            },
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": ""
+            },
+            {
+              "kg": 40,
+              "reps": 9,
+              "rir": ""
+            }
+          ],
+          "note": "No puedo poner los rir por problemas de esta versión (TN) de la aplicación, el selector no aparece correctamente. habría que arreglarlo. Junto a los botones inferiores, el primero sale cortado y ese foot donde están no se desplaza"
+        },
+        {
+          "name": "Jalón medio o neutro",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": ""
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": ""
+            },
+            {
+              "kg": 50,
+              "reps": 9,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 12,
+              "rir": ""
+            },
+            {
+              "kg": 50,
+              "reps": 12,
+              "rir": ""
+            },
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado (banco o máquina)",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 11,
+              "rir": ""
+            },
+            {
+              "kg": 60,
+              "reps": 12,
+              "rir": ""
+            },
+            {
+              "kg": 60,
+              "reps": 10,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Pullover en polea alta con brazos rectos",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 14,
+              "rir": ""
+            },
+            {
+              "kg": 36,
+              "reps": 14,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "day": "D",
+      "title": "Día D — Nuclear 3 · Glúteo y Cadena Posterior (Unilateral y cadera)",
+      "exercises": [
+        {
+          "name": "Sentadilla búlgara en Smith",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Me fue muy bien en sentadillas búlgaras, conseguí gestionar el aire (usé tira de expansión nasal). También realicé protocolos de hacks pre-entrenamiento. Una buena sesión en general sin molestias."
+        },
+        {
+          "name": "Peso muerto rumano en Smith (RDL)",
+          "variant": "Smith",
+          "sets": [
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 70,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Curl femoral sentado",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Extensión de rodilla en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 14,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción unilateral en cable",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 9,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 9,
+              "reps": 15,
+              "rir": ""
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "day": "E",
+      "title": "Día E",
+      "exercises": [
+        {
+          "name": "Curl predicador en cable o máquina",
+          "variant": "Máquina de palanca con carga por discos lateral",
+          "sets": [
+            {
+              "kg": 30,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 25,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 25,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Cambio maquina de curli predicador. Pasamos de una máquina con placas a uno que se carga con disco en un lateral (me gusta más el ángulo que ofrece para su ejecucion). Esta es la nueva máquina y cargas de referencia a partir de ahora"
+        },
+        {
+          "name": "Extensión de tríceps en polea con cuerda",
+          "variant": "Cable / polea con cuerda bilateral",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 32,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 32,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Hecha con cuerda, con las dos manos"
+        },
+        {
+          "name": "Curl bayesiano en cable",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Curl bayesiano en polea"
+        },
+        {
+          "name": "Curl martillo en polea con cuerda",
+          "variant": "Polea unilateral con cuerda",
+          "sets": [
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 14,
+              "reps": 10,
+              "rir": "1"
+            }
+          ],
+          "note": "Registra tambien aparte 2 series Curl martillo a una mano en polea:10 r 1rir 14kilos (cuerda)"
+        },
+        {
+          "name": "Elevación lateral en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 27,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 24,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 27,
+              "reps": 18,
+              "rir": "1"
+            }
+          ],
+          "note": "Una serie previa menos peso pero más tiempo de parada isometrica"
+        },
+        {
+          "name": "Peck-deck inverso",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "2"
+            },
+            {
+              "kg": 36,
+              "reps": 13,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "day": "A",
+      "title": "Día A — Nuclear 1 · Glúteo y Cuádriceps (Cadera y rodilla pesadas)",
+      "exercises": [
+        {
+          "name": "Sentadilla Hack Matrix profunda",
+          "variant": "Máquina Matrix (G04-V1)",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": "Abriendo sesión con Hack. Control total y sin asfixia aplicando Valsalva y tiras nasales."
+        },
+        {
+          "name": "Hip thrust en máquina / discos",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 90,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 90,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 90,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Abducción sentada en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 43,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 19,
+              "rir": "1"
+            },
+            {
+              "kg": 43,
+              "reps": 17,
+              "rir": "0"
+            }
+          ],
+          "note": "Pausa isométrica al final (en máxima abducción)"
+        },
+        {
+          "name": "Gemelo en Hack con piernas estiradas",
+          "variant": "Máquina Hack",
+          "sets": [
+            {
+              "kg": 80,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 80,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 80,
+              "reps": 12,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Crunch cargado en máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 15,
+              "rir": "0"
+            },
+            {
+              "kg": 50,
+              "reps": 13,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "day": "C",
+      "title": "Día C — Nuclear 2 · Torso Pesado (Espalda y pectoral)",
+      "exercises": [
+        {
+          "name": "Press convergente inclinado moderado",
+          "variant": "",
+          "sets": [
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "1"
+            },
+            {
+              "kg": 40,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Jalón medio o neutro",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "2"
+            },
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Press horizontal convergente / máquina",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 50,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 50,
+              "reps": 10,
+              "rir": "0"
+            }
+          ],
+          "note": ""
+        },
+        {
+          "name": "Remo con pecho apoyado (banco o máquina)",
+          "variant": "Máquina",
+          "sets": [
+            {
+              "kg": 60,
+              "reps": 12,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 11,
+              "rir": "1"
+            },
+            {
+              "kg": 60,
+              "reps": 11,
+              "rir": "1"
+            }
+          ],
+          "note": "Primera vez con pausa en estiramiento. Quizás por eso bajada en número de repeticiones"
+        },
+        {
+          "name": "Pullover en polea alta con brazos rectos",
+          "variant": "Cable / polea",
+          "sets": [
+            {
+              "kg": 36,
+              "reps": 15,
+              "rir": "1"
+            },
+            {
+              "kg": 36,
+              "reps": 15,
+              "rir": "1"
+            }
+          ],
+          "note": ""
+        }
+      ]
+    }
+  ]
+}

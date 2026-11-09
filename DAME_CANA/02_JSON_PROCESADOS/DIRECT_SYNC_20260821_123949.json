@@ -1,0 +1,44 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-21T10:39:46.704Z",
+  "event_id": "EVENT-1787308786704-usy7w",
+  "session": {
+    "id": "mt2sisvi-f18tjx",
+    "date": "2026-08-21",
+    "title": "Sesión libre",
+    "finished": true,
+    "exercise_count": 1,
+    "planned_set_count": 1,
+    "recorded_set_count": 0
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "locura del fraselargapara comprobaciónes",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": null,
+            "reps": null,
+            "rir": null,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

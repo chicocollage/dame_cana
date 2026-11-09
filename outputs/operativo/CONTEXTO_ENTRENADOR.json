@@ -1,0 +1,372 @@
+{
+  "schema": "dame_cana_contexto_entrenador.v1",
+  "generado_utc": "2026-11-09T12:18:18+00:00",
+  "autoridad": "local",
+  "entrenador": "Antigravity / Gemini",
+  "fuentes": [
+    {
+      "ruta": "AGENTS.md",
+      "sha256": "7a7488e54c3158c95438a97f6871ad9c93595167732ec63aa3c428e26017dafa"
+    },
+    {
+      "ruta": "README.md",
+      "sha256": "1a29ce3dc29c65c075847f87ecaf450c96c32d71cef8352606f312c7b343146e"
+    },
+    {
+      "ruta": "data/registro.json",
+      "sha256": "9b20d6b407e609121709bd7ca90c7acf0256da79bf29094685cd57a95f3d2c23"
+    },
+    {
+      "ruta": "data/programa.json",
+      "sha256": "627764edd71e7e2247886810aa7798d444218d9c9f32bad72b2e165a0a181657"
+    },
+    {
+      "ruta": "data/indicaciones_tecnicas.json",
+      "sha256": "5e01fee995165ca558544ba58a6269419c0f4cabd15c2f85edf7c13584075fa7"
+    },
+    {
+      "ruta": "data/nutricion.json",
+      "sha256": "64ca7bf803de8415f0340c88f919b0fb41929deb6a2e5ee7e08dd66cd099033a"
+    },
+    {
+      "ruta": "data/maquinas.json",
+      "sha256": "1e6ec10dd600a7fb12e23fba65de2fd2946296012eab011f007206e588f03d73"
+    },
+    {
+      "ruta": "data/catalogos.json",
+      "sha256": "4d7bab7181a14757e205eea235c8d6756452c073959d04350dbf23979cb10b70"
+    },
+    {
+      "ruta": "data/taxonomia_operativa.json",
+      "sha256": "f952e9d5a34c1576c3ed17e8b1f14a8a0315d1c317c4a2d463ed9bc751ed3195"
+    },
+    {
+      "ruta": "data/seguimiento.json",
+      "sha256": "a4756544a970f03433051e1aaa953967619290917e91c943c78da3abfc7b57ff"
+    },
+    {
+      "ruta": "data/estado_y_decisiones.json",
+      "sha256": "17025324046e406059b793d2fbd811e121296f63e2cf2f2ff9889f80431def3e"
+    },
+    {
+      "ruta": "data/confirmaciones_usuario.json",
+      "sha256": "281577019b258950101756c2cd52224f8f68b7bef04e6640e392ca49691d603c"
+    },
+    {
+      "ruta": "data/conflictos_fuentes.json",
+      "sha256": "4423800032ba8f3a62481e9c3634606b41054857c41e3cd22b3fefb2ef7f6f86"
+    },
+    {
+      "ruta": "data/pendientes_externos.json",
+      "sha256": "d85f1500baade74a2b17c9ef5425878d81e211c96c5d94126547a9faec4c861f"
+    },
+    {
+      "ruta": "data/modelo_operativo.json",
+      "sha256": "860ca118e4dbc6fdd2fb866101cd6b2481e8f18087155212a60591ce39d71f12"
+    },
+    {
+      "ruta": "data/actualizaciones_conocimiento.json",
+      "sha256": "3ee865b07ee9815401a4c4b044fdf5c607412f3d9dabdaaf3d06c29997bdd378"
+    },
+    {
+      "ruta": "docs/PERFIL_PERSONAL_UNIFICADO.md",
+      "sha256": "b7b2666c73add95c49fd668e653678dae9f7bcaf7d2b1a7afbc0dc3df370a016"
+    },
+    {
+      "ruta": "docs/REGLAS_DEL_ENTRENADOR.md",
+      "sha256": "9ce6ff16fdda3365acd2f4edb8a8d48213638b011b3dd08abdded4c8656a9b38"
+    },
+    {
+      "ruta": "docs/ESTUDIOS_Y_ADAPTACION_PERSONAL.md",
+      "sha256": "d14471b45eae4a1af6b8bffd369c7d530ca3303be932a5f9f201f287b5cd390c"
+    },
+    {
+      "ruta": "docs/GOBIERNO_ENTRENAMIENTO_Y_CONOCIMIENTO.md",
+      "sha256": "3e3ba1e8567542df7900f51004e1012b50515cdc32caa61b755c4753eda33c66"
+    },
+    {
+      "ruta": "docs/FORMATO_SESION_ENTRENADOR_APP.md",
+      "sha256": "794677fc29bb322cfa736f1e2e21f63b6a14fefcdb5b552b1637ca3a8e0205c7"
+    }
+  ],
+  "resumen": [
+    [
+      "Programa",
+      "M5-5D-v1.0"
+    ],
+    [
+      "Modelo operativo",
+      "Cola Rodante Asíncrona (Método A: 3 Nucleares + 2 Satélites)"
+    ],
+    [
+      "Última sesión local",
+      "2026-11-05 · C"
+    ],
+    [
+      "Siguiente día según registro local",
+      "B"
+    ],
+    [
+      "Entradas conocidas pendientes",
+      "Ninguna conocida; confirmar que el historial esté al día"
+    ],
+    [
+      "Sesiones",
+      41
+    ],
+    [
+      "Filas de series",
+      591
+    ],
+    [
+      "Filas con repeticiones positivas",
+      527
+    ],
+    [
+      "Máquinas sin ID",
+      14
+    ],
+    [
+      "Series sin grupo comparable",
+      588
+    ],
+    [
+      "Entrenador y autoridad",
+      "Local (Antigravity / Gemini); Drive es recepción y respaldo pasivo"
+    ],
+    [
+      "Antes de prescribir",
+      "Confirmar última sesión, recuperación/molestias actuales e identidad; aplicar Alto SFR 40+ y entregar Note v1 + Calentamiento."
+    ]
+  ],
+  "directrices_prescripcion_40plus": {
+    "marco": "Fisiología 40+ de Alto SFR & Escultura por Ciclos (D-2026-10-31-MARCO-40PLUS-ESCULTURA)",
+    "techo_sesion": "3 a 6 series efectivas por grupo muscular y sesión a RIR 1-2 (cero series templadas RIR >= 4)",
+    "uso_fallo_rir0": "Prohibido en compuestos pesados/axiales; permitido únicamente en la última serie de analíticos o máquinas estables sin molestia tendinosa",
+    "ventana_colageno": "72 a 96 horas entre estímulos pesados o de alta elongación sobre las mismas estructuras tendinosas",
+    "biomecanica_defensiva": [
+      "Pausa estricta de ~1 s en máximo estiramiento para eliminar reflejo miotático y reducir cizalla tendinosa un 10-15%",
+      "Estabilidad externalizada y agarres con libertad rotacional (manerales libres, neutro/semi-supino) frente a barras rectas fijas",
+      "Orden inverso táctico (pre-agotamiento con el analítico estable primero) si la carga absoluta en un compuesto genera peaje articular, lumbar o de SNC"
+    ],
+    "escultura_ciclos_70_30": "Estabilidad intra-ciclo en M5-5D-v1.0; en futuras rotaciones (6-8 sem), 70% de grupos consolidados a retención activa (4-6 series/sem RIR 1-2) y 30% (1-2 focos estéticos) a aceleración (12-16 series/sem F2-F3 al inicio de sesión)",
+    "nutricion_sfr": "3 a 4 bolos anabólicos de 40-50 g de proteína (>3-4 g leucina) evitando tomas fragmentadas (<25 g)"
+  },
+  "calidad": {
+    "sesiones": 41,
+    "series": 591,
+    "ultimo_dia": "C",
+    "siguiente_dia": "B",
+    "recuentos_historicos_distintos": [
+      {
+        "session_id": "msppelcx-yful6r",
+        "recuento_declarado": 11,
+        "filas_de_series": 12
+      },
+      {
+        "session_id": "msvek8wz-k1lvmc",
+        "recuento_declarado": 15,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "msxem6n0-ahud97",
+        "recuento_declarado": 5,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "msydy5i0-12m57v",
+        "recuento_declarado": 16,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "msyt67hh-k0dw0k",
+        "recuento_declarado": 0,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "mt2jhvki-uf6g4h",
+        "recuento_declarado": 15,
+        "filas_de_series": 16
+      },
+      {
+        "session_id": "mt2sisvi-f18tjx",
+        "recuento_declarado": 0,
+        "filas_de_series": 1
+      },
+      {
+        "session_id": "mt5hniss-pe1osb",
+        "recuento_declarado": 17,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "mtb82l2r-31iccy",
+        "recuento_declarado": 16,
+        "filas_de_series": 17
+      },
+      {
+        "session_id": "mthb5t2c-qmdksz",
+        "recuento_declarado": 14,
+        "filas_de_series": 19
+      },
+      {
+        "session_id": "mts8kfej-fehx6t",
+        "recuento_declarado": 15,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "mu18ew6n-pil4bv",
+        "recuento_declarado": 13,
+        "filas_de_series": 19
+      },
+      {
+        "session_id": "mv83bq2i-em72t9",
+        "recuento_declarado": 11,
+        "filas_de_series": 14
+      },
+      {
+        "session_id": "mvck2kbr-igojma",
+        "recuento_declarado": 11,
+        "filas_de_series": 14
+      },
+      {
+        "session_id": "mvnryssk-6js0us",
+        "recuento_declarado": 8,
+        "filas_de_series": 11
+      }
+    ],
+    "series_con_repeticiones": 527,
+    "series_sin_repeticiones": 64,
+    "ultima_sesion": {
+      "session_id": "mw3ioyyb-3ejwe0",
+      "fecha": "2026-11-05",
+      "dia": "C",
+      "titulo": "Día C"
+    },
+    "campos_ausentes_en_series": {
+      "exercise_id": 588,
+      "machine_id": 588,
+      "comparability_group": 588,
+      "machine_settings": 433
+    },
+    "bases_de_carga": {
+      "unknown": 307,
+      "bodyweight": 4,
+      "total_kg": 225,
+      "unknown_kg_basis": 12,
+      "per_side_kg": 24,
+      "per_side": 3,
+      "added_kg": 11,
+      "machine_stack_kg": 5
+    },
+    "conflictos_fuentes_pendientes": 0
+  },
+  "pendientes_externos_no_incorporados": [],
+  "version_operativa": "2.1",
+  "fundamento": {
+    "instrucciones_agente": "AGENTS.md",
+    "perfil_y_objetivos": "docs/PERFIL_PERSONAL_UNIFICADO.md",
+    "confirmaciones": "data/confirmaciones_usuario.json",
+    "biblioteca": "biblioteca/EMPEZAR_AQUI.md",
+    "incorporaciones_conocimiento": "data/actualizaciones_conocimiento.json",
+    "programa": "data/programa.json",
+    "indicaciones_tecnicas": "data/indicaciones_tecnicas.json",
+    "nutricion": "data/nutricion.json",
+    "historial": "data/registro.json",
+    "decisiones": "data/estado_y_decisiones.json"
+  },
+  "regla_prescripcion": "La rutina es una propuesta aplicada y versionada subordinada a evidencia pertinente, perfil 40+ de Alto SFR, objetivos de escultura de proporciones (Regla 70/30 entre ciclos), restricciones articulares, recuperación tendinosa (72-96h) y respuesta registrada. Ninguna fuente aislada modifica automáticamente la rutina.",
+  "objetivos_vigentes": {
+    "Objetivo rector": {
+      "valor": "Físico masculino claramente musculado y proporcionado, con glúteo excepcional y distintivo",
+      "procedencia": "Perfil agosto"
+    },
+    "Prioridad glútea": {
+      "valor": "Proyección posterior, plenitud superior y desarrollo global, proporción/simetría y transición con femoral",
+      "procedencia": "Perfil agosto"
+    },
+    "Piernas": {
+      "valor": "Muy desarrolladas, con glúteo visualmente dominante y alto desarrollo femoral; cuádriceps/aductores musculados sin volumen redundante",
+      "procedencia": "Preferencia cerrada 13/14 agosto"
+    },
+    "Torso": {
+      "valor": "Deltoides lateral/posterior, dorsal y espalda alta; pecho, espalda media y brazos suficientemente desarrollados",
+      "procedencia": "Perfil agosto"
+    }
+  },
+  "limites": [
+    "Derivado: verificar huellas o regenerar antes de decidir.",
+    "No presupone que Drive esté al día con local ni que local haya recibido todas las sesiones.",
+    "Seguimiento incluye datos históricos, pruebas y filas vacías; no inferir estado personal actual.",
+    "No hay progresión ni cambios de programa automáticos."
+  ],
+  "conocimiento": {
+    "huella": "5d48e58b5090d38bd0f1dda25e04d4f52672e0dc864996d4b59b4ba640bc67be",
+    "archivos": 114,
+    "revision": 2,
+    "nota": "Archivos de biblioteca; no equivale a estudios verificados."
+  },
+  "vistas_disponibles": [
+    {
+      "nombre": "Resumen",
+      "filas": 12
+    },
+    {
+      "nombre": "Programa",
+      "filas": 24
+    },
+    {
+      "nombre": "Máquinas",
+      "filas": 21
+    },
+    {
+      "nombre": "Seguimiento",
+      "filas": 43
+    },
+    {
+      "nombre": "Decisiones",
+      "filas": 12
+    },
+    {
+      "nombre": "Sesiones",
+      "filas": 41
+    },
+    {
+      "nombre": "Series",
+      "filas": 591
+    },
+    {
+      "nombre": "Opciones",
+      "filas": 59
+    },
+    {
+      "nombre": "Sustituciones",
+      "filas": 20
+    }
+  ],
+  "vistas_humanas_disponibles": [
+    {
+      "nombre": "Inicio",
+      "filas": 18
+    },
+    {
+      "nombre": "Mi programa",
+      "filas": 24
+    },
+    {
+      "nombre": "Ejercicios y máquinas",
+      "filas": 100
+    },
+    {
+      "nombre": "Mi historial",
+      "filas": 235
+    },
+    {
+      "nombre": "Seguimiento",
+      "filas": 43
+    },
+    {
+      "nombre": "Cambios y decisiones",
+      "filas": 12
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Protocolo Bolos 40+ | Danié</title>
+  <style>
+    :root {
+      --bg: #0d0f12;
+      --card-bg: #161a22;
+      --accent: #ff4757;
+      --accent-glow: rgba(255, 71, 87, 0.15);
+      --protein: #2ed573;
+      --carb: #ffa502;
+      --fat: #70a1ff;
+      --text: #f1f2f6;
+      --muted: #a4b0be;
+      --border: #2f3542;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 16px; line-height: 1.45; }
+    .header { text-align: center; margin-bottom: 20px; padding: 12px 0; }
+    .badge { display: inline-block; background: var(--accent-glow); color: var(--accent); border: 1px solid var(--accent); padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 8px; }
+    h1 { font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .subtitle { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 16px; margin-bottom: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .card-title { font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 8px; margin-bottom: 10px; color: #fff; }
+    .card-title .icon { font-size: 18px; }
+    
+    .metric-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+    .metric-box { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 10px; text-align: center; }
+    .metric-val { font-size: 20px; font-weight: 800; color: var(--protein); }
+    .metric-lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; margin-top: 2px; }
+
+    ul.clean { list-style: none; }
+    ul.clean li { position: relative; padding-left: 18px; margin-bottom: 8px; font-size: 13.5px; }
+    ul.clean li::before { content: "•"; position: absolute; left: 4px; color: var(--accent); font-weight: bold; }
+    
+    .rule-box { background: rgba(255, 71, 87, 0.08); border-left: 3px solid var(--accent); padding: 10px 12px; border-radius: 0 8px 8px 0; margin-top: 8px; font-size: 13px; }
+    .rule-box strong { color: #fff; }
+
+    .recipe-item { padding: 10px; border-radius: 8px; background: rgba(255,255,255,0.02); margin-bottom: 8px; border: 1px solid rgba(255,255,255,0.04); }
+    .recipe-head { display: flex; justify-content: space-between; font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+    .recipe-body { font-size: 13px; color: var(--muted); }
+    .tag { font-size: 11px; padding: 2px 6px; border-radius: 4px; background: rgba(46, 213, 115, 0.15); color: var(--protein); font-weight: 600; }
+
+    .tag-carb { background: rgba(255, 165, 2, 0.15); color: var(--carb); }
+    .tag-fat { background: rgba(112, 161, 255, 0.15); color: var(--fat); }
+
+    .footer { text-align: center; font-size: 11px; color: #57606f; margin-top: 24px; padding-bottom: 12px; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="badge">Fisiología 40+ • Alto SFR</div>
+    <h1>Protocolo Bolos Anabólicos</h1>
+    <div class="subtitle">Guía de bolsillo de síntesis proteica y timing</div>
+  </div>
+
+  <!-- Métricas Clave -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🎯</span> La Regla del Bolo</div>
+    <div class="metric-row">
+      <div class="metric-box">
+        <div class="metric-val">40–50 g</div>
+        <div class="metric-lbl">Proteína / Toma</div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-val">>3.5 g</div>
+        <div class="metric-lbl">Leucina (mTOR)</div>
+      </div>
+    </div>
+    <ul class="clean">
+      <li><strong>Frecuencia:</strong> 3 a 4 tomas al día (cada 3.5 a 5 horas).</li>
+      <li><strong>Cero micro-picoteos:</strong> Tomas menores a 25 g no rompen la resistencia anabólica y saturan la digestión.</li>
+    </ul>
+  </div>
+
+  <!-- Regla del Postre -->
+  <div class="card">
+    <div class="card-title"><span class="icon">⏱️</span> Regla del Postre (45–60 min)</div>
+    <p style="font-size: 13.5px; margin-bottom: 8px;">
+      Si tomas <strong>30 g</strong> en el plato y <strong>20 g</strong> en el postre, <strong>se fusionan como un único bolo anabólico</strong> en el estómago.
+    </p>
+    <div class="rule-box">
+      <strong>Límite temporal:</strong> El postre debe consumirse dentro de los <strong>45–60 min</strong> desde el inicio de la comida. Pasados 90 min se disocian los picos.
+    </div>
+  </div>
+
+  <!-- Entreno 14:00 -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🏋️</span> Protocolo Sesión 14:00</div>
+    <ul class="clean">
+      <li><strong>Almuerzo en <60 min:</strong> <u>Suprime el batido</u>. Ve directo a comida sólida con 45–50 g de proteína real.</li>
+      <li><strong>Almuerzo en >90 min:</strong> Toma 1 batido de ~40 g al acabar. Almuerza después sin obsesión.</li>
+      <li><strong>Alerta:</strong> Evita batidos dobles de 70 g de golpe; la asimilación rápida se satura y se oxidan a urea.</li>
+    </ul>
+  </div>
+
+  <!-- 5 Ensamblajes Rápidos -->
+  <div class="card">
+    <div class="card-title"><span class="icon">🧱</span> 5 Fórmulas de ~50 g Proteína</div>
+
+    <div class="recipe-item">
+      <div class="recipe-head">
+        <span>1. Desayuno de Huevos</span>
+        <span class="tag">50 g prot</span>
+      </div>
+      <div class="recipe-body">4 huevos enteros (26 g) + <strong>400 ml leche +Proteínas</strong> (24 g) o 220 g claras.</div>
+    </div>
+
+    <div class="recipe-item">
+      <div class="recipe-head">
+        <span>2. Pechuga / Ternera</span>
+        <span class="tag">50 g prot</span>
+      </div>
+      <div class="recipe-body"><strong>200 g</strong> pechuga pollo/ternera limpia (44 g) + 80 g arroz/patata (6 g).</div>
+    </div>
+
+    <div class="recipe-item">
+      <div class="recipe-head">
+        <span>3. Pasta con Atún Exprés</span>
+        <span class="tag">50 g prot</span>
+      </div>
+      <div class="recipe-body">100 g pasta (12 g) + <strong>2 latas atún</strong> (28 g) + <strong>35 g queso curado</strong> (10 g).</div>
+    </div>
+
+    <div class="recipe-item">
+      <div class="recipe-head">
+        <span>4. Batido Híbrido Saciante</span>
+        <span class="tag">50 g prot</span>
+      </div>
+      <div class="recipe-body">Whey (39 g) + <strong>250 ml leche</strong> (~9 g) o <strong>40 g frutos secos</strong> (~9 g).</div>
+    </div>
+
+    <div class="recipe-item">
+      <div class="recipe-head">
+        <span>5. Bowl Frío / Merienda</span>
+        <span class="tag">50 g prot</span>
+      </div>
+      <div class="recipe-body">400 g queso batido 0% (38 g) + 15 g cacahuete + medio scoop whey (12 g).</div>
+    </div>
+  </div>
+
+  <!-- Reparto Macros -->
+  <div class="card">
+    <div class="card-title"><span class="icon">⚖️</span> Cuadre de Carbohidratos y Grasas</div>
+    <div style="margin-bottom: 8px;">
+      <span class="tag tag-carb">Carbohidratos</span> Concentrados en la ventana peri-entreno (antes/después) para llenar glucógeno. Evitar picoteos sueltos fuera de ahí.
+    </div>
+    <div>
+      <span class="tag tag-fat">Grasas y Fibra</span> Concentradas en desayuno y cena (lejos del esfuerzo muscular para vaciado gástrico limpio).
+    </div>
+  </div>
+
+  <div class="footer">
+    DAME CAÑA • Sistema de Optimización Biomecánica y Nutricional
+  </div>
+
+</body>
+</html>

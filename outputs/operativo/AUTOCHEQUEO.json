@@ -1,0 +1,30 @@
+{
+  "timestamp": "2026-11-04T07:52:11",
+  "higiene": {
+    "inbox_procesados": 15,
+    "sesiones_importadas": 0,
+    "pwa_archivos_actualizados": 0
+  },
+  "tests": {
+    "ok": true,
+    "total": 41
+  },
+  "fisiologia": {
+    "ultima_sesion": "2026-11-03 · Día A",
+    "siguiente_dia": "B",
+    "listos_doble_progresion": []
+  },
+  "nutricion": {
+    "ultimo_dia": "2026-11-03",
+    "kcal": 2366,
+    "kcal_obj": 2950,
+    "prot_g": 201.0,
+    "prot_obj": 165,
+    "bolos_anabolicos_35g_mas": 3,
+    "tomas_subumbral_25g": 1
+  },
+  "mejoras_detectadas": [
+    "Nutrición (2026-11-03): 1 ingesta(s) quedaron entre 5–25 g de proteína (sub-umbral leucina 40+). Agrupar en bolos de 40–50 g.",
+    "Integridad de datos: 4 discrepancia(s) histórica(s) sin resolver en data/conflictos_fuentes.json."
+  ]
+}

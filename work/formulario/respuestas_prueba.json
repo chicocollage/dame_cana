@@ -1,0 +1,541 @@
+{
+  "schema": "dame_cana_cuestionario.v1",
+  "source_document": "PREGUNTAS_PARA_DANIEL.md",
+  "source_sha256": "39cbbd3753ec737276de4fecb43ac2137f19c6b8d75cdbf42e46cfa9867ef12a",
+  "source_date": "2026-09-29",
+  "exported_at": "2026-09-30T08:48:54.251Z",
+  "response_date": null,
+  "updated_at": null,
+  "author": "Daniel",
+  "completion": {
+    "elements_with_answer": 6,
+    "elements_total": 47,
+    "meaning": "Un elemento con alguna respuesta puede tener campos pendientes; no confirma comparabilidad."
+  },
+  "draft": {
+    "q02": "Prueba con tildes & <contenido>\nSegunda línea",
+    "q05_lumbar": "0",
+    "q06": "No aplica",
+    "q08_opt1": true,
+    "q17_cintura": true,
+    "q17_frecuencia": "No sé",
+    "B01_station": "Smith unidad 2",
+    "B01_increment": "No sé"
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "number": 1,
+      "question": "Fecha en que rellenas esto:",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q02",
+      "number": 2,
+      "question": "¿Cuándo prevés entrenar de nuevo y cuánto tiempo tienes?",
+      "answered": true,
+      "response": [
+        "Prueba con tildes & <contenido>\nSegunda línea"
+      ]
+    },
+    {
+      "id": "q03",
+      "number": 3,
+      "question": "¿Entrenarás en el gimnasio habitual o en otro?",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q04",
+      "number": 4,
+      "question": "Recuperación general hoy (0 = agotado; 10 = totalmente recuperado) y horas de sueño de las últimas 2–3 noches:",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q05",
+      "number": 5,
+      "question": "Molestias actuales al entrenar o en las 24 horas posteriores (0–10, indicando movimiento si influye): lumbar ____; cadera ____; rodillas ____; hombro derecho ____; otras ____.",
+      "answered": true,
+      "response": [
+        "Lumbar: 0",
+        "Cadera: Sin responder",
+        "Rodillas: Sin responder",
+        "Hombro derecho: Sin responder",
+        "Otras molestias: Sin responder",
+        "Movimiento y respuesta posterior: Sin responder"
+      ]
+    },
+    {
+      "id": "q06",
+      "number": 6,
+      "question": "¿Hay alguna indicación profesional o limitación que deba respetar al proponer ejercicios? Basta indicar la restricción práctica, sin detallar un diagnóstico.",
+      "answered": true,
+      "response": [
+        "No aplica"
+      ]
+    },
+    {
+      "id": "q07",
+      "number": 7,
+      "question": "Desde el 26/09, ¿ha cambiado algo que afecte al entrenamiento? Por ejemplo: enfermedad, viaje, cambio de gimnasio, mucha fatiga, poco sueño, actividad excepcional.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q08",
+      "number": 8,
+      "question": "Cuando anotas un peso en la app, ¿qué sueles escribir? Marca lo que uses y aclara las excepciones: total de discos [ ]; discos por lado [ ]; número de la pila [ ]; carga total indicada por la máquina [ ]; barra más discos [ ]; lastre añadido [ ]; asistencia [ ]; otra convención: ____. Respuesta o ejemplos: ____",
+      "answered": true,
+      "response": [
+        "Convenciones: Discos por lado",
+        "Ejemplos y excepciones: Sin responder"
+      ]
+    },
+    {
+      "id": "q09",
+      "number": 9,
+      "question": "¿La app o las máquinas muestran siempre kg, o alguna muestra lb, números sin unidad o resistencia por niveles?",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q10",
+      "number": 10,
+      "question": "En Smith, Hack y máquinas de palanca, ¿incluyes el peso de la barra/trineo/estructura en el número registrado? Si no lo sabes, pon «no sé»; no lo estimaremos.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q11",
+      "number": 11,
+      "question": "¿Has mantenido habitualmente la misma estación, posición y recorrido para un ejercicio, o has cambiado entre máquinas parecidas? Si recuerdas un cambio importante y desde cuándo, anótalo.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q12",
+      "number": 12,
+      "question": "¿Sueles registrar el RIR real al terminar cada serie? Si a veces es una estimación poco fiable, dime en qué ejercicios.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q13",
+      "number": 13,
+      "question": "¿Sigue siendo tu objetivo principal desarrollar un físico musculado completo con prioridad glútea? Ordena, si quieres, tus tres prioridades actuales entre glúteos, hombros, espalda, pecho, piernas y otras.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q14",
+      "number": 14,
+      "question": "¿Cuántos días por semana puedes entrenar de manera realista y cuánto dura una sesión normal? ¿Hay días fijos o semanas con turnos/viajes?",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q15",
+      "number": 15,
+      "question": "¿Qué ejercicios te dan buen estímulo y cuáles toleras mal o prefieres evitar? Indica el motivo práctico: dolor, falta de estabilidad, equipo ocupado, poca sensación muscular, etc.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q16",
+      "number": 16,
+      "question": "Si una estación está ocupada, ¿prefieres esperar, cambiar el orden o usar una alternativa? ¿Cuánto tiempo puedes esperar?",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q17",
+      "number": 17,
+      "question": "¿Cómo prefieres revisar el progreso corporal? Marca solo lo que quieras usar: peso matutino [ ]; cintura [ ]; cadera [ ]; fotos con protocolo estable [ ]; rendimiento y sensaciones [ ]; ninguna medida por ahora [ ]. Frecuencia cómoda: ____. ¿Tienes una media de peso matutino reciente de varios días, si deseas usarla?: ____. El único registro de medidas disponible parece una prueba de conexión de agosto y no establece una tendencia.",
+      "answered": true,
+      "response": [
+        "Métodos: Cintura",
+        "Frecuencia: No sé",
+        "Media de peso y fechas: Sin responder",
+        "Notas: Sin responder"
+      ]
+    },
+    {
+      "id": "q18",
+      "number": 18,
+      "question": "¿Ha cambiado desde agosto tu preferencia de priorizar ganancia muscular aceptando una ganancia moderada de grasa?",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q19",
+      "number": 19,
+      "question": "¿Qué dato de recuperación te resulta fácil compartir una vez por semana? Sueño, cansancio, molestias, sesiones realizadas, apetito, peso medio u otro.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q20",
+      "number": 20,
+      "question": "En la exportación original de la app, dos sesiones del 15/08 aparecen con fecha 14/08 en la hoja: una prueba (`TEST-SES-1786804940`) y un «Día extra» (`msuivxba-0iepej`). ¿Confirmas que el Día extra ocurrió el 15/08?",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q21",
+      "number": 21,
+      "question": "En el ejercicio 6 del 16/08, series 1 y 2 (`msvek8wz-k1lvmc`), el JSON de la app dice peso por lado y la hoja dice peso total. ¿Recuerdas qué representaba la cifra?",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q22",
+      "number": 22,
+      "question": "El registro del 14/09 contiene series con repeticiones inverosímiles o vacías. ¿Recuerdas si fue una sesión real completa, un error de entrada o un borrador finalizado? Si no, se conservará como dato dudoso.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q23",
+      "number": 23,
+      "question": "¿Siguen siendo tus prioridades la proyección y plenitud del glúteo junto con hombros y espalda que den marco al torso? Si ha cambiado el orden o prefieres menos desarrollo de muslo, indícalo.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q24",
+      "number": 24,
+      "question": "¿Te serviría una versión corta de cada día para semanas con poca motivación o poco tiempo? ¿Cuál es el tiempo mínimo que sí sueles poder dedicarle?",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    },
+    {
+      "id": "q25",
+      "number": 25,
+      "question": "¿Ha cambiado desde julio/agosto algún medicamento, sustancia o condición de salud que afecte tu recuperación o seguridad al entrenar? Basta con decir si hay un cambio relevante y cualquier límite práctico indicado por un profesional; no hace falta incluir detalles que no quieras guardar aquí.",
+      "answered": false,
+      "response": [
+        "Sin responder"
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "slot": "B01",
+      "exercise": "Peso muerto rumano en Smith",
+      "answered": true,
+      "fields": {
+        "station": "Smith unidad 2",
+        "base": null,
+        "settings": null,
+        "increment": "No sé",
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "B02",
+      "exercise": "Curl femoral sentado",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "B03",
+      "exercise": "Remo con pecho apoyado",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "B04",
+      "exercise": "Peck-deck inverso",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "B05",
+      "exercise": "Curl predicador",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "B06",
+      "exercise": "Extensión de rodilla",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "B07",
+      "exercise": "Gemelo con rodilla extendida",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "A01",
+      "exercise": "Hip thrust en máquina",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "A02",
+      "exercise": "Sentadilla Hack Matrix profunda",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "A03",
+      "exercise": "Press inclinado",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "A04",
+      "exercise": "Jalón medio o neutro",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "A05",
+      "exercise": "Elevación lateral",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "A06",
+      "exercise": "Tríceps overhead",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "A07",
+      "exercise": "Crunch cargado",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "C01",
+      "exercise": "Sentadilla búlgara en Smith",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "C02",
+      "exercise": "Abducción sentada",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "C03",
+      "exercise": "Press horizontal convergente",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "C04",
+      "exercise": "Pullover en polea",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "C05",
+      "exercise": "Elevación lateral",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "C06",
+      "exercise": "Remo posterior con pecho apoyado",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    },
+    {
+      "slot": "C07",
+      "exercise": "Gemelo con rodilla extendida",
+      "answered": false,
+      "fields": {
+        "station": null,
+        "base": null,
+        "settings": null,
+        "increment": null,
+        "history": null,
+        "photo": null
+      }
+    }
+  ],
+  "deep_pattern": {
+    "question": "Hack, Power Squat y V-Squat: ¿cuál has probado realmente, cuál te resultó estable y tolerable, y cuál quieres usar como base del A02? No hace falta elegir si aún no las has probado.",
+    "response": null
+  },
+  "integration_status": "Respuestas aportadas para revisión; todavía no integradas en el registro ni validadas como comparables."
+}

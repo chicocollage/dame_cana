@@ -1,0 +1,174 @@
+{
+  "schema": "dame_cana_contexto.v1",
+  "fuente_migracion": {
+    "tipo": "exportacion_local_de_hoja_drive",
+    "fecha_exportacion": "2026-09-29",
+    "archivo": "data/fuentes/DAME_CANA_OPERATIVO_drive_20260929.xlsx",
+    "sha256": "12da9e173cac714d3fc2f93bd573f09f0a9af66e2c11c54c4cc210eebdb39916"
+  },
+  "estado_historico": [
+    {
+      "estado_id": "STATE-FASE-20260813",
+      "fecha_corte": "2026-08-13T00:00:00",
+      "categoria": "FASE",
+      "clave": "fase_vigente",
+      "valor": "Transición completada desde entrada/calibración hacia volumen base; trabajo productivo habitual RIR 1–2.",
+      "estado": "ACTIVA",
+      "prioridad": "ALTA",
+      "fuente": "02 + 03",
+      "notas": "### Fase vigente\n\nLa fase de entrada/calibración ya ha cumplido su función inicial. A partir de la siguiente exposición de cada día se utilizará **volumen base**, salvo que una máquina nueva, dolor, mala tolerancia o una excepción registrada en Estado justifique temporalmente una calibración más conservadora.\n\nEl paso a volumen base **no autoriza series adicionales** fuera de esta plantilla por una sensación aislada de sesión ligera.\n\n---",
+      "_fila_fuente": 2
+    },
+    {
+      "estado_id": "STATE-RIR-20260813",
+      "fecha_corte": "2026-08-13T00:00:00",
+      "categoria": "ENTRENAMIENTO",
+      "clave": "rir_operativo",
+      "valor": "RIR 1–2 en series productivas estables; fallo deliberado no requerido y evitado en patrón profundo, RDL y Bulgarian.",
+      "estado": "ACTIVA",
+      "prioridad": "ALTA",
+      "fuente": "02 + 03",
+      "notas": null,
+      "_fila_fuente": 3
+    },
+    {
+      "estado_id": "STATE-DEEP-20260813",
+      "fecha_corte": "2026-08-13T00:00:00",
+      "categoria": "MAQUINAS",
+      "clave": "patron_profundo_dia_A",
+      "valor": "Sentadilla Hack Matrix profunda como selector prioritario provisional; estación concreta pendiente de validar. Power Squat y V-Squat siguen candidatas no comparables.",
+      "estado": "ACTIVA",
+      "prioridad": "ALTA",
+      "fuente": "02 + 03 + 06",
+      "notas": null,
+      "_fila_fuente": 4
+    },
+    {
+      "estado_id": "STATE-LUMBAR-20260813",
+      "fecha_corte": "2026-08-13T00:00:00",
+      "categoria": "SALUD_DINAMICA",
+      "clave": "dolor_lumbar",
+      "valor": "0/10; puede existir tensión transitoria postentreno no persistente.",
+      "estado": "CONFIRMADO_ACTUAL",
+      "prioridad": "ALTA",
+      "fuente": "02",
+      "notas": "### Lumbar\n\n- Dolor habitual actual: **0/10** (13/08).\n- Puede aparecer tensión lumbar transitoria tras entrenar, sin persistencia posterior.\n- No existe actualmente una restricción que obligue a retirar bisagra o patrones de pierna.\n- RDL Smith conserva una señal histórica del 01/08: cuádriceps demasiado presentes y ligera carga lumbar transitoria. Si reaparece, revisar técnica, recorrido, colocación y limitante antes de progresar.",
+      "_fila_fuente": 5
+    },
+    {
+      "estado_id": "STATE-HIP-20260813",
+      "fecha_corte": "2026-08-13T00:00:00",
+      "categoria": "SALUD_DINAMICA",
+      "clave": "cadera",
+      "valor": "0/10.",
+      "estado": "CONFIRMADO_ACTUAL",
+      "prioridad": "ALTA",
+      "fuente": "02",
+      "notas": null,
+      "_fila_fuente": 6
+    },
+    {
+      "estado_id": "STATE-KNEE-20260813",
+      "fecha_corte": "2026-08-13T00:00:00",
+      "categoria": "SALUD_DINAMICA",
+      "clave": "rodillas",
+      "valor": "0/10.",
+      "estado": "CONFIRMADO_ACTUAL",
+      "prioridad": "ALTA",
+      "fuente": "02",
+      "notas": null,
+      "_fila_fuente": 7
+    },
+    {
+      "estado_id": "STATE-SHOULDER-20260814",
+      "fecha_corte": "2026-08-14T00:00:00",
+      "categoria": "SALUD_DINAMICA",
+      "clave": "hombro_derecho",
+      "valor": "Antecedente de dolor; actualmente asintomático.",
+      "estado": "CONFIRMADO_ACTUAL",
+      "prioridad": "MEDIA",
+      "fuente": "01 + 16",
+      "notas": null,
+      "_fila_fuente": 8
+    },
+    {
+      "estado_id": "STATE-NUTRITION-20260814",
+      "fecha_corte": "2026-08-14T00:00:00",
+      "categoria": "NUTRICION",
+      "clave": "preferencia_ganancia",
+      "valor": "A — priorizar hipertrofia y aceptar ganancia moderada de grasa si es necesaria; no implica superávit indiscriminado.",
+      "estado": "ACTIVA",
+      "prioridad": "ALTA",
+      "fuente": "01 + 16",
+      "notas": null,
+      "_fila_fuente": 9
+    },
+    {
+      "estado_id": "STATE-SEQUENCE-20260812",
+      "fecha_corte": "2026-08-12T00:00:00",
+      "categoria": "CONTINUIDAD",
+      "clave": "siguiente_dia_derivado",
+      "valor": "Tras la última sesión real Día C del 12/08/2026, la siguiente exposición se deriva como Día A.",
+      "estado": "DERIVADO",
+      "prioridad": "MEDIA",
+      "fuente": "02 + JSON",
+      "notas": null,
+      "_fila_fuente": 10
+    }
+  ],
+  "decisiones": [
+    {
+      "ID": "D-2026-08-13-01",
+      "Fecha": "2026-08-13T00:00:00",
+      "Dominio": "Programa",
+      "Decisión": "Mantener M4 integral 3D con prioridad glútea dominante dentro de un físico completo muy musculado.",
+      "Estado": "ACTIVA",
+      "Motivo / datos usados": "Consolidación v2 del programa aceptado; no convertir migración documental en cambio de prescripción.",
+      "Variable modificada": "Arquitectura/programa activo",
+      "Source origen": "03",
+      "Criterio de revisión": "Revisar por rendimiento, recuperación, adherencia y lectura estética; no por una sesión aislada.",
+      "Sustituida/cerrada por": null,
+      "_fila_fuente": 2
+    },
+    {
+      "ID": "D-2026-08-13-02",
+      "Fecha": "2026-08-13T00:00:00",
+      "Dominio": "Intensidad",
+      "Decisión": "Usar habitualmente RIR 1–2 en series productivas estables; fallo solo selectivo.",
+      "Estado": "ACTIVA",
+      "Motivo / datos usados": "Preferencia actual y reglas de 05; no utilizar fallo deliberado en RDL/sentadilla profunda/Bulgarian.",
+      "Variable modificada": "RIR operativo",
+      "Source origen": "05",
+      "Criterio de revisión": "Recalibrar si RIR no es fiable o cae rendimiento/recuperación.",
+      "Sustituida/cerrada por": null,
+      "_fila_fuente": 3
+    },
+    {
+      "ID": "D-2026-08-13-03",
+      "Fecha": "2026-08-13T00:00:00",
+      "Dominio": "Máquinas",
+      "Decisión": "Mantener el patrón profundo como selector provisional hasta validar Hack, Power Squat o V-Squat.",
+      "Estado": "ACTIVA",
+      "Motivo / datos usados": "Tres familias disponibles pero no comparables ni probadas; falta geometría/ajustes/load_basis.",
+      "Variable modificada": "Ejercicio índice Día A",
+      "Source origen": "03 + 06",
+      "Criterio de revisión": "Elegir tras prueba de encaje: ROM, estabilidad, tolerancia, limitante, progresabilidad y crecimiento colateral.",
+      "Sustituida/cerrada por": null,
+      "_fila_fuente": 4
+    },
+    {
+      "ID": "D-2026-08-14-01",
+      "Fecha": "2026-08-14T00:00:00",
+      "Dominio": "Nutrición",
+      "Decisión": "Priorizar hipertrofia y aceptar una ganancia moderada de grasa si resulta necesaria.",
+      "Estado": "ACTIVA",
+      "Motivo / datos usados": "Preferencia personal A confirmada; no implica superávit indiscriminado.",
+      "Variable modificada": "Estrategia de ganancia",
+      "Source origen": "01 + 16",
+      "Criterio de revisión": "Ajustar con peso matutino, cintura, rendimiento, apetito y tolerancia.",
+      "Sustituida/cerrada por": null,
+      "_fila_fuente": 5
+    }
+  ],
+  "nota": "Las entradas de salud fechadas en agosto requieren confirmación actual antes de prescribir."
+}

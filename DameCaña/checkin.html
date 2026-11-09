@@ -1,0 +1,940 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light only" />
+    <meta name="theme-color" content="#DAD7CD" />
+    <title>Check-in semanal · DameCaña</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" href="dclog-icon.svg?v=tn17" type="image/svg+xml" />
+    <style>
+      :root {
+        color-scheme: light only;
+        --aire-stone: #DAD7CD;
+        --aire-paper: #E9E8E1;
+        --aire-input: #F5F4EF;
+        --aire-ink: #16181C;
+        --aire-ink-soft: #585954;
+        --aire-ink-faint: #B2B0A8;
+        --aire-lime: #CCFF00;
+        --aire-orange: #EB4818;
+        --aire-cyan-pill: #DDE7E5;
+        --body: "Inter", system-ui, -apple-system, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, monospace;
+      }
+
+      * { box-sizing: border-box; text-shadow: none !important; }
+      html { background: var(--aire-stone); scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--aire-ink);
+        background-color: var(--aire-stone);
+        font-family: var(--body);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      button, input, textarea { font: inherit; color: inherit; }
+
+      /* Cabecera Editorial Pegajosa */
+      .app-header {
+        position: sticky;
+        z-index: 40;
+        top: 0;
+        display: flex;
+        min-height: 58px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 8px max(16px, calc((100% - 760px) / 2 + 16px));
+        background: rgba(218, 215, 205, 0.92);
+        border-bottom: 1px solid rgba(22, 24, 28, 0.12);
+        backdrop-filter: blur(10px);
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: var(--aire-ink);
+        font: 900 16px/1 var(--mono);
+        letter-spacing: -0.02em;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 32px;
+        height: 32px;
+        place-items: center;
+        border-radius: 10px;
+        color: var(--aire-ink);
+        background: var(--aire-lime);
+        border: 1.6px solid var(--aire-ink);
+        font: 900 13px/1 var(--mono);
+      }
+
+      .header-nav {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .header-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        min-height: 32px;
+        padding: 5px 11px;
+        border-radius: 999px;
+        border: 1.5px solid var(--aire-ink);
+        background: var(--aire-paper);
+        color: var(--aire-ink);
+        font: 700 11px/1 var(--mono);
+        text-decoration: none;
+        transition: transform 0.12s ease, background 0.12s ease;
+      }
+      .header-pill:active { transform: scale(0.96); }
+      .header-pill.is-current {
+        background: var(--aire-lime);
+        font-weight: 800;
+      }
+
+      main {
+        width: min(100%, 760px);
+        margin: 0 auto;
+        padding: 18px 16px 88px;
+      }
+
+      /* Tarjeta de Introducción tipo Ficha Clínica */
+      .intro {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 18px;
+        border-radius: 26px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-paper);
+        box-shadow: 0 14px 30px rgba(22, 24, 28, 0.08);
+      }
+
+      .intro-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 10px;
+        border: 1.3px solid var(--aire-ink);
+        border-radius: 999px;
+        background: var(--aire-cyan-pill);
+        color: var(--aire-ink);
+        font: 800 9.5px/1 var(--mono);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--aire-orange);
+      }
+
+      .date-stamp {
+        display: inline-flex;
+        align-items: center;
+        padding: 4px 10px;
+        border-radius: 999px;
+        border: 1.2px solid rgba(22, 24, 28, 0.25);
+        background: var(--aire-input);
+        color: var(--aire-ink-soft);
+        font: 700 10px/1 var(--mono);
+        text-transform: capitalize;
+      }
+
+      h1 {
+        margin: 2px 0 0;
+        font: 900 clamp(22px, 5.5vw, 30px)/1.08 var(--mono);
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: var(--aire-ink);
+      }
+
+      .intro-copy {
+        margin: 0;
+        color: var(--aire-ink-soft);
+        font-size: 13px;
+        line-height: 1.48;
+      }
+
+      form { margin-top: 18px; }
+
+      /* Selector de Modo en Cápsula Segmentada de 3 vías */
+      .type-picker {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        margin: 0 0 18px;
+        padding: 6px;
+        border-radius: 22px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-paper);
+      }
+
+      .type-picker legend {
+        grid-column: 1 / -1;
+        padding: 4px 8px 2px;
+        color: var(--aire-ink-soft);
+        font: 800 9px/1 var(--mono);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .type-option { position: relative; cursor: pointer; }
+      .type-option input { position: absolute; opacity: 0; pointer-events: none; }
+      .type-option span {
+        display: flex;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 6px;
+        border-radius: 15px;
+        border: 1.4px solid transparent;
+        background: var(--aire-input);
+        color: var(--aire-ink-soft);
+        font: 800 11.5px/1.15 var(--mono);
+        text-align: center;
+        transition: all 0.14s ease;
+      }
+      .type-option input:checked + span {
+        border-color: var(--aire-ink);
+        background: var(--aire-lime);
+        color: var(--aire-ink);
+        box-shadow: 0 2px 0 var(--aire-ink);
+        transform: translateY(-1px);
+      }
+      .type-option input:focus-visible + span {
+        outline: 2px solid var(--aire-orange);
+        outline-offset: 2px;
+      }
+
+      /* Tarjetas de Sección Numeradas al Estilo Mano 3 */
+      .form-section {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 16px;
+        padding: 18px 16px;
+        border-radius: 26px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-paper);
+        box-shadow: 0 14px 30px rgba(22, 24, 28, 0.08);
+      }
+
+      .section-top-bar {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+
+      .section-index {
+        display: grid;
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        place-items: center;
+        border-radius: 11px;
+        border: 1.8px solid var(--aire-ink);
+        background: var(--aire-input);
+        color: var(--aire-ink);
+        font: 900 14px/1 var(--mono);
+      }
+
+      .section-heading {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      h2 {
+        margin: 0;
+        font: 900 clamp(16px, 4.2vw, 20px)/1.12 var(--mono);
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: var(--aire-ink);
+      }
+
+      .section-hint {
+        color: var(--aire-ink-soft);
+        font: 600 10.5px/1.25 var(--mono);
+      }
+
+      /* Ilustración Anatómica Reactiva en la Tarjeta 02 (Dolores y Molestias) */
+      .pain-anat-bay {
+        position: absolute;
+        top: 10px;
+        right: 6px;
+        width: 112px;
+        height: 132px;
+        pointer-events: none;
+        z-index: 1;
+      }
+      .pain-anat-bay img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: top right;
+        mix-blend-mode: multiply;
+        opacity: 0.68;
+        -webkit-mask-image: radial-gradient(ellipse 88% 86% at 62% 45%, #000 54%, rgba(0,0,0,0.4) 80%, transparent 100%);
+        mask-image: radial-gradient(ellipse 88% 86% at 62% 45%, #000 54%, rgba(0,0,0,0.4) 80%, transparent 100%);
+        transition: opacity 0.2s ease;
+      }
+
+      .field-grid {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      .field {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 6;
+        gap: 6px;
+        padding: 11px 12px;
+        border-radius: 18px;
+        background: rgba(245, 244, 239, 0.66);
+        border: 1.2px solid rgba(22, 24, 28, 0.14);
+      }
+      .field.wide { grid-column: 1 / -1; }
+      .field.half { grid-column: span 6; }
+
+      .field-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        font: 700 12px/1.2 var(--mono);
+        color: var(--aire-ink);
+      }
+
+      .field-label output {
+        display: inline-grid;
+        min-width: 30px;
+        height: 24px;
+        place-items: center;
+        padding: 0 7px;
+        border-radius: 999px;
+        background: var(--aire-ink);
+        color: var(--aire-lime);
+        font: 800 12px/1 var(--mono);
+      }
+
+      #painSection .field-label output {
+        background: var(--aire-input);
+        color: var(--aire-ink);
+        border: 1.3px solid var(--aire-ink);
+      }
+      #painSection .field[data-alert="true"] .field-label output {
+        background: var(--aire-orange);
+        color: var(--aire-input);
+        border-color: var(--aire-ink);
+      }
+
+      .unit {
+        padding: 2px 7px;
+        border-radius: 999px;
+        background: var(--aire-paper);
+        border: 1px solid rgba(22, 24, 28, 0.2);
+        color: var(--aire-ink-soft);
+        font: 700 9px/1 var(--mono);
+        text-transform: uppercase;
+      }
+
+      input[type="number"], input[type="text"], textarea {
+        width: 100%;
+        min-height: 40px;
+        padding: 8px 12px;
+        color: var(--aire-ink);
+        border: 1.5px solid var(--aire-ink);
+        border-radius: 13px;
+        outline: 0;
+        background: var(--aire-input);
+        font: 700 14px/1.2 var(--mono);
+      }
+      textarea {
+        min-height: 92px;
+        resize: vertical;
+        line-height: 1.45;
+        font-size: 12.5px;
+      }
+      input:focus, textarea:focus {
+        border-color: var(--aire-orange);
+        box-shadow: 0 0 0 2px rgba(235, 72, 24, 0.18);
+      }
+
+      /* Sliders Táctiles Aire Redondeado */
+      input[type="range"] {
+        width: 100%;
+        height: 32px;
+        margin: 2px 0;
+        padding: 0;
+        appearance: none;
+        -webkit-appearance: none;
+        background: transparent;
+        cursor: pointer;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        height: 8px;
+        border: 1.4px solid var(--aire-ink);
+        border-radius: 999px;
+        background: var(--aire-input);
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        width: 22px;
+        height: 22px;
+        margin-top: -8px;
+        border: 1.8px solid var(--aire-ink);
+        border-radius: 50%;
+        appearance: none;
+        -webkit-appearance: none;
+        background: var(--aire-lime);
+        box-shadow: 0 2px 4px rgba(22, 24, 28, 0.2);
+      }
+      #painSection input[type="range"]::-webkit-slider-thumb {
+        background: var(--aire-orange);
+      }
+      input[type="range"]::-moz-range-track {
+        height: 8px;
+        border: 1.4px solid var(--aire-ink);
+        border-radius: 999px;
+        background: var(--aire-input);
+      }
+      input[type="range"]::-moz-range-thumb {
+        width: 22px;
+        height: 22px;
+        border: 1.8px solid var(--aire-ink);
+        border-radius: 50%;
+        background: var(--aire-lime);
+      }
+
+      .range-scale {
+        display: flex;
+        justify-content: space-between;
+        color: var(--aire-ink-soft);
+        font: 600 9.5px/1 var(--mono);
+      }
+
+      .measure-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+        margin-top: 2px;
+      }
+      .measure-grid label {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        color: var(--aire-ink-soft);
+        font: 700 9.5px/1 var(--mono);
+        text-transform: uppercase;
+      }
+
+      /* Tira Antropométrica de Cálculo */
+      .calculation-strip {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 4px;
+        padding: 10px;
+        border-radius: 18px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-input);
+      }
+      .calculation-strip div {
+        padding: 10px 12px;
+        border-radius: 13px;
+        background: var(--aire-paper);
+        border: 1.2px solid rgba(22, 24, 28, 0.16);
+      }
+      .calculation-strip div:last-child {
+        background: var(--aire-ink);
+        color: var(--aire-input);
+        border-color: var(--aire-ink);
+      }
+      .calculation-strip span {
+        display: block;
+        color: var(--aire-ink-soft);
+        font: 700 9px/1.1 var(--mono);
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      .calculation-strip div:last-child span {
+        color: var(--aire-ink-faint);
+      }
+      .calculation-strip strong {
+        display: block;
+        margin-top: 6px;
+        color: var(--aire-ink);
+        font: 900 22px/1 var(--mono);
+      }
+      .calculation-strip div:last-child strong {
+        color: var(--aire-lime);
+      }
+      .calculation-strip small {
+        margin-left: 3px;
+        color: var(--aire-ink-soft);
+        font: 700 10px/1 var(--mono);
+      }
+
+      /* Zona de Guardado */
+      .submit-zone {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px;
+        border-radius: 26px;
+        border: 1.6px solid var(--aire-ink);
+        background: var(--aire-paper);
+        box-shadow: 0 14px 30px rgba(22, 24, 28, 0.08);
+      }
+      .submit-copy {
+        margin: 0;
+        color: var(--aire-ink-soft);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+      .submit-button {
+        min-height: 46px;
+        padding: 10px 22px;
+        color: var(--aire-ink);
+        border: 1.8px solid var(--aire-ink);
+        border-radius: 16px;
+        background: var(--aire-lime);
+        box-shadow: 0 3px 0 var(--aire-ink);
+        font: 900 13px/1 var(--mono);
+        white-space: nowrap;
+        cursor: pointer;
+        transition: transform 0.1s ease;
+      }
+      .submit-button:active {
+        transform: translateY(2px);
+        box-shadow: 0 1px 0 var(--aire-ink);
+      }
+      .submit-button:disabled { cursor: wait; opacity: 0.65; }
+
+      .submit-status {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin: 12px 0 0;
+        padding: 12px 16px;
+        border-radius: 18px;
+        color: var(--aire-ink);
+        border: 1.5px solid var(--aire-ink);
+        border-left: 5px solid var(--aire-ink);
+        background: var(--aire-input);
+      }
+      .submit-status[data-state="synced"]:not([data-just-submitted="true"]) {
+        display: none;
+      }
+      .submit-status div { display: grid; gap: 2px; }
+      .submit-status strong { font: 800 12px/1.1 var(--mono); }
+      .submit-status small { color: var(--aire-ink-soft); font-size: 11px; }
+      .submit-status[data-state="pending"] { border-left-color: var(--aire-orange); }
+      .submit-status[data-state="error"] { border-left-color: var(--aire-orange); background: #FCEAE3; }
+
+      .retry-button {
+        min-height: 34px;
+        padding: 6px 12px;
+        color: var(--aire-ink);
+        border: 1.4px solid var(--aire-ink);
+        border-radius: 12px;
+        background: var(--aire-cyan-pill);
+        font: 800 11px/1 var(--mono);
+        cursor: pointer;
+      }
+
+      @media (max-width: 640px) {
+        .field, .field.half { grid-column: 1 / -1; }
+        .calculation-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .calculation-strip strong { font-size: 17px; }
+        .submit-zone { flex-direction: column; align-items: stretch; }
+        .submit-button { width: 100%; }
+        .pain-anat-bay { width: 92px; height: 110px; opacity: 0.55; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="./" aria-label="Volver al entrenamiento">
+        <span class="brand-mark" aria-hidden="true">DC</span>
+        <span>DameCaña</span>
+      </a>
+      <nav class="header-nav" aria-label="Navegación rápida">
+        <a class="header-pill" href="./"><i class="ph-bold ph-barbell"></i> <span>Entreno</span></a>
+        <a class="header-pill is-current" href="checkin.html"><i class="ph-bold ph-clipboard-text"></i> <span>Check-in</span></a>
+        <a class="header-pill" href="biohacks.html"><i class="ph-bold ph-lightning"></i> <span>Biohacks</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="pageTitle">
+        <div class="intro-top">
+          <div class="eyebrow">CALIBRACIÓN BIOMÉTRICA · CHECKIN.V1</div>
+          <strong class="date-stamp" id="currentDate"></strong>
+        </div>
+        <h1 id="pageTitle">Cómo llega tu cuerpo esta semana</h1>
+        <p class="intro-copy">
+          Registra recuperación, molestias articulares y antropometría en una sola ficha técnica. Se guarda localmente y sincroniza con tu hoja de seguimiento.
+        </p>
+      </section>
+
+      <form id="checkinForm">
+        <fieldset class="type-picker">
+          <legend>Modo de registro</legend>
+          <label class="type-option">
+            <input type="radio" name="record_type" value="Check-in semanal" checked />
+            <span>Check-in semanal</span>
+          </label>
+          <label class="type-option">
+            <input type="radio" name="record_type" value="Medidas" />
+            <span>Medidas</span>
+          </label>
+          <label class="type-option">
+            <input type="radio" name="record_type" value="Dolor / incidencia" />
+            <span>Dolor / incidencia</span>
+          </label>
+        </fieldset>
+
+        <section class="form-section" aria-labelledby="recoveryTitle">
+          <div class="section-top-bar">
+            <div class="section-index" aria-hidden="true">01</div>
+            <div class="section-heading">
+              <h2 id="recoveryTitle">Sueño y recuperación</h2>
+              <span class="section-hint">Promedio de los últimos 7 días</span>
+            </div>
+          </div>
+          <div class="field-grid">
+            <label class="field">
+              <span class="field-label"><span>Horas medias de sueño</span><span class="unit">horas</span></span>
+              <input name="sleep_hours" type="number" min="0" max="24" step="0.1" inputmode="decimal" placeholder="7.5" />
+            </label>
+            <label class="field">
+              <span class="field-label"><span>Calidad de sueño</span><output for="sleepQuality">3</output></span>
+              <input id="sleepQuality" name="sleep_quality" type="range" min="1" max="5" step="1" value="3" />
+              <span class="range-scale"><span>1 · Muy mala</span><span>5 · Óptima</span></span>
+            </label>
+            <label class="field">
+              <span class="field-label"><span>Nivel de fatiga acumulada</span><output for="fatigue">3</output></span>
+              <input id="fatigue" name="fatigue" type="range" min="1" max="5" step="1" value="3" />
+              <span class="range-scale"><span>1 · Fresco</span><span>5 · Muy alta</span></span>
+            </label>
+            <label class="field">
+              <span class="field-label"><span>Apetito y energía diaria</span><output for="appetiteEnergy">3</output></span>
+              <input id="appetiteEnergy" name="appetite_energy" type="range" min="1" max="5" step="1" value="3" />
+              <span class="range-scale"><span>1 · Muy bajos</span><span>5 · Muy altos</span></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="form-section" id="painSection" aria-labelledby="painTitle">
+          <div class="pain-anat-bay" aria-hidden="true">
+            <img id="painAnatImg" src="assets/mano3/18_gluteo_mayor_inferior.webp" alt="" loading="lazy" />
+          </div>
+          <div class="section-top-bar">
+            <div class="section-index" aria-hidden="true">02</div>
+            <div class="section-heading">
+              <h2 id="painTitle">Dolores y molestias</h2>
+              <span class="section-hint">0 = sin molestia · 10 = limitante</span>
+            </div>
+          </div>
+          <div class="field-grid">
+            <label class="field" data-anat="assets/mano3/18_gluteo_mayor_inferior.webp">
+              <span class="field-label"><span>Agujetas en glúteo</span><output for="sorenessGlute">0</output></span>
+              <input id="sorenessGlute" name="soreness_glute" type="range" min="0" max="10" step="1" value="0" />
+              <span class="range-scale"><span>0 · Nada</span><span>10 · Máximas</span></span>
+            </label>
+            <label class="field" data-anat="assets/mano3/05_dorsal_inferiores_iliacas.webp">
+              <span class="field-label"><span>Molestia lumbar</span><output for="painLumbar">0</output></span>
+              <input id="painLumbar" name="pain_lumbar" type="range" min="0" max="10" step="1" value="0" />
+              <span class="range-scale"><span>0 · Nada</span><span>10 · Máxima</span></span>
+            </label>
+            <label class="field wide" data-anat="assets/mano3/11_deltoides_lateral.webp">
+              <span class="field-label"><span>Molestia hombro derecho</span><output for="painShoulder">0</output></span>
+              <input id="painShoulder" name="pain_shoulder" type="range" min="0" max="10" step="1" value="0" />
+              <span class="range-scale"><span>0 · Asintomático</span><span>10 · Máxima</span></span>
+            </label>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="measureTitle">
+          <div class="section-top-bar">
+            <div class="section-index" aria-hidden="true">03</div>
+            <div class="section-heading">
+              <h2 id="measureTitle">Medidas corporales</h2>
+              <span class="section-hint">En ayunas y mismas condiciones</span>
+            </div>
+          </div>
+          <div class="field-grid">
+            <label class="field half">
+              <span class="field-label"><span>Peso medio matutino</span><span class="unit">kg</span></span>
+              <input name="weight_avg" type="number" min="20" max="350" step="0.1" inputmode="decimal" placeholder="78.5" />
+            </label>
+            <label class="field half">
+              <span class="field-label"><span>Días pesados esta semana</span><span class="unit">1–7</span></span>
+              <input name="weight_count" type="number" min="1" max="7" step="1" inputmode="numeric" placeholder="7" />
+            </label>
+
+            <div class="field half">
+              <span class="field-label"><span>Cintura</span><span class="unit">cm · 3 tomas</span></span>
+              <div class="measure-grid">
+                <label>Toma 1<input name="waist_1" type="number" min="20" max="250" step="0.1" inputmode="decimal" /></label>
+                <label>Toma 2<input name="waist_2" type="number" min="20" max="250" step="0.1" inputmode="decimal" /></label>
+                <label>Toma 3<input name="waist_3" type="number" min="20" max="250" step="0.1" inputmode="decimal" /></label>
+              </div>
+            </div>
+
+            <div class="field half">
+              <span class="field-label"><span>Cadera / glúteo</span><span class="unit">cm · 3 tomas</span></span>
+              <div class="measure-grid">
+                <label>Toma 1<input name="hip_1" type="number" min="20" max="250" step="0.1" inputmode="decimal" /></label>
+                <label>Toma 2<input name="hip_2" type="number" min="20" max="250" step="0.1" inputmode="decimal" /></label>
+                <label>Toma 3<input name="hip_3" type="number" min="20" max="250" step="0.1" inputmode="decimal" /></label>
+              </div>
+            </div>
+
+            <div class="calculation-strip" aria-live="polite">
+              <div><span>Promedio cintura</span><strong id="waistAverage">—</strong></div>
+              <div><span>Promedio cadera</span><strong id="hipAverage">—</strong></div>
+              <div><span>Ratio cadera ÷ cintura</span><strong id="waistHipRatio">—</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section" aria-labelledby="notesTitle">
+          <div class="section-top-bar">
+            <div class="section-index" aria-hidden="true">04</div>
+            <div class="section-heading">
+              <h2 id="notesTitle">Contexto y comentarios</h2>
+              <span class="section-hint">Variables para ajustar la semana</span>
+            </div>
+          </div>
+          <div class="field-grid">
+            <label class="field wide">
+              <span class="field-label"><span>Cambios de nutrición o descanso</span></span>
+              <input name="nutrition_changes" type="text" maxlength="500" placeholder="Ej.: superávit limpio, comida libre sábado, turno partido…" />
+            </label>
+            <label class="field wide">
+              <span class="field-label"><span>Notas biomecánicas o incidencias</span></span>
+              <textarea name="notes" maxlength="2000" placeholder="Sensaciones en estaciones clave, estabilidad, bombeo o cualquier detalle útil…"></textarea>
+            </label>
+          </div>
+        </section>
+
+        <div class="submit-zone">
+          <p class="submit-copy">Puedes guardar un registro parcial con al menos un dato u observación. Esquema local y nube <strong>checkin.v1</strong>.</p>
+          <button class="submit-button" id="submitButton" type="submit">Guardar Check-in →</button>
+        </div>
+        <div class="submit-status" id="submitStatus" data-state="synced" role="status" aria-live="polite">
+          <div>
+            <strong id="submitStatusLabel">🟢 Sincronizado</strong>
+            <small id="submitStatusDetail">Subido a Google Drive.</small>
+          </div>
+          <button class="retry-button" id="retrySyncButton" type="button" hidden>Reintentar sincronización</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="sync-queue.js?v=tn17"></script>
+    <script>
+      const form = document.getElementById("checkinForm");
+      const submitStatus = document.getElementById("submitStatus");
+      const submitStatusLabel = document.getElementById("submitStatusLabel");
+      const submitStatusDetail = document.getElementById("submitStatusDetail");
+      const retrySyncButton = document.getElementById("retrySyncButton");
+      const painAnatImg = document.getElementById("painAnatImg");
+      let focusedSyncEventId = "";
+
+      function localDate() {
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, "0");
+        const day = String(now.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+      }
+
+      const date = localDate();
+      document.getElementById("currentDate").textContent = new Intl.DateTimeFormat("es-ES", {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+      }).format(new Date(date + "T12:00:00"));
+
+      const touchedFields = new Set();
+      document.querySelectorAll('input[type="range"]').forEach((range) => {
+        const output = document.querySelector(`output[for="${range.id}"]`);
+        const fieldCard = range.closest(".field");
+        const update = () => {
+          output.value = range.value;
+          if (fieldCard && range.closest("#painSection")) {
+            fieldCard.dataset.alert = Number(range.value) > 0 ? "true" : "false";
+          }
+        };
+        range.addEventListener("input", () => {
+          touchedFields.add(range.name);
+          update();
+          if (fieldCard && fieldCard.dataset.anat && painAnatImg) {
+            painAnatImg.src = fieldCard.dataset.anat;
+          }
+        });
+        update();
+      });
+
+      function valuesFor(names) {
+        return names.map((name) => Number(form.elements[name].value));
+      }
+
+      function average(values) {
+        if (values.some((value) => !Number.isFinite(value) || value <= 0)) return null;
+        return values.reduce((sum, value) => sum + value, 0) / values.length;
+      }
+
+      function updateMeasurements() {
+        const waist = average(valuesFor(["waist_1", "waist_2", "waist_3"]));
+        const hip = average(valuesFor(["hip_1", "hip_2", "hip_3"]));
+        document.getElementById("waistAverage").innerHTML = waist == null ? "—" : `${waist.toFixed(1)}<small>cm</small>`;
+        document.getElementById("hipAverage").innerHTML = hip == null ? "—" : `${hip.toFixed(1)}<small>cm</small>`;
+        document.getElementById("waistHipRatio").textContent = waist == null || hip == null ? "—" : (hip / waist).toFixed(3);
+      }
+
+      ["waist_1", "waist_2", "waist_3", "hip_1", "hip_2", "hip_3"].forEach((name) => {
+        form.elements[name].addEventListener("input", updateMeasurements);
+      });
+
+      function nullableNumber(name) {
+        const field = form.elements[name];
+        if (field.type === "range" && !touchedFields.has(name)) return null;
+        const value = String(field.value || "").trim();
+        if (!value) return null;
+        const number = Number(value);
+        return Number.isFinite(number) ? number : null;
+      }
+
+      function nullableText(name) {
+        const value = String(form.elements[name].value || "").trim();
+        return value || null;
+      }
+
+      function buildPayload(eventId) {
+        const payload = {
+          schema: "checkin.v1",
+          type: form.elements.record_type.value,
+          event_id: eventId,
+          date: localDate(),
+          sleep_hours: nullableNumber("sleep_hours"),
+          sleep_quality: nullableNumber("sleep_quality"),
+          fatigue: nullableNumber("fatigue"),
+          appetite_energy: nullableNumber("appetite_energy"),
+          soreness_glute: nullableNumber("soreness_glute"),
+          pain_lumbar: nullableNumber("pain_lumbar"),
+          pain_shoulder: nullableNumber("pain_shoulder"),
+          weight_avg: nullableNumber("weight_avg"),
+          weight_count: nullableNumber("weight_count"),
+          waist_1: nullableNumber("waist_1"),
+          waist_2: nullableNumber("waist_2"),
+          waist_3: nullableNumber("waist_3"),
+          hip_1: nullableNumber("hip_1"),
+          hip_2: nullableNumber("hip_2"),
+          hip_3: nullableNumber("hip_3"),
+          nutrition_changes: nullableText("nutrition_changes"),
+          notes: nullableText("notes")
+        };
+        const fields = Object.keys(payload).filter((key) => !["schema", "type", "event_id", "date"].includes(key));
+        payload.missing_fields = fields.filter((key) => payload[key] == null);
+        payload.record_status = payload.missing_fields.length ? "partial" : "complete";
+        return payload;
+      }
+
+      function hasCheckinContent(payload) {
+        return Object.entries(payload).some(([key, value]) => {
+          if (["schema", "type", "event_id", "date", "missing_fields", "record_status"].includes(key)) return false;
+          return typeof value === "number" || (typeof value === "string" && value.trim().length >= 3);
+        });
+      }
+
+      function renderSyncStatus() {
+        const status = TrainingSync.summary(focusedSyncEventId);
+        submitStatus.dataset.state = status.state;
+        submitStatusLabel.textContent = status.label;
+        submitStatusDetail.textContent = status.detail;
+        retrySyncButton.hidden = !status.can_retry;
+      }
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!form.reportValidity()) return;
+        submitStatus.dataset.justSubmitted = "true";
+        try {
+          const eventId = TrainingSync.createEventId();
+          const payload = buildPayload(eventId);
+          if (!hasCheckinContent(payload)) {
+            submitStatus.dataset.state = "error";
+            submitStatusLabel.textContent = "Añade al menos un dato u observación";
+            submitStatusDetail.textContent = "Desliza algún indicador o anota un dato antes de guardar.";
+            retrySyncButton.hidden = true;
+            return;
+          }
+          TrainingSync.saveCheckinLocal(payload);
+          const queued = TrainingSync.enqueuePayload(payload, { recordId: eventId });
+          focusedSyncEventId = queued.event_id;
+          renderSyncStatus();
+        } catch (error) {
+          console.error("No se pudo guardar el check-in localmente", error);
+          submitStatus.dataset.state = "error";
+          submitStatusLabel.textContent = "🔴 Error al guardar en el móvil";
+          submitStatusDetail.textContent = "No se ha enviado nada. Conserva el formulario y libera espacio antes de reintentar.";
+          retrySyncButton.hidden = true;
+        }
+      });
+
+      retrySyncButton.addEventListener("click", async () => {
+        retrySyncButton.disabled = true;
+        try {
+          await TrainingSync.retryPending();
+          renderSyncStatus();
+        } finally {
+          retrySyncButton.disabled = false;
+        }
+      });
+      TrainingSync.subscribe(renderSyncStatus);
+      renderSyncStatus();
+      TrainingSync.retryPending().catch(() => {});
+    </script>
+  </body>
+</html>
+
+
+

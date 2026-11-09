@@ -1,0 +1,37 @@
+{
+  "name": "DameCaña · Blueprint 3D",
+  "short_name": "DameCaña BP",
+  "description": "Edición Blueprint Técnico — Telemetría biomecánica y registro táctil de fuerza en papel técnico y 3D ortogonal.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#E8E6DF",
+  "theme_color": "#E8E6DF",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "dclog-icon.svg?v=bp1",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "dclog-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "dclog-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "dclog-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

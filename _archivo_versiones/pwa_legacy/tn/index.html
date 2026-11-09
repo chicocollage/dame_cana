@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0d0e" />
+    <meta name="description" content="DameCañaTN — Edición Titanio Nocturno (APEX Stealth Chrono-Lab). Telemetría biomecánica y registro táctil de fuerza." />
+    <title>DameCañaTN · Edición Titanio Nocturno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@500;600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        corePlugins: { preflight: false }
+      };
+    </script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="manifest" href="damecanatn.webmanifest" />
+    <link rel="icon" href="dclog-icon.svg?v=tn6" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="dclog-apple-touch-icon.png?v=tn6" />
+    <link rel="stylesheet" href="styles.css?v=tn10" />
+    <style id="tn-3d-migration-styles">
+      /* Escenario 3D */
+      .carousel-stage {
+          perspective: 1200px;
+          transform-style: preserve-3d;
+      }
+
+      /* Tarjetas 3D y desactivación de transición durante el arrastre */
+      .card-3d {
+          transform-style: preserve-3d;
+          transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), 
+                      opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                      box-shadow 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+                      filter 0.55s ease;
+          will-change: transform, opacity;
+      }
+      .card-3d.dragging {
+          transition: none !important;
+      }
+
+      /* Capas de profundidad Parallax en el eje Z */
+      .layer-z-10 { transform: translateZ(20px); transform-style: preserve-3d; }
+      .layer-z-20 { transform: translateZ(40px); transform-style: preserve-3d; }
+      .layer-z-30 { transform: translateZ(60px); transform-style: preserve-3d; }
+
+      /* Sombra realista multicapa y reflejo */
+      .card-surface {
+          box-shadow: 
+              0 30px 60px -12px rgba(0, 0, 0, 0.75),
+              0 18px 36px -18px rgba(0, 0, 0, 0.8),
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.35),
+              inset 0 -2px 4px 0 rgba(0, 0, 0, 0.5);
+      }
+      .card-glare {
+          background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.28) 0%, rgba(255,255,255,0) 65%);
+          mix-blend-mode: overlay;
+          pointer-events: none;
+      }
+
+      /* Despeje y ergonomía de pantalla en sesión activa */
+      body[data-screen="session"] .app-header { display: none !important; }
+      body[data-screen="session"] .sync-status-global { display: none !important; }
+      body[data-screen="session"]:not([data-timer-active="true"]) #restDock:not([data-open="true"]) { display: none !important; }
+
+      body[data-screen="session"] #app-main {
+        overflow: hidden !important;
+        display: flex !important;
+        flex-direction: column !important;
+        flex: 1 1 0% !important;
+        min-height: 0 !important;
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      body[data-screen="session"] #sessionScreen {
+        flex: 1 1 0% !important;
+        min-height: 0 !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        overflow: hidden !important;
+      }
+
+      body[data-screen="session"] #carousel-viewport {
+        flex: 1 1 0% !important;
+        min-height: 0 !important;
+        height: 100% !important;
+      }
+      body[data-screen="session"] #carousel-stage {
+        flex: 1 1 0% !important;
+        min-height: 0 !important;
+        height: 100% !important;
+      }
+      body[data-screen="session"] #exerciseList.carousel-stage {
+        height: 100% !important;
+      }
+
+      body[data-screen="session"] #exerciseList.carousel-stage .exercise-card.card-3d {
+        width: min(356px, calc(100% - 16px)) !important;
+        height: calc(100% - 4px) !important;
+        max-height: 760px !important;
+        border-radius: 28px !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        overscroll-behavior-y: contain !important;
+        -webkit-overflow-scrolling: touch !important;
+        touch-action: pan-y !important;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(212, 255, 51, 0.3) transparent;
+      }
+      body[data-screen="session"] #exerciseList.carousel-stage .exercise-card.card-3d .layer-z-10,
+      body[data-screen="session"] #exerciseList.carousel-stage .exercise-card.card-3d .layer-z-20,
+      body[data-screen="session"] #exerciseList.carousel-stage .exercise-card.card-3d .layer-z-30 {
+        transform: none !important;
+        transform-style: flat !important;
+      }
+    </style>
+  </head>
+  <body data-edition="titanium-night" class="h-dvh w-screen overflow-hidden bg-slate-950 text-white select-none">
+    <!-- Luces ambientales reactivas 3D -->
+    <div id="ambient-glow" class="pointer-events-none fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
+      <div id="ambient-orb-primary" class="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full bg-cyan-500/15 blur-3xl transition-all duration-700"></div>
+      <div id="ambient-orb-secondary" class="absolute bottom-16 left-1/2 -translate-x-1/2 w-96 h-64 rounded-full bg-amber-500/10 blur-3xl transition-all duration-700"></div>
+    </div>
+
+    <div class="rest-ambient" id="restAmbient" data-state="idle" data-stage="full" aria-hidden="true">
+      <div class="rest-ambient-fill" id="restAmbientFill"></div>
+      <div class="rest-ambient-edge" aria-hidden="true">
+        <span class="rest-laser-hud" id="restLaserHud">AMBIENT REST</span>
+      </div>
+    </div>
+
+    <div id="app-frame" class="relative z-10 mx-auto flex h-dvh w-full max-w-md flex-col overflow-hidden">
+      <header class="app-header relative z-30 pt-3 pb-2.5 px-4 bg-slate-900/75 backdrop-blur-xl border-b border-white/10 shrink-0">
+        <button class="brand" id="goHome" type="button" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">TN</span>
+          <span>DameCañaTN</span>
+        </button>
+        <nav class="header-actions" aria-label="Secciones de la aplicación">
+          <a class="ghost-button header-link" href="checkin.html" title="Check-in semanal"><i class="ph-bold ph-clipboard-text"></i> <span>Check-in</span></a>
+          <button class="ghost-button gem-command-trigger" id="gemCommandButton" type="button" aria-label="Abrir Comandos IA"><i class="ph-bold ph-robot"></i> <span>IA</span></button>
+          <button class="ghost-button" id="historyButton" type="button"><i class="ph-bold ph-clock-counter-clockwise"></i> <span>Historial</span></button>
+        </nav>
+      </header>
+
+      <aside class="sync-status-card sync-status-global no-print shrink-0" id="syncStatusCard" data-state="synced" aria-live="polite">
+        <div>
+          <strong id="syncStatusText">🟢 Sincronizado</strong>
+          <span id="syncStatusDetail">No hay registros pendientes.</span>
+        </div>
+        <button id="retrySyncButton" type="button" hidden>Reintentar sincronización</button>
+      </aside>
+
+      <main id="app-main" class="relative flex-1 min-h-0 overflow-y-auto overflow-x-hidden">
+      <section class="screen import-screen" id="importScreen">
+        <div class="eyebrow">STEALTH CHRONO-LAB · PREPARAR SESIÓN</div>
+        <h1>¿QUÉ ENTRENAS HOY?</h1>
+        <p class="lead">Selecciona tu dial de sesión en la placa de titanio, abre una sesión en vivo o carga la nota en la bahía de calibración.</p>
+
+        <section class="quick-start" aria-label="Inicio rápido">
+          <div class="titanium-plate-screws" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="quick-start-grid">
+            <button class="quick-start-button" data-template-day="A" data-knurled-tone="amber" type="button">
+              <span class="dial-sub">GLÚTEO · TORSO</span>
+              <span class="dial-title">Día A</span>
+            </button>
+            <button class="quick-start-button" data-template-day="B" data-knurled-tone="volt" type="button">
+              <span class="dial-sub">BRAZOS · HOMBRO</span>
+              <span class="dial-title">Día B</span>
+            </button>
+            <button class="quick-start-button" data-template-day="C" data-knurled-tone="cyan" type="button">
+              <span class="dial-sub">EMPUJE · TIRÓN</span>
+              <span class="dial-title">Día C</span>
+            </button>
+            <button class="quick-start-button" data-template-day="D" data-knurled-tone="volt" type="button">
+              <span class="dial-sub">UNILATERAL · RDL</span>
+              <span class="dial-title">Día D</span>
+            </button>
+            <button class="quick-start-button" data-template-day="E" data-knurled-tone="volt" type="button">
+              <span class="dial-sub">BRAZOS · PUMP</span>
+              <span class="dial-title">Día E</span>
+            </button>
+            <button class="secondary-button free-session-button" id="startFreeSessionButton" data-knurled-tone="cyan" type="button">
+              <span class="dial-sub">PERSONALIZADA</span>
+              <span class="dial-title">+ Sesión en vivo</span>
+            </button>
+          </div>
+        </section>
+
+        <div class="entry-divider"><span>BAHÍA DE CALIBRACIÓN · NOTA DEL ENTRENADOR</span></div>
+
+        <aside class="install-card" id="installCard" hidden>
+          <div>
+            <strong>Instalar DameCañaTN en este móvil</strong>
+            <span>Edición Titanio Nocturno independiente, lista para funcionar sin conexión.</span>
+          </div>
+          <button class="install-button" id="installButton" type="button">Instalar</button>
+        </aside>
+
+        <div class="tape-deck-housing">
+          <div class="titanium-plate-screws" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="tape-deck-window" aria-hidden="true">
+            <div class="tape-reel" id="tapeReelLeft"></div>
+            <div class="tape-window-scale"><span>CALIBRATION TAPE · NOTE V1</span></div>
+            <div class="tape-reel" id="tapeReelRight"></div>
+          </div>
+          <label class="note-field">
+            <span>Nota del entrenamiento</span>
+            <textarea id="trainerNote" rows="11" placeholder="Ejemplo:&#10;&#10;# Día A · Glúteo y torso&#10;1. Hip thrust en máquina — 3 × 8–10 · RIR 2 · descanso 2–3 min&#10;2. Sentadilla búlgara — 3 × 8–12 por lado · RIR 2&#10;3. Remo con pecho apoyado — 3 × 8–12 · RIR 1–2"></textarea>
+          </label>
+        </div>
+
+        <div class="import-actions">
+          <button class="secondary-button" id="exampleButton" type="button">Ver ejemplo</button>
+          <button class="primary-button" id="parseButton" type="button">
+            Preparar entrenamiento
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+        <p class="privacy-note">Telemetría local: la nota y tus registros se guardan únicamente en este dispositivo.</p>
+      </section>
+
+      <section class="screen session-screen flex flex-col h-full overflow-hidden" id="sessionScreen" hidden>
+        <aside class="historical-draft-banner shrink-0" id="historicalDraftBanner" hidden>
+          <div>
+            <strong>Revisa el entrenamiento antiguo</strong>
+            <span id="historicalDraftSummary">Nada se añadirá al historial hasta que confirmes al final.</span>
+          </div>
+          <label><span>Fecha</span><input id="historicalPreviewDate" type="date" onmousedown="event.stopPropagation()" ontouchstart="event.stopPropagation()" /></label>
+          <label><span>Título</span><input id="historicalPreviewTitle" type="text" onmousedown="event.stopPropagation()" ontouchstart="event.stopPropagation()" /></label>
+        </aside>
+
+        <!-- Barra superior compacta de sesión (Glassmorphism + Métricas en 1 sola franja) -->
+        <div class="session-top-hud shrink-0 px-3 py-1.5 bg-slate-900/80 backdrop-blur-md border-b border-white/10">
+          <div class="flex items-center justify-between gap-2">
+            <button type="button" onclick="document.getElementById('goHome').click()" class="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white" aria-label="Volver al inicio">
+              <i class="ph-bold ph-arrow-left text-sm"></i>
+            </button>
+            <div class="min-w-0 flex-1">
+              <div class="flex items-center gap-1.5">
+                <h1 id="sessionTitle" class="truncate !text-sm !font-bold !m-0 !tracking-normal">Entrenamiento</h1>
+                <span class="save-status shrink-0 !text-[9px] !py-0.5 !px-1.5" id="saveStatus" data-state="saved">Guardado</span>
+              </div>
+              <div class="flex items-center gap-2 text-[10px] font-mono text-slate-400">
+                <span id="sessionDate" class="truncate"></span>
+                <span>•</span>
+                <span class="session-summary inline-flex items-center gap-1 !p-0 !m-0 !bg-transparent !border-0 !shadow-none">
+                  <span><strong id="exerciseCount" class="text-white">0</strong> ej</span>
+                  <span>•</span>
+                  <span><strong id="setCount" class="text-white">0</strong> ser</span>
+                  <span>•</span>
+                  <span><strong id="completedCount" class="text-lime-400">0</strong> reg</span>
+                </span>
+              </div>
+            </div>
+            <div class="flex items-center gap-1 no-print shrink-0">
+              <section class="session-tools no-print !m-0" aria-label="Herramientas de la sesión">
+                <label class="wake-tool !py-0.5 !px-1.5 !text-[10px]" title="Mantener pantalla activa">
+                  <input id="wakeLockToggle" type="checkbox" checked />
+                  <span><strong>Pantalla</strong><small id="wakeLockStatus" class="!hidden">Pendiente</small></span>
+                </label>
+              </section>
+              <button class="icon-button no-print !w-7 !h-7 !text-xs" id="editNoteButton" type="button" aria-label="Volver a la nota" title="Volver a la nota">✎</button>
+            </div>
+          </div>
+          <div class="progress-track !mt-1.5 !mb-0 !h-1 rounded-full overflow-hidden" aria-label="Progreso de la sesión"><div id="progressBar"></div></div>
+        </div>
+
+        <!-- ESCENARIO DEL CARRUSEL 3D INTERACTIVO -->
+        <div id="carousel-viewport" class="relative flex-1 min-h-0 w-full flex flex-col items-center justify-start py-0.5 overflow-hidden">
+          <div id="carousel-stage" class="carousel-stage relative w-full flex-1 min-h-0">
+            <div id="exerciseList" class="exercise-list carousel-stage absolute inset-0 w-full h-full"></div>
+          </div>
+
+          <!-- Controles de Navegación 3D + Botón + Ejercicio centrado -->
+          <div class="carousel-bottom-bar relative z-30 flex flex-col items-center gap-1 px-4 py-1 w-full max-w-sm shrink-0 no-print">
+            <div class="carousel-nav-bar flex items-center justify-between gap-3 w-full">
+              <button id="carouselPrevBtn" type="button" onclick="window.prevCard && window.prevCard()" class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900/90 border border-white/15 text-slate-200 shadow-lg active:scale-95 transition disabled:opacity-30" aria-label="Ejercicio anterior">
+                <i class="ph-bold ph-caret-left text-sm"></i>
+              </button>
+              <div class="flex flex-col items-center gap-0.5">
+                <div id="pagination-dots" class="flex items-center justify-center gap-1.5" role="tablist" aria-label="Selector de ejercicio"></div>
+                <span id="carouselCounter" class="text-[9px] font-mono tracking-widest uppercase text-slate-400">EJERCICIO 1 / 1</span>
+              </div>
+              <button id="carouselNextBtn" type="button" onclick="window.nextCard && window.nextCard()" class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900/90 border border-white/15 text-slate-200 shadow-lg active:scale-95 transition disabled:opacity-30" aria-label="Siguiente ejercicio">
+                <i class="ph-bold ph-caret-right text-sm"></i>
+              </button>
+            </div>
+            <!-- Botón + Ejercicio limpio y centrado bajo el paginador -->
+            <button class="secondary-button add-exercise-button no-print flex items-center justify-center gap-1.5 !py-1.5 !px-5 !text-xs !rounded-full bg-white/5 hover:bg-white/10 border border-white/15 text-slate-200 shadow-md active:scale-95 transition" id="addExerciseButton" type="button">
+              <i class="ph-bold ph-plus text-xs"></i> <span>Añadir ejercicio</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Acciones técnicas originales ocultas (compatibilidad DOM sin código muerto) -->
+        <div class="session-legacy-actions hidden" aria-hidden="true">
+          <button id="shareJsonButton" type="button"></button>
+          <button id="downloadPdfButton" type="button"></button>
+          <button id="finishButton" type="button"></button>
+          <button id="discardSessionButton" type="button"></button>
+        </div>
+      </section>
+
+      <section class="screen workout-note-review-screen" id="workoutNoteReviewScreen" hidden aria-labelledby="workoutNoteReviewTitle">
+        <div class="review-topline">
+          <div class="eyebrow">Revisar entrenamiento</div>
+          <span class="review-local-status">Sin guardar</span>
+        </div>
+        <div class="review-heading">
+          <div>
+            <h1 id="workoutNoteReviewTitle"></h1>
+            <p class="lead" id="workoutNoteReviewFocus" hidden></p>
+          </div>
+          <button class="icon-button no-print" id="workoutNoteReviewBack" type="button" aria-label="Volver a la nota" title="Volver a la nota">✎</button>
+        </div>
+        <p class="review-intro">Revisa la prescripción antes de crear la sesión. No se añadirá al historial hasta que finalices el entrenamiento.</p>
+        <div class="review-summary" id="workoutNoteReviewSummary" aria-label="Resumen del entrenamiento"></div>
+        <div class="workout-note-review-list" id="workoutNoteReviewList"></div>
+        <div class="review-actions no-print">
+          <button class="secondary-button" id="workoutNoteReviewEdit" type="button">Editar nota</button>
+          <button class="primary-button" id="workoutNoteReviewConfirm" type="button">Crear sesión <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+
+      <section class="screen history-screen" id="historyScreen" hidden>
+        <div class="eyebrow">ARCHIVO DE TELEMETRÍA</div>
+        <div class="history-heading">
+          <div class="titanium-plate-screws" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div>
+            <h1>Historial</h1>
+            <p>Exporta todas tus sesiones en un único archivo para actualizar las fuentes de tu entrenador AI.</p>
+          </div>
+          <div class="history-actions">
+            <button class="primary-button" id="addHistoricalButton" type="button">Añadir entrenamiento antiguo</button>
+            <button class="secondary-button" id="importHistoryButton" type="button">Importar o restaurar</button>
+            <button class="share-button" id="shareHistoryButton" type="button">Exportar historial para IA</button>
+            <input id="historyFileInput" type="file" accept="application/json,.json" hidden />
+          </div>
+        </div>
+        <div id="historyList" class="history-list"></div>
+        <section class="feedback-history" aria-labelledby="feedbackHistoryTitle">
+          <div>
+            <span class="eyebrow">Experiencia de uso</span>
+            <h2 id="feedbackHistoryTitle">Mejoras anotadas <span id="feedbackCount">0</span></h2>
+            <p>Se guardan aparte del historial deportivo y solo salen del dispositivo cuando decides exportarlas.</p>
+          </div>
+          <div class="feedback-actions">
+            <button class="ghost-button" id="feedbackAddButton" type="button">Añadir mejora</button>
+            <button class="secondary-button" id="exportFeedbackButton" type="button">Exportar mejoras</button>
+          </div>
+          <div class="feedback-list" id="feedbackList"></div>
+        </section>
+      </section>
+
+      <section class="screen historical-screen" id="historicalScreen" hidden>
+        <div class="eyebrow">Historial manual</div>
+        <h1>Añade un entrenamiento antiguo</h1>
+        <p class="lead">Pega una sesión ya realizada. La app interpretará solo los resultados explícitos y te permitirá revisarlos antes de añadirlos.</p>
+        <label class="note-field">
+          <span>Texto del entrenamiento antiguo</span>
+          <textarea id="historicalText" rows="16" placeholder="Fecha: 2026-07-15&#10;Entrenamiento: Día A&#10;&#10;Ejercicio: Hip thrust&#10;Modo: carga externa&#10;Objetivo: 3 x 8-10&#10;Serie 1: carga=80; reps=10; rir=2"></textarea>
+        </label>
+        <div class="historical-messages" id="historicalMessages" role="alert" hidden></div>
+        <div class="import-actions">
+          <button class="secondary-button" id="historicalExampleButton" type="button">Ver ejemplo</button>
+          <button class="primary-button" id="parseHistoricalButton" type="button">Preparar y revisar <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="privacy-note">El texto se interpreta en este dispositivo. Una operación añade como máximo una sesión.</p>
+      </section>
+      </main>
+
+      <!-- DOCK INFERIOR FIJO (Temporizador Moleteado + Barra de Navegación Glassmorphism) -->
+      <footer id="app-footer-dock" class="relative z-30 shrink-0 px-3 pb-2.5 pt-1 flex flex-col gap-1.5 no-print">
+        <section class="rest-dock no-print" id="restDock" data-state="idle" aria-label="Temporizador de descanso">
+          <div class="rest-dock-shell">
+            <div class="rest-visual" id="restTimerProgressTrack" role="progressbar" aria-label="Tiempo de descanso restante" aria-valuemin="0" aria-valuemax="120" aria-valuenow="120">
+              <div id="restTimerProgress" data-stage="full"></div>
+            </div>
+          </div>
+          <div class="rest-dock-row">
+            <button class="rest-dock-main" id="restTimerButton" type="button" aria-label="Iniciar descanso">
+              <span class="rest-dock-copy">
+                <span id="restTimerStatus" aria-live="polite">Descanso</span>
+                <small id="restTimerAction">Iniciar</small>
+              </span>
+              <strong id="restTimerDisplay">02:00</strong>
+            </button>
+
+            <!-- Rodillo vertical moleteado táctil (Knurled Roller) -->
+            <div class="tn-knurled-roller" id="tnKnurledRoller" role="slider" tabindex="0" aria-label="Rodillo táctil de ajuste de tiempo (±15 segundos)" title="Desliza verticalmente o pulsa para ajustar ±15 s">
+              <div class="tn-knurled-texture"></div>
+            </div>
+
+            <div class="tn-neon-rings-col">
+              <button class="rest-dock-quick" id="restTimerSubtract" type="button" disabled title="Restar 15 segundos">−15</button>
+              <button class="rest-dock-quick" id="restTimerAdd" type="button" disabled title="Sumar 15 segundos">+15</button>
+            </div>
+            <button class="rest-dock-options" id="restTimerOptions" type="button" aria-expanded="false" aria-controls="restTimerPanel" aria-label="Opciones del temporizador">•••</button>
+          </div>
+          <div class="rest-dock-panel" id="restTimerPanel" hidden>
+            <label><span>Duración</span>
+              <select id="restDuration" aria-label="Duración del descanso">
+                <option value="15">15 s</option>
+                <option value="30">30 s</option>
+                <option value="60">1 min</option>
+                <option value="90">1:30 min</option>
+                <option value="120" selected>2 min</option>
+                <option value="180">3 min</option>
+                <option value="240">4 min</option>
+              </select>
+            </label>
+            <button class="rest-panel-button" id="restTimerReset" type="button">Reiniciar</button>
+            <label class="timer-sound" title="Aviso al terminar el descanso">
+              <input id="timerSoundToggle" type="checkbox" checked />
+              <span>Sonido</span>
+            </label>
+            <label class="sound-profile"><span>Aviso</span>
+              <select id="timerSoundProfile" aria-label="Sonido del temporizador">
+                <option value="sport_horn">Bocina deportiva</option>
+                <option value="clean_bell">Campana limpia</option>
+                <option value="deep_pulse">Pulso grave</option>
+              </select>
+            </label>
+            <button class="rest-panel-button" id="timerSoundPreview" type="button">Probar sonido</button>
+          </div>
+        </section>
+
+        <nav id="bottom-nav-dock" class="relative flex items-center justify-between bg-slate-900/85 backdrop-blur-xl border border-white/10 rounded-3xl px-1.5 py-1 shadow-2xl" aria-label="Dock de navegación rápida">
+          <button type="button" data-dock-action="home" class="dock-nav-btn flex-1 min-w-0 flex flex-col items-center gap-0.5 px-1 py-1 rounded-2xl text-[10px] font-medium transition">
+            <i class="ph-bold ph-note-pencil text-base"></i>
+            <span>Nota</span>
+          </button>
+          <button type="button" data-dock-action="session" class="dock-nav-btn flex-1 min-w-0 flex flex-col items-center gap-0.5 px-1 py-1 rounded-2xl text-[10px] font-medium transition">
+            <i class="ph-bold ph-cube-focus text-base"></i>
+            <span>Entreno 3D</span>
+          </button>
+          <button type="button" data-dock-action="timer" class="dock-nav-btn flex-1 min-w-0 flex flex-col items-center gap-0.5 px-1 py-1 rounded-2xl text-[10px] font-medium transition">
+            <i class="ph-bold ph-timer text-base"></i>
+            <span>Reloj</span>
+          </button>
+          <button type="button" data-dock-action="history" class="dock-nav-btn flex-1 min-w-0 flex flex-col items-center gap-0.5 px-1 py-1 rounded-2xl text-[10px] font-medium transition">
+            <i class="ph-bold ph-clock-counter-clockwise text-base"></i>
+            <span>Historial</span>
+          </button>
+
+          <!-- Botón Finalizar con Popover de Cierre anclado -->
+          <div class="relative dock-finish-wrapper flex-1 min-w-0 flex items-center justify-center">
+            <div id="finishPopover" class="finish-popover hidden absolute bottom-[calc(100%+12px)] right-0 w-64 bg-slate-900/95 backdrop-blur-2xl border border-white/15 rounded-2xl p-2 shadow-[0_20px_50px_rgba(0,0,0,0.85)] z-50 flex-col gap-1 text-left" role="menu" aria-label="Opciones de cierre de sesión">
+              <div class="text-[9px] font-mono uppercase tracking-widest text-slate-400 px-2 py-1 border-b border-white/10 flex items-center justify-between">
+                <span>Cierre de sesión</span>
+                <span class="text-[#d4ff33] font-bold">● V3</span>
+              </div>
+              <button type="button" data-finish-option="save" class="finish-popover-item flex items-center gap-2.5 w-full px-2.5 py-2 rounded-xl text-xs font-medium text-slate-200 hover:text-white hover:bg-white/10 transition active:scale-98">
+                <span class="text-base">☁️</span>
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="font-semibold text-slate-100">Solo guardar y finalizar</span>
+                  <span class="text-[10px] text-slate-400">Guarda en historial y sube a la nube</span>
+                </div>
+              </button>
+              <button type="button" data-finish-option="ai" class="finish-popover-item flex items-center gap-2.5 w-full px-2.5 py-2 rounded-xl text-xs font-medium text-slate-200 hover:text-white hover:bg-white/10 transition active:scale-98">
+                <span class="text-base">✨</span>
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="font-semibold text-slate-100">Exportar IA + Finalizar</span>
+                  <span class="text-[10px] text-slate-400">Copia payload IA y luego finaliza</span>
+                </div>
+              </button>
+              <button type="button" data-finish-option="pdf" class="finish-popover-item flex items-center gap-2.5 w-full px-2.5 py-2 rounded-xl text-xs font-medium text-slate-200 hover:text-white hover:bg-white/10 transition active:scale-98">
+                <span class="text-base">📄</span>
+                <div class="flex flex-col items-start leading-tight">
+                  <span class="font-semibold text-slate-100">Exportar PDF + Finalizar</span>
+                  <span class="text-[10px] text-slate-400">Descarga PDF y luego finaliza</span>
+                </div>
+              </button>
+              <div class="my-0.5 border-t border-white/10"></div>
+              <button type="button" data-finish-option="discard" class="finish-popover-item flex items-center gap-2.5 w-full px-2.5 py-1.5 rounded-xl text-xs font-medium text-red-400 hover:text-red-300 hover:bg-red-500/10 transition active:scale-98">
+                <span class="text-sm">🗑️</span>
+                <span class="font-semibold">Descartar sesión</span>
+              </button>
+            </div>
+
+            <button type="button" id="dockFinishBtn" data-dock-action="finish" class="dock-nav-btn dock-nav-finish flex flex-col items-center justify-center gap-0.5 px-3 py-1 rounded-2xl text-[11px] font-bold transition shadow-lg active:scale-95" aria-haspopup="true" aria-expanded="false">
+              <i class="ph-bold ph-check-circle text-base"></i>
+              <span>Finalizar</span>
+            </button>
+          </div>
+        </nav>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog class="feedback-sheet" id="feedbackDialog" aria-labelledby="feedbackDialogTitle">
+      <form id="feedbackForm">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-heading">
+          <div>
+            <span class="eyebrow">Ayúdame a mejorar</span>
+            <h2 id="feedbackDialogTitle">¿Qué te ha frenado?</h2>
+          </div>
+          <button class="sheet-close" id="feedbackCloseButton" type="button" aria-label="Cerrar">×</button>
+        </div>
+        <p class="sheet-copy">Se guardará solo en este dispositivo hasta que decidas exportarlo.</p>
+        <div class="feedback-categories" role="group" aria-label="Tipo de fricción">
+          <button type="button" data-feedback-category="too_many_taps">Demasiados toques</button>
+          <button type="button" data-feedback-category="hard_to_find">Difícil de encontrar</button>
+          <button type="button" data-feedback-category="awkward_input">Dato incómodo</button>
+          <button type="button" data-feedback-category="timer_or_sound">Temporizador o sonido</button>
+          <button type="button" data-feedback-category="other">Otro</button>
+        </div>
+        <label class="feedback-comment">
+          <span>Detalle opcional</span>
+          <textarea id="feedbackComment" maxlength="1000" rows="3" placeholder="Ej.: tuve que volver arriba para iniciar el descanso"></textarea>
+        </label>
+        <div class="sheet-actions">
+          <button class="ghost-button" id="feedbackCancelButton" type="button">Cancelar</button>
+          <button class="primary-button" id="feedbackSaveButton" type="submit">Guardar mejora</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="feedback-sheet gem-command-sheet" id="gemCommandDialog" aria-labelledby="gemCommandDialogTitle">
+      <form id="gemCommandForm">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-heading">
+          <div>
+            <span class="eyebrow">Atajo de entrenador</span>
+            <h2 id="gemCommandDialogTitle">🤖 Comandos IA</h2>
+          </div>
+          <button class="sheet-close" id="gemCommandCloseButton" type="button" aria-label="Cerrar comandos IA">×</button>
+        </div>
+        <p class="sheet-copy" id="gemCommandHint">Pega el bloque completo generado por tu Gem. Se aplicará directamente en tu hoja de Google Sheets.</p>
+        <label class="gem-command-field">
+          <span>Comando del Gem</span>
+          <textarea id="gemCommandInput" rows="8" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="gemCommandHint gemCommandStatus" placeholder="Pega aquí el comando generado por tu Gem..."></textarea>
+        </label>
+        <p class="gem-command-status" id="gemCommandStatus" role="status" aria-live="polite" hidden></p>
+        <div class="sheet-actions gem-command-actions">
+          <button class="ghost-button" id="gemCommandCancelButton" type="button">Cancelar</button>
+          <button class="primary-button gem-command-submit" id="gemCommandSubmitButton" type="submit">⚡ Ejecutar Acción</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="feedback-sheet confirm-sheet" id="confirmDialog" aria-labelledby="confirmDialogTitle" aria-describedby="confirmDialogMessage">
+      <div class="confirm-sheet-content">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-heading">
+          <div>
+            <span class="eyebrow">Confirmación</span>
+            <h2 id="confirmDialogTitle">Confirmar acción</h2>
+          </div>
+          <button class="sheet-close" id="confirmDialogCloseButton" type="button" aria-label="Cerrar confirmación">×</button>
+        </div>
+        <p class="sheet-copy" id="confirmDialogMessage"></p>
+        <div class="sheet-actions confirm-actions">
+          <button class="ghost-button" id="confirmDialogCancelButton" type="button">Cancelar</button>
+          <button class="primary-button" id="confirmDialogConfirmButton" type="button">Confirmar</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="feedback-sheet rest-finished-sheet" id="restFinishedDialog" aria-labelledby="restFinishedDialogTitle" aria-describedby="restFinishedDialogElapsed">
+      <div class="confirm-sheet-content">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-heading">
+          <div>
+            <span class="eyebrow">Temporizador</span>
+            <h2 id="restFinishedDialogTitle">Descanso finalizado</h2>
+          </div>
+        </div>
+        <p class="sheet-copy">Tiempo desde que terminó: <strong id="restFinishedDialogElapsed">00:00</strong></p>
+        <div class="sheet-actions confirm-actions">
+          <button class="primary-button" id="restFinishedDialogCloseButton" type="button">Cerrar · A por la serie</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="exercise-picker" id="exercisePickerDialog" aria-labelledby="exercisePickerTitle">
+      <div class="picker-heading">
+        <div><span class="eyebrow">Catálogo</span><h2 id="exercisePickerTitle">Elegir ejercicio</h2></div>
+        <button class="sheet-close" id="exercisePickerCloseButton" type="button" aria-label="Cerrar catálogo">×</button>
+      </div>
+      <label class="picker-search"><span>Buscar</span><input id="exercisePickerSearch" type="search" autocomplete="off" placeholder="Ejercicio, máquina o grupo" /></label>
+      <div class="picker-recommended" id="exercisePickerRecommended" hidden></div>
+      <div class="picker-groups" id="exercisePickerGroups" aria-label="Filtrar por grupo"></div>
+      <div class="picker-results" id="exercisePickerResults"></div>
+      <div class="picker-custom-form" id="exercisePickerCustomForm" hidden>
+        <label class="picker-search"><span>Nombre del ejercicio</span><input id="exercisePickerCustomInput" type="text" autocomplete="off" placeholder="Ej. Prensa inclinada 45°" /></label>
+        <button class="primary-button" id="exercisePickerCustomConfirm" type="button">Añadir ejercicio</button>
+      </div>
+      <button class="secondary-button picker-custom" id="exercisePickerCustomButton" type="button">+ Escribir ejercicio personalizado</button>
+    </dialog>
+
+    <template id="exerciseTemplate">
+      <article class="exercise-card card-3d card-surface rounded-[32px]">
+        <div class="card-glare absolute inset-0 rounded-[32px]"></div>
+        <div class="titanium-plate-screws" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+        <!-- CAPA Z-10: Cabecera de Tarjeta, Categoría/Variante y Prescripción -->
+        <div class="card-header-zone layer-z-10 relative">
+          <div class="exercise-card-header">
+            <span class="exercise-number"></span>
+            <div class="exercise-title-block">
+              <h2 class="exercise-name"></h2>
+              <div class="prescription"></div>
+            </div>
+            <div class="exercise-header-actions no-print">
+              <button class="substitute-exercise no-print" type="button" title="Sustituir por otro ejercicio">↻ Sustituir</button>
+              <button class="delete-exercise no-print" type="button" title="Eliminar ejercicio de la sesión" aria-label="Eliminar ejercicio">🗑</button>
+            </div>
+          </div>
+          <p class="coach-cue" hidden></p>
+          <details class="exercise-identity no-drag">
+            <summary>Identificación de variante y máquina</summary>
+            <div class="identity-fields">
+              <label><span>Tipo de resistencia</span>
+                <select class="identity-resistance-mode" data-identity-field="resistanceMode" onmousedown="event.stopPropagation()" ontouchstart="event.stopPropagation()">
+                  <option value="external">Carga externa</option>
+                  <option value="bodyweight">Autocarga</option>
+                  <option value="trx">TRX</option>
+                </select>
+              </label>
+              <label><span>Variante o máquina</span><input class="identity-variant" data-identity-field="variant" type="text" placeholder="Smith, Technogym, unilateral…" onmousedown="event.stopPropagation()" ontouchstart="event.stopPropagation()" /></label>
+              <label><span>Ajustes</span><input class="identity-settings" data-identity-field="settings" type="text" placeholder="Asiento 4 · respaldo 2" onmousedown="event.stopPropagation()" ontouchstart="event.stopPropagation()" /></label>
+              <label><span>La carga anotada es</span>
+                <select class="identity-load-basis" data-identity-field="loadBasis" onmousedown="event.stopPropagation()" ontouchstart="event.stopPropagation()">
+                  <option value="unknown">Sin especificar</option>
+                  <option value="total_kg">Carga total</option>
+                  <option value="per_side_kg">Carga por lado</option>
+                  <option value="added_kg">Peso añadido</option>
+                  <option value="machine_stack_kg">Marcador de la máquina</option>
+                </select>
+              </label>
+            </div>
+          </details>
+        </div>
+
+        <!-- CAPA Z-30: Cuerpo de Series e Inputs con Scroll Interno Protegido -->
+        <div class="card-body-zone layer-z-30 relative my-1.5">
+          <div class="sets-table">
+            <div class="set-row set-labels" aria-hidden="true">
+              <span>Serie</span><span class="variable-label">KG</span><span>REPS</span><span>RIR</span><span>✓</span><span>×</span>
+            </div>
+            <div class="set-rows-scroll pr-1 no-drag">
+              <div class="set-rows"></div>
+            </div>
+          </div>
+          <label class="movement-note no-drag mt-1.5 block">
+            <span>Anotaciones sobre el movimiento</span>
+            <textarea rows="2" placeholder="Técnica, recorrido, ajuste o molestia..." onmousedown="event.stopPropagation()" ontouchstart="event.stopPropagation()"></textarea>
+          </label>
+        </div>
+
+        <!-- CAPA Z-20: Pie de Tarjeta (Progreso de series, Referencia Previa y Acciones) -->
+        <div class="card-footer-zone layer-z-20 relative pt-1.5 border-t border-white/10">
+          <div class="flex items-center justify-between gap-2 mb-1.5">
+            <div class="flex-1">
+              <div class="flex items-center justify-between text-[10px] font-mono uppercase tracking-wider text-slate-400 mb-0.5">
+                <span class="card-progress-label">Progreso del ejercicio</span>
+                <span class="card-progress-count text-cyan-300">0/0</span>
+              </div>
+              <div class="h-1.5 w-full rounded-full bg-slate-950/90 overflow-hidden border border-white/10">
+                <div class="card-progress-fill h-full bg-gradient-to-r from-cyan-400 to-lime-400 transition-all duration-300" style="width: 0%"></div>
+              </div>
+            </div>
+            <button class="add-set-button no-print shrink-0 !m-0 !py-1 !px-2.5 !text-xs" type="button">+ Serie</button>
+          </div>
+          <div class="last-reference !m-0">
+            <div class="reference-history" aria-live="polite"><span>Sin una referencia comparable anterior.</span></div>
+            <button class="use-previous-loads" type="button" hidden>Usar referencia</button>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="vendor/pdf-lib-1.17.1.min.js?v=tn10"></script>
+    <script src="pdf-export.js?v=tn10"></script>
+    <script src="json-export.js?v=tn10"></script>
+    <script src="history-tools.js?v=tn10"></script>
+    <script src="exercise-metadata.js?v=tn10"></script>
+    <script src="exercise-catalog.js?v=tn10"></script>
+    <script src="day-templates.js?v=tn10"></script>
+    <script src="parser.js?v=tn10"></script>
+    <script src="historical-parser.js?v=tn10"></script>
+    <script src="feedback-tools.js?v=tn10"></script>
+    <script src="rest-timer-tools.js?v=tn10"></script>
+    <script src="timer-sounds.js?v=tn10"></script>
+    <script src="sync-queue.js?v=tn10"></script>
+    <script src="gem-command-tools.js?v=tn10"></script>
+    <script src="technical-data.js?v=tn10"></script>
+    <script src="technical-tools.js?v=tn10"></script>
+    <script src="app.js?v=tn10"></script>
+    <script src="workout-note-review.js?v=tn10"></script>
+    <script src="apex-tn-ui.js?v=tn10"></script>
+  </body>
+</html>
+

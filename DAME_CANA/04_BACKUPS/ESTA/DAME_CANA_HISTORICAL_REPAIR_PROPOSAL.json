@@ -1,0 +1,104 @@
+{
+  "manifest_version": "dame_cana.historical_repair_proposal.v1",
+  "status": "PROPUESTA_NO_EJECUTADA",
+  "target": "DAME_CANA_OPERATIVO_v3",
+  "reason_for_stop": "La reconstrucción de metadatos históricos no es unívoca sin JSON originales o decisión humana.",
+  "observed_scope": [
+    {
+      "sheet": "03_SESIONES",
+      "range": "A2:V16",
+      "existing_rows": 15,
+      "new_fields_blank_in_copy": [
+        "updated_at",
+        "payload_hash",
+        "event_id",
+        "session_type",
+        "template_id",
+        "template_revision",
+        "contract_revision"
+      ]
+    },
+    {
+      "sheet": "04_SERIES",
+      "range": "A2:Y153",
+      "existing_rows": 152,
+      "new_fields_blank_in_copy": [
+        "completed",
+        "source_exercise_ref",
+        "identity_status",
+        "identity_source"
+      ]
+    },
+    {
+      "sheet": "99_IMPORT_LOG",
+      "range": "A2:R22",
+      "existing_rows": 21,
+      "new_fields_blank_in_copy": [
+        "event_id",
+        "contract_revision",
+        "record_id",
+        "record_updated_at",
+        "action",
+        "previous_payload_hash",
+        "retryable"
+      ]
+    }
+  ],
+  "proposed_rules_requiring_human_confirmation": [
+    {
+      "priority": "P0",
+      "field": "updated_at",
+      "proposal": "Usar el timestamp del JSON original. No sustituirlo automáticamente por imported_at o exported_at.",
+      "ambiguity": "Esas fechas no demuestran la última modificación del registro local."
+    },
+    {
+      "priority": "P0",
+      "field": "payload_hash",
+      "proposal": "Calcularlo solo desde el registro canónico original, excluyendo auth_token, event_id y exported_at.",
+      "ambiguity": "Reconstruirlo desde columnas de Sheets pierde campos y no reproduce el payload."
+    },
+    {
+      "priority": "P0",
+      "field": "exercise_id / source_exercise_ref / identity_status",
+      "proposal": "Resolver cada ejercicio contra el catálogo; conservar la referencia original namespaced y dejar UNRESOLVED cuando no haya correspondencia única.",
+      "ambiguity": "Nombre visible, máquina y variante no garantizan una identidad canónica única."
+    },
+    {
+      "priority": "P1",
+      "field": "completed",
+      "proposal": "Recuperar el booleano del JSON original; no inferirlo solo por carga, repeticiones o RIR.",
+      "ambiguity": "Una serie parcial y una serie no realizada pueden contener valores parecidos."
+    },
+    {
+      "priority": "P1",
+      "field": "session_type / template_id / template_revision",
+      "proposal": "Asignar desde el borrador/plantilla de origen. El día A/B/C por sí solo no prueba la plantilla exacta.",
+      "ambiguity": "Sesiones libres o históricas pueden usar títulos similares a las programadas."
+    },
+    {
+      "priority": "P1",
+      "field": "event_id y metadatos del log",
+      "proposal": "Conservar vacío cuando no exista recibo original; no fabricar identificadores retroactivos.",
+      "ambiguity": "file_id y hash de archivo no equivalen necesariamente al evento de transporte."
+    },
+    {
+      "priority": "P1",
+      "field": "contract_revision",
+      "proposal": "Marcar como 1 únicamente los registros cuyo origen legacy pueda demostrarse.",
+      "ambiguity": "La fecha de importación no prueba por sí sola la revisión contractual."
+    }
+  ],
+  "proposed_execution_shape_after_approval": {
+    "mode": "dry_run_then_commit",
+    "preconditions": [
+      "Copia inmutable adicional inmediatamente anterior a la migración",
+      "Inventario de JSON originales con hash",
+      "Tabla de correspondencias de ejercicios aprobada",
+      "Conteos y claves únicas verificados",
+      "Rollback probado sobre otra copia"
+    ],
+    "output": "CSV/JSON con una operación propuesta por fila, valor anterior, valor nuevo, evidencia y confianza",
+    "automatic_writes_authorized": false
+  },
+  "operations_executed": []
+}

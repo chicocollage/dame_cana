@@ -1,0 +1,11 @@
+{
+  "fecha": "2026-10-10",
+  "resoluciones": 3,
+  "pendientes": 0,
+  "sesiones": 26,
+  "filas_series": 371,
+  "series_modificadas": 1,
+  "fuentes_originales_verificadas": 20,
+  "regresion_reimportacion": "OK: valores antiguos reconciliados y nuevos conflictos rechazados",
+  "respaldo": "data/backups/resoluciones_usuario_20261010"
+}

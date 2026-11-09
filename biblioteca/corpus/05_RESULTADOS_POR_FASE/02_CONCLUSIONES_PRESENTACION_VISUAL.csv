@@ -1,0 +1,13 @@
+id,pregunta,conclusion,confianza,aplicacion,limite,fuentes
+C6-01,M01,"La preferencia agregada localizada favoreció proyección moderada contorno relativamente estrecho y depresión lateral visible","Probable para esa muestra","Priorizar proyección y firmeza antes que anchura máxima","No define un ideal universal","S049"
+C6-02,M01,"Los ratios publicados no son objetivos antropométricos personales","Sólida como límite","Comparar contra la propia línea base","Proceden de imágenes digitales concretas","S049"
+C6-03,M03,"El glúteo debe evaluarse dentro de cintura torso y piernas","Probable","Conservar proporción global","Los estudios son de atractivo general","S050;S051;S052"
+C6-04,M04,"Se transfieren fisiología simetría piel y documentación pero no automáticamente los ideales femeninos de forma","Probable","Filtrar recomendaciones por objetivo masculino","Preferencia individual variable","S049;S050;S051"
+C6-05,M02,"La comparación exige mantener cámara lente distancia altura luz fondo postura y ropa","Sólida como método","Usar montaje y marcas fijas","No elimina variación biológica","S053;S054;S055;S056"
+C6-06,M02,"La distancia debe fijarse y las tomas cercanas con gran angular deben evitarse","Probable-alta","Alejar cámara y recortar","No existe distancia glútea óptima validada","S054;S055;S056"
+C6-07,M02,"Neutral y posada son series distintas","Probable-alta","Neutral decide progreso","La neutralidad absoluta no existe","S053;S054;S055"
+C6-08,M05,"Luz simétrica sirve para seguimiento y luz lateral para presentación","Probable-alta","Guardar montajes separados","La luz altera relieve y textura","S053;S054;S055;S056"
+C6-09,M05,"La ropa cambia la silueta pero falta evidencia masculina directa","Incierta","Probar cortes en el propio cuerpo","No hay ranking científico de prendas","S049"
+C6-10,M05,"El vídeo de seguimiento debe mantener fija la cámara","Probable-alta","Giro sobre marcas","Una órbita cambia varias variables","S053;S054;S055"
+C6-11,M02,"Las decisiones visuales requieren 8-12 semanas y varias métricas","Probable práctica","Usar semana 4 solo para auditar","La velocidad individual varía","S049;S053;S054"
+C6-12,M01,"Hueso inserciones grasa y pliegues limitan la forma entrenable","Sólida anatómica","Priorizar dimensiones modificables","Magnitud individual desconocida","S006;S009;S049"

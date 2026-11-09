@@ -1,0 +1,980 @@
+{
+  "schema": "dame_cana_respaldo_operativo.v1",
+  "generado_utc": "2026-11-01T21:36:07+00:00",
+  "version_operativa": "2.1",
+  "alcance": "Datos, fuentes de datos, biblioteca, instrucciones, herramientas y vistas. Excluye backups previos, caches, dependencias, credenciales y app externa. No configura tareas del PC.",
+  "archivos": [
+    {
+      "ruta": "AGENTS.md",
+      "sha256": "708188e85fba91a65af26df1c461a103271d915fb76cff40c772f82247c5ff96"
+    },
+    {
+      "ruta": "README.md",
+      "sha256": "685af3d30023be86b794f7c81289d13681abbac8f5ed68aff1a9d206e2c7ec1d"
+    },
+    {
+      "ruta": "biblioteca/AGENTS.md",
+      "sha256": "eb256a4fa475a8284aaa2ae7313b557c80db6fcf53b0a8fb34bdbe3d9ef759eb"
+    },
+    {
+      "ruta": "biblioteca/COMPLEMENTOS.md",
+      "sha256": "fdddaf2928333585044cdeffea721877154834a9bd503cbe902e6cb3fd759e0c"
+    },
+    {
+      "ruta": "biblioteca/CONTRASTE_BIBLIOGRAFICO_2026-10-10.md",
+      "sha256": "33d92b719ea6f8d5c168b8da4095d97b42383e5eb9d356c4631b950ab5c08cb2"
+    },
+    {
+      "ruta": "biblioteca/CORPUS_BASICO.md",
+      "sha256": "4132784ad6edc9fb58fd790a339480ce42979403a57e1715d59e1f9b8a60c2bb"
+    },
+    {
+      "ruta": "biblioteca/EMPEZAR_AQUI.md",
+      "sha256": "aa8ce41e31246702e1682465763b50c98b3ffc5a669c7d122f6c5ebaa48ef7f6"
+    },
+    {
+      "ruta": "biblioteca/LOGICA_DECISIONES.md",
+      "sha256": "9200508cf750834079aa2674f557aa445e1ea45f7f3be4e535717d4f941be373"
+    },
+    {
+      "ruta": "biblioteca/PLANTILLA_COMPLEMENTO.md",
+      "sha256": "ee94247497c96b0cadfea7b566573b2b2dd9c76f1868aa92ade8ccd84ebf0d25"
+    },
+    {
+      "ruta": "biblioteca/REVISION_DRIVE_2026-10-10.md",
+      "sha256": "53bb8fae538721cfe7e98b04e85b4472b8c6f4c217afa30df2240f57259f5655"
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/CIENCIA_Y_BIBLIOTECA_V3.txt",
+      "sha256": "9720a60b03e161f962faf7516343cb0521ab0a500f819ac8482f836ed295f8c3"
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/DOC_3_CIENCIA_Y_BIBLIOTECA.md",
+      "sha256": "26ec8b7c59b2ac6f48068d935d93533dd65318f2b3da202e7cb15b88f8ecd9d6"
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/ENSAYO_GLUTEO_ESTETICO_MASCULINO.pdf",
+      "sha256": "12e11c18d5d9505fd2b555f283621601f14eea31dab9e7450e3f5498ac88ff15"
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/INFORME_DAME_CANA_V3_HISTORICO.txt",
+      "sha256": "44d5446119d99c02996b6227ae466143f4d9ba59be57411ba2a42e101e108fe5"
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/MATRIZ_SELECCION_V2.json",
+      "sha256": "df9379ebea5777c6c2e3d076f2ad54863d7df0cf0b7e36aa3a1cd45b2c64f97f"
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/entradas/DOSSIER-SUPPLEATHLETE-20261018.md",
+      "sha256": "75c6d249593103ecac2f10fd8894e8909b0a9fbc844ae55d03a8938d311fb543"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-APP01.md",
+      "sha256": "9d4141535fa65c115daf1b3c423ac0ed46bc6c35d3c1faadede7d841544b4fdf"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B1.md",
+      "sha256": "86bfba6b872f98a493d2756168ac8e836902eae8298c7775c412786c80a62da4"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B2.md",
+      "sha256": "819391bb6dac930428e39ce83b3c4c5307b9dd60198a139550450c0639cdbdef"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B3.md",
+      "sha256": "6b79279c04d7475c20ceb687fd5b2ee4c2369275cefb86fa9b56435db962f23e"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B4.md",
+      "sha256": "0da0573d86d0bfa2558c27775dae1e72536c4ac82886dc47a0a5bde6545b0760"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B5.md",
+      "sha256": "436ded24c32a3406b6b1c0633bd6ba25b9b3ed8a1ce824b7c003ea4a442caaa6"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-DAT01.md",
+      "sha256": "c8a9a078f211b6f802d82db6cfa7f8991f3e07d19dd131af4f3ed9d17bf07774"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-LIB01.md",
+      "sha256": "15fe87b91e3c918b7440a069f64cee77796294300f5bca7d1aac3073b1c3077f"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-REF01.md",
+      "sha256": "70309d393ce0f67ea0b2921e3afedf7c058b909bdfd0193662dbae5afc2cf6dc"
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-TRAIN01.md",
+      "sha256": "708a283dd2f8ce6220e9a90cd208833ffa5fab07f3ee9ad4d81e4cca09163272"
+    },
+    {
+      "ruta": "biblioteca/control/COMPARACION_DRIVE_20261010.json",
+      "sha256": "b1579a9dc9ece399662ca1656efa048f7508c3a4e038d5cb6386b9f83393c0af"
+    },
+    {
+      "ruta": "biblioteca/control/COMPLEMENTOS.csv",
+      "sha256": "6109b81172c03dd148078218fe5a2fba1c3b31cee3b894ac0abfaf2b60ba7134"
+    },
+    {
+      "ruta": "biblioteca/control/COMPLEMENTOS.json",
+      "sha256": "6a3bb2be3ef6244e8f80c6924e6dc2754342b5efc251cd2cfc8c03d91149845d"
+    },
+    {
+      "ruta": "biblioteca/control/CONTENIDOS_COMPLEMENTARIOS_BIBLIOTECAS_2026-10-09.csv",
+      "sha256": "4941014ffcfbdb0854179b6cd9d79d3262d70e2cd00b08b97930e0087b7b935b"
+    },
+    {
+      "ruta": "biblioteca/control/CONTENIDO_ZIP_HISTORICOS_2026-10-09.csv",
+      "sha256": "e55bb2dea539a3883a4487377fa95392146c44bc9a865b6394e6102d75cd3995"
+    },
+    {
+      "ruta": "biblioteca/control/DIFERENCIAS_FICHAS_MISMA_REFERENCIA_2026-10-09.csv",
+      "sha256": "08096a6c2dcb5b9c69dce8a34c1a40ff3544370631db52b84922fce86b3d00dd"
+    },
+    {
+      "ruta": "biblioteca/control/EVOLUCION_TABLAS_ORIGINALES_2026-10-09.csv",
+      "sha256": "4cd89b5a8ed049e8c194b149a33672077880bbfe824bc0cc51ad5a7ce4b17c27"
+    },
+    {
+      "ruta": "biblioteca/control/INDICE_REFERENCIAS.csv",
+      "sha256": "9c6cd30b0bb83378153c2dc144313375e958a4d9c8f08bd00928967d54446583"
+    },
+    {
+      "ruta": "biblioteca/control/INDICE_REFERENCIAS_UNIFICADO_PROPUESTO_2026-10-09.csv",
+      "sha256": "05e33154c0fc6e1b5da37da1c77dfb5e2ec923139de0aadd563b70d4022703cc"
+    },
+    {
+      "ruta": "biblioteca/control/PROCEDENCIA_CORPUS.csv",
+      "sha256": "3e1456a225e9affd5b876fed10d7dcb16fd3ef043dad30891db092a2dfd3e17c"
+    },
+    {
+      "ruta": "biblioteca/control/PROCEDENCIA_DRIVE_20261010.csv",
+      "sha256": "3b189d136394ef04cbac8b414b60f759161d485d3b90f3206e2b7238b89f2a15"
+    },
+    {
+      "ruta": "biblioteca/control/PROCEDENCIA_MAXIMUS_2026-10-09.csv",
+      "sha256": "fb3a5f4999a4783154377c90ef09229b21019fcfdabac1ab8a7f35548b060be7"
+    },
+    {
+      "ruta": "biblioteca/control/REFERENCIAS_COINCIDENTES_ENTRE_TABLAS_2026-10-09.csv",
+      "sha256": "e9f9e3854251e657df0343d04d7553f1a108c8e07be9e0e0a0921bc3b05e96ac"
+    },
+    {
+      "ruta": "biblioteca/control/REFERENCIAS_CONTRASTADAS_20261010.csv",
+      "sha256": "78be9f02a17660fb5ab5d7878c2e1d5b95d30c8ccfb732bf091c59dbc4576add"
+    },
+    {
+      "ruta": "biblioteca/control/REFERENCIAS_CONTRASTADAS_20261010.json",
+      "sha256": "162a2fcf3881280a815d5fb7ffee09a1a8a92e740c59ad9aa0eea5410b075321"
+    },
+    {
+      "ruta": "biblioteca/control/RESOLUCION_VARIANTES_20261010.csv",
+      "sha256": "3c91a213550cc80eba934d093cdaf13fe4b678e539d0c0b2c3023e4a649ed27f"
+    },
+    {
+      "ruta": "biblioteca/control/verificacion.json",
+      "sha256": "eeaa4172dce5720c88d59a86b17bdd1ee483e4814a254fa7d7760590283403fa"
+    },
+    {
+      "ruta": "biblioteca/control/verificacion_revision_drive_20261010.json",
+      "sha256": "bd0629041935921a60f97ec9925889dfe8a2229b6b824d10a529f7e12ab5e105"
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/01_RESUMEN_EJECUTIVO_HISTORICO.md",
+      "sha256": "aa6d8a8699b391d12228b8f09c4efdcb5ee3357f281b6743b278ffffa461fef5"
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/02_INFORME_MAESTRO_HISTORICO.md",
+      "sha256": "ff20e322838dbca829f4a8e86f7b0cb9072ffa616d8709b5e015e4a66e07bfa2"
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/03_PREGUNTAS_PENDIENTES.md",
+      "sha256": "ca5e350a49a8d876740f432f6121e3710ede03ca257b1e60bcbd79ed7067a8ea"
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/04_MAPA_DE_CAMPO.md",
+      "sha256": "40ef9260e2e1d61d1db5b25fcae4733adec2c4bd234e6a6b1cf83a268b68b272"
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/05_PREGUNTAS_DE_INVESTIGACION.md",
+      "sha256": "2bcd6ff38d577fa96c1c808e83887b6ec34d9723446ddfaab20943d1527256fb"
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/06_HOJA_DE_RUTA_Y_ESTADO_EVIDENCIA.md",
+      "sha256": "49842f00e87e6f33bce0ea262db89c12ade427838b83d3a4fba7123fc1f49ebc"
+    },
+    {
+      "ruta": "biblioteca/corpus/00_LEEME_CORPUS_CIENTIFICO.md",
+      "sha256": "048188349fbdb25f72eefa8fa306fa01f957c32c41247d7063fdd68e17d12133"
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/01_ANATOMIA_HIPERTROFIA_REGIONAL_Y_LONGITUD.md",
+      "sha256": "b1615ca41dcf86f0227865bd1a684ae94bf49790dd74005ba50a6dcca28686c4"
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/02_DOSIFICACION_DE_LA_HIPERTROFIA.md",
+      "sha256": "1e35094991f546a9ad27572d5d67fa68bcddcbce8dd0cda2b357c2944d4afccc"
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/03_EJERCICIOS_BIOMECANICA_Y_REDUNDANCIAS.md",
+      "sha256": "314e72326a2fcb560d5d4b9ff4803bda312201068deac0de393e749bc7a4bee9"
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/04_NUTRICION_RECUPERACION_E_INTERFERENCIA.md",
+      "sha256": "03548d876a974ec36a1d009bf43794a35aa68ea907d8b61810a4ec08732cd372"
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/05_PIEL_CUIDADOS_Y_TRATAMIENTOS.md",
+      "sha256": "4e438f7a2e06ecb8cb8025081e549ba4563cee78fae5559c024d4814b2e5e670"
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/06_ESTETICA_MASCULINA_Y_PRESENTACION_VISUAL.md",
+      "sha256": "a98be3a396df07c6cf863647522d9c57a44bef8730b76699a76340188d7e1e25"
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/07_PROGRAMACION_AVANZADA_Y_CONTROVERSIAS.md",
+      "sha256": "f37defae14747d11b9c4541388e526af63571c609921728a23325ab17ae81496"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/01_EVIDENCIA_INICIAL_ESTETICA_Y_MUSCULARIDAD.md",
+      "sha256": "d239fb5a1e87e1cc502a8d61fe72d7fb3c19edbc45f67d7432a66fd7b453c736"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/02_BASE_EVIDENCIA_ESTETICA_MASCULINA.csv",
+      "sha256": "8111f8f9c0c9711ba86019f3da96fe7c2dc958c3646d7a901ccffb817ea3e582"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/03_ATLAS_ANATOMIA_VISUAL_Y_PRIORIDAD_REGIONAL.md",
+      "sha256": "f84743c1028b9be4a7e8fe5d482c3e7515112afae9244b7aec4525427df1de23"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/04_BASE_EVIDENCIA_HIPERTROFIA_REGIONAL.csv",
+      "sha256": "7526b90d45cbdd44f487d99cb12160be0ee38dcf726dbf37605583b166ee9844"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/05_SINTESIS_EJERCICIOS_Y_MAQUINAS.md",
+      "sha256": "5789f16c7eabbb97d5cdfef24dc9b039e1aceeb994751439a2cf87bc9652cfac"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/06_MAPA_PREGUNTAS_Y_ARQUITECTURA.md",
+      "sha256": "2ed23c0c00416e4693f9742286bc871814e3b9cab996fa1a5b8be22d8eb0596c"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/07_MATRIZ_PRIORIDAD_REGIONAL.csv",
+      "sha256": "0988a54d2fc42f4c2b24e339a6c1681ffe02fc81647037ef00b38176e5b1a82d"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/08_CRITERIOS_Y_ARQUITECTURA_DE_PROGRAMACION.md",
+      "sha256": "ed85b2fae182f17b9b3073b2613a42f5896454bf8c603c6873adbcb51c7e0a84"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/09_PROGRESION_TRANSICION_Y_FATIGA.md",
+      "sha256": "11972b18a9ad5fd48d80a3d0015926a41fcbd3eaf7eb95c7b17f99e18e716d78"
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/10_NUTRICION_RECUPERACION_PIEL_Y_PRESENTACION.md",
+      "sha256": "44a84708bb2757903fff7cf50f3707aa69df4dc1a115d6b65514941be44e5005"
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/01_MAPA_PREGUNTAS_Y_MARCO_DE_EVALUACION.md",
+      "sha256": "10cfdd15c8a61b5f6d6b03384dcaab467f2ae9f095556da06c560ad0bc29fe48"
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/02_EVIDENCIA_MAQUINAS_Y_EJERCICIOS.md",
+      "sha256": "73c93e4b94f18801468330a8c93e5797fa8fd0987821010807df7cc8de54acfb"
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/03_MATRIZ_INTERPRETATIVA_DE_MAQUINAS.md",
+      "sha256": "1e2f41ae9a3c2573062446d110cfbcc34c779087577f5b541ae54e69b2f80a89"
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/04_ESTUDIOS_ESPECIFICOS_DE_GIMNASIO.csv",
+      "sha256": "c718d4d493a4a96995059689f5678ea7934ae747e32dd85ac74ef59cf85de9f5"
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/05_CONCLUSIONES_ESPECIFICAS_DE_GIMNASIO.csv",
+      "sha256": "4b3a83dcd3c5012da030cf9c42221c4fc03c0428c046f9873a3d8f5b042a0db2"
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/06_INVENTARIO_Y_TAXONOMIA_DE_MAQUINAS.csv",
+      "sha256": "773f046c613f9c18864134a8187b5c3bf5fec159cc0d0e7d1187ba83e2a1878a"
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/01_ESTUDIOS_GLUTEO_Y_AREAS_ASOCIADAS.csv",
+      "sha256": "b6da134719664cd8a68fe8f0929988456085f421d6144d2e799f4a591044085d"
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/02_RESULTADOS_SINTETIZADOS.csv",
+      "sha256": "a9c68159f93021cb572e01a7879f60355dd0afd3a24271b12747d6b6fde4c7ba"
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/03_DATOS_BIOMECANICOS_EJERCICIOS.csv",
+      "sha256": "90c1540357ba54da72ad1cf575af4fa51f4606e84725a50e23ee54c5d060beea"
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/04_DATOS_PIEL_Y_TRATAMIENTOS.csv",
+      "sha256": "a9119b86566af1ffe0bcb747ca0b7dfff44ebef7db2f78cc286c867e8f51df44"
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/05_ESTUDIOS_ESTETICA_MASCULINA.csv",
+      "sha256": "d2a117d0d9fc663c9751852086fb638789655d73a7a8973982083402bd2f7ee3"
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/06_ESTUDIOS_HIPERTROFIA_REGIONAL.csv",
+      "sha256": "d1947f4eaaa840110868dbe26cc578f61f3c706828132386b29217c4aba3471c"
+    },
+    {
+      "ruta": "biblioteca/corpus/05_RESULTADOS_POR_FASE/01_ESTUDIOS_PRESENTACION_VISUAL.csv",
+      "sha256": "b36aab2811299ca8b7e322bf54e4f23c645adf52ef02a4085baf92aba02515d2"
+    },
+    {
+      "ruta": "biblioteca/corpus/05_RESULTADOS_POR_FASE/02_CONCLUSIONES_PRESENTACION_VISUAL.csv",
+      "sha256": "3c3ce586fe018e07d9da987fe7146d23639a26e9170445bff65e926fe5338ed9"
+    },
+    {
+      "ruta": "biblioteca/corpus/05_RESULTADOS_POR_FASE/03_ESTUDIOS_PROGRAMACION_AVANZADA.csv",
+      "sha256": "753b901be4e64d96d263739d3e8ca8bc55bb4fab283c64dbefe767c750b7763a"
+    },
+    {
+      "ruta": "biblioteca/corpus/05_RESULTADOS_POR_FASE/04_CONCLUSIONES_PROGRAMACION_AVANZADA.csv",
+      "sha256": "b7090fd1a7c9590651ae03acfc28b9a03e75c671cfd33df6fac7cddcdf945739"
+    },
+    {
+      "ruta": "biblioteca/corpus/10_GUIA_NAVEGACION_PARA_ENTRENADOR.md",
+      "sha256": "0826ba2dc25ffc61781361a6690ded3b513734dd364da7b54bbfb1c847751043"
+    },
+    {
+      "ruta": "biblioteca/corpus/99_MANIFIESTO_Y_TRAZABILIDAD.csv",
+      "sha256": "d7621386af3f9430e3bc3c3823a9a130b24c4b8533ea55c9a8e6dfd1a67350c7"
+    },
+    {
+      "ruta": "biblioteca/fuentes/00_LEEME_PAQUETE_TOTAL.md",
+      "sha256": "61909f902c949ab718fa7e6352833ea648c86789b363273bcceb4e2795279be0"
+    },
+    {
+      "ruta": "biblioteca/fuentes/01_METODOLOGIA_Y_AUDITORIA/01_ROL_INVESTIGADOR_AUDITOR.md",
+      "sha256": "a9f3fad2bce9b949dc80a390f51823831f00026273d2cd0ba5df53706fcb1d16"
+    },
+    {
+      "ruta": "biblioteca/fuentes/01_METODOLOGIA_Y_AUDITORIA/02_FICHA_PUENTE_PROYECTO.md",
+      "sha256": "fe00eec7011bc83a144d69dd84a575beffe31c5562df23cc94083519135a50e6"
+    },
+    {
+      "ruta": "biblioteca/fuentes/01_METODOLOGIA_Y_AUDITORIA/03_REGISTRO_DE_INTEGRACIONES.md",
+      "sha256": "55bfcec18125085054e57d45f24331489da4359e29375293a6737de6d1a82c85"
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/00_LEEME_PRIMERO.md",
+      "sha256": "382e66f94e2fa03204dcb73c7f3114a35849fc315ea4cb3b9df571efc37725c7"
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/07_SINTESIS_NEUTRA_DE_RESULTADOS.md",
+      "sha256": "9b261f7b6fbbb7fd6e50ba6b2796bb99e3301e5a8bbc4a532dbf6f2f2b63e8b5"
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/08_MANIFIESTO_TRAZABILIDAD.csv",
+      "sha256": "a184db5ada182871aba5df81615b1825e41650b047676d3f5328e60eef35c5fb"
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/09_CONTROL_DE_EXCLUSIONES.csv",
+      "sha256": "32475bd1f7155ac60aa021782fd10e8e99e8147efd6bd9bf4cabba6efa831e21"
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/VERIFICACION.txt",
+      "sha256": "4d022fd6d80014ecf8ff50fd5f1889103e990404d5e73cf86590614273f10116"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/01_BASES_INICIALES/conclusiones.csv",
+      "sha256": "10eedcccf8932e2df49f16bce9e1c0e6367440cf8a389d661d216a6d6c9d0023"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/01_BASES_INICIALES/ejercicios.csv",
+      "sha256": "c5059b7dc748a40fb5da72bf3546b713cfb3e9157bcca6b03012985af420e005"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/01_BASES_INICIALES/estudios.csv",
+      "sha256": "8c986406b728cbcc297b18863c9cc81e04241f6ac6edbd6b16f0a1f5e700f52f"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/01_BASES_INICIALES/intervenciones_esteticas.csv",
+      "sha256": "a63e25c698dce8579281914dbc7ae0690420c5879b46b58304b1c9c23b40f839"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/equivalencias_redundancias_G3.csv",
+      "sha256": "4a52ea5855768baecf6e385acc4309d2394f12184e82cb43380e08e1e7fb1918"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/matriz_seleccion_G3.csv",
+      "sha256": "a42b6fa80e499694f8a6e70f467afff21fe90b3c5b0cb5753dbfafd73f74a677"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/plantilla_prueba_encaje_G3.csv",
+      "sha256": "3fe825d45e37f186001c1d0c4bcde1d9d3020c01bc3f74e56b862919c73139aa"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/preguntas_gimnasio.csv",
+      "sha256": "600421f63b79c9541b8bf91ac093140962671e0e0082c203eee5f7274d3427b2"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/programas_G4.csv",
+      "sha256": "2ed120a1d0c855807c28a05cf2f87f7cc6792bc99215e7fe23dff29faf59e37b"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/progresion_ajustes_G4.csv",
+      "sha256": "1876022803a59234ed23f4b43d01eafdc91fb7d31047d020d41451ff2c699b3c"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/registro_sesiones_G4.csv",
+      "sha256": "01904c23151bfbe8db1f223628c5c40084f1daab0beea31a8abc29f728097cec"
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/sustituciones_gimnasio_ocupado_G4.csv",
+      "sha256": "bef1ed53f9a0e9629cbbada7fdde34cb3495f1289995012f8495ec875c465406"
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/00_INDICE_MEJORAS.md",
+      "sha256": "89604513b698393480a028555ba9e6dd782ae7514e6af2eab23dbb7d1894bc88"
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B1_EVIDENCIA_HOMBRES_ENTRENADOS_MEDIANA_EDAD.md",
+      "sha256": "050ef4ea2e6f9f7215f87977b2a5c5028bd3a97670262d41229e8f2e22ed2abf"
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B2_TABLA_MECANISTICA_MAQUINAS.md",
+      "sha256": "85e6aa85e2c5816de82eb547dbad65228f249329a93f0ecf642db44c148d39a8"
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B3_GLUTEO_MEDIO_MENOR_PROVISIONAL.md",
+      "sha256": "ebb28180b48476599031eb60bf85b27732b44a54a3269e68310c7013b46d12d7"
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B4_PROTOCOLO_METRICAS_SEGUIMIENTO.md",
+      "sha256": "8579a968b5a3c8f206c6b0cdd40088e4e82e8fb9f6c6d8568259178673cfeccc"
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B5_PERCEPCION_ESTETICA_PRIORIDADES_VOLUMEN.md",
+      "sha256": "67a5d981a6e66c8806c67b8920f4fdc67cac3468df33670176cab22301d57d7f"
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/REGISTRO_INTEGRACIONES_ACTUALIZADO.md",
+      "sha256": "92301e7d53e41d7e2b4040fccc842ae788463b5f9d4a6ad074f4723ece14826e"
+    },
+    {
+      "ruta": "biblioteca/fuentes/99_MANIFIESTO_DE_EXPORTACION.csv",
+      "sha256": "0e4abad1a0acc53153b258a55b7f449b1a9a77d7b636a7c07e6af6f3202456ac"
+    },
+    {
+      "ruta": "biblioteca/fuentes/VERIFICACION_DEL_PAQUETE.txt",
+      "sha256": "e220bdd84884c0ef69577e7789a78cc8248492a1094c8873923da6f0cd376a52"
+    },
+    {
+      "ruta": "data/actualizaciones_conocimiento.json",
+      "sha256": "3ee865b07ee9815401a4c4b044fdf5c607412f3d9dabdaaf3d06c29997bdd378"
+    },
+    {
+      "ruta": "data/alimentos.json",
+      "sha256": "dfe6d88ab3865d88d273e2c048973872fbd9d1e75c73bf40da087391a63f8bd1"
+    },
+    {
+      "ruta": "data/catalogos.json",
+      "sha256": "4d7bab7181a14757e205eea235c8d6756452c073959d04350dbf23979cb10b70"
+    },
+    {
+      "ruta": "data/confirmaciones_usuario.json",
+      "sha256": "281577019b258950101756c2cd52224f8f68b7bef04e6640e392ca49691d603c"
+    },
+    {
+      "ruta": "data/conflictos_fuentes.json",
+      "sha256": "4423800032ba8f3a62481e9c3634606b41054857c41e3cd22b3fefb2ef7f6f86"
+    },
+    {
+      "ruta": "data/decisiones.json",
+      "sha256": "789a8a006d18defef1ded8874bcf57cd8fb947cc5537b540f7b44c890b0fde77"
+    },
+    {
+      "ruta": "data/estado_revision_diaria.json",
+      "sha256": "6599aadded75b11c27f556ff49f9ebf60cc50adff85307a031c8b3b81a423ba9"
+    },
+    {
+      "ruta": "data/estado_y_decisiones.json",
+      "sha256": "905ac9d5c0a1416dcc389ccc118ccd32224e2ad79bbfe4de9d163887db74cda2"
+    },
+    {
+      "ruta": "data/fotos_maquinas/2026-10-09_selector_placas_ejemplo.jpg",
+      "sha256": "abd72cc35f367053acbceb4fc483906857fd9e26be152ec379e69f2fecd9c53a"
+    },
+    {
+      "ruta": "data/fuentes/DAME_CANA_CATALOGOS_drive_20260929.xlsx",
+      "sha256": "975dcc2d8bdd2d31947e07ee6abe7d5dc631055deb8109a5c0ae6a75438850ae"
+    },
+    {
+      "ruta": "data/fuentes/DAME_CANA_OPERATIVO_drive_20260929.xlsx",
+      "sha256": "12da9e173cac714d3fc2f93bd573f09f0a9af66e2c11c54c4cc210eebdb39916"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/2026-08-05-entrenamiento-de-hoy-registro-ia (1).json",
+      "sha256": "168e5ce14c3ee6af775b095d38063bfe007e0501f40a8d4e7c60f6d81ea1160b"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/2026-09-30-dia-b-registro-ia.json",
+      "sha256": "e3aa339815e23d050215f767aa9d34aeb0d46be4b9267fd83da27e8fcf3a1dcf"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/2026-10-06-sesion-en-vivo-registro-ia.json",
+      "sha256": "b37f9cce75cdb2989de6fb25f20f6483ab5ff3365f4f7e1eea50e7b0a3c8179d"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/historial-entrenamientos-ia (1).json",
+      "sha256": "1d7ff2a55192c06374a2ac46e7e6bb0523e5aa3f58953862d9c3b27142301ef0"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/historial-entrenamientos_este_chat_2026-08-12.json",
+      "sha256": "82796b177b1b614fe5d6febda58667de0479d2016b6719a8ccf3a093e43ca8f4"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/historial_entrenamientos_reconstruido_hasta_2026-08-01.json",
+      "sha256": "8f7fbf380d81d44809a113aa4483cd2682f3bdc41392fb8e073bb8682fbf6047"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/drive/DIRECT_SYNC_20261003_105229.json",
+      "sha256": "3c6373438564363544f70598e746f847b9620fc3e27e5e7fae435d521bc2d3ba"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/manifest.json",
+      "sha256": "fd148224ddf97910d610b81080ae49db67b52967b1d5454a3b5db6e0eb684631"
+    },
+    {
+      "ruta": "data/fuentes/manifest.json",
+      "sha256": "c15476ff8d287fc642417edb68779e8c86623e94bd8fbe831ca9ed1943ea6420"
+    },
+    {
+      "ruta": "data/inbox_app/2026-09-30-dia-b-registro-ia.json",
+      "sha256": "e3aa339815e23d050215f767aa9d34aeb0d46be4b9267fd83da27e8fcf3a1dcf"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-13-dia-c-mv6ly2iv.json",
+      "sha256": "1299bfe6584eaec50add355d017316c6af0de04ab7d6e0115bfa994ec3592591"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-14-dia-b-mv83bq2i.json",
+      "sha256": "a944cbb154fd882da9539bca0d0faa77dd168b351492a7d3e5518af3070dad41"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-15-dia-b-registro-ia.json",
+      "sha256": "3272219feb7af9b9d4b0f51ac6e8d4e55d6fe15aeec7962f88e18dce642c03e0"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-17-dia-a-mvck2kbr.json",
+      "sha256": "5da7e93419163deebab9137d75fde57f5ba2ea7bef5102bc393849b9b9be7cd5"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-19-dia-c-mvf9pzi4.json",
+      "sha256": "fa9ffce8bdf65c4359ded43d8274f0b3abe2625e40200be55b2e598f0bc30c19"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-20-dia-b-mvgl5zcy.json",
+      "sha256": "a178da53d8509e30b3216c0e2f22ffc8f04320c9e0aec24f6919b5651cdb337e"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-21-dia-d-mvi0p79k.json",
+      "sha256": "6076ff82a7cbe43308c2a1645c7ea4cb20c14f94b53ab904c6aed69f0b842239"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-23-dia-e-mvktzbvn.json",
+      "sha256": "5225c5147259ef9a08de1d3bdf3c7afcc9887282d9f5a737859ab3fc3b8f8554"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-25-dia-a-mvnryssk.json",
+      "sha256": "053dd2f1392a4cbd33b2f7f6f7ba18be1f98a26a0e03622cc7cec6e88bbb9b61"
+    },
+    {
+      "ruta": "data/inbox_app/2026-10-29-dia-d-registro-ia.json",
+      "sha256": "0da46f0e995a7eed1ab363dab8392635edc8a54fd6314cbb0beedbbf160a5c45"
+    },
+    {
+      "ruta": "data/inbox_app/DIRECT_SYNC_20261010_183006.json",
+      "sha256": "c0ccc1dbe38afda9467f94e84b1d1b8731f5a25d0d214598f12a128f27be3c4c"
+    },
+    {
+      "ruta": "data/inbox_app/session_2026-10-28_mvs37pc8-y6790p.json",
+      "sha256": "c1588a59a2118c03f40c8222ebc6f450a4655fb781fe79231b1822cc7374d607"
+    },
+    {
+      "ruta": "data/indicaciones_tecnicas.json",
+      "sha256": "74a7d0d7233a3f6e9b0f423999f64bf9a966e88534cd42f8d8e071a45e220eb8"
+    },
+    {
+      "ruta": "data/maquinas.json",
+      "sha256": "1e6ec10dd600a7fb12e23fba65de2fd2946296012eab011f007206e588f03d73"
+    },
+    {
+      "ruta": "data/modelo_operativo.json",
+      "sha256": "cd1f58395da2463eeb94388926d128d000e58c2198c219508903bf3864964a92"
+    },
+    {
+      "ruta": "data/nutricion.json",
+      "sha256": "307b314537be596bca0b630fe630cfba9c3e9cb207de3060153e70a7e6cd4b1b"
+    },
+    {
+      "ruta": "data/originales_app/2026-09-30-dia-b-registro-ia__e3aa339815e2.json",
+      "sha256": "e3aa339815e23d050215f767aa9d34aeb0d46be4b9267fd83da27e8fcf3a1dcf"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-06-sesion-en-vivo-registro-ia__b37f9cce75cd.json",
+      "sha256": "b37f9cce75cdb2989de6fb25f20f6483ab5ff3365f4f7e1eea50e7b0a3c8179d"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-13-dia-c-mv6ly2iv__1299bfe6584e.json",
+      "sha256": "1299bfe6584eaec50add355d017316c6af0de04ab7d6e0115bfa994ec3592591"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-14-dia-b-mv83bq2i__a944cbb154fd.json",
+      "sha256": "a944cbb154fd882da9539bca0d0faa77dd168b351492a7d3e5518af3070dad41"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-15-dia-b-registro-ia__3272219feb7a.json",
+      "sha256": "3272219feb7af9b9d4b0f51ac6e8d4e55d6fe15aeec7962f88e18dce642c03e0"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-17-dia-a-mvck2kbr__5da7e9341916.json",
+      "sha256": "5da7e93419163deebab9137d75fde57f5ba2ea7bef5102bc393849b9b9be7cd5"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-19-dia-c-mvf9pzi4__fa9ffce8bdf6.json",
+      "sha256": "fa9ffce8bdf65c4359ded43d8274f0b3abe2625e40200be55b2e598f0bc30c19"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-20-dia-b-mvgl5zcy__a178da53d850.json",
+      "sha256": "a178da53d8509e30b3216c0e2f22ffc8f04320c9e0aec24f6919b5651cdb337e"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-21-dia-d-mvi0p79k__6076ff82a7cb.json",
+      "sha256": "6076ff82a7cbe43308c2a1645c7ea4cb20c14f94b53ab904c6aed69f0b842239"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-23-dia-e-mvktzbvn__5225c5147259.json",
+      "sha256": "5225c5147259ef9a08de1d3bdf3c7afcc9887282d9f5a737859ab3fc3b8f8554"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-25-dia-a-mvnryssk__053dd2f1392a.json",
+      "sha256": "053dd2f1392a4cbd33b2f7f6f7ba18be1f98a26a0e03622cc7cec6e88bbb9b61"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-29-dia-d-registro-ia__0da46f0e995a.json",
+      "sha256": "0da46f0e995a7eed1ab363dab8392635edc8a54fd6314cbb0beedbbf160a5c45"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260815_164222.json",
+      "sha256": "4c8c8be8ffba99e30d7f9f0be059212321bcc82680ee84009288164ccfa60f35"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260815_172049.json",
+      "sha256": "76e1c5bbc8307666d227843776940a838792d2324f4ff2258e74d092e43a7253"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260816_103838.json",
+      "sha256": "41521928d6523562e11369873a709cba1c34799de9a8dceec79d0d5b06677e68"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260818_083455.json",
+      "sha256": "f0d0afe3ca0e9bf2b26d0c62408344021224466a256c39b0b220baea2e42c5ab"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260818_101600.json",
+      "sha256": "51410f4a4fb9df771c101a6ca56dee7c604bcfa6074e542341b57767c45a2d2e"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260818_171942.json",
+      "sha256": "9cc4efdde99532bbee6a45088e2350607d9e53dd511bd80e6b6d3f7366812471"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260821_103910.json",
+      "sha256": "289bcb0c0b1d6fe5be5b8c59f2f345f8a907f637154bf61dead1aceb0f837a8b"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260821_123949.json",
+      "sha256": "30242dd5d5886b86c883000fafc7a41e7d5b1017f0d3bb4470ccf6db898710ff"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260823_114530.json",
+      "sha256": "97903d19269568fccc20ec836b7d1da86ca8056237b4b67153bf1f7d42516856"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260827_104929.json",
+      "sha256": "b63bcafcd6037e78fa95e4e8e166baf5dc97c19c8052653d84a211dc6540f6ef"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260830_132244.json",
+      "sha256": "9afd141a4950565d8df711693f6011ff2e2a146fda5f1642aa1feddda2bd4b47"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260902_200156.json",
+      "sha256": "97f256be5c85c609ff1f423eb183ec51e9d9e0e642bf1b1b41c50ac72217c2cf"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260904_082248.json",
+      "sha256": "60a1744a1e94921d0e48334dac2156e7dcee310d2512140c2e385593f44f0d2d"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260908_082649.json",
+      "sha256": "cad6a258054647d8e222d303398b2302b7bdffa10c3b4930eabbb7e49724cfa4"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260912_102302.json",
+      "sha256": "b2ddb503f9e6efdd576686984f491757c4e1bd755563131e39ad55e6971c06d2"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260914_160631.json",
+      "sha256": "aac7d7677d047a392c4ad53a4ac9495fd3370c9f641cb2b7542e60cdcea05caa"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260916_152011.json",
+      "sha256": "95dbad60766960d2a5ccfacd34d873c73c1570b5bdcedb69cb8a3d5889b5f0e4"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20260926_182824.json",
+      "sha256": "4e7626e313b9768d531f8ee6eebfb2e06825331411c2a16b3c5748e817e856d8"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20261003_105229__3c6373438564.json",
+      "sha256": "3c6373438564363544f70598e746f847b9620fc3e27e5e7fae435d521bc2d3ba"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20261010_183006__c0ccc1dbe38a.json",
+      "sha256": "c0ccc1dbe38afda9467f94e84b1d1b8731f5a25d0d214598f12a128f27be3c4c"
+    },
+    {
+      "ruta": "data/originales_app/session_2026-10-28_mvs37pc8-y6790p__c1588a59a211.json",
+      "sha256": "c1588a59a2118c03f40c8222ebc6f450a4655fb781fe79231b1822cc7374d607"
+    },
+    {
+      "ruta": "data/pendientes_externos.json",
+      "sha256": "d85f1500baade74a2b17c9ef5425878d81e211c96c5d94126547a9faec4c861f"
+    },
+    {
+      "ruta": "data/programa.json",
+      "sha256": "e402b2651cff535b0a064d9605e182da62253be4667d821f152e199c1c5b2b5e"
+    },
+    {
+      "ruta": "data/registro.json",
+      "sha256": "5dc7ef607e8eb4d7790d228029159ecebf241f758450380a4f5e1cf0b1e9dace"
+    },
+    {
+      "ruta": "data/retirados/consolidacion_20261008.json",
+      "sha256": "84b01305c0f137ab6f134c8af8f91f7d0304608e2d6e9a02dfbe7601e9efb743"
+    },
+    {
+      "ruta": "data/seguimiento.json",
+      "sha256": "a4756544a970f03433051e1aaa953967619290917e91c943c78da3abfc7b57ff"
+    },
+    {
+      "ruta": "data/taxonomia_operativa.json",
+      "sha256": "9ceebf8ec3f9fff4b259d940687686552872d9152c2d9b71d628ef784a4e4180"
+    },
+    {
+      "ruta": "docs/CALIDAD_Y_PENDIENTES.md",
+      "sha256": "87f0dac2ccb63e5c886953a21fdf5bc20b1c1fd590fabee9b2a2f838f256ba77"
+    },
+    {
+      "ruta": "docs/ESTUDIOS_Y_ADAPTACION_PERSONAL.md",
+      "sha256": "7750f79dbe61268bf5e78ab166fd43624f88e0ce52bd797891fb8eafdcd6090e"
+    },
+    {
+      "ruta": "docs/FORMATO_SESION_ENTRENADOR_APP.md",
+      "sha256": "794677fc29bb322cfa736f1e2e21f63b6a14fefcdb5b552b1637ca3a8e0205c7"
+    },
+    {
+      "ruta": "docs/GOBIERNO_ENTRENAMIENTO_Y_CONOCIMIENTO.md",
+      "sha256": "74e07ce3859c96cc6ffd3b7d009307f829e2784cd19d32563bcbf3c64bc1ff43"
+    },
+    {
+      "ruta": "docs/GUIA_APP.md",
+      "sha256": "1614142a2678b6d89b0cd5cfe347b3c68fa12ec6bbf73d42b3a07cb86b435922"
+    },
+    {
+      "ruta": "docs/GUIA_GRAFICA_EJERCICIOS.md",
+      "sha256": "238c4fd05dc5afa267902d2d1adc8d995c62012d0ee6c9854c30f2f3994019e8"
+    },
+    {
+      "ruta": "docs/PERFIL_PERSONAL_UNIFICADO.md",
+      "sha256": "b7b2666c73add95c49fd668e653678dae9f7bcaf7d2b1a7afbc0dc3df370a016"
+    },
+    {
+      "ruta": "docs/PROGRAMA_ACTIVO.md",
+      "sha256": "1bbe374683b40d3904332268b8a5a2fe59a0027a5624f65edb134eba2f8b008e"
+    },
+    {
+      "ruta": "docs/REGLAS_DEL_ENTRENADOR.md",
+      "sha256": "9876405484464dc23946f8e17138c9a4e6742cd7c434a40448b33d9c61a4cdc7"
+    },
+    {
+      "ruta": "docs/auditoria_app/INFORME_AUDITORIA_DAMECANATN.md",
+      "sha256": "f20ad2c467205a16c26291563f95fc29a8f82fc24de725561a3da6236ee1b01f"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/01_inicio_diales_titanio.png",
+      "sha256": "f11cdcbf69d7728c8933f376e078c167a48a7472c5fb752e85dbb41b3bd7a039"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/02_bahia_calibracion_nota.png",
+      "sha256": "382d7228b192562f6f5605f9cb8472150fafeb3278d32abd7fda427c5c0184c0"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/03_revision_previa_nota.png",
+      "sha256": "a84873914fecd02954262405709812fccaf46df0780c5fe40c95c27049a60c89"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/04_sesion_carrusel_3d_anverso.png",
+      "sha256": "9445e73f890b3ab08d5543244301a077ebc251858803b9abbe3114dde4f545bf"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/05_tarjeta_reverso_biomecanica.png",
+      "sha256": "26d2ea108a39ee8ec795547b3f0a46163b744a83b1536fd5bbd9c465b8539f56"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/06_identidad_maquina_y_carrusel.png",
+      "sha256": "176018fffd25dc900886713c59dfb96499f1dd5898c4ed41d92dd82cd8a01550"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/07_catalogo_selector_ejercicios.png",
+      "sha256": "b3d84638a87f4287a1bbd49e9d6613c501dd7eff380046dcadb68b3303286c14"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/08_cronografo_descanso_activo.png",
+      "sha256": "cc6b2459453ae2a284fa30f8e3a9aa1afe7e74d86b18edec1723ba8f88433874"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/09_popover_cierre_sesion.png",
+      "sha256": "27d22695e96e621a48b42ea791d12c4c1001db4f7c964f6fdd85d222d396fbdf"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/10_historial_y_telemetria.png",
+      "sha256": "26b619304be40e148465bbf3e0e6b9e7ac88af89a697ee25c138e1e6cf88cbb2"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/11_modal_mejoras_ux.png",
+      "sha256": "f599cf6f1d30c7cc7d1e84f5eddbd486b57024ffa6f244cfe820838171b5644e"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/12_importar_entrenamiento_antiguo.png",
+      "sha256": "a6dda82fdd0ae7dda77c40ed141a088b529814722a81fb89f04dee43c452be6b"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/13_modal_comandos_ia.png",
+      "sha256": "bbb196eaad4abcb721bc53cb4c540bba030c373682ecadb43e0384c20b857d05"
+    },
+    {
+      "ruta": "docs/auditoria_app/capturas/14_checkin_semanal_titanio.png",
+      "sha256": "b61602d0d52c1b620efc7855fa09238ef19051004b42605bf9854d38e540bcbf"
+    },
+    {
+      "ruta": "outputs/operativo/CONTEXTO_ENTRENADOR.json",
+      "sha256": "1b9311dc6286ce41618372fdacc3da0fe94061d06c5e17677cd86edffee28699"
+    },
+    {
+      "ruta": "outputs/operativo/DAME_CANA_OPERATIVO_LOCAL.xlsx",
+      "sha256": "428d8908852918b0056c35d88bf813987fb802a4ac54e31d64ef3c1f55b82e27"
+    },
+    {
+      "ruta": "outputs/operativo/HUELLAS_LIBRO.json",
+      "sha256": "c481d6af3e435f0c43ba9b053c1715920fd7583bedba71a4c101b786dc251b99"
+    },
+    {
+      "ruta": "outputs/operativo/INDICE_CONOCIMIENTO.json",
+      "sha256": "94abc38268a3dd04de0f55165190f57024055be985adf60ee8a8fb8e1933e6ff"
+    },
+    {
+      "ruta": "outputs/operativo/LEEME_DRIVE.md",
+      "sha256": "b886b8f2fd3491882f1a74beff50ac4b0a36518d921c14fec6df58ab0b338867"
+    },
+    {
+      "ruta": "outputs/operativo/MI_SISTEMA.html",
+      "sha256": "aa12a69807a1891ce2c9418bc2889726caac8b916ecb7467f32319bd508fb558"
+    },
+    {
+      "ruta": "outputs/operativo/MODELO_OPERATIVO.json",
+      "sha256": "5ddafa56ce6c6ba2289c976841b9f7f77a46b54af8495c800dcb4c6bad25164d"
+    },
+    {
+      "ruta": "outputs/operativo/TABLAS_OPERATIVAS.json",
+      "sha256": "893ac65b004b61b0d88856aa8a0e9e4c7bdb01ed67e84f1b39f6babfcdceb889"
+    },
+    {
+      "ruta": "outputs/operativo/VISTAS_HUMANAS.json",
+      "sha256": "15b01968c34ae7d766a827521118bacfb052c51ce285e83a74f2d00ed9680c4a"
+    },
+    {
+      "ruta": "tools/actualizar_programa_5d.py",
+      "sha256": "3e14d134f9a9d75679f82180dd4a53a7b47fb1f7b47e28631b845ba1e912714e"
+    },
+    {
+      "ruta": "tools/compilar_app_data.py",
+      "sha256": "bf51512dbe4c7533ab5134965e11ebcbd2fecfadac4d0e12d83ad4fa9c88361b"
+    },
+    {
+      "ruta": "tools/conocimiento.py",
+      "sha256": "a45064938a3f6117d25e22c6a1c6ff159a39843090f3766504d3124b46b8862b"
+    },
+    {
+      "ruta": "tools/construir_indicaciones.py",
+      "sha256": "904f38fde83f101f725a27c85c12e255ab684acd61f3ea6aaefacd4bb2d4e60a"
+    },
+    {
+      "ruta": "tools/generar_hojas.py",
+      "sha256": "8b030650debfeb585cc7e2259661bfe3e8e63fa2e8984c1f1bd71b7665784755"
+    },
+    {
+      "ruta": "tools/generar_hub_data.py",
+      "sha256": "839aa060f7cf426c496bc4ffc23ed2b89c259eb146d411e81315548531ee3b51"
+    },
+    {
+      "ruta": "tools/generar_programa.py",
+      "sha256": "b8cbb1dd6dbc6a5901f7e64dcea731b6066cb86e0031b262a73552e4ffef05a4"
+    },
+    {
+      "ruta": "tools/modelo_operativo.py",
+      "sha256": "e3fb68e7b52a915a932ef0f836f8190a3463085a3d276748af642509d18602b7"
+    },
+    {
+      "ruta": "tools/nutricion.py",
+      "sha256": "fb4bda9afbd9adac155c55b4948d7afbf7912cde4c97ed224599ab8acc0aa5f8"
+    },
+    {
+      "ruta": "tools/operativo.py",
+      "sha256": "50cc182cd1ae0acc948125b236336f84e708509e690df3e1fe394baccaa06b3c"
+    },
+    {
+      "ruta": "tools/operativo_contexto.py",
+      "sha256": "134390fa02988aec09d0fcab425579c5044731526368920bdcf1aba3c8b42412"
+    },
+    {
+      "ruta": "tools/registro_local.py",
+      "sha256": "21caec28fe1b4b743c0c0c549615687cf30901720f0811050958c05e670a0ffb"
+    },
+    {
+      "ruta": "tools/revision_diaria.py",
+      "sha256": "5f803079374ad38a11ee436c132dc11b44ce3533bd4e9be21f41869ab5f0986a"
+    },
+    {
+      "ruta": "tools/test_indicaciones_tecnicas.py",
+      "sha256": "b2467ae0601ef37b881abc8d7c0eff6a44289dbcc790a64fd1c5d4dd848abcc4"
+    },
+    {
+      "ruta": "tools/test_modelo_operativo.py",
+      "sha256": "d88b2db62dd7844c2dd8aebdf8b9c7acb0f48ddfd1777409640ec0b095c459be"
+    },
+    {
+      "ruta": "tools/test_nutricion.py",
+      "sha256": "9746e06658e1b684f8223c869f76bd4889297ee44a29dcfcbf3032c35f98b67f"
+    },
+    {
+      "ruta": "tools/test_operativo_contexto.py",
+      "sha256": "2be2218be6bba29b191fc9a05d3509a6c0def4313e437f7c77459c5c6c3ebe16"
+    },
+    {
+      "ruta": "tools/test_registro_local.py",
+      "sha256": "5cd4fd783f49d307825517cbb5a2904c799c97597bdd54606b96edb372b0f522"
+    }
+  ]
+}

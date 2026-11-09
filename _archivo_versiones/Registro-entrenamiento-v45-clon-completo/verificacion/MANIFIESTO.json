@@ -1,0 +1,746 @@
+{
+  "external_backend_source_included": false,
+  "source_file_count": 135,
+  "browser_history_sessions": 5,
+  "tests_passed": 133,
+  "app_version": "v45",
+  "schema": "registro_entrenamiento_clone_manifest.v1",
+  "r2_active": false,
+  "sites_version": 30,
+  "d1_active": false,
+  "files": [
+    {
+      "sha256": "7f16869ca2c92cdb93c84749ba73c7ce87df402059e6beddcf6c1acc91e02ccc",
+      "path": "app/.gitignore",
+      "bytes": 500
+    },
+    {
+      "sha256": "9b094cb699d700cdb24da0a8ba02b80590c74f9d36ad2f4578fefc5e43c2ab1b",
+      "path": "app/.openai/hosting.json",
+      "bytes": 91
+    },
+    {
+      "sha256": "eca6d3736d52003b9ef6d3efc6c0a7153713c6f9b5072f76814f91666dbb2fe9",
+      "path": "app/AGENTS.md",
+      "bytes": 2511
+    },
+    {
+      "sha256": "9e2cbfc2449afe5850b7873171125a8b5f9fb801eb2d4803846c81d512aae774",
+      "path": "app/README.md",
+      "bytes": 3785
+    },
+    {
+      "sha256": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
+      "path": "app/app/chatgpt-auth.ts",
+      "bytes": 2550
+    },
+    {
+      "sha256": "c524ec19c7deb36f94a42fb21ed0ddb191de4b7ceb606d11003a724aae7125dc",
+      "path": "app/app/globals.css",
+      "bytes": 122
+    },
+    {
+      "sha256": "6160b1a65ef59d2cfe183af9097e47ebdf223bb1c79ebf6f54008c5460d71c4b",
+      "path": "app/app/layout.tsx",
+      "bytes": 525
+    },
+    {
+      "sha256": "fcb3ce0ba7c3ad5d7e42ae637af8e396b3b529e67bd52ac40cd32fb1649a5998",
+      "path": "app/app/page.tsx",
+      "bytes": 111
+    },
+    {
+      "sha256": "1453a8db290df7761b6cbc4e1180ab79b1b1558173527558935bf0d4f2b6db3a",
+      "path": "app/assets/branding/dame-cana-next-app-icon-source.png",
+      "bytes": 2965184
+    },
+    {
+      "sha256": "81b7cbfaeb970611572256aba0e313425beb3809f6426f63750696c15d9c756b",
+      "path": "app/build/sites-vite-plugin.ts",
+      "bytes": 1254
+    },
+    {
+      "sha256": "dc7610b00b918e0ffff1360a63626f16655ced3064b2eaf96095a4101fb14bcd",
+      "path": "app/db/index.ts",
+      "bytes": 423
+    },
+    {
+      "sha256": "13ddacbf0be50e054d450a6c642b7fdc1aa943fd6b99084711e07e58b600390d",
+      "path": "app/db/schema.ts",
+      "bytes": 169
+    },
+    {
+      "sha256": "d444032d44a456bcc744e6c89096f4121c4803cec054de5926963fa8edd2c810",
+      "path": "app/docs/CHANGELOG.md",
+      "bytes": 10949
+    },
+    {
+      "sha256": "ee96fa2b098ebceefbd927f44ecf8008a5aa5d0ffd0c71cca68691e12d7b60e1",
+      "path": "app/docs/CONTEXTO_PRODUCTO_ENTRENADOR.md",
+      "bytes": 8689
+    },
+    {
+      "sha256": "038c86db1210b946af5a88f72effbb52ad8eca054f77da16240b9f38c88cc29c",
+      "path": "app/docs/ROADMAP.md",
+      "bytes": 3026
+    },
+    {
+      "sha256": "0b46d670b8f55e0d6bd50aebf9dc39caaf180076503074f7307fe70291d6afd6",
+      "path": "app/docs/TRASPASO_APP_v13.md",
+      "bytes": 3923
+    },
+    {
+      "sha256": "10032e7fcebff159cdceb057d912e7f706fa32c0d7189fb23f81c7881c0adcdc",
+      "path": "app/docs/TRASPASO_APP_v14.md",
+      "bytes": 2612
+    },
+    {
+      "sha256": "d9bea33e07e0bd07fa087fde2a58995f3cf22a8f818c0af5ad7ff29b86b739ea",
+      "path": "app/docs/TRASPASO_APP_v15.md",
+      "bytes": 2139
+    },
+    {
+      "sha256": "743f5bdfd9851c8836275296e3d03f1e4ea98633036910030ed1886854f864b6",
+      "path": "app/docs/TRASPASO_APP_v16.md",
+      "bytes": 2622
+    },
+    {
+      "sha256": "51e480fa2a0eadba481d3a292bfe947a3ade186b5abb9fb2512ed931be06d279",
+      "path": "app/docs/TRASPASO_APP_v22.md",
+      "bytes": 3337
+    },
+    {
+      "sha256": "a18ae193d3e728da27814d14766353d4fb8c994a9a5451c330b6d946ae1fa8aa",
+      "path": "app/docs/TRASPASO_APP_v9.md",
+      "bytes": 13452
+    },
+    {
+      "sha256": "af081f7384aaeb0082cf422e29f139d137ca2f6a57c69b2c37b9fb1f8479867b",
+      "path": "app/drizzle.config.ts",
+      "bytes": 148
+    },
+    {
+      "sha256": "90cb374e093894d0efce6f1830d873a42aadd8ba49d2f024495e5cb2e1c8c303",
+      "path": "app/drizzle/meta/_journal.json",
+      "bytes": 61
+    },
+    {
+      "sha256": "870f1adccecf3051cbcd9fd307cef51d7633cf510979c181a81f4b1797273493",
+      "path": "app/eslint.config.mjs",
+      "bytes": 465
+    },
+    {
+      "sha256": "a3d4a74fd53b7bf53e2df41f169d9d9d44a8b22aeb6d92f4e754956079af8909",
+      "path": "app/examples/d1/app/api/notes/route.ts",
+      "bytes": 1700
+    },
+    {
+      "sha256": "d89eabd95716ce404f5f7ca2a254220435be8ddce7c899d7ef461ff22ec80454",
+      "path": "app/examples/d1/db/schema.ts",
+      "bytes": 370
+    },
+    {
+      "sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "path": "app/next.config.ts",
+      "bytes": 133
+    },
+    {
+      "sha256": "283dbdf55081ff6e460baff80764f39f722f13a0720e1a5fa13153ea877051a5",
+      "path": "app/package-lock.json",
+      "bytes": 380145
+    },
+    {
+      "sha256": "8b4103c8f8ffa8cf9d1b31f350deda05fbe1cbc4379261513425fba468b65d3b",
+      "path": "app/package.json",
+      "bytes": 1086
+    },
+    {
+      "sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde",
+      "path": "app/postcss.config.mjs",
+      "bytes": 94
+    },
+    {
+      "sha256": "6fe5435ad228a39a26d2987e90a3e6d9343191edbe693dd3af881847372105b7",
+      "path": "app/public/app/app.js",
+      "bytes": 88339
+    },
+    {
+      "sha256": "2e4d6e8192ca67ee84cb97f40c06e7b46d332609e2ea2957917fd32010042919",
+      "path": "app/public/app/apple-touch-icon.png",
+      "bytes": 1547
+    },
+    {
+      "sha256": "0a736e137ffc37d84202ef0c81d762fca9ce6856be91a2db66b0fd6a3adb2ba4",
+      "path": "app/public/app/checkin.html",
+      "bytes": 28593
+    },
+    {
+      "sha256": "4467797898ca2a9bc6c8497ee7f173283b655f9e1e42d4ec59748c5b77d29081",
+      "path": "app/public/app/day-templates.js",
+      "bytes": 3579
+    },
+    {
+      "sha256": "bfd2be348f29587cb36d49df4590967cd9542c4de45a64ffd948df0bea7e3a14",
+      "path": "app/public/app/exercise-catalog.js",
+      "bytes": 6051
+    },
+    {
+      "sha256": "0b64b2d2efdd38bb8274ca024490dc56263a1044f86f033e6ec790d7509b19ca",
+      "path": "app/public/app/exercise-metadata.js",
+      "bytes": 3999
+    },
+    {
+      "sha256": "7512965e817887244408f41bb0c0457bd6ea5309ba54fd8e92cc14ac34240bad",
+      "path": "app/public/app/feedback-tools.js",
+      "bytes": 3590
+    },
+    {
+      "sha256": "d9e3c5f10a640d75805341c737776b8608a34d2d81978d32aec3df6d9e902f68",
+      "path": "app/public/app/gem-command-tools.js",
+      "bytes": 1979
+    },
+    {
+      "sha256": "b37dc3037cb215034a66602d73e38a830a64e3e46571718d761f63cd3f9d8d0b",
+      "path": "app/public/app/historical-parser.js",
+      "bytes": 15197
+    },
+    {
+      "sha256": "5984c1e2dcd599f3ac5c3ca07d6696cec8caa209941e4a1b6d4ee844dbba377a",
+      "path": "app/public/app/history-tools.js",
+      "bytes": 7689
+    },
+    {
+      "sha256": "81c6dd0d44337e35040c55d5b197efc94e3dc6a8500aa2bfa96efd3ac5982b7f",
+      "path": "app/public/app/icon-192.png",
+      "bytes": 1616
+    },
+    {
+      "sha256": "8797fdef8862f3633398eed66d6b44b372707703777600094d0a039385a5f59f",
+      "path": "app/public/app/icon-512.png",
+      "bytes": 4503
+    },
+    {
+      "sha256": "00257063083e80318c66072d71b1f1047c2a446087bc4d69c185590685d1054f",
+      "path": "app/public/app/icon-maskable-512.png",
+      "bytes": 4480
+    },
+    {
+      "sha256": "e0336fd253f43dc502d5f4e8bac6201784adf3f2dd28703fd0c94ded30409e5a",
+      "path": "app/public/app/icon.svg",
+      "bytes": 291
+    },
+    {
+      "sha256": "9ac18cd68ea4ed4683cfbd228e1ff15d1f06d5855cc29a49e8f5868d4616607b",
+      "path": "app/public/app/index.html",
+      "bytes": 23302
+    },
+    {
+      "sha256": "4f68ddeb5ee785c677e398ed00e253f2789474fc220f684e63954315875a068a",
+      "path": "app/public/app/json-export.js",
+      "bytes": 6873
+    },
+    {
+      "sha256": "36379b38dca932649678c45752a648bf6b4b337e133e6db8f2daffd6aafcf9c5",
+      "path": "app/public/app/manifest.webmanifest",
+      "bytes": 787
+    },
+    {
+      "sha256": "a58867151ce5d271c1b583a3049de15b747642b5cf1256b6bfb2e73639f97807",
+      "path": "app/public/app/parser.js",
+      "bytes": 15732
+    },
+    {
+      "sha256": "e73b311037afbd2804d596a82292c10ac6fbeb0d11723cfdfa4be92a3a30e4df",
+      "path": "app/public/app/pdf-export.js",
+      "bytes": 6854
+    },
+    {
+      "sha256": "bc3688a4fdfe84e73b9f31fc31d63c128d9359fd57a5dd8b6f5a6fc119497cb3",
+      "path": "app/public/app/rest-timer-tools.js",
+      "bytes": 3166
+    },
+    {
+      "sha256": "e24d1ea6b72c4dd45b76ab0791c78c218dec77e6840970568378ab7585351a6a",
+      "path": "app/public/app/styles.css",
+      "bytes": 85018
+    },
+    {
+      "sha256": "745fdaf3f32ac59afe4e19fd4be3a402049da0b908c4118294340df9b3e11128",
+      "path": "app/public/app/sw.js",
+      "bytes": 1649
+    },
+    {
+      "sha256": "c51914546066fd18fa33129fc4c24ac7cd369174e4683c798bc17c898fa0c9b8",
+      "path": "app/public/app/sync-queue.js",
+      "bytes": 10421
+    },
+    {
+      "sha256": "c28ac5573a0dbd6abac52f98fe5a7341e0e3af6854bc1925d1a88ecb002411a7",
+      "path": "app/public/app/technical-data.js",
+      "bytes": 85551
+    },
+    {
+      "sha256": "92ba90f64784704158c8020ad79a6a3ecdc002715ef1c2247444b4464b0ad0dc",
+      "path": "app/public/app/technical-tools.js",
+      "bytes": 6469
+    },
+    {
+      "sha256": "343195d316724e9e020b16eff01301df4e7066a5d502e193256e15e137868b83",
+      "path": "app/public/app/timer-sounds.js",
+      "bytes": 4611
+    },
+    {
+      "sha256": "0f9a5cad07941f0826586c94e089d89b918c46e5c17cf2d5a3c6f666e3bc694f",
+      "path": "app/public/app/vendor/pdf-lib-1.17.1.min.js",
+      "bytes": 525099
+    },
+    {
+      "sha256": "f2c9fc00fdb66eb99ac156ba52d734af66d8d309f65753ae809ad34ee2883bcb",
+      "path": "app/public/app/vendor/pdf-lib-LICENSE.md",
+      "bytes": 1070
+    },
+    {
+      "sha256": "0b17775a8a2229ec0ab6299665f883336ae75430d9d687cfb3cf15b0b6a95069",
+      "path": "app/public/app/workout-note-review.js",
+      "bytes": 12357
+    },
+    {
+      "sha256": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7",
+      "path": "app/public/favicon.svg",
+      "bytes": 712
+    },
+    {
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4",
+      "path": "app/public/file.svg",
+      "bytes": 391
+    },
+    {
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf",
+      "path": "app/public/globe.svg",
+      "bytes": 1035
+    },
+    {
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1",
+      "path": "app/public/window.svg",
+      "bytes": 385
+    },
+    {
+      "sha256": "e600c4fcf5ac93c450d49dcf4d35424ed86d9c22f89dcecbf32a98bd9bd0bdab",
+      "path": "app/tests/active-session-draft.test.mjs",
+      "bytes": 5910
+    },
+    {
+      "sha256": "0523aafbad2d67017c36ce523b30aa08e657197bacd448ac2fee391422e5ce23",
+      "path": "app/tests/app-safety-guards.test.mjs",
+      "bytes": 10093
+    },
+    {
+      "sha256": "3beb8ee4cbe2e0d02bb68039a3a335c355cf9097e4ab657a6a68aef7dc63d1f5",
+      "path": "app/tests/catalog-references.test.mjs",
+      "bytes": 5090
+    },
+    {
+      "sha256": "ad259d6eb052fee0f5cb46b99e55fed994cfe3a36aa0754bc3b2ce11ea62742f",
+      "path": "app/tests/checkin-form.test.mjs",
+      "bytes": 2609
+    },
+    {
+      "sha256": "59c6b76ee0415422c61263384f0c571cfcbc7969043c278a8611150f66390616",
+      "path": "app/tests/exercise-metadata.test.mjs",
+      "bytes": 1768
+    },
+    {
+      "sha256": "b92802cb80969ffc1f374e80d26b24094c2980a1e700a147f7fb2b8a958e7dd2",
+      "path": "app/tests/feedback-tools.test.mjs",
+      "bytes": 5440
+    },
+    {
+      "sha256": "1227788ef6a50a2cfb0c0091be9343c1245b2859505419857a5486f6250af17b",
+      "path": "app/tests/fixture-training-history-mixed.v1.json",
+      "bytes": 1687
+    },
+    {
+      "sha256": "1c96f125755182ee833382731ac3b62cc5491ad08e3c315617e5549252e9140a",
+      "path": "app/tests/fixture-training-log-bodyweight.v1.json",
+      "bytes": 1037
+    },
+    {
+      "sha256": "f0bb76c696176e734b2e86bb4138520d7bc81524e565fddc4ad90738bb239e82",
+      "path": "app/tests/fixture-training-log-external.v1.json",
+      "bytes": 1043
+    },
+    {
+      "sha256": "0cd5664aef1c976e7c659dbb73c5397d1319c4d88ba680bd02254f09026b2ff2",
+      "path": "app/tests/fixture-training-log-legacy.v1.json",
+      "bytes": 827
+    },
+    {
+      "sha256": "0c2f01645c91668724a3eb1c44c548e61ae79f964dac8c68b200e2899bf5b0c7",
+      "path": "app/tests/fixture-training-log-trx.v1.json",
+      "bytes": 1020
+    },
+    {
+      "sha256": "14591711c9fd61dc4fc7500445a2eb2dd41fe5410f647fcc04f65d52cfee362b",
+      "path": "app/tests/fixtures/workout-note-v1/01-header-hyphen.txt",
+      "bytes": 56
+    },
+    {
+      "sha256": "6d82538de846ad26f57243e67064dec2e7424017e951256b87a7c18c1138fc7f",
+      "path": "app/tests/fixtures/workout-note-v1/02-header-leg.txt",
+      "bytes": 38
+    },
+    {
+      "sha256": "e455495f9ec8b5054ff2bce650dbca01af3d3f184afa1187414dfa3020f30612",
+      "path": "app/tests/fixtures/workout-note-v1/03-spec-unicode-range.txt",
+      "bytes": 41
+    },
+    {
+      "sha256": "6a18a47451bb5bc2a958efe1b4dc6c4db6cbf3dacd58ad9d5868fcd40313019a",
+      "path": "app/tests/fixtures/workout-note-v1/04-spec-ascii-range.txt",
+      "bytes": 38
+    },
+    {
+      "sha256": "febe342a6c33821c17ed9a62c997b110f7938a4751d0da336153421fe8df3207",
+      "path": "app/tests/fixtures/workout-note-v1/05-spec-uppercase-x.txt",
+      "bytes": 36
+    },
+    {
+      "sha256": "b702833c0c00532fbfc1236d0ea059acb9be25697c1ef72440d9014b7b4e0ba1",
+      "path": "app/tests/fixtures/workout-note-v1/06-spec-single.txt",
+      "bytes": 34
+    },
+    {
+      "sha256": "0241b8d9b6c1736600752698dc457233de5f47ae89f998ed60dd40fde10725e9",
+      "path": "app/tests/fixtures/workout-note-v1/07-rir-unicode-range.txt",
+      "bytes": 46
+    },
+    {
+      "sha256": "4a60549c5809e82c4def4c42679016556d3d1ead33fcd0d6f6e795abcd8363ce",
+      "path": "app/tests/fixtures/workout-note-v1/08-rir-ascii-range.txt",
+      "bytes": 44
+    },
+    {
+      "sha256": "3712c95f92e792e33f7a51f195dec900ded81e51415dcb0c2b099f690b49710e",
+      "path": "app/tests/fixtures/workout-note-v1/09-rir-single.txt",
+      "bytes": 42
+    },
+    {
+      "sha256": "243307c77aee934b9384c960041b4e6cf94c2dd85edb9bce3c38fe7d3281e936",
+      "path": "app/tests/fixtures/workout-note-v1/10-rir-colon.txt",
+      "bytes": 43
+    },
+    {
+      "sha256": "846e1b32e08264b64b585c8f7c0816861229046a2174cda4c48db81ca5d53606",
+      "path": "app/tests/fixtures/workout-note-v1/11-rest-unicode-range.txt",
+      "bytes": 55
+    },
+    {
+      "sha256": "1685b7e61ccd690e61e119e807ae94be873a89eb3883f295c90aa2ee4be922d7",
+      "path": "app/tests/fixtures/workout-note-v1/12-rest-ascii-range.txt",
+      "bytes": 53
+    },
+    {
+      "sha256": "ab9eb33471aae32dbcacc667ff0a513f05bac79e3d8da98b897bf71df7fd8942",
+      "path": "app/tests/fixtures/workout-note-v1/13-rest-single-min.txt",
+      "bytes": 51
+    },
+    {
+      "sha256": "befa8b3ccf93859a631d9b6b39161081d2ab216a8c5b5b6ab271266552dbf6ef",
+      "path": "app/tests/fixtures/workout-note-v1/14-rest-90s.txt",
+      "bytes": 50
+    },
+    {
+      "sha256": "f328c63bf5b71fe7e823b6f3030bf30abefc0977647b93ea1c14e3e39c83b827",
+      "path": "app/tests/fixtures/workout-note-v1/15-rest-120s.txt",
+      "bytes": 51
+    },
+    {
+      "sha256": "181694199d82bcb915cd9b452644467b78b3379385e55276596194cbe9c2d50e",
+      "path": "app/tests/fixtures/workout-note-v1/16-record-at.txt",
+      "bytes": 79
+    },
+    {
+      "sha256": "26fe38a4f59a9de8be1523246e941df2a6d31067ce6c4c0670e2faf5cb9c1ba6",
+      "path": "app/tests/fixtures/workout-note-v1/17-record-tight.txt",
+      "bytes": 66
+    },
+    {
+      "sha256": "0ff0aaaa76075325dad0a625f5e0a16f8d31f3240da554d2427f4669759c0f52",
+      "path": "app/tests/fixtures/workout-note-v1/18-record-rir.txt",
+      "bytes": 72
+    },
+    {
+      "sha256": "440a98aa189c95ae4a94054fe548006b971a2c0af0885dfeaf667b60ba1c9eec",
+      "path": "app/tests/fixtures/workout-note-v1/19-record-at-one.txt",
+      "bytes": 68
+    },
+    {
+      "sha256": "748bb50fc05a0d2d0f14ba54d328c210b8b85607929e6febabe350c39fe9f509",
+      "path": "app/tests/fixtures/workout-note-v1/20-record-multiple.txt",
+      "bytes": 87
+    },
+    {
+      "sha256": "67f32874a6450bbb450125b6e32d48ffa40af5d2478cfc712f008216cff6fbcf",
+      "path": "app/tests/fixtures/workout-note-v1/21-date-short.txt",
+      "bytes": 78
+    },
+    {
+      "sha256": "cc95d601fab3925973de66fbd56d976e6e30295b77d8a1748c2279be54419cce",
+      "path": "app/tests/fixtures/workout-note-v1/22-date-one-digit.txt",
+      "bytes": 76
+    },
+    {
+      "sha256": "40c9d25be83975b0a0db463ae99b6fd2dbbc756412b23cfd1bf6bdc7993abe8b",
+      "path": "app/tests/fixtures/workout-note-v1/23-date-with-year.txt",
+      "bytes": 83
+    },
+    {
+      "sha256": "e223320af96ae46d82586299c0233a53f3ee1931d8d3c7f82ed1b75db90f7281",
+      "path": "app/tests/fixtures/workout-note-v1/24-none-comparable.txt",
+      "bytes": 73
+    },
+    {
+      "sha256": "c3ac595d2c62971c3c0ecd1bd415eaed5d1d7638d2b4b0d75ba2cd6355a0dcd1",
+      "path": "app/tests/fixtures/workout-note-v1/25-no-tengo.txt",
+      "bytes": 67
+    },
+    {
+      "sha256": "d4d3c08b4f06b68a6965fac2cfdd4b14f7663b5e80acb323d2092729dd6e780b",
+      "path": "app/tests/fixtures/workout-note-v1/26-ninguno.txt",
+      "bytes": 62
+    },
+    {
+      "sha256": "8a00520ff4b9ca8b8ae1d2888d763d12fbb5d79645936edb3eb86aa0badaaba5",
+      "path": "app/tests/fixtures/workout-note-v1/27-noncomparable-press.txt",
+      "bytes": 149
+    },
+    {
+      "sha256": "e61f24691bd2454158b7aed138baffb067585853abb8e727c697f5bc0dc0c640",
+      "path": "app/tests/fixtures/workout-note-v1/28-noncomparable-machine.txt",
+      "bytes": 99
+    },
+    {
+      "sha256": "f78bcf856c5c17e8c78198111d7257205ad1e05838856c9c8900111d87f72b66",
+      "path": "app/tests/fixtures/workout-note-v1/29-partial-lost-load.txt",
+      "bytes": 100
+    },
+    {
+      "sha256": "583fdcadb2a4d70668a99979701c3ff8821dfbcfc8156addc6afae4446a527b6",
+      "path": "app/tests/fixtures/workout-note-v1/30-partial-no-reps.txt",
+      "bytes": 90
+    },
+    {
+      "sha256": "80b3d7ccb48e4902814514b32ad628cf0119d9ed5d06d6433ffe2bcab30c48a7",
+      "path": "app/tests/fixtures/workout-note-v1/31-partial-no-series.txt",
+      "bytes": 115
+    },
+    {
+      "sha256": "5049d55257a145d95af4e91bfdd638cb48138d7b896612c229a8754c1b1d5606",
+      "path": "app/tests/fixtures/workout-note-v1/32-instructions.txt",
+      "bytes": 264
+    },
+    {
+      "sha256": "d84780825ba50438c793adbba01d6ac456c1c6ac8780de6051873d2185f0bbae",
+      "path": "app/tests/fixtures/workout-note-v1/33-unknown.txt",
+      "bytes": 86
+    },
+    {
+      "sha256": "dce4fd83654b4ae0462b218d56ba07174a7358e9b6b15a35f26e26cf517cf4f1",
+      "path": "app/tests/fixtures/workout-note-v1/34-repeated-exercise.txt",
+      "bytes": 79
+    },
+    {
+      "sha256": "57d6071c5b62a88a05b2eb204464dcd18c0bd6966120b8e2819c02eff5ff3c02",
+      "path": "app/tests/fixtures/workout-note-v1/35-date-short-zero-day.txt",
+      "bytes": 77
+    },
+    {
+      "sha256": "38816407e5301f4e10629f7cd52f461db02be0a2e5f24b269c77a488e00efff3",
+      "path": "app/tests/fixtures/workout-note-v1/36-date-short-zero-month.txt",
+      "bytes": 77
+    },
+    {
+      "sha256": "8f254fcc8141d59691914a4d3f347d1cdc52e803cb5f9ea8b87a94c8b4da277e",
+      "path": "app/tests/fixtures/workout-note-v1/37-date-with-year-invalid.txt",
+      "bytes": 83
+    },
+    {
+      "sha256": "170dee6329c04f516d5b61a6c53345b1d856b21d392fe284bd185dffd34a84ce",
+      "path": "app/tests/fixtures/workout-note-v1/principal.txt",
+      "bytes": 1327
+    },
+    {
+      "sha256": "a13745a59eff54a4d403b824b734093d211c337b6928c3e4240551eec78e9d7e",
+      "path": "app/tests/gem-command-tools.test.mjs",
+      "bytes": 1768
+    },
+    {
+      "sha256": "d96fc4b88d2a1e3399586640fe116cdecf4d249109dbb08c30e204c37228579e",
+      "path": "app/tests/historical-parser.test.mjs",
+      "bytes": 12734
+    },
+    {
+      "sha256": "86e545c0961bc6fb7ed4bafc8b9c6ba8b0ff1e6d9bc525e285f0f107e789c5f2",
+      "path": "app/tests/history-tools.test.mjs",
+      "bytes": 5868
+    },
+    {
+      "sha256": "28e33f4d3154dd7d05024cd582d8c4dc5687bd5cf92257e7e4ef33efcb81c20e",
+      "path": "app/tests/json-export.test.mjs",
+      "bytes": 4110
+    },
+    {
+      "sha256": "33efa5a27b49babd7d133b11636c89a27a3f7aef44fcdcbad998c256055702a4",
+      "path": "app/tests/load-browser-module.mjs",
+      "bytes": 1112
+    },
+    {
+      "sha256": "d640a83a0cda3260de44a9004bb4d46df3dbf4fd2f611d01d106f0a3c8851df2",
+      "path": "app/tests/mobile-adjustments.test.mjs",
+      "bytes": 7514
+    },
+    {
+      "sha256": "8dc8f58643782b2757900f9907a0d3cb54e3e13aa7ccf18baf19178dcaf029bd",
+      "path": "app/tests/parser.test.mjs",
+      "bytes": 13052
+    },
+    {
+      "sha256": "e136a91fa90e26f2cbe837f7e358566f337821fdad5ba56cb0c1a772602b0522",
+      "path": "app/tests/pdf-export.test.mjs",
+      "bytes": 2009
+    },
+    {
+      "sha256": "95fd042c1fd3b2e94e3f2818d48535f760ee0b8e6934589c63be091408f67a90",
+      "path": "app/tests/phase-a-layout.test.mjs",
+      "bytes": 4077
+    },
+    {
+      "sha256": "909e34e99aac547f62c3d77512aad3a7bac615238ff7fafe1bbec0ff5594b6fb",
+      "path": "app/tests/phase-b-dialog-catalog.test.mjs",
+      "bytes": 2757
+    },
+    {
+      "sha256": "75ed0f3f6bce458b1885065de806f8f6b17fb230f5c3e3fa9bc97c7d39358e99",
+      "path": "app/tests/pwa-cache.test.mjs",
+      "bytes": 3056
+    },
+    {
+      "sha256": "b2ff61a744450e523906466ecd2648be576dee68d9603ededcb4aa7721f3e6d1",
+      "path": "app/tests/rendered-html.test.mjs",
+      "bytes": 9964
+    },
+    {
+      "sha256": "c36676c1d6ece3be6d142eab9c45ded6af427306fb666c601df1e8b506b0da00",
+      "path": "app/tests/rest-timer-tools.test.mjs",
+      "bytes": 4415
+    },
+    {
+      "sha256": "747069cd20373ed26530e78f60e0abcac6d5bb391292774a4f5b1571cff20c59",
+      "path": "app/tests/sync-queue.test.mjs",
+      "bytes": 5490
+    },
+    {
+      "sha256": "442f50c468db793d3ee41f02c4392d70cd7d9cb80c52b884be372469ce8a6ca0",
+      "path": "app/tests/technical-tools.test.mjs",
+      "bytes": 5149
+    },
+    {
+      "sha256": "f07890c2edf23bff929e020c901215b1012302b31e58eefafa6a1e520cdd71b1",
+      "path": "app/tests/timer-app-audio.test.mjs",
+      "bytes": 11848
+    },
+    {
+      "sha256": "e216137602dc586055d9302bd93473cc486b69ac96e9de61d5902222e07abc42",
+      "path": "app/tests/timer-sounds.test.mjs",
+      "bytes": 9037
+    },
+    {
+      "sha256": "fb3d4f4187e4933065c4d232d2baf1975436bbbe2f0b7587fbee3cabdf8d1735",
+      "path": "app/tests/timer-visual-contract.test.mjs",
+      "bytes": 4241
+    },
+    {
+      "sha256": "cfcf61aae3ac675ead96c3f9a9a599c5873daecacc95272fbd3bd196b5d3ddbf",
+      "path": "app/tests/v37-session-flow.test.mjs",
+      "bytes": 2162
+    },
+    {
+      "sha256": "4b0db8df8706ae81a7710220d3f70104b098d2b1bffcd33f92229ce0c9574cda",
+      "path": "app/tests/workout-note-review.test.mjs",
+      "bytes": 2797
+    },
+    {
+      "sha256": "be18523b23b78b6e1a876ddd107d330f0168bddf09d751b57e0b5edce69c66f3",
+      "path": "app/tsconfig.json",
+      "bytes": 666
+    },
+    {
+      "sha256": "f7c14b8a38546bb6a7ec93cba22f8e8f131da9fbfe8b39327422ed5bb98d4613",
+      "path": "app/vite.config.ts",
+      "bytes": 1697
+    },
+    {
+      "sha256": "2ed36d7fa996e946d9d7695c5925e7760246f6bf8fa35c06f1bc515c087dc450",
+      "path": "app/worker/index.ts",
+      "bytes": 1731
+    },
+    {
+      "sha256": "76699dff496c190f0bafdbb75f59a49e61aeaffbca9cf8a434c35e5fe4dcaae1",
+      "path": "LEEME_PRIMERO.md",
+      "bytes": 2725
+    },
+    {
+      "sha256": "cdc78529134f29577554f7527ecba93350e952b4fa32defc437cdc968dd22956",
+      "path": "datos/historial-navegador-actual.training_history.v1.json",
+      "bytes": 31300
+    },
+    {
+      "sha256": "1331b148e3d3e2866bb048658d177603f52e22dfcdb769c2c762b6e62db427d6",
+      "path": "datos/indicaciones_tecnicas.v1.json",
+      "bytes": 85387
+    },
+    {
+      "sha256": "ce79a900731dddc1fcae3d739d82ce9181de5f315e18599ec09293dfa46cc43d",
+      "path": "despliegue/registro-entrenamiento-v45.tar.gz",
+      "bytes": 675745
+    },
+    {
+      "sha256": "e54ee4e7451b132877792626752555ca8604413d4545cdce4e6ad2f7aba85481",
+      "path": "guias/01_ARQUITECTURA_ACTUAL.md",
+      "bytes": 3318
+    },
+    {
+      "sha256": "e9aa225fbfc2c20ba4e8c3f20aa212ffafb1dd8d285adb2774b0e1ae86bf6320",
+      "path": "guias/02_CLONAR_Y_VALIDAR.md",
+      "bytes": 3697
+    },
+    {
+      "sha256": "8e78413a39ba503c8bc929908de5c5548407a3d850d51932c89dca5eebbb52d4",
+      "path": "guias/03_DATOS_E_INTEGRACIONES.md",
+      "bytes": 3938
+    },
+    {
+      "sha256": "c96a76e5eaa924153c6b15b1159ada32b2af88d161bcf04968e75b7c6c648e99",
+      "path": "guias/04_PROMPT_PARA_LA_IA.md",
+      "bytes": 2372
+    },
+    {
+      "sha256": "4f28a38109ccaa9c8a23c29f4eabb4bc19455d89678bdb24b1cc852c3e775b2a",
+      "path": "herramientas/exportar_almacenamiento.js",
+      "bytes": 1078
+    },
+    {
+      "sha256": "01bccabe26622ce79e23b04d5e16404cab283023e0396eaf4da9320c560c2676",
+      "path": "referencias/ficha-tecnica-hip-thrust.png",
+      "bytes": 44572
+    },
+    {
+      "sha256": "e5eec785fba133e787f860e88a680144222fbe41778110b1b7d7181cc9f83690",
+      "path": "verificacion/npm-test-v45.log",
+      "bytes": 12524
+    }
+  ],
+  "file_hashes_scope": "All ZIP files except this manifest itself",
+  "source_commit": "ac182d852243ebc3c875e2fddbac56f8a799d3b5",
+  "date": "2026-10-12"
+}

@@ -1,0 +1,7 @@
+﻿RECUPERACION COMPLETADA
+Fecha: 2026-08-13 15:13:34 +02:00
+Directorio: C:\Users\Daniel\.codex\.chatgpt-projects\g-p-6a636686cb688191a2d0bbdff6d81d62\outputs\INVESTIGACION_BRUTA_RECUPERADA_2026-08-13
+Bases transformadas: 6
+Registros conservados: 233
+Método: proyección de columnas; seis síntesis aplicadas excluidas y tres referencias personales normalizadas.
+Los originales no se modificaron, movieron ni eliminaron.

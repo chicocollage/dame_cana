@@ -1,0 +1,47 @@
+{
+  "version": "2.0",
+  "archivos": [
+    {
+      "local": "outputs/operativo/LEEME_DRIVE.md",
+      "id": "1k2FoDpOWGpPVR7C4IvxnXwy4u4MToVTo",
+      "sha256": "ee634cc3916b05c3124f20c609dc39825ffc097fa6e9fb031c2a077df1c77781",
+      "identico": true,
+      "privado": true
+    },
+    {
+      "local": "docs/OPERACION_CHATGPT.md",
+      "id": "1GLv-8XFih4tqycuVOl4P32IbeTUEBr5i",
+      "sha256": "e53e2a30d8d680f9815a7aa0f78693d368896712a658a9a1b710e316af7a5337",
+      "identico": true,
+      "privado": true
+    },
+    {
+      "local": "outputs/operativo/DAME_CANA_OPERATIVO_LOCAL.xlsx",
+      "id": "1I7FR_--PyicdBTDwzKTvfIvr2gbRJS7h",
+      "sha256": "fc1b5d3c9c01d537d20dffc270e14b2de88ab17f3185694a7cb2e402aba068f3",
+      "identico": true,
+      "privado": true
+    },
+    {
+      "local": "outputs/operativo/RESPALDO_OPERATIVO_LOCAL.zip",
+      "id": "14k95jXfyAFOSDLMjyzAvIL3KydKgTsjo",
+      "sha256": "7bc6a9ffbf4d171cb796fc21372f9a5e2bcb8d5bb64f0d238a8858f5a81ab551",
+      "identico": true,
+      "privado": true
+    },
+    {
+      "local": "outputs/operativo/MANIFIESTO_RESPALDO.json",
+      "id": "1DJR1GpuDh9OHYsFWgN8FJiDq7TKTBvF2",
+      "sha256": "c71202c878e76d3c44112556fbd63e212df805a3c6d855806c7e431c539dea2a",
+      "identico": true,
+      "privado": true
+    },
+    {
+      "local": "docs/PERFIL_PERSONAL_UNIFICADO.md",
+      "id": "12RZp_X7RxzAJyXh3GzaB2Us-sTif4d0L",
+      "sha256": "646d656bcfc5a5e585967712879b3c1b7071f1b98f42e1183b880a52499d4bed",
+      "identico": true,
+      "privado": true
+    }
+  ]
+}

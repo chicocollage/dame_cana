@@ -1,0 +1,577 @@
+{
+  "schema": "dame_cana_indice_conocimiento.v1",
+  "archivos": [
+    {
+      "ruta": "biblioteca/AGENTS.md",
+      "sha256": "eb256a4fa475a8284aaa2ae7313b557c80db6fcf53b0a8fb34bdbe3d9ef759eb",
+      "bytes": 799
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/CIENCIA_Y_BIBLIOTECA_V3.txt",
+      "sha256": "9720a60b03e161f962faf7516343cb0521ab0a500f819ac8482f836ed295f8c3",
+      "bytes": 238643
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/DOC_3_CIENCIA_Y_BIBLIOTECA.md",
+      "sha256": "26ec8b7c59b2ac6f48068d935d93533dd65318f2b3da202e7cb15b88f8ecd9d6",
+      "bytes": 239042
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/ENSAYO_GLUTEO_ESTETICO_MASCULINO.pdf",
+      "sha256": "12e11c18d5d9505fd2b555f283621601f14eea31dab9e7450e3f5498ac88ff15",
+      "bytes": 89147
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/INFORME_DAME_CANA_V3_HISTORICO.txt",
+      "sha256": "44d5446119d99c02996b6227ae466143f4d9ba59be57411ba2a42e101e108fe5",
+      "bytes": 6740
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/2026-10-10/MATRIZ_SELECCION_V2.json",
+      "sha256": "df9379ebea5777c6c2e3d076f2ad54863d7df0cf0b7e36aa3a1cd45b2c64f97f",
+      "bytes": 85186
+    },
+    {
+      "ruta": "biblioteca/ampliaciones/entradas/DOSSIER-SUPPLEATHLETE-20261018.md",
+      "sha256": "75c6d249593103ecac2f10fd8894e8909b0a9fbc844ae55d03a8938d311fb543",
+      "bytes": 2649
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-APP01.md",
+      "sha256": "9d4141535fa65c115daf1b3c423ac0ed46bc6c35d3c1faadede7d841544b4fdf",
+      "bytes": 2477
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B1.md",
+      "sha256": "86bfba6b872f98a493d2756168ac8e836902eae8298c7775c412786c80a62da4",
+      "bytes": 2606
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B2.md",
+      "sha256": "819391bb6dac930428e39ce83b3c4c5307b9dd60198a139550450c0639cdbdef",
+      "bytes": 2553
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B3.md",
+      "sha256": "6b79279c04d7475c20ceb687fd5b2ee4c2369275cefb86fa9b56435db962f23e",
+      "bytes": 2532
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B4.md",
+      "sha256": "0da0573d86d0bfa2558c27775dae1e72536c4ac82886dc47a0a5bde6545b0760",
+      "bytes": 2483
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-B5.md",
+      "sha256": "436ded24c32a3406b6b1c0633bd6ba25b9b3ed8a1ce824b7c003ea4a442caaa6",
+      "bytes": 2585
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-DAT01.md",
+      "sha256": "c8a9a078f211b6f802d82db6cfa7f8991f3e07d19dd131af4f3ed9d17bf07774",
+      "bytes": 2760
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-LIB01.md",
+      "sha256": "15fe87b91e3c918b7440a069f64cee77796294300f5bca7d1aac3073b1c3077f",
+      "bytes": 2983
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-REF01.md",
+      "sha256": "70309d393ce0f67ea0b2921e3afedf7c058b909bdfd0193662dbae5afc2cf6dc",
+      "bytes": 3358
+    },
+    {
+      "ruta": "biblioteca/complementos/CMP-2026-TRAIN01.md",
+      "sha256": "708a283dd2f8ce6220e9a90cd208833ffa5fab07f3ee9ad4d81e4cca09163272",
+      "bytes": 2497
+    },
+    {
+      "ruta": "biblioteca/COMPLEMENTOS.md",
+      "sha256": "fdddaf2928333585044cdeffea721877154834a9bd503cbe902e6cb3fd759e0c",
+      "bytes": 2980
+    },
+    {
+      "ruta": "biblioteca/CONTRASTE_BIBLIOGRAFICO_2026-10-10.md",
+      "sha256": "33d92b719ea6f8d5c168b8da4095d97b42383e5eb9d356c4631b950ab5c08cb2",
+      "bytes": 5370
+    },
+    {
+      "ruta": "biblioteca/control/COMPARACION_DRIVE_20261010.json",
+      "sha256": "b1579a9dc9ece399662ca1656efa048f7508c3a4e038d5cb6386b9f83393c0af",
+      "bytes": 60437
+    },
+    {
+      "ruta": "biblioteca/control/COMPLEMENTOS.csv",
+      "sha256": "6109b81172c03dd148078218fe5a2fba1c3b31cee3b894ac0abfaf2b60ba7134",
+      "bytes": 2455
+    },
+    {
+      "ruta": "biblioteca/control/COMPLEMENTOS.json",
+      "sha256": "6a3bb2be3ef6244e8f80c6924e6dc2754342b5efc251cd2cfc8c03d91149845d",
+      "bytes": 15139
+    },
+    {
+      "ruta": "biblioteca/control/CONTENIDO_ZIP_HISTORICOS_2026-10-09.csv",
+      "sha256": "e55bb2dea539a3883a4487377fa95392146c44bc9a865b6394e6102d75cd3995",
+      "bytes": 20922
+    },
+    {
+      "ruta": "biblioteca/control/CONTENIDOS_COMPLEMENTARIOS_BIBLIOTECAS_2026-10-09.csv",
+      "sha256": "4941014ffcfbdb0854179b6cd9d79d3262d70e2cd00b08b97930e0087b7b935b",
+      "bytes": 73070
+    },
+    {
+      "ruta": "biblioteca/control/DIFERENCIAS_FICHAS_MISMA_REFERENCIA_2026-10-09.csv",
+      "sha256": "08096a6c2dcb5b9c69dce8a34c1a40ff3544370631db52b84922fce86b3d00dd",
+      "bytes": 14823
+    },
+    {
+      "ruta": "biblioteca/control/EVOLUCION_TABLAS_ORIGINALES_2026-10-09.csv",
+      "sha256": "4cd89b5a8ed049e8c194b149a33672077880bbfe824bc0cc51ad5a7ce4b17c27",
+      "bytes": 1021
+    },
+    {
+      "ruta": "biblioteca/control/INDICE_REFERENCIAS.csv",
+      "sha256": "9c6cd30b0bb83378153c2dc144313375e958a4d9c8f08bd00928967d54446583",
+      "bytes": 48668
+    },
+    {
+      "ruta": "biblioteca/control/INDICE_REFERENCIAS_UNIFICADO_PROPUESTO_2026-10-09.csv",
+      "sha256": "05e33154c0fc6e1b5da37da1c77dfb5e2ec923139de0aadd563b70d4022703cc",
+      "bytes": 55043
+    },
+    {
+      "ruta": "biblioteca/control/PROCEDENCIA_CORPUS.csv",
+      "sha256": "3e1456a225e9affd5b876fed10d7dcb16fd3ef043dad30891db092a2dfd3e17c",
+      "bytes": 33250
+    },
+    {
+      "ruta": "biblioteca/control/PROCEDENCIA_DRIVE_20261010.csv",
+      "sha256": "3b189d136394ef04cbac8b414b60f759161d485d3b90f3206e2b7238b89f2a15",
+      "bytes": 36410
+    },
+    {
+      "ruta": "biblioteca/control/PROCEDENCIA_MAXIMUS_2026-10-09.csv",
+      "sha256": "fb3a5f4999a4783154377c90ef09229b21019fcfdabac1ab8a7f35548b060be7",
+      "bytes": 7601
+    },
+    {
+      "ruta": "biblioteca/control/REFERENCIAS_COINCIDENTES_ENTRE_TABLAS_2026-10-09.csv",
+      "sha256": "e9f9e3854251e657df0343d04d7553f1a108c8e07be9e0e0a0921bc3b05e96ac",
+      "bytes": 45865
+    },
+    {
+      "ruta": "biblioteca/control/REFERENCIAS_CONTRASTADAS_20261010.csv",
+      "sha256": "78be9f02a17660fb5ab5d7878c2e1d5b95d30c8ccfb732bf091c59dbc4576add",
+      "bytes": 7462
+    },
+    {
+      "ruta": "biblioteca/control/REFERENCIAS_CONTRASTADAS_20261010.json",
+      "sha256": "162a2fcf3881280a815d5fb7ffee09a1a8a92e740c59ad9aa0eea5410b075321",
+      "bytes": 10481
+    },
+    {
+      "ruta": "biblioteca/control/RESOLUCION_VARIANTES_20261010.csv",
+      "sha256": "3c91a213550cc80eba934d093cdaf13fe4b678e539d0c0b2c3023e4a649ed27f",
+      "bytes": 18883
+    },
+    {
+      "ruta": "biblioteca/control/verificacion.json",
+      "sha256": "eeaa4172dce5720c88d59a86b17bdd1ee483e4814a254fa7d7760590283403fa",
+      "bytes": 981
+    },
+    {
+      "ruta": "biblioteca/control/verificacion_revision_drive_20261010.json",
+      "sha256": "bd0629041935921a60f97ec9925889dfe8a2229b6b824d10a529f7e12ab5e105",
+      "bytes": 6966
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/01_RESUMEN_EJECUTIVO_HISTORICO.md",
+      "sha256": "aa6d8a8699b391d12228b8f09c4efdcb5ee3357f281b6743b278ffffa461fef5",
+      "bytes": 8578
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/02_INFORME_MAESTRO_HISTORICO.md",
+      "sha256": "ff20e322838dbca829f4a8e86f7b0cb9072ffa616d8709b5e015e4a66e07bfa2",
+      "bytes": 7361
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/03_PREGUNTAS_PENDIENTES.md",
+      "sha256": "ca5e350a49a8d876740f432f6121e3710ede03ca257b1e60bcbd79ed7067a8ea",
+      "bytes": 1399
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/04_MAPA_DE_CAMPO.md",
+      "sha256": "40ef9260e2e1d61d1db5b25fcae4733adec2c4bd234e6a6b1cf83a268b68b272",
+      "bytes": 4153
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/05_PREGUNTAS_DE_INVESTIGACION.md",
+      "sha256": "2bcd6ff38d577fa96c1c808e83887b6ec34d9723446ddfaab20943d1527256fb",
+      "bytes": 4786
+    },
+    {
+      "ruta": "biblioteca/corpus/00_CONTEXTO_Y_METODO/06_HOJA_DE_RUTA_Y_ESTADO_EVIDENCIA.md",
+      "sha256": "49842f00e87e6f33bce0ea262db89c12ade427838b83d3a4fba7123fc1f49ebc",
+      "bytes": 4958
+    },
+    {
+      "ruta": "biblioteca/corpus/00_LEEME_CORPUS_CIENTIFICO.md",
+      "sha256": "048188349fbdb25f72eefa8fa306fa01f957c32c41247d7063fdd68e17d12133",
+      "bytes": 4103
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/01_ANATOMIA_HIPERTROFIA_REGIONAL_Y_LONGITUD.md",
+      "sha256": "b1615ca41dcf86f0227865bd1a684ae94bf49790dd74005ba50a6dcca28686c4",
+      "bytes": 13626
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/02_DOSIFICACION_DE_LA_HIPERTROFIA.md",
+      "sha256": "1e35094991f546a9ad27572d5d67fa68bcddcbce8dd0cda2b357c2944d4afccc",
+      "bytes": 15288
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/03_EJERCICIOS_BIOMECANICA_Y_REDUNDANCIAS.md",
+      "sha256": "314e72326a2fcb560d5d4b9ff4803bda312201068deac0de393e749bc7a4bee9",
+      "bytes": 16906
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/04_NUTRICION_RECUPERACION_E_INTERFERENCIA.md",
+      "sha256": "03548d876a974ec36a1d009bf43794a35aa68ea907d8b61810a4ec08732cd372",
+      "bytes": 17582
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/05_PIEL_CUIDADOS_Y_TRATAMIENTOS.md",
+      "sha256": "4e438f7a2e06ecb8cb8025081e549ba4563cee78fae5559c024d4814b2e5e670",
+      "bytes": 16564
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/06_ESTETICA_MASCULINA_Y_PRESENTACION_VISUAL.md",
+      "sha256": "a98be3a396df07c6cf863647522d9c57a44bef8730b76699a76340188d7e1e25",
+      "bytes": 17635
+    },
+    {
+      "ruta": "biblioteca/corpus/01_GLUTEO/07_PROGRAMACION_AVANZADA_Y_CONTROVERSIAS.md",
+      "sha256": "f37defae14747d11b9c4541388e526af63571c609921728a23325ab17ae81496",
+      "bytes": 14277
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/01_EVIDENCIA_INICIAL_ESTETICA_Y_MUSCULARIDAD.md",
+      "sha256": "d239fb5a1e87e1cc502a8d61fe72d7fb3c19edbc45f67d7432a66fd7b453c736",
+      "bytes": 15284
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/02_BASE_EVIDENCIA_ESTETICA_MASCULINA.csv",
+      "sha256": "8111f8f9c0c9711ba86019f3da96fe7c2dc958c3646d7a901ccffb817ea3e582",
+      "bytes": 7383
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/03_ATLAS_ANATOMIA_VISUAL_Y_PRIORIDAD_REGIONAL.md",
+      "sha256": "f84743c1028b9be4a7e8fe5d482c3e7515112afae9244b7aec4525427df1de23",
+      "bytes": 21223
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/04_BASE_EVIDENCIA_HIPERTROFIA_REGIONAL.csv",
+      "sha256": "7526b90d45cbdd44f487d99cb12160be0ee38dcf726dbf37605583b166ee9844",
+      "bytes": 7948
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/05_SINTESIS_EJERCICIOS_Y_MAQUINAS.md",
+      "sha256": "5789f16c7eabbb97d5cdfef24dc9b039e1aceeb994751439a2cf87bc9652cfac",
+      "bytes": 16204
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/06_MAPA_PREGUNTAS_Y_ARQUITECTURA.md",
+      "sha256": "2ed23c0c00416e4693f9742286bc871814e3b9cab996fa1a5b8be22d8eb0596c",
+      "bytes": 7630
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/07_MATRIZ_PRIORIDAD_REGIONAL.csv",
+      "sha256": "0988a54d2fc42f4c2b24e339a6c1681ffe02fc81647037ef00b38176e5b1a82d",
+      "bytes": 10009
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/08_CRITERIOS_Y_ARQUITECTURA_DE_PROGRAMACION.md",
+      "sha256": "ed85b2fae182f17b9b3073b2613a42f5896454bf8c603c6873adbcb51c7e0a84",
+      "bytes": 8193
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/09_PROGRESION_TRANSICION_Y_FATIGA.md",
+      "sha256": "11972b18a9ad5fd48d80a3d0015926a41fcbd3eaf7eb95c7b17f99e18e716d78",
+      "bytes": 7748
+    },
+    {
+      "ruta": "biblioteca/corpus/02_FISICO_MASCULINO/10_NUTRICION_RECUPERACION_PIEL_Y_PRESENTACION.md",
+      "sha256": "44a84708bb2757903fff7cf50f3707aa69df4dc1a115d6b65514941be44e5005",
+      "bytes": 13786
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/01_MAPA_PREGUNTAS_Y_MARCO_DE_EVALUACION.md",
+      "sha256": "10cfdd15c8a61b5f6d6b03384dcaab467f2ae9f095556da06c560ad0bc29fe48",
+      "bytes": 14501
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/02_EVIDENCIA_MAQUINAS_Y_EJERCICIOS.md",
+      "sha256": "73c93e4b94f18801468330a8c93e5797fa8fd0987821010807df7cc8de54acfb",
+      "bytes": 16369
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/03_MATRIZ_INTERPRETATIVA_DE_MAQUINAS.md",
+      "sha256": "1e2f41ae9a3c2573062446d110cfbcc34c779087577f5b541ae54e69b2f80a89",
+      "bytes": 13697
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/04_ESTUDIOS_ESPECIFICOS_DE_GIMNASIO.csv",
+      "sha256": "c718d4d493a4a96995059689f5678ea7934ae747e32dd85ac74ef59cf85de9f5",
+      "bytes": 6466
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/05_CONCLUSIONES_ESPECIFICAS_DE_GIMNASIO.csv",
+      "sha256": "4b3a83dcd3c5012da030cf9c42221c4fc03c0428c046f9873a3d8f5b042a0db2",
+      "bytes": 5854
+    },
+    {
+      "ruta": "biblioteca/corpus/03_GIMNASIO/06_INVENTARIO_Y_TAXONOMIA_DE_MAQUINAS.csv",
+      "sha256": "773f046c613f9c18864134a8187b5c3bf5fec159cc0d0e7d1187ba83e2a1878a",
+      "bytes": 7083
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/01_ESTUDIOS_GLUTEO_Y_AREAS_ASOCIADAS.csv",
+      "sha256": "b6da134719664cd8a68fe8f0929988456085f421d6144d2e799f4a591044085d",
+      "bytes": 49354
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/02_RESULTADOS_SINTETIZADOS.csv",
+      "sha256": "a9c68159f93021cb572e01a7879f60355dd0afd3a24271b12747d6b6fde4c7ba",
+      "bytes": 27824
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/03_DATOS_BIOMECANICOS_EJERCICIOS.csv",
+      "sha256": "90c1540357ba54da72ad1cf575af4fa51f4606e84725a50e23ee54c5d060beea",
+      "bytes": 11698
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/04_DATOS_PIEL_Y_TRATAMIENTOS.csv",
+      "sha256": "a9119b86566af1ffe0bcb747ca0b7dfff44ebef7db2f78cc286c867e8f51df44",
+      "bytes": 9903
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/05_ESTUDIOS_ESTETICA_MASCULINA.csv",
+      "sha256": "d2a117d0d9fc663c9751852086fb638789655d73a7a8973982083402bd2f7ee3",
+      "bytes": 6570
+    },
+    {
+      "ruta": "biblioteca/corpus/04_BASES_NEUTRALES/06_ESTUDIOS_HIPERTROFIA_REGIONAL.csv",
+      "sha256": "d1947f4eaaa840110868dbe26cc578f61f3c706828132386b29217c4aba3471c",
+      "bytes": 7967
+    },
+    {
+      "ruta": "biblioteca/corpus/05_RESULTADOS_POR_FASE/01_ESTUDIOS_PRESENTACION_VISUAL.csv",
+      "sha256": "b36aab2811299ca8b7e322bf54e4f23c645adf52ef02a4085baf92aba02515d2",
+      "bytes": 3274
+    },
+    {
+      "ruta": "biblioteca/corpus/05_RESULTADOS_POR_FASE/02_CONCLUSIONES_PRESENTACION_VISUAL.csv",
+      "sha256": "3c3ce586fe018e07d9da987fe7146d23639a26e9170445bff65e926fe5338ed9",
+      "bytes": 2360
+    },
+    {
+      "ruta": "biblioteca/corpus/05_RESULTADOS_POR_FASE/03_ESTUDIOS_PROGRAMACION_AVANZADA.csv",
+      "sha256": "753b901be4e64d96d263739d3e8ca8bc55bb4fab283c64dbefe767c750b7763a",
+      "bytes": 10008
+    },
+    {
+      "ruta": "biblioteca/corpus/05_RESULTADOS_POR_FASE/04_CONCLUSIONES_PROGRAMACION_AVANZADA.csv",
+      "sha256": "b7090fd1a7c9590651ae03acfc28b9a03e75c671cfd33df6fac7cddcdf945739",
+      "bytes": 4814
+    },
+    {
+      "ruta": "biblioteca/corpus/10_GUIA_NAVEGACION_PARA_ENTRENADOR.md",
+      "sha256": "0826ba2dc25ffc61781361a6690ded3b513734dd364da7b54bbfb1c847751043",
+      "bytes": 7960
+    },
+    {
+      "ruta": "biblioteca/corpus/99_MANIFIESTO_Y_TRAZABILIDAD.csv",
+      "sha256": "d7621386af3f9430e3bc3c3823a9a130b24c4b8533ea55c9a8e6dfd1a67350c7",
+      "bytes": 11162
+    },
+    {
+      "ruta": "biblioteca/CORPUS_BASICO.md",
+      "sha256": "4132784ad6edc9fb58fd790a339480ce42979403a57e1715d59e1f9b8a60c2bb",
+      "bytes": 3028
+    },
+    {
+      "ruta": "biblioteca/EMPEZAR_AQUI.md",
+      "sha256": "aa8ce41e31246702e1682465763b50c98b3ffc5a669c7d122f6c5ebaa48ef7f6",
+      "bytes": 2222
+    },
+    {
+      "ruta": "biblioteca/fuentes/00_LEEME_PAQUETE_TOTAL.md",
+      "sha256": "61909f902c949ab718fa7e6352833ea648c86789b363273bcceb4e2795279be0",
+      "bytes": 2613
+    },
+    {
+      "ruta": "biblioteca/fuentes/01_METODOLOGIA_Y_AUDITORIA/01_ROL_INVESTIGADOR_AUDITOR.md",
+      "sha256": "a9f3fad2bce9b949dc80a390f51823831f00026273d2cd0ba5df53706fcb1d16",
+      "bytes": 6505
+    },
+    {
+      "ruta": "biblioteca/fuentes/01_METODOLOGIA_Y_AUDITORIA/02_FICHA_PUENTE_PROYECTO.md",
+      "sha256": "fe00eec7011bc83a144d69dd84a575beffe31c5562df23cc94083519135a50e6",
+      "bytes": 2700
+    },
+    {
+      "ruta": "biblioteca/fuentes/01_METODOLOGIA_Y_AUDITORIA/03_REGISTRO_DE_INTEGRACIONES.md",
+      "sha256": "55bfcec18125085054e57d45f24331489da4359e29375293a6737de6d1a82c85",
+      "bytes": 2146
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/00_LEEME_PRIMERO.md",
+      "sha256": "382e66f94e2fa03204dcb73c7f3114a35849fc315ea4cb3b9df571efc37725c7",
+      "bytes": 3478
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/07_SINTESIS_NEUTRA_DE_RESULTADOS.md",
+      "sha256": "9b261f7b6fbbb7fd6e50ba6b2796bb99e3301e5a8bbc4a532dbf6f2f2b63e8b5",
+      "bytes": 7012
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/08_MANIFIESTO_TRAZABILIDAD.csv",
+      "sha256": "a184db5ada182871aba5df81615b1825e41650b047676d3f5328e60eef35c5fb",
+      "bytes": 4034
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/09_CONTROL_DE_EXCLUSIONES.csv",
+      "sha256": "32475bd1f7155ac60aa021782fd10e8e99e8147efd6bd9bf4cabba6efa831e21",
+      "bytes": 367
+    },
+    {
+      "ruta": "biblioteca/fuentes/03_BASES_RECUPERADAS_Y_RESULTADOS_NEUTROS/VERIFICACION.txt",
+      "sha256": "4d022fd6d80014ecf8ff50fd5f1889103e990404d5e73cf86590614273f10116",
+      "bytes": 429
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/01_BASES_INICIALES/conclusiones.csv",
+      "sha256": "10eedcccf8932e2df49f16bce9e1c0e6367440cf8a389d661d216a6d6c9d0023",
+      "bytes": 42962
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/01_BASES_INICIALES/ejercicios.csv",
+      "sha256": "c5059b7dc748a40fb5da72bf3546b713cfb3e9157bcca6b03012985af420e005",
+      "bytes": 14349
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/01_BASES_INICIALES/estudios.csv",
+      "sha256": "8c986406b728cbcc297b18863c9cc81e04241f6ac6edbd6b16f0a1f5e700f52f",
+      "bytes": 57196
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/01_BASES_INICIALES/intervenciones_esteticas.csv",
+      "sha256": "a63e25c698dce8579281914dbc7ae0690420c5879b46b58304b1c9c23b40f839",
+      "bytes": 10934
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/equivalencias_redundancias_G3.csv",
+      "sha256": "4a52ea5855768baecf6e385acc4309d2394f12184e82cb43380e08e1e7fb1918",
+      "bytes": 1870
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/matriz_seleccion_G3.csv",
+      "sha256": "a42b6fa80e499694f8a6e70f467afff21fe90b3c5b0cb5753dbfafd73f74a677",
+      "bytes": 6977
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/plantilla_prueba_encaje_G3.csv",
+      "sha256": "3fe825d45e37f186001c1d0c4bcde1d9d3020c01bc3f74e56b862919c73139aa",
+      "bytes": 1324
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/preguntas_gimnasio.csv",
+      "sha256": "600421f63b79c9541b8bf91ac093140962671e0e0082c203eee5f7274d3427b2",
+      "bytes": 5383
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/programas_G4.csv",
+      "sha256": "2ed120a1d0c855807c28a05cf2f87f7cc6792bc99215e7fe23dff29faf59e37b",
+      "bytes": 3827
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/progresion_ajustes_G4.csv",
+      "sha256": "1876022803a59234ed23f4b43d01eafdc91fb7d31047d020d41451ff2c699b3c",
+      "bytes": 3082
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/registro_sesiones_G4.csv",
+      "sha256": "01904c23151bfbe8db1f223628c5c40084f1daab0beea31a8abc29f728097cec",
+      "bytes": 181
+    },
+    {
+      "ruta": "biblioteca/fuentes/04_MATERIA_PRIMA_ORIGINAL_ESTRUCTURADA/02_BASES_GIMNASIO/sustituciones_gimnasio_ocupado_G4.csv",
+      "sha256": "bef1ed53f9a0e9629cbbada7fdde34cb3495f1289995012f8495ec875c465406",
+      "bytes": 1787
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/00_INDICE_MEJORAS.md",
+      "sha256": "89604513b698393480a028555ba9e6dd782ae7514e6af2eab23dbb7d1894bc88",
+      "bytes": 3040
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B1_EVIDENCIA_HOMBRES_ENTRENADOS_MEDIANA_EDAD.md",
+      "sha256": "050ef4ea2e6f9f7215f87977b2a5c5028bd3a97670262d41229e8f2e22ed2abf",
+      "bytes": 10819
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B2_TABLA_MECANISTICA_MAQUINAS.md",
+      "sha256": "85e6aa85e2c5816de82eb547dbad65228f249329a93f0ecf642db44c148d39a8",
+      "bytes": 9835
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B3_GLUTEO_MEDIO_MENOR_PROVISIONAL.md",
+      "sha256": "ebb28180b48476599031eb60bf85b27732b44a54a3269e68310c7013b46d12d7",
+      "bytes": 11024
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B4_PROTOCOLO_METRICAS_SEGUIMIENTO.md",
+      "sha256": "8579a968b5a3c8f206c6b0cdd40088e4e82e8fb9f6c6d8568259178673cfeccc",
+      "bytes": 8195
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/B5_PERCEPCION_ESTETICA_PRIORIDADES_VOLUMEN.md",
+      "sha256": "67a5d981a6e66c8806c67b8920f4fdc67cac3468df33670176cab22301d57d7f",
+      "bytes": 11316
+    },
+    {
+      "ruta": "biblioteca/fuentes/05_MEJORAS_2026-08-23/REGISTRO_INTEGRACIONES_ACTUALIZADO.md",
+      "sha256": "92301e7d53e41d7e2b4040fccc842ae788463b5f9d4a6ad074f4723ece14826e",
+      "bytes": 7654
+    },
+    {
+      "ruta": "biblioteca/fuentes/99_MANIFIESTO_DE_EXPORTACION.csv",
+      "sha256": "0e4abad1a0acc53153b258a55b7f449b1a9a77d7b636a7c07e6af6f3202456ac",
+      "bytes": 20262
+    },
+    {
+      "ruta": "biblioteca/fuentes/VERIFICACION_DEL_PAQUETE.txt",
+      "sha256": "e220bdd84884c0ef69577e7789a78cc8248492a1094c8873923da6f0cd376a52",
+      "bytes": 224
+    },
+    {
+      "ruta": "biblioteca/LOGICA_DECISIONES.md",
+      "sha256": "9200508cf750834079aa2674f557aa445e1ea45f7f3be4e535717d4f941be373",
+      "bytes": 4479
+    },
+    {
+      "ruta": "biblioteca/PLANTILLA_COMPLEMENTO.md",
+      "sha256": "ee94247497c96b0cadfea7b566573b2b2dd9c76f1868aa92ade8ccd84ebf0d25",
+      "bytes": 1428
+    },
+    {
+      "ruta": "biblioteca/REVISION_DRIVE_2026-10-10.md",
+      "sha256": "53bb8fae538721cfe7e98b04e85b4472b8c6f4c217afa30df2240f57259f5655",
+      "bytes": 6344
+    }
+  ],
+  "huella": "5d48e58b5090d38bd0f1dda25e04d4f52672e0dc864996d4b59b4ba640bc67be",
+  "nota": "Inventario de archivos, no numero de estudios ni verificacion global de conclusiones."
+}

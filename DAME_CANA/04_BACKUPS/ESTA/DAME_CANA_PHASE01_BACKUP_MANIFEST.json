@@ -1,0 +1,72 @@
+{
+  "manifest_version": "dame_cana.phase01_backup.v1",
+  "created_at": "2026-08-23T15:34:12+02:00",
+  "scope": "Fase 0 y Fase 1; sin publicación ni cambios en producción",
+  "source_control": {
+    "source_checkout": "C:\\Users\\Daniel\\Documents\\Codex\\2026-08-18\\registro-de-entrenamiento-sites-project-appgprj\\work\\audit-v17b",
+    "isolated_worktree": "C:\\Users\\Daniel\\Documents\\Codex\\2026-08-23\\google-drive-plugin-google-drive-openai-2\\work\\dame-cana-phase01",
+    "branch": "codex/dame-cana-phase01-20260823",
+    "base_commit": "6ee0a1390187754cd9d96dfdf75a2b5e40e27793",
+    "origin_main_at_checkout": "6ee0a1390187754cd9d96dfdf75a2b5e40e27793",
+    "source_checkout_preexisting_changes_preserved": [
+      "assets/branding/dame-cana-next-app-icon-source.png",
+      "docs/ROADMAP.md"
+    ]
+  },
+  "apps_script": {
+    "user_confirmed_source_version": "DAME CAÑA v3.2",
+    "original_source_sha256": "5CBC664AA8DD1D6734F6DFFE7FAB31237118E4003CED02F4003521EA3B20D204",
+    "corrected_candidate_version": "DAME CAÑA v3.3-rc1",
+    "corrected_source_sha256": "3315A15E3E75011342FAE4BCB7AFEFA9E771D6D7CB0A1E5F14952A2C71C0F002",
+    "deployed_version": {
+      "status": "PENDIENTE",
+      "reason": "El proyecto Apps Script vinculado no estuvo expuesto por el conector y el usuario confirmó que la sustitución debe ser manual. No se publicó ni se guardó código remoto."
+    }
+  },
+  "drive": {
+    "backup_folder_id": "1Itwpa-kLJCZk2yMMEFsAzGgM3DN6rl4v",
+    "source_operativo": {
+      "id": "1DG0BlWl_qESjCGPRnlkx-olP6aEK2dRKOzzja8rihYM",
+      "title": "DAME_CANA_OPERATIVO_v3",
+      "revision": "147",
+      "previous_revision": "146",
+      "modified_time": "2026-08-23T11:54:45.973Z",
+      "time_zone": "America/Los_Angeles"
+    },
+    "copy_operativo": {
+      "id": "1yW-nsFqMs0T0CrboJF2ufukN1HDcnQkQNSgdMjsUXVo",
+      "title": "DAME_CANA_OPERATIVO_v3_PHASE01_COPY_20260823_153412",
+      "revision": "3",
+      "previous_revision": "1",
+      "url": "https://docs.google.com/spreadsheets/d/1yW-nsFqMs0T0CrboJF2ufukN1HDcnQkQNSgdMjsUXVo/edit?usp=drivesdk",
+      "time_zone": "Europe/Madrid"
+    },
+    "source_catalogos": {
+      "id": "1yQyIg1tpiu8ktKBcAY8wZ3KLYXoHBF4RQ4oiG1K7Cuk",
+      "title": "DAME_CANA_CATALOGOS_v3",
+      "revision": "1",
+      "modified_time": "2026-08-14T13:12:53.604Z"
+    },
+    "copy_catalogos": {
+      "id": "1mmvwO1SdzFx1-_oHernKeKSJdFJ2LLXzIliaGnkQSxM",
+      "title": "DAME_CANA_CATALOGOS_v3_PHASE01_COPY_20260823_153412",
+      "revision": "1",
+      "url": "https://docs.google.com/spreadsheets/d/1mmvwO1SdzFx1-_oHernKeKSJdFJ2LLXzIliaGnkQSxM/edit?usp=drivesdk"
+    },
+    "copy_verification": {
+      "tabs_compared": 33,
+      "tabs_equal_in_preexisting_ranges": 33,
+      "mismatches": 0,
+      "comparison_mode": "FORMULA",
+      "operativo_ranges_excluded_from_equality_check_because_they_are_the_approved_new_schema": [
+        "03_SESIONES!P1:V1",
+        "04_SERIES!V1:Y1",
+        "99_IMPORT_LOG!L1:R1"
+      ],
+      "new_columns_nonblank_cells_below_header": 0
+    }
+  },
+  "production_mutations": [],
+  "external_posts_executed": 0,
+  "deployments_created": 0
+}

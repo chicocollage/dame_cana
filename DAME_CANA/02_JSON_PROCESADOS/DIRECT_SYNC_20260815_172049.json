@@ -1,0 +1,74 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-15T15:20:47.426Z",
+  "event_id": "EVENT-1786807247426-443b4",
+  "session": {
+    "id": "msuivxba-0iepej",
+    "date": "2026-08-15",
+    "title": "Día extra",
+    "finished": true,
+    "exercise_count": 1,
+    "planned_set_count": 4,
+    "recorded_set_count": 4
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Flexiones. Autocarga",
+      "identity": {
+        "variant": "Autocarga",
+        "load_basis": "unknown",
+        "resistance_mode": "bodyweight",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": null,
+            "reps": 15,
+            "rir": 2,
+            "resistance": {
+              "mode": "bodyweight",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": null,
+            "reps": 15,
+            "rir": 2,
+            "resistance": {
+              "mode": "bodyweight",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": null,
+            "reps": 15,
+            "rir": 2,
+            "resistance": {
+              "mode": "bodyweight",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 4,
+            "load_kg": null,
+            "reps": 12,
+            "rir": 2,
+            "resistance": {
+              "mode": "bodyweight",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

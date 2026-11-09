@@ -1,0 +1,5 @@
+﻿Estado: CORRECTO
+Fecha: 2026-08-23 14:15:10 +02:00
+Archivos incluidos antes de esta verificacion: 73
+Copias verificadas mediante SHA256: 72
+Las copias enumeradas en el manifiesto coinciden byte a byte con su origen.

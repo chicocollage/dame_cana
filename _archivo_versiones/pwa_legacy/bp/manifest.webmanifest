@@ -1,0 +1,21 @@
+{
+  "name": "DCLog",
+  "short_name": "DCLog",
+  "description": "DCLog — Registro y control biomecánico de entrenamiento Dame Caña.",
+  "id": "dclog-app-v50",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#0a0f0c",
+  "theme_color": "#111713",
+  "lang": "es",
+  "categories": ["health", "fitness", "utilities"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "dclog-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "dclog-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "dclog-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

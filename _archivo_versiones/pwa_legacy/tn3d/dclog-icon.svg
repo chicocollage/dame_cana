@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="plateGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e2720" />
+      <stop offset="70%" stop-color="#121814" />
+      <stop offset="100%" stop-color="#080c09" />
+    </radialGradient>
+    <radialGradient id="hubGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#324436" />
+      <stop offset="55%" stop-color="#1f2b22" />
+      <stop offset="100%" stop-color="#0e1410" />
+    </radialGradient>
+    
+    <!-- Top arc: left to right over the top -->
+    <path id="topArc" d="M 115 256 A 141 141 0 0 1 397 256" fill="none" />
+    <!-- Bottom arc: concentric at R=152 -->
+    <path id="bottomArc" d="M 148 376 A 152 152 0 0 0 364 376" fill="none" />
+  </defs>
+
+  <!-- Background container -->
+  <rect width="512" height="512" rx="128" fill="#0a0f0c" />
+
+  <!-- Outer Plate Body (Calibrated Olympic Plate) -->
+  <circle cx="256" cy="256" r="204" fill="url(#plateGrad)" stroke="#222d25" stroke-width="5" />
+  
+  <!-- Outer Calibrated Rim / Chamfer -->
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#c9ff4a" stroke-width="3.5" opacity="0.9" />
+  <circle cx="256" cy="256" r="185" fill="none" stroke="#232e26" stroke-width="1.5" />
+
+  <!-- Calibration Notches -->
+  <g>
+    <line x1="348.5" y1="416.2" x2="354.0" y2="425.7" stroke="#c9ff4a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <line x1="256.0" y1="441.0" x2="256.0" y2="452.0" stroke="#c9ff4a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <line x1="163.5" y1="416.2" x2="158.0" y2="425.7" stroke="#c9ff4a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <line x1="163.5" y1="95.8" x2="158.0" y2="86.3" stroke="#c9ff4a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <line x1="256.0" y1="71.0" x2="256.0" y2="60.0" stroke="#c9ff4a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <line x1="348.5" y1="95.8" x2="354.0" y2="86.3" stroke="#c9ff4a" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <!-- Dual Precision Grip Handles (Left & Right) -->
+  <path d="M 101.41 331.40 A 172 172 0 0 1 101.41 180.60 A 15.00 15.00 0 0 1 128.37 193.75 A 142 142 0 0 0 128.37 318.25 A 15.00 15.00 0 0 1 101.41 331.40 Z" fill="#0a0f0c" stroke="#c9ff4a" stroke-width="3" stroke-linejoin="round" />
+  <path d="M 410.59 180.60 A 172 172 0 0 1 410.59 331.40 A 15.00 15.00 0 0 1 383.63 318.25 A 142 142 0 0 0 383.63 193.75 A 15.00 15.00 0 0 1 410.59 180.60 Z" fill="#0a0f0c" stroke="#c9ff4a" stroke-width="3" stroke-linejoin="round" />
+
+  <!-- Recessed Center Hub Area -->
+  <circle cx="256" cy="256" r="124" fill="#0e1410" stroke="#253227" stroke-width="2.5" />
+
+  <!-- Top Lettering: DAME CAÑA -->
+  <text font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+        font-size="28" font-weight="900" letter-spacing="5" fill="#f4f5ef" text-anchor="middle">
+    <textPath href="#topArc" startOffset="50%">DAME CAÑA</textPath>
+  </text>
+
+  <!-- Bottom Lettering: DC LOG -->
+  <text font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" 
+        font-size="20" font-weight="900" letter-spacing="6" fill="#c9ff4a" text-anchor="middle">
+    <textPath href="#bottomArc" startOffset="50%">DC LOG</textPath>
+  </text>
+
+  <!-- Central Steel Collar Hub (Bushing insert) -->
+  <circle cx="256" cy="256" r="76" fill="url(#hubGrad)" stroke="#c9ff4a" stroke-width="3.5" />
+  <circle cx="256" cy="256" r="62" fill="#0a0f0c" stroke="#3b4d40" stroke-width="2" />
+
+  <!-- Center DC Brand Mark -->
+  <text x="256" y="276" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+        font-size="46" font-weight="950" letter-spacing="2" fill="#c9ff4a" text-anchor="middle">DC</text>
+</svg>

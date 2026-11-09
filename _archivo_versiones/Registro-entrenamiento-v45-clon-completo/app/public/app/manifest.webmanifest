@@ -1,0 +1,21 @@
+{
+  "name": "Registro de entrenamiento",
+  "short_name": "Registro",
+  "description": "Registra entrenamientos y compártelos con tu entrenador AI.",
+  "id": "./",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f4f5ef",
+  "theme_color": "#111713",
+  "lang": "es",
+  "categories": ["health", "fitness", "utilities"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

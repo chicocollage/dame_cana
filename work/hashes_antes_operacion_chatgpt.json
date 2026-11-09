@@ -1,0 +1,42 @@
+[
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\catalogos.json",
+    "Hash": "39DB62EFE185FBFB9AF2F30F12C7A0350284BCA35AF2CD92F54A8D2C0ECFAD28"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\confirmaciones_usuario.json",
+    "Hash": "D4ADFC99B34A1E5632C8ED097558BA24AAAD6B5B74ED4D8B98C7EFD3B4B92A20"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\conflictos_fuentes.json",
+    "Hash": "4423800032BA8F3A62481E9C3634606B41054857C41E3CD22B3FEFB2EF7F6F86"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\estado_revision_diaria.json",
+    "Hash": "C0FE154FD8B3F0CD3FE57D2177782EA4676B89C609552B4B2C71FA8DCB21CE8F"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\estado_y_decisiones.json",
+    "Hash": "9C484BC5A0C6A383C40EDE103F7006A79DF68AD5F068334A8DA5F1245C51A080"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\maquinas.json",
+    "Hash": "EF0EE920C31900848CE595F5A8C2F5A878406A7FD920605E27884D05AE4EBAD2"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\programa.json",
+    "Hash": "2F217A6DE857F19D434CD41961B4ACBD2117A46E5DCD0F351DEDBD2B3239C91E"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\registro.json",
+    "Hash": "6C0967D432E71494E66B73C87E42B176ECBF253DAB227CB2F540763D4E81C8BD"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\seguimiento.json",
+    "Hash": "114CED034E27B74AA6F63F2B1B49CFEF6EE94C9775A91B312F71F42D7D491FAF"
+  },
+  {
+    "Path": "C:\\Users\\Daniel\\Workspace\\DAME_CANA-20260920T085206Z-1-001\\data\\taxonomia_operativa.json",
+    "Hash": "23811D6CB66C3DAE82F49AC67337B16210A4AFAEDE72B70AF0C22C3432E3C81A"
+  }
+]

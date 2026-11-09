@@ -1,0 +1,4908 @@
+/* ==========================================================================
+   DameCañaTN — EDICIÓN TITANIO NOCTURNO (APEX STEALTH CHRONO-LAB)
+   Chasis en Titanio Grado 5 cepillado + Carbono forjado + Acrílico Ámbar
+   + Telemetría OLED Dot-Matrix + Holograma Termográfico + Odómetros Mecánicos
+   100% compatible con todos los contratos DOM/JS de DCLog.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+  --bg-carbon: #090b0d;
+  --bg-carbon-deep: #050708;
+  --ti-plate-top: #1d2227;
+  --ti-plate-mid: #14181c;
+  --ti-plate-bot: #0d1013;
+  --ti-socket: #060809;
+  --ti-border-light: rgba(255, 255, 255, 0.14);
+  --ti-border-mid: rgba(255, 255, 255, 0.07);
+  --ti-border-dark: rgba(0, 0, 0, 0.88);
+
+  --ink: #f2f5f7;
+  --muted: #8a959e;
+  --muted-dim: #58626b;
+  --paper: #090b0d;
+  --card: #14181c;
+  --line: #283038;
+
+  /* Señales luminosas de instrumento */
+  --accent: #d4ff33;        /* Bio-Volt */
+  --accent-glow: rgba(212, 255, 51, 0.36);
+  --accent-dark: #090c06;
+  --cyan: #2ce5d8;          /* Cryo-Cyan */
+  --cyan-glow: rgba(44, 229, 216, 0.34);
+  --emerald: #00ffa3;       /* Laser Emerald */
+  --amber: #ff6a1a;         /* Translucent Amber Acrylic */
+  --amber-deep: #c83e00;
+  --amber-glow: rgba(255, 106, 26, 0.42);
+  --infrared: #ff2a1a;      /* Bio-Thermal Core */
+  --danger: #ff3b30;
+
+  --display: "Barlow Condensed", "Arial Narrow", "Franklin Gothic Medium", sans-serif;
+  --body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", "Share Tech Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  --radius-compact: 8px;
+  --radius-control: 10px;
+  --radius-panel: 16px;
+  --shadow-plate:
+    0 18px 40px rgba(0, 0, 0, 0.72),
+    0 6px 0 #050607,
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-carbon);
+  scroll-padding-top: 76px;
+}
+
+body {
+  --timer-progress: 100%;
+  margin: 0;
+  min-width: 320px;
+  background-color: var(--bg-carbon);
+  background-image:
+    radial-gradient(circle at 50% -10%, rgba(44, 229, 216, 0.08), transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(255, 106, 26, 0.05), transparent 40%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.016) 0px,
+      rgba(255, 255, 255, 0.016) 2px,
+      transparent 2px,
+      transparent 6px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(0, 0, 0, 0.35) 0px,
+      rgba(0, 0, 0, 0.35) 3px,
+      transparent 3px,
+      transparent 8px
+    );
+  color: var(--ink);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Micro-retícula técnica de fondo */
+body::before {
+  content: "";
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.42;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+button, textarea, input, select {
+  font: inherit;
+  color: inherit;
+}
+
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   TORNILLOS HEXAGONALES MECANIZADOS (4 ESQUINAS DE PLACA DE TITANIO)
+   ========================================================================== */
+.titanium-plate-screws {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.titanium-plate-screws i {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 30%, #48525c 0%, #1d2228 55%, #090b0d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    inset 0 1px 1px rgba(0, 0, 0, 0.9),
+    0 1px 2px rgba(0, 0, 0, 0.85);
+}
+
+.titanium-plate-screws i::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 1px;
+  background: #07090b;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transform: rotate(30deg);
+}
+
+.titanium-plate-screws i:nth-child(1) { top: 8px; left: 8px; }
+.titanium-plate-screws i:nth-child(2) { top: 8px; right: 8px; transform: rotate(40deg); }
+.titanium-plate-screws i:nth-child(3) { bottom: 8px; left: 8px; transform: rotate(-25deg); }
+.titanium-plate-screws i:nth-child(4) { bottom: 8px; right: 8px; transform: rotate(75deg); }
+
+/* ==========================================================================
+   CABECERA DE TITANIO ANODIZADO (.app-header)
+   ========================================================================== */
+.app-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding: 0 max(18px, env(safe-area-inset-left));
+  background:
+    linear-gradient(180deg, rgba(30, 36, 42, 0.96) 0%, rgba(15, 18, 22, 0.98) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.75),
+    0 2px 0 rgba(212, 255, 51, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.brand::after {
+  content: "CHRONO-LAB // TI-G5";
+  padding-left: 10px;
+  border-left: 2px solid var(--amber);
+  color: var(--muted);
+  font: 700 9px/1 var(--mono);
+  letter-spacing: 0.14em;
+}
+
+.brand-mark {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 8px;
+  color: #080b06;
+  background: linear-gradient(145deg, #e5ff66 0%, #b8eb14 100%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 3px 0 #4d6600,
+    0 0 14px rgba(212, 255, 51, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  font: 900 15px/1 var(--display);
+  letter-spacing: 0.03em;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.header-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.app-header .ghost-button,
+.app-header .header-link {
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 7px;
+  color: #dce3e9;
+  background: linear-gradient(180deg, #21272e 0%, #14181d 100%);
+  box-shadow:
+    0 3px 0 #07090b,
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 100ms ease, border-color 140ms ease, box-shadow 100ms ease;
+}
+
+.app-header .ghost-button:hover,
+.app-header .header-link:hover {
+  border-color: var(--cyan);
+  color: #fff;
+  box-shadow:
+    0 3px 0 #07090b,
+    0 0 12px rgba(44, 229, 216, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.app-header .ghost-button:active,
+.app-header .header-link:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 #07090b;
+}
+
+/* ==========================================================================
+   ESTADO DE SINCRONIZACIÓN GLOBAL (.sync-status-card)
+   ========================================================================== */
+.sync-status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, rgba(22, 27, 32, 0.95), rgba(12, 15, 18, 0.95));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.sync-status-global {
+  position: relative;
+  z-index: 4;
+  width: min(calc(100% - 28px), 920px);
+  margin: 12px auto 0;
+}
+
+.sync-status-card div {
+  display: grid;
+  gap: 2px;
+}
+
+.sync-status-card strong {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.sync-status-card span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.sync-status-card button {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--cyan);
+  border-radius: 6px;
+  background: rgba(44, 229, 216, 0.12);
+  color: var(--cyan);
+  font-family: var(--display);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.sync-status-card[data-state="pending"] {
+  border-left-color: var(--amber);
+}
+
+.sync-status-card[data-state="error"] {
+  border-left-color: var(--danger);
+}
+
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL Y TIPOGRAFÍA DE INSTRUMENTO
+   ========================================================================== */
+main {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 940px);
+  margin: 0 auto;
+  padding-bottom: 110px;
+}
+
+.screen {
+  position: relative;
+  padding: 36px 24px 140px;
+}
+
+.screen:not([hidden]) {
+  animation: tn-screen-in 200ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes tn-screen-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.import-screen,
+.historical-screen {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 22px;
+  margin-bottom: 10px;
+  padding: 0 9px;
+  border: 1px solid rgba(44, 229, 216, 0.35);
+  border-radius: 4px;
+  background: rgba(44, 229, 216, 0.08);
+  color: var(--cyan);
+  font: 700 10px/1 var(--mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 6px var(--cyan);
+}
+
+h1 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: clamp(38px, 7vw, 62px);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+.lead {
+  max-width: 610px;
+  margin: 14px 0 24px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   PANTALLA 1: PLACA DE TITANIO CON 6 PULSADORES 3D MOLETEADOS (.quick-start)
+   ========================================================================== */
+.quick-start {
+  position: relative;
+  padding: 22px 18px 24px;
+  border-radius: 18px;
+  border: 1px solid var(--ti-border-light);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(165deg, #222830 0%, #15191e 52%, #0e1115 100%);
+  box-shadow: var(--shadow-plate);
+}
+
+.quick-start-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+}
+
+/* Cada botón es un dial/pulsador circular-octogonal 3D encastrado en su pozo */
+.quick-start-button,
+.free-session-button {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 122px;
+  padding: 16px 10px 20px;
+  border-radius: 26px;
+  border: 2px solid #2e3640;
+  /* Textura exterior moleteada (knurled ring) + superficie de titanio cepillado */
+  background:
+    radial-gradient(circle at 50% 24%, rgba(255, 255, 255, 0.12), transparent 60%),
+    linear-gradient(180deg, #272e37 0%, #181d23 65%, #101418 100%);
+  /* Pozo fresado + bisel 3D inferior profundo de 8px */
+  box-shadow:
+    0 8px 0 #060809,
+    0 11px 18px rgba(0, 0, 0, 0.9),
+    0 0 0 4px #080a0c,
+    0 0 0 5px rgba(255, 255, 255, 0.07),
+    inset 0 2px 1px rgba(255, 255, 255, 0.22),
+    inset 0 -3px 6px rgba(0, 0, 0, 0.85);
+  color: var(--ink);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 110ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 110ms ease, border-color 140ms ease;
+  isolation: isolate;
+}
+
+/* Bisel moleteado periférico (Knurled bezel ring) */
+.quick-start-button::before,
+.free-session-button::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 21px;
+  border: 1px dashed rgba(255, 255, 255, 0.14);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.07), transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Ranura de luz de neón inferior en el bisel (Neon Slit Bar) */
+.quick-start-button::after,
+.free-session-button::after {
+  content: "";
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44%;
+  height: 4px;
+  border-radius: 99px;
+  background: var(--accent);
+  box-shadow:
+    0 0 10px var(--accent),
+    0 0 20px var(--accent-glow);
+  transition: width 150ms ease, box-shadow 150ms ease;
+}
+
+.quick-start-button[data-knurled-tone="cyan"]::after,
+.free-session-button[data-knurled-tone="cyan"]::after {
+  background: var(--cyan);
+  box-shadow:
+    0 0 10px var(--cyan),
+    0 0 20px var(--cyan-glow);
+}
+
+/* Subtítulo técnico superior del dial */
+.dial-sub {
+  display: block;
+  font: 700 9px/1.1 var(--mono);
+  letter-spacing: 0.12em;
+  color: #9aa6b2;
+  text-transform: uppercase;
+}
+
+/* Título principal del dial */
+.dial-title {
+  display: block;
+  font: 900 clamp(20px, 3.5vw, 26px)/1 var(--display);
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+/* DIAL RECOMENDADO / DÍA ACTIVO EN ACRÍLICO ÁMBAR TRANSLÚCIDO (Teenage Engineering / Chronograph) */
+.quick-start-button[data-knurled-tone="amber"],
+.quick-start-button[data-recommended="true"] {
+  border-color: #ff944d;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(255, 210, 150, 0.42), transparent 58%),
+    linear-gradient(180deg, #ff7b24 0%, #e04800 68%, #992900 100%);
+  box-shadow:
+    0 8px 0 #591600,
+    0 12px 24px rgba(255, 90, 0, 0.42),
+    0 0 0 4px #080a0c,
+    0 0 0 5px rgba(255, 130, 50, 0.35),
+    inset 0 2px 2px rgba(255, 240, 210, 0.65),
+    inset 0 -4px 8px rgba(70, 12, 0, 0.85);
+}
+
+.quick-start-button[data-knurled-tone="amber"] .dial-sub,
+.quick-start-button[data-recommended="true"] .dial-sub {
+  color: rgba(255, 245, 230, 0.92);
+}
+
+.quick-start-button[data-knurled-tone="amber"]::after,
+.quick-start-button[data-recommended="true"]::after {
+  background: #fff3d1;
+  box-shadow:
+    0 0 12px #ffffff,
+    0 0 22px #ff9d00;
+}
+
+.quick-start-button:hover,
+.free-session-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.quick-start-button[data-knurled-tone="amber"]:hover,
+.quick-start-button[data-recommended="true"]:hover {
+  border-color: #ffc299;
+}
+
+.quick-start-button:active,
+.free-session-button:active {
+  transform: translateY(5px);
+  box-shadow:
+    0 3px 0 #050608,
+    0 4px 10px rgba(0, 0, 0, 0.85),
+    0 0 0 4px #080a0c,
+    inset 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* ==========================================================================
+   BAHÍA DE CALIBRACIÓN TIPO TAPE-DECK (.tape-deck-housing)
+   ========================================================================== */
+.entry-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 26px 0 16px;
+  color: var(--muted);
+  font: 700 10px/1 var(--mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.entry-divider::before,
+.entry-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.16), transparent);
+}
+
+.tape-deck-housing {
+  position: relative;
+  padding: 18px 18px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--ti-border-light);
+  background:
+    linear-gradient(180deg, #1d2228 0%, #12161a 100%);
+  box-shadow: var(--shadow-plate);
+}
+
+.tape-deck-window {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: 46px;
+  margin: 4px 6px 14px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(44, 229, 216, 0.08), transparent 70%),
+    #06080a;
+  box-shadow:
+    inset 0 3px 8px rgba(0, 0, 0, 0.95),
+    0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.tape-reel {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #3a444e;
+  background:
+    conic-gradient(
+      from 0deg,
+      #1b2026 0deg 40deg,
+      #4b5663 40deg 60deg,
+      #1b2026 60deg 160deg,
+      #4b5663 160deg 180deg,
+      #1b2026 180deg 280deg,
+      #4b5663 280deg 300deg,
+      #1b2026 300deg 360deg
+    );
+  box-shadow: inset 0 0 4px #000;
+  transition: transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.tape-reel::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: #090b0d;
+  border: 1.5px solid var(--amber);
+}
+
+.tape-window-scale {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--cyan);
+  font: 700 9px/1 var(--mono);
+  letter-spacing: 0.18em;
+}
+
+.tape-window-scale::after {
+  content: "";
+  width: 80%;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(44, 229, 216, 0.55) 0 2px,
+    transparent 2px 6px
+  );
+}
+
+.note-field,
+.movement-note {
+  display: grid;
+  gap: 8px;
+}
+
+.note-field > span,
+.movement-note > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #aeb8c2;
+  font: 700 10px/1 var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+textarea,
+input,
+select {
+  border: 1px solid #2b343d;
+  border-radius: var(--radius-control);
+  background: #080a0d;
+  color: var(--ink);
+  box-shadow:
+    inset 0 3px 7px rgba(0, 0, 0, 0.85),
+    0 1px 0 rgba(255, 255, 255, 0.07);
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border-color: var(--cyan);
+  box-shadow:
+    inset 0 3px 7px rgba(0, 0, 0, 0.85),
+    0 0 0 2px rgba(44, 229, 216, 0.28);
+  outline: 0;
+}
+
+.note-field textarea {
+  width: 100%;
+  min-height: 240px;
+  padding: 16px;
+  resize: vertical;
+  border-radius: 10px;
+  border: 1px solid #28323b;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.015) 0px,
+      rgba(255, 255, 255, 0.015) 1px,
+      transparent 1px,
+      transparent 28px
+    ),
+    #07090b;
+  color: #e4ecf2;
+  font-family: var(--mono);
+  font-size: 13.5px;
+  line-height: 28px;
+}
+
+.note-field textarea::placeholder {
+  color: #54606b;
+}
+
+/* ==========================================================================
+   BOTONES DE ACCIÓN INDUSTRIALES (.primary-button, .secondary-button, etc.)
+   ========================================================================== */
+.import-actions,
+.session-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.primary-button,
+.secondary-button,
+.share-button,
+.ghost-button,
+.icon-button,
+.install-button {
+  position: relative;
+  min-height: 50px;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 100ms ease, box-shadow 120ms ease, filter 120ms ease;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 1px solid #e8ff80;
+  color: #090c05;
+  background: linear-gradient(180deg, #deff4d 0%, #b5e612 100%);
+  box-shadow:
+    0 5px 0 #4c6600,
+    0 8px 20px rgba(212, 255, 51, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.primary-button:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+.primary-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #4c6600;
+}
+
+.secondary-button {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--ink);
+  background: linear-gradient(180deg, #252c34 0%, #161a1f 100%);
+  box-shadow:
+    0 5px 0 #07090b,
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.secondary-button:hover {
+  border-color: var(--cyan);
+}
+
+.secondary-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #07090b;
+}
+
+.share-button {
+  border: 1px solid rgba(44, 229, 216, 0.45);
+  color: #041413;
+  background: linear-gradient(180deg, #4df2e6 0%, #1bc4b7 100%);
+  box-shadow:
+    0 5px 0 #09524c,
+    0 6px 18px rgba(44, 229, 216, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.share-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #09524c;
+}
+
+.ghost-button {
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--ink);
+}
+
+.icon-button {
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #283038 0%, #15191e 100%);
+  color: var(--amber);
+  box-shadow:
+    0 4px 0 #060809,
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  font-size: 20px;
+}
+
+.privacy-note {
+  margin: 18px 0 0;
+  padding-left: 12px;
+  border-left: 3px solid var(--cyan);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.install-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 20px;
+  padding: 14px 16px;
+  border: 1px solid rgba(212, 255, 51, 0.35);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #1b2218 0%, #11160f 100%);
+  box-shadow: var(--shadow-plate);
+}
+
+.install-card[hidden] { display: none; }
+.install-card div { display: grid; gap: 3px; }
+.install-card strong { font-size: 14px; color: var(--accent); }
+.install-card span { color: var(--muted); font-size: 12px; }
+.install-button {
+  min-height: 40px;
+  padding: 0 14px;
+  background: var(--accent);
+  color: #090c05;
+}
+
+/* ==========================================================================
+   HORIZONTE LÁSER DE DESCANSO AMBIENTAL (#restAmbient)
+   ========================================================================== */
+.rest-ambient {
+  position: fixed;
+  z-index: 12;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 240ms ease;
+}
+
+.rest-ambient[data-state="running"],
+.rest-ambient[data-state="paused"] {
+  opacity: 1;
+}
+
+.rest-ambient[data-state="paused"] {
+  opacity: 0.7;
+}
+
+.rest-ambient[data-state="complete"] {
+  opacity: 0;
+}
+
+.rest-ambient-fill {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - var(--timer-progress));
+  height: var(--timer-progress);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 255, 163, 0.16) 0%,
+      rgba(44, 229, 216, 0.06) 35%,
+      transparent 100%
+    );
+  transition: height 1s linear, top 1s linear;
+}
+
+.rest-ambient-edge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - var(--timer-progress));
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--cyan) 15%, var(--emerald) 50%, var(--cyan) 85%, transparent 100%);
+  box-shadow:
+    0 0 12px var(--emerald),
+    0 0 26px var(--cyan);
+  transition: top 1s linear;
+}
+
+.rest-laser-hud {
+  position: absolute;
+  right: 18px;
+  bottom: 6px;
+  padding: 3px 8px;
+  border: 1px solid var(--emerald);
+  border-radius: 4px;
+  background: rgba(5, 12, 10, 0.9);
+  color: var(--emerald);
+  font: 700 9px/1 var(--mono);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(0, 255, 163, 0.35);
+}
+
+.rest-ambient[data-stage="ending"] .rest-ambient-edge {
+  background: linear-gradient(90deg, transparent 0%, var(--amber) 20%, #ff2a1a 50%, var(--amber) 80%, transparent 100%);
+  box-shadow: 0 0 14px var(--amber), 0 0 28px #ff2a1a;
+}
+
+.rest-ambient[data-stage="ending"] .rest-laser-hud {
+  border-color: var(--amber);
+  color: var(--amber);
+  box-shadow: 0 0 12px var(--amber-glow);
+}
+
+/* ==========================================================================
+   PANTALLA 2: SESIÓN ACTIVA — CABECERA Y MARCADORES OLED DOT-MATRIX
+   ========================================================================== */
+.session-heading {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 22px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--ti-border-light);
+  background:
+    linear-gradient(165deg, #21272f 0%, #14181d 60%, #0d1014 100%);
+  box-shadow: var(--shadow-plate);
+}
+
+.session-heading::after {
+  content: "01 // TELEMETRÍA ACTIVA";
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  padding: 3px 7px;
+  border: 1px solid rgba(255, 106, 26, 0.45);
+  border-radius: 4px;
+  background: rgba(255, 106, 26, 0.12);
+  color: var(--amber);
+  font: 700 8px/1 var(--mono);
+  letter-spacing: 0.14em;
+}
+
+.session-heading h1 {
+  font-size: clamp(30px, 5.5vw, 48px);
+}
+
+.save-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: var(--accent);
+  font: 700 10px/1 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.save-status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.save-status[data-state="error"] { color: var(--danger); }
+.save-status[data-state="error"]::before { background: var(--danger); box-shadow: 0 0 8px var(--danger); }
+.save-status[data-state="draft"] { color: var(--amber); }
+.save-status[data-state="draft"]::before { background: var(--amber); box-shadow: 0 0 8px var(--amber); }
+
+/* 3 VENTANAS OLED DOT-MATRIX (.session-summary) */
+.session-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 18px;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid var(--ti-border-light);
+  background: linear-gradient(180deg, #1a1f24 0%, #101317 100%);
+  box-shadow: var(--shadow-plate);
+}
+
+.session-summary > div {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  min-height: 82px;
+  padding: 12px 14px;
+  align-content: center;
+  text-align: center;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* Fondo OLED con matriz de puntos (Dot-Matrix) */
+  background-color: #050709;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 0);
+  background-size: 4px 4px;
+  box-shadow:
+    inset 0 4px 10px rgba(0, 0, 0, 0.95),
+    0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.session-summary strong {
+  font: 700 clamp(28px, 5vw, 38px)/0.95 var(--mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+}
+
+.session-summary > div:nth-child(1) strong {
+  color: var(--accent);
+  text-shadow: 0 0 12px var(--accent-glow);
+}
+
+.session-summary > div:nth-child(2) strong {
+  color: var(--cyan);
+  text-shadow: 0 0 12px var(--cyan-glow);
+}
+
+.session-summary > div:nth-child(3) strong {
+  color: var(--amber);
+  text-shadow: 0 0 12px var(--amber-glow);
+}
+
+.session-summary span {
+  color: #8c98a4;
+  font: 700 9px/1 var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* Barra de progreso láser */
+.progress-track {
+  position: relative;
+  height: 10px;
+  margin: 12px 0 22px;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #06080a;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.progress-track div {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--cyan) 0%, var(--accent) 75%, var(--amber) 100%);
+  box-shadow: 0 0 14px var(--accent);
+  transition: width 240ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.session-tools {
+  display: flex;
+  justify-content: flex-end;
+  margin: -6px 0 18px;
+}
+
+.wake-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 13px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, #1b2026 0%, #111519 100%);
+  box-shadow: 0 4px 0 #060809;
+  cursor: pointer;
+}
+
+.wake-tool input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+}
+
+.wake-tool span { display: grid; gap: 1px; }
+.wake-tool strong { font-size: 12px; font-family: var(--display); letter-spacing: 0.04em; text-transform: uppercase; }
+.wake-tool small { color: var(--muted); font: 600 10px/1 var(--mono); }
+
+/* ==========================================================================
+   TARJETA DE EJERCICIO EN TITANIO CEPILLADO + HOLOGRAMA + ODÓMETROS
+   ========================================================================== */
+.exercise-list {
+  display: grid;
+  gap: 24px;
+}
+
+.exercise-card {
+  position: relative;
+  perspective: 1200px;
+  padding: 22px 20px 22px;
+  border-radius: 16px;
+  border: 1px solid var(--ti-border-light);
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.012) 0px,
+      rgba(255, 255, 255, 0.012) 1px,
+      transparent 1px,
+      transparent 3px
+    ),
+    linear-gradient(170deg, #20262d 0%, #14181d 55%, #0d1014 100%);
+  box-shadow: var(--shadow-plate);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.exercise-card::after {
+  content: "LOAD // REPS // RIR";
+  position: absolute;
+  top: 0;
+  right: 24px;
+  padding: 4px 9px;
+  border-radius: 0 0 6px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 0;
+  background: #080a0c;
+  color: var(--muted);
+  font: 700 8px/1 var(--mono);
+  letter-spacing: 0.14em;
+  z-index: 3;
+}
+
+.exercise-card[data-progress="active"] {
+  border-color: rgba(44, 229, 216, 0.45);
+}
+
+.exercise-card[data-progress="complete"] {
+  border-color: rgba(212, 255, 51, 0.55);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.75),
+    0 6px 0 #1f2905,
+    0 0 22px rgba(212, 255, 51, 0.12),
+    inset 0 1px 0 rgba(212, 255, 51, 0.35);
+}
+
+.exercise-card[data-progress="complete"]::after {
+  content: "BLOQUE COMPLETO ✓";
+  color: #090c05;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Giro 3D para reverso biomecánico */
+.exercise-flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 480ms cubic-bezier(0.2, 0.75, 0.3, 1), min-height 240ms ease;
+}
+
+.exercise-front,
+.exercise-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.exercise-back {
+  position: absolute;
+  inset: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  overscroll-behavior-y: auto;
+  transform: rotateY(180deg);
+  border-radius: 12px;
+  background: #0c0f13;
+  border: 1px solid rgba(44, 229, 216, 0.25);
+  pointer-events: none;
+  padding: 12px 14px 24px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--cyan) transparent;
+}
+
+.exercise-card[data-tech-flipped="true"] .exercise-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.exercise-card[data-tech-flipped="true"] .exercise-front {
+  pointer-events: none;
+}
+
+.exercise-card[data-tech-flipped="true"] .exercise-back {
+  pointer-events: auto;
+}
+
+.exercise-card[data-tech-flipped="true"]::after {
+  content: "BIOMECÁNICA // 3D";
+  color: #041413;
+  background: var(--cyan);
+}
+
+/* Cabecera de la tarjeta de ejercicio */
+.exercise-card-header {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: start;
+  padding-top: 6px;
+}
+
+.exercise-number {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 140, 66, 0.65);
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 220, 180, 0.35), transparent 60%),
+    linear-gradient(180deg, #ff7324 0%, #c43c00 100%);
+  color: #fff;
+  box-shadow:
+    0 4px 0 #4d1500,
+    0 0 14px rgba(255, 106, 26, 0.32),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  font: 900 16px/1 var(--mono);
+}
+
+.exercise-card:nth-child(3n + 2) .exercise-number {
+  border-color: rgba(44, 229, 216, 0.65);
+  background: linear-gradient(180deg, #2ce5d8 0%, #0d8a81 100%);
+  color: #041715;
+  box-shadow: 0 4px 0 #053b37, 0 0 14px rgba(44, 229, 216, 0.28);
+}
+
+.exercise-card:nth-child(3n) .exercise-number {
+  border-color: rgba(212, 255, 51, 0.65);
+  background: linear-gradient(180deg, #d4ff33 0%, #8eb300 100%);
+  color: #090c05;
+  box-shadow: 0 4px 0 #384700, 0 0 14px rgba(212, 255, 51, 0.28);
+}
+
+.exercise-title-block {
+  min-width: 0;
+}
+
+.exercise-name {
+  margin: 0;
+  color: #ffffff;
+  font-family: var(--display);
+  font-size: clamp(21px, 3.8vw, 27px);
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.prescription {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #090c0f;
+  color: #d0dae3;
+  font: 700 10.5px/1 var(--mono);
+  letter-spacing: 0.03em;
+}
+
+.pill:first-child {
+  border-color: rgba(212, 255, 51, 0.5);
+  background: rgba(212, 255, 51, 0.14);
+  color: var(--accent);
+}
+
+.exercise-header-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-end;
+}
+
+.substitute-exercise,
+.delete-exercise,
+.review-delete-exercise {
+  min-width: 86px;
+  height: 28px;
+  min-height: 28px;
+  padding: 0 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: linear-gradient(180deg, #242b33 0%, #15191e 100%);
+  color: #d8e0e8;
+  box-shadow: 0 2px 0 #050708;
+  font: 800 10.5px/1 var(--display);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.substitute-exercise:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+}
+
+.delete-exercise,
+.review-delete-exercise {
+  color: #ff6961;
+  border-color: rgba(255, 59, 48, 0.28);
+}
+
+.delete-exercise:hover,
+.review-delete-exercise:hover {
+  background: rgba(255, 59, 48, 0.15);
+  border-color: var(--danger);
+}
+
+/* ==========================================================================
+   BAHÍA DE HOLOGRAMA MUSCULAR TERMOGRÁFICO 3D (.tn-hologram-bay)
+   ========================================================================== */
+.tn-bio-strip {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 118px;
+  gap: 12px;
+  align-items: stretch;
+  margin-top: 12px;
+}
+
+.tn-bio-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
+.tn-hologram-bay {
+  position: relative;
+  width: 118px;
+  height: 112px;
+  border-radius: 12px;
+  border: 1px solid rgba(44, 229, 216, 0.35);
+  background:
+    radial-gradient(circle at 50% 52%, rgba(255, 50, 20, 0.22), rgba(44, 229, 216, 0.08) 55%, #040709 90%);
+  box-shadow:
+    inset 0 0 16px rgba(0, 0, 0, 0.95),
+    0 2px 10px rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  user-select: none;
+}
+
+.tn-hologram-bay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(44, 229, 216, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(44, 229, 216, 0.09) 1px, transparent 1px);
+  background-size: 10px 10px;
+  pointer-events: none;
+}
+
+/* Línea de escaneo láser en el holograma */
+.tn-hologram-bay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--emerald), transparent);
+  opacity: 0.7;
+  animation: tn-holo-scan 3.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes tn-holo-scan {
+  0%, 100% { top: 8%; opacity: 0.35; }
+  50% { top: 88%; opacity: 0.85; }
+}
+
+.tn-hologram-img {
+  width: 100%;
+  height: 100%;
+  max-width: 106px;
+  max-height: 100px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 163, 0.35)) contrast(1.12) brightness(1.05);
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.25s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tn-hologram-bay:hover .tn-hologram-img,
+.tn-hologram-bay:focus-visible .tn-hologram-img {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 14px rgba(0, 255, 163, 0.65)) contrast(1.18) brightness(1.15);
+}
+
+.tn-hologram-svg {
+  width: 96px;
+  height: 92px;
+  filter: drop-shadow(0 0 6px rgba(0, 255, 163, 0.35));
+}
+
+.tn-holo-hotspot {
+  animation: tn-thermal-pulse 2.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes tn-thermal-pulse {
+  0%, 100% { opacity: 0.82; filter: drop-shadow(0 0 6px #ff2a00); }
+  50% { opacity: 1; filter: drop-shadow(0 0 12px #ff7b00); }
+}
+
+.tn-hologram-tag {
+  position: absolute;
+  bottom: 4px;
+  left: 6px;
+  right: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 700 7.5px/1 var(--mono);
+  letter-spacing: 0.1em;
+  color: var(--cyan);
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.tn-hologram-tag b {
+  color: var(--amber);
+}
+
+/* Botón de indicaciones técnicas 3D */
+.tech-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  min-height: 30px;
+  margin-top: 8px;
+  padding: 0 11px;
+  border-radius: 7px;
+  border: 1px solid rgba(44, 229, 216, 0.4);
+  background: linear-gradient(180deg, rgba(44, 229, 216, 0.16) 0%, rgba(15, 45, 44, 0.4) 100%);
+  color: var(--cyan);
+  box-shadow: 0 3px 0 #051716;
+  font: 800 11px/1 var(--display);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tech-open:hover {
+  background: rgba(44, 229, 216, 0.26);
+  color: #fff;
+}
+
+.tech-close {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--cyan);
+  background: linear-gradient(180deg, #1b3b39 0%, #0d2120 100%);
+  color: var(--cyan);
+  font: 900 12px/1 var(--display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.exercise-back h3 { margin: 14px 0 8px; font-family: var(--display); font-size: 22px; color: #fff; text-transform: uppercase; }
+.exercise-back h4 { margin: 14px 0 5px; font-family: var(--mono); font-size: 11px; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.08em; }
+.exercise-back p, .exercise-back li { margin: 0 0 8px; font-size: 13.5px; line-height: 1.5; color: #d0dae3; }
+.exercise-back .tech-status { font: 700 10px/1 var(--mono); text-transform: uppercase; color: var(--amber); }
+.exercise-back details { margin-top: 12px; padding: 10px; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 8px; background: #080a0d; }
+.exercise-back summary { min-height: 30px; font-size: 12px; font-weight: 800; color: var(--accent); cursor: pointer; }
+
+.coach-cue {
+  margin: 10px 0 0;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 255, 51, 0.22);
+  border-left: 4px solid var(--accent);
+  background: rgba(12, 16, 12, 0.85);
+  color: #d4e0d2;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
+.exercise-identity {
+  margin-top: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  background: #0c0f13;
+}
+
+.exercise-identity[data-detected="true"] {
+  border-color: rgba(212, 255, 51, 0.38);
+}
+
+.exercise-identity summary {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 12px;
+  color: #b0bcc8;
+  font: 700 10px/1 var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
+}
+
+.exercise-identity summary::-webkit-details-marker { display: none; }
+.exercise-identity summary::after { content: "+"; margin-left: auto; color: var(--cyan); font-size: 16px; }
+.exercise-identity[open] summary::after { content: "−"; }
+
+.identity-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  padding: 0 12px 12px;
+}
+
+.identity-fields label { display: grid; gap: 4px; min-width: 0; }
+.identity-fields span { color: var(--muted); font: 700 9px/1 var(--mono); text-transform: uppercase; letter-spacing: 0.08em; }
+.identity-fields input, .identity-fields select { width: 100%; min-width: 0; height: 38px; padding: 0 9px; font-size: 13px; }
+
+.last-reference {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  border: 1px solid rgba(44, 229, 216, 0.22);
+  border-left: 4px solid var(--cyan);
+  background: rgba(8, 16, 19, 0.9);
+  color: #c2d4da;
+  font: 600 11.5px/1.4 var(--mono);
+}
+
+.reference-history { display: grid; gap: 3px; min-width: 0; }
+.reference-history span { display: block; }
+
+.last-reference button {
+  flex: 0 0 auto;
+  min-height: 32px;
+  padding: 0 10px;
+  border: 1px solid var(--cyan);
+  border-radius: 6px;
+  background: rgba(44, 229, 216, 0.15);
+  color: var(--cyan);
+  font: 800 11px/1 var(--display);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.last-reference button:hover {
+  background: var(--cyan);
+  color: #041413;
+}
+
+.last-reference button[hidden] { display: none; }
+
+/* ==========================================================================
+   TABLA DE SERIES: TAMBORES DE ODÓMETRO MECÁNICO (KG / REPS) + SWITCH ÁMBAR RIR
+   ========================================================================== */
+.sets-table {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.set-row {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) minmax(0, 1fr) 54px 42px 38px;
+  gap: 7px;
+  align-items: center;
+}
+
+.set-row + .set-row {
+  margin-top: 8px;
+}
+
+.set-labels {
+  padding: 0 4px 4px;
+  color: #8b98a6;
+  font: 700 9px/1 var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.set-row:not(.set-labels) {
+  min-height: 54px;
+  padding: 5px 6px;
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(180deg, #111519 0%, #0b0e11 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.set-row[data-completed="true"] {
+  border-color: rgba(212, 255, 51, 0.42);
+  background:
+    linear-gradient(90deg, rgba(212, 255, 51, 0.1) 0%, rgba(14, 19, 14, 0.92) 100%);
+}
+
+.set-index {
+  color: #98a6b3;
+  text-align: center;
+  font: 800 14px/1 var(--mono);
+}
+
+.set-row[data-completed="true"] .set-index {
+  color: var(--accent);
+}
+
+/* TAMBOR DE ODÓMETRO MECÁNICO (Mechanical Odometer Drum Wells para KG y REPS) */
+.set-row input[data-field="load"],
+.set-row input[data-field="reps"],
+.set-row input[data-field="difficulty"] {
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 1.5px solid #2b343e;
+  border-left: 3px solid #394452;
+  border-right: 3px solid #394452;
+  /* Simulación de tambor cilíndrico giratorio con curvatura superior e inferior */
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.92) 0%,
+      rgba(22, 28, 34, 0.35) 26%,
+      rgba(34, 42, 50, 0.18) 50%,
+      rgba(22, 28, 34, 0.35) 74%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 18px,
+      rgba(255, 255, 255, 0.03) 18px,
+      rgba(255, 255, 255, 0.03) 19px
+    ),
+    #050709;
+  box-shadow:
+    inset 0 7px 7px rgba(0, 0, 0, 0.85),
+    inset 0 -7px 7px rgba(0, 0, 0, 0.85),
+    0 1px 0 rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-align: center;
+  font: 800 18px/1 var(--mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.set-row input[data-field="difficulty"] {
+  font-size: 14px;
+}
+
+.set-row input::placeholder {
+  color: #46525e;
+  font-weight: 600;
+}
+
+.set-row input:focus {
+  border-color: var(--cyan);
+  box-shadow:
+    inset 0 6px 6px rgba(0, 0, 0, 0.8),
+    inset 0 -6px 6px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(44, 229, 216, 0.35);
+}
+
+/* INTERRUPTOR RIR RETROILUMINADO EN ÁMBAR TRANSLÚCIDO (.rir-picker / .rir-trigger) */
+.rir-picker {
+  position: relative;
+  z-index: 2;
+  justify-self: center;
+  width: 52px;
+}
+
+.rir-picker[data-open="true"],
+.set-row.has-open-picker,
+.set-row:has(.rir-picker[data-open="true"]) {
+  position: relative;
+  z-index: 60 !important;
+}
+
+.set-row .rir-trigger {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 42px;
+  padding: 0 4px;
+  border-radius: 9px;
+  border: 1px solid #ff944d;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(255, 215, 160, 0.38), transparent 65%),
+    linear-gradient(180deg, #ff7420 0%, #c83e00 100%);
+  color: #ffffff;
+  box-shadow:
+    0 3px 0 #591800,
+    0 0 12px rgba(255, 106, 26, 0.32),
+    inset 0 1px 0 rgba(255, 240, 210, 0.65);
+  font: 800 14px/1 var(--mono);
+  cursor: pointer;
+}
+
+.rir-trigger[aria-expanded="true"] {
+  border-color: #ffffff;
+  box-shadow: 0 0 16px var(--amber);
+}
+
+.rir-options {
+  position: absolute;
+  z-index: 70;
+  top: calc(100% + 4px);
+  right: -24px;
+  display: grid;
+  grid-template-columns: repeat(6, 32px);
+  gap: 4px;
+  padding: 5px;
+  border: 1.5px solid var(--amber);
+  border-radius: 10px;
+  background: #0d1115;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.95), 0 0 16px rgba(255, 116, 32, 0.3);
+  max-width: calc(100vw - 32px);
+}
+
+.rir-picker.drop-up .rir-options {
+  top: auto;
+  bottom: calc(100% + 4px);
+}
+
+.rir-options[hidden] { display: none; }
+
+.rir-option {
+  width: 32px;
+  min-height: 36px;
+  padding: 0;
+  border: 1px solid #2e3842;
+  border-radius: 6px;
+  background: #171c22;
+  color: var(--ink);
+  font: 800 13px/1 var(--mono);
+  cursor: pointer;
+}
+
+.rir-option[aria-pressed="true"],
+.rir-option:hover {
+  border-color: #ff9c59;
+  background: var(--amber);
+  color: #fff;
+}
+
+/* CHECKBOX ANILLO DE NEÓN VOLT (.set-complete) */
+.set-complete {
+  position: relative;
+  display: grid;
+  justify-self: center;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+}
+
+.set-complete input[data-field="completed"] {
+  position: absolute;
+  inset: 0;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.set-complete-visual {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid #38434f;
+  background: #07090b;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.9);
+  color: transparent;
+  font-size: 14px;
+  font-weight: 900;
+  pointer-events: none;
+  transition: all 140ms ease;
+}
+
+.set-complete input:checked + .set-complete-visual {
+  border-color: #f0ff99;
+  background: radial-gradient(circle at 35% 30%, #f0ff99 0%, var(--accent) 60%, #8eb300 100%);
+  color: #070a03;
+  box-shadow:
+    0 0 14px var(--accent),
+    inset 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.set-complete input:checked + .set-complete-visual::after {
+  content: "✓";
+}
+
+.remove-set-button {
+  display: grid;
+  justify-self: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.remove-set-button::before {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #14181d;
+  color: #8b96a1;
+  content: "×";
+  font: 800 13px/1 var(--mono);
+}
+
+.remove-set-button:hover::before {
+  border-color: var(--danger);
+  color: #fff;
+  background: var(--danger);
+}
+
+.add-set-button {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 10px;
+  border: 1px dashed rgba(44, 229, 216, 0.35);
+  border-radius: 9px;
+  background: rgba(44, 229, 216, 0.05);
+  color: var(--cyan);
+  font: 800 12px/1 var(--display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.add-set-button:hover {
+  border-style: solid;
+  background: rgba(44, 229, 216, 0.14);
+}
+
+.movement-note {
+  margin-top: 14px;
+}
+
+.movement-note textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.add-exercise-button {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 24px;
+  border: 1px dashed rgba(212, 255, 51, 0.45);
+  background: linear-gradient(180deg, #181e24 0%, #0f1317 100%);
+  color: var(--accent);
+}
+
+.session-actions {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.session-actions .danger-action {
+  color: #ff6961;
+  border-color: rgba(255, 59, 48, 0.35);
+}
+
+.session-actions .danger-action:hover {
+  color: #fff;
+  background: var(--danger);
+}
+
+/* ==========================================================================
+   DOCK DE CRONÓGRAFO DE DESCANSO CON RODILLO MOLETEADO + ANILLOS DE NEÓN
+   ========================================================================== */
+.rest-dock {
+  display: none;
+  position: fixed;
+  z-index: 25;
+  right: max(10px, env(safe-area-inset-right));
+  bottom: max(10px, env(safe-area-inset-bottom));
+  left: max(10px, env(safe-area-inset-left));
+  width: min(740px, calc(100% - 20px));
+  margin: 0 auto;
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  background:
+    linear-gradient(180deg, #232a32 0%, #12161b 60%, #0a0d10 100%);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.9),
+    0 6px 0 #040506,
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(18px);
+}
+
+body[data-screen="session"] .rest-dock { display: block; }
+body[data-timer-active="true"]:not([data-historical-draft="true"]) .rest-dock { display: block; }
+body[data-screen="session"][data-historical-draft="true"] .rest-dock { display: none; }
+
+.rest-dock-shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+
+.rest-visual {
+  height: 5px;
+  background: #06080a;
+  overflow: hidden;
+}
+
+#restTimerProgress {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--cyan), var(--accent));
+  box-shadow: 0 0 10px var(--accent);
+  clip-path: inset(0 calc(100% - var(--timer-progress)) 0 0);
+  transition: clip-path 250ms linear, background-color 200ms ease;
+}
+
+.rest-dock[data-stage="middle"] #restTimerProgress { background: var(--cyan); }
+.rest-dock[data-stage="ending"] #restTimerProgress { background: var(--amber); }
+
+.rest-dock-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28px auto 44px;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 10px;
+}
+
+/* Pantalla digital principal del cronógrafo */
+.rest-dock-main {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #050709;
+  box-shadow:
+    inset 0 4px 12px rgba(0, 0, 0, 0.95),
+    0 1px 0 rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.rest-dock-main::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: var(--timer-progress);
+  background: linear-gradient(90deg, rgba(0, 255, 163, 0.18), rgba(44, 229, 216, 0.06));
+  transition: width 1s linear;
+}
+
+.rest-dock-main > * {
+  position: relative;
+  z-index: 1;
+}
+
+.rest-dock-copy {
+  display: grid;
+  gap: 3px;
+  text-align: left;
+}
+
+.rest-dock-copy > span {
+  font: 700 9px/1 var(--mono);
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.rest-dock-copy small {
+  display: inline-block;
+  width: fit-content;
+  padding: 3px 7px;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 255, 51, 0.4);
+  background: rgba(212, 255, 51, 0.12);
+  color: var(--accent);
+  font: 800 10px/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.rest-dock-main strong {
+  font: 700 clamp(30px, 6vw, 40px)/1 var(--mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-shadow: 0 0 16px rgba(44, 229, 216, 0.45);
+}
+
+.rest-dock[data-state="running"] .rest-dock-main {
+  border-color: rgba(0, 255, 163, 0.45);
+}
+
+.rest-dock[data-state="running"] .rest-dock-main strong {
+  color: var(--accent);
+  text-shadow: 0 0 18px var(--accent-glow);
+}
+
+.rest-dock[data-stage="ending"] .rest-dock-main {
+  border-color: var(--amber);
+}
+
+.rest-dock[data-stage="ending"] .rest-dock-main strong {
+  color: var(--amber);
+  text-shadow: 0 0 18px var(--amber-glow);
+}
+
+.rest-dock[data-state="complete"] .rest-dock-main {
+  border-color: var(--accent);
+  background: rgba(212, 255, 51, 0.18);
+}
+
+/* RODILLO VERTICAL MOLETEADO (Knurled Roller Wheel) */
+.tn-knurled-roller {
+  position: relative;
+  width: 26px;
+  height: 60px;
+  border-radius: 7px;
+  border: 1.5px solid #48535e;
+  background: #0c0f12;
+  box-shadow:
+    inset 0 6px 8px rgba(0, 0, 0, 0.92),
+    inset 0 -6px 8px rgba(0, 0, 0, 0.92),
+    0 2px 5px rgba(0, 0, 0, 0.8);
+  cursor: ns-resize;
+  overflow: hidden;
+  user-select: none;
+  touch-action: none;
+}
+
+.tn-knurled-texture {
+  width: 100%;
+  height: 200%;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      #14191f 0px,
+      #14191f 3px,
+      #3b4652 3px,
+      #596775 4px,
+      #14191f 5px,
+      #14191f 7px
+    );
+  transition: transform 80ms linear;
+}
+
+.tn-knurled-roller:hover {
+  border-color: var(--cyan);
+}
+
+/* BOTONES DE ANILLO DE NEÓN VERDE (-15 / +15) */
+.tn-neon-rings-col {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.rest-dock-quick {
+  width: 48px;
+  height: 48px;
+  min-height: 48px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid var(--emerald);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(0, 255, 163, 0.16), #070b0a 72%);
+  box-shadow:
+    0 0 12px rgba(0, 255, 163, 0.28),
+    inset 0 0 8px rgba(0, 255, 163, 0.22);
+  color: var(--emerald);
+  font: 800 12px/1 var(--mono);
+  cursor: pointer;
+  transition: transform 100ms ease, box-shadow 120ms ease;
+}
+
+.rest-dock-quick:not(:disabled):hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 18px rgba(0, 255, 163, 0.55),
+    inset 0 0 10px rgba(0, 255, 163, 0.35);
+  color: #fff;
+}
+
+.rest-dock-quick:disabled {
+  opacity: 0.35;
+  border-color: #3a444d;
+  box-shadow: none;
+  color: #6b7680;
+  cursor: default;
+}
+
+.rest-dock-options {
+  width: 42px;
+  height: 48px;
+  min-height: 48px;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(180deg, #252c34 0%, #14181d 100%);
+  color: var(--ink);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Panel desplegable de opciones del cronógrafo */
+.rest-dock-panel {
+  position: absolute;
+  z-index: 30;
+  bottom: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 90px 100px;
+  grid-template-areas:
+    "duration reset sound"
+    "profile profile preview";
+  gap: 8px;
+  align-items: stretch;
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--ti-border-light);
+  background: #12161b;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
+}
+
+.rest-dock-panel[hidden] { display: none; }
+.rest-dock-panel > label:first-child { grid-area: duration; }
+#restTimerReset { grid-area: reset; }
+.timer-sound {
+  grid-area: sound;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 10px;
+  border: 1px solid #2b343d;
+  border-radius: 8px;
+  background: #080a0d;
+  color: var(--ink) !important;
+  font: 700 11px/1 var(--mono) !important;
+  cursor: pointer;
+}
+.sound-profile { grid-area: profile; }
+#timerSoundPreview { grid-area: preview; }
+.rest-dock-panel > label:not(.timer-sound) > span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font: 700 9px/1 var(--mono);
+  text-transform: uppercase;
+}
+.rest-dock-panel select,
+.rest-dock-panel .rest-panel-button {
+  width: 100%;
+  min-height: 42px;
+  padding: 0 10px;
+  border-radius: 8px;
+}
+.rest-panel-button {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #1d232a;
+  color: var(--ink);
+  font: 800 12px/1 var(--display);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   PANTALLAS DE REVISIÓN DE NOTA, HISTORIAL, CATÁLOGO Y MODALES
+   ========================================================================== */
+.workout-note-review-screen {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.review-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.review-local-status {
+  display: inline-flex;
+  min-height: 26px;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid var(--amber);
+  border-radius: 99px;
+  color: var(--amber);
+  background: rgba(255, 106, 26, 0.12);
+  font: 700 10px/1 var(--mono);
+  text-transform: uppercase;
+}
+
+.review-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.review-intro {
+  margin: 14px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.review-summary {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 255, 51, 0.3);
+  border-left: 4px solid var(--accent);
+  background: #101418;
+  color: var(--ink);
+  font: 600 12px/1.4 var(--mono);
+}
+
+.workout-note-review-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.workout-note-review-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--ti-border-light);
+  background: linear-gradient(170deg, #1f252c 0%, #12161a 100%);
+  box-shadow: var(--shadow-plate);
+}
+
+.workout-note-review-card-header {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.review-exercise-name input {
+  width: 100%;
+  min-height: 38px;
+  padding: 0 6px;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  font: 900 20px/1.1 var(--display);
+  text-transform: uppercase;
+}
+
+.review-prescription-tickets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 12px 0 0 54px;
+}
+
+.review-prescription-ticket {
+  min-height: 26px;
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 5px;
+  background: #090c0f;
+  color: var(--ink);
+  font: 700 10px/1.2 var(--mono);
+}
+
+.review-prescription-ticket:first-child {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.review-prescription-editor {
+  margin: 12px 0 0 54px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.review-prescription-editor summary {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--cyan);
+  font: 700 10px/1 var(--mono);
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.review-prescription-fields {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #080a0d;
+}
+
+.review-prescription-fields label {
+  display: grid;
+  gap: 4px;
+}
+
+.review-prescription-fields label > span {
+  font: 700 9px/1 var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.review-prescription-fields input {
+  height: 36px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.review-reference,
+.review-instructions,
+.review-warning {
+  margin: 12px 0 0 54px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #0a0d10;
+  font-size: 12px;
+}
+
+.review-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Historial */
+.history-heading {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--ti-border-light);
+  background: linear-gradient(165deg, #21272f 0%, #12161b 100%);
+  box-shadow: var(--shadow-plate);
+}
+
+.history-heading p {
+  max-width: 460px;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.history-actions {
+  display: grid;
+  gap: 8px;
+  min-width: 240px;
+}
+
+.history-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 4px solid var(--cyan);
+  background: linear-gradient(180deg, #1a1f25 0%, #111519 100%);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.history-item:nth-child(3n + 1) { border-left-color: var(--accent); }
+.history-item:nth-child(3n) { border-left-color: var(--amber); }
+
+.history-open {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.history-item strong {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--display);
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.history-item span {
+  color: var(--muted);
+  font: 600 11px/1.3 var(--mono);
+}
+
+.history-item b {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 8px;
+  background: #080a0d;
+  color: var(--cyan);
+  border: 1px solid rgba(44, 229, 216, 0.3);
+}
+
+.history-delete {
+  min-height: 36px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  background: #14181d;
+  color: var(--muted);
+  font: 800 11px/1 var(--display);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.history-delete:hover {
+  border-color: var(--danger);
+  background: var(--danger);
+  color: #fff;
+}
+
+.empty-history {
+  padding: 36px 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Feedback y Modales */
+.feedback-history {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid var(--ti-border-light);
+  background: linear-gradient(180deg, #1a1f25 0%, #101418 100%);
+  box-shadow: var(--shadow-plate);
+}
+
+.feedback-list { display: grid; grid-column: 1 / -1; gap: 8px; }
+.feedback-item { padding: 12px 14px; border-radius: 10px; background: #0a0d10; border: 1px solid rgba(255, 255, 255, 0.08); }
+
+.feedback-fab {
+  position: fixed;
+  z-index: 16;
+  right: max(14px, env(safe-area-inset-right));
+  bottom: max(14px, env(safe-area-inset-bottom));
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid var(--amber);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #281a12 0%, #140d09 100%);
+  color: var(--amber);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.75);
+  font: 800 11px/1 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+body[data-screen="session"] .feedback-fab,
+body[data-timer-active="true"]:not([data-historical-draft="true"]) .feedback-fab {
+  bottom: max(104px, calc(env(safe-area-inset-bottom) + 104px));
+}
+
+.feedback-sheet,
+.exercise-picker {
+  width: min(640px, calc(100% - 20px));
+  max-height: min(82vh, 720px);
+  margin: auto auto 0;
+  padding: 18px;
+  border: 1px solid var(--ti-border-light);
+  border-radius: 18px 18px 0 0;
+  background: #12161b;
+  color: var(--ink);
+  box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.9);
+}
+
+.feedback-sheet::backdrop,
+.exercise-picker::backdrop {
+  background: rgba(3, 5, 7, 0.72);
+  backdrop-filter: blur(5px);
+}
+
+.sheet-handle {
+  width: 44px;
+  height: 4px;
+  margin: 0 auto 12px;
+  border-radius: 99px;
+  background: #3a444e;
+}
+
+.sheet-heading,
+.picker-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.sheet-heading h2,
+.picker-heading h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.sheet-close {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: #1c2229;
+  color: var(--ink);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sheet-copy {
+  margin: 10px 0 16px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.feedback-categories,
+.picker-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 12px;
+}
+
+.feedback-categories button,
+.picker-group {
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  background: #181d23;
+  color: var(--ink);
+  font: 700 11px/1 var(--mono);
+  cursor: pointer;
+}
+
+.feedback-categories button[aria-pressed="true"],
+.picker-group[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #090c05;
+}
+
+.picker-search {
+  display: grid;
+  gap: 5px;
+  margin: 14px 0;
+  font: 700 10px/1 var(--mono);
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.picker-search input {
+  min-height: 42px;
+  padding: 0 12px;
+}
+
+.picker-results,
+.picker-recommended {
+  display: grid;
+  gap: 7px;
+  max-height: 340px;
+  overflow: auto;
+}
+
+.picker-exercise {
+  display: grid;
+  gap: 3px;
+  padding: 11px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9px;
+  background: #0a0d10;
+  text-align: left;
+  cursor: pointer;
+}
+
+.picker-exercise:hover {
+  border-color: var(--cyan);
+  background: #11181d;
+}
+
+.picker-exercise strong { font-size: 13.5px; color: #fff; }
+.picker-exercise span { font-size: 11px; color: var(--muted); }
+.picker-custom { width: 100%; margin-top: 12px; }
+.picker-custom-form { margin-top: 12px; display: grid; gap: 10px; }
+.picker-custom-form[hidden] { display: none; }
+
+
+
+
+
+
+
+
+.sheet-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 16px; }
+
+.historical-draft-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px minmax(180px, 0.8fr);
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 20px;
+  padding: 16px;
+  border: 1px solid var(--amber);
+  border-radius: 12px;
+  background: rgba(255, 106, 26, 0.1);
+}
+.historical-draft-banner[hidden] { display: none; }
+.historical-draft-banner label { display: grid; gap: 4px; font: 700 9px/1 var(--mono); text-transform: uppercase; color: var(--amber); }
+.historical-draft-banner input { min-height: 40px; padding: 0 10px; }
+.historical-messages { margin-top: 14px; padding: 12px; border: 1px solid var(--danger); border-radius: 10px; background: rgba(255, 59, 48, 0.12); color: #ff8a80; font-size: 12px; white-space: pre-wrap; }
+.historical-messages[hidden] { display: none; }
+
+.toast {
+  position: fixed;
+  z-index: 40;
+  right: 16px;
+  bottom: max(18px, env(safe-area-inset-bottom));
+  max-width: min(390px, calc(100vw - 32px));
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--cyan);
+  background: #0b0f13;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85), 0 0 16px rgba(44, 229, 216, 0.25);
+  font: 600 12.5px/1.35 var(--mono);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: 180ms ease;
+}
+
+.toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body[data-screen="session"] .toast,
+body[data-timer-active="true"]:not([data-historical-draft="true"]) .toast {
+  bottom: max(100px, calc(env(safe-area-inset-bottom) + 100px));
+}
+
+/* ==========================================================================
+   RESPONSIVE MÓVIL (360px - 680px)
+   ========================================================================== */
+@media (max-width: 680px) {
+  .app-header { height: 60px; padding-inline: 12px; }
+  .brand::after { display: none; }
+  .brand { font-size: 17px; }
+  .brand-mark { width: 32px; height: 32px; font-size: 13px; }
+
+  .screen { padding: 26px 12px 136px; }
+  .quick-start { padding: 18px 12px 20px; }
+  .quick-start-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .quick-start-button, .free-session-button { min-height: 104px; }
+  .session-heading { padding: 18px 14px 22px; }
+  .session-summary { gap: 6px; padding: 8px; }
+  .session-summary > div { min-height: 70px; padding: 8px 6px; }
+  .exercise-card { padding: 18px 12px 18px; }
+  .tn-bio-strip { grid-template-columns: minmax(0, 1fr) 104px; gap: 8px; }
+  .tn-hologram-bay { width: 104px; height: 100px; }
+  .set-row { grid-template-columns: 24px minmax(0, 1fr) minmax(0, 1fr) 48px 38px 32px; gap: 5px; }
+  .set-row .rir-trigger, .rir-picker { width: 46px; }
+  .rest-dock-row { grid-template-columns: minmax(0, 1fr) 24px auto 38px; gap: 6px; padding: 7px 8px; }
+  .rest-dock-quick { width: 42px; height: 42px; min-height: 42px; font-size: 11px; }
+  .rest-dock-options { width: 38px; height: 42px; min-height: 42px; }
+  .history-heading { flex-direction: column; align-items: stretch; }
+  .history-actions { min-width: 0; }
+  .review-prescription-tickets, .review-prescription-editor, .review-reference, .review-instructions, .review-warning { margin-left: 0; }
+  .review-prescription-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media print {
+  .no-print, .rest-dock, .rest-ambient, .feedback-fab, .app-header, #app-footer-dock { display: none !important; }
+  body { background: #fff; color: #000; height: auto !important; overflow: visible !important; }
+  #app-frame, #app-main, #sessionScreen, #carousel-viewport, #carousel-stage, #exerciseList {
+    height: auto !important;
+    overflow: visible !important;
+    position: static !important;
+    display: block !important;
+  }
+  .exercise-card {
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    border: 1px solid #000;
+    box-shadow: none;
+    background: #fff;
+    color: #000;
+    margin-bottom: 16px;
+  }
+}
+
+/* ==========================================================================
+   MIGRACIÓN UI/UX 3D: CHASIS VERTICAL FIJO + CARRUSEL 3D INTERACTIVO
+   Cumple Regla 8 (Box Model Centering inset:0 + margin:auto, transform puro 3D)
+   ========================================================================== */
+body[data-screen="session"] .app-header {
+  display: none !important;
+}
+
+body[data-screen="session"] .sync-status-global[data-state="synced"] {
+  display: none !important;
+}
+
+body[data-screen="session"] #app-main {
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 0% !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body:not([data-screen="session"]) #app-main .screen {
+  padding: 16px 14px 32px;
+}
+
+body[data-screen="session"] #sessionScreen {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  flex: 1 1 0% !important;
+  min-height: 0 !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+body[data-screen="session"] #sessionScreen[hidden] {
+  display: none !important;
+}
+
+/* Escenario y posicionamiento espacial ortogonal (Box Model) */
+#carousel-stage {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+#exerciseList.carousel-stage {
+  display: block;
+  position: absolute;
+  inset: 0;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+  touch-action: pan-y;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: min(356px, calc(100% - 16px));
+  height: calc(100% - 4px);
+  max-height: 760px;
+  padding: 14px 14px 14px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  overscroll-behavior-y: contain !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-y !important;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 255, 51, 0.3) transparent;
+  border: 1px solid var(--ti-border-light);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* WebKit/iOS: un contenedor con overflow dentro de un contexto preserve-3d no desplaza al tacto.
+   La tarjeta queda plana (flat); el 3D vive solo en el stage. Se retiran halos neón del borde. */
+#exerciseList.carousel-stage .exercise-card.card-3d,
+body[data-screen="session"] #exerciseList.carousel-stage .exercise-card.card-3d {
+  transform-style: flat !important;
+  -webkit-transform-style: flat !important;
+  perspective: none !important;
+  will-change: auto !important;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d[data-carousel-active="true"] {
+  border: 1px solid rgba(212, 255, 51, 0.5) !important;
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.8) !important;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d[data-progress="complete"] {
+  border-color: var(--accent) !important;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d .layer-z-10,
+#exerciseList.carousel-stage .exercise-card.card-3d .layer-z-20,
+#exerciseList.carousel-stage .exercise-card.card-3d .layer-z-30 {
+  transform: none !important;
+  transform-style: flat !important;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d .card-header-zone {
+  flex-shrink: 0;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d .card-body-zone {
+  flex: 0 0 auto;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 6px 0 4px;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d .sets-table {
+  flex: 0 0 auto;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 4px;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d .set-rows-scroll {
+  flex: 0 0 auto;
+  min-height: auto;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d .movement-note {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+#exerciseList.carousel-stage .exercise-card.card-3d .card-footer-zone {
+  flex-shrink: 0;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+.carousel-bottom-bar {
+  padding: 2px 12px 4px !important;
+  gap: 4px !important;
+}
+
+.carousel-bottom-bar .add-exercise-button {
+  width: auto !important;
+  min-height: 28px !important;
+  height: 28px !important;
+  margin: 2px 0 0 0 !important;
+  padding: 0 14px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  color: #cbd5e1 !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+}
+
+.carousel-bottom-bar .add-exercise-button:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(212, 255, 51, 0.35) !important;
+  color: #fff !important;
+}
+
+/* Compactación ergonómica interna de la tarjeta 3D */
+#exerciseList.carousel-stage .exercise-card-header {
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  gap: 8px;
+  padding-top: 0;
+}
+
+#exerciseList.carousel-stage .exercise-number {
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+#exerciseList.carousel-stage .exercise-name {
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: 1.15;
+}
+
+#exerciseList.carousel-stage .prescription {
+  margin-top: 3px;
+  gap: 3px;
+}
+
+#exerciseList.carousel-stage .pill {
+  padding: 2px 6px;
+  font-size: 9.5px;
+}
+
+#exerciseList.carousel-stage .tn-bio-strip {
+  margin-top: 3px;
+  padding: 4px 6px;
+  grid-template-columns: minmax(0, 1fr) 56px;
+  gap: 6px;
+}
+
+#exerciseList.carousel-stage .tn-hologram-bay {
+  width: 56px;
+  height: 52px;
+}
+
+#exerciseList.carousel-stage .tn-hologram-img {
+  width: 54px;
+  height: 48px;
+}
+
+#exerciseList.carousel-stage .coach-cue {
+  margin-top: 3px;
+  padding: 4px 6px;
+  font-size: 10.5px;
+  line-height: 1.2;
+}
+
+#exerciseList.carousel-stage .exercise-identity {
+  margin-top: 3px;
+}
+
+#exerciseList.carousel-stage .exercise-identity summary {
+  padding: 4px 8px;
+  font-size: 10px;
+}
+
+#exerciseList.carousel-stage .sets-table {
+  margin-top: 2px;
+  padding: 4px;
+}
+
+#exerciseList.carousel-stage .set-rows-scroll {
+  max-height: none;
+  overflow-y: visible;
+}
+
+#exerciseList.carousel-stage .set-row {
+  min-height: 36px;
+  padding: 2px 4px;
+  gap: 4px;
+}
+
+#exerciseList.carousel-stage .set-row input[type="text"] {
+  min-height: 32px;
+  font-size: 14.5px;
+}
+
+#exerciseList.carousel-stage .movement-note textarea {
+  min-height: 36px;
+  max-height: 56px;
+  padding: 5px 7px;
+  font-size: 11px;
+}
+
+#exerciseList.carousel-stage .last-reference {
+  padding: 4px 7px;
+  font-size: 10px;
+}
+
+/* Ocultar el rest-dock en el footer cuando está idle y no hay descanso corriendo */
+body[data-screen="session"]:not([data-timer-active="true"]) #app-footer-dock .rest-dock:not([data-open="true"]) {
+  display: none !important;
+}
+
+#app-footer-dock .rest-dock {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  width: 100%;
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+#app-footer-dock .rest-dock-main {
+  min-height: 44px;
+  padding: 0 10px;
+}
+
+#app-footer-dock #restTimerDisplay {
+  font-size: 20px;
+}
+
+#app-footer-dock .tn-knurled-roller {
+  height: 44px;
+}
+
+#app-footer-dock {
+  position: relative;
+  z-index: 80 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  padding-left: max(8px, env(safe-area-inset-left)) !important;
+  padding-right: max(8px, env(safe-area-inset-right)) !important;
+  padding-bottom: max(10px, env(safe-area-inset-bottom)) !important;
+  overflow: visible !important;
+}
+
+#app-footer-dock .rest-dock-quick,
+#app-footer-dock .rest-dock-options {
+  height: 34px;
+  min-height: 34px;
+}
+
+#bottom-nav-dock {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  scrollbar-width: none !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-x manipulation !important;
+  gap: 2px !important;
+  padding: 4px 4px !important;
+}
+
+#bottom-nav-dock::-webkit-scrollbar {
+  display: none !important;
+}
+
+#bottom-nav-dock > .dock-nav-btn,
+#bottom-nav-dock > .dock-finish-wrapper {
+  flex: 1 1 0px !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 4px 2px !important;
+  text-align: center !important;
+}
+
+#bottom-nav-dock .dock-nav-btn {
+  color: rgba(212, 255, 51, 0.75);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#bottom-nav-dock .dock-nav-btn span {
+  font-size: 10px !important;
+  line-height: 1.1 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+#bottom-nav-dock .dock-nav-btn i {
+  color: var(--accent);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#bottom-nav-dock .dock-nav-btn:hover i {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 0 6px var(--accent-glow));
+}
+
+#bottom-nav-dock .dock-nav-btn[data-active="true"] {
+  background: rgba(212, 255, 51, 0.16) !important;
+  color: var(--accent) !important;
+  border: 1.5px solid var(--accent) !important;
+  box-shadow: 0 0 14px var(--accent-glow), inset 0 0 8px rgba(212, 255, 51, 0.25) !important;
+}
+
+/* Botón Finalizar destacado (Quinta posición) */
+#bottom-nav-dock #dockFinishBtn {
+  background: var(--accent) !important;
+  color: var(--accent-dark) !important;
+  font-weight: 800 !important;
+  border: 1.5px solid var(--accent) !important;
+  box-shadow: 0 0 18px var(--accent-glow), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+#bottom-nav-dock #dockFinishBtn i {
+  color: var(--accent-dark) !important;
+}
+
+#bottom-nav-dock #dockFinishBtn:hover,
+#bottom-nav-dock #dockFinishBtn:focus-visible {
+  filter: brightness(1.12);
+  box-shadow: 0 0 24px rgba(212, 255, 51, 0.65) !important;
+}
+
+#bottom-nav-dock #dockFinishBtn:active {
+  transform: scale(0.96);
+}
+
+/* Popover superior de opciones de cierre */
+#finishPopover {
+  position: absolute;
+  bottom: calc(100% + 14px);
+  right: 0;
+  width: min(270px, calc(100vw - 32px));
+  background: rgba(15, 23, 42, 0.98);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.5px solid rgba(212, 255, 51, 0.4);
+  border-radius: 20px;
+  padding: 8px;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.9), 0 0 20px rgba(212, 255, 51, 0.25);
+  z-index: 100 !important;
+  transform-origin: bottom right;
+  touch-action: manipulation;
+}
+
+#finishPopover.hidden {
+  display: none !important;
+}
+
+#finishPopover:not(.hidden) {
+  display: flex !important;
+  animation: popoverSlideUp 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes popoverSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.finish-popover-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #e2e8f0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+}
+
+.finish-popover-item:hover,
+.finish-popover-item:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.finish-popover-item:active {
+  transform: scale(0.98);
+}
+
+.finish-popover-item[data-finish-option="discard"] {
+  color: #f87171;
+}
+
+.finish-popover-item[data-finish-option="discard"]:hover {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+}
+
+#exerciseList.carousel-stage .card-glare { display: none !important; }
+
+/* ==========================================================================
+   EDICIÓN AIRE REDONDEADO (MANO 3 EDITORIAL) — REINGENIERÍA ESPACIAL Y VISUAL
+   ========================================================================== */
+:root {
+  --aire-stone: #DAD7CD;
+  --aire-paper: #E9E8E1;
+  --aire-input: #F5F4EF;
+  --aire-ink: #16181C;
+  --aire-ink-soft: #585954;
+  --aire-ink-faint: #B2B0A8;
+  --aire-lime: #CCFF00;
+  --aire-orange: #EB4818;
+  --aire-cyan-pill: #DDE7E5;
+}
+
+/* 1. FIX CRÍTICO: Garantizar que cualquier pantalla o nodo [hidden] jamás se muestre
+      (evita que Tailwind .flex pise el atributo hidden de #sessionScreen bajo la Nota) */
+[hidden],
+.screen[hidden],
+#sessionScreen[hidden],
+#importScreen[hidden],
+#workoutNoteReviewScreen[hidden],
+#historyScreen[hidden],
+#historicalScreen[hidden],
+#restTimerPanel[hidden],
+.aire-native-timer-controls[hidden] {
+  display: none !important;
+}
+
+body[data-edition="titanium-night"] {
+  background: var(--aire-stone) !important;
+  color: var(--aire-ink) !important;
+  color-scheme: light only;
+}
+
+body[data-edition="titanium-night"] #ambient-glow,
+body[data-edition="titanium-night"] .titanium-plate-screws,
+body[data-edition="titanium-night"] .card-glare,
+body[data-edition="titanium-night"] .exercise-identity,
+body[data-edition="titanium-night"] .rest-ambient {
+  display: none !important;
+}
+
+/* 2. CARTEL DE SINCRONIZACIÓN: Oculto cuando ya está sincronizado; claro si hay cola */
+body[data-edition="titanium-night"] #syncStatusCard[data-state="synced"] {
+  display: none !important;
+}
+
+body[data-edition="titanium-night"] #syncStatusCard {
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  border-radius: 18px !important;
+  margin: 8px 14px 0 !important;
+  padding: 8px 12px !important;
+  box-shadow: 0 8px 20px rgba(22, 24, 28, 0.08) !important;
+}
+
+body[data-edition="titanium-night"] #syncStatusCard strong {
+  color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] #syncStatusCard span {
+  color: var(--aire-ink-soft) !important;
+}
+
+/* 3. CABECERA GLOBAL (PANTALLA DE NOTA / HISTORIAL) EN ESTILO AIRE REDONDEADO */
+body[data-edition="titanium-night"] .app-header {
+  background: rgba(218, 215, 205, 0.92) !important;
+  border-bottom: 1px solid rgba(22, 24, 28, 0.12) !important;
+  backdrop-filter: blur(10px) !important;
+  padding: 10px 14px 8px !important;
+}
+
+body[data-edition="titanium-night"] .brand {
+  color: var(--aire-ink) !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+}
+
+body[data-edition="titanium-night"] .brand-mark {
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 10px !important;
+  box-shadow: none !important;
+  font-weight: 900 !important;
+}
+
+body[data-edition="titanium-night"] .app-header .ghost-button,
+body[data-edition="titanium-night"] .app-header .header-link {
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  border-radius: 999px !important;
+  padding: 6px 12px !important;
+  font: 700 11px/1 var(--mono) !important;
+  box-shadow: none !important;
+  min-height: 32px !important;
+}
+
+/* 4. NUEVA CABECERA SUPERIOR DE SESIÓN (.aire-hud): JERARQUÍA EDITORIAL CLARA */
+body[data-edition="titanium-night"] .session-top-hud.aire-hud {
+  background: transparent !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  padding: 8px 14px 4px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-btn {
+  width: 36px !important;
+  height: 36px !important;
+  min-width: 36px !important;
+  min-height: 36px !important;
+  border-radius: 12px !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  box-shadow: 0 3px 8px rgba(22, 24, 28, 0.06) !important;
+  transition: transform 0.15s ease, background 0.15s ease !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-btn:active {
+  transform: scale(0.95) !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-title {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 1px !important;
+}
+
+body[data-edition="titanium-night"] #sessionTitle {
+  margin: 0 !important;
+  color: var(--aire-ink) !important;
+  font-family: var(--mono) !important;
+  font-weight: 900 !important;
+  font-size: clamp(18px, 4.8vw, 22px) !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.03em !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  max-width: 100% !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font: 600 10.5px/1.1 var(--mono) !important;
+  color: var(--aire-ink-soft) !important;
+}
+
+body[data-edition="titanium-night"] #sessionDate {
+  color: var(--aire-ink-soft) !important;
+  text-transform: capitalize !important;
+}
+
+body[data-edition="titanium-night"] .save-status {
+  color: var(--aire-ink-soft) !important;
+  background: transparent !important;
+  padding: 0 !important;
+  font: 700 10px/1 var(--mono) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+body[data-edition="titanium-night"] .save-status::before {
+  content: "" !important;
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 999px !important;
+  background: var(--aire-lime) !important;
+  border: 1.2px solid var(--aire-ink) !important;
+  box-shadow: none !important;
+  display: inline-block !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-progress {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  background: rgba(233, 232, 225, 0.72) !important;
+  border: 1.2px solid rgba(22, 24, 28, 0.16) !important;
+  border-radius: 999px !important;
+  padding: 3px 5px 3px 10px !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-progress .progress-track {
+  flex: 1 1 auto !important;
+  height: 5px !important;
+  background: rgba(22, 24, 28, 0.14) !important;
+  border-radius: 999px !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-progress .progress-track div {
+  height: 100% !important;
+  background: var(--aire-orange) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-count {
+  display: inline-flex !important;
+  align-items: baseline !important;
+  gap: 2px !important;
+  font: 700 10.5px/1 var(--mono) !important;
+  color: var(--aire-ink) !important;
+  white-space: nowrap !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-count strong {
+  font-weight: 900 !important;
+  color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-count em {
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 9.5px !important;
+  color: var(--aire-ink-soft) !important;
+  margin-left: 1px !important;
+}
+
+body[data-edition="titanium-night"] .aire-hud-dot {
+  margin: 0 3px !important;
+  color: var(--aire-ink-faint) !important;
+}
+
+body[data-edition="titanium-night"] .session-tools {
+  margin: 0 !important;
+  display: inline-flex !important;
+}
+
+body[data-edition="titanium-night"] .wake-tool {
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  border: 1.3px solid var(--aire-ink) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+  padding: 3px 8px !important;
+  min-height: 22px !important;
+  font: 700 9.5px/1 var(--mono) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  cursor: pointer !important;
+}
+
+body[data-edition="titanium-night"] .wake-tool input {
+  width: 11px !important;
+  height: 11px !important;
+  accent-color: var(--aire-ink) !important;
+  margin: 0 !important;
+}
+
+/* 5. TARJETA DE EJERCICIO REDONDEADA CON MEJOR DISTRIBUCIÓN E ILUSTRACIÓN SUTIL */
+body[data-edition="titanium-night"] #exerciseList.carousel-stage .exercise-card.card-3d,
+body[data-edition="titanium-night"] .exercise-card {
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  border: 1.4px solid rgba(22, 24, 28, 0.12) !important;
+  border-radius: 28px !important;
+  box-shadow: 0 18px 36px rgba(22, 24, 28, 0.11), 0 3px 10px rgba(22, 24, 28, 0.05) !important;
+  padding: 15px 15px 14px !important;
+}
+
+body[data-edition="titanium-night"] .exercise-card::after {
+  top: 0 !important;
+  right: 22px !important;
+  border-radius: 0 0 10px 10px !important;
+  border: 1.4px solid var(--aire-ink) !important;
+  border-top: 0 !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  font: 800 9px/1 var(--mono) !important;
+  padding: 4px 8px !important;
+  z-index: 4 !important;
+}
+
+body[data-edition="titanium-night"] .exercise-card[data-progress="complete"]::after {
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  border-color: var(--aire-ink) !important;
+}
+
+/* Cabecera de Ejercicio: Badge [01] + Nombre en línea superior, liberando altura */
+body[data-edition="titanium-night"] .exercise-card-header {
+  position: relative !important;
+  z-index: 3 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+  max-width: 67% !important;
+  padding-top: 0 !important;
+}
+
+body[data-edition="titanium-night"] .exercise-card-header > div:first-child {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 5px !important;
+}
+
+body[data-edition="titanium-night"] .exercise-number {
+  width: 34px !important;
+  height: 34px !important;
+  min-width: 34px !important;
+  border-radius: 11px !important;
+  border: 1.8px solid var(--aire-ink) !important;
+  background: rgba(245, 244, 239, 0.7) !important;
+  color: var(--aire-ink) !important;
+  box-shadow: none !important;
+  font: 800 14px/1 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .exercise-name {
+  color: var(--aire-ink) !important;
+  font-family: var(--mono) !important;
+  font-size: clamp(15px, 4.1vw, 18.5px) !important;
+  font-weight: 900 !important;
+  line-height: 1.13 !important;
+  letter-spacing: -0.025em !important;
+  margin: 0 !important;
+}
+
+body[data-edition="titanium-night"] .prescription {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+  margin-top: 3px !important;
+}
+
+body[data-edition="titanium-night"] .pill,
+body[data-edition="titanium-night"] .pill:first-child {
+  border-radius: 999px !important;
+  border: 1.3px solid var(--aire-ink) !important;
+  background: rgba(245, 244, 239, 0.85) !important;
+  color: var(--aire-ink) !important;
+  padding: 3px 9px !important;
+  font: 700 10.5px/1.1 var(--mono) !important;
+  box-shadow: none !important;
+}
+
+/* Tira de acciones ([ver técnica] [↻] [🗑]) y Nota técnica compacta */
+body[data-edition="titanium-night"] .tn-bio-strip {
+  display: block !important;
+  margin-top: 6px !important;
+  position: static !important;
+}
+
+body[data-edition="titanium-night"] .tn-bio-left {
+  position: relative !important;
+  z-index: 3 !important;
+  max-width: 67% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+body[data-edition="titanium-night"] .tn-action-pills-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  flex-wrap: wrap !important;
+}
+
+body[data-edition="titanium-night"] .tech-open {
+  margin-top: 0 !important;
+  min-height: 26px !important;
+  height: 26px !important;
+  padding: 0 11px !important;
+  border-radius: 999px !important;
+  border: 1.4px solid var(--aire-ink) !important;
+  background: var(--aire-cyan-pill) !important;
+  color: var(--aire-ink) !important;
+  box-shadow: none !important;
+  font: 700 10.5px/1 var(--mono) !important;
+  text-transform: lowercase !important;
+}
+
+body[data-edition="titanium-night"] .substitute-exercise,
+body[data-edition="titanium-night"] .delete-exercise {
+  min-width: 26px !important;
+  width: 26px !important;
+  height: 26px !important;
+  min-height: 26px !important;
+  padding: 0 !important;
+  border-radius: 999px !important;
+  border: 1.4px solid var(--aire-ink) !important;
+  background: rgba(245, 244, 239, 0.75) !important;
+  color: var(--aire-ink) !important;
+  box-shadow: none !important;
+  display: inline-grid !important;
+  place-items: center !important;
+  font-size: 11.5px !important;
+}
+
+body[data-edition="titanium-night"] .coach-cue {
+  margin: 0 !important;
+  padding: 2px 6px 2px 9px !important;
+  border: none !important;
+  border-left: 3px solid var(--aire-orange) !important;
+  border-radius: 2px !important;
+  background: rgba(245, 244, 239, 0.45) !important;
+  color: var(--aire-ink-soft) !important;
+  font: 600 10.5px/1.32 var(--mono) !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+}
+
+body[data-edition="titanium-night"] .coach-cue.is-expanded {
+  display: block !important;
+  -webkit-line-clamp: unset !important;
+  color: var(--aire-ink) !important;
+  background: var(--aire-input) !important;
+}
+
+/* ILUSTRACIÓN MANO 3: POSICIÓN CALIBRADA EN EL FLANCO DERECHO SIN CHOCAR CON LA PESTAÑA SUPERIOR */
+body[data-edition="titanium-night"] .tn-hologram-bay {
+  position: absolute !important;
+  top: 26px !important;
+  right: 4px !important;
+  width: 146px !important;
+  height: 174px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  z-index: 1 !important;
+  pointer-events: auto !important;
+  transition: opacity 0.2s ease, transform 0.2s ease !important;
+}
+
+body[data-edition="titanium-night"] .tn-hologram-bay:hover,
+body[data-edition="titanium-night"] .tn-hologram-bay:active {
+  transform: scale(1.03) !important;
+}
+
+body[data-edition="titanium-night"] .tn-hologram-bay::before,
+body[data-edition="titanium-night"] .tn-hologram-bay::after {
+  display: none !important;
+}
+
+body[data-edition="titanium-night"] .tn-hologram-img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 146px !important;
+  max-height: 174px !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  mix-blend-mode: multiply !important;
+  opacity: 0.84 !important;
+  filter: contrast(1.04) !important;
+  -webkit-mask-image: radial-gradient(ellipse 92% 90% at 55% 48%, #000 62%, rgba(0, 0, 0, 0.55) 84%, transparent 100%) !important;
+  mask-image: radial-gradient(ellipse 92% 90% at 55% 48%, #000 62%, rgba(0, 0, 0, 0.55) 84%, transparent 100%) !important;
+}
+
+body[data-edition="titanium-night"] .tn-hologram-tag {
+  position: absolute !important;
+  bottom: 2px !important;
+  right: 8px !important;
+  left: auto !important;
+  display: inline-flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  text-align: right !important;
+  background: rgba(233, 232, 225, 0.88) !important;
+  border: 1px solid rgba(22, 24, 28, 0.22) !important;
+  backdrop-filter: blur(4px) !important;
+  padding: 2px 6px !important;
+  border-radius: 6px !important;
+  color: var(--aire-ink) !important;
+  font: 800 8px/1.15 var(--mono) !important;
+  pointer-events: none !important;
+}
+
+body[data-edition="titanium-night"] .tn-hologram-tag b {
+  color: var(--aire-ink-soft) !important;
+  font-weight: 700 !important;
+}
+
+/* 6. TABLA DE SERIES COMPACTA Y ERGONÓMICA */
+body[data-edition="titanium-night"] .sets-table {
+  position: relative !important;
+  z-index: 3 !important;
+  margin-top: 8px !important;
+  padding-top: 6px !important;
+  border-top: 1px dashed rgba(22, 24, 28, 0.16) !important;
+}
+
+body[data-edition="titanium-night"] .set-labels {
+  color: var(--aire-ink-soft) !important;
+  padding-bottom: 2px !important;
+  font: 700 9.5px/1 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .set-row:not(.set-labels) {
+  min-height: 42px !important;
+  padding: 1px 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .set-row + .set-row {
+  margin-top: 4px !important;
+}
+
+body[data-edition="titanium-night"] .set-index {
+  color: var(--aire-ink) !important;
+  font-weight: 800 !important;
+  font-size: 11px !important;
+}
+
+body[data-edition="titanium-night"] .set-row input[data-field="load"],
+body[data-edition="titanium-night"] .set-row input[data-field="reps"],
+body[data-edition="titanium-night"] .set-row input[data-field="difficulty"],
+body[data-edition="titanium-night"] .rir-trigger {
+  height: 38px !important;
+  min-height: 38px !important;
+  border-radius: 12px !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  box-shadow: none !important;
+  font: 800 15px/1 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .set-row:not([data-completed="true"]) input[data-field="load"],
+body[data-edition="titanium-night"] .set-row:not([data-completed="true"]) input[data-field="reps"],
+body[data-edition="titanium-night"] .set-row:not([data-completed="true"]) .rir-trigger {
+  border-color: var(--aire-ink-faint) !important;
+}
+
+body[data-edition="titanium-night"] .rir-Sheet,
+body[data-edition="titanium-night"] .rir-options {
+  background: var(--aire-input) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 14px 32px rgba(22, 24, 28, 0.18) !important;
+}
+
+body[data-edition="titanium-night"] .rir-option {
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  border: 1.2px solid rgba(22, 24, 28, 0.2) !important;
+  border-radius: 10px !important;
+}
+
+body[data-edition="titanium-night"] .rir-option.is-selected {
+  background: var(--aire-lime) !important;
+  border-color: var(--aire-ink) !important;
+  font-weight: 900 !important;
+}
+
+body[data-edition="titanium-night"] .set-complete-visual {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 11px !important;
+  border: 1.6px solid var(--aire-ink-faint) !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink-faint) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .set-complete input:checked + .set-complete-visual {
+  border-color: var(--aire-ink) !important;
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .remove-set-button {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 10px !important;
+  border: 1.3px solid var(--aire-ink-faint) !important;
+  background: transparent !important;
+  color: var(--aire-ink-soft) !important;
+  box-shadow: none !important;
+}
+
+/* Pie de tarjeta (+ Serie, Referencia anterior y Nota del ejercicio) */
+body[data-edition="titanium-night"] .movement-note {
+  margin-top: 6px !important;
+}
+
+body[data-edition="titanium-night"] .movement-note span {
+  color: var(--aire-ink-soft) !important;
+  font: 700 9px/1 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .movement-note textarea {
+  border-radius: 12px !important;
+  border: 1.4px solid var(--aire-ink-faint) !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  box-shadow: none !important;
+  min-height: 38px !important;
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+}
+
+body[data-edition="titanium-night"] .card-footer-zone {
+  margin-top: 6px !important;
+  padding-top: 6px !important;
+  border-top: 1px solid rgba(22, 24, 28, 0.1) !important;
+}
+
+body[data-edition="titanium-night"] .add-set-button {
+  border-radius: 999px !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  box-shadow: none !important;
+  min-height: 32px !important;
+  padding: 4px 12px !important;
+  font: 700 11px/1 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .last-reference {
+  background: rgba(245, 244, 239, 0.65) !important;
+  border: 1px solid var(--aire-ink-faint) !important;
+  border-left: 3.5px solid var(--aire-ink) !important;
+  border-radius: 11px !important;
+  color: var(--aire-ink) !important;
+  padding: 5px 9px !important;
+  font-size: 11px !important;
+}
+
+/* Reverso 3D de la tarjeta (Vista Técnica) en estilo Aire Redondeado */
+body[data-edition="titanium-night"] .exercise-back {
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  border-radius: 28px !important;
+}
+
+body[data-edition="titanium-night"] .exercise-back h3,
+body[data-edition="titanium-night"] .exercise-back h4,
+body[data-edition="titanium-night"] .exercise-back strong {
+  color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .exercise-back p,
+body[data-edition="titanium-night"] .exercise-back li {
+  color: var(--aire-ink-soft) !important;
+}
+
+body[data-edition="titanium-night"] .tech-close {
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  border-radius: 999px !important;
+}
+
+/* 7. PAGINADOR, DOCK INFERIOR Y POPOVER DE FINALIZAR (Z-INDEX Y CAPA CORREGIDOS) */
+body[data-edition="titanium-night"] #carouselPrevBtn,
+body[data-edition="titanium-night"] #carouselNextBtn,
+body[data-edition="titanium-night"] #addExerciseButton {
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] #carouselCounter {
+  color: var(--aire-ink-soft) !important;
+}
+
+body[data-edition="titanium-night"] #app-footer-dock {
+  position: relative !important;
+  z-index: 160 !important;
+  overflow: visible !important;
+}
+
+body[data-edition="titanium-night"] #bottom-nav-dock {
+  background: var(--aire-paper) !important;
+  border: 1.8px solid var(--aire-ink) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 10px 24px rgba(22, 24, 28, 0.1) !important;
+  padding: 5px 6px !important;
+  overflow: visible !important;
+}
+
+body[data-edition="titanium-night"] #bottom-nav-dock .dock-nav-btn,
+body[data-edition="titanium-night"] #bottom-nav-dock .dock-nav-btn i {
+  color: var(--aire-ink-soft) !important;
+}
+
+body[data-edition="titanium-night"] #bottom-nav-dock .dock-nav-btn[data-active="true"] {
+  background: #DCE4C2 !important;
+  color: var(--aire-ink) !important;
+  border: none !important;
+  border-radius: 16px !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] #bottom-nav-dock .dock-nav-btn[data-active="true"] i {
+  color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] #bottom-nav-dock #dockFinishBtn {
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+}
+
+/* Popover Finalizar: Flotando por encima de las tarjetas 3D con estética papel técnico */
+body[data-edition="titanium-night"] #finishPopover {
+  position: absolute !important;
+  bottom: calc(100% + 10px) !important;
+  right: 12px !important;
+  z-index: 320 !important;
+  width: min(280px, calc(100vw - 24px)) !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  border: 2px solid var(--aire-ink) !important;
+  border-radius: 22px !important;
+  padding: 8px !important;
+  box-shadow: 0 24px 52px rgba(22, 24, 28, 0.28), 0 4px 12px rgba(22, 24, 28, 0.12) !important;
+  backdrop-filter: none !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover:not(.hidden) {
+  display: flex !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover > div:first-child {
+  border-bottom: 1.2px solid rgba(22, 24, 28, 0.14) !important;
+  color: var(--aire-ink-soft) !important;
+  padding: 4px 8px 6px !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover > div:first-child span:last-child {
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  border: 1.2px solid var(--aire-ink) !important;
+  border-radius: 999px !important;
+  padding: 1px 7px !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover .finish-popover-item {
+  background: transparent !important;
+  color: var(--aire-ink) !important;
+  border-radius: 14px !important;
+  padding: 8px 10px !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover .finish-popover-item:hover,
+body[data-edition="titanium-night"] #finishPopover .finish-popover-item:active {
+  background: var(--aire-paper) !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover .finish-popover-item span.font-semibold {
+  color: var(--aire-ink) !important;
+  font-weight: 800 !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover .finish-popover-item span.text-slate-400 {
+  color: var(--aire-ink-soft) !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover .finish-popover-item[data-finish-option="discard"] {
+  color: var(--aire-orange) !important;
+}
+
+body[data-edition="titanium-night"] #finishPopover .finish-popover-item[data-finish-option="discard"] span {
+  color: var(--aire-orange) !important;
+}
+
+/* 8. TEMPORIZADOR DE DESCANSO TÁCTIL INTEGRADO (AIRE REDONDEADO) */
+body[data-edition="titanium-night"] #restDock {
+  background: var(--aire-paper) !important;
+  border: 1.8px solid var(--aire-ink) !important;
+  border-radius: 22px !important;
+  padding: 6px 8px 7px !important;
+  box-shadow: 0 10px 26px rgba(22, 24, 28, 0.12) !important;
+  position: relative !important;
+  z-index: 150 !important;
+}
+
+body[data-edition="titanium-night"] .rest-dock-shell {
+  margin-bottom: 5px !important;
+}
+
+body[data-edition="titanium-night"] #restTimerProgressTrack {
+  height: 5px !important;
+  background: rgba(22, 24, 28, 0.14) !important;
+  border-radius: 999px !important;
+  border: none !important;
+  overflow: hidden !important;
+}
+
+body[data-edition="titanium-night"] #restTimerProgress {
+  background: var(--aire-orange) !important;
+  border-radius: 999px !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] #restDock[data-state="running"] #restTimerProgress {
+  background: var(--aire-lime) !important;
+}
+
+body[data-edition="titanium-night"] .rest-dock-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+body[data-edition="titanium-night"] #restTimerButton {
+  flex: 1 1 auto !important;
+  min-height: 40px !important;
+  padding: 5px 12px !important;
+  border-radius: 15px !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  box-shadow: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+body[data-edition="titanium-night"] #restDock[data-state="running"] #restTimerButton {
+  background: var(--aire-ink) !important;
+  color: var(--aire-input) !important;
+}
+
+body[data-edition="titanium-night"] #restTimerStatus {
+  color: inherit !important;
+  font: 700 9.5px/1.1 var(--mono) !important;
+  text-transform: uppercase !important;
+}
+
+body[data-edition="titanium-night"] #restTimerAction {
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  border: 1.2px solid var(--aire-ink) !important;
+  border-radius: 999px !important;
+  padding: 2px 7px !important;
+  font: 800 9px/1 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] #restTimerDisplay {
+  color: inherit !important;
+  font: 900 20px/1 var(--mono) !important;
+  letter-spacing: -0.03em !important;
+}
+
+body[data-edition="titanium-night"] #restDock[data-state="running"] #restTimerDisplay {
+  color: var(--aire-lime) !important;
+}
+
+body[data-edition="titanium-night"] #tnKnurledRoller {
+  display: none !important;
+}
+
+body[data-edition="titanium-night"] .tn-neon-rings-col {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 4px !important;
+}
+
+body[data-edition="titanium-night"] .rest-dock-quick {
+  min-width: 38px !important;
+  height: 38px !important;
+  min-height: 38px !important;
+  padding: 0 7px !important;
+  border-radius: 12px !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  font: 800 11px/1 var(--mono) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .rest-dock-quick:disabled {
+  opacity: 0.42 !important;
+  border-color: var(--aire-ink-faint) !important;
+}
+
+body[data-edition="titanium-night"] #restTimerOptions {
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  border-radius: 12px !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  font: 900 12px/1 var(--mono) !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+body[data-edition="titanium-night"] #restTimerOptions[aria-expanded="true"] {
+  background: var(--aire-lime) !important;
+}
+
+/* Consola desplegable de Descanso (.aire-timer-sheet) */
+body[data-edition="titanium-night"] #restTimerPanel.aire-timer-sheet {
+  margin-top: 8px !important;
+  padding: 10px !important;
+  background: var(--aire-input) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 18px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7) !important;
+}
+
+body[data-edition="titanium-night"] #restTimerPanel.aire-timer-sheet[hidden] {
+  display: none !important;
+}
+
+body[data-edition="titanium-night"] .aire-timer-sheet-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+}
+
+body[data-edition="titanium-night"] .aire-timer-sheet-title {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1px !important;
+}
+
+body[data-edition="titanium-night"] .aire-timer-kicker {
+  font: 800 8.5px/1 var(--mono) !important;
+  letter-spacing: 0.08em !important;
+  color: var(--aire-ink-soft) !important;
+  text-transform: uppercase !important;
+}
+
+body[data-edition="titanium-night"] .aire-timer-sheet-title strong {
+  font: 800 12px/1.15 var(--mono) !important;
+  color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .aire-timer-reset-pill {
+  min-height: 28px !important;
+  padding: 4px 10px !important;
+  border-radius: 999px !important;
+  border: 1.4px solid var(--aire-ink) !important;
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  font: 700 10.5px/1 var(--mono) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .aire-timer-presets {
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: 5px !important;
+}
+
+body[data-edition="titanium-night"] .aire-preset-chip {
+  min-height: 44px !important;
+  padding: 5px 2px !important;
+  border-radius: 13px !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1px !important;
+  box-shadow: none !important;
+  transition: transform 0.12s ease, background 0.12s ease !important;
+}
+
+body[data-edition="titanium-night"] .aire-preset-chip span {
+  font: 900 12.5px/1 var(--mono) !important;
+  color: inherit !important;
+}
+
+body[data-edition="titanium-night"] .aire-preset-chip small {
+  font: 700 8.5px/1 var(--mono) !important;
+  color: var(--aire-ink-soft) !important;
+  text-transform: uppercase !important;
+}
+
+body[data-edition="titanium-night"] .aire-preset-chip.is-active {
+  background: var(--aire-lime) !important;
+  border-width: 1.8px !important;
+  transform: translateY(-1px) !important;
+}
+
+body[data-edition="titanium-night"] .aire-preset-chip.is-active small {
+  color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .aire-timer-sound-bar {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 6px !important;
+  padding-top: 4px !important;
+  border-top: 1px dashed rgba(22, 24, 28, 0.15) !important;
+}
+
+body[data-edition="titanium-night"] .aire-sound-chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 4px !important;
+  flex: 1 1 auto !important;
+}
+
+body[data-edition="titanium-night"] .aire-sound-chip {
+  min-height: 26px !important;
+  padding: 3px 8px !important;
+  border-radius: 999px !important;
+  border: 1.3px solid rgba(22, 24, 28, 0.3) !important;
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink-soft) !important;
+  font: 700 9.5px/1 var(--mono) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .aire-sound-chip.is-active {
+  background: var(--aire-ink) !important;
+  color: var(--aire-input) !important;
+  border-color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .aire-sound-test-btn {
+  min-height: 26px !important;
+  padding: 3px 9px !important;
+  border-radius: 999px !important;
+  border: 1.3px solid var(--aire-ink) !important;
+  background: var(--aire-cyan-pill) !important;
+  color: var(--aire-ink) !important;
+  font: 800 9.5px/1 var(--mono) !important;
+  white-space: nowrap !important;
+  box-shadow: none !important;
+}
+
+/* 9. PANTALLA DE NOTA (#importScreen), CALIBRATION TAPE, HISTORIAL Y DIÁLOGOS */
+
+/* Eliminar cualquier sombra difuminada (text-shadow) heredada en toda la edición clara */
+body[data-edition="titanium-night"],
+body[data-edition="titanium-night"] *,
+body[data-edition="titanium-night"] h1,
+body[data-edition="titanium-night"] h2,
+body[data-edition="titanium-night"] h3,
+body[data-edition="titanium-night"] .dial-title,
+body[data-edition="titanium-night"] .dial-sub,
+body[data-edition="titanium-night"] .eyebrow {
+  text-shadow: none !important;
+}
+
+/* Espaciado y tipografía editorial en pantallas de Nota, Historial y Revisión */
+body[data-edition="titanium-night"] #importScreen,
+body[data-edition="titanium-night"] #historyScreen,
+body[data-edition="titanium-night"] #historicalScreen,
+body[data-edition="titanium-night"] #workoutNoteReviewScreen {
+  padding: 16px 16px 36px !important;
+}
+
+body[data-edition="titanium-night"] .screen h1 {
+  color: var(--aire-ink) !important;
+  font-family: var(--mono) !important;
+  font-size: clamp(22px, 5.6vw, 28px) !important;
+  font-weight: 900 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.03em !important;
+  margin: 4px 0 0 !important;
+}
+
+body[data-edition="titanium-night"] .screen h2 {
+  color: var(--aire-ink) !important;
+  font-family: var(--mono) !important;
+  font-size: clamp(16px, 4.2vw, 20px) !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+}
+
+body[data-edition="titanium-night"] .lead {
+  color: var(--aire-ink-soft) !important;
+  font-size: 13px !important;
+  line-height: 1.45 !important;
+  margin: 8px 0 16px !important;
+}
+
+body[data-edition="titanium-night"] .eyebrow {
+  color: var(--aire-ink-soft) !important;
+  font: 800 9.5px/1.1 var(--mono) !important;
+  letter-spacing: 0.1em !important;
+}
+
+body[data-edition="titanium-night"] .eyebrow::before {
+  background: var(--aire-orange) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .privacy-note {
+  color: var(--aire-ink-soft) !important;
+  border-left: 3px solid var(--aire-ink) !important;
+  font: 600 11px/1.4 var(--mono) !important;
+  margin-top: 14px !important;
+}
+
+/* Placa de Inicio Rápido (Días A-E + Sesión en vivo) con fuentes proporcionadas y sin sombras sucias */
+body[data-edition="titanium-night"] .quick-start {
+  background: var(--aire-paper) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 26px !important;
+  padding: 14px !important;
+  box-shadow: 0 12px 28px rgba(22, 24, 28, 0.08) !important;
+}
+
+body[data-edition="titanium-night"] .quick-start-grid {
+  gap: 9px !important;
+}
+
+body[data-edition="titanium-night"] .quick-start-button,
+body[data-edition="titanium-night"] .free-session-button {
+  min-height: 78px !important;
+  padding: 10px 6px 12px !important;
+  background: var(--aire-input) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  border-radius: 18px !important;
+  color: var(--aire-ink) !important;
+  box-shadow: 0 2px 0 var(--aire-ink) !important;
+  gap: 4px !important;
+}
+
+body[data-edition="titanium-night"] .quick-start-button::before,
+body[data-edition="titanium-night"] .free-session-button::before {
+  display: none !important;
+}
+
+body[data-edition="titanium-night"] .quick-start-button::after,
+body[data-edition="titanium-night"] .free-session-button::after {
+  bottom: 6px !important;
+  width: 24px !important;
+  height: 3px !important;
+  background: rgba(22, 24, 28, 0.22) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .quick-start-button .dial-sub,
+body[data-edition="titanium-night"] .free-session-button .dial-sub {
+  color: var(--aire-ink-soft) !important;
+  font: 700 8px/1.1 var(--mono) !important;
+  letter-spacing: 0.04em !important;
+}
+
+body[data-edition="titanium-night"] .quick-start-button .dial-title {
+  color: var(--aire-ink) !important;
+  font: 900 15px/1.1 var(--mono) !important;
+  letter-spacing: -0.02em !important;
+}
+
+body[data-edition="titanium-night"] .free-session-button .dial-title {
+  color: var(--aire-ink) !important;
+  font: 800 11.5px/1.15 var(--mono) !important;
+  letter-spacing: -0.02em !important;
+}
+
+body[data-edition="titanium-night"] .quick-start-button[data-recommended="true"] {
+  background: var(--aire-lime) !important;
+  border-color: var(--aire-ink) !important;
+  box-shadow: 0 3px 0 var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .quick-start-button[data-recommended="true"]::after {
+  background: var(--aire-ink) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .free-session-button {
+  background: var(--aire-cyan-pill) !important;
+}
+
+/* Divisor y CALIBRATION TAPE (.tape-deck-housing) rediseñados en Estilo Cuaderno Técnico */
+body[data-edition="titanium-night"] .entry-divider {
+  margin: 20px 0 12px !important;
+  color: var(--aire-ink-soft) !important;
+  font: 800 9.5px/1 var(--mono) !important;
+  letter-spacing: 0.1em !important;
+}
+
+body[data-edition="titanium-night"] .entry-divider::before,
+body[data-edition="titanium-night"] .entry-divider::after {
+  background: rgba(22, 24, 28, 0.18) !important;
+}
+
+body[data-edition="titanium-night"] .tape-deck-housing {
+  background: var(--aire-paper) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 26px !important;
+  padding: 14px !important;
+  box-shadow: 0 12px 28px rgba(22, 24, 28, 0.08) !important;
+}
+
+body[data-edition="titanium-night"] .tape-deck-window {
+  height: 38px !important;
+  margin: 0 0 12px !important;
+  padding: 0 12px !important;
+  border-radius: 14px !important;
+  border: 1.4px solid var(--aire-ink) !important;
+  background: var(--aire-input) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .tape-reel {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50% !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  background:
+    conic-gradient(
+      from 0deg,
+      var(--aire-paper) 0deg 70deg,
+      var(--aire-ink) 70deg 90deg,
+      var(--aire-paper) 90deg 190deg,
+      var(--aire-ink) 190deg 210deg,
+      var(--aire-paper) 210deg 310deg,
+      var(--aire-ink) 310deg 330deg,
+      var(--aire-paper) 330deg 360deg
+    ) !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .tape-reel::after {
+  inset: 5px !important;
+  background: var(--aire-lime) !important;
+  border: 1.3px solid var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .tape-window-scale {
+  color: var(--aire-ink) !important;
+  font: 800 9px/1 var(--mono) !important;
+  letter-spacing: 0.12em !important;
+  gap: 4px !important;
+}
+
+body[data-edition="titanium-night"] .tape-window-scale::after {
+  width: 86% !important;
+  height: 4px !important;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(22, 24, 28, 0.45) 0 1.5px,
+    transparent 1.5px 6px
+  ) !important;
+}
+
+body[data-edition="titanium-night"] .note-field > span {
+  color: var(--aire-ink-soft) !important;
+  font: 800 9.5px/1 var(--mono) !important;
+  letter-spacing: 0.08em !important;
+}
+
+body[data-edition="titanium-night"] .note-field textarea,
+body[data-edition="titanium-night"] #historicalText {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(22, 24, 28, 0.045) 0px,
+      rgba(22, 24, 28, 0.045) 1px,
+      transparent 1px,
+      transparent 26px
+    ),
+    var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+  font: 600 12.5px/26px var(--mono) !important;
+  padding: 12px 14px !important;
+}
+
+body[data-edition="titanium-night"] .note-field textarea::placeholder,
+body[data-edition="titanium-night"] #historicalText::placeholder {
+  color: #8A887F !important;
+}
+
+/* Botones de Acción (Nota, Revisión, Historial y Modales) con fuente equilibrada */
+body[data-edition="titanium-night"] .import-actions {
+  display: flex !important;
+  gap: 10px !important;
+  margin-top: 14px !important;
+}
+
+body[data-edition="titanium-night"] .primary-button,
+body[data-edition="titanium-night"] .secondary-button,
+body[data-edition="titanium-night"] .share-button,
+body[data-edition="titanium-night"] .ghost-button,
+body[data-edition="titanium-night"] .install-button {
+  min-height: 42px !important;
+  padding: 8px 14px !important;
+  border-radius: 15px !important;
+  font: 800 12px/1.15 var(--mono) !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+
+body[data-edition="titanium-night"] .import-actions .secondary-button,
+body[data-edition="titanium-night"] .review-actions .secondary-button,
+body[data-edition="titanium-night"] .history-actions .secondary-button,
+body[data-edition="titanium-night"] .feedback-actions .secondary-button,
+body[data-edition="titanium-night"] .feedback-actions .ghost-button,
+body[data-edition="titanium-night"] .sheet-actions .ghost-button {
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .import-actions .primary-button,
+body[data-edition="titanium-night"] .review-actions .primary-button,
+body[data-edition="titanium-night"] .history-actions .primary-button,
+body[data-edition="titanium-night"] .sheet-actions .primary-button {
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  box-shadow: 0 3px 0 var(--aire-ink) !important;
+  font-weight: 900 !important;
+}
+
+body[data-edition="titanium-night"] .import-actions #parseButton {
+  flex: 1 1 auto !important;
+}
+
+body[data-edition="titanium-night"] .share-button {
+  background: var(--aire-cyan-pill) !important;
+  color: var(--aire-ink) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+}
+
+/* PANTALLA DE HISTORIAL (#historyScreen) COMPLETAMENTE REDISEÑADA EN AIRE REDONDEADO */
+body[data-edition="titanium-night"] .history-heading {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 14px !important;
+  padding: 18px 16px !important;
+  margin-top: 6px !important;
+  background: var(--aire-paper) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 26px !important;
+  box-shadow: 0 12px 28px rgba(22, 24, 28, 0.08) !important;
+  color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .history-heading p {
+  color: var(--aire-ink-soft) !important;
+  font-size: 12.5px !important;
+  line-height: 1.45 !important;
+  margin: 6px 0 0 !important;
+}
+
+body[data-edition="titanium-night"] .history-actions {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+  width: 100% !important;
+}
+
+body[data-edition="titanium-night"] .history-actions #addHistoricalButton {
+  grid-column: 1 / -1 !important;
+}
+
+body[data-edition="titanium-night"] .history-list {
+  gap: 10px !important;
+  margin-top: 16px !important;
+}
+
+body[data-edition="titanium-night"] .history-item {
+  background: var(--aire-input) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  border-left: 5px solid var(--aire-ink) !important;
+  border-radius: 20px !important;
+  padding: 13px 14px !important;
+  color: var(--aire-ink) !important;
+  box-shadow: 0 6px 16px rgba(22, 24, 28, 0.06) !important;
+  gap: 10px !important;
+}
+
+body[data-edition="titanium-night"] .history-item:nth-child(3n + 1) {
+  border-left-color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .history-item:nth-child(3n + 2) {
+  border-left-color: var(--aire-orange) !important;
+}
+
+body[data-edition="titanium-night"] .history-item:nth-child(3n) {
+  border-left-color: #7A9A00 !important;
+}
+
+body[data-edition="titanium-night"] .history-item strong {
+  color: var(--aire-ink) !important;
+  font: 800 14.5px/1.2 var(--mono) !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 3px !important;
+}
+
+body[data-edition="titanium-night"] .history-item span {
+  color: var(--aire-ink-soft) !important;
+  font: 600 10.5px/1.35 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .history-item b {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 10px !important;
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  border: 1.4px solid var(--aire-ink) !important;
+  font: 800 13px/1 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .history-delete {
+  min-height: 32px !important;
+  padding: 0 10px !important;
+  border-radius: 10px !important;
+  border: 1.3px solid rgba(22, 24, 28, 0.28) !important;
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink-soft) !important;
+  font: 700 10.5px/1 var(--mono) !important;
+  text-transform: none !important;
+}
+
+body[data-edition="titanium-night"] .history-delete:hover,
+body[data-edition="titanium-night"] .history-delete:active {
+  background: var(--aire-orange) !important;
+  border-color: var(--aire-ink) !important;
+  color: var(--aire-input) !important;
+}
+
+body[data-edition="titanium-night"] .empty-history {
+  padding: 28px 16px !important;
+  border: 1.5px dashed rgba(22, 24, 28, 0.26) !important;
+  border-radius: 22px !important;
+  background: rgba(233, 232, 225, 0.55) !important;
+  color: var(--aire-ink-soft) !important;
+  font: 600 12px/1.45 var(--mono) !important;
+}
+
+/* Tarjeta de Mejoras Anotadas (.feedback-history) en Historial */
+body[data-edition="titanium-night"] .feedback-history {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  margin-top: 20px !important;
+  padding: 18px 16px !important;
+  background: var(--aire-paper) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 26px !important;
+  box-shadow: 0 12px 28px rgba(22, 24, 28, 0.08) !important;
+  color: var(--aire-ink) !important;
+}
+
+body[data-edition="titanium-night"] .feedback-history p {
+  color: var(--aire-ink-soft) !important;
+  font-size: 12.5px !important;
+  line-height: 1.45 !important;
+  margin: 4px 0 0 !important;
+}
+
+body[data-edition="titanium-night"] #feedbackCount {
+  display: inline-block !important;
+  padding: 2px 8px !important;
+  border-radius: 999px !important;
+  background: var(--aire-lime) !important;
+  border: 1.3px solid var(--aire-ink) !important;
+  color: var(--aire-ink) !important;
+  font: 800 11px/1 var(--mono) !important;
+  margin-left: 4px !important;
+}
+
+body[data-edition="titanium-night"] .feedback-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+}
+
+body[data-edition="titanium-night"] .feedback-item {
+  padding: 12px 14px !important;
+  border-radius: 16px !important;
+  background: var(--aire-input) !important;
+  border: 1.4px solid rgba(22, 24, 28, 0.2) !important;
+  color: var(--aire-ink) !important;
+  font-size: 12.5px !important;
+}
+
+body[data-edition="titanium-night"] .workout-note-review-card {
+  background: var(--aire-paper) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 10px 24px rgba(22, 24, 28, 0.08) !important;
+  color: var(--aire-ink) !important;
+}
+
+/* Modales (<dialog>) y Tarjeta de Instalación (#installCard) en papel técnico */
+body[data-edition="titanium-night"] .install-card {
+  background: var(--aire-paper) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  border-radius: 22px !important;
+  padding: 12px 14px !important;
+  margin: 0 0 14px !important;
+  box-shadow: 0 8px 20px rgba(22, 24, 28, 0.08) !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 10px !important;
+}
+
+body[data-edition="titanium-night"] .install-card[hidden] {
+  display: none !important;
+}
+
+body[data-edition="titanium-night"] .install-card strong {
+  color: var(--aire-ink) !important;
+  font: 800 13px/1.2 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .install-card span {
+  color: var(--aire-ink-soft) !important;
+  font: 600 11px/1.35 var(--mono) !important;
+}
+
+body[data-edition="titanium-night"] .install-button {
+  background: var(--aire-lime) !important;
+  color: var(--aire-ink) !important;
+  border: 1.6px solid var(--aire-ink) !important;
+  box-shadow: 0 2px 0 var(--aire-ink) !important;
+  font-weight: 900 !important;
+}
+
+body[data-edition="titanium-night"] dialog.feedback-sheet,
+body[data-edition="titanium-night"] dialog.exercise-picker {
+  background: var(--aire-paper) !important;
+  color: var(--aire-ink) !important;
+  border: 2px solid var(--aire-ink) !important;
+  border-radius: 26px !important;
+  box-shadow: 0 28px 60px rgba(22, 24, 28, 0.28) !important;
+}
+
+body[data-edition="titanium-night"] dialog .sheet-copy,
+body[data-edition="titanium-night"] dialog .picker-search span {
+  color: var(--aire-ink-soft) !important;
+}
+
+body[data-edition="titanium-night"] dialog input,
+body[data-edition="titanium-night"] dialog textarea {
+  background: var(--aire-input) !important;
+  color: var(--aire-ink) !important;
+  border: 1.5px solid var(--aire-ink) !important;
+  border-radius: 14px !important;
+}
+

@@ -1,0 +1,78 @@
+{
+  "version": "2.0",
+  "datos_previos_intactos": 11,
+  "archivos_respaldo_verificados": 196,
+  "zip_sha256": "7bc6a9ffbf4d171cb796fc21372f9a5e2bcb8d5bb64f0d238a8858f5a81ab551",
+  "restauracion_validacion": {
+    "sesiones": 27,
+    "series": 390,
+    "ultimo_dia": "B",
+    "siguiente_dia": "C",
+    "recuentos_historicos_distintos": [
+      {
+        "session_id": "msppelcx-yful6r",
+        "recuento_declarado": 11,
+        "filas_de_series": 12
+      },
+      {
+        "session_id": "msvek8wz-k1lvmc",
+        "recuento_declarado": 15,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "msxem6n0-ahud97",
+        "recuento_declarado": 5,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "msydy5i0-12m57v",
+        "recuento_declarado": 16,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "msyt67hh-k0dw0k",
+        "recuento_declarado": 0,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "mt2jhvki-uf6g4h",
+        "recuento_declarado": 15,
+        "filas_de_series": 16
+      },
+      {
+        "session_id": "mt2sisvi-f18tjx",
+        "recuento_declarado": 0,
+        "filas_de_series": 1
+      },
+      {
+        "session_id": "mt5hniss-pe1osb",
+        "recuento_declarado": 17,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "mtb82l2r-31iccy",
+        "recuento_declarado": 16,
+        "filas_de_series": 17
+      },
+      {
+        "session_id": "mthb5t2c-qmdksz",
+        "recuento_declarado": 14,
+        "filas_de_series": 19
+      },
+      {
+        "session_id": "mts8kfej-fehx6t",
+        "recuento_declarado": 15,
+        "filas_de_series": 18
+      },
+      {
+        "session_id": "mu18ew6n-pil4bv",
+        "recuento_declarado": 13,
+        "filas_de_series": 19
+      }
+    ],
+    "fuentes_originales_verificadas": 20
+  },
+  "vistas_humanas": 6,
+  "pruebas": 16,
+  "celdas_libro_contrastadas": 2781
+}

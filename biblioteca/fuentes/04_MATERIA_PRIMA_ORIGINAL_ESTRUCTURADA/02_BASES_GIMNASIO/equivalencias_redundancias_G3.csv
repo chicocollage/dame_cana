@@ -1,0 +1,9 @@
+grupo,funcion,opciones,eleccion_por_sesion,redundancia_probable,coexistencia_justificada,criterio_de_sustitucion
+EG1,"Extensión acortada","GM001;GM002;GM003;GM004","1","Dos hip thrust productivos en la misma sesión","Solo en días distintos si distribuye fatiga o logística","Encaje pélvico recorrido montaje y progresión"
+EG2,"Alta flexión bilateral","GM005;GM006;GM007;GM008;GM009;GM010;GM012-SQ;GM024-SQ","1","Prensa más hack más pendular en una sesión","Dos variantes semanales si existe objetivo y volumen recuperable","Rango de cadera crecimiento colateral fatiga y tolerancia"
+EG3,"Alta flexión unilateral","GM011;GM005-unilateral;GM006-unilateral;GM021","0-1","Bulgarian más prensa unilateral más step-up","Puede acompañar bilateral con dosis reducida o ir en otro día","Estabilidad tiempo comparación de lados y rodilla"
+EG4,"Bisagra","GM012-RDL;GM013;GM014;GM015;GM017;GM024-RDL","1","RDL más hiperextensión más pull-through pesados","Una segunda variante ligera solo si cubre un limitante distinto","Agarre espalda femoral apoyo y progresión"
+EG5,"Extensión específica","GM016;GM018","0-1","Patada de polea más máquina de patada","Alternar entre bloques o usar una por disponibilidad","Alineación del eje apoyo y carga incremental"
+EG6,"Abducción","GM019;GM020","0-1","Máquina sentada más polea más multi-hip","Unilateral y bilateral solo con justificación de seguimiento","Estabilidad comparación lateral y tolerancia"
+EG7,"Acondicionamiento","GM022","Según objetivo","Contarlo como volumen directo además de demasiadas series","Separar de pierna dura si interfiere con recuperación","Fatiga rendimiento y objetivo cardiovascular"
+EG8,"Femoral","GM023","Según objetivo femoral","Contarlo como sustituto de bisagra o glúteo","Compatible si el volumen femoral está justificado","Transición glúteo-femoral y recuperación"

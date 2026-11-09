@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111713" />
+    <meta name="description" content="Convierte la nota de tu entrenador en un registro de entrenamiento limpio." />
+    <title>DCLog</title>
+    <link rel="manifest" href="manifest.webmanifest?v=50" />
+    <link rel="icon" href="dclog-icon.svg?v=50" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="dclog-apple-touch-icon.png?v=50" />
+    <link rel="stylesheet" href="styles.css?v=50" />
+  </head>
+  <body>
+    <div class="rest-ambient" id="restAmbient" data-state="idle" data-stage="full" aria-hidden="true">
+      <div class="rest-ambient-fill" id="restAmbientFill"></div>
+      <div class="rest-ambient-edge" aria-hidden="true"></div>
+    </div>
+    <header class="app-header">
+      <button class="brand" id="goHome" type="button" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">DC</span>
+        <span>DCLog</span>
+      </button>
+      <nav class="header-actions" aria-label="Secciones de la aplicación">
+        <a class="ghost-button header-link" href="checkin.html">Check-in</a>
+        <button class="ghost-button gem-command-trigger" id="gemCommandButton" type="button" aria-label="Abrir Comandos IA">🤖 <span>Comandos IA</span></button>
+        <button class="ghost-button" id="historyButton" type="button">Historial</button>
+      </nav>
+    </header>
+
+    <aside class="sync-status-card sync-status-global no-print" id="syncStatusCard" data-state="synced" aria-live="polite">
+      <div>
+        <strong id="syncStatusText">🟢 Sincronizado</strong>
+        <span id="syncStatusDetail">No hay registros pendientes.</span>
+      </div>
+      <button id="retrySyncButton" type="button" hidden>Reintentar sincronización</button>
+    </aside>
+
+    <main>
+      <section class="screen import-screen" id="importScreen">
+        <div class="eyebrow">Preparar la sesión</div>
+        <h1>¿Qué entrenas hoy?</h1>
+        <p class="lead">Elige tu día, crea una sesión libre o pega la nota de tu entrenador.</p>
+
+        <section class="quick-start" aria-label="Inicio rápido">
+          <div class="quick-start-grid">
+            <button class="quick-start-button" data-template-day="A" type="button">Día A</button>
+            <button class="quick-start-button" data-template-day="B" type="button">Día B</button>
+            <button class="quick-start-button" data-template-day="C" type="button">Día C</button>
+            <button class="quick-start-button" data-template-day="D" type="button">Día D</button>
+            <button class="quick-start-button" data-template-day="E" type="button">Día E</button>
+            <button class="secondary-button free-session-button" id="startFreeSessionButton" type="button">+ Sesión en vivo</button>
+          </div>
+        </section>
+        <div class="entry-divider"><span>o pega una sesión personalizada</span></div>
+
+        <aside class="install-card" id="installCard" hidden>
+          <div>
+            <strong>Instalar en este móvil</strong>
+            <span>Se abrirá como una app y seguirá funcionando sin conexión.</span>
+          </div>
+          <button class="install-button" id="installButton" type="button">Instalar</button>
+        </aside>
+
+        <label class="note-field">
+          <span>Nota del entrenamiento</span>
+          <textarea id="trainerNote" rows="13" placeholder="Ejemplo:&#10;&#10;# Día A · Glúteo y torso&#10;1. Hip thrust — 3 × 8–10 · RIR 2 · descanso 2–3 min&#10;2. Sentadilla búlgara — 3 × 8–12 por lado · RIR 2&#10;3. Remo con pecho apoyado — 3 × 8–12 · RIR 1–2"></textarea>
+        </label>
+
+        <div class="import-actions">
+          <button class="secondary-button" id="exampleButton" type="button">Ver ejemplo</button>
+          <button class="primary-button" id="parseButton" type="button">
+            Preparar entrenamiento
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+        <p class="privacy-note">La nota y tus registros se guardan únicamente en este dispositivo.</p>
+      </section>
+
+      <section class="screen session-screen" id="sessionScreen" hidden>
+        <aside class="historical-draft-banner" id="historicalDraftBanner" hidden>
+          <div>
+            <strong>Revisa el entrenamiento antiguo</strong>
+            <span id="historicalDraftSummary">Nada se añadirá al historial hasta que confirmes al final.</span>
+          </div>
+          <label><span>Fecha</span><input id="historicalPreviewDate" type="date" /></label>
+          <label><span>Título</span><input id="historicalPreviewTitle" type="text" /></label>
+        </aside>
+        <div class="session-heading">
+          <div>
+            <div class="eyebrow" id="sessionDate"></div>
+            <h1 id="sessionTitle">Entrenamiento</h1>
+            <span class="save-status" id="saveStatus" data-state="saved">Guardado</span>
+          </div>
+          <button class="icon-button no-print" id="editNoteButton" type="button" aria-label="Volver a la nota" title="Volver a la nota">✎</button>
+        </div>
+
+        <div class="session-summary">
+          <div><strong id="exerciseCount">0</strong><span>ejercicios</span></div>
+          <div><strong id="setCount">0</strong><span>series</span></div>
+          <div><strong id="completedCount">0</strong><span>registradas</span></div>
+        </div>
+        <div class="progress-track" aria-label="Progreso de la sesión"><div id="progressBar"></div></div>
+
+        <section class="session-tools no-print" aria-label="Herramientas de la sesión">
+          <label class="wake-tool">
+            <input id="wakeLockToggle" type="checkbox" checked />
+            <span><strong>Pantalla activa</strong><small id="wakeLockStatus">Pendiente</small></span>
+          </label>
+        </section>
+
+        <div id="exerciseList" class="exercise-list"></div>
+        <button class="secondary-button add-exercise-button no-print" id="addExerciseButton" type="button">+ Añadir ejercicio libre</button>
+
+        <div class="session-actions no-print">
+          <button class="share-button" id="shareJsonButton" type="button">Compartir con IA</button>
+          <button class="secondary-button compact-action" id="downloadPdfButton" type="button">PDF</button>
+          <button class="primary-button" id="finishButton" type="button">Finalizar sesión</button>
+          <button class="ghost-button danger-action" id="discardSessionButton" type="button">Descartar sesión</button>
+        </div>
+      </section>
+
+      <section class="screen workout-note-review-screen" id="workoutNoteReviewScreen" hidden aria-labelledby="workoutNoteReviewTitle">
+        <div class="review-topline">
+          <div class="eyebrow">Revisar entrenamiento</div>
+          <span class="review-local-status">Sin guardar</span>
+        </div>
+        <div class="review-heading">
+          <div>
+            <h1 id="workoutNoteReviewTitle"></h1>
+            <p class="lead" id="workoutNoteReviewFocus" hidden></p>
+          </div>
+          <button class="icon-button no-print" id="workoutNoteReviewBack" type="button" aria-label="Volver a la nota" title="Volver a la nota">✎</button>
+        </div>
+        <p class="review-intro">Revisa la prescripción antes de crear la sesión. No se añadirá al historial hasta que finalices el entrenamiento.</p>
+        <div class="review-summary" id="workoutNoteReviewSummary" aria-label="Resumen del entrenamiento"></div>
+        <div class="workout-note-review-list" id="workoutNoteReviewList"></div>
+        <div class="review-actions no-print">
+          <button class="secondary-button" id="workoutNoteReviewEdit" type="button">Editar nota</button>
+          <button class="primary-button" id="workoutNoteReviewConfirm" type="button">Crear sesión <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+
+      <section class="screen history-screen" id="historyScreen" hidden>
+        <div class="eyebrow">Tus registros</div>
+        <div class="history-heading">
+          <div>
+            <h1>Historial</h1>
+            <p>Exporta todas tus sesiones en un único archivo para actualizar las fuentes de tu entrenador AI.</p>
+          </div>
+          <div class="history-actions">
+            <button class="primary-button" id="addHistoricalButton" type="button">Añadir entrenamiento antiguo</button>
+            <button class="secondary-button" id="importHistoryButton" type="button">Importar o restaurar</button>
+            <button class="share-button" id="shareHistoryButton" type="button">Exportar historial para IA</button>
+            <input id="historyFileInput" type="file" accept="application/json,.json" hidden />
+          </div>
+        </div>
+        <div id="historyList" class="history-list"></div>
+        <section class="feedback-history" aria-labelledby="feedbackHistoryTitle">
+          <div>
+            <span class="eyebrow">Experiencia de uso</span>
+            <h2 id="feedbackHistoryTitle">Mejoras anotadas <span id="feedbackCount">0</span></h2>
+            <p>Se guardan aparte del historial deportivo y solo salen del dispositivo cuando decides exportarlas.</p>
+          </div>
+          <div class="feedback-actions">
+            <button class="ghost-button" id="feedbackAddButton" type="button">Añadir mejora</button>
+            <button class="secondary-button" id="exportFeedbackButton" type="button">Exportar mejoras</button>
+          </div>
+          <div class="feedback-list" id="feedbackList"></div>
+        </section>
+      </section>
+
+      <section class="screen historical-screen" id="historicalScreen" hidden>
+        <div class="eyebrow">Historial manual</div>
+        <h1>Añade un entrenamiento antiguo</h1>
+        <p class="lead">Pega una sesión ya realizada. La app interpretará solo los resultados explícitos y te permitirá revisarlos antes de añadirlos.</p>
+        <label class="note-field">
+          <span>Texto del entrenamiento antiguo</span>
+          <textarea id="historicalText" rows="16" placeholder="Fecha: 2026-07-15&#10;Entrenamiento: Día A&#10;&#10;Ejercicio: Hip thrust&#10;Modo: carga externa&#10;Objetivo: 3 x 8-10&#10;Serie 1: carga=80; reps=10; rir=2"></textarea>
+        </label>
+        <div class="historical-messages" id="historicalMessages" role="alert" hidden></div>
+        <div class="import-actions">
+          <button class="secondary-button" id="historicalExampleButton" type="button">Ver ejemplo</button>
+          <button class="primary-button" id="parseHistoricalButton" type="button">Preparar y revisar <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="privacy-note">El texto se interpreta en este dispositivo. Una operación añade como máximo una sesión.</p>
+      </section>
+    </main>
+
+    <section class="rest-dock no-print" id="restDock" data-state="idle" aria-label="Temporizador de descanso">
+      <div class="rest-dock-shell">
+        <div class="rest-visual" id="restTimerProgressTrack" role="progressbar" aria-label="Tiempo de descanso restante" aria-valuemin="0" aria-valuemax="120" aria-valuenow="120">
+        <div id="restTimerProgress" data-stage="full"></div>
+        </div>
+      </div>
+      <div class="rest-dock-row">
+        <button class="rest-dock-main" id="restTimerButton" type="button" aria-label="Iniciar descanso">
+          <span class="rest-dock-copy">
+            <span id="restTimerStatus" aria-live="polite">Descanso</span>
+            <small id="restTimerAction">Iniciar</small>
+          </span>
+          <strong id="restTimerDisplay">02:00</strong>
+        </button>
+        <button class="rest-dock-quick" id="restTimerSubtract" type="button" disabled>−15 s</button>
+        <button class="rest-dock-quick" id="restTimerAdd" type="button" disabled>+15 s</button>
+        <button class="rest-dock-options" id="restTimerOptions" type="button" aria-expanded="false" aria-controls="restTimerPanel" aria-label="Opciones del temporizador">•••</button>
+      </div>
+      <div class="rest-dock-panel" id="restTimerPanel" hidden>
+        <label><span>Duración</span>
+          <select id="restDuration" aria-label="Duración del descanso">
+            <option value="15">15 s</option>
+            <option value="30">30 s</option>
+            <option value="60">1 min</option>
+            <option value="90">1:30 min</option>
+            <option value="120" selected>2 min</option>
+            <option value="180">3 min</option>
+            <option value="240">4 min</option>
+          </select>
+        </label>
+        <button class="rest-panel-button" id="restTimerReset" type="button">Reiniciar</button>
+        <label class="timer-sound" title="Aviso al terminar el descanso">
+          <input id="timerSoundToggle" type="checkbox" checked />
+          <span>Sonido</span>
+        </label>
+        <label class="sound-profile"><span>Aviso</span>
+          <select id="timerSoundProfile" aria-label="Sonido del temporizador">
+            <option value="sport_horn">Bocina deportiva</option>
+            <option value="clean_bell">Campana limpia</option>
+            <option value="deep_pulse">Pulso grave</option>
+          </select>
+        </label>
+        <button class="rest-panel-button" id="timerSoundPreview" type="button">Probar sonido</button>
+      </div>
+    </section>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog class="feedback-sheet" id="feedbackDialog" aria-labelledby="feedbackDialogTitle">
+      <form id="feedbackForm">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-heading">
+          <div>
+            <span class="eyebrow">Ayúdame a mejorar</span>
+            <h2 id="feedbackDialogTitle">¿Qué te ha frenado?</h2>
+          </div>
+          <button class="sheet-close" id="feedbackCloseButton" type="button" aria-label="Cerrar">×</button>
+        </div>
+        <p class="sheet-copy">Se guardará solo en este dispositivo hasta que decidas exportarlo.</p>
+        <div class="feedback-categories" role="group" aria-label="Tipo de fricción">
+          <button type="button" data-feedback-category="too_many_taps">Demasiados toques</button>
+          <button type="button" data-feedback-category="hard_to_find">Difícil de encontrar</button>
+          <button type="button" data-feedback-category="awkward_input">Dato incómodo</button>
+          <button type="button" data-feedback-category="timer_or_sound">Temporizador o sonido</button>
+          <button type="button" data-feedback-category="other">Otro</button>
+        </div>
+        <label class="feedback-comment">
+          <span>Detalle opcional</span>
+          <textarea id="feedbackComment" maxlength="1000" rows="3" placeholder="Ej.: tuve que volver arriba para iniciar el descanso"></textarea>
+        </label>
+        <div class="sheet-actions">
+          <button class="ghost-button" id="feedbackCancelButton" type="button">Cancelar</button>
+          <button class="primary-button" id="feedbackSaveButton" type="submit">Guardar mejora</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="feedback-sheet gem-command-sheet" id="gemCommandDialog" aria-labelledby="gemCommandDialogTitle">
+      <form id="gemCommandForm">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-heading">
+          <div>
+            <span class="eyebrow">Atajo de entrenador</span>
+            <h2 id="gemCommandDialogTitle">🤖 Comandos IA</h2>
+          </div>
+          <button class="sheet-close" id="gemCommandCloseButton" type="button" aria-label="Cerrar comandos IA">×</button>
+        </div>
+        <p class="sheet-copy" id="gemCommandHint">Pega el bloque completo generado por tu Gem. Se aplicará directamente en tu hoja de Google Sheets.</p>
+        <label class="gem-command-field">
+          <span>Comando del Gem</span>
+          <textarea id="gemCommandInput" rows="8" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="gemCommandHint gemCommandStatus" placeholder="Pega aquí el comando generado por tu Gem..."></textarea>
+        </label>
+        <p class="gem-command-status" id="gemCommandStatus" role="status" aria-live="polite" hidden></p>
+        <div class="sheet-actions gem-command-actions">
+          <button class="ghost-button" id="gemCommandCancelButton" type="button">Cancelar</button>
+          <button class="primary-button gem-command-submit" id="gemCommandSubmitButton" type="submit">⚡ Ejecutar Acción</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="feedback-sheet confirm-sheet" id="confirmDialog" aria-labelledby="confirmDialogTitle" aria-describedby="confirmDialogMessage">
+      <div class="confirm-sheet-content">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-heading">
+          <div>
+            <span class="eyebrow">Confirmación</span>
+            <h2 id="confirmDialogTitle">Confirmar acción</h2>
+          </div>
+          <button class="sheet-close" id="confirmDialogCloseButton" type="button" aria-label="Cerrar confirmación">×</button>
+        </div>
+        <p class="sheet-copy" id="confirmDialogMessage"></p>
+        <div class="sheet-actions confirm-actions">
+          <button class="ghost-button" id="confirmDialogCancelButton" type="button">Cancelar</button>
+          <button class="primary-button" id="confirmDialogConfirmButton" type="button">Confirmar</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="feedback-sheet rest-finished-sheet" id="restFinishedDialog" aria-labelledby="restFinishedDialogTitle" aria-describedby="restFinishedDialogElapsed">
+      <div class="confirm-sheet-content">
+        <div class="sheet-handle" aria-hidden="true"></div>
+        <div class="sheet-heading">
+          <div>
+            <span class="eyebrow">Temporizador</span>
+            <h2 id="restFinishedDialogTitle">Descanso finalizado</h2>
+          </div>
+        </div>
+        <p class="sheet-copy">Tiempo desde que terminó: <strong id="restFinishedDialogElapsed">00:00</strong></p>
+        <div class="sheet-actions confirm-actions">
+          <button class="primary-button" id="restFinishedDialogCloseButton" type="button">Cerrar · A por la serie</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="exercise-picker" id="exercisePickerDialog" aria-labelledby="exercisePickerTitle">
+      <div class="picker-heading">
+        <div><span class="eyebrow">Catálogo</span><h2 id="exercisePickerTitle">Elegir ejercicio</h2></div>
+        <button class="sheet-close" id="exercisePickerCloseButton" type="button" aria-label="Cerrar catálogo">×</button>
+      </div>
+      <label class="picker-search"><span>Buscar</span><input id="exercisePickerSearch" type="search" autocomplete="off" placeholder="Ejercicio, máquina o grupo" /></label>
+      <div class="picker-recommended" id="exercisePickerRecommended" hidden></div>
+      <div class="picker-groups" id="exercisePickerGroups" aria-label="Filtrar por grupo"></div>
+      <div class="picker-results" id="exercisePickerResults"></div>
+      <div class="picker-custom-form" id="exercisePickerCustomForm" hidden>
+        <label class="picker-search"><span>Nombre del ejercicio</span><input id="exercisePickerCustomInput" type="text" autocomplete="off" placeholder="Ej. Prensa inclinada 45°" /></label>
+        <button class="primary-button" id="exercisePickerCustomConfirm" type="button">Añadir ejercicio</button>
+      </div>
+      <button class="secondary-button picker-custom" id="exercisePickerCustomButton" type="button">+ Escribir ejercicio personalizado</button>
+    </dialog>
+
+    <template id="exerciseTemplate">
+      <article class="exercise-card">
+        <div class="exercise-card-header">
+          <span class="exercise-number"></span>
+          <div>
+            <h2 class="exercise-name"></h2>
+            <div class="prescription"></div>
+          </div>
+          <div class="exercise-header-actions no-print">
+            <button class="delete-exercise no-print" type="button" title="Eliminar ejercicio de la sesión" aria-label="Eliminar ejercicio">🗑 Eliminar</button>
+            <button class="substitute-exercise no-print" type="button" title="Sustituir por otro ejercicio">↻ Sustituir</button>
+          </div>
+        </div>
+        <p class="coach-cue" hidden></p>
+        <details class="exercise-identity">
+          <summary>Identificación de variante y máquina</summary>
+          <div class="identity-fields">
+            <label><span>Tipo de resistencia</span>
+              <select class="identity-resistance-mode" data-identity-field="resistanceMode">
+                <option value="external">Carga externa</option>
+                <option value="bodyweight">Autocarga</option>
+                <option value="trx">TRX</option>
+              </select>
+            </label>
+            <label><span>Variante o máquina</span><input class="identity-variant" data-identity-field="variant" type="text" placeholder="Smith, Technogym, unilateral…" /></label>
+            <label><span>Ajustes</span><input class="identity-settings" data-identity-field="settings" type="text" placeholder="Asiento 4 · respaldo 2" /></label>
+            <label><span>La carga anotada es</span>
+              <select class="identity-load-basis" data-identity-field="loadBasis">
+                <option value="unknown">Sin especificar</option>
+                <option value="total_kg">Carga total</option>
+                <option value="per_side_kg">Carga por lado</option>
+                <option value="added_kg">Peso añadido</option>
+                <option value="machine_stack_kg">Marcador de la máquina</option>
+              </select>
+            </label>
+          </div>
+        </details>
+        <div class="last-reference">
+          <div class="reference-history" aria-live="polite"><span>Sin una referencia comparable anterior.</span></div>
+          <button class="use-previous-loads" type="button" hidden>Usar referencia</button>
+        </div>
+        <div class="sets-table">
+          <div class="set-row set-labels" aria-hidden="true">
+            <span>Serie</span><span class="variable-label">Carga</span><span>Reps</span><span>RIR</span><span>✓</span><span>×</span>
+          </div>
+          <div class="set-rows"></div>
+        </div>
+        <button class="add-set-button no-print" type="button">+ Añadir serie</button>
+        <label class="movement-note">
+          <span>Anotaciones sobre el movimiento</span>
+          <textarea rows="2" placeholder="Técnica, recorrido, ajuste o molestia..."></textarea>
+        </label>
+      </article>
+    </template>
+
+    <script src="vendor/pdf-lib-1.17.1.min.js?v=50"></script>
+    <script src="pdf-export.js?v=50"></script>
+    <script src="json-export.js?v=50"></script>
+    <script src="history-tools.js?v=50"></script>
+    <script src="exercise-metadata.js?v=50"></script>
+    <script src="exercise-catalog.js?v=50"></script>
+    <script src="day-templates.js?v=50"></script>
+    <script src="parser.js?v=50"></script>
+    <script src="historical-parser.js?v=50"></script>
+    <script src="feedback-tools.js?v=50"></script>
+    <script src="rest-timer-tools.js?v=50"></script>
+    <script src="timer-sounds.js?v=50"></script>
+    <script src="sync-queue.js?v=50"></script>
+    <script src="gem-command-tools.js?v=50"></script>
+    <script src="technical-data.js?v=50"></script>
+    <script src="technical-tools.js?v=50"></script>
+    <script src="app.js?v=50"></script>
+    <script src="workout-note-review.js?v=50"></script>
+  </body>
+</html>

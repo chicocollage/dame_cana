@@ -1,0 +1,10 @@
+grupo,funcion,opcion_indice,sustitucion_1,sustitucion_2,sustitucion_3,regla
+EG1,"Extensión acortada","Hip thrust máquina o glute drive","Hip thrust multipower","Hip thrust con barra","Puente cargado validado","Conservar series y rango; no sumar dos variantes"
+EG2,"Alta flexión bilateral","Prensa profunda validada","Hack que encaje","Pendular o V-squat que encaje","Sentadilla multipower que encaje","La alternativa debe permitir rango estable y tolerable"
+EG3,"Alta flexión unilateral","Bulgarian multipower","Zancada inversa multipower","Prensa unilateral","Step-up estable","Igualar lados y no compensar con impulso"
+EG4,"Bisagra","RDL con barra","RDL multipower","Hiperextensión a 45 grados","Pull-through en polea","Cambiar el rango de repeticiones si cambia la estabilidad"
+EG5,"Extensión específica","Máquina de patada o multi-hip","Patada en polea","Patada con banda si está validada","Ninguna: reubicar la serie","Pelvis y eje estables; historial de carga separado"
+EG6,"Abducción","Máquina de abducción sentada","Abducción en polea","Multi-hip de pie","Abducción con banda validada","No convertir el equilibrio en el limitante"
+EG8,"Flexión de rodilla","Curl femoral sentado","Curl femoral tumbado","Curl unilateral","Curl con fitball si está validado","No contar como volumen de glúteo"
+LOG1,"Cualquier función","Máquina índice ocupada y alternativa validada","Usar alternativa del mismo grupo","Cambiar el orden si no perjudica el compuesto","Reubicar dentro de la semana","Nunca duplicar series para compensar la sustitución"
+LOG2,"Cualquier función","No existe alternativa validada","Esperar o reprogramar","Realizar trabajo de torso no interferente","Omitir y recuperar solo si cabe en la dosis semanal","No improvisar ajustes o anclajes inseguros"

@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dame Caña — Biomimetic Aura UI</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap');
+
+    :root {
+      --bg-void: #040406;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    body {
+      background-color: var(--bg-void);
+      color: #ffffff;
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      overflow-x: hidden;
+      padding-bottom: 140px;
+      position: relative;
+    }
+
+    /* Fondo atmosférico global con mallas de luz desvanecidas */
+    .ambient-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      overflow: hidden;
+      background: 
+        radial-gradient(80% 50% at 50% -10%, rgba(120, 140, 130, 0.22) 0%, transparent 70%),
+        radial-gradient(60% 50% at 95% 25%, rgba(255, 25, 110, 0.16) 0%, transparent 65%),
+        radial-gradient(70% 60% at 5% 65%, rgba(0, 230, 160, 0.14) 0%, transparent 70%),
+        radial-gradient(60% 45% at 50% 100%, rgba(255, 110, 30, 0.18) 0%, transparent 70%);
+    }
+
+    /* Grano óptico SVG para romper las bandas de color y dar textura de lente */
+    .noise-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      pointer-events: none;
+      opacity: 0.045;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
+
+    .app-shell {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 430px;
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    /* ==========================================================================
+       SISTEMA DE CRISTAL REFRACTIVO Y AURAS MULTICAPA (ESTILO KORNILOV / VERI)
+       ========================================================================== */
+    .glass-card {
+      position: relative;
+      border-radius: 34px;
+      background: linear-gradient(
+        155deg,
+        rgba(255, 255, 255, 0.11) 0%,
+        rgba(255, 255, 255, 0.03) 45%,
+        rgba(10, 10, 14, 0.55) 100%
+      );
+      backdrop-filter: blur(40px) saturate(210%);
+      -webkit-backdrop-filter: blur(40px) saturate(210%);
+      box-shadow:
+        0 30px 60px -15px rgba(0, 0, 0, 0.85),
+        0 0 1px 1px rgba(0, 0, 0, 0.6),
+        inset 0 1px 1px 0 rgba(255, 255, 255, 0.35),
+        inset 0 -1px 1px 0 rgba(255, 255, 255, 0.06);
+      padding: 22px;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    /* Bisel especular perimetral con máscara (simula grosor de cristal curvo) */
+    .glass-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1.2px;
+      background: linear-gradient(
+        140deg,
+        rgba(255, 255, 255, 0.45) 0%,
+        rgba(255, 255, 255, 0.08) 35%,
+        rgba(255, 255, 255, 0.02) 65%,
+        rgba(255, 255, 255, 0.22) 100%
+      );
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Capas de Auras Volumétricas Internas (Blobs desenfocados en movimiento) */
+    .aura-mesh {
+      position: absolute;
+      inset: -40%;
+      z-index: -1;
+      pointer-events: none;
+      filter: blur(38px);
+      opacity: 0.92;
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Variantes de Auras (idénticas a las referencias) */
+    .aura-veri-pink {
+      background:
+        radial-gradient(circle at 50% 48%, rgba(20, 5, 15, 0.92) 0%, rgba(45, 5, 25, 0.75) 18%, transparent 45%),
+        radial-gradient(circle at 50% 48%, #ff1e78 12%, #d60058 36%, rgba(255, 165, 210, 0.35) 62%, transparent 78%),
+        radial-gradient(circle at 20% 20%, rgba(255, 210, 235, 0.45) 0%, transparent 50%);
+    }
+
+    .aura-emerald- void {
+      background:
+        radial-gradient(circle at 50% 52%, rgba(4, 14, 18, 0.95) 0%, rgba(6, 28, 32, 0.75) 22%, transparent 48%),
+        radial-gradient(circle at 50% 50%, #00f5a8 15%, #008f7a 42%, rgba(130, 230, 200, 0.25) 68%, transparent 82%);
+    }
+
+    .aura-thermal-amber {
+      background:
+        radial-gradient(circle at 50% 46%, rgba(24, 8, 4, 0.92) 0%, transparent 40%),
+        radial-gradient(circle at 52% 48%, #ff6b1a 10%, #c81e00 40%, rgba(255, 190, 120, 0.25) 68%, transparent 82%);
+    }
+
+    .aura-violet-mist {
+      background:
+        radial-gradient(circle at 50% 45%, #a57cff 0%, #5e2bff 38%, rgba(30, 15, 65, 0.6) 68%, transparent 85%);
+    }
+
+    /* ==========================================================================
+       MATRIZ DE PUNTOS REAL (DOT-MATRIX LED ENGINE)
+       ========================================================================== */
+    .dot-matrix {
+      font-family: var(--font-mono);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      position: relative;
+      display: inline-block;
+      /* Textura perforada de micro-puntos luminosos */
+      background-image: radial-gradient(circle, #ffffff 1.35px, rgba(255, 255, 255, 0.12) 1.6px, transparent 2.2px);
+      background-size: 4.5px 4.5px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.45));
+    }
+
+    .dot-matrix-lg {
+      font-size: 54px;
+      background-size: 5px 5px;
+      background-image: radial-gradient(circle, #ffffff 1.6px, rgba(255, 255, 255, 0.08) 1.9px, transparent 2.5px);
+    }
+
+    .dot-matrix-md {
+      font-size: 32px;
+      background-size: 4px 4px;
+      background-image: radial-gradient(circle, #ffffff 1.25px, rgba(255, 255, 255, 0.1) 1.5px, transparent 2px);
+    }
+
+    /* ==========================================================================
+       HEADER SUPERIOR & MINI BENTO TELEMETRÍA
+       ========================================================================== */
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 4px;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(20px);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #00f5a8;
+      box-shadow: 0 0 12px #00f5a8, 0 0 4px #ffffff;
+    }
+
+    .day-selector {
+      display: flex;
+      gap: 6px;
+    }
+
+    .day-bubble {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0 1px 0.5px rgba(255, 255, 255, 0.15);
+    }
+
+    .day-bubble.active {
+      background: #ffffff;
+      color: #050508;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+
+    /* Bento Grid 3 columnas con Auras individuales */
+    .bento-trio {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr 1fr;
+      gap: 12px;
+    }
+
+    .mini-aura-card {
+      position: relative;
+      border-radius: 26px;
+      padding: 16px 14px;
+      min-height: 128px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      background: rgba(18, 20, 26, 0.55);
+      backdrop-filter: blur(30px);
+      box-shadow:
+        0 18px 35px -10px rgba(0, 0, 0, 0.75),
+        inset 0 1px 1px rgba(255, 255, 255, 0.3);
+      isolation: isolate;
+    }
+
+    .mini-aura-card .card-label {
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.2;
+    }
+
+    .mini-aura-card .card-sub {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.45);
+      display: block;
+    }
+
+    .mini-aura-card .card-foot {
+      font-size: 10px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.65);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ==========================================================================
+       TARJETA CENTRAL: HIP THRUST CON POZO DE LUZ VOLUMÉTRICO (ESTILO VERI)
+       ========================================================================== */
+    .hero-exercise {
+      padding: 24px 20px 22px;
+    }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 14px;
+    }
+
+    .hero-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.65);
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-title {
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      margin-top: 3px;
+      color: #fff;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Toggle Switch Esmerilado estilo iOS/Veri */
+    .glass-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.32);
+      padding: 4px 5px 4px 11px;
+      border-radius: 999px;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 255, 255, 0.15);
+      font-size: 10px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .glass-switch .knob {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+
+    /* Núcleo central con halo oscuro interior y aura magenta radiante alrededor */
+    .focal-aura-well {
+      position: relative;
+      height: 185px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 6px 0 12px;
+    }
+
+    /* El pozo oscuro central donde flota el número dot-matrix (exacto a la pantalla central de Veri) */
+    .focal-aura-well::before {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(
+        circle,
+        rgba(18, 4, 14, 0.92) 0%,
+        rgba(60, 8, 38, 0.65) 42%,
+        rgba(255, 25, 115, 0.45) 68%,
+        transparent 85%
+      );
+      filter: blur(12px);
+      z-index: 0;
+    }
+
+    .focal-metric {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .focal-unit {
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.72);
+      margin-top: 2px;
+      letter-spacing: 0.5px;
+    }
+
+    /* Escala de Frecuencia / Ecualizador Háptico con aguja luminosa */
+    .frequency-ruler {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      width: 88%;
+      height: 34px;
+      margin-top: 12px;
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 20%, #000 80%, transparent 100%);
+      mask-image: linear-gradient(90deg, transparent 0%, #000 20%, #000 80%, transparent 100%);
+    }
+
+    .freq-bar {
+      width: 1.5px;
+      background: rgba(255, 255, 255, 0.28);
+      border-radius: 2px;
+      transition: all 0.25s ease;
+    }
+
+    .freq-bar.center-needle {
+      width: 2.5px;
+      height: 28px !important;
+      background: #ffea79;
+      box-shadow: 0 0 12px #ffea79, 0 0 4px #ffffff;
+    }
+
+    /* Píldoras de prescripción con cristal esmerilado suave */
+    .prescription-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .frosted-pill {
+      flex: 1;
+      text-align: center;
+      padding: 8px 6px;
+      border-radius: 16px;
+      background: rgba(12, 8, 16, 0.38);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.2),
+        0 4px 12px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(12px);
+    }
+
+    .frosted-pill .p-lbl {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: rgba(255, 255, 255, 0.5);
+      display: block;
+    }
+
+    .frosted-pill .p-val {
+      font-size: 13px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 2px;
+      display: block;
+    }
+
+    /* ==========================================================================
+       FILAS DE SERIES CON CÁPSULAS TRANSLÚCIDAS Y DIAL DE RIR VIVO
+       ========================================================================== */
+    .sets-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .set-glass-row {
+      display: grid;
+      grid-template-columns: 26px 1fr 1fr 1.15fr 38px;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 20px;
+      background: linear-gradient(90deg, rgba(15, 12, 20, 0.55) 0%, rgba(28, 18, 34, 0.42) 100%);
+      box-shadow:
+        inset 0 1px 0.5px rgba(255, 255, 255, 0.22),
+        0 8px 20px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(16px);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .set-glass-row.done {
+      background: linear-gradient(90deg, rgba(0, 245, 168, 0.22) 0%, rgba(0, 140, 120, 0.18) 100%);
+      box-shadow:
+        inset 0 1px 1px rgba(0, 245, 168, 0.5),
+        0 8px 24px rgba(0, 245, 168, 0.18);
+    }
+
+    .set-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.55);
+      text-align: center;
+    }
+
+    .glass-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.32);
+      border-radius: 13px;
+      padding: 7px 6px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.55), 0 1px 0 rgba(255, 255, 255, 0.12);
+    }
+
+    .glass-input {
+      width: 44px;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #ffffff;
+      font-family: var(--font-mono);
+      font-size: 15px;
+      font-weight: 700;
+      text-align: right;
+    }
+
+    .glass-unit {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.45);
+      margin-left: 3px;
+      font-weight: 500;
+    }
+
+    /* Cápsula de RIR con resplandor interno dinámico */
+    .rir-orb-pill {
+      position: relative;
+      border-radius: 13px;
+      padding: 6px 8px;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 95, 35, 0.45) 0%, rgba(40, 12, 18, 0.65) 100%);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 200, 160, 0.4),
+        0 0 14px rgba(255, 70, 30, 0.25);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.15s ease;
+    }
+
+    .rir-orb-pill:active {
+      transform: scale(0.93);
+    }
+
+    .rir-orb-pill .rir-txt {
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .rir-orb-pill .mini-dial {
+      display: flex;
+      gap: 2px;
+      align-items: center;
+    }
+
+    .rir-orb-pill .mini-dial span {
+      width: 2px;
+      height: 6px;
+      border-radius: 1px;
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .rir-orb-pill .mini-dial span.on {
+      height: 11px;
+      background: #ffffff;
+      box-shadow: 0 0 6px #ffffff;
+    }
+
+    /* Botón circular de completar con halo especular */
+    .orb-check {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: none;
+      background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.06));
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.4),
+        0 4px 10px rgba(0, 0, 0, 0.4);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .orb-check.active {
+      background: radial-gradient(circle at 35% 30%, #a8ffdf 0%, #00e699 65%, #008f5d 100%);
+      color: #032217;
+      font-weight: 900;
+      box-shadow:
+        0 0 22px rgba(0, 245, 168, 0.75),
+        inset 0 1px 2px #ffffff;
+      transform: scale(1.06);
+    }
+
+    /* Botón inferior "Start tracking / Añadir serie" idéntico a la captura de Veri */
+    .veri-action-bar {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+    }
+
+    .veri-pill-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 8px 8px 18px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(20px);
+      box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.4),
+        inset 0 1px 1px rgba(255, 255, 255, 0.45);
+      border: none;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .veri-pill-btn:active {
+      transform: scale(0.96);
+    }
+
+    .veri-pill-btn .plus-circle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: #111;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.6);
+    }
+
+    /* ==========================================================================
+       BENTO SECUNDARIO: CURVA BIOMECÁNICA & EJERCICIO 02 (CON ONDA SVG LUMINOSA)
+       ========================================================================== */
+    .bento-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .wave-svg {
+      width: 100%;
+      height: 42px;
+      margin: 6px 0;
+      overflow: visible;
+    }
+
+    /* ==========================================================================
+       DOCK FLOTANTE DE DESCANSO CON CRISTAL ESMERILADO Y HALO BIOLUMINISCENTE
+       ========================================================================== */
+    .floating-timer-dock {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 32px);
+      max-width: 398px;
+      z-index: 100;
+      border-radius: 28px;
+      padding: 12px 18px;
+      background: linear-gradient(135deg, rgba(16, 26, 28, 0.78) 0%, rgba(8, 12, 16, 0.88) 100%);
+      backdrop-filter: blur(36px) saturate(220%);
+      -webkit-backdrop-filter: blur(36px) saturate(220%);
+      box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.9),
+        0 0 35px rgba(0, 245, 168, 0.22),
+        inset 0 1px 1px rgba(255, 255, 255, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .floating-timer-dock::before {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      left: 18%;
+      top: -40%;
+      background: radial-gradient(circle, rgba(0, 245, 168, 0.42) 0%, transparent 70%);
+      filter: blur(22px);
+      pointer-events: none;
+    }
+
+    .dock-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .play-orb {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: none;
+      background: radial-gradient(circle at 30% 30%, #ffffff 0%, #c8ffe8 60%, #00f5a8 100%);
+      box-shadow: 0 0 20px rgba(0, 245, 168, 0.7);
+      color: #041f16;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dock-Step-pills {
+      display: flex;
+      gap: 6px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .step-pill {
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25);
+      border: none;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Capas ópticas globales -->
+  <div class="ambient-canvas"></div>
+  <div class="noise-overlay"></div>
+
+  <main class="app-shell">
+
+    <!-- Navegación Superior -->
+    <header class="top-nav">
+      <div class="status-pill">
+        <span class="pulse-dot"></span>
+        <span>DAME CAÑA • NUCLEAR 1</span>
+      </div>
+      <div class="day-selector">
+        <div class="day-bubble active">A</div>
+        <div class="day-bubble">B</div>
+        <div class="day-bubble">C</div>
+        <div class="day-bubble">D</div>
+      </div>
+    </header>
+
+    <!-- Trío de Tarjetas Bento con Auras Desvanecidas -->
+    <section class="bento-trio">
+      <div class="mini-aura-card">
+        <div class="aura-mesh aura-emerald-void"></div>
+        <div class="card-label">Series<br><span class="card-sub">Completadas</span></div>
+        <div style="text-align: center; margin: 6px 0;">
+          <span class="dot-matrix dot-matrix-md" id="setsDoneMetric">01</span>
+          <span style="font-size: 11px; color: rgba(255,255,255,0.5);">/14</span>
+        </div>
+        <div class="card-foot">
+          <span>En rango</span>
+          <span style="color: #00f5a8;">●</span>
+        </div>
+      </div>
+
+      <div class="mini-aura-card">
+        <div class="aura-mesh aura-thermal-amber"></div>
+        <div class="card-label">Estímulo<br><span class="card-sub">Glúteo / Cuád</span></div>
+        <div style="text-align: center; margin: 6px 0;">
+          <span class="dot-matrix dot-matrix-md">92</span><span style="font-size: 12px; opacity: 0.7;">%</span>
+        </div>
+        <div class="card-foot">
+          <span>Óptimo</span>
+          <span>RIR 1</span>
+        </div>
+      </div>
+
+      <div class="mini-aura-card">
+        <div class="aura-mesh aura-violet-mist"></div>
+        <div class="card-label">Tonelaje<br><span class="card-sub">Sesión activa</span></div>
+        <div style="text-align: center; margin: 6px 0;">
+          <span class="dot-matrix dot-matrix-md" id="tonnageMetric">1.2</span><span style="font-size: 11px; opacity: 0.7;">t</span>
+        </div>
+        <div class="card-foot">
+          <span>Carga neta</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARJETA FOCAL: HIP THRUST EN MÁQUINA (ESTILO CENTRAL VERI) -->
+    <section class="glass-card hero-exercise">
+      <!-- Aura Magenta Multicapa Desvanecida -->
+      <div class="aura-mesh aura-veri-pink" id="heroAura"></div>
+
+      <div class="hero-top">
+        <div>
+          <div class="hero-tag">01 • EXTENSIÓN DE CADERA</div>
+          <h1 class="hero-title">Hip Thrust en Máquina</h1>
+        </div>
+        <div class="glass-switch">
+          <span>Tempo</span>
+          <span class="knob"></span>
+        </div>
+      </div>
+
+      <!-- Pozo de Luz Volumétrico Central con Matriz de Puntos LED -->
+      <div class="focal-aura-well">
+        <div class="focal-metric">
+          <div class="dot-matrix dot-matrix-lg" id="focalWeightDisplay">120</div>
+          <div class="focal-unit">kg • carga de trabajo</div>
+        </div>
+
+        <!-- Regla de Calibración Háptica (Idéntica al dial de Veri) -->
+        <div class="frequency-ruler" id="freqRuler">
+          <span class="freq-bar" style="height: 8px;"></span>
+          <span class="freq-bar" style="height: 12px;"></span>
+          <span class="freq-bar" style="height: 10px;"></span>
+          <span class="freq-bar" style="height: 16px;"></span>
+          <span class="freq-bar" style="height: 11px;"></span>
+          <span class="freq-bar" style="height: 18px;"></span>
+          <span class="freq-bar" style="height: 14px;"></span>
+          <span class="freq-bar" style="height: 22px;"></span>
+          <span class="freq-bar" style="height: 15px;"></span>
+          <span class="freq-bar center-needle"></span>
+          <span class="freq-bar" style="height: 15px;"></span>
+          <span class="freq-bar" style="height: 22px;"></span>
+          <span class="freq-bar" style="height: 14px;"></span>
+          <span class="freq-bar" style="height: 18px;"></span>
+          <span class="freq-bar" style="height: 11px;"></span>
+          <span class="freq-bar" style="height: 16px;"></span>
+          <span class="freq-bar" style="height: 10px;"></span>
+          <span class="freq-bar" style="height: 12px;"></span>
+          <span class="freq-bar" style="height: 8px;"></span>
+        </div>
+      </div>
+
+      <!-- Píldoras de Prescripción Técnica -->
+      <div class="prescription-strip">
+        <div class="frosted-pill">
+          <span class="p-lbl">Objetivo</span>
+          <span class="p-val">6–10 reps</span>
+        </div>
+        <div class="frosted-pill">
+          <span class="p-lbl">Esfuerzo</span>
+          <span class="p-val">RIR 1–2</span>
+        </div>
+        <div class="frosted-pill">
+          <span class="p-lbl">Foco</span>
+          <span class="p-val">Pelvis neutra</span>
+        </div>
+      </div>
+
+      <!-- Filas de Series Interactivas -->
+      <div class="sets-container" id="setsList">
+        <!-- Serie 1 (Completada por defecto para mostrar contraste de estado) -->
+        <div class="set-glass-row done" id="set-1">
+          <span class="set-num">01</span>
+          <div class="glass-input-wrap">
+            <input type="number" class="glass-input" value="120" oninput="syncWeight(this.value)">
+            <span class="glass-unit">kg</span>
+          </div>
+          <div class="glass-input-wrap">
+            <input type="number" class="glass-input" value="10" style="width: 32px;">
+            <span class="glass-unit">reps</span>
+          </div>
+          <div class="rir-orb-pill" onclick="cycleRir(this)">
+            <span class="rir-txt">RIR 1</span>
+            <div class="mini-dial">
+              <span class="on"></span><span class="on"></span><span></span><span></span>
+            </div>
+          </div>
+          <button class="orb-check active" onclick="toggleSet('set-1', this)">✓</button>
+        </div>
+
+        <!-- Serie 2 -->
+        <div class="set-glass-row" id="set-2">
+          <span class="set-num">02</span>
+          <div class="glass-input-wrap">
+            <input type="number" class="glass-input" value="120" oninput="syncWeight(this.value)">
+            <span class="glass-unit">kg</span>
+          </div>
+          <div class="glass-input-wrap">
+            <input type="number" class="glass-input" value="9" style="width: 32px;">
+            <span class="glass-unit">reps</span>
+          </div>
+          <div class="rir-orb-pill" onclick="cycleRir(this)">
+            <span class="rir-txt">RIR 1</span>
+            <div class="mini-dial">
+              <span class="on"></span><span class="on"></span><span></span><span></span>
+            </div>
+          </div>
+          <button class="orb-check" onclick="toggleSet('set-2', this)">✓</button>
+        </div>
+
+        <!-- Serie 3 -->
+        <div class="set-glass-row" id="set-3">
+          <span class="set-num">03</span>
+          <div class="glass-input-wrap">
+            <input type="number" class="glass-input" value="125" oninput="syncWeight(this.value)">
+            <span class="glass-unit">kg</span>
+          </div>
+          <div class="glass-input-wrap">
+            <input type="number" class="glass-input" value="8" style="width: 32px;">
+            <span class="glass-unit">reps</span>
+          </div>
+          <div class="rir-orb-pill" onclick="cycleRir(this)">
+            <span class="rir-txt">RIR 0</span>
+            <div class="mini-dial">
+              <span class="on"></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <button class="orb-check" onclick="toggleSet('set-3', this)">✓</button>
+        </div>
+      </div>
+
+      <!-- Botón Píldora Esmerilado Inferior -->
+      <div class="veri-action-bar">
+        <button class="veri-pill-btn" onclick="addExtraSet()">
+          <span>Añadir serie de trabajo</span>
+          <span class="plus-circle">+</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- BENTO SECUNDARIO: SIGUIENTE EJERCICIO + ONDA DE TENSIÓN MECÁNICA -->
+    <section class="bento-duo">
+      <div class="glass-card" style="padding: 18px;">
+        <div class="aura-mesh aura-emerald-void"></div>
+        <div style="font-size: 10px; color: rgba(255,255,255,0.6);">02 • CUÁDRICEPS</div>
+        <div style="font-size: 15px; font-weight: 700; margin: 4px 0 8px;">Hack Squat Profunda</div>
+        
+        <!-- Onda Sinusoidal Luminosa (Estilo Veri Sugar/Balance card) -->
+        <svg class="wave-svg" viewBox="0 0 140 40">
+          <defs>
+            <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="rgba(0,245,168,0.1)"/>
+              <stop offset="50%" stop-color="#ffea79"/>
+              <stop offset="100%" stop-color="#00f5a8"/>
+            </linearGradient>
+          </defs>
+          <line x1="0" y1="20" x2="140" y2="20" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <path d="M 0 20 Q 18 4, 35 20 T 70 20 T 105 20 T 140 20" fill="none" stroke="url(#waveGrad)" stroke-width="2"/>
+          <polygon points="105,12 109,18 101,18" fill="#ffea79" />
+        </svg>
+
+        <div style="display: flex; justify-content: space-between; font-size: 11px; color: rgba(255,255,255,0.75);">
+          <span>3 × 8–12</span>
+          <span style="color: #00f5a8; font-weight: 700;">Pausa 1s</span>
+        </div>
+      </div>
+
+      <div class="glass-card" style="padding: 18px;">
+        <div class="aura-mesh aura-thermal-amber"></div>
+        <div style="font-size: 10px; color: rgba(255,255,255,0.6);">03 • ISQUIOSURAL</div>
+        <div style="font-size: 15px; font-weight: 700; margin: 4px 0 8px;">Curl Femoral Sentado</div>
+        <div style="margin: 10px 0;">
+          <span class="dot-matrix dot-matrix-md">100</span><span style="font-size: 12px; opacity: 0.7;">%</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 11px; color: rgba(255,255,255,0.75);">
+          <span>Long. máxima</span>
+          <span style="color: #ffab40; font-weight: 700;">3 series</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DOCK FLOTANTE DE DESCANSO CON CRISTAL Y MATRIZ LED -->
+  <aside class="floating-timer-dock">
+    <div class="dock-left">
+      <button class="play-orb" id="timerBtn" onclick="toggleTimer()">▶</button>
+      <div>
+        <div style="font-size: 9px; letter-spacing: 0.8px; text-transform: uppercase; color: rgba(255,255,255,0.55);">Descanso Bioluminiscente</div>
+        <div class="dot-matrix dot-matrix-md" id="timerText">02:00</div>
+      </div>
+    </div>
+    <div class="dock-Step-pills">
+      <button class="step-pill" onclick="shiftTime(-15)">-15s</button>
+      <button class="step-pill" onclick="shiftTime(15)">+15s</button>
+    </div>
+  </aside>
+
+  <script>
+    const rirLevels = [
+      { label: 'RIR 0', bars: 1 },
+      { label: 'RIR 1', bars: 2 },
+      { label: 'RIR 2', bars: 3 },
+      { label: 'RIR 3', bars: 4 }
+    ];
+
+    function syncWeight(val) {
+      if (val) {
+        document.getElementById('focalWeightDisplay').textContent = val;
+      }
+    }
+
+    function cycleRir(pill) {
+      const txtEl = pill.querySelector('.rir-txt');
+      const idx = rirLevels.findIndex(r => r.label === txtEl.textContent);
+      const next = rirLevels[(idx + 1) % rirLevels.length];
+      txtEl.textContent = next.label;
+
+      const spans = pill.querySelectorAll('.mini-dial span');
+      spans.forEach((s, i) => s.classList.toggle('on', i < next.bars));
+      if (navigator.vibrate) navigator.vibrate(10);
+    }
+
+    function toggleSet(rowId, btn) {
+      const row = document.getElementById(rowId);
+      const active = btn.classList.toggle('active');
+      row.classList.toggle('done', active);
+
+      const totalDone = document.querySelectorAll('.set-glass-row.done').length;
+      document.getElementById('setsDoneMetric').textContent = String(totalDone).padStart(2, '0');
+      document.getElementById('tonnageMetric').textContent = (totalDone * 1.2).toFixed(1);
+
+      if (active) {
+        if (navigator.vibrate) navigator.vibrate(25);
+        resetAndStartTimer(120);
+      }
+    }
+
+    function addExtraSet() {
+      const container = document.getElementById('setsList');
+      const nextIdx = container.children.length + 1;
+      const rowId = `set-${nextIdx}`;
+      const div = document.createElement('div');
+      div.className = 'set-glass-row';
+      div.id = rowId;
+      div.innerHTML = `
+        <span class="set-num">${String(nextIdx).padStart(2, '0')}</span>
+        <div class="glass-input-wrap">
+          <input type="number" class="glass-input" value="125" oninput="syncWeight(this.value)">
+          <span class="glass-unit">kg</span>
+        </div>
+        <div class="glass-input-wrap">
+          <input type="number" class="glass-input" value="8" style="width: 32px;">
+          <span class="glass-unit">reps</span>
+        </div>
+        <div class="rir-orb-pill" onclick="cycleRir(this)">
+          <span class="rir-txt">RIR 1</span>
+          <div class="mini-dial">
+            <span class="on"></span><span class="on"></span><span></span><span></span>
+          </div>
+        </div>
+        <button class="orb-check" onclick="toggleSet('${rowId}', this)">✓</button>
+      `;
+      container.appendChild(div);
+      if (navigator.vibrate) navigator.vibrate(12);
+    }
+
+    // Reloj de descanso
+    let seconds = 120;
+    let running = false;
+    let interval = null;
+
+    function formatClock() {
+      const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+      const s = String(seconds % 60).padStart(2, '0');
+      document.getElementById('timerText').textContent = `${m}:${s}`;
+    }
+
+    function toggleTimer() {
+      const btn = document.getElementById('timerBtn');
+      if (running) {
+        clearInterval(interval);
+        running = false;
+        btn.textContent = '▶';
+      } else {
+        running = true;
+        btn.textContent = '❚❚';
+        interval = setInterval(() => {
+          if (seconds > 0) {
+            seconds--;
+            formatClock();
+          } else {
+            clearInterval(interval);
+            running = false;
+            btn.textContent = '▶';
+          }
+        }, 1000);
+      }
+    }
+
+    function resetAndStartTimer(sec) {
+      seconds = sec;
+      formatClock();
+      if (!running) toggleTimer();
+    }
+
+    function shiftTime(delta) {
+      seconds = Math.max(0, seconds + delta);
+      formatClock();
+    }
+  </script>
+</body>
+</html>

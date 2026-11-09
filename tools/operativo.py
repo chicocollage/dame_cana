@@ -586,9 +586,9 @@ def cmd_regenerar():
     print("Regeneración completa.")
 
 
-def cmd_sincronizar_app(desplegar: bool = False):
+def cmd_sincronizar_app(desplegar: bool = False, dia: str | None = None):
     print("Sincronizando datos de clientes PWA directamente desde 'data/'...")
-    cmd_sesion(silencioso=True)
+    cmd_sesion(dia_objetivo=dia, silencioso=True)
     res = compilar_app_data.compilar_todo()
     mod = res.get("total_archivos_modificados", 0)
     if mod > 0:
@@ -867,6 +867,7 @@ def main():
     subparsers.add_parser("respaldo", help="Genera paquete ZIP con manifiesto")
     
     p_sync = subparsers.add_parser("sincronizar_app", help="Compila data/ hacia clientes PWA (DameCañaTN y app)")
+    p_sync.add_argument("dia", nargs="?", default=None, help="D?a espec?fico (A, B, C, D o E)")
     p_sync.add_argument("--desplegar", action="store_true", help="Despliega a Firebase Hosting tras sincronizar")
     p_auto = subparsers.add_parser("autochequeo", help="Ejecuta ciclo autonomo de higiene, tests, auditoria 40+ y mejoras")
     p_auto.add_argument("--sin-tests", action="store_false", dest="tests", default=True, help="Omite la suite de tests")
@@ -883,7 +884,7 @@ def main():
     elif args.subcomando == "regenerar":
         cmd_regenerar()
     elif args.subcomando == "sincronizar_app":
-        cmd_sincronizar_app(desplegar=args.desplegar)
+        cmd_sincronizar_app(desplegar=args.desplegar, dia=args.dia)
     elif args.subcomando == "respaldo":
         cmd_respaldo()
     elif args.subcomando == "autochequeo":

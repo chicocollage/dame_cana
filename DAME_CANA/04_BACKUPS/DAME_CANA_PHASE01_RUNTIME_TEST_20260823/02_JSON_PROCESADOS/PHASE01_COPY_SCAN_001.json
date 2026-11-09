@@ -1,0 +1,44 @@
+{
+  "schema": "training_log.v1",
+  "contract_revision": 2,
+  "event_id": "phase01-copy-scan-001",
+  "exported_at": "2026-08-23T15:10:00.000Z",
+  "session": {
+    "id": "TEST-PHASE01-001",
+    "local_date": "2026-08-23",
+    "date": "2026-08-23",
+    "timezone": "Europe/Madrid",
+    "updated_at": "2026-08-23T15:00:00.000Z",
+    "finished": true,
+    "session_type": "test",
+    "day_id": null,
+    "program_version": "",
+    "title": "TEST FASE 1 — integración por Inbox",
+    "record_quality": "test"
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "TEST — ejercicio de integración",
+      "source_exercise_ref": "test:phase01-exercise",
+      "identity": {
+        "load_basis": "total_kg",
+        "resistance_mode": "plates"
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 1,
+            "reps": 1,
+            "rir": 10,
+            "completed": true
+          }
+        ]
+      }
+    }
+  ]
+}

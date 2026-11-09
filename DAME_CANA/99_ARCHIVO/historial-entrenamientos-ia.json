@@ -1,0 +1,1216 @@
+{
+  "schema": "training_history.v1",
+  "exported_at": "2026-08-12T07:50:00.000Z",
+  "session_schema": "training_log.v1",
+  "summary": {
+    "session_count": 6,
+    "finished_session_count": 6,
+    "recorded_set_count": 38,
+    "date_from": "2026-07-29T00:00:00.000Z",
+    "date_to": "2026-08-12T06:24:01.185Z",
+    "detailed_or_partially_detailed_sessions": 5,
+    "session_without_exercise_breakdown_count": 1
+  },
+  "sessions": [
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-08-05T10:23:00.000Z",
+      "session": {
+        "id": "reconstructed-2026-07-29-exploratoria",
+        "title": "Sesión exploratoria de gimnasio",
+        "date": "2026-07-29T00:00:00.000Z",
+        "updated_at": "2026-08-05T10:23:00.000Z",
+        "finished": true,
+        "source_note": "Reconstruido desde el archivo 02 y el panel 19. Hora no registrada. Se conservan huecos e incertidumbres. La abducción conserva una observación parcial: 20 repeticiones @0, con carga referida 18–22 kg y sin correspondencia carga-serie fiable.",
+        "exercise_count": 5,
+        "planned_set_count": 10,
+        "recorded_set_count": 10,
+        "record_quality": "partial_but_real"
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina hip thrust/glute drive con discos",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": null,
+            "reps_max": null,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Primera referencia; ajustes y contabilización exacta de la carga no registrados.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "2"
+              },
+              {
+                "index": 3,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Sentadilla búlgara en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith/multipower",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": null,
+            "reps_max": null,
+            "per_side": true,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Dos series por lado. Peso efectivo de la guía y montaje pendientes.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "0–1"
+              },
+              {
+                "index": 2,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "0–1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Rear Kick",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Matrix Rear Kick; identificación parcial",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": null,
+            "reps_max": null,
+            "per_side": true,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Dos series por lado; carga no registrada; dificultad para localizar el glúteo.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Abducción sentada",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina de abducción sentada",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": null,
+            "reps_min": null,
+            "reps_max": null,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Observación parcial: carga referida entre 18 y 22 kg; 20 repeticiones @0. Número real de series y correspondencia carga-serie no documentados.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "20",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Hiperextensión 45° unilateral",
+          "identity": {
+            "resistance_mode": "bodyweight",
+            "variant": "Banco 45°",
+            "machine_settings": "",
+            "load_basis": "bodyweight"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": null,
+            "reps_max": null,
+            "per_side": true,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Dos series por lado; RIR no registrado.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "bodyweight",
+                  "difficulty": ""
+                },
+                "reps": "20",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "bodyweight",
+                  "difficulty": ""
+                },
+                "reps": "20",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-08-12T07:50:00.000Z",
+      "session": {
+        "id": "reconstructed-2026-07-30-general",
+        "title": "Entrenamiento general sin desglose",
+        "date": "2026-07-30T00:00:00.000Z",
+        "updated_at": "2026-08-12T07:50:00.000Z",
+        "finished": true,
+        "source_note": "Entrenamiento confirmado como realizado y descrito como 'bastante bien'. No constan ejercicios, cargas, series, repeticiones, RIR, duración ni dolor. No se asigna volumen regional.",
+        "exercise_count": 0,
+        "planned_set_count": null,
+        "recorded_set_count": 0,
+        "record_quality": "real_but_no_exercise_breakdown"
+      },
+      "exercises": []
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-08-05T10:23:00.000Z",
+      "session": {
+        "id": "reconstructed-2026-08-01-m4-dia-b",
+        "title": "Día B — Cadena posterior y torso",
+        "date": "2026-08-01T00:00:00.000Z",
+        "updated_at": "2026-08-05T10:23:00.000Z",
+        "finished": true,
+        "source_note": "Reconstruido desde el archivo 02 y el panel 19. Hora y ajustes de máquinas no registrados. La serie 23×10 @4 del curl predicador se conserva solo en notas como aproximación.",
+        "exercise_count": 7,
+        "planned_set_count": 11,
+        "recorded_set_count": 11,
+        "record_quality": "detailed_real",
+        "pre_session_recovery": {
+          "rested": true,
+          "legs_recovered": true,
+          "glute_soreness_0_10": 2,
+          "lumbar_pain_0_10": 0,
+          "hip_pain_0_10": 0,
+          "knee_pain_0_10": 0
+        },
+        "session_notes": "Sensación global ligera, sin gran agotamiento; percepción de poder hacer más. Duración total no registrada."
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Peso muerto rumano en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith/multipower",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "2–3 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Cuádriceps demasiado presentes; ligera carga lumbar transitoria al terminar; técnica y recorrido por recalibrar.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "4"
+              },
+              {
+                "index": 2,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Curl femoral sentado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina de curl femoral sentado",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Remo con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina con pecho apoyado",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "2–3",
+            "rest": "2 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Ajustes y encaje de la máquina pendientes.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "3"
+              },
+              {
+                "index": 2,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "3"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Peck-deck inverso",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Peck-deck inverso",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "2–3",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "3"
+              },
+              {
+                "index": 2,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "3"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Curl predicador",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina de curl predicador",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "23×10 @4 se realizó como aproximación y no se cuenta como serie de trabajo. Serie de trabajo válida: 36×10 @2.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Extensión de rodilla",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina de extensión de rodilla",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Incluyó una pausa; próxima exposición debe ser continua para comparabilidad.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "13",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Variante/máquina no registrada",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Rango completo; variante exacta pendiente.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "2"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-08-05T10:23:00.000Z",
+      "session": {
+        "id": "reconstructed-2026-08-03-dia-c-adaptado",
+        "title": "Día C adaptado — Glúteo, pecho y hombros",
+        "date": "2026-08-03T05:00:00.000Z",
+        "updated_at": "2026-08-05T10:23:00.000Z",
+        "finished": true,
+        "source_note": "Reconstruido desde la conversación. Entrenamiento realizado a las 07:00 (Europe/Madrid). Se omitieron remo con pecho apoyado y gemelo por haberse trabajado el sábado; se añadió jalón al pecho. Cargas, repeticiones y RIR no se registraron por un fallo de la app.",
+        "exercise_count": 6,
+        "planned_set_count": 9,
+        "recorded_set_count": 0,
+        "record_quality": "real_exercises_known_sets_unrecorded"
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Sentadilla búlgara en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith/multipower",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": true,
+            "target_rir": "2",
+            "rest": "2–4 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Declarado como realizado; carga, repeticiones, RIR y ajustes no registrados.",
+            "sets": []
+          }
+        },
+        {
+          "index": 2,
+          "name": "Abducción en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina de abducción sentada",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 12,
+            "reps_max": 25,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Declarado como realizado; carga, repeticiones, RIR y ajustes no registrados.",
+            "sets": []
+          }
+        },
+        {
+          "index": 3,
+          "name": "Press horizontal",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Convergente horizontal o Smith; variante no registrada",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "2–3 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Declarado como realizado; carga, repeticiones, RIR y ajustes no registrados.",
+            "sets": []
+          }
+        },
+        {
+          "index": 4,
+          "name": "Pullover",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina o polea; variante no registrada",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Declarado como realizado; carga, repeticiones, RIR y ajustes no registrados.",
+            "sets": []
+          }
+        },
+        {
+          "index": 5,
+          "name": "Elevación lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Variante no registrada",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Declarado como realizado; carga, repeticiones, RIR y ajustes no registrados.",
+            "sets": []
+          }
+        },
+        {
+          "index": 6,
+          "name": "Jalón al pecho",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Variante no registrada",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": null,
+            "reps_min": null,
+            "reps_max": null,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "Declarado como realizado; carga, repeticiones, RIR y ajustes no registrados.",
+            "sets": []
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-08-05T10:17:10.339Z",
+      "session": {
+        "id": "msfxj864-pqo9dw",
+        "title": "Día A1 — Glúteo, femoral y abdomen",
+        "date": "2026-08-05T10:13:52.540Z",
+        "updated_at": "2026-08-05T10:16:59.941Z",
+        "finished": true,
+        "source_note": "Título original de la app: «Entrenamiento de hoy».\nDía A1 — Glúteo, femoral y abdomen\nHip thrust en máquina — 2 × 6–10\nRIR 2–3 · Descanso 2–4 min\nSi es la misma máquina y montaje, 60 kg es la referencia previa; realiza antes 1–2 aproximaciones.\nCurl femoral sentado — 2 × 8–15\nRIR 2 · Descanso 90–150 s\nReferencia: 23 kg, siempre que sea la misma máquina y ajustes.\nGemelo con rodilla extendida — 1–2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nReferencia: 40 kg si coincide la variante del sábado.\nCrunch cargado — 2 × 8–15\nRIR 2 · Descanso 90–150 s",
+        "exercise_count": 3,
+        "planned_set_count": 6,
+        "recorded_set_count": 6,
+        "record_quality": "detailed_real"
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "No focus total (por Félix)",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Curl femoral sentado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Technogym",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Crunch cargado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "El archivo original exportó load_kg='0' en ambas series; no se reinterpreta como autocarga ni como carga externa distinta. RIR no registrado.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "0",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "0",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-08-12T07:39:00.000Z",
+      "session": {
+        "id": "msppelcx-yful6r",
+        "title": "Día C — Glúteo y torso",
+        "date": "2026-08-12T06:24:01.185Z",
+        "updated_at": "2026-08-12T07:39:00.000Z",
+        "finished": true,
+        "source_note": "Importado del PDF TRAINING_LOG_V1 y corregido por mensajes posteriores del usuario. Press convergente: tercera serie añadida, 20 kg × 8, RIR no registrado. Pullover: se realizaron 2 series; solo la primera tiene carga/reps/RIR. Gemelos no realizados. Se realizaron 3 ejercicios abdominales pendientes de identificar.",
+        "exercise_count": 7,
+        "planned_set_count": 11,
+        "recorded_set_count": 11,
+        "record_quality": "detailed_with_pending_details",
+        "performed_set_count_confirmed_before_abs": 12,
+        "pending_unstructured_work": {
+          "abdominal_exercises_performed": 3,
+          "details_pending": true
+        }
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Sentadilla búlgara en Smith",
+          "identity": {
+            "variant": "Smith",
+            "machine_settings": null,
+            "load_basis": "unknown_kg_basis"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": true,
+            "target_rir": null,
+            "rest": null,
+            "coach_cue": null
+          },
+          "result": {
+            "movement_notes": null,
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "20",
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "20",
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Abducción sentada en máquina",
+          "identity": {
+            "variant": "Máquina de abducción sentada",
+            "machine_settings": null,
+            "load_basis": "unknown_kg_basis"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 12,
+            "reps_max": 25,
+            "per_side": false,
+            "target_rir": null,
+            "rest": null,
+            "coach_cue": null
+          },
+          "result": {
+            "movement_notes": null,
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "36",
+                "reps": "12",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Press horizontal convergente / máquina",
+          "identity": {
+            "variant": "Máquina convergente",
+            "machine_settings": null,
+            "load_basis": "unknown_kg_basis"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": null,
+            "rest": null,
+            "coach_cue": null
+          },
+          "result": {
+            "movement_notes": "Se añadió una tercera serie por gusto. Tercera serie: 20 kg × 8; RIR no registrado.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "20",
+                "reps": "10",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "20",
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "20",
+                "reps": "8",
+                "rir": null
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Pullover en polea con brazos rectos",
+          "identity": {
+            "variant": "Polea",
+            "machine_settings": null,
+            "load_basis": "unknown_kg_basis"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": null,
+            "rest": null,
+            "coach_cue": null
+          },
+          "result": {
+            "movement_notes": "Se realizaron 2 series. Primera: 32 kg × 12 @2. Segunda confirmada como realizada, pero carga/repeticiones/RIR no registrados.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "32",
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": null,
+                "reps": null,
+                "rir": null
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Elevación lateral",
+          "identity": {
+            "variant": null,
+            "machine_settings": null,
+            "load_basis": "unknown_kg_basis"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": null,
+            "rest": null,
+            "coach_cue": null
+          },
+          "result": {
+            "movement_notes": null,
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "5",
+                "reps": "10",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "5",
+                "reps": "10",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Remo posterior con pecho apoyado",
+          "identity": {
+            "variant": "Pecho apoyado",
+            "machine_settings": null,
+            "load_basis": "unknown_kg_basis"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": null,
+            "rest": null,
+            "coach_cue": null
+          },
+          "result": {
+            "movement_notes": "RIR no registrado.",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "7.5",
+                "reps": "10",
+                "rir": null
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Gemelo con rodilla extendida",
+          "identity": {
+            "variant": null,
+            "machine_settings": null,
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": null,
+            "rest": null,
+            "coach_cue": null
+          },
+          "result": {
+            "movement_notes": "No realizado. En su lugar se hicieron 3 ejercicios abdominales aún sin identificar.",
+            "sets": []
+          }
+        }
+      ]
+    }
+  ],
+  "_reconciliation": {
+    "purpose": "Fuente acumulada canónica para Sources del proyecto.",
+    "merge_date": "2026-08-12",
+    "merge_policy": [
+      "Deduplicación por fecha, session.id y contenido.",
+      "Se conserva el registro más detallado y verificable cuando dos fuentes describen la misma sesión.",
+      "No se inventan cargas, repeticiones, RIR, ajustes de máquina ni ejercicios ausentes.",
+      "Los datos reconstruidos se etiquetan mediante record_quality/source_note.",
+      "Los valores literales de archivos originales se preservan aunque su interpretación sea incierta."
+    ],
+    "source_files": [
+      "historial-entrenamientos_este_chat_2026-08-12.json",
+      "historial_entrenamientos_reconstruido_hasta_2026-08-01.json",
+      "historial-entrenamientos-ia-reconciliado-2026-08-12.json"
+    ],
+    "known_gaps": [
+      {
+        "date": "2026-07-29",
+        "missing": [
+          "Ajustes de máquinas",
+          "Carga exacta de Rear Kick",
+          "Detalle exacto de series/cargas de abducción",
+          "RIR de hiperextensiones"
+        ]
+      },
+      {
+        "date": "2026-07-30",
+        "missing": [
+          "Ejercicios",
+          "series",
+          "cargas",
+          "repeticiones",
+          "RIR",
+          "duración"
+        ]
+      },
+      {
+        "date": "2026-08-01",
+        "missing": [
+          "Duración total",
+          "Ajustes exactos de varias máquinas",
+          "Variante exacta de gemelo"
+        ]
+      },
+      {
+        "date": "2026-08-03",
+        "missing": [
+          "Cargas",
+          "repeticiones",
+          "RIR",
+          "ajustes de máquinas",
+          "Número de series del jalón al pecho"
+        ]
+      },
+      {
+        "date": "2026-08-05",
+        "missing": [
+          "RIR del crunch",
+          "Interpretación/identidad precisa de la carga 0 del crunch",
+          "Gemelo prescrito en source_note pero no presente entre los ejercicios exportados"
+        ]
+      },
+      {
+        "date": "2026-08-12",
+        "missing": [
+          "Carga, repeticiones y RIR de la segunda serie de pullover",
+          "RIR de la tercera serie de press convergente",
+          "RIR del remo posterior",
+          "Identidad, series, repeticiones, carga y RIR de los 3 ejercicios abdominales",
+          "Ajustes/identidad precisa de varias máquinas"
+        ]
+      }
+    ],
+    "excluded_unverified_records": [
+      "RDL 80×9 @2",
+      "Curl femoral 60×10 @2",
+      "Remo 55×10 @1"
+    ]
+  }
+}

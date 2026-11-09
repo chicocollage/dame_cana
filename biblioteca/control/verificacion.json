@@ -1,0 +1,23 @@
+{
+  "fecha": "2026-10-09",
+  "version": "1.0",
+  "corpus_archivos": 42,
+  "rutas_origen": 81,
+  "copias_distintas": 72,
+  "hashes_origen_y_destino_verificados": true,
+  "enlaces_propios_comprobados": 37,
+  "fichas": 10,
+  "estados": {
+    "Propuesto": 8,
+    "Incorporado": 2
+  },
+  "fuentes_operativas_sin_cambios": {
+    "data/registro.json": "ebbea0b190a04fa4611a2803f396be74abe9b2e84f72eb4a14388034a412ec01",
+    "data/programa.json": "2f217a6de857f19d434cd41961b4acbd2117a46e5dcd0f351dedbd2b3239c91e",
+    "data/estado_y_decisiones.json": "9c484bc5a0c6a383c40ede103f7006a79df68ad5f068334a8da5f1245c51a080",
+    "data/maquinas.json": "ef0ee920c31900848ce595f5a8c2f5a878406a7fd920605e27884d05ae4ebad2",
+    "data/confirmaciones_usuario.json": "e0e87b50c1d2bb0f6c179a478e5f1e463eb83ae0144b11a2d92e037bd2db52d0"
+  },
+  "originales_movidos_o_borrados": 0,
+  "nota": "No valida enlaces históricos dentro de originales ni publicaciones científicas externas"
+}

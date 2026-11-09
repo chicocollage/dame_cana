@@ -1,0 +1,58 @@
+﻿Informe Completo: Dame Caña v3
+________________
+
+
+Este informe detalla la arquitectura, el funcionamiento y la adaptación personalizada del sistema de entrenamiento integral "Dame Caña v3". El objetivo del sistema es desarrollar un físico masculino proporcionado, fuertemente musculado, con un énfasis particular y distintivo en el desarrollo de los glúteos.
+1. Arquitectura y Gobierno del Sistema
+Dame Caña v3 opera mediante una separación estricta de dominios, garantizando que haya una única "fuente de verdad" para cada tipo de dato. Esta arquitectura evita contradicciones y reduce la fricción en el seguimiento.
+* Operativa Dinámica (DAME_CANA_OPERATIVO_v3): Esta es la capa principal que gobierna las decisiones en tiempo real. Contiene el estado actual, el programa vigente, y el registro preciso de las series ejecutadas.
+* Catálogos y Matrices (DAME_CANA_CATALOGOS_v3): Almacena la selección estructurada de ejercicios, sus posibles sustituciones, y la biblioteca de programas disponibles.
+* Capa de Gobierno (DAME_CANA_GEMINI_01_CORE_v3): Define el comportamiento del asistente (Gemini), el tono de la interacción, y las reglas maestras de persistencia de datos.
+* Manual Operativo (DAME_CANA_GEMINI_02_MANUAL_OPERATIVO_v3): Establece las directrices prácticas para la selección de máquinas, la progresión del volumen, y el protocolo fotográfico, entre otros.
+* Base Científica (DAME_CANA_GEMINI_03_CIENCIA_Y_BIBLIOTECA_v3): Recopila y sintetiza la evidencia científica que respalda las decisiones del sistema, separando claramente los hallazgos de los estudios de las inferencias prácticas aplicadas a tu caso particular.
+2. Adaptación Personal (El Perfil de Daniel)
+El sistema no aplica reglas genéricas, sino que calibra la evidencia científica a través de un "filtro personal" definido por tus características, tu historial y tus preferencias estables.
+El Objetivo Estético (El "Norte")
+El objetivo rector es construir un físico masculino excepcionalmente desarrollado, donde los glúteos constituyan la "firma corporal dominante". Esto se traduce en:
+* Prioridad 1: Máxima proyección posterior y plenitud superior del glúteo mayor.
+* Prioridad 2: Desarrollo de alto impacto en el tren inferior (piernas muy desarrolladas, con especial atención a los femorales). El objetivo no es reducir las piernas para que el glúteo destaque, sino lograr que el glúteo sea dominante dentro de un tren inferior potente.
+* Prioridad 3: Un marco superior fuerte (deltoides lateral/posterior y dorsal) que amplíe la silueta masculina y acentúe el contraste con la cintura.
+Contexto Fisiológico y Logístico
+Las prescripciones de entrenamiento se ajustan considerando los siguientes factores de tu perfil:
+* Experiencia y Continuidad: Tienes una larga trayectoria (desde los 20 años) pero con una continuidad adaptativa reciente irregular. Por tanto, el sistema valora la experiencia técnica (puedes ejecutar patrones complejos y medir el RIR con precisión) pero calibra el volumen inicial y la progresión basándose en tu rendimiento actual y comprobado.
+* Tolerancia: Tensión lumbar transitoria observada (ej. en el Peso Muerto Rumano), lo que dicta precaución en los saltos de carga en bisagras.
+* Recuperación y Nutrición: Dificultad para cubrir el gasto calórico con alimentos sólidos, lo que ha elevado el uso de calorías líquidas y "sustitutivos de comidas" (como el producto de Lidl) a herramientas prioritarias de adherencia. Un sueño irregular actúa como modificador clave para interpretar posibles estancamientos.
+* Entorno: El gimnasio es el entorno principal, relegando el entrenamiento en casa únicamente a sesiones de contingencia ("rescates").
+3. ¿Cómo Funciona la Programación (M4-3D v2.0)?
+La programación no es estática; es un proceso de "calibración longitudinal". El programa activo actual, M4-3D, organiza el volumen en tres días no consecutivos, distribuyendo la fatiga de los patrones principales de piernas.
+Estructura del Programa Activo
+Día
+	Enfoque Regional
+	Ejercicios Índice (Prioritarios)
+	A
+	Glúteo (Acortado) + Pecho + Dorsal
+	Hip Thrust en máquina, Sentadilla Hack (en prueba)
+	B
+	Cadena Posterior + Espalda Media
+	Peso Muerto Rumano (Smith), Curl Femoral Sentado
+	C
+	Glúteo Unilateral + Abducción + Torso
+	Sentadilla Búlgara (Smith), Abducción en máquina
+	Las "Palancas" de Progresión
+El sistema utiliza una "Doble Progresión" estricta antes de considerar añadir volumen (más series). El orden de intervención es:
+1. Asegurar Comparabilidad (misma máquina, misma base de carga, mismos ajustes).
+2. Mantener Técnica y ROM estables.
+3. Acertar el RIR (Repeticiones en Reserva) objetivo (actualmente estabilizado en 1-2 RIR para el trabajo base).
+4. Ganar Repeticiones dentro del rango prescrito.
+5. Aumentar la Carga con el salto mínimo disponible.
+Aumentar las series (volumen) es una herramienta reactiva que solo se emplea si hay estancamiento en cargas/repeticiones, la técnica es buena, la nutrición/sueño son adecuados y no hay dolor creciente.
+4. ¿Cómo se Usa el Sistema en el Día a Día?
+El diseño de Dame Caña v3 persigue una alta sofisticación interna pero una muy baja fricción administrativa para ti. Tu labor se centra en ejecutar y aportar datos brutos; el sistema analiza y estructura.
+El Flujo Operativo
+* Pedir el Entrenamiento: Solicitas la sesión ("¿Qué toca hoy?"). El sistema cruza el programa vigente (03), con tu última ejecución real (historial JSON) y las restricciones activas (02) para entregarte un formato limpio y directamente copiable en tu app (Note v1), incluyendo tus referencias de carga previas y comparables.
+* Ejecución y Registro: Vas al gimnasio y anotas en tu app la carga, las repeticiones, y el RIR. Anotas un comentario solo si hay una variante de máquina, dolor, o un ajuste que debamos recordar.
+* Integración: Exportas periódicamente tu JSON de historial. El sistema lo ingiere, actualiza las tendencias de rendimiento, audita si estás progresando y prepara las recomendaciones para el próximo ciclo. Tú no tienes que rellenar hojas de cálculo.
+* Eventos Puntuales: Si pruebas una máquina nueva (ej. una Power Squat), envías una foto o los datos. El sistema evalúa su geometría y, tras tres exposiciones, emite un "veredicto de encaje" (Verde/Ámbar/Rojo) para decidir si se convierte en un ejercicio índice que sustituya al actual.
+
+
+Resumen: Dame Caña v3 es un motor de decisiones impulsado por tus datos. No aplica dogmas universales, sino que formula hipótesis basadas en evidencia, las testa contigo en el gimnasio, evalúa los resultados reales (progreso en la barra, métricas visuales y antropométricas) y ajusta la dirección en consecuencia.
