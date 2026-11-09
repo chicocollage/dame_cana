@@ -2918,9 +2918,190 @@
           "confianza": "baja"
         }
       ]
+    },
+    "2026-11-09": {
+      "estado": "abierto",
+      "ingestas": [
+        {
+          "hora": "11:00",
+          "texto": "4 huevos, 110g claras de huevo",
+          "items": [
+            {
+              "id": "huevo_l",
+              "nombre": "Huevo clase L",
+              "racion": "unidad",
+              "n": 4.0,
+              "gramos_est": 220.0,
+              "kcal": [
+                289.4,
+                339.8
+              ],
+              "prot": [
+                25.5,
+                29.9
+              ],
+              "carb": [
+                1.4,
+                1.7
+              ],
+              "grasa": [
+                20.0,
+                23.5
+              ],
+              "eur_est": 0.8,
+              "confianza": "alta"
+            },
+            {
+              "id": "claras_de_huevo",
+              "nombre": "Claras de huevo",
+              "racion": "racion",
+              "n": 1.0,
+              "gramos_est": 100.0,
+              "kcal": [
+                37.5,
+                62.5
+              ],
+              "prot": [
+                8.2,
+                13.8
+              ],
+              "carb": [
+                0.5,
+                0.9
+              ],
+              "grasa": [
+                0.2,
+                0.2
+              ],
+              "eur_est": 0.0,
+              "confianza": "baja"
+            }
+          ],
+          "desconocidos": [],
+          "kcal_est": [
+            326.9,
+            402.3
+          ],
+          "prot_est": [
+            33.7,
+            43.7
+          ],
+          "carb_est": [
+            1.9,
+            2.6
+          ],
+          "grasa_est": [
+            20.2,
+            23.7
+          ],
+          "eur_est": 0.8,
+          "confianza": "baja"
+        },
+        {
+          "hora": "16:18",
+          "texto": "batido de comida lidl, 50g harina de avena, 30g crema de cacahuete",
+          "items": [
+            {
+              "id": "batido_sustitutivo_comida_500ml_lidl",
+              "nombre": "Batido sustitutivo comida 500ml (Lidl)",
+              "racion": "botella",
+              "n": 1.0,
+              "gramos_est": 500.0,
+              "kcal": [
+                460.0,
+                540.0
+              ],
+              "prot": [
+                32.2,
+                37.8
+              ],
+              "carb": [
+                31.3,
+                36.7
+              ],
+              "grasa": [
+                21.2,
+                24.8
+              ],
+              "eur_est": 0.0,
+              "confianza": "alta"
+            },
+            {
+              "id": "avena",
+              "nombre": "Copos de avena",
+              "racion": "tazon",
+              "n": 1.0,
+              "gramos_est": 50.0,
+              "kcal": [
+                159.4,
+                215.6
+              ],
+              "prot": [
+                5.7,
+                7.8
+              ],
+              "carb": [
+                25.5,
+                34.5
+              ],
+              "grasa": [
+                3.0,
+                4.0
+              ],
+              "eur_est": 0.08,
+              "confianza": "media"
+            },
+            {
+              "id": "cacahuetes",
+              "nombre": "Cacahuetes tostados / crema de cacahuete",
+              "racion": "puñado",
+              "n": 1.0,
+              "gramos_est": 30.0,
+              "kcal": [
+                127.6,
+                212.6
+              ],
+              "prot": [
+                5.8,
+                9.8
+              ],
+              "carb": [
+                3.6,
+                6.0
+              ],
+              "grasa": [
+                11.0,
+                18.4
+              ],
+              "eur_est": 0.1,
+              "confianza": "baja"
+            }
+          ],
+          "desconocidos": [],
+          "kcal_est": [
+            747.0,
+            968.2
+          ],
+          "prot_est": [
+            43.7,
+            55.4
+          ],
+          "carb_est": [
+            60.4,
+            77.2
+          ],
+          "grasa_est": [
+            35.2,
+            47.2
+          ],
+          "eur_est": 0.18,
+          "confianza": "baja"
+        }
+      ]
     }
   },
   "desconocidos": [
-    "140g de claras"
+    "140g de claras",
+    "batido de comida lidl"
   ]
 }
