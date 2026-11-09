@@ -3121,6 +3121,181 @@
           ],
           "eur_est": 0.18,
           "confianza": "baja"
+        },
+        {
+          "hora": "21:46",
+          "texto": "65g pechuga pollo, 130g arroz cocido, 50g havarti light, 93g empanadillas atun, 104g patatas ralladas, natilla proteica 12.5g",
+          "items": [
+            {
+              "id": "pechuga_pollo",
+              "nombre": "Pechuga de pollo",
+              "racion": "65g",
+              "n": 1.0,
+              "gramos_est": 65.0,
+              "kcal": [
+                60.8,
+                82.2
+              ],
+              "prot": [
+                12.7,
+                17.2
+              ],
+              "carb": [
+                0.0,
+                0.0
+              ],
+              "grasa": [
+                0.8,
+                1.2
+              ],
+              "eur_est": 0.52,
+              "confianza": "alta"
+            },
+            {
+              "id": "arroz_blanco",
+              "nombre": "Arroz blanco cocido",
+              "racion": "130g",
+              "n": 1.0,
+              "gramos_est": 130.0,
+              "kcal": [
+                143.6,
+                194.4
+              ],
+              "prot": [
+                3.0,
+                4.0
+              ],
+              "carb": [
+                30.9,
+                41.9
+              ],
+              "grasa": [
+                0.3,
+                0.5
+              ],
+              "eur_est": 0.15,
+              "confianza": "alta"
+            },
+            {
+              "id": "queso_lonchas_cremoso_light_havarti_hacendado",
+              "nombre": "Queso lonchas cremoso light Havarti (Hacendado)",
+              "racion": "50g",
+              "n": 1.0,
+              "gramos_est": 50.0,
+              "kcal": [
+                122.8,
+                144.2
+              ],
+              "prot": [
+                12.4,
+                14.6
+              ],
+              "carb": [
+                0.7,
+                0.9
+              ],
+              "grasa": [
+                7.8,
+                9.2
+              ],
+              "eur_est": 0.45,
+              "confianza": "alta"
+            },
+            {
+              "id": "empanadillas_atun",
+              "nombre": "Empanadillas de atun",
+              "racion": "93g",
+              "n": 1.0,
+              "gramos_est": 93.0,
+              "kcal": [
+                218.2,
+                256.1
+              ],
+              "prot": [
+                4.8,
+                5.6
+              ],
+              "carb": [
+                23.9,
+                28.1
+              ],
+              "grasa": [
+                12.0,
+                14.1
+              ],
+              "eur_est": 0.8,
+              "confianza": "alta"
+            },
+            {
+              "id": "patatas_ralladas_prefritas",
+              "nombre": "Patatas ralladas condimentadas pre-fritas (Crispy Pops / Rosti)",
+              "racion": "104g",
+              "n": 1.0,
+              "gramos_est": 104.0,
+              "kcal": [
+                162.7,
+                191.0
+              ],
+              "prot": [
+                2.0,
+                2.4
+              ],
+              "carb": [
+                20.1,
+                23.6
+              ],
+              "grasa": [
+                7.7,
+                9.0
+              ],
+              "eur_est": 0.4,
+              "confianza": "alta"
+            },
+            {
+              "id": "natilla_high_protein_milbona",
+              "nombre": "Natilla High Protein (Milbona)",
+              "racion": "125g",
+              "n": 1.0,
+              "gramos_est": 125.0,
+              "kcal": [
+                94.3,
+                110.7
+              ],
+              "prot": [
+                11.5,
+                13.5
+              ],
+              "carb": [
+                9.2,
+                10.8
+              ],
+              "grasa": [
+                1.1,
+                1.4
+              ],
+              "eur_est": 0.85,
+              "confianza": "alta"
+            }
+          ],
+          "desconocidos": [],
+          "kcal_est": [
+            802.4,
+            978.6
+          ],
+          "prot_est": [
+            46.4,
+            57.3
+          ],
+          "carb_est": [
+            84.8,
+            105.3
+          ],
+          "grasa_est": [
+            29.7,
+            35.4
+          ],
+          "eur_est": 3.17,
+          "confianza": "alta"
         }
       ]
     }

@@ -1499,6 +1499,55 @@
         "carbohidrato",
         "lidl"
       ]
+    },
+    {
+      "id": "empanadillas_atun",
+      "nombre": "Empanadillas de atun",
+      "alias": [
+        "empanadillas",
+        "empanadilla",
+        "empanadillas de atun"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "unidad": 30.0,
+        "racion": 90.0
+      },
+      "por_100g": {
+        "kcal": 255.0,
+        "prot": 5.6,
+        "carb": 28.0,
+        "grasa": 14.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "patatas_ralladas_prefritas",
+      "nombre": "Patatas ralladas condimentadas pre-fritas (Crispy Pops / Rosti)",
+      "alias": [
+        "patatas ralladas",
+        "crispy pops",
+        "patatas prefritas"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "racion": 100.0
+      },
+      "por_100g": {
+        "kcal": 170.0,
+        "prot": 2.1,
+        "carb": 21.0,
+        "grasa": 8.0,
+        "fibra": 2.3
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
     }
   ]
 }
