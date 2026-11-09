@@ -30,6 +30,7 @@ La rutina está subordinada a evidencia pertinente, perfil, objetivos, biomecán
   1. Bloque Note v1 (`docs/FORMATO_SESION_ENTRENADOR_APP.md`) encabezado por `# Día A/B/C/D/E`, separando prescripción, `Último registro:` fechado e indicaciones `Hoy:` (indicando fecha de corte, incertidumbre y criterio de revisión fuera del bloque; avisar que revise el borrador en la PWA).
   2. Segundo bloque copiable independiente (```text ... ```) con el **Protocolo de calentamiento** del día: 1) Movilidad activa y preparación articular/tendinosa (3–4 min; incluyendo uso opcional de mini pistola percutora si hay rigidez), y 2) Rampas neuromusculares de aproximación sin fatiga (`RIR > 4`).
 
-## Alcance
+## Alcance y Respaldo Remoto
 
 Operación 100% local en Python sin servicios externos; ChatGPT/Codex retirados. Drive es solo recepción externa de la PWA y respaldo pasivo. No sobrescribas fuentes originales ni modifiques archivos sin verificar dependencias y dejar respaldo reversible.
+- **Sincronización con GitHub:** Tras registrar una sesión de entrenamiento ejecutada, cerrar la nutrición del día o modificar datos maestros canónicos, el asistente debe realizar automáticamente git add, git commit y git push origin main para mantener el repositorio respaldado sin requerir intervención manual.
