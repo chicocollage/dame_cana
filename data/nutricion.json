@@ -2924,7 +2924,7 @@
       "ingestas": [
         {
           "hora": "11:00",
-          "texto": "4 huevos, 110g claras de huevo",
+          "texto": "4 huevos, 110g claras de huevo, 2 lonchas havarti light",
           "items": [
             {
               "id": "huevo_l",
@@ -2975,24 +2975,49 @@
               ],
               "eur_est": 0.0,
               "confianza": "baja"
+            },
+            {
+              "id": "queso_lonchas_cremoso_light_havarti_hacendado",
+              "nombre": "Queso lonchas cremoso light Havarti (Hacendado)",
+              "racion": "loncha",
+              "n": 2.0,
+              "gramos_est": 45.0,
+              "kcal": [
+                90.1,
+                150.2
+              ],
+              "prot": [
+                9.1,
+                15.2
+              ],
+              "carb": [
+                0.5,
+                0.9
+              ],
+              "grasa": [
+                5.7,
+                9.6
+              ],
+              "eur_est": 0.0,
+              "confianza": "baja"
             }
           ],
           "desconocidos": [],
           "kcal_est": [
-            326.9,
-            402.3
+            417.0,
+            552.5
           ],
           "prot_est": [
-            33.7,
-            43.7
+            42.8,
+            58.9
           ],
           "carb_est": [
-            1.9,
-            2.6
+            2.4,
+            3.5
           ],
           "grasa_est": [
-            20.2,
-            23.7
+            25.9,
+            33.3
           ],
           "eur_est": 0.8,
           "confianza": "baja"
