@@ -1,0 +1,399 @@
+{
+  "schema": "training_history.reconstructed.v1",
+  "exported_at": "2026-08-12T09:44:00+02:00",
+  "source_cutoff": "2026-08-01",
+  "source_note": "Historial reconstruido únicamente a partir de registros reales presentes en los archivos del proyecto. Los campos no documentados se mantienen como null. No es una exportación original de la app training_history.v1.",
+  "summary": {
+    "session_count": 3,
+    "detailed_session_count": 2,
+    "incomplete_session_count": 1,
+    "date_from": "2026-07-29",
+    "date_to": "2026-08-01",
+    "excluded_unverified_records": [
+      "RDL 80×9 @2",
+      "Curl femoral 60×10 @2",
+      "Remo 55×10 @1"
+    ]
+  },
+  "sessions": [
+    {
+      "id": "reconstructed-2026-07-29-exploratoria",
+      "date": "2026-07-29",
+      "title": "Sesión exploratoria de gimnasio",
+      "program": "Exploratoria",
+      "day": "Pre-M4",
+      "finished": true,
+      "record_quality": "partial_but_real",
+      "exercise_count": 5,
+      "notes": "Primera referencia real de gimnasio. Ajustes de máquinas y dolor no registrados.",
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust",
+          "identity": {
+            "variant": "Máquina hip thrust/glute drive con discos",
+            "machine_settings": null,
+            "load_basis": "total_kg_assumed_from_record"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 40,
+                "reps": 12,
+                "rir": 2,
+                "set_type": "work"
+              },
+              {
+                "index": 2,
+                "load_kg": 60,
+                "reps": 9,
+                "rir": 2,
+                "set_type": "work"
+              },
+              {
+                "index": 3,
+                "load_kg": 60,
+                "reps": 9,
+                "rir": 2,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "Primera referencia; faltan ajustes y dolor."
+          }
+        },
+        {
+          "index": 2,
+          "name": "Bulgarian split squat",
+          "identity": {
+            "variant": "Smith/multipower",
+            "machine_settings": null,
+            "load_basis": "recorded_kg_weight_effective_unknown"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 20,
+                "reps_per_side": 10,
+                "rir": "0–1",
+                "set_type": "work"
+              },
+              {
+                "index": 2,
+                "load_kg": 20,
+                "reps_per_side": 10,
+                "rir": "0–1",
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "No asumir peso efectivo de barra/guía; montaje pendiente."
+          }
+        },
+        {
+          "index": 3,
+          "name": "Patada posterior",
+          "identity": {
+            "variant": "Rear Kick",
+            "brand_model": "Matrix (identificación parcial)",
+            "machine_settings": null,
+            "load_basis": "unknown"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": null,
+                "reps_per_side": 10,
+                "rir": 2,
+                "set_type": "work"
+              },
+              {
+                "index": 2,
+                "load_kg": null,
+                "reps_per_side": 10,
+                "rir": 2,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "Carga no registrada; dificultad para aislar/localizar el glúteo."
+          }
+        },
+        {
+          "index": 4,
+          "name": "Abducción sentada",
+          "identity": {
+            "variant": "Máquina de abducción sentada",
+            "machine_settings": null,
+            "load_basis": "machine_stack_kg"
+          },
+          "result": {
+            "sets": [],
+            "aggregate_record": {
+              "load_kg_range": [
+                18,
+                22
+              ],
+              "reps_recorded": 20,
+              "rir": 0,
+              "series_count": null
+            },
+            "movement_notes": "Número de series y correspondencia entre 18 y 22 kg no registrados; no se fabrican series individuales."
+          }
+        },
+        {
+          "index": 5,
+          "name": "Hiperextensión 45° unilateral",
+          "identity": {
+            "variant": "Banco 45°",
+            "machine_settings": null,
+            "load_basis": "bodyweight"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load": "autocarga",
+                "reps_per_side": 20,
+                "rir": null,
+                "set_type": "work"
+              },
+              {
+                "index": 2,
+                "load": "autocarga",
+                "reps_per_side": 20,
+                "rir": null,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "RIR y limitante no registrados."
+          }
+        }
+      ]
+    },
+    {
+      "id": "reconstructed-2026-07-30-general",
+      "date": "2026-07-30",
+      "title": "Entrenamiento general sin desglose",
+      "program": null,
+      "day": null,
+      "finished": true,
+      "record_quality": "real_but_no_exercise_breakdown",
+      "exercise_count": null,
+      "exercises": [],
+      "notes": "Entrenamiento confirmado como realizado y descrito como 'bastante bien'. No constan ejercicios, cargas, series, repeticiones, RIR, duración ni dolor. No se asigna volumen regional."
+    },
+    {
+      "id": "reconstructed-2026-08-01-m4-b",
+      "date": "2026-08-01",
+      "title": "M4 integral 3D — Día B",
+      "program": "M4 integral 3D",
+      "day": "B",
+      "finished": true,
+      "record_quality": "detailed_real",
+      "exercise_count": 7,
+      "valid_work_set_count": 11,
+      "recorded_set_count_including_approximation": 12,
+      "pre_session_recovery": {
+        "rested": true,
+        "legs_recovered": true,
+        "glute_soreness_0_10": 2,
+        "lumbar_pain_0_10": 0,
+        "hip_pain_0_10": 0,
+        "knee_pain_0_10": 0
+      },
+      "session_notes": "Sensación global ligera, sin gran agotamiento; percepción de poder hacer más. Duración total no registrada.",
+      "exercises": [
+        {
+          "index": 1,
+          "exercise_id": "G11",
+          "name": "Peso muerto rumano",
+          "identity": {
+            "variant": "Smith/multipower",
+            "machine_settings": null,
+            "load_basis": "recorded_kg"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 40,
+                "reps": 8,
+                "rir": 4,
+                "set_type": "work"
+              },
+              {
+                "index": 2,
+                "load_kg": 40,
+                "reps": 10,
+                "rir": 2,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "Cuádriceps demasiado presentes; ligera sobrecarga lumbar transitoria al finalizar. Rango/posición por recalibrar."
+          }
+        },
+        {
+          "index": 2,
+          "exercise_id": "L02",
+          "name": "Curl femoral sentado",
+          "identity": {
+            "variant": "Máquina de curl femoral sentado",
+            "machine_settings": null,
+            "load_basis": "machine_stack_kg"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 23,
+                "reps": 10,
+                "rir": 2,
+                "set_type": "work"
+              },
+              {
+                "index": 2,
+                "load_kg": 23,
+                "reps": 10,
+                "rir": 2,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "Referencia válida inicial."
+          }
+        },
+        {
+          "index": 3,
+          "exercise_id": "B06",
+          "name": "Remo con pecho apoyado",
+          "identity": {
+            "variant": "Máquina con pecho apoyado",
+            "machine_settings": null,
+            "load_basis": "machine_kg"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 40,
+                "reps": 8,
+                "rir": 3,
+                "set_type": "work"
+              },
+              {
+                "index": 2,
+                "load_kg": 40,
+                "reps": 8,
+                "rir": 3,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "Revisar altura/ajustes de la máquina en la próxima exposición."
+          }
+        },
+        {
+          "index": 4,
+          "exercise_id": "S04",
+          "name": "Peck-deck inverso",
+          "identity": {
+            "variant": "Peck-deck inverso",
+            "machine_settings": null,
+            "load_basis": "machine_stack_kg"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 23,
+                "reps": 15,
+                "rir": 3,
+                "set_type": "work"
+              },
+              {
+                "index": 2,
+                "load_kg": 23,
+                "reps": 15,
+                "rir": 3,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "Enfoque consciente en deltoides posterior; seguir comprobando ajuste y trayectoria."
+          }
+        },
+        {
+          "index": 5,
+          "exercise_id": "A03",
+          "name": "Curl predicador",
+          "identity": {
+            "variant": "Máquina de curl predicador",
+            "machine_settings": null,
+            "load_basis": "machine_stack_kg"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 23,
+                "reps": 10,
+                "rir": 4,
+                "set_type": "approximation"
+              },
+              {
+                "index": 2,
+                "load_kg": 36,
+                "reps": 10,
+                "rir": 2,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "23×10 @4 reclasificada como aproximación; 36×10 @2 es la serie válida."
+          }
+        },
+        {
+          "index": 6,
+          "exercise_id": "L01",
+          "name": "Extensión de rodilla",
+          "identity": {
+            "variant": "Máquina de extensión de rodilla",
+            "machine_settings": null,
+            "load_basis": "machine_stack_kg"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 23,
+                "reps": 13,
+                "rir": 2,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "Incluyó una pausa dentro de la serie; próxima exposición hacer serie continua para comparabilidad."
+          }
+        },
+        {
+          "index": 7,
+          "exercise_id": null,
+          "name": "Gemelo con rodilla extendida",
+          "identity": {
+            "variant": null,
+            "machine_settings": null,
+            "load_basis": "recorded_kg"
+          },
+          "result": {
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": 40,
+                "reps": 15,
+                "rir": 2,
+                "set_type": "work"
+              }
+            ],
+            "movement_notes": "Rango completo; velocidad modulada; variante exacta pendiente."
+          }
+        }
+      ]
+    }
+  ]
+}

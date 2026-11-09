@@ -1,0 +1,5640 @@
+{
+  "schema": "training_history.v1",
+  "exported_at": "2026-10-06T09:33:35.807Z",
+  "session_schema": "training_log.v1",
+  "summary": {
+    "session_count": 18,
+    "finished_session_count": 14,
+    "recorded_set_count": 219,
+    "date_from": "2026-08-18T17:27:35.220Z",
+    "date_to": "2026-10-02T12:24:57.478Z"
+  },
+  "sessions": [
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "msyxr22c-4d6cx1",
+        "title": "Sesión libre",
+        "date": "2026-08-18T17:27:35.220Z",
+        "updated_at": "2026-08-18T17:27:35.220Z",
+        "finished": false,
+        "source_note": "",
+        "exercise_count": 0,
+        "planned_set_count": 0,
+        "recorded_set_count": 0
+      },
+      "exercises": []
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mt0n152u-hrygmg",
+        "title": "Día B — Cadena Posterior & Tracción / Isquios",
+        "date": "2026-08-19T22:03:02.262Z",
+        "updated_at": "2026-08-19T22:03:02.263Z",
+        "finished": false,
+        "source_note": "",
+        "exercise_count": 7,
+        "planned_set_count": 18,
+        "recorded_set_count": 0
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Peso muerto rumano en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Bisagra de cadera pura, rodillas semiflexionadas."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Curl femoral sentado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Almohadilla apretada al muslo, pelvis estable."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Remo convergente con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Pecho en cojín, tracción escapular sin lumbar."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Peck-deck inverso",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Asiento regulado, brazos casi rectos."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Curl predicador en cable o máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Apoyo a 45°, no despegar codos."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Extensión de rodilla",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Eje alineado con rodilla, pausa arriba."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Elevación de talones de pie en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Pausa abajo en estiramiento completo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mt1sw8s9-k67xzz",
+        "title": "Sesión libre",
+        "date": "2026-08-20T17:34:57.662Z",
+        "updated_at": "2026-08-20T17:34:57.662Z",
+        "finished": false,
+        "source_note": "",
+        "exercise_count": 0,
+        "planned_set_count": 0,
+        "recorded_set_count": 0
+      },
+      "exercises": []
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mt1uya1u-q3doq6",
+        "title": "Día C — Unilateral & Densidad / Glúteo",
+        "date": "2026-08-20T18:32:31.842Z",
+        "updated_at": "2026-08-20T18:32:31.842Z",
+        "finished": false,
+        "source_note": "",
+        "exercise_count": 7,
+        "planned_set_count": 18,
+        "recorded_set_count": 0
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Bulgarian split squat en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "per_side_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": true,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Tronco levemente inclinado, empezar pierna débil."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Abducción de cadera en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 25,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Pelvis pegada al respaldo, pausa en apertura."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Press convergente horizontal",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Recorrido completo y tolerado."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Jalón con brazos rectos (Pullover cable)",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Codos ligeramente flexionados, costillas abajo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Elevación lateral unilateral en cable",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable",
+            "machine_settings": "",
+            "load_basis": "per_side_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Recalibrar carga para llegar al rango sin fallo técnico."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Remo posterior con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Codos abiertos a 60°, tracción amplia."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Gemelo en prensa con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "En prensa o de pie, ritmo controlado."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mt2jhvki-uf6g4h",
+        "title": "Día C",
+        "date": "2026-08-21T05:59:36.978Z",
+        "updated_at": "2026-08-21T08:39:04.647Z",
+        "finished": true,
+        "source_note": "Día C — Glúteo unilateral + abducción + torso + pantorrilla\n​Sentadilla búlgara en Smith — 3 × 8–12/lado\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 20 kg × 10 @1 · 20 kg × 10 @1, el 12/08.\nHoy: Empezar por el lado menos competente; apoyo y montaje reproducibles. No perseguir fallo técnico.\n​Abducción sentada en máquina — 3 × 12–25\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 36 kg × 12 @2 · 36 kg × 12 @2, el 12/08.\nRegistra: Asiento y recorrido para confirmar ajustes.\n​Press horizontal convergente / máquina — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 20 kg × 10 @2 · 20 kg × 10 @1 · 20 kg × 8, el 12/08.\n​Pullover en polea con brazos rectos — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 32 kg × 12 @2, el 12/08.\nRegistra: Polea, agarre y base de carga.\n​Elevación lateral — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 23 kg × 15 @2 · 23 kg × 15 @1, el 16/08.\nHoy: Recalibrar carga si no se alcanza el límite inferior sin llegar al fallo.\n​Remo posterior con pecho apoyado — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 7,5 kg × 10, el 12/08.\nHoy: Codos separados y pecho apoyado.\n​Gemelo con rodilla extendida — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 60 kg × 15 · 60 kg × 15, el 18/08.",
+        "exercise_count": 7,
+        "planned_set_count": 16,
+        "recorded_set_count": 15
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "​Sentadilla búlgara en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: Empezar por el lado menos competente; apoyo y montaje reproducibles. No perseguir fallo técnico."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "​Abducción sentada en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "Asiento y",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 25,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Registra: Asiento y recorrido para confirmar ajustes."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "3"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "​Press horizontal convergente / máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "per_side_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "​Pullover en polea con brazos rectos",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Registra: Polea, agarre y base de carga."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "32",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "​Elevación lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Maquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Recalibrar carga si no se alcanza el límite inferior sin llegar al fallo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "3"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "​Remo posterior con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Codos separados y pecho apoyado."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "​Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mt2sisvi-f18tjx",
+        "title": "Sesión libre",
+        "date": "2026-08-21T10:12:16.687Z",
+        "updated_at": "2026-08-21T10:39:46.702Z",
+        "finished": true,
+        "source_note": "",
+        "exercise_count": 1,
+        "planned_set_count": 1,
+        "recorded_set_count": 0
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "locura del fraselargapara comprobaciónes",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": null,
+            "reps_max": null,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": ""
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mt5hniss-pe1osb",
+        "title": "Día A",
+        "date": "2026-08-23T07:31:19.660Z",
+        "updated_at": "2026-08-23T09:45:27.658Z",
+        "finished": true,
+        "source_note": "Día A — Glúteo + pecho/dorsal + hombro/tríceps + abdomen\nHip thrust en máquina — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 60 kg × 10 @2 · 60 kg × 9 @1 · 60 kg × 9 @0, el 16/08.\nHoy: usar 60 kg como carga base buscando 8–10 reps en las 3 series dentro de RIR 1–2; evitar el fallo deliberado\nObjetivo: bloqueo exclusivo mediante extensión de cadera, pelvis estable y recorrido reproducible sin extensión lumbar\nSentadilla Hack Matrix — 2 × 8–12\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 20 kg × 11 @1, el 16/08.\nHoy: estimación de 20–25 kg para 8–12 reps a RIR 1–2; controlar la inversión en la parte baja sin rebotar\nProfundidad: máxima útil y reproducible sin perder apoyo pélvico ni despegar la zona lumbar\nRegistra: modelo exacto de máquina, topes, posición de pies y carga añadida\nPress inclinado moderado — 3 × 6–10\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 40 kg × 10 @2 · 50 kg × 8 @1, el 16/08 (convergente).\nHoy: iniciar con 50 kg buscando 8–10 reps; mantener 50 kg o probar 52,5–55 kg solo si el salto es pequeño y el hombro se mantiene perfectamente estable\nS1a opcional con jalón medio o neutro\nJalón medio o neutro — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 29 kg × 12 @1 · 36 kg × 11 @1 · 36 kg × 10 @1, el 16/08.\nHoy: carga base de 36 kg en las 3 series buscando 10–12 reps a RIR 1–2; recorrido fluido sin balanceo de torso\nS1b opcional con press inclinado moderado\nElevación lateral — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 23 kg × 15 @2 · 23 kg × 15 @1, el 16/08 (máquina).\nHoy: en máquina usar 23 kg buscando 15–20 reps estrictas; si usas polea a 1 mano (5 kg), acumular 18–20 reps con pausa arriba antes de forzar el salto de placa\nS2a opcional con extensión de tríceps overhead\nExtensión de tríceps overhead — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 18 kg × 7 @0 · 14 kg × 10 @1, el 16/08 (polea con cuerda, 1 mano).\nHoy: carga estimada de 14 kg para 10–13 reps a RIR 1–2; 18 kg queda descartado por recortar reps fuera de rango\nS2b opcional con elevación lateral\nCrunch cargado — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 29 kg × 12 @2 · 29 kg × 12 @2, el 16/08 (máquina).\nHoy: mantener 29 kg para 12–15 reps a RIR 1–2 con flexión abdominal controlada y cadencia estricta\nRegistra: foto o ajustes si decides cambiar a polea alta con cuerda",
+        "exercise_count": 7,
+        "planned_set_count": 18,
+        "recorded_set_count": 17
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: usar 60 kg como carga base buscando 8–10 reps en las 3 series dentro de RIR 1–2; evitar el fallo deliberado · Objetivo: bloqueo exclusivo mediante extensión de cadera, pelvis estable y recorrido reproducible sin extensión lumbar"
+          },
+          "result": {
+            "movement_notes": "Parece que controlo mejor el movimiento",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Sentadilla Hack Matrix",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina Matrix",
+            "machine_settings": "topes · posición de",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: estimación de 20–25 kg para 8–12 reps a RIR 1–2; controlar la inversión en la parte baja sin rebotar · Profundidad: máxima útil y reproducible sin perder apoyo pélvico ni despegar la zona lumbar · Registra: modelo exacto de máquina, topes, posición de pies y carga añadida"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Press inclinado moderado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "Asiento 2",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: iniciar con 50 kg buscando 8–10 reps; mantener 50 kg o probar 52,5–55 kg solo si el salto es pequeño y el hombro se mantiene perfectamente estable · Nota: S1a opcional con jalón medio o neutro"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "7",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "6",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Jalón medio o neutro",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Polea",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: carga base de 36 kg en las 3 series buscando 10–12 reps a RIR 1–2; recorrido fluido sin balanceo de torso · Nota: S1b opcional con press inclinado moderado"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "13",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Elevación lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Maquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: en máquina usar 23 kg buscando 15–20 reps estrictas; si usas polea a 1 mano (5 kg), acumular 18–20 reps con pausa arriba antes de forzar el salto de placa · Nota: S2a opcional con extensión de tríceps overhead"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "18",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "20",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Extensión de tríceps overhead",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: carga estimada de 14 kg para 10–13 reps a RIR 1–2; 18 kg queda descartado por recortar reps fuera de rango · Nota: S2b opcional con elevación lateral"
+          },
+          "result": {
+            "movement_notes": "A un mano, con cuerda",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Crunch cargado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: mantener 29 kg para 12–15 reps a RIR 1–2 con flexión abdominal controlada y cadencia estricta · Registra: foto o ajustes si decides cambiar a polea alta con cuerda"
+          },
+          "result": {
+            "movement_notes": "Cadencia estricta",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mtb82l2r-31iccy",
+        "title": "Día B",
+        "date": "2026-08-27T07:49:43.347Z",
+        "updated_at": "2026-08-27T08:49:26.771Z",
+        "finished": true,
+        "source_note": "Día B — Cadena posterior + espalda + deltoides posterior + brazos/pierna\n​Peso muerto rumano en Smith — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 40 kg × 10 @2 · 50 kg × 10 @1 · 50 kg × 10 @1, el 18/08.\nBisagra real; tensión posterior; no fabricar ROM con columna. Si reaparece dominancia de cuádriceps o carga lumbar, detener progresión y recalibrar.\n​Curl femoral sentado — 3 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 23 kg × 10 @2 · 29 kg × 10 @1 · 29 kg × 10 @1, el 18/08.\nPelvis sujeta; mantener variante/máquina comparable.\n​Remo con pecho apoyado — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 50 kg × 10 @1 · 50 kg × 10 @1 · 50 kg × 10 @1, el 18/08.\nPecho apoyado; no limitar por lumbar.\nRegistra: ajustes de la máquina.\n​Peck-deck inverso — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 23 kg × 15 @2 · 23 kg × 15 @2 · 23 kg × 15 @2, el 18/08.\nTrayectoria estable; deltoides posterior como objetivo principal.\n​Curl predicador — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 36 kg × 10 @2, el 01/08.\nCodo cómodo; no convertir aproximaciones en series productivas.\n​Extensión de rodilla — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 36 kg × 10 @1 · 36 kg × 10 @1, el 18/08.\nSerie continua y comparable; eje de máquina alineado.\n​Gemelo con rodilla extendida — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 60 kg × 15 · 60 kg × 15, el 18/08.\nROM controlado.\nRegistra: identificar variante antes de comparar cargas.",
+        "exercise_count": 7,
+        "planned_set_count": 17,
+        "recorded_set_count": 16
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "​Peso muerto rumano en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Nota: Bisagra real; tensión posterior; no fabricar ROM con columna. Si reaparece dominancia de cuádriceps o carga lumbar, detener progresión y recalibrar."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "​Curl femoral sentado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: Pelvis sujeta; mantener variante/máquina comparable."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "​Remo con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Nota: Pecho apoyado; no limitar por lumbar. · Registra: ajustes de la máquina."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "​Peck-deck inverso",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: Trayectoria estable; deltoides posterior como objetivo principal."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Curl kinesiologico mancuerna",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: Codo cómodo; no convertir aproximaciones en series productivas."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "10",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "10",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "​Extensión de rodilla",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: Serie continua y comparable; eje de máquina alineado."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "​Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: ROM controlado. · Registra: identificar variante antes de comparar cargas."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mtban7s7-musmsz",
+        "title": "Día C",
+        "date": "2026-08-27T09:01:45.127Z",
+        "updated_at": "2026-08-30T11:22:41.953Z",
+        "finished": true,
+        "source_note": "Día C — Glúteo unilateral + abducción + torso + pantorrilla\n​Sentadilla búlgara en Smith — 3 × 8–12/lado\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 30 kg × 9 @0 · 30 kg × 8 @0, el 21/08.\nHoy: Llegaste a RIR 0; intenta mantener 30 kg gestionando el esfuerzo para dejar RIR 1–2, o reduce un poco si no alcanzas 8 repeticiones válidas.\nEmpezar por lado menos competente; apoyo y montaje reproducibles; no perseguir fallo técnico.\n​Abducción sentada en máquina — 3 × 12–25\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 36 kg × 12 @3 · 43 kg × 12 @2 · 43 kg × 12 @2, el 21/08.\nHoy: Mantén los 43 kg y trata de acumular repeticiones adicionales dentro del rango.\nPelvis estable; misma máquina y ajustes para comparar.\n​Press horizontal convergente / máquina — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 20 kg × 10 @2 · 30 kg × 8 @1 · 30 kg × 8 @1, el 21/08.\nHoy: Consolida los 30 kg intentando acercarte a 9–10 repeticiones.\nRecorrido tolerado; mantener variante comparable.\n​Pullover en polea con brazos rectos — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 32 kg × 12 @2 · 36 kg × 10 @1, el 21/08.\nHoy: Mantén los 36 kg e intenta progresar hacia las 11–12 repeticiones.\nCostillas controladas; hombro cómodo; trayectoria reproducible.\n​Elevación lateral — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 23 kg × 18 @0 · 23 kg × 18 @0 · 18 kg × 20 @0, el 23/08.\nHoy: Llegaste al fallo con 23 kg; gestiona el esfuerzo para asegurar RIR 1–2 sin comprometer la técnica.\nRecalibrar carga si no se alcanza el límite inferior sin llegar al fallo.\n​Remo posterior con pecho apoyado — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 30 kg × 10 @0 · 20 kg × 10 @2, el 21/08.\nHoy: 30 kg te dejaron sin margen al inicio del rango. Ajusta la carga para asegurar el RIR 1–2 objetivo.\nCodos separados; pecho apoyado; mantener referencia técnica.\n​Gemelo con rodilla extendida — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 60 kg × 15 · 60 kg × 15, el 18/08.\nHoy: Has tocado el máximo del rango de repeticiones; prueba el siguiente incremento mínimo disponible.\nRecorrido controlado; variante reproducible",
+        "exercise_count": 7,
+        "planned_set_count": 17,
+        "recorded_set_count": 17
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "​Sentadilla búlgara en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: Llegaste a RIR 0; intenta mantener 30 kg gestionando el esfuerzo para dejar RIR 1–2, o reduce un poco si no alcanzas 8 repeticiones válidas. · Nota: Empezar por lado menos competente; apoyo y montaje reproducibles; no perseguir fallo técnico."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "​Abducción sentada en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "Asiento y",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 25,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén los 43 kg y trata de acumular repeticiones adicionales dentro del rango. · Nota: Pelvis estable; misma máquina y ajustes para comparar."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "​Press horizontal convergente / máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "per_side_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: Consolida los 30 kg intentando acercarte a 9–10 repeticiones. · Nota: Recorrido tolerado; mantener variante comparable."
+          },
+          "result": {
+            "movement_notes": "Las cargas anteriores registrada son dobles a las que aparecen",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "​Pullover en polea con brazos rectos",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén los 36 kg e intenta progresar hacia las 11–12 repeticiones. · Nota: Costillas controladas; hombro cómodo; trayectoria reproducible."
+          },
+          "result": {
+            "movement_notes": "1 mano",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "9",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "​Elevación lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Maquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Llegaste al fallo con 23 kg; gestiona el esfuerzo para asegurar RIR 1–2 sin comprometer la técnica. · Nota: Recalibrar carga si no se alcanza el límite inferior sin llegar al fallo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "20",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Remo bajo con maquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: 30 kg te dejaron sin margen al inicio del rango. Ajusta la carga para asegurar el RIR 1–2 objetivo. · Nota: Codos separados; pecho apoyado; mantener referencia técnica."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "​Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Has tocado el máximo del rango de repeticiones; prueba el siguiente incremento mínimo disponible. · Nota: Recorrido controlado; variante reproducible"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mthb5t2c-qmdksz",
+        "title": "Día A — Cadena Anterior & Empuje / Glúteo",
+        "date": "2026-08-31T14:02:49.572Z",
+        "updated_at": "2026-09-02T18:01:53.298Z",
+        "finished": true,
+        "source_note": "",
+        "exercise_count": 7,
+        "planned_set_count": 19,
+        "recorded_set_count": 14
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust con barra",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Máxima extensión de cadera, pausa 1s arriba."
+          },
+          "result": {
+            "movement_notes": "Es La primera vez que tengo que sustitutir la máquina por barra",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "45",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "45",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Hack squat profunda",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Recorrido profundo controlado, pies a media altura."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Jalón medio/neutro",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Llevar a esternón sin balanceo lumbar."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Press inclinado en Smith 15-30°",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Banco a 20°–30°, trayectoria fija hacia clavícula."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Elevación lateral en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Cable a la altura de la muñeca, plano escapular."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "16",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Extensión de tríceps overhead en cable",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Codos cómodos, estiramiento completo en flexión."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Crunch en cable o máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Flexión espinal controlada, cadera fija."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mtmhisng-ph5o0c",
+        "title": "Día B",
+        "date": "2026-09-04T04:59:44.140Z",
+        "updated_at": "2026-09-04T06:22:44.758Z",
+        "finished": true,
+        "source_note": "Día B\n​B01. Peso muerto rumano en Smith — 3 × 6–10\n​RIR objetivo: 1–2 · Descanso: 2–4 min\n​Último registro: 40 kg × 12 @2 · 50 kg × 11 @1 · 50 kg × 11 @1\n​Estrategia hoy: En la última sesión superaste el rango superior (10 reps) con 50 kg. Sube la carga a 55 kg (o el salto mínimo que te permita la máquina) para volver a encajar las repeticiones en el rango de 6-10.\n​Regla técnica: Bisagra real, tensión en posterior. Si reaparece la carga lumbar que notaste a principios de agosto, recorta el ROM y no bajes tanto.\n​B02. Curl femoral sentado — 3 × 8–15\n​RIR objetivo: 1–2 · Descanso: 90–150 s\n​Último registro: 29 kg × 10 @2 · 29 kg × 10 @1 · 29 kg × 10 @1\n​Estrategia hoy: Mantén la carga de 29 kg. Tu objetivo es la progresión en repeticiones: intenta sacar 11-12 repeticiones sólidas por serie antes de plantearnos subir la placa. Pelvis sujeta firmemente al asiento.\n​B03. Remo con pecho apoyado — 3 × 8–12\n​RIR objetivo: 1–2 · Descanso: 2–3 min\n​Último registro: 50 kg × 11 @1 · 50 kg × 11 @1 · 50 kg × 12 @0\n​Estrategia hoy: Llegaste al RIR 0 en la última serie. Estás en el tope del rango. Hoy puedes subir la carga al siguiente punto y buscar 8-10 repeticiones, o mantener los 50 kg y consolidar 3 series de 12 repeticiones estrictas con RIR 1.\n​B04. Peck-deck inverso — 3 × 12–20\n​RIR objetivo: 1–2 · Descanso: 90–150 s\n​Último registro: 23 kg × 15 @1 en las tres series.\n​Estrategia hoy: Estás muy estable en medio del rango. Mantén 23 kg e intenta exprimir 16-18 repeticiones. Controla la trayectoria y no uses inercia.\n​B05. Curl predicador (o Kinesiológico) — 2 × 8–15\n​RIR objetivo: 1–2 · Descanso: 90–150 s\n​Último registro: 10 kg × 12 @2 (registraste curl kinesiológico con mancuerna). El registro anterior en máquina fue 36 kg.\n​Estrategia hoy: El programa indica Predicador. Si sigues con la variante de mancuerna, mantén los 10-12 kg intentando llegar a 13-14 repeticiones. Si vuelves a la máquina, la referencia base es 36 kg. No conviertas la serie de aproximación en trabajo productivo.\n​B06. Extensión de rodilla — 2 × 10–15\n​RIR objetivo: 1–2 · Descanso: 90–150 s\n​Último registro: 43 kg × 12 @0 · 43 kg × 12 @0\n​Estrategia hoy: Hiciste fallo técnico o muscular (RIR 0) en ambas series. Hoy mantén 43 kg pero gestiona el esfuerzo: corta la serie cuando sepas que te queda 1 repetición limpia en el tanque (RIR 1). Serie continua, sin pausas de descanso en el punto bajo.\n​B07. Gemelo con rodilla extendida — 2 × 8–15\n​RIR objetivo: 1–2 · Descanso: 90–150 s\n​Último registro: No registrado el 27/08. Referencia anterior (18/08): 60 kg × 15.\n​Estrategia hoy: Vuelve a coger los 60 kg de referencia y busca rango completo y controlado.",
+        "exercise_count": 7,
+        "planned_set_count": 19,
+        "recorded_set_count": 19
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "​B01. Peso muerto rumano en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "2–4 min",
+            "coach_cue": "Nota: ​Último registro: 40 kg × 12 @2 · 50 kg × 11 @1 · 50 kg × 11 @1 · Nota: ​Estrategia hoy: En la última sesión superaste el rango superior (10 reps) con 50 kg. Sube la carga a 55 kg (o el salto mínimo que te permita la máquina) para volver a encajar las repeticiones en el rango de 6-10. · Nota: ​Regla técnica: Bisagra real, tensión en posterior. Si reaparece la carga lumbar que notaste a principios de agosto, recorta el ROM y no bajes tanto."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "​B02. Curl femoral sentado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "asiento.",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: ​Último registro: 29 kg × 10 @2 · 29 kg × 10 @1 · 29 kg × 10 @1 · Nota: ​Estrategia hoy: Mantén la carga de 29 kg. Tu objetivo es la progresión en repeticiones: intenta sacar 11-12 repeticiones sólidas por serie antes de plantearnos subir la placa. Pelvis sujeta firmemente al asiento."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "​B03. Remo con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "tope del",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "0",
+            "rest": "2–3 min",
+            "coach_cue": "Nota: ​Último registro: 50 kg × 11 @1 · 50 kg × 11 @1 · 50 kg × 12 @0"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "55",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "55",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "​B04. Peck-deck inverso",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: ​Último registro: 23 kg × 15 @1 en las tres series. · Nota: ​Estrategia hoy: Estás muy estable en medio del rango. Mantén 23 kg e intenta exprimir 16-18 repeticiones. Controla la trayectoria y no uses inercia."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "​B05. Curl predicador (o Kinesiológico)",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Mancuernas",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: ​Último registro: 10 kg × 12 @2 (registraste curl kinesiológico con mancuerna). El registro anterior en máquina fue 36 kg. · Nota: ​Estrategia hoy: El programa indica Predicador. Si sigues con la variante de mancuerna, mantén los 10-12 kg intentando llegar a 13-14 repeticiones. Si vuelves a la máquina, la referencia base es 36 kg. No conviertas la serie de aproximación en trabajo productivo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "​B06. Extensión de rodilla",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "0",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: ​Último registro: 43 kg × 12 @0 · 43 kg × 12 @0"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "14",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "14",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "​B07. Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "90–150 s",
+            "coach_cue": "Nota: ​Último registro: No registrado el 27/08. Referencia anterior (18/08): 60 kg × 15. · Nota: ​Estrategia hoy: Vuelve a coger los 60 kg de referencia y busca rango completo y controlado."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "0"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mts8kfej-fehx6t",
+        "title": "unilateral + abducción + torso + pantorrilla",
+        "date": "2026-09-08T05:35:40.796Z",
+        "updated_at": "2026-09-08T06:26:47.162Z",
+        "finished": true,
+        "source_note": "unilateral + abducción + torso + pantorrilla\n​Sentadilla búlgara en Smith — 3 × 8–12/lado\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 30 kg × 10 @0 · 30 kg × 10 @0, el 27/08.\nHoy: no persigas el fallo técnico; mantén la carga y asienta el esfuerzo en RIR 1–2.\nRegistra: lado menos competente primero.\n​Abducción sentada en máquina — 3 × 12–25\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 43 kg × 18 @1 · 43 kg × 18 @1 · 43 kg × 18 @1, el 27/08.\nHoy: rendimiento estable; busca ganar repeticiones manteniendo la carga.\n​Press horizontal convergente / máquina — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 60 kg × 10 @1 · 70 kg × 8 @0 · 60 kg × 10 @1, el 27/08.\nHoy: los 70 kg forzaron RIR 0. Usa una carga intermedia que permita mantener RIR 1–2 y rango completo.\n​Pullover en polea con brazos rectos — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 14 kg × 10 @1 · 9 kg × 12 @2, el 27/08.\nHoy: busca un peso intermedio que evite tanta caída de carga entre la primera y la segunda serie.\n​Elevación lateral — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 27 kg × 16 @0 · 27 kg × 15 @0 · 27 kg × 15 @0, el 31/08.\nHoy: la carga actual empuja al fallo. Reduce peso si es necesario para evitar balanceo y recuperar RIR 1–2.\n​Remo posterior con pecho apoyado — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 30 kg × 10 @0 · 20 kg × 10 @2, el 21/08.\nHoy: calibra con 25 kg o similar para mantener la consistencia productiva sin llegar a RIR 0 en la primera serie.\n​Gemelo con rodilla extendida — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 80 kg × 12 @0 · 80 kg × 10 @0, el 04/09.\nHoy: mantén 80 kg priorizando rango y control estricto para asegurar RIR 1–2.",
+        "exercise_count": 7,
+        "planned_set_count": 18,
+        "recorded_set_count": 15
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "​Sentadilla búlgara en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: no persigas el fallo técnico; mantén la carga y asienta el esfuerzo en RIR 1–2. · Registra: lado menos competente primero."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "​Abducción sentada en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "Asiento y",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 25,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: rendimiento estable; busca ganar repeticiones manteniendo la carga."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "17",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "​Press horizontal convergente / máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "per_side_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: los 70 kg forzaron RIR 0. Usa una carga intermedia que permita mantener RIR 1–2 y rango completo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "​Pullover en polea con brazos rectos",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: busca un peso intermedio que evite tanta caída de carga entre la primera y la segunda serie."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "​Elevación lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Maquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: la carga actual empuja al fallo. Reduce peso si es necesario para evitar balanceo y recuperar RIR 1–2."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "​Remo posterior con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: calibra con 25 kg o similar para mantener la consistencia productiva sin llegar a RIR 0 en la primera serie."
+          },
+          "result": {
+            "movement_notes": "No la hice, apunto el peso de referencia anterior",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "​Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: mantén 80 kg priorizando rango y control estricto para asegurar RIR 1–2."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mty2kc2k-0v163q",
+        "title": "Día A",
+        "date": "2026-09-12T07:34:15.836Z",
+        "updated_at": "2026-09-12T08:22:59.305Z",
+        "finished": true,
+        "source_note": "Día A — Glúteo + pecho/dorsal + hombro/tríceps + abdomen\n​Hip thrust en máquina — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 60 kg × 11 @2 · 70 kg × 10 @1 · 70 kg × 10 @1, el 23/08.\nHoy: Subir carga (+1.25 kg o +1 placa). Alcanzaste el límite superior manteniendo el RIR objetivo.\nTécnica: Pelvis estable; bloqueo con extensión de cadera, no lumbar; recorrido reproducible.\n​Sentadilla Hack Matrix — 2 × 8–12\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 40 kg × 8 @1 · 40 kg × 9 @0, el 23/08.\nHoy: Mantener carga (40 kg) para ganar repeticiones dentro del rango.\nProfundidad: Máxima profundidad útil y reproducible sin perder apoyo pélvico ni tolerancia.\n​Press inclinado moderado — 3 × 6–10\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 60 kg × 11 @1 · 70 kg × 7 @0 · 70 kg × 6 @0, el 23/08.\nHoy: Mantener carga (70 kg). Consolida repeticiones en la zona baja/media antes de progresar.\nTécnica: Hombro estable.\n​Jalón medio o neutro — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 43 kg × 10 @1 · 43 kg × 10 @1 · 43 kg × 10 @1, el 31/08.\nHoy: Mantener carga (43 kg) para intentar subir hacia el límite de 12 repeticiones.\nTécnica: Recorrido cómodo; sin balanceo; agarre reproducible.\n​Elevación lateral — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 27 kg × 15 @0 · 27 kg × 15 @0 · 27 kg × 15 @0, el 08/09.\nHoy: Mantener carga (27 kg). Afianza el RIR en 1-2 sin sacrificar técnica por volumen.\nTécnica: Evitar balanceo.\n​Extensión de tríceps overhead — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 14 kg × 12 @1 · 14 kg × 12 @1, el 31/08.\nHoy: Mantener carga (14 kg) y buscar sumar repeticiones.\nTécnica: Hombro y codo cómodos; no convertir técnica en limitante.\n​Crunch cargado — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 29 kg × 15 @1, el 23/08.\nHoy: Subir carga (+1.25 kg o +1 placa) tras haber completado el techo superior del rango con RIR 1.\nTécnica: Flexión controlada y carga reproducible.",
+        "exercise_count": 7,
+        "planned_set_count": 19,
+        "recorded_set_count": 19
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "​Hip thrust en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: Subir carga (+1.25 kg o +1 placa). Alcanzaste el límite superior manteniendo el RIR objetivo. · Nota: Técnica: Pelvis estable; bloqueo con extensión de cadera, no lumbar; recorrido reproducible."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "2"
+              },
+              {
+                "index": 3,
+                "load_kg": "85",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "​Sentadilla Hack Matrix",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina Matrix",
+            "machine_settings": "topes · posición de",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: Mantener carga (40 kg) para ganar repeticiones dentro del rango. · Profundidad: Máxima profundidad útil y reproducible sin perder apoyo pélvico ni tolerancia."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Press maquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: Mantener carga (70 kg). Consolida repeticiones en la zona baja/media antes de progresar. · Nota: Técnica: Hombro estable."
+          },
+          "result": {
+            "movement_notes": "Dejando en tensión una mano",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "​Jalón medio o neutro",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Polea",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: Mantener carga (43 kg) para intentar subir hacia el límite de 12 repeticiones. · Nota: Técnica: Recorrido cómodo; sin balanceo; agarre reproducible."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "​Elevación lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Maquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantener carga (27 kg). Afianza el RIR en 1-2 sin sacrificar técnica por volumen. · Nota: Técnica: Evitar balanceo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "2"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "​Extensión de tríceps overhead",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantener carga (14 kg) y buscar sumar repeticiones. · Nota: Técnica: Hombro y codo cómodos; no convertir técnica en limitante."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "18",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "​Crunch cargado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Subir carga (+1.25 kg o +1 placa) tras haber completado el techo superior del rango con RIR 1. · Nota: Técnica: Flexión controlada y carga reproducible."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mu18ew6n-pil4bv",
+        "title": "Día B",
+        "date": "2026-09-14T12:41:18.191Z",
+        "updated_at": "2026-09-14T14:06:43.613Z",
+        "finished": true,
+        "source_note": "Día B — Cadena posterior + espalda + deltoides posterior + brazos/pierna\n​Peso muerto rumano en Smith — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 70 kg × 9 @1 · 70 kg × 9 @1 · 70 kg × 9 @1, el 04/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Bisagra real; tensión posterior; no fabricar ROM con columna. Si reaparece dominancia de cuádriceps o carga lumbar, detener progresión y recalibrar.\n​Curl femoral sentado — 3 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 29 kg × 12 @0 · 29 kg × 11 @1 · 29 kg × 11 @1, el 04/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Pelvis sujeta; mantener variante/máquina comparable.\n​Remo con pecho apoyado — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 50 kg × 12 @1 · 55 kg × 10 @1 · 55 kg × 8 @1, el 04/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Pecho apoyado; no limitar por lumbar.\nRegistra: Ajustes de la máquina.\n​Peck-deck inverso — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 23 kg × 18 @1 · 23 kg × 18 @1 · 23 kg × 18 @1, el 04/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Trayectoria estable; deltoides posterior como objetivo principal.\n​Curl predicador — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 36 kg × 10 @2 · 36 kg × 12 @1, el 04/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Codo cómodo; no convertir aproximaciones en series productivas.\n​Extensión de rodilla — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 43 kg × 12 @2 · 43 kg × 14 @0 · 43 kg × 14 @0, el 04/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Serie continua y comparable; eje de máquina alineado.\n​Gemelo con rodilla extendida — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nRegistro previo: consta que se realizó, pero faltan carga, reps y RIR.\nHoy: Carga: A determinar (Calibración técnica).\nObjetivo: ROM controlado.\nRegistra: Identificar variante antes de comparar cargas.",
+        "exercise_count": 7,
+        "planned_set_count": 19,
+        "recorded_set_count": 13
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "​Peso muerto rumano en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Bisagra real; tensión posterior; no fabricar ROM con columna. Si reaparece dominancia de cuádriceps o carga lumbar, detener progresión y recalibrar."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "1",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "​Curl femoral sentado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Pelvis sujeta; mantener variante/máquina comparable."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "1",
+                "rir": ""
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "​Remo con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Pecho apoyado; no limitar por lumbar. · Registra: Ajustes de la máquina."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "50",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "3"
+              },
+              {
+                "index": 2,
+                "load_kg": "55",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "13",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "​Peck-deck inverso",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Trayectoria estable; deltoides posterior como objetivo principal."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "20",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "​Curl predicador",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Codo cómodo; no convertir aproximaciones en series productivas."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "​Extensión de rodilla",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Serie continua y comparable; eje de máquina alineado."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "​Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Carga: A determinar (Calibración técnica). · Objetivo: ROM controlado. · Registra: Identificar variante antes de comparar cargas."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              },
+              {
+                "index": 2,
+                "load_kg": "",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "",
+                "rir": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "mu42lknz-kvq0wx",
+        "title": "Día C",
+        "date": "2026-09-16T12:21:50.687Z",
+        "updated_at": "2026-09-16T13:20:11.565Z",
+        "finished": true,
+        "source_note": "Día C — Glúteo unilateral + abducción + torso + pantorrilla\n​Sentadilla búlgara en Smith — 3 × 8–12/lado\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 30 kg × 10 @1 · 30 kg × 10 @1 · 30 kg × 9 @1, el 08/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Empezar por lado menos competente; apoyo y montaje reproducibles; no perseguir fallo técnico\n​Abducción sentada en máquina — 3 × 12–25\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 43 kg × 17 @1 · 43 kg × 18 @0, el 08/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Pelvis estable; misma máquina y ajustes para comparar\n​Press horizontal convergente / máquina — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 70 kg × 9 @1 · 70 kg × 8 @1 · 70 kg × 8 @1, el 08/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Recorrido tolerado; mantener variante comparable\n​Pullover en polea con brazos rectos — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 36 kg × 12 @1 · 36 kg × 12 @1, el 08/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Costillas controladas; hombro cómodo; trayectoria reproducible\n​Elevación lateral — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 27 kg × 15 @2 · 27 kg × 15 @2 · 27 kg × 15 @2, el 12/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Recalibrar carga si no se alcanza el límite inferior sin llegar al fallo\n​Remo posterior con pecho apoyado — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 20 kg × 10 @2 · 20 kg × 10 @2, el 08/09.\nHoy: Mantén carga e intenta ganar repeticiones.\nObjetivo: Codos separados; pecho apoyado; mantener referencia técnica\n​Gemelo con rodilla extendida — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nRegistro previo: ninguno comparable.\nHoy: Carga: A determinar (Calibración técnica)\nObjetivo: Recorrido controlado; variante reproducible",
+        "exercise_count": 7,
+        "planned_set_count": 18,
+        "recorded_set_count": 18
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "​Sentadilla búlgara en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–4 min",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Empezar por lado menos competente; apoyo y montaje reproducibles; no perseguir fallo técnico"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "0"
+              },
+              {
+                "index": 3,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "​Abducción sentada en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "Asiento y",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 25,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Pelvis estable; misma máquina y ajustes para comparar"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "16",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "​Press horizontal convergente / máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "per_side_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Recorrido tolerado; mantener variante comparable"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "​Pullover en polea con brazos rectos",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Costillas controladas; hombro cómodo; trayectoria reproducible"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "13",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "​Elevación lateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Maquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Recalibrar carga si no se alcanza el límite inferior sin llegar al fallo"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "0"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "16",
+                "rir": "2"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "0"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "​Remo posterior con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Mantén carga e intenta ganar repeticiones. · Objetivo: Codos separados; pecho apoyado; mantener referencia técnica"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "​Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: Carga: A determinar (Calibración técnica) · Objetivo: Recorrido controlado; variante reproducible"
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "muij7gzj-1lj5ny",
+        "title": "Día A",
+        "date": "2026-09-26T15:15:32.671Z",
+        "updated_at": "2026-09-26T16:28:22.088Z",
+        "finished": true,
+        "source_note": "Día A — Glúteo, cuádriceps, pecho, dorsal, hombro, tríceps y abdomen\nHip thrust en máquina — 3 × 8–10\nRIR 1–2 · Descanso 3–4 min\nÚltimo registro: 80 kg × 8 @2 · 80 kg × 8 @2 · 85 kg × 9 @0, el 12/09.\nHoy: misma máquina y montaje, 80 kg × 9 · 9 · 8. No subir a 85 kg todavía.\nSentadilla Hack Matrix — 2 × 8–12\nRIR 1–2 · Descanso 3–4 min\nÚltimo registro: 40 kg × 9 @1 · 40 kg × 9 @0 · 40 kg × 8 @0, el 12/09.\nHoy: mismos ajustes, 40 kg × 9 · 8–9. Solo dos series; detén cada una antes del fallo.\nPress inclinado en máquina — 3 × 8–10\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro nominal: 43 kg × 9 @0 en las tres series, el 12/09.\nHoy: misma máquina, utiliza el escalón inmediatamente inferior a 43 kg; 36 kg si corresponde a esa máquina. Busca 10 · 10 · 9 con técnica estable.\nJalón medio o neutro — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nÚltimo registro: 43 kg × 12 @0 · 43 kg × 9 @0 · 43 kg × 9 @0, el 12/09.\nHoy: misma polea y agarre, 43 kg × 10 en la primera serie; después 36 kg × 12–13 en las otras dos. No llegar a RIR 0.\nElevación lateral en máquina — 3 × 12–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 27 kg × 18 @0 · 27 kg × 16 @2 · 27 kg × 18 @0, el 16/09.\nHoy: misma máquina, 27 kg × 16–17 en las tres series. Mantén 27 kg hasta conseguir tres series comparables sin fallo.\nExtensión de tríceps overhead — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 18 kg × 9 @0 · 14 kg × 10 @1, el 12/09.\nHoy: misma polea y modalidad, 14 kg × 11–12 en ambas series.\nCrunch cargado — 2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 36 kg × 12 @1 · 36 kg × 12 @1, el 12/09.\nHoy: misma polea, 36 kg × 13–14 en ambas series. Sube carga únicamente cuando completes 15 · 15 @1–2.",
+        "exercise_count": 7,
+        "planned_set_count": 18,
+        "recorded_set_count": 18
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Hip thrust en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "3–4 min",
+            "coach_cue": "Hoy: misma máquina y montaje, 80 kg × 9 · 9 · 8. No subir a 85 kg todavía."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Sentadilla Hack Matrix",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina Matrix",
+            "machine_settings": "topes · posición de",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "3–4 min",
+            "coach_cue": "Hoy: mismos ajustes, 40 kg × 9 · 8–9. Solo dos series; detén cada una antes del fallo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "40",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Press inclinado en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Nota: Último registro nominal: 43 kg × 9 @0 en las tres series, el 12/09. · Hoy: misma máquina, utiliza el escalón inmediatamente inferior a 43 kg; 36 kg si corresponde a esa máquina. Busca 10 · 10 · 9 con técnica estable."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Jalón medio o neutro",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Polea",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Hoy: misma polea y agarre, 43 kg × 10 en la primera serie; después 36 kg × 12–13 en las otras dos. No llegar a RIR 0."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Elevación lateral en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: misma máquina, 27 kg × 16–17 en las tres series. Mantén 27 kg hasta conseguir tres series comparables sin fallo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "16",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "16",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Extensión de tríceps overhead",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: misma polea y modalidad, 14 kg × 11–12 en ambas series."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Crunch cargado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Hoy: misma polea, 36 kg × 13–14 en ambas series. Sube carga únicamente cuando completes 15 · 15 @1–2."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "14",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "14",
+                "rir": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "munxepbz-x9ubyx",
+        "title": "Día B",
+        "date": "2026-09-30T09:51:55.583Z",
+        "updated_at": "2026-09-30T12:22:38.513Z",
+        "finished": true,
+        "source_note": "# Día B\n\nPrograma M4-3D-v2.0 · 18 series · Corte: 30/09/2026.\nRecuperación buena; mismas máquinas; última sesión realizada el 26/09.\n\nCargas de referencia condicionadas a los mismos ajustes, recorrido y forma de contar los kilos. Dejar 1–2 repeticiones en reserva; ajustar la carga si hoy no permite ese margen.\n\n1. Peso muerto rumano en Smith — 3 × 6–10 · RIR 1–2 · descanso 2–4 min\nReferencia: 70 kg registrados el 14/09.\nBisagra controlada; no ampliar el recorrido doblando la espalda. No subir kilos hoy.\n\n2. Curl femoral sentado — 3 × 8–15 · RIR 1–2 · descanso 90–150 s\nReferencia: 29 kg registrados el 14/09.\nPelvis sujeta; completar las tres series sin buscar el fallo.\n\n3. Remo con pecho apoyado — 3 × 8–12 · RIR 1–2 · descanso 2–3 min\nReferencias: 50 y 55 kg registrados el 14/09.\nComprobar primero 50 kg. Usar 55 solo si permite mantener apoyo, recorrido y RIR 1–2.\n\n4. Peck-deck inverso — 3 × 12–20 · RIR 1–2 · descanso 90–150 s\nReferencia: 27 kg registrados el 14/09.\nTrayectoria estable, sin impulso. Priorizar repeticiones limpias.\n\n5. Curl predicador — 2 × 8–15 · RIR 1–2 · descanso 90–150 s\nCarga por calibrar: el registro anterior de 36 kg tiene una variante y contabilización ambiguas.\nElegir una carga cómoda para el rango; registrar el implemento y cómo se cuenta el peso.\n\n6. Extensión de rodilla — 2 × 10–15 · RIR 1–2 · descanso 90–150 s\nReferencia: 43 kg registrados el 14/09.\nAlinear el eje de la máquina y mantener el recorrido. Realizar dos series.\n\n7. Gemelo con rodilla extendida — 2 × 8–15 · RIR 1–2 · descanso 90–150 s\nReferencia: 60 kg registrados el 16/09.\nConfirmar la misma estación y forma de contar la carga. Recorrido controlado.\n\nLas filas vacías y las dos series anotadas con una repetición del 14/09 no justifican aumentos de carga. Registrar únicamente lo realizado, con repeticiones y RIR reales.\n\nAntes de iniciar: comprobar que el borrador contiene siete ejercicios y 18 series.",
+        "exercise_count": 7,
+        "planned_set_count": 18,
+        "recorded_set_count": 18
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Peso muerto rumano en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 6,
+            "reps_max": 10,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": "Nota: Referencia: 70 kg registrados el 14/09. · Nota: Bisagra controlada; no ampliar el recorrido doblando la espalda. No subir kilos hoy."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "70",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Curl femoral sentado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": "Nota: Referencia: 29 kg registrados el 14/09. · Nota: Pelvis sujeta; completar las tres series sin buscar el fallo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "14",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "29",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "14",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "23",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "16",
+                "rir": "2"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Remo con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "Asiento 4",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "",
+            "coach_cue": "Nota: Referencias: 50 y 55 kg registrados el 14/09."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "55",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "11",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Peck-deck inverso",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": "Nota: Referencia: 27 kg registrados el 14/09. · Nota: Trayectoria estable, sin impulso. Priorizar repeticiones limpias."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Curl predicador",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": "Nota: Carga por calibrar: el registro anterior de 36 kg tiene una variante y contabilización ambiguas. · Nota: Elegir una carga cómoda para el rango; registrar el implemento y cómo se cuenta el peso."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Extensión de rodilla",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": "Nota: Referencia: 43 kg registrados el 14/09. · Nota: Alinear el eje de la máquina y mantener el recorrido. Realizar dos series."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "",
+            "rest": "",
+            "coach_cue": "Nota: Referencia: 60 kg registrados el 16/09. · Nota: Confirmar la misma estación y forma de contar la carga. Recorrido controlado. · Nota: Las filas vacías y las dos series anotadas con una repetición del 14/09 no justifican aumentos de carga. Registrar únicamente lo realizado, con repeticiones y RIR reales. · Nota: Antes de iniciar: comprobar que el borrador contiene siete ejercicios y 18 series."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "14",
+                "rir": "1"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "exported_at": "2026-10-06T09:33:35.807Z",
+      "session": {
+        "id": "muqxr7gm-o3rbuo",
+        "title": "Día C · Glúteos y brazos",
+        "date": "2026-10-02T12:24:57.478Z",
+        "updated_at": "2026-10-03T08:52:26.122Z",
+        "finished": true,
+        "source_note": "# Día C · Glúteos y brazos\n\nAdaptación puntual: 18 series. Referencias hasta el 30/09/2026.\n\nEjercicio: Sentadilla búlgara en Smith\nSeries: 3\nRepeticiones: 8–12 por pierna\nRIR: 2\nDescanso: 2–4 min\nNota: Referencia: 30 kg con el mismo montaje y contabilización. Empezar por la pierna menos competente. Reducir carga si las agujetas alteran el movimiento.\n\nEjercicio: Abducción sentada en máquina\nSeries: 3\nRepeticiones: 12–25\nRIR: 1–2\nDescanso: 90–150 s\nNota: Referencia: 43 kg con la misma máquina y ajustes. Pelvis estable; sin buscar el fallo.\n\nEjercicio: Press horizontal convergente\nSeries: 2\nRepeticiones: 8–12\nRIR: 1–2\nDescanso: 2–3 min\nNota: Referencia: 70 kg totales, 35 por lado, con la misma configuración. Reducir si no permite conservar el RIR indicado.\n\nEjercicio: Curl predicador\nSeries: 2\nRepeticiones: 8–15\nRIR: 2\nDescanso: 90–150 s\nNota: Referencia del 30/09: 36 kg únicamente con el mismo implemento y forma de contar la carga. No interpretarlos como kilos por mancuerna. No subir carga hoy.\n\nEjercicio: Extensión de tríceps Katana unilateral\nSeries: 2\nRepeticiones: 10–15 por brazo\nRIR: 2–3\nDescanso: 90–150 s\nNota: Carga ligera por calibrar; no trasladar los kilos del overhead anterior. Brazo superior aproximadamente estable; extender el codo sin balanceo y con recorrido cómodo. Cada serie incluye ambos brazos; descansar antes de repetir el mismo brazo.\n\nEjercicio: Pullover en polea con ambos brazos\nSeries: 1\nRepeticiones: 10–15\nRIR: 1–2\nDescanso: 90–150 s\nNota: Referencia: 36 kg con la misma polea y montaje. Costillas controladas; hombros cómodos.\n\nEjercicio: Elevación lateral en máquina\nSeries: 2\nRepeticiones: 12–20\nRIR: 1–2\nDescanso: 90–150 s\nNota: Referencia: 27 kg con la misma máquina y ajustes. Repeticiones controladas, sin impulso.\n\nEjercicio: Remo posterior con pecho apoyado\nSeries: 1\nRepeticiones: 10–15\nRIR: 1–2\nDescanso: 90–150 s\nNota: Referencia: 20 kg con la misma configuración. Codos separados y pecho apoyado. No transferir kilos del remo B.\n\nEjercicio: Gemelo con rodilla extendida\nSeries: 2\nRepeticiones: 8–15\nRIR: 1–2\nDescanso: 90–150 s\nNota: Referencia: 60 kg en la primera; 80 kg en la segunda solo si permite reproducir configuración, recorrido y RIR del 30/09. Movimiento controlado.",
+        "exercise_count": 9,
+        "planned_set_count": 20,
+        "recorded_set_count": 20
+      },
+      "exercises": [
+        {
+          "index": 1,
+          "name": "Sentadilla búlgara en Smith",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Smith",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": true,
+            "target_rir": "2",
+            "rest": "2–4 min",
+            "coach_cue": "Referencia: 30 kg con el mismo montaje y contabilización. Empezar por la pierna menos competente. Reducir carga si las agujetas alteran el movimiento."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "30",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "name": "Abducción sentada en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "Asiento y",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 3,
+            "reps_min": 12,
+            "reps_max": 25,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Referencia: 43 kg con la misma máquina y ajustes. Pelvis estable; sin buscar el fallo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "2"
+              },
+              {
+                "index": 2,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "2"
+              },
+              {
+                "index": 3,
+                "load_kg": "43",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "20",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "name": "Press horizontal convergente",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 12,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "2–3 min",
+            "coach_cue": "Referencia: 70 kg totales, 35 por lado, con la misma configuración. Reducir si no permite conservar el RIR indicado."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 3,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "09",
+                "rir": ""
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "name": "Curl bayesiano en cable",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable",
+            "machine_settings": "",
+            "load_basis": "per_side_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "2",
+            "rest": "90–150 s",
+            "coach_cue": "Referencia del 30/09: 36 kg únicamente con el mismo implemento y forma de contar la carga. No interpretarlos como kilos por mancuerna. No subir carga hoy."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "9",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "14",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "8",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "name": "Extensión de tríceps Katana unilateral",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": true,
+            "target_rir": "2–3",
+            "rest": "90–150 s",
+            "coach_cue": "Carga ligera por calibrar; no trasladar los kilos del overhead anterior. Brazo superior aproximadamente estable; extender el codo sin balanceo y con recorrido cómodo. Cada serie incluye ambos brazos; descansar antes de repetir el mismo brazo."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "9",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "9",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "9",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "name": "Pullover en polea con ambos brazos",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Cable / polea",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Referencia: 36 kg con la misma polea y montaje. Costillas controladas; hombros cómodos."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "36",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "10",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "name": "Elevación lateral en máquina",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 12,
+            "reps_max": 20,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Referencia: 27 kg con la misma máquina y ajustes. Repeticiones controladas, sin impulso."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "19",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "27",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "18",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "name": "Remo posterior con pecho apoyado",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "",
+            "machine_settings": "",
+            "load_basis": "total_kg"
+          },
+          "prescription": {
+            "sets": 1,
+            "reps_min": 10,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Referencia: 20 kg con la misma configuración. Codos separados y pecho apoyado. No transferir kilos del remo B."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "20",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "12",
+                "rir": "1"
+              }
+            ]
+          }
+        },
+        {
+          "index": 9,
+          "name": "Gemelo con rodilla extendida",
+          "identity": {
+            "resistance_mode": "external",
+            "variant": "Máquina",
+            "machine_settings": "",
+            "load_basis": "unknown"
+          },
+          "prescription": {
+            "sets": 2,
+            "reps_min": 8,
+            "reps_max": 15,
+            "per_side": false,
+            "target_rir": "1–2",
+            "rest": "90–150 s",
+            "coach_cue": "Referencia: 60 kg en la primera; 80 kg en la segunda solo si permite reproducir configuración, recorrido y RIR del 30/09. Movimiento controlado."
+          },
+          "result": {
+            "movement_notes": "",
+            "sets": [
+              {
+                "index": 1,
+                "load_kg": "60",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              },
+              {
+                "index": 2,
+                "load_kg": "80",
+                "resistance": {
+                  "mode": "external",
+                  "difficulty": ""
+                },
+                "reps": "15",
+                "rir": "1"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

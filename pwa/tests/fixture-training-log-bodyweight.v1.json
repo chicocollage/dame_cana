@@ -1,0 +1,44 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-03T12:00:00.000Z",
+  "session": {
+    "id": "current-bodyweight",
+    "title": "Sesión de autocarga",
+    "date": "2026-08-03T10:00:00.000Z",
+    "updated_at": "2026-08-03T11:00:00.000Z",
+    "finished": false,
+    "source_note": "# Autocarga"
+  },
+  "exercises": [
+    {
+      "name": "Dominadas",
+      "identity": {
+        "resistance_mode": "bodyweight",
+        "variant": "Autocarga",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": 6,
+        "reps_max": 8,
+        "per_side": false,
+        "target_rir": "2",
+        "rest": "2 min",
+        "coach_cue": "Sin balanceo"
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "",
+            "resistance": { "mode": "bodyweight", "difficulty": "Banda roja" },
+            "reps": "7",
+            "rir": "2"
+          }
+        ]
+      }
+    }
+  ]
+}

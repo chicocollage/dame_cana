@@ -1,0 +1,277 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-11-03T14:43:36.300Z",
+  "session": {
+    "id": "mw0k1adj-32bzln",
+    "title": "Día A",
+    "date": "2026-11-03T10:38:17.287Z",
+    "updated_at": "2026-11-03T14:43:26.518Z",
+    "finished": true,
+    "source_note": "# Día A — Nuclear 1 · Glúteo y Cuádriceps (Cadera y rodilla pesadas)\n\nSentadilla Hack Matrix profunda — 3 × 8–12\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-25; 40 kg × 11 @1; 45 kg × 10 @1; 45 kg × 10 @1 (Variante anterior: G04-V1).\nHoy: Iniciar con 45 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 12 reps @1–2 con esa carga. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: pausa ~1 s en estiramiento sin rebote; prohibido RIR 0; si hay fatiga axial/articular, aplicar orden inverso tras el analítico del día].\nConfiguración: Pies más altos, distancia entre talones media-ancha con punteras a ~20°. [Variante hoy G04-V1: Pies colocados en el tercio medio-superior de la plataforma con pausa de 0.5–1 s en el fondo.]\nObjetivo: Mayor brazo de momento en cadera en la profundidad; máximo estiramiento y reclutamiento de las fibras inferiores del glúteo mayor y aductor mayor para rellenar y elevar el polo inferior sobre el pliegue subglúteo. — Flexión profunda de cadera manteniendo contacto lumbar y talones fijados, buscando empujar la fascia del polo inferior glúteo desde dentro.\nRegistra: Carga, reps, RIR y sensaciones con variante G04-V1.\n\nHip thrust en máquina / discos — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-17; 90 kg × 7 @1; 90 kg × 10 @1; 90 kg × 10 @1.\nHoy: Mantener 90 kg. Objetivo hoy: progresar a 10 reps por serie con RIR 1–2 hacia el tope de 10. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: pausa ~1 s en bloqueo (acortamiento); sin RIR 0 en la serie principal].\nConfiguración: Máquina de discos / hip thrust (almohadilla pélvica, distancia pies para 90° en bloqueo)\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nAbducción sentada en máquina — 3 × 15–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-25; 47 kg × 19 @1; 47 kg × 18 @1; 47 kg × 18 @1.\nHoy: Mantener 47 kg. Objetivo hoy: progresar a 20 reps por serie con RIR 1–2 hacia el tope de 20. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%].\nConfiguración: Máquina de placas · Asiento y respaldo apoyados · Ajuste Pelvis fija contra el respaldo\nObjetivo: Pelvis fija contra el respaldo; pausa de 1 s en máxima abducción\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nGemelo en Hack con piernas estiradas — 3 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: ninguno comparable.\nHoy: Calibrar carga inicial: 3 series de 10–15 reps, RIR 1–2. Iniciar con peso moderado para fijar base sin exceder RIR 2. [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%].\nConfiguración: Máquina Hack (discos añadidos, piernas estiradas)\nObjetivo: Rodilla bloqueada en extensión; pausa de 2 s abajo en estiramiento completo\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nCrunch cargado en máquina — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-25; 50 kg × 14 @1; 50 kg × 14 @1.\nHoy: Mantener 50 kg. Objetivo hoy: progresar a 15 reps por serie con RIR 1–2 hacia el tope de 15. (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.) [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%].\nConfiguración: Máquina con placas (kg junto a lb)\nRegistra: Carga, reps, RIR y ajustes exactos si varían.",
+    "exercise_count": 5,
+    "planned_set_count": 14,
+    "recorded_set_count": 14
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Sentadilla Hack Matrix profunda",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina Matrix (G04-V1)",
+        "machine_settings": "Pies en tercio medio-superior, pausa 1 s abajo",
+        "load_basis": "added_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–4 min",
+        "coach_cue": "Hoy: Iniciar con 45 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 12 reps @1–2 con esa carga."
+      },
+      "result": {
+        "movement_notes": "Abriendo sesión con Hack. Control total y sin asfixia aplicando Valsalva y tiras nasales.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Hip thrust en máquina / discos",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "added_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–4 min",
+        "coach_cue": "Hoy: Mantener 90 kg. Objetivo hoy: progresar a 10 reps por serie con RIR 1–2 hacia el tope de 10."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "90",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "90",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "90",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Abducción sentada en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Asiento y respaldo apoyados",
+        "load_basis": "machine_stack_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 15,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 47 kg. Objetivo hoy: progresar a 20 reps por serie con RIR 1–2 hacia el tope de 20."
+      },
+      "result": {
+        "movement_notes": "Pausa isométrica al final (en máxima abducción)",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "17",
+            "rir": "0"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Gemelo en Hack con piernas estiradas",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina Hack",
+        "machine_settings": "Piernas estiradas, pausa 2 s abajo",
+        "load_basis": "added_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Calibrar carga inicial: 3 series de 10–15 reps, RIR 1–2."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "80",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "80",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "80",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Crunch cargado en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "machine_stack_kg"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 50 kg. Objetivo hoy: progresar a 15 reps por serie con RIR 1–2 hacia el tope de 15."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "0"
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "13",
+            "rir": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

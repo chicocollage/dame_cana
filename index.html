@@ -1,0 +1,3183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAME CAÑA // OS v2.0 — HUB DE TELEMETRÍA BIOMECÁNICA & GOBERNANZA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-void: #DAD7CD;
+      --bg-panel: #E9E8E1;
+      --bg-elevated: #F5F4EF;
+      --bg-active: #DDE7E5;
+      --border-hairline: #16181C;
+      --border-soft: rgba(22, 24, 28, 0.16);
+      --border-focus: #16181C;
+      --text-primary: #16181C;
+      --text-secondary: #42453E;
+      --text-muted: #5C6057;
+      --lime: #CCFF00;
+      --amber: #B45309;
+      --amber-dim: #FEF3C7;
+      --green: #15803D;
+      --green-dim: #DCFCE7;
+      --orange: #EB4818;
+      --orange-dim: rgba(235, 72, 24, 0.14);
+      --cyan: #16181C;
+      --cyan-dim: #CCFF00;
+      --red: #EB4818;
+      --red-dim: rgba(235, 72, 24, 0.16);
+      --font-mono: 'JetBrains Mono', monospace;
+      --font-display: 'Space Grotesk', sans-serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: var(--bg-void);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      font-size: 13px;
+      line-height: 1.5;
+      letter-spacing: -0.01em;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Retícula editorial de cuaderno biomecánico */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(rgba(22, 24, 28, 0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .app-shell {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      max-width: 1720px;
+      margin: 0 auto;
+    }
+
+    /* CABECERA TÁCTICA EDITORIAL */
+    .topbar {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 16px;
+      padding: 12px 20px;
+      background: rgba(233, 232, 225, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1.5px solid var(--border-hairline);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .brand-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-right: 16px;
+      border-right: 1.5px solid var(--border-soft);
+    }
+
+    .status-beacon {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--lime);
+      border: 1.5px solid var(--border-hairline);
+      display: inline-block;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: -0.02em;
+      color: var(--text-primary);
+    }
+
+    .brand-sub {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      display: block;
+    }
+
+    /* NAVEGACIÓN SPA */
+    .nav-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .nav-tab {
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      transition: transform 0.12s ease, background 0.12s ease;
+      text-transform: uppercase;
+    }
+
+    .nav-tab:hover {
+      background: #fff;
+      transform: translateY(-1px);
+    }
+
+    .nav-tab.active {
+      color: var(--lime);
+      background: var(--text-primary);
+      box-shadow: 0 3px 0 rgba(22, 24, 28, 0.22);
+    }
+
+    .nav-index {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--text-primary);
+      background: var(--bg-active);
+      padding: 1px 6px;
+      border-radius: 6px;
+      border: 1px solid var(--border-hairline);
+    }
+
+    .nav-tab.active .nav-index {
+      color: var(--text-primary);
+      background: var(--lime);
+      border-color: var(--lime);
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-tactical {
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 800;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      transition: all 0.14s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .btn-tactical:hover {
+      background: var(--lime);
+      transform: translateY(-1px);
+    }
+
+    .btn-tactical.btn-amber {
+      background: var(--lime);
+      color: var(--text-primary);
+      box-shadow: 0 2px 0 var(--border-hairline);
+    }
+
+    .btn-tactical.btn-amber:hover {
+      background: var(--text-primary);
+      color: var(--lime);
+    }
+
+    .btn-tactical.btn-green {
+      background: var(--green-dim);
+      color: var(--green);
+      border-color: var(--border-hairline);
+    }
+
+    /* BARRA DE TELEMETRÍA SECUNDARIA */
+    .subbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 12px 20px 0;
+      padding: 9px 18px;
+      background: var(--bg-panel);
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-secondary);
+      gap: 12px;
+    }
+
+    .subbar-group {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .kv-pair span:first-child {
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-right: 5px;
+    }
+
+    .kv-pair strong {
+      color: var(--text-primary) !important;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-hairline);
+      padding: 1px 8px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    /* CONTENEDOR DE VISTAS */
+    .workspace {
+      flex: 1;
+      padding: 18px 20px 48px;
+    }
+
+    .view-section {
+      display: none;
+      animation: fadeInView 0.16s ease-out;
+    }
+
+    .view-section.active {
+      display: block;
+    }
+
+    @keyframes fadeInView {
+      from { opacity: 0; transform: translateY(3px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* BENTO GRID GENERAL */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .col-12 { grid-column: span 12; }
+    .col-8 { grid-column: span 8; }
+    .col-7 { grid-column: span 7; }
+    .col-6 { grid-column: span 6; }
+    .col-5 { grid-column: span 5; }
+    .col-4 { grid-column: span 4; }
+    .col-3 { grid-column: span 3; }
+
+    @media (max-width: 1200px) {
+      .col-8, .col-7, .col-6, .col-5, .col-4, .col-3 {
+        grid-column: span 6;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .topbar {
+        grid-template-columns: 1fr;
+      }
+      .brand-block {
+        border-right: none;
+        border-bottom: 1.5px solid var(--border-soft);
+        padding-bottom: 8px;
+      }
+      .subbar {
+        border-radius: 18px;
+      }
+      .col-8, .col-7, .col-6, .col-5, .col-4, .col-3 {
+        grid-column: span 12;
+      }
+    }
+
+    /* PANELES TÉCNICOS REDONDEADOS */
+    .panel {
+      background: var(--bg-panel);
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 22px;
+      box-shadow: 0 8px 22px rgba(22, 24, 28, 0.06);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      background: var(--bg-elevated);
+      border-bottom: 1.5px solid var(--border-hairline);
+      gap: 8px;
+    }
+
+    .panel-title {
+      font-family: var(--font-display);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .panel-title::before {
+      content: "◆";
+      font-size: 10px;
+      background: var(--lime);
+      color: var(--text-primary);
+      border: 1px solid var(--border-hairline);
+      border-radius: 6px;
+      padding: 1px 5px;
+    }
+
+    .panel-body {
+      padding: 16px;
+      flex: 1;
+    }
+
+    /* BADGES Y ETIQUETAS */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 9px;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      border: 1px solid var(--border-hairline);
+      border-radius: 999px;
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+
+    .badge-green {
+      color: var(--text-primary);
+      background: var(--lime);
+    }
+
+    .badge-amber {
+      color: var(--text-primary);
+      background: var(--amber-dim);
+    }
+
+    .badge-orange, .badge-red {
+      color: #fff;
+      background: var(--orange);
+    }
+
+    .badge-cyan {
+      color: var(--text-primary);
+      background: var(--bg-active);
+    }
+
+    /* TARJETAS KPI TELEMETRÍA */
+    .kpi-value {
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--text-primary) !important;
+      margin: 4px 0;
+      letter-spacing: -0.03em;
+    }
+
+    .kpi-sub {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+
+    /* TABLAS DE DATOS */
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 14px;
+      background: var(--bg-elevated);
+    }
+
+    table.tech-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    table.tech-table th {
+      text-align: left;
+      padding: 9px 12px;
+      background: var(--text-primary);
+      color: var(--bg-elevated);
+      font-family: var(--font-mono);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    table.tech-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-soft);
+      color: var(--text-primary);
+      vertical-align: top;
+    }
+
+    table.tech-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    table.tech-table tr:hover td {
+      background: rgba(204, 255, 0, 0.16);
+    }
+
+    table.tech-table tr.excluded-row td {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+
+    /* ONTOLOGÍA 5 NIVELES */
+    .ontology-chain {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    @media (max-width: 992px) {
+      .ontology-chain {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .ontology-node {
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 16px;
+      background: var(--bg-elevated);
+      padding: 12px;
+      cursor: pointer;
+      transition: transform 0.12s ease, background 0.12s ease;
+      position: relative;
+    }
+
+    .ontology-node:hover, .ontology-node.active {
+      background: var(--lime);
+      transform: translateY(-2px);
+    }
+
+    .ontology-level {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .ontology-name {
+      font-family: var(--font-display);
+      font-weight: 800;
+      font-size: 13px;
+      margin-bottom: 4px;
+    }
+
+    .ontology-file {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--orange);
+    }
+
+    /* CHECKLIST PRE-SESIÓN */
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 14px;
+      background: var(--bg-elevated);
+      margin-bottom: 8px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.14s ease;
+    }
+
+    .checklist-item:hover {
+      background: #fff;
+    }
+
+    .checklist-item.checked {
+      background: var(--lime);
+    }
+
+    .check-box {
+      width: 18px;
+      height: 18px;
+      border-radius: 6px;
+      border: 1.5px solid var(--border-hairline);
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      font-size: 11px;
+      color: transparent;
+    }
+
+    .checklist-item.checked .check-box {
+      background: var(--text-primary);
+      color: var(--lime);
+      font-weight: 800;
+    }
+
+    /* CONTROLES DE FILTRO E INPUTS */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .tech-input, .tech-select {
+      background: var(--bg-elevated);
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 999px;
+      color: var(--text-primary);
+      padding: 7px 14px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 600;
+      outline: none;
+    }
+
+    .tech-input:focus, .tech-select:focus {
+      background: #fff;
+      box-shadow: 0 0 0 2px var(--lime);
+    }
+
+    /* CANVAS RESPONSIVO */
+    .canvas-container {
+      width: 100%;
+      position: relative;
+      background: #16181C;
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+    }
+
+    /* MODAL CON CENTRADO ORTOGONAL ESTRICTO (PROHIBIDO translate(-50%, -50%)) */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(22, 24, 28, 0.65);
+      backdrop-filter: blur(4px);
+      z-index: 200;
+      display: none;
+    }
+
+    .modal-backdrop.open {
+      display: block;
+    }
+
+    .modal-dialog {
+      position: fixed;
+      inset: 0;
+      margin: auto;
+      height: max-content;
+      max-height: 90vh;
+      width: min(920px, 94vw);
+      background: var(--bg-panel);
+      border: 2px solid var(--border-hairline);
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(22, 24, 28, 0.35);
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .note-textarea {
+      width: 100%;
+      min-height: 150px;
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 16px;
+      padding: 14px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      line-height: 1.5;
+      resize: vertical;
+      outline: none;
+    }
+
+    /* MAPA ARTICULAR INTERACTIVO */
+    .joint-node {
+      cursor: pointer;
+      transition: opacity 0.15s ease;
+    }
+
+    .joint-node:hover {
+      opacity: 0.8;
+    }
+
+    /* TARJETAS DE DECISIÓN */
+    .decision-card {
+      border: 1.5px solid var(--border-hairline);
+      border-radius: 16px;
+      background: var(--bg-elevated);
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .decision-summary {
+      padding: 12px 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      background: var(--bg-panel);
+      font-weight: 700;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .decision-details {
+      padding: 14px;
+      border-top: 1.5px solid var(--border-soft);
+      display: none;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .decision-card.expanded .decision-details {
+      display: grid;
+    }
+
+    @media (max-width: 768px) {
+      .decision-details {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .meta-box {
+      padding: 10px 12px;
+      border: 1px solid var(--border-hairline);
+      border-radius: 12px;
+      background: var(--bg-panel);
+    }
+
+    .meta-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    /* BARRA DE PROGRESO SFR */
+    .sfr-bar-track {
+      width: 100%;
+      height: 8px;
+      background: var(--bg-void);
+      border: 1px solid var(--border-hairline);
+      border-radius: 999px;
+      margin-top: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .sfr-bar-fill {
+      height: 100%;
+      background: var(--lime);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <!-- TOPBAR -->
+    <header class="topbar">
+      <div class="brand-block">
+        <span class="status-beacon" id="globalBeacon"></span>
+        <div>
+          <div class="brand-title">DAME CAÑA // OS v2.0</div>
+          <span class="brand-sub">TELEMETRÍA BIOMECÁNICA &amp; GOBERNANZA</span>
+        </div>
+      </div>
+
+      <nav class="nav-tabs" aria-label="Módulos Operativos">
+        <button class="nav-tab active" data-target="view-inicio">
+          <span class="nav-index">01</span> INICIO
+        </button>
+        <button class="nav-tab" data-target="view-programa">
+          <span class="nav-index">02</span> MI PROGRAMA
+        </button>
+        <button class="nav-tab" data-target="view-estaciones">
+          <span class="nav-index">03</span> EJERCICIOS &amp; MÁQUINAS
+        </button>
+        <button class="nav-tab" data-target="view-historial">
+          <span class="nav-index">04</span> MI HISTORIAL
+        </button>
+        <button class="nav-tab" data-target="view-seguimiento">
+          <span class="nav-index">05</span> SEGUIMIENTO &amp; RECUPERACIÓN
+        </button>
+        <button class="nav-tab" data-target="view-gobernanza">
+          <span class="nav-index">06</span> GOBERNANZA CIENTÍFICA
+        </button>
+      </nav>
+
+      <div class="topbar-actions">
+        <a class="btn-tactical" href="DameCaña/index.html">🏋️ APP ENTRENO</a>
+        <a class="btn-tactical" href="DameCaña/checkin.html">📋 CHECK-IN</a>
+        <a class="btn-tactical" href="DameCaña/biohacks.html">⚡ BIOHACKS</a>
+        <button class="btn-tactical btn-amber" id="openNoteModalBtn">
+          <span>+ CONSOLA NOTE v1</span>
+          <span style="font-size:9px; opacity:0.8;">[⌘K]</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- SUBBAR DE ESTADO EN TIEMPO REAL -->
+    <div class="subbar">
+      <div class="subbar-group">
+        <div class="kv-pair"><span>PROGRAMA ACTIVO:</span><strong style="color:var(--cyan)" id="subActiveProgram">M4-3D-v2.0</strong></div>
+        <div class="kv-pair"><span>ÚLTIMA SESIÓN:</span><strong id="subLastSession">2026-10-10 · DÍA B</strong></div>
+        <div class="kv-pair"><span>SIGUIENTE PROPUESTA:</span><strong style="color:var(--green)" id="subNextSession">DÍA C (BRAZOS / REZAGO)</strong></div>
+        <div class="kv-pair"><span>PRINCIPIO COMPARABILIDAD:</span><strong style="color:var(--amber)">ESTRICTO (GEOMETRÍA 1:1)</strong></div>
+      </div>
+      <div class="subbar-group">
+        <div class="kv-pair"><span>ESTADO PRE-SESIÓN:</span><strong id="readinessStatusText" style="color:var(--amber)">BLOQUEADO (0/4 VERIFICADOS)</strong></div>
+      </div>
+    </div>
+
+    <!-- WORKSPACE PRINCIPAL -->
+    <main class="workspace">
+
+      <!-- =================================================================
+           MÓDULO 1: INICIO (COCKPIT DE TELEMETRÍA & INTEGRIDAD)
+      ================================================================== -->
+      <section id="view-inicio" class="view-section active">
+        <div class="bento-grid">
+          <!-- KPI 1 -->
+          <div class="panel col-3">
+            <div class="panel-header">
+              <span class="panel-title">ESTADO OPERATIVO</span>
+              <span class="badge badge-cyan">ACTIVO</span>
+            </div>
+            <div class="panel-body">
+              <div class="kpi-sub">PROGRAMA EN CURSO</div>
+              <div class="kpi-value" id="kpiActiveProgram">M4-3D-v2.0</div>
+              <div class="kpi-sub" style="margin-top:8px;">
+                Última: <strong style="color:var(--text-primary)" id="kpiLastSession">2026-10-10 · Día B</strong><br>
+                Siguiente: <strong style="color:var(--green)" id="kpiNextSession">Día C (Especialización)</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI 2 -->
+          <div class="panel col-3">
+            <div class="panel-header">
+              <span class="panel-title">VOLUMEN HISTÓRICO</span>
+              <span class="badge badge-green">SYNC OK</span>
+            </div>
+            <div class="panel-body">
+              <div class="kpi-sub">SESIONES ACUMULADAS / FILAS DE SERIES</div>
+              <div class="kpi-value"><span id="kpiTotalSessions">27</span> SES // <span id="kpiTotalSets">390</span> SER</div>
+              <div class="kpi-sub" style="margin-top:8px;">
+                Series con repeticiones efectivas: <strong style="color:var(--green)" id="kpiEffectiveSets">335</strong> (85.9%)
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI 3 -->
+          <div class="panel col-3">
+            <div class="panel-header">
+              <span class="panel-title">INTEGRIDAD DE MÁQUINAS</span>
+              <span class="badge badge-amber">ALERTA ÁMBAR</span>
+            </div>
+            <div class="panel-body">
+              <div class="kpi-sub">ESTACIONES SIN ID FÍSICO CONFIRMADO</div>
+              <div class="kpi-value" style="color:var(--amber)" id="kpiUnconfirmedMachines">16 PENDIENTES</div>
+              <div class="kpi-sub" style="margin-top:8px;">
+                Requieren placa de fabricante, perfil de leva y foto en <code>data/maquinas.json</code>.
+              </div>
+            </div>
+          </div>
+
+          <!-- KPI 4 -->
+          <div class="panel col-3">
+            <div class="panel-header">
+              <span class="panel-title">AISLAMIENTO GEOMÉTRICO</span>
+              <span class="badge badge-amber">ESTRICTO</span>
+            </div>
+            <div class="panel-body">
+              <div class="kpi-sub">SERIES SIN GRUPO COMPARABLE</div>
+              <div class="kpi-value" style="color:var(--amber)" id="kpiUncomparableSets">390 AISLADAS</div>
+              <div class="kpi-sub" style="margin-top:8px;">
+                Retenidas hasta confirmar identidad de estación + reglaje mecánico exacto.
+              </div>
+            </div>
+          </div>
+
+          <!-- ONTOLOGÍA DE 5 NIVELES DESACOPLADOS -->
+          <div class="panel col-8">
+            <div class="panel-header">
+              <span class="panel-title">LA ONTOLOGÍA DE DATOS (LOS 5 NIVELES DESACOPLADOS)</span>
+              <span class="badge badge-cyan">ARQUITECTURA ANTI-COLAPSO</span>
+            </div>
+            <div class="panel-body">
+              <p style="color:var(--text-secondary); margin-bottom:10px;">
+                Haz clic en cada nivel ontológico para inspeccionar su esquema JSON, su clave primaria y por qué el sistema prohíbe fundir conceptos comerciales:
+              </p>
+              <div class="ontology-chain" id="ontologyChain">
+                <div class="ontology-node active" data-level="1">
+                  <div class="ontology-level"><span>NIVEL 01</span><span>MOTOR</span></div>
+                  <div class="ontology-name">Patrón de Movimiento</div>
+                  <div class="ontology-file">Ontología Base</div>
+                </div>
+                <div class="ontology-node" data-level="2">
+                  <div class="ontology-level"><span>NIVEL 02</span><span>BIOMECÁNICA</span></div>
+                  <div class="ontology-name">Ejercicio / Variante</div>
+                  <div class="ontology-file">Solución Prescrita</div>
+                </div>
+                <div class="ontology-node" data-level="3">
+                  <div class="ontology-level"><span>NIVEL 03</span><span>HARDWARE</span></div>
+                  <div class="ontology-name">Estación Física</div>
+                  <div class="ontology-file">data/maquinas.json</div>
+                </div>
+                <div class="ontology-node" data-level="4">
+                  <div class="ontology-level"><span>NIVEL 04</span><span>ARQUITECTURA</span></div>
+                  <div class="ontology-name">Puesto en Programa</div>
+                  <div class="ontology-file">data/programa.json</div>
+                </div>
+                <div class="ontology-node" data-level="5">
+                  <div class="ontology-level"><span>NIVEL 05</span><span>TELEMETRÍA</span></div>
+                  <div class="ontology-name">Exposición en Sesión</div>
+                  <div class="ontology-file">data/registro.json</div>
+                </div>
+              </div>
+
+              <div id="ontologyInspector" style="margin-top:12px; padding:12px; background:var(--bg-void); border:1px solid var(--border-hairline); display:grid; grid-template-columns: 1fr 1fr; gap:12px;">
+                <!-- Rellenado dinámicamente por JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- CHECKLIST PRE-SESIÓN -->
+          <div class="panel col-4">
+            <div class="panel-header">
+              <span class="panel-title">CHECKLIST OPERATIVO PRE-SESIÓN</span>
+              <span class="badge badge-amber" id="checklistBadge">0 / 4 OK</span>
+            </div>
+            <div class="panel-body">
+              <p style="color:var(--text-secondary); margin-bottom:10px;">
+                Protocolo de validación obligatorio antes de liberar la prescripción del <strong>Día C</strong> en sala:
+              </p>
+              <div id="preSessionChecklist">
+                <div class="checklist-item" data-check="0">
+                  <div style="display:flex; align-items:center;">
+                    <span class="check-box">✓</span>
+                    <span>Historial sincronizado byte a byte (<code>registro.json</code>)</span>
+                  </div>
+                  <span class="badge">SHA-256</span>
+                </div>
+                <div class="checklist-item" data-check="1">
+                  <div style="display:flex; align-items:center;">
+                    <span class="check-box">✓</span>
+                    <span>Recuperación percibida del SNC &gt; 7/10</span>
+                  </div>
+                  <span class="badge">AUTONOMIC</span>
+                </div>
+                <div class="checklist-item" data-check="2">
+                  <div style="display:flex; align-items:center;">
+                    <span class="check-box">✓</span>
+                    <span>Ausencia de conflicto articular agudo (Codo/Hombro)</span>
+                  </div>
+                  <span class="badge">ARTICULAR</span>
+                </div>
+                <div class="checklist-item" data-check="3">
+                  <div style="display:flex; align-items:center;">
+                    <span class="check-box">✓</span>
+                    <span>Identidad de estación y reglajes verificados en sala</span>
+                  </div>
+                  <span class="badge">GEOMETRÍA</span>
+                </div>
+              </div>
+              <div id="deploymentBanner" style="margin-top:10px; padding:10px; border:1px solid var(--amber); background:var(--amber-dim); color:var(--amber); font-weight:700; text-align:center;">
+                ESTADO: DESPLIEGUE EN SALA PENDIENTE DE VERIFICACIÓN
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           MÓDULO 2: MI PROGRAMA (PRESCRIPCIÓN DINÁMICA DÍAS A, B Y C)
+      ================================================================== -->
+      <section id="view-programa" class="view-section">
+        <div class="bento-grid">
+          <div class="panel col-12">
+            <div class="panel-header">
+              <span class="panel-title" id="programPanelTitle">PRESCRIPCIÓN DINÁMICA DE MICROCICLO // PROGRAMA M4-3D-v2.0 (data/programa.json)</span>
+              <div style="display:flex; gap:6px; flex-wrap:wrap;" id="daySelectorContainer">
+                <button class="btn-tactical day-selector active" data-day="A">DÍA A · TRACCIÓN / POSTERIOR</button>
+                <button class="btn-tactical day-selector" data-day="B">DÍA B · EMPUJE / ANTERIOR</button>
+                <button class="btn-tactical day-selector" data-day="C">DÍA C · BRAZOS / REZAGO BIOMECÁNICO</button>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div id="dayMetaHeader" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:10px; background:var(--bg-void); border:1px solid var(--border-hairline); margin-bottom:12px;">
+                <!-- Rellenado por JS -->
+              </div>
+              <div class="table-wrap">
+                <table class="tech-table">
+                  <thead>
+                    <tr>
+                      <th>PUESTO</th>
+                      <th>ROL</th>
+                      <th>PATRÓN DE MOVIMIENTO (N1)</th>
+                      <th>EJERCICIO / VARIANTE PRESCRITA (N2)</th>
+                      <th>ESTACIÓN FÍSICA (N3)</th>
+                      <th>SERIES × REPS</th>
+                      <th>RIR OBJ</th>
+                      <th>TEMPO</th>
+                      <th>DESCANSO</th>
+                      <th>REGLAJE MECÁNICO FIJO</th>
+                      <th>ÚLTIMA REF. COMPARABLE</th>
+                    </tr>
+                  </thead>
+                  <tbody id="programTableBody">
+                    <!-- Rellenado por JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           MÓDULO 3: EJERCICIOS Y ESTACIONES (BIOMECÁNICA & CURVAS)
+      ================================================================== -->
+      <section id="view-estaciones" class="view-section">
+        <div class="panel col-12" style="margin-bottom:12px;">
+          <div class="panel-header">
+            <span class="panel-title">CATÁLOGO DE ESTACIONES FÍSICAS &amp; PERFILES DE RESISTENCIA (data/maquinas.json)</span>
+            <span class="badge badge-amber">16 MÁQUINAS SIN ID FÍSICO EN SALA</span>
+          </div>
+          <div class="panel-body">
+            <div class="filter-bar">
+              <input type="text" id="machineSearchInput" class="tech-input" placeholder="Buscar por ID, nombre canónico, alias o fabricante..." style="min-width:280px; flex:1;" />
+              <select id="machineStatusFilter" class="tech-select">
+                <option value="ALL">ESTADO: TODOS LOS REGISTROS</option>
+                <option value="VALIDADA">ESTACIÓN VALIDADA</option>
+                <option value="CANDIDATA">FICHA CANDIDATA</option>
+                <option value="SIN_ID">SIN ID FÍSICO</option>
+              </select>
+              <select id="machineProfileFilter" class="tech-select">
+                <option value="ALL">PERFIL DE LEVA: TODOS</option>
+                <option value="ASCENDENTE">ASCENDENTE</option>
+                <option value="DESCENDENTE">DESCENDENTE</option>
+                <option value="CAMPANA">CAMPANA</option>
+                <option value="PLANO">LINEAL / PLANO</option>
+              </select>
+            </div>
+            <div class="bento-grid" id="machinesCatalogGrid">
+              <!-- Tarjetas Bento de estaciones con Canvas 2D individual -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           MÓDULO 4: MI HISTORIAL (BITÁCORA DE SERIES Y CARGA PROGRESIVA)
+      ================================================================== -->
+      <section id="view-historial" class="view-section">
+        <div class="bento-grid">
+          <div class="panel col-7">
+            <div class="panel-header">
+              <span class="panel-title">BITÁCORA DE EXPOSICIONES EN SESIÓN (data/registro.json)</span>
+              <div style="display:flex; gap:8px; align-items:center;">
+                <select id="sessionSelect" class="tech-select">
+                  <option value="ALL">TODAS LAS SESIONES RECIENTES (#25 - #27+)</option>
+                  <option value="SES-027">SESIÓN #27 · 2026-10-10 · DÍA B</option>
+                  <option value="SES-026">SESIÓN #26 · 2026-10-08 · DÍA A</option>
+                  <option value="SES-025">SESIÓN #25 · 2026-10-05 · DÍA C</option>
+                </select>
+              </div>
+            </div>
+            <div class="panel-body">
+              <div class="filter-bar" style="justify-content:space-between; background:var(--bg-void); padding:8px 10px; border:1px solid var(--border-hairline);">
+                <div>
+                  <strong style="color:var(--cyan)">AISLADOR ESTRICTO DE COMPARABILIDAD GEOMÉTRICA:</strong>
+                  <span style="color:var(--text-secondary); display:block; font-size:10px;">
+                    Oculta o tacha series cuya estación física o reglaje de banco/polea difiera del estándar canónico.
+                  </span>
+                </div>
+                <label style="display:flex; align-items:center; gap:8px; cursor:pointer; font-weight:700; color:var(--amber);">
+                  <input type="checkbox" id="strictComparabilityToggle" checked />
+                  FILTRAR DESVIACIONES GEOMÉTRICAS
+                </label>
+              </div>
+
+              <div class="table-wrap">
+                <table class="tech-table">
+                  <thead>
+                    <tr>
+                      <th>SESIÓN / FECHA</th>
+                      <th>EJERCICIO &amp; SERIE</th>
+                      <th>ESTACIÓN &amp; REGLAJE</th>
+                      <th>CARGA × REPS</th>
+                      <th>RIR / TEMPO</th>
+                      <th>ESTADO COMPARABLE</th>
+                      <th>NOTAS TÉCNICAS / FALLOS</th>
+                    </tr>
+                  </thead>
+                  <tbody id="historyTableBody">
+                    <!-- Rellenado por JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel col-5">
+            <div class="panel-header">
+              <span class="panel-title">TELEMETRÍA DE SOBRECARGA PROGRESIVA (FILTRADA)</span>
+              <span class="badge badge-cyan" id="overloadExerciseBadge">JALÓN UNILATERAL</span>
+            </div>
+            <div class="panel-body">
+              <div class="filter-bar">
+                <span style="color:var(--text-secondary);">SERIE TEMPORAL DE EJERCICIO:</span>
+                <select id="overloadExerciseSelect" class="tech-select" style="flex:1;">
+                  <option value="EX-PULL-01">Jalón sagital unilateral en polea alta (ST-CABLE-02)</option>
+                  <option value="EX-PUSH-01">Press convergente inclinado en máquina (ST-HAMMER-01)</option>
+                  <option value="EX-LEG-01">Extensión de cuádriceps unilateral reclinado (ST-PANATTA-04)</option>
+                </select>
+              </div>
+              <div class="canvas-container" style="height:260px;">
+                <canvas id="overloadCanvas"></canvas>
+              </div>
+              <div id="overloadAuditNote" style="margin-top:10px; padding:10px; background:var(--bg-void); border:1px solid var(--border-hairline); font-size:10px; color:var(--text-secondary);">
+                <!-- Rellenado por JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           MÓDULO 5: SEGUIMIENTO Y CINÉTICA DE RECUPERACIÓN
+      ================================================================== -->
+      <section id="view-seguimiento" class="view-section">
+        <div class="bento-grid">
+          <!-- MAPA DE MOLESTIAS E IMPACTO ARTICULAR -->
+          <div class="panel col-5">
+            <div class="panel-header">
+              <span class="panel-title">MAPA ARTICULAR &amp; TENSIÓN MECÁNICA RESIDUAL</span>
+              <span class="badge badge-amber">CLICK EN ARTICULACIÓN</span>
+            </div>
+            <div class="panel-body" style="display:grid; grid-template-columns: 190px 1fr; gap:12px; align-items:center;">
+              <div style="background:var(--bg-void); border:1px solid var(--border-hairline); padding:8px; text-align:center;">
+                <svg viewBox="0 0 200 320" width="100%" height="270" aria-label="Esquema biomecánico articular">
+                  <!-- Ejes de referencia -->
+                  <line x1="100" y1="10" x2="100" y2="310" stroke="#26262e" stroke-dasharray="3,3" stroke-width="1"/>
+                  <line x1="20" y1="85" x2="180" y2="85" stroke="#26262e" stroke-dasharray="3,3" stroke-width="1"/>
+                  <!-- Silueta técnica esquelética -->
+                  <circle cx="100" cy="36" r="16" fill="none" stroke="#565663" stroke-width="1.5"/>
+                  <!-- Columna y tronco -->
+                  <line x1="100" y1="52" x2="100" y2="175" stroke="#8e8e99" stroke-width="2"/>
+                  <polygon points="65,75 135,75 122,170 78,170" fill="rgba(22,22,28,0.6)" stroke="#565663" stroke-width="1.2"/>
+                  <!-- Brazos -->
+                  <line x1="65" y1="75" x2="42" y2="130" stroke="#8e8e99" stroke-width="2"/>
+                  <line x1="42" y1="130" x2="32" y2="182" stroke="#8e8e99" stroke-width="1.8"/>
+                  <line x1="135" y1="75" x2="158" y2="130" stroke="#8e8e99" stroke-width="2"/>
+                  <line x1="158" y1="130" x2="168" y2="182" stroke="#8e8e99" stroke-width="1.8"/>
+                  <!-- Pelvis y piernas -->
+                  <polygon points="78,170 122,170 115,195 85,195" fill="none" stroke="#565663" stroke-width="1.2"/>
+                  <line x1="85" y1="195" x2="80" y2="250" stroke="#8e8e99" stroke-width="2.2"/>
+                  <line x1="80" y1="250" x2="80" y2="300" stroke="#8e8e99" stroke-width="1.8"/>
+                  <line x1="115" y1="195" x2="120" y2="250" stroke="#8e8e99" stroke-width="2.2"/>
+                  <line x1="120" y1="250" x2="120" y2="300" stroke="#8e8e99" stroke-width="1.8"/>
+
+                  <!-- NODOS ARTICULARES INTERACTIVOS -->
+                  <!-- Hombros (Verde / Óptimo) -->
+                  <g class="joint-node" data-joint="HOMBRO_GH">
+                    <circle cx="65" cy="75" r="8" fill="rgba(16,185,129,0.25)" stroke="#10b981" stroke-width="2"/>
+                    <circle cx="135" cy="75" r="8" fill="rgba(16,185,129,0.25)" stroke="#10b981" stroke-width="2"/>
+                  </g>
+                  <!-- Codos (Ámbar / Tensión Mecánica Residual) -->
+                  <g class="joint-node" data-joint="CODO_HUMEROCUBITAL">
+                    <circle cx="42" cy="130" r="9" fill="rgba(245,158,11,0.3)" stroke="#f59e0b" stroke-width="2"/>
+                    <circle cx="158" cy="130" r="9" fill="rgba(245,158,11,0.3)" stroke="#f59e0b" stroke-width="2"/>
+                  </g>
+                  <!-- Lumbar L4-S1 (Rojo / Alerta por Degeneración Técnica) -->
+                  <g class="joint-node" data-joint="LUMBAR_L4S1">
+                    <rect x="88" y="150" width="24" height="16" fill="rgba(239,68,68,0.35)" stroke="#ef4444" stroke-width="2"/>
+                  </g>
+                  <!-- Rodillas (Verde / Óptimo) -->
+                  <g class="joint-node" data-joint="RODILLA_PF">
+                    <circle cx="80" cy="250" r="8" fill="rgba(16,185,129,0.25)" stroke="#10b981" stroke-width="2"/>
+                    <circle cx="120" cy="250" r="8" fill="rgba(16,185,129,0.25)" stroke="#10b981" stroke-width="2"/>
+                  </g>
+                </svg>
+                <div style="font-size:9px; color:var(--text-secondary); margin-top:4px;">
+                  [VERDE: ÓPTIMO] [ÁMBAR: RESIDUAL] [ROJO: ALERTA]
+                </div>
+              </div>
+
+              <div id="jointInspectorPanel" style="background:var(--bg-void); border:1px solid var(--border-hairline); padding:12px; height:100%;">
+                <!-- Rellenado dinámicamente al hacer clic en una articulación -->
+              </div>
+            </div>
+          </div>
+
+          <!-- CINÉTICA DE RECUPERACIÓN CANVAS 2D -->
+          <div class="panel col-7">
+            <div class="panel-header">
+              <span class="panel-title">CINÉTICA DE RECUPERACIÓN // VOLUMEN EFECTIVO vs RECUPERACIÓN MUSCULAR &amp; SNC</span>
+              <span class="badge badge-cyan">VENTANA: 4 MICROCICLOS</span>
+            </div>
+            <div class="panel-body">
+              <div class="canvas-container" style="height:245px;">
+                <canvas id="recoveryKineticsCanvas"></canvas>
+              </div>
+              <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; margin-top:8px; font-size:10px; color:var(--text-secondary);">
+                <span><strong style="color:var(--cyan)">■ BARRAS:</strong> Series efectivas semanales (RIR ≤ 2)</span>
+                <span><strong style="color:var(--green)">● LÍNEA VERDE:</strong> Recuperación Muscular Local (%)</span>
+                <span><strong style="color:var(--orange)">▲ LÍNEA NARANJA:</strong> Fatiga acumulada del SNC (%)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MATRIZ SFR (STIMULUS-TO-FATIGUE RATIO) -->
+          <div class="panel col-12">
+            <div class="panel-header">
+              <span class="panel-title">MATRIZ SFR (STIMULUS-TO-FATIGUE RATIO) POR PATRÓN BIOMECÁNICO</span>
+              <span class="badge badge-green">AUDITORÍA DE COSTE SISTÉMICO</span>
+            </div>
+            <div class="panel-body">
+              <div class="bento-grid" id="sfrMatrixContainer">
+                <!-- Rellenado por JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           MÓDULO 6: GOBERNANZA CIENTÍFICA Y DECISIONES (MOTOR DE 6 PASOS)
+      ================================================================== -->
+      <section id="view-gobernanza" class="view-section">
+        <div class="bento-grid">
+          <div class="panel col-8">
+            <div class="panel-header">
+              <span class="panel-title">REGISTRO INMUTABLE DE DECISIONES (EL MOTOR DE 6 PASOS)</span>
+              <div style="display:flex; gap:6px;">
+                <select id="decisionDomainFilter" class="tech-select">
+                  <option value="ALL">DOMINIO: TODOS</option>
+                  <option value="Programa">DOMINIO: PROGRAMA</option>
+                  <option value="Estación">DOMINIO: ESTACIÓN</option>
+                  <option value="Volumen">DOMINIO: VOLUMEN</option>
+                  <option value="Recuperación">DOMINIO: RECUPERACIÓN</option>
+                </select>
+              </div>
+            </div>
+            <div class="panel-body" id="decisionsContainer">
+              <!-- Tarjetas expandibles de decisiones -->
+            </div>
+          </div>
+
+          <div class="panel col-4">
+            <div class="panel-header">
+              <span class="panel-title">BIBLIOTECA CIENTÍFICA (PISTA → MECANISMO → PRINCIPIO)</span>
+              <span class="badge badge-cyan">CORPUS ACTIVO</span>
+            </div>
+            <div class="panel-body" id="scientificLibraryContainer">
+              <!-- Rellenado por JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- =====================================================================
+       MODAL CENTRADO ORTOGONALMENTE: CONSOLA INGESTIÓN RÁPIDA "NOTE v1"
+  ====================================================================== -->
+  <div class="modal-backdrop" id="noteModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="noteModalTitle">
+    <div class="modal-dialog">
+      <div class="panel-header">
+        <span class="panel-title" id="noteModalTitle">CONSOLA TÁCTICA DE INGESTIÓN // PARSER SINTÁCTICO "NOTE v1" → data/registro.json</span>
+        <button class="btn-tactical" id="closeNoteModalBtn">CERRAR [ESC]</button>
+      </div>
+      <div class="panel-body">
+        <div style="margin-bottom:10px; font-size:11px; color:var(--text-secondary);">
+          Formato canónico por línea: <code>FECHA | DÍA | EJERCICIO | ESTACIÓN_ID | REGLAJE | CARGA_KG x REPS @RIR | TEMPO | NOTAS</code>
+        </div>
+        <textarea id="noteInputArea" class="note-textarea" spellcheck="false">2026-10-15 | C | Curl Bayesian unilateral en polea baja | ST-CABLE-02 | Polea pin 2, paso adelante 60cm | 22.5 x 11 @0.5 | 3-0-1-1 | Estiramiento máximo humeral óptimo
+2026-10-15 | C | Curl Bayesian unilateral en polea baja | ST-CABLE-02 | Polea pin 2, paso adelante 60cm | 22.5 x 9 @0 | 3-0-1-1 | Fallo concéntrico limpio en rep 9
+2026-10-15 | C | Extensión de tríceps overhead en polea | SIN_ID | Polea altura media | 35.0 x 12 @1 | 2-1-1-0 | Máquina auxiliar sin placa verificada</textarea>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:10px; flex-wrap:wrap; gap:8px;">
+          <div style="display:flex; gap:8px;">
+            <button class="btn-tactical btn-amber" id="parseNoteBtn">PARSEAR Y VALIDAR SINTAXIS</button>
+            <button class="btn-tactical" id="loadSampleCleanBtn">CARGAR EJEMPLO 100% VALIDADO</button>
+          </div>
+          <button class="btn-tactical btn-green" id="commitNoteBtn" style="display:none;">INYECTAR SERIES EN REGISTRO.JSON</button>
+        </div>
+
+        <div id="parserOutputContainer" style="margin-top:12px;">
+          <!-- Resultado del parser -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /*************************************************************************
+     * STORE & CAPA DE ACCESO A DATOS (LOCAL / SERVIDOR // DAME CAÑA v2.0)
+     *************************************************************************/
+    const USE_LOCAL_FILES = true;
+    window.USE_LOCAL_FILES = USE_LOCAL_FILES;
+
+    /*************************************************************************
+     * BASE DE DATOS INTERNA DEL SISTEMA "DAME CAÑA" v2.0 (DATOS SEMILLA & LIVE)
+     *************************************************************************/
+    let STATE = {
+      totalSessions: 27,
+      totalSets: 390,
+      effectiveSets: 335,
+      unconfirmedMachines: 16,
+      uncomparableSets: 390,
+      lastSessionLabel: "2026-10-10 · Día B",
+      checklist: [false, false, false, false],
+      parsedStagingSets: []
+    };
+
+    // 1. Inspección de los 5 niveles ontológicos
+    let ONTOLOGY_DATA = {
+      "1": {
+        title: "NIVEL 1: PATRÓN DE MOVIMIENTO (Base Motora Universal)",
+        schema: `{
+  "pattern_id": "PAT-KNEE-EXT-OC",
+  "nombre": "Extensión de rodilla en cadena cinética abierta",
+  "plano_dominante": "Sagital",
+  "articulacion_primaria": "Rodilla (Tibiofemoral / Patelofemoral)",
+  "vector_fuerza": "Torque extensor rotacional"
+}`,
+        rule: "PROHIBICIÓN ONTOLÓGICA: Nunca se registra carga ni progreso sobre un Patrón de Movimiento. El patrón define la función articular, no la herramienta mecánica."
+      },
+      "2": {
+        title: "NIVEL 2: EJERCICIO / VARIANTE (Solución Biomecánica Prescrita)",
+        schema: `{
+  "exercise_id": "EX-LEG-01",
+  "pattern_id": "PAT-KNEE-EXT-OC",
+  "nombre_canonico": "Leg extension unilateral con tronco reclinado 115°",
+  "foco_regional": "Recto femoral (alargamiento proximal en cadera)",
+  "estabilidad_externa": "Alta (respaldo + agarres laterales)"
+}`,
+        rule: "DIFERENCIACIÓN: Cambiar de ejecución bilateral a unilateral o reclinar el respaldo cambia el Ejercicio/Variante aunque se realice en la misma máquina."
+      },
+      "3": {
+        title: "NIVEL 3: ESTACIÓN FÍSICA / MÁQUINA (data/maquinas.json)",
+        schema: `{
+  "station_id": "ST-PANATTA-04",
+  "fabricante": "Panatta Sport",
+  "modelo": "Monolith Leg Extension Unilateral",
+  "angulo_palanca_grados": 115,
+  "perfil_resistencia": "DESCENDENTE",
+  "pico_tension": "Alargamiento",
+  "estado_validacion": "VALIDADA"
+}`,
+        rule: "REGLA DE HARDWARE: Dos máquinas 'Leg Extension' de distinto fabricante tienen levas distintas. Sin station_id validado, las series quedan aisladas."
+      },
+      "4": {
+        title: "NIVEL 4: PUESTO EN EL PROGRAMA (data/programa.json)",
+        schema: `{
+  "slot_id": "M4-DIA-B-P2",
+  "programa_id": "M4-3D-v2.0",
+  "dia": "B",
+  "orden_puesto": 2,
+  "rol": "Principal",
+  "series_objetivo": 3,
+  "rango_reps": "6-8",
+  "rir_objetivo": "0-1",
+  "tempo": "3-1-1-0"
+}`,
+        rule: "DESACOPLAMIENTO DE ROL: El mismo ejercicio puede ocupar el Puesto 1 (Principal, RIR 0) en un mesociclo y el Puesto 4 (Apoyo, RIR 2) en otro."
+      },
+      "5": {
+        title: "NIVEL 5: EXPOSICIÓN EN SESIÓN (data/registro.json)",
+        schema: `{
+  "exposure_id": "EXP-20261010-04",
+  "fecha": "2026-10-10",
+  "slot_id": "M4-DIA-B-P2",
+  "station_id": "ST-PANATTA-04",
+  "reglaje_fijo": "Respaldo pos 4 | Rodillo pos 2 | Cincha pélvica cerrada",
+  "serie_num": 1,
+  "total_kg": 47.5,
+  "reps_positivas": 8,
+  "rir_real": 0.5
+}`,
+        rule: "PRINCIPIO DE COMPARABILIDAD: Solo son comparables dos exposiciones si comparten exactamente station_id + reglaje_fijo + rango articular completo."
+      }
+    };
+
+    // 2. Prescripción del Programa (Días A, B, C)
+    let PROGRAM_DATA = {
+      "A": {
+        title: "DÍA A // PATRONES DOMINANTES DE TRACCIÓN & CADENA POSTERIOR",
+        focus: "Dorsal ancho (divisiones costal/iliaca), tracto medio escapular, isquiosurales en alargamiento.",
+        targetCost: "Coste axial moderado-bajo (prioridad en soportes torácicos para proteger L4-S1).",
+        slots: [
+          {
+            puesto: "01",
+            rol: "Principal",
+            patron: "Tracción sagital de dorsal",
+            ejercicio: "Jalón unilateral sagital en polea alta con banco de tope",
+            estacion: "ST-CABLE-02",
+            seriesReps: "3 × 6-8",
+            rir: "RIR 0-1",
+            tempo: "3-0-1-1",
+            descanso: "180s",
+            reglaje: "Polea pin 18 (máx), banco 75° como tope costal, maneral D neutro",
+            lastRef: "42.5 kg × 8 @RIR 0.5 (2026-10-08)"
+          },
+          {
+            puesto: "02",
+            rol: "Principal",
+            patron: "Retracción horizontal escapular",
+            ejercicio: "Remo con soporte torácico (Chest-Supported Row) agarre pronado ancho",
+            estacion: "ST-PRIME-02",
+            seriesReps: "3 × 7-9",
+            rir: "RIR 0-1",
+            tempo: "2-1-1-0",
+            descanso: "180s",
+            reglaje: "Asiento pos 3, almohadilla pecho pos 4, carga en clavija media+baja",
+            lastRef: "65.0 kg × 8 @RIR 1.0 (2026-10-08)"
+          },
+          {
+            puesto: "03",
+            rol: "Complementario",
+            patron: "Bisagra de cadera / Flexión de rodilla",
+            ejercicio: "Curl femoral sentado con tronco inclinado 70° sobre muslos",
+            estacion: "ST-CYBEX-03",
+            seriesReps: "3 × 8-10",
+            rir: "RIR 0-1",
+            tempo: "3-1-1-0",
+            descanso: "150s",
+            reglaje: "Respaldo pos 2 + cuña lumbar, rodillo distal agujero 4, tope muslo firme",
+            lastRef: "57.5 kg × 9 @RIR 0.5 (2026-10-08)"
+          },
+          {
+            puesto: "04",
+            rol: "Apoyo",
+            patron: "Abducción horizontal glenohumeral",
+            ejercicio: "Pájaro posterior unilateral en cable cruzado a nivel escapular",
+            estacion: "ST-CABLE-02",
+            seriesReps: "2 × 10-12",
+            rir: "RIR 1",
+            tempo: "2-0-1-1",
+            descanso: "90s",
+            reglaje: "Polea pin 11 (hombro), paso lateral 40cm, tracción sin bola mediante muñequera",
+            lastRef: "12.5 kg × 11 @RIR 1.0 (2026-10-08)"
+          }
+        ]
+      },
+      "B": {
+        title: "DÍA B // PATRONES DOMINANTES DE EMPUJE & TORSO ANTERIOR / CUÁDRICEPS",
+        focus: "Pectoral mayor (porción clavicular y esternal), deltoides anterior/lateral, recto femoral y vastos.",
+        targetCost: "Estabilidad externa máxima en máquinas convergentes para maximizar reclutamiento motor.",
+        slots: [
+          {
+            puesto: "01",
+            rol: "Principal",
+            patron: "Empuje convergente inclinado",
+            ejercicio: "Press torácico inclinado convergente en palanca",
+            estacion: "ST-HAMMER-01",
+            seriesReps: "3 × 6-8",
+            rir: "RIR 0-1",
+            tempo: "3-1-1-0",
+            descanso: "180s",
+            reglaje: "Asiento pos 5, agarre neutro-pronado medio, escápulas deprimidas",
+            lastRef: "85.0 kg × 7 @RIR 0.5 (2026-10-10)"
+          },
+          {
+            puesto: "02",
+            rol: "Principal",
+            patron: "Extensión de rodilla en cadena abierta",
+            ejercicio: "Leg extension unilateral con tronco reclinado 115°",
+            estacion: "ST-PANATTA-04",
+            seriesReps: "3 × 7-9",
+            rir: "RIR 0-1",
+            tempo: "3-1-1-0",
+            descanso: "150s",
+            reglaje: "Respaldo pos 4 (115°), rodillo tibial pos 2, cincha pélvica bloqueada",
+            lastRef: "47.5 kg × 8 @RIR 0.5 (2026-10-10)"
+          },
+          {
+            puesto: "03",
+            rol: "Complementario",
+            patron: "Extensión compuesta de rodilla y cadera",
+            ejercicio: "Prensa péndulo (Pendulum Squat) con énfasis en flexión máxima de rodilla",
+            estacion: "ST-ARSENAL-05",
+            seriesReps: "2 × 6-8",
+            rir: "RIR 1",
+            tempo: "3-1-1-0",
+            descanso: "210s",
+            reglaje: "Pies zona inferior plataforma, separación anchura caderas, tope seguridad #2",
+            lastRef: "90.0 kg × 7 @RIR 1.0 (2026-10-10)"
+          },
+          {
+            puesto: "04",
+            rol: "Apoyo",
+            patron: "Abducción en plano escapular",
+            ejercicio: "Elevación lateral unilateral en polea baja con muñequera",
+            estacion: "ST-CABLE-02",
+            seriesReps: "3 × 10-12",
+            rir: "RIR 0-1",
+            tempo: "2-0-1-1",
+            descanso: "90s",
+            reglaje: "Polea pin 3 (altura tibia), inclinación torso 10° hacia torre",
+            lastRef: "11.25 kg × 11 @RIR 0.5 (2026-10-10)"
+          }
+        ]
+      },
+      "C": {
+        title: "DÍA C // ESPECIALIZACIÓN BRAZOS & PUNTOS DE REZAGO BIOMECÁNICO",
+        focus: "Bíceps braquial (alargamiento hombro en extensión), cabeza larga del tríceps, braquiorradial y deltoides lateral.",
+        targetCost: "Bajo coste sistémico/SNC; control estricto de par de torsión en articulación humerocubital.",
+        slots: [
+          {
+            puesto: "01",
+            rol: "Principal",
+            patron: "Flexión de codo con hombro extendido",
+            ejercicio: "Curl Bayesian unilateral en polea con muñequera acolchada",
+            estacion: "ST-CABLE-02",
+            seriesReps: "3 × 8-10",
+            rir: "RIR 0-1",
+            tempo: "3-0-1-1",
+            descanso: "120s",
+            reglaje: "Polea pin 2, paso adelante 60cm (marca suelo B), hombro fijo a 35° extensión",
+            lastRef: "21.25 kg × 10 @RIR 0.5 (2026-10-05)"
+          },
+          {
+            puesto: "02",
+            rol: "Principal",
+            patron: "Extensión de codo en posición neutra/costado",
+            ejercicio: "Extensión de tríceps unilateral cruzada en polea alta",
+            estacion: "ST-CABLE-02",
+            seriesReps: "3 × 8-10",
+            rir: "RIR 0-1",
+            tempo: "2-0-1-1",
+            descanso: "120s",
+            reglaje: "Polea pin 17, brazo alineado a 30° abducción costal, tope sin cuerda",
+            lastRef: "23.75 kg × 9 @RIR 0.5 (2026-10-05)"
+          },
+          {
+            puesto: "03",
+            rol: "Complementario",
+            patron: "Flexión de codo con hombro flexionado",
+            ejercicio: "Curl predicador unilateral en máquina de leva variable",
+            estacion: "ST-STRIVE-06",
+            seriesReps: "2 × 8-10",
+            rir: "RIR 1",
+            tempo: "3-1-1-0",
+            descanso: "120s",
+            reglaje: "Asiento pos 4, leva en ajuste #1 (máxima carga en acortamiento medio)",
+            lastRef: "25.0 kg × 9 @RIR 1.0 (2026-10-05)"
+          },
+          {
+            puesto: "04",
+            rol: "Apoyo",
+            patron: "Flexión plantar con rodilla extendida",
+            ejercicio: "Elevación de gemelo en prensa horizontal (pausa 2s en estiramiento)",
+            estacion: "ST-MATRIX-UNV-09",
+            seriesReps: "3 × 10-12",
+            rir: "RIR 0-1",
+            tempo: "2-2-1-1",
+            descanso: "90s",
+            reglaje: "Carro pos 6, metatarso al borde inferior, rodilla desbloqueada 5°",
+            lastRef: "110.0 kg × 11 @RIR 1.0 [SIN ID FÍSICO]"
+          }
+        ]
+      }
+    };
+
+    // 3. Catálogo de Estaciones Físicas (data/maquinas.json)
+    let MACHINES_DATA = [
+      {
+        id: "ST-PANATTA-04",
+        name: "Monolith Unilateral Leg Extension",
+        aliases: ["Extensión Cuádriceps Reclinada", "Panatta Leg Ext #4"],
+        pattern: "Extensión de rodilla en cadena abierta",
+        manufacturer: "Panatta Sport (Italia)",
+        leverAngle: "115° reclinación cadera / Leva excéntrica progresiva",
+        profile: "DESCENDENTE",
+        peakRegion: "Alargamiento",
+        status: "VALIDADA",
+        curvePoints: [0.92, 0.96, 0.85, 0.68, 0.50, 0.38] // Del estiramiento (0%) al acortamiento (100%)
+      },
+      {
+        id: "ST-HAMMER-01",
+        name: "Iso-Lateral Incline Press",
+        aliases: ["Hammer Inclinado Discos", "Press Convergente #1"],
+        pattern: "Empuje convergente inclinado",
+        manufacturer: "Hammer Strength / Life Fitness",
+        leverAngle: "Trayectoria convergente 25° / Brazo de momento decreciente",
+        profile: "DESCENDENTE",
+        peakRegion: "Alargamiento",
+        status: "VALIDADA",
+        curvePoints: [0.95, 0.88, 0.76, 0.64, 0.52, 0.42]
+      },
+      {
+        id: "ST-PRIME-02",
+        name: "SmartStrength Chest-Supported Row",
+        aliases: ["Remo Prime Tres Clavijas", "Remo Pecho Apoyado"],
+        pattern: "Retracción horizontal escapular y extensión humeral",
+        manufacturer: "Prime Fitness USA",
+        leverAngle: "Doble clavija híbrida (Posición 1 + 2)",
+        profile: "CAMPANA",
+        peakRegion: "Posición Neutra",
+        status: "VALIDADA",
+        curvePoints: [0.55, 0.78, 0.96, 0.90, 0.65, 0.45]
+      },
+      {
+        id: "ST-CABLE-02",
+        name: "Torre Dual Ajustable Relación 2:1",
+        aliases: ["Polea Funcional Norte", "Cable Crossover #2"],
+        pattern: "Vectores libres configurables por altura de pin",
+        manufacturer: "Eleiko Prestera Cable",
+        leverAngle: "Polea giratoria 180° (18 posiciones numeradas a láser)",
+        profile: "PLANO",
+        peakRegion: "Posición Neutra",
+        status: "VALIDADA",
+        curvePoints: [0.75, 0.82, 0.85, 0.85, 0.80, 0.72]
+      },
+      {
+        id: "ST-ARSENAL-05",
+        name: "Reloaded Pendulum Squat",
+        aliases: ["Sentadilla Péndulo", "Péndulo Pesado"],
+        pattern: "Extensión compuesta de rodilla y cadera",
+        manufacturer: "Arsenal Strength",
+        leverAngle: "Arco pendular con contrapeso base de 20 kg",
+        profile: "ASCENDENTE",
+        peakRegion: "Alargamiento",
+        status: "CANDIDATA",
+        curvePoints: [0.98, 0.85, 0.72, 0.66, 0.74, 0.82]
+      },
+      {
+        id: "ST-MATRIX-UNV-09",
+        name: "Prensa Horizontal Selectorizada Sala Sur",
+        aliases: ["Prensa Placas Gris", "Leg Press Gemelo"],
+        pattern: "Extensión de miembro inferior / Flexión plantar",
+        manufacturer: "Sin Placa Serial (Presunto Matrix G3)",
+        leverAngle: "Ángulo de trineo no auditado (pendiente goniómetro)",
+        profile: "ASCENDENTE",
+        peakRegion: "Acortamiento",
+        status: "SIN_ID",
+        curvePoints: [0.45, 0.58, 0.70, 0.82, 0.91, 0.96]
+      }
+    ];
+
+    // 4. Historial de Exposiciones en Sesión (data/registro.json)
+    let HISTORY_SETS = [
+      {
+        sessionId: "SES-027",
+        date: "2026-10-10",
+        day: "B",
+        exerciseId: "EX-PUSH-01",
+        exerciseName: "Press torácico inclinado convergente",
+        setNum: 1,
+        stationId: "ST-HAMMER-01",
+        setup: "Asiento pos 5 | Agarre neutro-pronado",
+        kg: 85.0,
+        reps: 7,
+        rir: 0.5,
+        tempo: "3-1-1-0",
+        comparable: true,
+        notes: "Pausa isométrica 1s en estiramiento costal sin rebote."
+      },
+      {
+        sessionId: "SES-027",
+        date: "2026-10-10",
+        day: "B",
+        exerciseId: "EX-PUSH-01",
+        exerciseName: "Press torácico inclinado convergente",
+        setNum: 2,
+        stationId: "ST-HAMMER-01",
+        setup: "Asiento pos 5 | Agarre neutro-pronado",
+        kg: 85.0,
+        reps: 6,
+        rir: 0.0,
+        tempo: "3-1-1-0",
+        comparable: true,
+        notes: "Velocidad concéntrica de última rep muy lenta (0.22 m/s)."
+      },
+      {
+        sessionId: "SES-027",
+        date: "2026-10-10",
+        day: "B",
+        exerciseId: "EX-PUSH-01",
+        exerciseName: "Press torácico inclinado convergente",
+        setNum: 3,
+        stationId: "ST-HAMMER-01",
+        setup: "Asiento pos 3 | Agarre ancho [CAMBIO REGLAJE]",
+        kg: 80.0,
+        reps: 8,
+        rir: 1.0,
+        tempo: "2-0-1-0",
+        comparable: false,
+        notes: "EXCLUIDA DE COMPARABILIDAD: Pin de asiento cambiado a pos 3 por error."
+      },
+      {
+        sessionId: "SES-027",
+        date: "2026-10-10",
+        day: "B",
+        exerciseId: "EX-LEG-01",
+        exerciseName: "Leg extension unilateral reclinado 115°",
+        setNum: 1,
+        stationId: "ST-PANATTA-04",
+        setup: "Respaldo pos 4 | Rodillo pos 2 | Cincha cerrada",
+        kg: 47.5,
+        reps: 8,
+        rir: 0.5,
+        tempo: "3-1-1-0",
+        comparable: true,
+        notes: "Tensión máxima percibida en tercio proximal del recto femoral."
+      },
+      {
+        sessionId: "SES-026",
+        date: "2026-10-08",
+        day: "A",
+        exerciseId: "EX-PULL-01",
+        exerciseName: "Jalón unilateral sagital en polea alta",
+        setNum: 1,
+        stationId: "ST-CABLE-02",
+        setup: "Polea pin 18 | Banco 75° tope costal",
+        kg: 42.5,
+        reps: 8,
+        rir: 0.5,
+        tempo: "3-0-1-1",
+        comparable: true,
+        notes: "Depresión escapular limpia antes de iniciar extensión humeral."
+      },
+      {
+        sessionId: "SES-026",
+        date: "2026-10-08",
+        day: "A",
+        exerciseId: "EX-PULL-01",
+        exerciseName: "Jalón unilateral sagital en polea alta",
+        setNum: 2,
+        stationId: "ST-CABLE-09-AUX",
+        setup: "Polea auxiliar sin numeración (relación 1:1)",
+        kg: 25.0,
+        reps: 9,
+        rir: 1.0,
+        tempo: "3-0-1-0",
+        comparable: false,
+        notes: "EXCLUIDA: Torre ST-CABLE-02 ocupada; polea auxiliar tiene otra desmultiplicación."
+      },
+      {
+        sessionId: "SES-025",
+        date: "2026-10-05",
+        day: "C",
+        exerciseId: "EX-ARM-01",
+        exerciseName: "Curl Bayesian unilateral en polea baja",
+        setNum: 1,
+        stationId: "ST-CABLE-02",
+        setup: "Polea pin 2 | Paso adelante 60cm",
+        kg: 21.25,
+        reps: 10,
+        rir: 0.5,
+        tempo: "3-0-1-1",
+        comparable: true,
+        notes: "Ligera tensión residual en epitróclea derecha al final de serie."
+      }
+    ];
+
+    // Series temporales de sobrecarga para el gráfico de historial
+    let OVERLOAD_SERIES = {
+      "EX-PULL-01": {
+        name: "Jalón sagital unilateral (ST-CABLE-02 | Pin 18 | Banco 75°)",
+        points: [
+          { date: "2026-09-12", kg: 37.5, reps: 7, comparable: true },
+          { date: "2026-09-19", kg: 40.0, reps: 7, comparable: true },
+          { date: "2026-09-25", kg: 22.5, reps: 10, comparable: false, reason: "Polea auxiliar 1:1 (No comparable)" },
+          { date: "2026-10-01", kg: 40.0, reps: 8, comparable: true },
+          { date: "2026-10-08", kg: 42.5, reps: 8, comparable: true }
+        ]
+      },
+      "EX-PUSH-01": {
+        name: "Press convergente inclinado (ST-HAMMER-01 | Asiento 5)",
+        points: [
+          { date: "2026-09-14", kg: 77.5, reps: 7, comparable: true },
+          { date: "2026-09-21", kg: 80.0, reps: 7, comparable: true },
+          { date: "2026-09-28", kg: 82.5, reps: 7, comparable: true },
+          { date: "2026-10-04", kg: 80.0, reps: 9, comparable: false, reason: "Asiento en posición 3 (No comparable)" },
+          { date: "2026-10-10", kg: 85.0, reps: 7, comparable: true }
+        ]
+      },
+      "EX-LEG-01": {
+        name: "Leg extension unilateral 115° (ST-PANATTA-04 | Respaldo 4)",
+        points: [
+          { date: "2026-09-14", kg: 42.5, reps: 8, comparable: true },
+          { date: "2026-09-21", kg: 45.0, reps: 7, comparable: true },
+          { date: "2026-09-28", kg: 45.0, reps: 8, comparable: true },
+          { date: "2026-10-04", kg: 47.5, reps: 7, comparable: true },
+          { date: "2026-10-10", kg: 47.5, reps: 8, comparable: true }
+        ]
+      }
+    };
+
+    // 5. Telemetría Articular y SFR
+    let JOINT_TELEMETRY = {
+      "LUMBAR_L4S1": {
+        name: "RAQUIS LUMBAR (SEGMENTO L4-L5 / L5-S1)",
+        status: "ALERTA POR DEGENERACIÓN TÉCNICA (ROJO)",
+        badgeClass: "badge-red",
+        stressScore: "7.8 / 10 (Cizalla + Compresión Axial)",
+        causalExercises: "Peso Muerto Rumano con Barra Libre (Suprimido en DEC-2026-002), Remo Pendlay sin apoyo.",
+        actionProtocol: "Sustitución obligatoria por variantes con soporte torácico (ST-PRIME-02) y flexión de rodilla sentada en alargamiento (ST-CYBEX-03)."
+      },
+      "CODO_HUMEROCUBITAL": {
+        name: "COMPLEJO DEL CODO (HUMEROCUBITAL & EPITRÓCLEA)",
+        status: "TENSIÓN MECÁNICA RESIDUAL (ÁMBAR)",
+        badgeClass: "badge-amber",
+        stressScore: "4.6 / 10 (Torque en Valgo por Agarre Rígido)",
+        causalExercises: "Jalones pesados con barra recta y Press Francés con barra EZ.",
+        actionProtocol: "Uso exclusivo de muñequeras de tracción libre (libertad pronosupinadora) y poleas independientes en Día C."
+      },
+      "HOMBRO_GH": {
+        name: "ARTICULACIÓN GLENOHUMERAL & ESPACIO SUBACROMIAL",
+        status: "ÓPTIMO / ESTABILIDAD VERIFICADA (VERDE)",
+        badgeClass: "badge-green",
+        stressScore: "2.1 / 10 (Alineado con Plano Escapular 30°)",
+        causalExercises: "Press convergente ST-HAMMER-01 ejecutado en plano escapular con control excéntrico 3s.",
+        actionProtocol: "Mantener límite de abducción humeral a 65° en empujes pesados."
+      },
+      "RODILLA_PF": {
+        name: "COMPLEJO PATELOFEMORAL & TENDÓN ROTULIANO",
+        status: "ÓPTIMO / ADAPTACIÓN TENDINOSA POSITIVA (VERDE)",
+        badgeClass: "badge-green",
+        stressScore: "3.0 / 10 (Pausa Isométrica 1s Eliminando Rebote)",
+        causalExercises: "Pendulum Squat (ST-ARSENAL-05) y Leg Extension 115° (ST-PANATTA-04).",
+        actionProtocol: "Continuar con pausa estricta de 1 segundo en máxima flexión para disipar energía elástica."
+      }
+    };
+
+    let SFR_DATA = [
+      { muscle: "Cuádriceps (Recto Femoral / Vastos)", pattern: "Extensión cadena abierta + Péndulo", stimulus: 9.2, fatigue: 3.4, ratio: "2.71 (EXCELENTE)" },
+      { muscle: "Dorsal Ancho (División Costal)", pattern: "Tracción sagital unilateral con tope", stimulus: 8.9, fatigue: 3.1, ratio: "2.87 (EXCELENTE)" },
+      { muscle: "Pectoral Mayor (Clavicular/Esternal)", pattern: "Press convergente en palanca", stimulus: 8.6, fatigue: 3.8, ratio: "2.26 (ÓPTIMO)" },
+      { muscle: "Isquiosurales (Semimembranoso/Bíceps)", pattern: "Curl sentado inclinado vs Bisagra libre", stimulus: 8.8, fatigue: 2.9, ratio: "3.03 (MÁXIMO SFR)" }
+    ];
+
+    // 6. Gobernanza Científica y Decisiones
+    let DECISIONS_DATA = [
+      {
+        id: "DEC-2026-001",
+        fecha: "2026-09-18",
+        dominio: "Volumen",
+        estado: "Aplicada",
+        badge: "badge-green",
+        cambio: "Reducción del volumen por sesión de 5 a 3 series efectivas por patrón principal, fijando RIR objetivo en 0-1 y descanso mínimo en 180s.",
+        motivo: "Las series 4 y 5 presentaban caída de repeticiones >35% y degradación del control excéntrico, aportando daño muscular no contráctil y fatiga del SNC desproporcionada.",
+        fuentes: "Pelland et al. (2024) Meta-regresión dosis-respuesta (Sports Med, DOI: 10.1007/s40279-024) + Refalo et al. (2023) Proximidad al fallo. Límites de transferencia: Sujetos >40 años presentan cinética de reparación conectiva más lenta.",
+        criterio_revision: "Evaluar tras 4 microciclos: si la tasa de progresión en carga/reps de la Serie 1 supera el +2.5% sin tensión articular ámbar/roja, consolidar como norma."
+      },
+      {
+        id: "DEC-2026-002",
+        fecha: "2026-09-26",
+        dominio: "Estación",
+        estado: "Aplicada",
+        badge: "badge-green",
+        cambio: "Sustitución de Peso Muerto Rumano con barra libre por Curl Femoral Sentado con tronco inclinado 70° (ST-CYBEX-03).",
+        motivo: "Maximizar la hipertrofia mediada por estiramiento de los isquiosurales biarticulares (cadera flexionada) eliminando el par de cizalla lumbar en L4-S1.",
+        fuentes: "Maeo et al. (2021) Seated vs Prone Leg Curl (Med Sci Sports Exerc, DOI: 10.1249/MSS.0000000000002523). Diseño: Intra-sujeto MRI. Hallazgo: +55% hipertrofia en sentado vs tumbado.",
+        criterio_revision: "Revisión en Semana 6: remisión total de fatiga lumbar residual y progresión continua en ST-CYBEX-03."
+      },
+      {
+        id: "DEC-2026-003",
+        fecha: "2026-10-04",
+        dominio: "Programa",
+        estado: "Aprobada",
+        badge: "badge-cyan",
+        cambio: "Estandarización de 'Leg Extension unilateral con respaldo a 115°' en ST-PANATTA-04 para el Día B (Puesto 2).",
+        motivo: "El respaldo reclinado coloca el recto femoral en mayor longitud inicial sobre la cadera, incrementando el estímulo sarcomérico regional frente al asiento vertical de 90°.",
+        fuentes: "Larsen et al. (2024) Hip angle in knee extension hypertrophy (Eur J Appl Physiol). Población: Entrenados recreacionales.",
+        criterio_revision: "Validar tras 3 sesiones del Día B que no exista molestia en tendón rotuliano manteniendo pausa de 1s en estiramiento."
+      },
+      {
+        id: "DEC-2026-004",
+        fecha: "2026-10-12",
+        dominio: "Recuperación",
+        estado: "Propuesta",
+        badge: "badge-amber",
+        cambio: "Reemplazo obligatorio de agarres cerrados por muñequeras de tracción (cuffs) en elevaciones laterales y pájaros en polea (ST-CABLE-02).",
+        motivo: "Desacoplar la musculatura extrínseca del antebrazo y los flexores del carpo para mitigar la tensión mecánica residual detectada en epitróclea humeral.",
+        fuentes: "Biomecánica de brazos de momento articulares (Purvis / Lehman corpus interno). Aplicación directa del vector de cable en el tercio distal del radio/cúbito.",
+        criterio_revision: "Si en 2 microciclos el indicador del Codo en el Módulo 5 pasa de ÁMBAR a VERDE sin pérdida de carga externa, cerrar decisión como estándar."
+      }
+    ];
+
+    let SCIENTIFIC_LIBRARY = [
+      {
+        cue: "PISTA OBSERVABLE: Caída abrupta de repeticiones entre la Serie 1 y la Serie 2 (>30%) a igual carga.",
+        mechanism: "MECANISMO CAUSAL: Fatiga central supraspinal + acumulación de iones fosfato inorgánico (Pi) e H+ por descanso insuficiente (<120s) o fallo excesivo con técnica degradada.",
+        principle: "PRINCIPIO UNIVERSAL: La tensión mecánica de alto umbral requiere recuperación de fosfágenos y disipación de fatiga aferente; descansar 180-210s en patrones principales preserva el reclutamiento de unidades motoras."
+      },
+      {
+        cue: "PISTA OBSERVABLE: Molestia en cara medial del codo durante jalones o curls pesados.",
+        mechanism: "MECANISMO CAUSAL: La articulación humerocubital es una tróclea rígida; forzar una supinación/pronación fija en barra recta transmite un par de torsión parásito a la epitróclea.",
+        principle: "PRINCIPIO UNIVERSAL: Alinear el maneral con la trayectoria libre del antebrazo (poleas independientes o anillas giratorias) anula las fuerzas de cizalla articular sin reducir la tensión muscular."
+      },
+      {
+        cue: "PISTA OBSERVABLE: Mayor congestión y agujetas sin incremento de carga en la barra/placa tras 3 semanas.",
+        mechanism: "MECANISMO CAUSAL: El edema celular y el daño estructural (Z-disc streaming) consumen síntesis proteica miofibrilar en reparación en lugar de adición de sarcómeros en paralelo.",
+        principle: "PRINCIPIO UNIVERSAL: El daño muscular no es el motor primario de la hipertrofia; la sobrecarga progresiva en tensión mecánica bajo geometría idéntica es el único indicador válido de adaptación."
+      }
+    ];
+
+    /*************************************************************************
+     * STORE CENTRAL: GESTIÓN DE ESTADO, CARGA LOCAL & PERSISTENCIA API
+     *************************************************************************/
+    window.DameCanaStore = {
+      USE_LOCAL_FILES: true,
+      raw: { maquinas: null, programa: null, registro: null, decisiones: null },
+      seedData: null,
+
+      async init() {
+        this.seedData = {
+          STATE: JSON.parse(JSON.stringify(STATE)),
+          PROGRAM_DATA: JSON.parse(JSON.stringify(PROGRAM_DATA)),
+          MACHINES_DATA: JSON.parse(JSON.stringify(MACHINES_DATA)),
+          HISTORY_SETS: JSON.parse(JSON.stringify(HISTORY_SETS)),
+          OVERLOAD_SERIES: JSON.parse(JSON.stringify(OVERLOAD_SERIES)),
+          DECISIONS_DATA: JSON.parse(JSON.stringify(DECISIONS_DATA))
+        };
+
+        if (this.USE_LOCAL_FILES) {
+          await this.loadLocalFiles();
+        } else {
+          console.info("[DameCanaStore] Modo Semilla Activo (USE_LOCAL_FILES = false).");
+        }
+      },
+
+      async loadLocalFiles() {
+        try {
+          console.info("[DameCanaStore] Solicitando datasets locales (data/)...");
+          const [resMaq, resProg, resReg, resDec] = await Promise.all([
+            fetch("data/maquinas.json").then(r => r.ok ? r.json() : null).catch(() => null),
+            fetch("data/programa.json").then(r => r.ok ? r.json() : null).catch(() => null),
+            fetch("data/registro.json").then(r => r.ok ? r.json() : null).catch(() => null),
+            fetch("data/decisiones.json").catch(() => fetch("data/estado_y_decisiones.json")).then(r => r.ok ? r.json() : null).catch(() => null)
+          ]);
+
+          this.raw = { maquinas: resMaq, programa: resProg, registro: resReg, decisiones: resDec };
+
+          if (!resMaq && !resProg && !resReg && !resDec) {
+            console.warn("[DameCanaStore] No se pudo leer la carpeta data/. Manteniendo datos semilla.");
+            return;
+          }
+
+          this.mapAndApply(this.raw);
+          console.info("[DameCanaStore] Hidratación completada desde data/.");
+        } catch (err) {
+          console.error("[DameCanaStore] Error al cargar archivos locales:", err);
+        }
+      },
+
+      mapAndApply(raw) {
+        // 1. Mapeo de Registro de Entrenamiento
+        if (raw.registro && Array.isArray(raw.registro.series)) {
+          const rawSeries = raw.registro.series;
+          const rawSesiones = raw.registro.sesiones || [];
+
+          STATE.totalSessions = rawSesiones.length;
+          STATE.totalSets = rawSeries.length;
+          STATE.effectiveSets = rawSeries.filter(s => s.reps != null && s.reps > 0).length;
+          STATE.uncomparableSets = rawSeries.filter(s => !s.machine_id && !s.comparability_group).length;
+
+          if (rawSesiones.length > 0) {
+            const lastSes = rawSesiones[rawSesiones.length - 1];
+            STATE.lastSessionLabel = `${lastSes.fecha} · Día ${lastSes.dia}`;
+          }
+
+          HISTORY_SETS = rawSeries.slice().reverse().map((s, idx) => {
+            const isComp = Boolean(s.machine_id || s.comparability_group);
+            const cleanName = (s.exercise_name || "").replace(/\u200B/g, '').trim();
+            return {
+              sessionId: s.session_id || "SES-LOCAL",
+              date: s.fecha || "",
+              day: s.dia || "-",
+              exerciseId: s.exercise_id || `EX-${idx}`,
+              exerciseName: cleanName || "Ejercicio",
+              setNum: s.set_index || 1,
+              stationId: s.machine_id || "SIN_ID",
+              setup: s.machine_settings || (s.variant ? `Variante: ${s.variant}` : "Reglaje estándar"),
+              kg: s.load_kg != null ? Number(s.load_kg) : 0,
+              reps: s.reps != null ? Number(s.reps) : 0,
+              rir: s.rir != null ? Number(s.rir) : 0,
+              tempo: s.tempo || "3-0-1-0",
+              comparable: isComp,
+              notes: s.movement_notes || (s.reps == null ? "Serie prescrita / no realizada" : "Serie ejecutada")
+            };
+          });
+
+          // Reconstruir OVERLOAD_SERIES dinámico con series ascendentes por fecha
+          const validAsc = rawSeries
+            .filter(s => s.reps != null && s.reps > 0 && s.load_kg != null && s.load_kg > 0)
+            .sort((a,b) => (a.fecha || "").localeCompare(b.fecha || ""));
+
+          const counts = {};
+          validAsc.forEach(s => {
+            const name = (s.exercise_name || "").replace(/\u200B/g, '').trim();
+            if (name) counts[name] = (counts[name] || 0) + 1;
+          });
+
+          const topExercises = Object.keys(counts).sort((a,b) => counts[b] - counts[a]).slice(0, 8);
+          if (topExercises.length > 0) {
+            const newOverload = {};
+            topExercises.forEach(name => {
+              const pts = validAsc
+                .filter(s => (s.exercise_name || "").replace(/\u200B/g, '').trim() === name)
+                .map(s => ({
+                  date: s.fecha,
+                  kg: Number(s.load_kg),
+                  reps: Number(s.reps),
+                  comparable: Boolean(s.machine_id || s.comparability_group),
+                  reason: (!s.machine_id && !s.comparability_group) ? "Sin estación identificada" : undefined
+                }));
+              newOverload[name] = {
+                name: `${name} (${pts.length} exposiciones)`,
+                points: pts
+              };
+            });
+            OVERLOAD_SERIES = newOverload;
+
+            const ovSelect = document.getElementById("overloadExerciseSelect");
+            if (ovSelect) {
+              ovSelect.innerHTML = topExercises.map(ex => `<option value="${ex}">${ex} (${newOverload[ex].points.length} series registradas)</option>`).join("");
+            }
+          }
+
+          const sesSelect = document.getElementById("sessionSelect");
+          if (sesSelect && rawSesiones.length > 0) {
+            const opts = ['<option value="ALL">TODAS LAS SESIONES RECIENTES (' + rawSesiones.length + ' sesiones)</option>'];
+            rawSesiones.slice().reverse().forEach((ses, idx) => {
+              opts.push(`<option value="${ses.session_id}">SESIÓN #${rawSesiones.length - idx} · ${ses.fecha} · DÍA ${ses.dia} (${ses.titulo || ses.session_id})</option>`);
+            });
+            sesSelect.innerHTML = opts.join("");
+          }
+        }
+
+        // 2. Mapeo de Catálogo de Máquinas
+        if (raw.maquinas && Array.isArray(raw.maquinas.estaciones)) {
+          const ests = raw.maquinas.estaciones;
+          STATE.unconfirmedMachines = ests.filter(m => !m.machine_id || (m.estado && m.estado.includes("INCOMPLETA"))).length;
+
+          MACHINES_DATA = ests.map((m, idx) => {
+            const hasId = Boolean(m.machine_id);
+            const isCandidata = m.estado && m.estado.includes("CANDIDATA");
+            const status = !hasId ? "SIN_ID" : (isCandidata ? "CANDIDATA" : "VALIDADA");
+            const nameLower = (m.nombre_visible_estacion || "").toLowerCase();
+            let profile = "DESCENDENTE";
+            let curvePoints = [0.92, 0.88, 0.76, 0.64, 0.52, 0.42];
+
+            if (nameLower.includes("polea") || nameLower.includes("cable")) {
+              profile = "PLANO";
+              curvePoints = [0.75, 0.82, 0.85, 0.85, 0.80, 0.72];
+            } else if (nameLower.includes("remo") || nameLower.includes("row")) {
+              profile = "CAMPANA";
+              curvePoints = [0.55, 0.78, 0.96, 0.90, 0.65, 0.45];
+            } else if (nameLower.includes("squat") || nameLower.includes("prensa") || nameLower.includes("péndulo") || nameLower.includes("hack")) {
+              profile = "ASCENDENTE";
+              curvePoints = [0.45, 0.58, 0.70, 0.82, 0.91, 0.96];
+            }
+
+            return {
+              id: m.machine_id || `SIN_ID_${String(idx+1).padStart(2,'0')}`,
+              name: m.nombre_visible_estacion || "Estación sin nombre",
+              aliases: [m.marca_modelo, m.gimnasio, m.familia_slot].filter(Boolean),
+              pattern: m.familia_slot || "Patrón general",
+              manufacturer: m.marca_modelo || "Fabricante pendiente",
+              leverAngle: m.ajustes_reproducibles || m.comparabilidad || "Pendiente reglaje",
+              profile: profile,
+              peakRegion: profile === "ASCENDENTE" ? "Acortamiento" : (profile === "CAMPANA" ? "Posición Neutra" : "Alargamiento"),
+              status: status,
+              curvePoints: curvePoints
+            };
+          });
+        }
+
+        // 3. Mapeo de Programa Activo
+        if (raw.programa && Array.isArray(raw.programa.slots)) {
+          const prog = raw.programa;
+          const rotacion = prog.rotacion_dias || ['A', 'B', 'C', 'D', 'E'];
+          const newProgramData = {};
+
+          rotacion.forEach(dLetter => {
+            const dSlots = prog.slots.filter(s => s.dia === dLetter).sort((a,b) => a.orden - b.orden);
+            const focus = dSlots.map(s => s.region_principal).filter(Boolean).slice(0, 3).join(', ') || "Patrones de entrenamiento";
+            const totSets = dSlots.reduce((acc, s) => acc + (s.series_base || 0), 0);
+
+            newProgramData[dLetter] = {
+              title: `DÍA ${dLetter} // PROGRAMA ${prog.version_activa || 'ACTIVO'}`,
+              focus: focus,
+              targetCost: `Volumen prescrito: ${totSets} series base. Descanso estricto ${dSlots[0]?.descanso || '2-3 min'}.`,
+              slots: dSlots.map(s => {
+                const cleanName = (s.ejercicio_selector || "").replace(/\u200B/g, '').trim().toLowerCase();
+                const match = HISTORY_SETS.find(h =>
+                  h.kg > 0 && h.reps > 0 &&
+                  (h.exerciseName.toLowerCase().includes(cleanName.slice(0, 14)) || cleanName.includes(h.exerciseName.toLowerCase().slice(0, 14)))
+                );
+                const lastRef = match
+                  ? `${match.kg.toFixed(1)} kg × ${match.reps} @RIR ${match.rir} (${match.date})`
+                  : "Sin registro previo";
+
+                return {
+                  puesto: String(s.orden).padStart(2, '0'),
+                  rol: s.orden <= 2 ? "Principal" : (s.orden === 3 ? "Complementario" : "Apoyo"),
+                  patron: s.region_principal || "Patrón biomecánico",
+                  ejercicio: s.ejercicio_selector,
+                  estacion: s.machine_id || "SIN_ID",
+                  seriesReps: `${s.series_base} × ${s.repeticiones}`,
+                  rir: `RIR ${s.rir_operativo}`,
+                  tempo: s.tempo || "3-0-1-0",
+                  descanso: s.descanso || "180s",
+                  reglaje: s.regla_tecnica_estado || "Reglaje técnico estándar",
+                  lastRef: lastRef
+                };
+              })
+            };
+          });
+
+          PROGRAM_DATA = newProgramData;
+
+          const dayContainer = document.getElementById("daySelectorContainer");
+          if (dayContainer) {
+            dayContainer.innerHTML = rotacion.map((d, i) =>
+              `<button class="btn-tactical day-selector ${i === 0 ? 'active' : ''}" data-day="${d}">DÍA ${d}</button>`
+            ).join("");
+            initProgramSelectors();
+          }
+
+          const activeVer = prog.version_activa || "M5-5D-v1.0";
+          const elProgTitle = document.getElementById("programPanelTitle");
+          if (elProgTitle) elProgTitle.textContent = `PRESCRIPCIÓN DINÁMICA DE MICROCICLO // PROGRAMA ${activeVer} (data/programa.json)`;
+
+          const subProg = document.getElementById("subActiveProgram");
+          if (subProg) subProg.textContent = activeVer;
+          const kpiProg = document.getElementById("kpiActiveProgram");
+          if (kpiProg) kpiProg.textContent = activeVer;
+
+          if (raw.registro && raw.registro.sesiones && raw.registro.sesiones.length > 0) {
+            const lastDay = raw.registro.sesiones[raw.registro.sesiones.length - 1].dia;
+            const curIdx = rotacion.indexOf(lastDay);
+            const nextDay = curIdx >= 0 && curIdx < rotacion.length - 1 ? rotacion[curIdx + 1] : rotacion[0];
+            const nextFocus = newProgramData[nextDay]?.focus || "";
+            const subNext = document.getElementById("subNextSession");
+            if (subNext) subNext.textContent = `DÍA ${nextDay} (${nextFocus.slice(0, 24)}...)`;
+            const kpiNext = document.getElementById("kpiNextSession");
+            if (kpiNext) kpiNext.textContent = `Día ${nextDay}`;
+          }
+        }
+
+        // 4. Mapeo de Gobernanza y Decisiones
+        if (raw.decisiones) {
+          const decList = raw.decisiones.decisiones || (Array.isArray(raw.decisiones) ? raw.decisiones : []);
+          if (decList.length > 0) {
+            DECISIONS_DATA = decList.map(d => ({
+              id: d.ID || d.id || "DEC-UNK",
+              fecha: (d.Fecha || d.fecha || "").split("T")[0],
+              dominio: d.Dominio || d.dominio || "Programa",
+              estado: d.Estado || d.estado || "ACTIVA",
+              badge: (d.Estado === "ACTIVA" || d.Estado === "Aplicada") ? "badge-green" : "badge-amber",
+              cambio: d.Decisión || d.cambio || "",
+              motivo: d["Motivo / datos usados"] || d.motivo || "",
+              fuentes: d["Source origen"] || d.fuentes || "Registro técnico interno DAME CAÑA",
+              criterio_revision: d["Criterio de revisión"] || d.criterio_revision || "Revisión periódica"
+            }));
+
+            const domFilter = document.getElementById("decisionDomainFilter");
+            if (domFilter) {
+              const uniqueDom = ["ALL", ...new Set(DECISIONS_DATA.map(d => d.dominio))];
+              domFilter.innerHTML = uniqueDom.map(dom => `<option value="${dom}">DOMINIO: ${dom.toUpperCase()}</option>`).join("");
+            }
+          }
+        }
+
+        this.syncCockpitKPIs();
+      },
+
+      syncCockpitKPIs() {
+        const elTotSes = document.getElementById("kpiTotalSessions");
+        if (elTotSes) elTotSes.textContent = STATE.totalSessions;
+        const elTotSets = document.getElementById("kpiTotalSets");
+        if (elTotSets) elTotSets.textContent = STATE.totalSets;
+        const elEffSets = document.getElementById("kpiEffectiveSets");
+        if (elEffSets) {
+          const pct = STATE.totalSets > 0 ? ((STATE.effectiveSets / STATE.totalSets) * 100).toFixed(1) : 0;
+          elEffSets.textContent = `${STATE.effectiveSets} (${pct}%)`;
+        }
+        const elUnconf = document.getElementById("kpiUnconfirmedMachines");
+        if (elUnconf) elUnconf.textContent = `${STATE.unconfirmedMachines} PENDIENTES`;
+        const elUncomp = document.getElementById("kpiUncomparableSets");
+        if (elUncomp) elUncomp.textContent = `${STATE.uncomparableSets} AISLADAS`;
+        const elLastSes = document.getElementById("kpiLastSession");
+        if (elLastSes) elLastSes.textContent = STATE.lastSessionLabel;
+        const elSubLast = document.getElementById("subLastSession");
+        if (elSubLast) elSubLast.textContent = STATE.lastSessionLabel.toUpperCase();
+      },
+
+      async inyectarNoteV1(parsedSets) {
+        if (!parsedSets || parsedSets.length === 0) return { ok: false, error: "Buffer vacío" };
+
+        let serverSaved = false;
+        let responseJson = null;
+
+        try {
+          const res = await fetch("/api/save", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ sets: parsedSets })
+          });
+          if (res.ok) {
+            responseJson = await res.json();
+            serverSaved = true;
+          }
+        } catch (e) {
+          console.warn("[DameCanaStore] Microservidor no disponible en /api/save. Guardando en memoria local:", e);
+        }
+
+        STATE.totalSessions += 1;
+        const newSessionId = responseJson?.session_id || `SES-0${STATE.totalSessions}`;
+
+        parsedSets.forEach((s, idx) => {
+          STATE.totalSets += 1;
+          STATE.effectiveSets += 1;
+          if (!s.comparable) STATE.uncomparableSets += 1;
+
+          HISTORY_SETS.unshift({
+            sessionId: newSessionId,
+            date: s.date,
+            day: s.day,
+            exerciseId: "EX-INGESTED",
+            exerciseName: s.exerciseName,
+            setNum: idx + 1,
+            stationId: s.stationId,
+            setup: s.setup,
+            kg: s.kg,
+            reps: s.reps,
+            rir: s.rir,
+            tempo: s.tempo,
+            comparable: s.comparable,
+            notes: s.notes
+          });
+        });
+
+        const first = parsedSets[0];
+        STATE.lastSessionLabel = `${first.date} · Día ${first.day}`;
+        this.syncCockpitKPIs();
+        renderHistoryTable();
+
+        return {
+          ok: true,
+          serverSaved: serverSaved,
+          sessionId: newSessionId,
+          count: parsedSets.length
+        };
+      }
+    };
+
+    /*************************************************************************
+     * INICIALIZACIÓN Y NAVEGACIÓN SPA
+     *************************************************************************/
+    document.addEventListener("DOMContentLoaded", async () => {
+      // 1. Inicializar Store y cargar archivos locales de data/
+      await window.DameCanaStore.init();
+
+      initNavigation();
+      initOntologyInspector();
+      initChecklist();
+      const firstDay = Object.keys(PROGRAM_DATA)[0] || "A";
+      renderProgramTable(firstDay);
+      initProgramSelectors();
+      renderMachinesCatalog();
+      initMachineFilters();
+      renderHistoryTable();
+      initHistoryControls();
+      initJointMap();
+      renderSFRMatrix();
+      renderDecisions("ALL");
+      initGovernanceControls();
+      renderScientificLibrary();
+      initNoteModal();
+
+      // Dibujar gráficos Canvas iniciales
+      requestAnimationFrame(() => {
+        drawAllMachineCurves();
+        drawOverloadChart();
+        drawRecoveryKineticsChart();
+      });
+
+      window.addEventListener("resize", () => {
+        drawAllMachineCurves();
+        drawOverloadChart();
+        drawRecoveryKineticsChart();
+      });
+    });
+
+    function initNavigation() {
+      const tabs = document.querySelectorAll(".nav-tab");
+      const sections = document.querySelectorAll(".view-section");
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          const targetId = tab.getAttribute("data-target");
+          tabs.forEach(t => t.classList.remove("active"));
+          sections.forEach(s => s.classList.remove("active"));
+
+          tab.classList.add("active");
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) targetSection.classList.add("active");
+
+          // Redibujar Canvas al activar su pestaña para garantizar dimensiones exactas
+          requestAnimationFrame(() => {
+            if (targetId === "view-estaciones") drawAllMachineCurves();
+            if (targetId === "view-historial") drawOverloadChart();
+            if (targetId === "view-seguimiento") drawRecoveryKineticsChart();
+          });
+        });
+      });
+    }
+
+    /*************************************************************************
+     * MÓDULO 1: ONTOLOGÍA Y CHECKLIST
+     *************************************************************************/
+    function initOntologyInspector() {
+      const nodes = document.querySelectorAll(".ontology-node");
+      renderOntologyDetail("1");
+
+      nodes.forEach(node => {
+        node.addEventListener("click", () => {
+          nodes.forEach(n => n.classList.remove("active"));
+          node.classList.add("active");
+          renderOntologyDetail(node.getAttribute("data-level"));
+        });
+      });
+    }
+
+    function renderOntologyDetail(level) {
+      const data = ONTOLOGY_DATA[level];
+      const container = document.getElementById("ontologyInspector");
+      container.innerHTML = `
+        <div>
+          <div style="color:var(--cyan); font-weight:700; margin-bottom:6px;">${data.title}</div>
+          <pre style="background:var(--bg-panel); padding:10px; border:1px solid var(--border-hairline); color:var(--green); font-size:10px; overflow-x:auto;">${data.schema}</pre>
+        </div>
+        <div style="display:flex; flex-direction:column; justify-content:space-between; border-left:1px solid var(--border-hairline); padding-left:12px;">
+          <div>
+            <span class="badge badge-amber" style="margin-bottom:8px;">REGLA DE INTEGRIDAD ONTOLÓGICA</span>
+            <p style="color:var(--text-primary); font-size:11px; line-height:1.5;">${data.rule}</p>
+          </div>
+          <div style="font-size:10px; color:var(--text-secondary); margin-top:12px; padding-top:8px; border-top:1px solid var(--border-hairline);">
+            PRINCIPIO RECTOR: Dos series solo son comparables si comparten Nivel 1 + Nivel 2 + Nivel 3 + Reglaje Mecánico Fijo.
+          </div>
+        </div>
+      `;
+    }
+
+    function initChecklist() {
+      const items = document.querySelectorAll(".checklist-item");
+      items.forEach(item => {
+        item.addEventListener("click", () => {
+          const idx = parseInt(item.getAttribute("data-check"), 10);
+          STATE.checklist[idx] = !STATE.checklist[idx];
+          item.classList.toggle("checked", STATE.checklist[idx]);
+          updateChecklistStatus();
+        });
+      });
+    }
+
+    function updateChecklistStatus() {
+      const completed = STATE.checklist.filter(Boolean).length;
+      const badge = document.getElementById("checklistBadge");
+      const banner = document.getElementById("deploymentBanner");
+      const subText = document.getElementById("readinessStatusText");
+
+      badge.textContent = `${completed} / 4 OK`;
+
+      if (completed === 4) {
+        badge.className = "badge badge-green";
+        banner.style.borderColor = "var(--green)";
+        banner.style.background = "var(--green-dim)";
+        banner.style.color = "var(--green)";
+        banner.textContent = "ESTADO: SISTEMA VERIFICADO — AUTORIZADO DESPLIEGUE DÍA C EN SALA";
+        subText.textContent = "AUTORIZADO (4/4 VERIFICADOS)";
+        subText.style.color = "var(--green)";
+      } else {
+        badge.className = "badge badge-amber";
+        banner.style.borderColor = "var(--amber)";
+        banner.style.background = "var(--amber-dim)";
+        banner.style.color = "var(--amber)";
+        banner.textContent = `ESTADO: DESPLIEGUE PENDIENTE (${4 - completed} VERIFICACIONES RESTANTES)`;
+        subText.textContent = `BLOQUEADO (${completed}/4 VERIFICADOS)`;
+        subText.style.color = "var(--amber)";
+      }
+    }
+
+    /*************************************************************************
+     * MÓDULO 2: MI PROGRAMA (DÍAS A, B, C)
+     *************************************************************************/
+    function initProgramSelectors() {
+      const btns = document.querySelectorAll(".day-selector");
+      btns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          btns.forEach(b => {
+            b.classList.remove("active");
+            b.style.borderColor = "var(--border-hairline)";
+            b.style.color = "var(--text-primary)";
+          });
+          btn.classList.add("active");
+          btn.style.borderColor = "var(--cyan)";
+          btn.style.color = "var(--cyan)";
+          renderProgramTable(btn.getAttribute("data-day"));
+        });
+      });
+    }
+
+    function renderProgramTable(dayKey) {
+      const dayData = PROGRAM_DATA[dayKey];
+      const header = document.getElementById("dayMetaHeader");
+      const tbody = document.getElementById("programTableBody");
+
+      header.innerHTML = `
+        <div>
+          <div style="font-weight:800; color:var(--cyan); font-size:13px;">${dayData.title}</div>
+          <div style="color:var(--text-secondary); font-size:11px; margin-top:2px;">FOCO BIOMECÁNICO: ${dayData.focus}</div>
+        </div>
+        <div style="text-align:right;">
+          <span class="badge badge-green">CONTROL DE FATIGA</span>
+          <div style="font-size:10px; color:var(--text-secondary); margin-top:4px;">${dayData.targetCost}</div>
+        </div>
+      `;
+
+      tbody.innerHTML = dayData.slots.map(slot => {
+        let roleBadge = "badge-cyan";
+        if (slot.rol === "Complementario") roleBadge = "badge-green";
+        if (slot.rol === "Apoyo") roleBadge = "badge-amber";
+
+        const isUnverified = slot.estacion.includes("UNV");
+        const stationBadge = isUnverified ? "badge-amber" : "badge-green";
+
+        return `
+          <tr>
+            <td style="font-weight:800; color:var(--cyan);">#${slot.puesto}</td>
+            <td><span class="badge ${roleBadge}">${slot.rol}</span></td>
+            <td style="color:var(--text-secondary);">${slot.patron}</td>
+            <td style="font-weight:700;">${slot.ejercicio}</td>
+            <td><span class="badge ${stationBadge}">${slot.estacion}</span></td>
+            <td style="font-weight:700;">${slot.seriesReps}</td>
+            <td><span class="badge badge-orange">${slot.rir}</span></td>
+            <td><code>${slot.tempo}</code></td>
+            <td>${slot.descanso}</td>
+            <td style="color:var(--amber); font-size:10px;">${slot.reglaje}</td>
+            <td style="color:var(--green); font-size:10px;">${slot.lastRef}</td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    /*************************************************************************
+     * MÓDULO 3: CATÁLOGO DE MÁQUINAS Y CURVAS DE RESISTENCIA (CANVAS 2D)
+     *************************************************************************/
+    function initMachineFilters() {
+      document.getElementById("machineSearchInput").addEventListener("input", renderMachinesCatalog);
+      document.getElementById("machineStatusFilter").addEventListener("change", renderMachinesCatalog);
+      document.getElementById("machineProfileFilter").addEventListener("change", renderMachinesCatalog);
+    }
+
+    function getFilteredMachines() {
+      const q = document.getElementById("machineSearchInput").value.trim().toLowerCase();
+      const status = document.getElementById("machineStatusFilter").value;
+      const profile = document.getElementById("machineProfileFilter").value;
+
+      return MACHINES_DATA.filter(m => {
+        const matchQuery = !q ||
+          m.id.toLowerCase().includes(q) ||
+          m.name.toLowerCase().includes(q) ||
+          m.manufacturer.toLowerCase().includes(q) ||
+          m.aliases.some(a => a.toLowerCase().includes(q));
+        const matchStatus = status === "ALL" || m.status === status;
+        const matchProfile = profile === "ALL" || m.profile === profile;
+        return matchQuery && matchStatus && matchProfile;
+      });
+    }
+
+    function renderMachinesCatalog() {
+      const grid = document.getElementById("machinesCatalogGrid");
+      const list = getFilteredMachines();
+
+      if (list.length === 0) {
+        grid.innerHTML = `<div class="col-12" style="padding:20px; text-align:center; color:var(--text-secondary); border:1px solid var(--border-hairline);">SIN COINCIDENCIAS EN DATA/MAQUINAS.JSON PARA LOS FILTROS ACTIVOS.</div>`;
+        return;
+      }
+
+      grid.innerHTML = list.map((m, idx) => {
+        let statusBadge = "badge-green";
+        let statusLabel = "ESTACIÓN VALIDADA";
+        if (m.status === "CANDIDATA") {
+          statusBadge = "badge-cyan";
+          statusLabel = "FICHA CANDIDATA";
+        } else if (m.status === "SIN_ID") {
+          statusBadge = "badge-amber";
+          statusLabel = "SIN ID FÍSICO";
+        }
+
+        return `
+          <div class="panel col-4">
+            <div class="panel-header">
+              <span class="panel-title">${m.id}</span>
+              <span class="badge ${statusBadge}">${statusLabel}</span>
+            </div>
+            <div class="panel-body" style="display:flex; flex-direction:column; gap:8px;">
+              <div>
+                <div style="font-weight:800; font-size:13px; color:var(--text-primary);">${m.name}</div>
+                <div style="font-size:10px; color:var(--text-secondary);">Aliases: ${m.aliases.join(" · ")}</div>
+              </div>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:10px; background:var(--bg-void); padding:8px; border:1px solid var(--border-hairline);">
+                <div><span style="color:var(--text-muted)">FABRICANTE:</span><br><strong>${m.manufacturer}</strong></div>
+                <div><span style="color:var(--text-muted)">PATRÓN (N1):</span><br><strong>${m.pattern}</strong></div>
+                <div><span style="color:var(--text-muted)">PERFIL LEVA:</span><br><strong style="color:var(--cyan)">${m.profile}</strong></div>
+                <div><span style="color:var(--text-muted)">MÁX TENSIÓN:</span><br><strong style="color:var(--amber)">${m.peakRegion}</strong></div>
+              </div>
+              <div style="font-size:10px; color:var(--text-secondary);">
+                <strong>GEOMETRÍA:</strong> ${m.leverAngle}
+              </div>
+              <div class="canvas-container" style="height:125px; margin-top:auto;">
+                <canvas id="machineCanvas-${idx}" data-machine-id="${m.id}"></canvas>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      requestAnimationFrame(drawAllMachineCurves);
+    }
+
+    function drawAllMachineCurves() {
+      const list = getFilteredMachines();
+      list.forEach((m, idx) => {
+        const canvas = document.getElementById(`machineCanvas-${idx}`);
+        if (!canvas) return;
+        const rect = canvas.parentElement.getBoundingClientRect();
+        if (rect.width === 0) return;
+
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = rect.width * dpr;
+        canvas.height = rect.height * dpr;
+        const ctx = canvas.getContext("2d");
+        ctx.scale(dpr, dpr);
+
+        const w = rect.width;
+        const h = rect.height;
+        ctx.clearRect(0, 0, w, h);
+
+        // Retícula interna
+        ctx.strokeStyle = "#1c1c24";
+        ctx.lineWidth = 1;
+        for (let i = 1; i <= 3; i++) {
+          const y = (h / 4) * i;
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(w, y);
+          ctx.stroke();
+        }
+
+        // Etiquetas de fase del recorrido (Alargamiento -> Neutro -> Acortamiento)
+        ctx.fillStyle = "#565663";
+        ctx.font = "9px 'JetBrains Mono', monospace";
+        ctx.fillText("ALARGAMIENTO", 8, h - 6);
+        ctx.fillText("NEUTRO", w / 2 - 18, h - 6);
+        ctx.fillText("ACORTAMIENTO", w - 78, h - 6);
+
+        const padX = 16;
+        const padTop = 18;
+        const padBottom = 22;
+        const plotW = w - padX * 2;
+        const plotH = h - padTop - padBottom;
+
+        const pts = m.curvePoints.map((val, i) => ({
+          x: padX + (i / (m.curvePoints.length - 1)) * plotW,
+          y: padTop + (1 - val) * plotH
+        }));
+
+        // Sombreado bajo curva
+        ctx.beginPath();
+        ctx.moveTo(pts[0].x, h - padBottom);
+        pts.forEach(p => ctx.lineTo(p.x, p.y));
+        ctx.lineTo(pts[pts.length - 1].x, h - padBottom);
+        ctx.closePath();
+        const strokeColor = m.status === "SIN_ID" ? "#f59e0b" : "#06b6d4";
+        ctx.fillStyle = m.status === "SIN_ID" ? "rgba(245, 158, 11, 0.12)" : "rgba(6, 182, 212, 0.12)";
+        ctx.fill();
+
+        // Línea de curva de resistencia
+        ctx.beginPath();
+        pts.forEach((p, i) => {
+          if (i === 0) ctx.moveTo(p.x, p.y);
+          else ctx.lineTo(p.x, p.y);
+        });
+        ctx.strokeStyle = strokeColor;
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // Nodos y pico máximo
+        let maxVal = -1;
+        let maxPt = pts[0];
+        m.curvePoints.forEach((v, i) => {
+          if (v > maxVal) {
+            maxVal = v;
+            maxPt = pts[i];
+          }
+        });
+
+        pts.forEach(p => {
+          ctx.fillStyle = "#0a0a0c";
+          ctx.strokeStyle = strokeColor;
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+        });
+
+        // Destacar Pico de Torque Mecánico
+        ctx.fillStyle = "#10b981";
+        ctx.beginPath();
+        ctx.arc(maxPt.x, maxPt.y, 4.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = "#ededf0";
+        ctx.font = "bold 9px 'JetBrains Mono', monospace";
+        ctx.fillText(`PICO TORQUE (${Math.round(maxVal * 100)}%)`, Math.min(maxPt.x + 6, w - 115), Math.max(maxPt.y - 5, 11));
+      });
+    }
+
+    /*************************************************************************
+     * MÓDULO 4: HISTORIAL Y AISLADOR DE COMPARABILIDAD
+     *************************************************************************/
+    function initHistoryControls() {
+      document.getElementById("sessionSelect").addEventListener("change", renderHistoryTable);
+      document.getElementById("strictComparabilityToggle").addEventListener("change", () => {
+        renderHistoryTable();
+        drawOverloadChart();
+      });
+      document.getElementById("overloadExerciseSelect").addEventListener("change", drawOverloadChart);
+    }
+
+    function renderHistoryTable() {
+      const sessionFilter = document.getElementById("sessionSelect").value;
+      const strictOnly = document.getElementById("strictComparabilityToggle").checked;
+      const tbody = document.getElementById("historyTableBody");
+
+      const filtered = HISTORY_SETS.filter(row => {
+        return sessionFilter === "ALL" || row.sessionId === sessionFilter;
+      });
+
+      tbody.innerHTML = filtered.map(row => {
+        const excludedClass = (strictOnly && !row.comparable) ? "excluded-row" : "";
+        const compBadge = row.comparable
+          ? `<span class="badge badge-green">GEOMETRÍA 1:1 OK</span>`
+          : `<span class="badge badge-amber">AISLADA / NO COMPARABLE</span>`;
+
+        return `
+          <tr class="${excludedClass}">
+            <td>
+              <strong style="color:var(--cyan)">${row.sessionId}</strong><br>
+              <span style="font-size:10px; color:var(--text-secondary)">${row.date} · Día ${row.day}</span>
+            </td>
+            <td>
+              <strong>${row.exerciseName}</strong><br>
+              <span style="font-size:10px; color:var(--text-secondary)">Serie #${row.setNum}</span>
+            </td>
+            <td>
+              <span class="badge">${row.stationId}</span><br>
+              <span style="font-size:10px; color:var(--amber)">${row.setup}</span>
+            </td>
+            <td style="font-weight:800; font-size:12px;">
+              ${row.kg.toFixed(1)} kg × ${row.reps}
+            </td>
+            <td>
+              <span class="badge badge-orange">RIR ${row.rir}</span><br>
+              <code style="font-size:10px;">${row.tempo}</code>
+            </td>
+            <td>${compBadge}</td>
+            <td style="font-size:10px; color:var(--text-secondary); max-width:220px;">${row.notes}</td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function drawOverloadChart() {
+      const canvas = document.getElementById("overloadCanvas");
+      if (!canvas) return;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      if (rect.width === 0) return;
+
+      const exKey = document.getElementById("overloadExerciseSelect").value;
+      const strictOnly = document.getElementById("strictComparabilityToggle").checked;
+      const seriesObj = OVERLOAD_SERIES[exKey];
+
+      document.getElementById("overloadExerciseBadge").textContent = exKey || "SIN SELECCIÓN";
+
+      if (!seriesObj || !seriesObj.points || seriesObj.points.length === 0) {
+        return;
+      }
+
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      const ctx = canvas.getContext("2d");
+      ctx.scale(dpr, dpr);
+
+      const w = rect.width;
+      const h = rect.height;
+      ctx.clearRect(0, 0, w, h);
+
+      const activePoints = strictOnly
+        ? seriesObj.points.filter(p => p.comparable)
+        : seriesObj.points;
+
+      if (activePoints.length === 0) {
+        ctx.fillStyle = "#f59e0b";
+        ctx.font = "11px 'JetBrains Mono', monospace";
+        ctx.fillText("Sin series con geometría 1:1 verificada para este ejercicio.", 20, h / 2);
+        return;
+      }
+
+      const padLeft = 44;
+      const padRight = 24;
+      const padTop = 26;
+      const padBottom = 34;
+      const plotW = w - padLeft - padRight;
+      const plotH = h - padTop - padBottom;
+
+      // Líneas guía horizontales
+      ctx.strokeStyle = "#26262e";
+      ctx.lineWidth = 1;
+      for (let i = 0; i <= 4; i++) {
+        const y = padTop + (plotH / 4) * i;
+        ctx.beginPath();
+        ctx.moveTo(padLeft, y);
+        ctx.lineTo(w - padRight, y);
+        ctx.stroke();
+      }
+
+      // Calcular e1RM estimado (Epley adaptado: kg * (1 + reps/30))
+      const values = activePoints.map(p => +(p.kg * (1 + p.reps / 30)).toFixed(1));
+      const minV = Math.min(...values) - 4;
+      const maxV = Math.max(...values) + 4;
+
+      // Etiquetas eje Y
+      ctx.fillStyle = "#8e8e99";
+      ctx.font = "9px 'JetBrains Mono', monospace";
+      for (let i = 0; i <= 4; i++) {
+        const val = maxV - ((maxV - minV) / 4) * i;
+        const y = padTop + (plotH / 4) * i;
+        ctx.fillText(`${val.toFixed(0)}kg`, 6, y + 3);
+      }
+
+      const coords = activePoints.map((p, idx) => {
+        const v = values[idx];
+        const x = padLeft + (idx / Math.max(1, activePoints.length - 1)) * plotW;
+        const y = padTop + ((maxV - v) / (maxV - minV)) * plotH;
+        return { x, y, p, v };
+      });
+
+      // Conectar puntos
+      ctx.beginPath();
+      coords.forEach((c, i) => {
+        if (i === 0) ctx.moveTo(c.x, c.y);
+        else ctx.lineTo(c.x, c.y);
+      });
+      ctx.strokeStyle = strictOnly ? "#10b981" : "#f59e0b";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Dibujar nodos y etiquetas
+      coords.forEach(c => {
+        ctx.beginPath();
+        ctx.arc(c.x, c.y, 4.5, 0, Math.PI * 2);
+        ctx.fillStyle = c.p.comparable ? "#10b981" : "#f59e0b";
+        ctx.fill();
+
+        ctx.fillStyle = "#ededf0";
+        ctx.font = "bold 9px 'JetBrains Mono', monospace";
+        ctx.fillText(`${c.p.kg}×${c.p.reps}`, c.x - 18, c.y - 9);
+
+        ctx.fillStyle = "#8e8e99";
+        ctx.font = "9px 'JetBrains Mono', monospace";
+        ctx.fillText(c.p.date.slice(5), c.x - 14, h - 10);
+      });
+
+      // Nota de auditoría inferior
+      const auditBox = document.getElementById("overloadAuditNote");
+      const nonCompCount = seriesObj.points.filter(p => !p.comparable).length;
+      if (strictOnly) {
+        auditBox.innerHTML = `<strong style="color:var(--green)">MODO COMPARABILIDAD 1:1 ACTIVO:</strong> Mostrando únicamente exposiciones en <code>${seriesObj.name}</code>. Se han suprimido <strong>${nonCompCount}</strong> series con desviación geométrica para evitar artefactos en la curva de sobrecarga.`;
+      } else {
+        auditBox.innerHTML = `<strong style="color:var(--amber)">ALERTA DE CONTAMINACIÓN GEOMÉTRICA:</strong> El gráfico incluye series ejecutadas en distinta estación o reglaje (nodos ámbar), provocando falsas caídas o picos de rendimiento.`;
+      }
+    }
+
+    /*************************************************************************
+     * MÓDULO 5: SEGUIMIENTO ARTICULAR Y CINÉTICA DE RECUPERACIÓN
+     *************************************************************************/
+    function initJointMap() {
+      const nodes = document.querySelectorAll(".joint-node");
+      renderJointInspector("LUMBAR_L4S1");
+
+      nodes.forEach(node => {
+        node.addEventListener("click", () => {
+          const jointKey = node.getAttribute("data-joint");
+          renderJointInspector(jointKey);
+        });
+      });
+    }
+
+    function renderJointInspector(jointKey) {
+      const data = JOINT_TELEMETRY[jointKey];
+      const panel = document.getElementById("jointInspectorPanel");
+      panel.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:10px;">
+          <strong style="color:var(--cyan); font-size:12px;">${data.name}</strong>
+          <span class="badge ${data.badgeClass}">${data.status}</span>
+        </div>
+        <div style="margin-bottom:8px;">
+          <div class="meta-label">ÍNDICE DE ESTRÉS BIOMECÁNICO ACUMULADO</div>
+          <div style="font-size:14px; font-weight:800;">${data.stressScore}</div>
+        </div>
+        <div style="margin-bottom:8px;">
+          <div class="meta-label">VECTORES / EJERCICIOS CAUSALES IDENTIFICADOS</div>
+          <div style="color:var(--text-secondary); font-size:11px;">${data.causalExercises}</div>
+        </div>
+        <div style="padding:8px; background:var(--bg-panel); border:1px solid var(--border-hairline);">
+          <div class="meta-label" style="color:var(--amber)">PROTOCOLO DE INGENIERÍA CORRECTIVA</div>
+          <div style="color:var(--text-primary); font-size:11px;">${data.actionProtocol}</div>
+        </div>
+      `;
+    }
+
+    function drawRecoveryKineticsChart() {
+      const canvas = document.getElementById("recoveryKineticsCanvas");
+      if (!canvas) return;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      if (rect.width === 0) return;
+
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      const ctx = canvas.getContext("2d");
+      ctx.scale(dpr, dpr);
+
+      const w = rect.width;
+      const h = rect.height;
+      ctx.clearRect(0, 0, w, h);
+
+      const weeks = [
+        { label: "SEM 1 (Base)", sets: 32, recMuscle: 84, cnsFatigue: 42 },
+        { label: "SEM 2 (Sobrecarga)", sets: 38, recMuscle: 72, cnsFatigue: 64 },
+        { label: "SEM 3 (Ajuste DEC-001)", sets: 28, recMuscle: 89, cnsFatigue: 34 },
+        { label: "SEM 4 (Actual M4)", sets: 30, recMuscle: 91, cnsFatigue: 29 }
+      ];
+
+      const padLeft = 42;
+      const padRight = 32;
+      const padTop = 24;
+      const padBottom = 32;
+      const plotW = w - padLeft - padRight;
+      const plotH = h - padTop - padBottom;
+
+      // Grid horizontal
+      ctx.strokeStyle = "#26262e";
+      for (let i = 0; i <= 4; i++) {
+        const y = padTop + (plotH / 4) * i;
+        ctx.beginPath();
+        ctx.moveTo(padLeft, y);
+        ctx.lineTo(w - padRight, y);
+        ctx.stroke();
+
+        ctx.fillStyle = "#8e8e99";
+        ctx.font = "9px 'JetBrains Mono', monospace";
+        ctx.fillText(`${100 - i * 25}%`, 6, y + 3);
+      }
+
+      const stepX = plotW / weeks.length;
+
+      // Dibujar barras de Volumen Semanal Efectivo
+      weeks.forEach((wk, i) => {
+        const cx = padLeft + stepX * i + stepX / 2;
+        const barW = Math.min(44, stepX * 0.45);
+        const barH = (wk.sets / 50) * plotH;
+        const barY = padTop + plotH - barH;
+
+        ctx.fillStyle = "rgba(6, 182, 212, 0.22)";
+        ctx.strokeStyle = "#06b6d4";
+        ctx.lineWidth = 1;
+        ctx.fillRect(cx - barW / 2, barY, barW, barH);
+        ctx.strokeRect(cx - barW / 2, barY, barW, barH);
+
+        ctx.fillStyle = "#06b6d4";
+        ctx.font = "bold 9px 'JetBrains Mono', monospace";
+        ctx.fillText(`${wk.sets} ser`, cx - 16, barY - 5);
+
+        ctx.fillStyle = "#ededf0";
+        ctx.font = "9px 'JetBrains Mono', monospace";
+        ctx.fillText(wk.label, cx - 36, h - 10);
+      });
+
+      // Línea de Recuperación Muscular (%)
+      ctx.beginPath();
+      weeks.forEach((wk, i) => {
+        const cx = padLeft + stepX * i + stepX / 2;
+        const cy = padTop + ((100 - wk.recMuscle) / 100) * plotH;
+        if (i === 0) ctx.moveTo(cx, cy);
+        else ctx.lineTo(cx, cy);
+      });
+      ctx.strokeStyle = "#10b981";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      weeks.forEach((wk, i) => {
+        const cx = padLeft + stepX * i + stepX / 2;
+        const cy = padTop + ((100 - wk.recMuscle) / 100) * plotH;
+        ctx.fillStyle = "#10b981";
+        ctx.beginPath();
+        ctx.arc(cx, cy, 4, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillText(`${wk.recMuscle}%`, cx + 6, cy + 3);
+      });
+
+      // Línea de Fatiga del SNC (%)
+      ctx.beginPath();
+      weeks.forEach((wk, i) => {
+        const cx = padLeft + stepX * i + stepX / 2;
+        const cy = padTop + ((100 - wk.cnsFatigue) / 100) * plotH;
+        if (i === 0) ctx.moveTo(cx, cy);
+        else ctx.lineTo(cx, cy);
+      });
+      ctx.strokeStyle = "#f97316";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      weeks.forEach((wk, i) => {
+        const cx = padLeft + stepX * i + stepX / 2;
+        const cy = padTop + ((100 - wk.cnsFatigue) / 100) * plotH;
+        ctx.fillStyle = "#f97316";
+        ctx.fillRect(cx - 3.5, cy - 3.5, 7, 7);
+        ctx.fillText(`${wk.cnsFatigue}%`, cx + 6, cy + 3);
+      });
+    }
+
+    function renderSFRMatrix() {
+      const container = document.getElementById("sfrMatrixContainer");
+      container.innerHTML = SFR_DATA.map(item => `
+        <div class="col-3" style="background:var(--bg-void); border:1px solid var(--border-hairline); padding:10px;">
+          <div style="font-weight:700; color:var(--text-primary); font-size:11px;">${item.muscle}</div>
+          <div style="font-size:10px; color:var(--text-secondary); margin-bottom:8px;">${item.pattern}</div>
+          <div style="display:flex; justify-content:space-between; font-size:10px;">
+            <span>ESTÍMULO: <strong style="color:var(--green)">${item.stimulus}/10</strong></span>
+            <span>FATIGA: <strong style="color:var(--orange)">${item.fatigue}/10</strong></span>
+          </div>
+          <div class="sfr-bar-track">
+            <div class="sfr-bar-fill" style="width:${Math.min(100, item.stimulus * 10)}%;"></div>
+          </div>
+          <div style="margin-top:8px; text-align:right;">
+            <span class="badge badge-cyan">SFR: ${item.ratio}</span>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    /*************************************************************************
+     * MÓDULO 6: GOBERNANZA CIENTÍFICA Y DECISIONES
+     *************************************************************************/
+    function initGovernanceControls() {
+      document.getElementById("decisionDomainFilter").addEventListener("change", (e) => {
+        renderDecisions(e.target.value);
+      });
+    }
+
+    function renderDecisions(domainFilter) {
+      const container = document.getElementById("decisionsContainer");
+      const list = DECISIONS_DATA.filter(d => domainFilter === "ALL" || d.dominio === domainFilter);
+
+      container.innerHTML = list.map((d, idx) => `
+        <div class="decision-card ${idx === 0 ? 'expanded' : ''}" data-dec-id="${d.id}">
+          <div class="decision-summary" onclick="this.parentElement.classList.toggle('expanded')">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <strong style="color:var(--cyan); font-size:12px;">${d.id}</strong>
+              <span class="badge">${d.fecha}</span>
+              <span class="badge badge-cyan">DOMINIO: ${d.dominio}</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span class="badge ${d.badge}">ESTADO: ${d.estado}</span>
+              <span style="color:var(--text-secondary); font-size:10px;">[EXPANDIR / CONTRAER]</span>
+            </div>
+          </div>
+          <div class="decision-details">
+            <div class="meta-box">
+              <div class="meta-label">1. CAMBIO EXACTO PRESCRITO</div>
+              <div style="color:var(--text-primary);">${d.cambio}</div>
+            </div>
+            <div class="meta-box">
+              <div class="meta-label">2. MOTIVO MECANICISTA / FISIOLÓGICO</div>
+              <div style="color:var(--text-primary);">${d.motivo}</div>
+            </div>
+            <div class="meta-box">
+              <div class="meta-label">3. FUENTES / CORPUS &amp; LÍMITES DE TRANSFERENCIA</div>
+              <div style="color:var(--green);">${d.fuentes}</div>
+            </div>
+            <div class="meta-box">
+              <div class="meta-label">4. CRITERIO EXPLÍCITO DE REVISIÓN</div>
+              <div style="color:var(--amber);">${d.criterio_revision}</div>
+            </div>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderScientificLibrary() {
+      const container = document.getElementById("scientificLibraryContainer");
+      container.innerHTML = SCIENTIFIC_LIBRARY.map(item => `
+        <div style="background:var(--bg-void); border:1px solid var(--border-hairline); padding:10px; margin-bottom:10px;">
+          <div style="color:var(--amber); font-weight:700; font-size:11px; margin-bottom:6px;">${item.cue}</div>
+          <div style="color:var(--text-secondary); font-size:10px; margin-bottom:6px; padding-left:8px; border-left:2px solid var(--cyan);">${item.mechanism}</div>
+          <div style="color:var(--green); font-size:10px; font-weight:600;">→ ${item.principle}</div>
+        </div>
+      `).join("");
+    }
+
+    /*************************************************************************
+     * CONSOLA MODAL: INGESTOR RÁPIDO "NOTE v1"
+     *************************************************************************/
+    function initNoteModal() {
+      const backdrop = document.getElementById("noteModalBackdrop");
+      const openBtn = document.getElementById("openNoteModalBtn");
+      const closeBtn = document.getElementById("closeNoteModalBtn");
+      const parseBtn = document.getElementById("parseNoteBtn");
+      const cleanSampleBtn = document.getElementById("loadSampleCleanBtn");
+      const commitBtn = document.getElementById("commitNoteBtn");
+
+      openBtn.addEventListener("click", () => backdrop.classList.add("open"));
+      closeBtn.addEventListener("click", () => backdrop.classList.remove("open"));
+
+      document.addEventListener("keydown", (e) => {
+        if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+          e.preventDefault();
+          backdrop.classList.toggle("open");
+        }
+        if (e.key === "Escape") {
+          backdrop.classList.remove("open");
+        }
+      });
+
+      cleanSampleBtn.addEventListener("click", () => {
+        document.getElementById("noteInputArea").value =
+`2026-10-15 | C | Curl Bayesian unilateral en polea baja | ST-CABLE-02 | Polea pin 2, paso adelante 60cm | 22.5 x 11 @0.5 | 3-0-1-1 | Ejecución limpia en máximo estiramiento
+2026-10-15 | C | Extensión de tríceps unilateral cruzada | ST-CABLE-02 | Polea pin 17, abducción 30° | 25.0 x 9 @0.5 | 2-0-1-1 | Sobrecarga progresiva +1.25kg validada`;
+        parseNoteV1();
+      });
+
+      parseBtn.addEventListener("click", parseNoteV1);
+      commitBtn.addEventListener("click", commitStagedSets);
+    }
+
+    function parseNoteV1() {
+      const raw = document.getElementById("noteInputArea").value.trim();
+      const output = document.getElementById("parserOutputContainer");
+      const commitBtn = document.getElementById("commitNoteBtn");
+
+      if (!raw) {
+        output.innerHTML = `<div style="color:var(--red); padding:8px; border:1px solid var(--red);">ERROR: El buffer de entrada Note v1 está vacío.</div>`;
+        commitBtn.style.display = "none";
+        return;
+      }
+
+      const lines = raw.split("\n").map(l => l.trim()).filter(Boolean);
+      const parsed = [];
+      let warnings = 0;
+
+      lines.forEach((line, idx) => {
+        const parts = line.split("|").map(p => p.trim());
+        if (parts.length < 7) {
+          warnings++;
+          parsed.push({
+            lineNum: idx + 1,
+            error: true,
+            msg: "Sintaxis incompleta: se requieren al menos 7 campos separados por '|'."
+          });
+          return;
+        }
+
+        const [date, day, exerciseName, stationId, setup, loadSpec, tempo, notes = ""] = parts;
+        const loadMatch = loadSpec.match(/([\d.]+)\s*x\s*(\d+)\s*@([\d.]+)/i);
+
+        if (!loadMatch) {
+          warnings++;
+          parsed.push({
+            lineNum: idx + 1,
+            error: true,
+            msg: `Formato de carga inválido en '${loadSpec}'. Usa: PESO x REPS @RIR (ej. 22.5 x 10 @0.5)`
+          });
+          return;
+        }
+
+        const kg = parseFloat(loadMatch[1]);
+        const reps = parseInt(loadMatch[2], 10);
+        const rir = parseFloat(loadMatch[3]);
+        const hasValidStation = stationId !== "SIN_ID" && stationId.startsWith("ST-");
+        if (!hasValidStation) warnings++;
+
+        parsed.push({
+          lineNum: idx + 1,
+          error: false,
+          date,
+          day,
+          exerciseName,
+          stationId,
+          setup,
+          kg,
+          reps,
+          rir,
+          tempo,
+          notes,
+          comparable: hasValidStation
+        });
+      });
+
+      STATE.parsedStagingSets = parsed.filter(p => !p.error);
+
+      output.innerHTML = `
+        <div style="margin-bottom:8px; display:flex; justify-content:space-between; align-items:center;">
+          <span class="badge ${warnings === 0 ? 'badge-green' : 'badge-amber'}">
+            RESULTADO PARSER: ${STATE.parsedStagingSets.length} SERIES EXTRAÍDAS // ${warnings} ALERTAS DE INTEGRIDAD
+          </span>
+        </div>
+        <div class="table-wrap">
+          <table class="tech-table">
+            <thead>
+              <tr>
+                <th>LÍNEA</th>
+                <th>FECHA / DÍA</th>
+                <th>EJERCICIO</th>
+                <th>ESTACIÓN &amp; REGLAJE</th>
+                <th>CARGA × REPS @RIR</th>
+                <th>VALIDACIÓN GEOMÉTRICA</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${parsed.map(item => {
+                if (item.error) {
+                  return `<tr><td colspan="6" style="color:var(--red);">LÍNEA #${item.lineNum}: ${item.msg}</td></tr>`;
+                }
+                return `
+                  <tr>
+                    <td>#${item.lineNum}</td>
+                    <td>${item.date} · Día ${item.day}</td>
+                    <td><strong>${item.exerciseName}</strong></td>
+                    <td><code>${item.stationId}</code> · <span style="color:var(--amber)">${item.setup}</span></td>
+                    <td><strong>${item.kg} kg × ${item.reps}</strong> @RIR ${item.rir}</td>
+                    <td>
+                      ${item.comparable
+                        ? `<span class="badge badge-green">ESTACIÓN VERIFICADA</span>`
+                        : `<span class="badge badge-amber">ALERTA: SIN ID FÍSICO (AISLADA)</span>`}
+                    </td>
+                  </tr>
+                `;
+              }).join("")}
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      commitBtn.style.display = STATE.parsedStagingSets.length > 0 ? "inline-flex" : "none";
+    }
+
+    async function commitStagedSets() {
+      if (STATE.parsedStagingSets.length === 0) return;
+
+      const btn = document.getElementById("commitNoteBtn");
+      btn.disabled = true;
+      btn.textContent = "GUARDANDO EN DISCO...";
+
+      const res = await window.DameCanaStore.inyectarNoteV1(STATE.parsedStagingSets);
+      const output = document.getElementById("parserOutputContainer");
+
+      if (res.serverSaved) {
+        output.innerHTML = `
+          <div style="padding:12px; border:1px solid var(--green); background:var(--green-dim); color:var(--green); font-weight:700;">
+            ✓ INYECCIÓN EN DISCO EXITOSA: ${res.count} exposiciones guardadas directamente en <code>data/registro.json</code> bajo sesión <code>${res.sessionId}</code>. Telemetría y bitácora actualizadas en vivo.
+          </div>
+        `;
+      } else {
+        output.innerHTML = `
+          <div style="padding:12px; border:1px solid var(--amber); background:var(--amber-dim); color:var(--amber); font-weight:700;">
+            ✓ INYECCIÓN EN MEMORIA LOCAL: ${res.count} exposiciones añadidas a la vista activa del Hub (${res.sessionId}).<br>
+            <span style="font-weight:400; font-size:10px;">Nota: El micro-servidor local no respondió en <code>POST /api/save</code>. Ejecuta <code>python server.py</code> para persistencia directa en disco.</span>
+          </div>
+        `;
+      }
+
+      btn.disabled = false;
+      btn.textContent = "INYECTAR SERIES EN REGISTRO.JSON";
+      btn.style.display = "none";
+      STATE.parsedStagingSets = [];
+    }
+  </script>
+</body>
+</html>

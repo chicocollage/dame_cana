@@ -1,0 +1,1503 @@
+{
+  "version": 1,
+  "precios_fecha": "2026-10",
+  "alimentos": [
+    {
+      "id": "bebida_proteica_lidl",
+      "nombre": "Bebida láctea de proteínas (Milbona / Lidl)",
+      "alias": [
+        "bebida de proteina del lidl",
+        "bebida proteica lidl",
+        "batido proteico lidl",
+        "bebida proteina lidl",
+        "batido lidl",
+        "bebida lidl",
+        "batido de proteina lidl",
+        "batido milbona"
+      ],
+      "tienda": "lidl",
+      "raciones": {
+        "botella": 330,
+        "unidad": 330,
+        "media_botella": 165
+      },
+      "por_100g": {
+        "kcal": 65.0,
+        "prot": 10.6,
+        "carb": 5.0,
+        "grasa": 0.2,
+        "fibra": 0.0
+      },
+      "eur_kg": 3.3,
+      "eur_unidad": 1.09,
+      "etiquetas": [
+        "proteina",
+        "lidl",
+        "lacteo",
+        "bebida_proteina",
+        "rapido"
+      ],
+      "verificar_etiqueta": true
+    },
+    {
+      "id": "leche_proteina_mercadona",
+      "nombre": "Leche desnatada +Proteínas (Hacendado / Mercadona)",
+      "alias": [
+        "leche proteina mercadona",
+        "leche mas proteina",
+        "leche +proteinas",
+        "leche proteica",
+        "leche proteina",
+        "leche hacendado proteina"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "vaso": 250,
+        "tazon": 350,
+        "taza": 200,
+        "brick": 1000
+      },
+      "por_100g": {
+        "kcal": 47.0,
+        "prot": 6.0,
+        "carb": 4.9,
+        "grasa": 0.3,
+        "fibra": 0.0
+      },
+      "eur_kg": 1.25,
+      "eur_unidad": 1.25,
+      "etiquetas": [
+        "barato",
+        "proteina",
+        "mercadona",
+        "lacteo"
+      ],
+      "verificar_etiqueta": true
+    },
+    {
+      "id": "queso_fresco_batido_mercadona",
+      "nombre": "Queso fresco batido 0% (Hacendado / Mercadona)",
+      "alias": [
+        "queso fresco batido",
+        "queso batido",
+        "queso batido 0%",
+        "tarrina queso batido",
+        "queso batido mercadona"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "tarrina": 500,
+        "media_tarrina": 250,
+        "cuenco": 200,
+        "cucharada": 30
+      },
+      "por_100g": {
+        "kcal": 46.0,
+        "prot": 8.0,
+        "carb": 3.5,
+        "grasa": 0.1,
+        "fibra": 0.0
+      },
+      "eur_kg": 2.3,
+      "etiquetas": [
+        "barato",
+        "proteina",
+        "mercadona",
+        "lacteo"
+      ]
+    },
+    {
+      "id": "huevo_l",
+      "nombre": "Huevo clase L",
+      "alias": [
+        "huevo",
+        "huevos",
+        "huevo l",
+        "huevo cocido",
+        "huevo frito",
+        "huevos a la plancha",
+        "huevo revuelto",
+        "huevos revueltos"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "unidad": 55,
+        "huevo": 55
+      },
+      "por_100g": {
+        "kcal": 143.0,
+        "prot": 12.6,
+        "carb": 0.7,
+        "grasa": 9.9,
+        "fibra": 0.0
+      },
+      "eur_kg": 3.2,
+      "eur_unidad": 0.2,
+      "etiquetas": [
+        "barato",
+        "proteina",
+        "huevo"
+      ],
+      "_nota_racion": "55g = peso comestible sin cáscara (L clase española)"
+    },
+    {
+      "id": "muslo_pollo",
+      "nombre": "Muslo o contramuslo de pollo",
+      "alias": [
+        "muslo de pollo",
+        "muslos de pollo",
+        "contramuslo",
+        "contramuslos",
+        "muslo",
+        "pollo asado"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "unidad": 150,
+        "racion": 200,
+        "plato": 250
+      },
+      "por_100g": {
+        "kcal": 165.0,
+        "prot": 19.0,
+        "carb": 0.0,
+        "grasa": 10.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 4.5,
+      "etiquetas": [
+        "barato",
+        "proteina",
+        "carne"
+      ]
+    },
+    {
+      "id": "pechuga_pollo",
+      "nombre": "Pechuga de pollo",
+      "alias": [
+        "pechuga",
+        "pechuga de pollo",
+        "pechugas",
+        "filete de pollo",
+        "filetes de pollo"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "filete": 100,
+        "pechuga": 200,
+        "racion": 150
+      },
+      "por_100g": {
+        "kcal": 110.0,
+        "prot": 23.0,
+        "carb": 0.0,
+        "grasa": 1.5,
+        "fibra": 0.0
+      },
+      "eur_kg": 7.2,
+      "etiquetas": [
+        "proteina",
+        "carne"
+      ]
+    },
+    {
+      "id": "atun_lata",
+      "nombre": "Atún en lata (al natural / escurrido)",
+      "alias": [
+        "atun",
+        "atún",
+        "lata de atun",
+        "latas de atun",
+        "atun al natural",
+        "latilla de atun"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "lata": 52,
+        "lata_grande": 80
+      },
+      "por_100g": {
+        "kcal": 100.0,
+        "prot": 24.0,
+        "carb": 0.0,
+        "grasa": 0.8,
+        "fibra": 0.0
+      },
+      "eur_kg": 14.0,
+      "eur_unidad": 0.85,
+      "etiquetas": [
+        "proteina",
+        "pescado"
+      ]
+    },
+    {
+      "id": "sardinas_lata",
+      "nombre": "Sardinas en conserva (escurridas)",
+      "alias": [
+        "sardinas",
+        "sardinillas",
+        "lata de sardinas",
+        "sardinas en lata"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "lata": 85
+      },
+      "por_100g": {
+        "kcal": 208.0,
+        "prot": 24.0,
+        "carb": 0.0,
+        "grasa": 12.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 10.0,
+      "eur_unidad": 0.9,
+      "etiquetas": [
+        "barato",
+        "proteina",
+        "pescado",
+        "omega3"
+      ]
+    },
+    {
+      "id": "lentejas_cocidas",
+      "nombre": "Lentejas cocidas (bote)",
+      "alias": [
+        "lentejas",
+        "plato de lentejas",
+        "potaje de lentejas",
+        "bote de lentejas",
+        "lentejas de bote"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "plato": 300,
+        "bote": 400,
+        "cucharon": 120
+      },
+      "por_100g": {
+        "kcal": 116.0,
+        "prot": 9.0,
+        "carb": 20.0,
+        "grasa": 0.4,
+        "fibra": 8.0
+      },
+      "eur_kg": 1.2,
+      "eur_unidad": 0.7,
+      "etiquetas": [
+        "excluido",
+        "barato",
+        "legumbre",
+        "proteina_vegetal",
+        "fibra"
+      ]
+    },
+    {
+      "id": "garbanzos_cocidos",
+      "nombre": "Garbanzos cocidos (bote)",
+      "alias": [
+        "garbanzos",
+        "plato de garbanzos",
+        "potaje de garbanzos",
+        "bote de garbanzos",
+        "garbanzos de bote"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "plato": 300,
+        "bote": 400,
+        "cucharon": 120
+      },
+      "por_100g": {
+        "kcal": 128.0,
+        "prot": 8.4,
+        "carb": 18.0,
+        "grasa": 2.6,
+        "fibra": 7.0
+      },
+      "eur_kg": 1.2,
+      "eur_unidad": 0.7,
+      "etiquetas": [
+        "excluido",
+        "barato",
+        "legumbre",
+        "proteina_vegetal",
+        "fibra"
+      ]
+    },
+    {
+      "id": "lentejas_secas",
+      "nombre": "Lentejas secas (crudas)",
+      "alias": [
+        "lentejas secas",
+        "lentejas crudas"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "plato": 80,
+        "racion": 80
+      },
+      "por_100g": {
+        "kcal": 350.0,
+        "prot": 25.0,
+        "carb": 55.0,
+        "grasa": 1.5,
+        "fibra": 15.0
+      },
+      "eur_kg": 1.8,
+      "etiquetas": [
+        "excluido",
+        "barato",
+        "legumbre",
+        "proteina_vegetal",
+        "seco"
+      ]
+    },
+    {
+      "id": "arroz_blanco",
+      "nombre": "Arroz blanco cocido",
+      "alias": [
+        "arroz",
+        "plato de arroz",
+        "tazon de arroz",
+        "arroz blanco",
+        "vasito de arroz"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "plato": 250,
+        "vaso": 200,
+        "vasito": 125,
+        "crudo_racion": 80
+      },
+      "por_100g": {
+        "kcal": 130.0,
+        "prot": 2.7,
+        "carb": 28.0,
+        "grasa": 0.3,
+        "fibra": 0.4
+      },
+      "eur_kg": 1.3,
+      "etiquetas": [
+        "barato",
+        "cereal",
+        "carb"
+      ]
+    },
+    {
+      "id": "pasta_cocida",
+      "nombre": "Pasta cocida (macarrones / espaguetis)",
+      "alias": [
+        "pasta",
+        "macarrones",
+        "espaguetis",
+        "plato de pasta",
+        "plato de macarrones",
+        "pasta cocida"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "plato": 250,
+        "racion": 200,
+        "crudo_racion": 80
+      },
+      "por_100g": {
+        "kcal": 158.0,
+        "prot": 5.8,
+        "carb": 31.0,
+        "grasa": 0.9,
+        "fibra": 1.8
+      },
+      "eur_kg": 1.2,
+      "etiquetas": [
+        "barato",
+        "cereal",
+        "carb"
+      ]
+    },
+    {
+      "id": "avena",
+      "nombre": "Copos de avena",
+      "alias": [
+        "avena",
+        "copos de avena",
+        "tazon de avena",
+        "tazón de avena",
+        "puñado de avena",
+        "papilla de avena",
+        "porridge",
+        "harina de avena"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "tazon": 50,
+        "puñado": 30,
+        "cucharada": 15,
+        "plato": 80
+      },
+      "por_100g": {
+        "kcal": 375.0,
+        "prot": 13.5,
+        "carb": 60.0,
+        "grasa": 7.0,
+        "fibra": 10.0
+      },
+      "eur_kg": 1.6,
+      "etiquetas": [
+        "barato",
+        "cereal",
+        "carb",
+        "desayuno",
+        "fibra"
+      ]
+    },
+    {
+      "id": "patata_cocida",
+      "nombre": "Patata cocida o asada",
+      "alias": [
+        "patata",
+        "patatas",
+        "patata cocida",
+        "patata asada",
+        "papa",
+        "papas"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "unidad": 150,
+        "patata": 150,
+        "plato": 300
+      },
+      "por_100g": {
+        "kcal": 77.0,
+        "prot": 2.0,
+        "carb": 17.0,
+        "grasa": 0.1,
+        "fibra": 2.2
+      },
+      "eur_kg": 1.4,
+      "etiquetas": [
+        "barato",
+        "tuberculo",
+        "carb"
+      ]
+    },
+    {
+      "id": "pan",
+      "nombre": "Pan blanco / barra / tostada",
+      "alias": [
+        "pan",
+        "barra de pan",
+        "trozo de pan",
+        "tostada",
+        "tostadas",
+        "rebanada de pan",
+        "rebanada",
+        "bocadillo"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "rebanada": 35,
+        "tostada": 50,
+        "trozo": 50,
+        "media_barra": 125,
+        "bocadillo": 100
+      },
+      "por_100g": {
+        "kcal": 265.0,
+        "prot": 9.0,
+        "carb": 49.0,
+        "grasa": 1.5,
+        "fibra": 3.0
+      },
+      "eur_kg": 2.0,
+      "eur_unidad": 0.5,
+      "etiquetas": [
+        "barato",
+        "cereal",
+        "carb"
+      ]
+    },
+    {
+      "id": "leche_entera",
+      "nombre": "Leche entera",
+      "alias": [
+        "leche",
+        "leche entera",
+        "vaso de leche",
+        "taza de leche"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "vaso": 250,
+        "taza": 200,
+        "chupito": 30
+      },
+      "por_100g": {
+        "kcal": 63.0,
+        "prot": 3.2,
+        "carb": 4.7,
+        "grasa": 3.6,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.95,
+      "etiquetas": [
+        "barato",
+        "lacteo"
+      ]
+    },
+    {
+      "id": "leche_desnatada",
+      "nombre": "Leche desnatada",
+      "alias": [
+        "leche desnatada",
+        "vaso de leche desnatada"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "vaso": 250,
+        "taza": 200
+      },
+      "por_100g": {
+        "kcal": 35.0,
+        "prot": 3.4,
+        "carb": 4.9,
+        "grasa": 0.1,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.9,
+      "etiquetas": [
+        "barato",
+        "lacteo"
+      ]
+    },
+    {
+      "id": "platano",
+      "nombre": "Plátano",
+      "alias": [
+        "platano",
+        "plátano",
+        "banana",
+        "platanos"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "unidad": 120,
+        "platano": 120
+      },
+      "por_100g": {
+        "kcal": 89.0,
+        "prot": 1.1,
+        "carb": 23.0,
+        "grasa": 0.3,
+        "fibra": 2.6
+      },
+      "eur_kg": 1.8,
+      "eur_unidad": 0.25,
+      "etiquetas": [
+        "fruta",
+        "carb"
+      ]
+    },
+    {
+      "id": "manzana",
+      "nombre": "Manzana",
+      "alias": [
+        "manzana",
+        "manzanas"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "unidad": 180,
+        "manzana": 180
+      },
+      "por_100g": {
+        "kcal": 52.0,
+        "prot": 0.3,
+        "carb": 14.0,
+        "grasa": 0.2,
+        "fibra": 2.4
+      },
+      "eur_kg": 1.9,
+      "eur_unidad": 0.35,
+      "etiquetas": [
+        "fruta"
+      ]
+    },
+    {
+      "id": "verduras_congeladas",
+      "nombre": "Verduras variadas congeladas / judías / brócoli",
+      "alias": [
+        "verduras",
+        "verdura",
+        "verdura congelada",
+        "judias verdes",
+        "judías verdes",
+        "brocoli",
+        "brócoli",
+        "menestra"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "plato": 250,
+        "racion": 200
+      },
+      "por_100g": {
+        "kcal": 35.0,
+        "prot": 2.5,
+        "carb": 5.0,
+        "grasa": 0.4,
+        "fibra": 3.5
+      },
+      "eur_kg": 1.8,
+      "etiquetas": [
+        "barato",
+        "verdura",
+        "fibra"
+      ]
+    },
+    {
+      "id": "aceite_oliva",
+      "nombre": "Aceite de oliva virgen extra",
+      "alias": [
+        "aceite",
+        "aceite de oliva",
+        "aove",
+        "chorro de aceite",
+        "cucharada de aceite",
+        "cucharadita de aceite"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "cucharada": 10,
+        "cucharadita": 5,
+        "chorro": 15
+      },
+      "por_100g": {
+        "kcal": 884.0,
+        "prot": 0.0,
+        "carb": 0.0,
+        "grasa": 100.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 9.0,
+      "etiquetas": [
+        "grasa",
+        "aceite"
+      ]
+    },
+    {
+      "id": "nueces",
+      "nombre": "Nueces peladas",
+      "alias": [
+        "nueces",
+        "nuez",
+        "puñado de nueces"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "puñado": 30,
+        "unidad": 5
+      },
+      "por_100g": {
+        "kcal": 654.0,
+        "prot": 15.0,
+        "carb": 14.0,
+        "grasa": 65.0,
+        "fibra": 6.7
+      },
+      "eur_kg": 12.0,
+      "etiquetas": [
+        "frutos_secos",
+        "grasa"
+      ]
+    },
+    {
+      "id": "cacahuetes",
+      "nombre": "Cacahuetes tostados / crema de cacahuete",
+      "alias": [
+        "cacahuetes",
+        "cacahuete",
+        "puñado de cacahuetes",
+        "crema de cacahuete"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "puñado": 30,
+        "cucharada": 20
+      },
+      "por_100g": {
+        "kcal": 567.0,
+        "prot": 26.0,
+        "carb": 16.0,
+        "grasa": 49.0,
+        "fibra": 8.5
+      },
+      "eur_kg": 3.5,
+      "etiquetas": [
+        "barato",
+        "frutos_secos",
+        "proteina",
+        "grasa"
+      ]
+    },
+    {
+      "id": "proteina_whey",
+      "nombre": "Proteína en polvo (Whey concentrate)",
+      "alias": [
+        "whey",
+        "batido de proteina",
+        "batido de proteína",
+        "scoop de proteina",
+        "cacito de proteina",
+        "proteina en polvo"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "scoop": 30,
+        "cacito": 30
+      },
+      "por_100g": {
+        "kcal": 380.0,
+        "prot": 75.0,
+        "carb": 6.0,
+        "grasa": 6.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 25.0,
+      "eur_unidad": 0.75,
+      "etiquetas": [
+        "excluido",
+        "proteina",
+        "suplemento",
+        "rapido"
+      ]
+    },
+    {
+      "id": "carne_picada_mixta",
+      "nombre": "Carne picada mixta / hamburguesa",
+      "alias": [
+        "carne picada",
+        "hamburguesa",
+        "hamburguesas",
+        "filete ruso"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "hamburguesa": 120,
+        "racion": 150
+      },
+      "por_100g": {
+        "kcal": 215.0,
+        "prot": 18.0,
+        "carb": 0.5,
+        "grasa": 16.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 6.5,
+      "etiquetas": [
+        "carne",
+        "proteina"
+      ]
+    },
+    {
+      "id": "queso_curado",
+      "nombre": "Queso semicurado / curado",
+      "alias": [
+        "queso",
+        "trozo de queso",
+        "cuña de queso",
+        "loncha de queso",
+        "queso curado",
+        "queso semicurado"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "loncha": 25,
+        "cuña": 40,
+        "trozo": 30
+      },
+      "por_100g": {
+        "kcal": 380.0,
+        "prot": 25.0,
+        "carb": 1.0,
+        "grasa": 31.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 11.0,
+      "etiquetas": [
+        "lacteo",
+        "grasa",
+        "proteina"
+      ]
+    },
+    {
+      "id": "tofu_firme",
+      "nombre": "Tofu firme",
+      "alias": [
+        "tofu"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "bloque": 200,
+        "medio_bloque": 100
+      },
+      "por_100g": {
+        "kcal": 120.0,
+        "prot": 13.0,
+        "carb": 2.0,
+        "grasa": 7.0,
+        "fibra": 1.5
+      },
+      "eur_kg": 4.5,
+      "etiquetas": [
+        "proteina_vegetal"
+      ]
+    },
+    {
+      "id": "tortilla_patatas",
+      "nombre": "Tortilla de patatas casera o pincho",
+      "alias": [
+        "tortilla",
+        "pincho de tortilla",
+        "tortilla de patatas",
+        "trozo de tortilla"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "pincho": 150,
+        "racion": 200,
+        "entera": 600
+      },
+      "por_100g": {
+        "kcal": 160.0,
+        "prot": 5.5,
+        "carb": 14.0,
+        "grasa": 9.5,
+        "fibra": 1.5
+      },
+      "eur_kg": 5.0,
+      "etiquetas": [
+        "plato"
+      ]
+    },
+    {
+      "id": "pan_de_molde_blanco_hacendado",
+      "nombre": "Pan de molde blanco (Hacendado)",
+      "alias": [
+        "pan de molde",
+        "pan molde"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 250.0,
+        "prot": 9.0,
+        "carb": 46.0,
+        "grasa": 2.7,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "queso_havarti_hacendado",
+      "nombre": "Queso Havarti (Hacendado)",
+      "alias": [
+        "queso havarti",
+        "havarti"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 396.0,
+        "prot": 19.0,
+        "carb": 1.3,
+        "grasa": 35.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "pechuga_de_pavo_hacendado",
+      "nombre": "Pechuga de pavo (Hacendado)",
+      "alias": [
+        "pechuga de pavo",
+        "fiambre de pavo",
+        "pavo"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 78.0,
+        "prot": 12.8,
+        "carb": 6.8,
+        "grasa": 0.5,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "pasta_seca_macarrones_/_espaguetis",
+      "nombre": "Pasta seca (macarrones / espaguetis)",
+      "alias": [
+        "pasta seca",
+        "pasta cruda",
+        "macarrones secos"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 355.0,
+        "prot": 12.5,
+        "carb": 72.0,
+        "grasa": 1.5,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "tomate_frito",
+      "nombre": "Tomate frito",
+      "alias": [
+        "tomate frito",
+        "salsa de tomate frito"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 80.0,
+        "prot": 1.3,
+        "carb": 8.5,
+        "grasa": 4.5,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "atun_en_aceite_escurrido",
+      "nombre": "Atún en aceite (escurrido)",
+      "alias": [
+        "atun en aceite",
+        "atun en aceite de girasol",
+        "atun girasol"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0,
+        "lata": 52.0
+      },
+      "por_100g": {
+        "kcal": 195.0,
+        "prot": 24.0,
+        "carb": 0.0,
+        "grasa": 11.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "cacao_soluble",
+      "nombre": "Cacao soluble",
+      "alias": [
+        "cacao",
+        "cacao instantaneo",
+        "cacao soluble",
+        "colacao",
+        "nesquik"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "cucharada": 12.0,
+        "cucharadita": 5.0,
+        "racion": 20.0,
+        "unidad": 12.0
+      },
+      "por_100g": {
+        "kcal": 380.0,
+        "prot": 6.5,
+        "carb": 78.0,
+        "grasa": 2.5,
+        "fibra": 0.0
+      },
+      "eur_kg": 5.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "desayuno_habitual",
+      "nombre": "Desayuno habitual (3 huevos revueltos)",
+      "alias": [
+        "desayuno lo habitual",
+        "desayuno habitual"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "racion": 165.0,
+        "unidad": 165.0
+      },
+      "por_100g": {
+        "kcal": 143.0,
+        "prot": 12.6,
+        "carb": 0.7,
+        "grasa": 9.9,
+        "fibra": 0.0
+      },
+      "eur_kg": 3.2,
+      "eur_unidad": 0.6,
+      "etiquetas": [
+        "huevo",
+        "desayuno",
+        "habitual"
+      ],
+      "_nota_racion": "165g = 3 huevos L x 55g comestible"
+    },
+    {
+      "id": "hummus_clasico",
+      "nombre": "Hummus de garbanzos (Hacendado / clásico)",
+      "alias": [
+        "hummus",
+        "hummus clasico",
+        "hummus de garbanzos",
+        "hummus mercadona"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "tarrina": 240.0,
+        "media_tarrina": 120.0,
+        "cucharada": 30.0,
+        "racion": 60.0
+      },
+      "por_100g": {
+        "kcal": 245.0,
+        "prot": 7.0,
+        "carb": 14.0,
+        "grasa": 17.5,
+        "fibra": 5.5
+      },
+      "eur_kg": 5.4,
+      "eur_unidad": 1.3,
+      "etiquetas": [
+        "legumbre",
+        "grasa_saludable",
+        "mercadona",
+        "untable"
+      ]
+    },
+    {
+      "id": "cacahuete_en_polvo_desgrasado",
+      "nombre": "Cacahuete en polvo desgrasado",
+      "alias": [
+        "cacahuete en polvo",
+        "cacahuete desgrasado",
+        "cacahuete polvo"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 416.0,
+        "prot": 46.7,
+        "carb": 21.0,
+        "grasa": 13.2,
+        "fibra": 0.0
+      },
+      "eur_kg": 15.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "aceite_de_girasol",
+      "nombre": "Aceite de girasol",
+      "alias": [
+        "aceite girasol",
+        "aceite de girasol"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "cucharadita": 5.0,
+        "cucharada": 10.0,
+        "chorro": 15.0,
+        "racion": 10.0
+      },
+      "por_100g": {
+        "kcal": 884.0,
+        "prot": 0.0,
+        "carb": 0.0,
+        "grasa": 100.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 2.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "leche_semidesnatada",
+      "nombre": "Leche semidesnatada",
+      "alias": [
+        "leche semi",
+        "leche semidesnatada"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "vaso": 250.0,
+        "taza": 200.0,
+        "100ml": 100.0,
+        "chupito": 30.0,
+        "racion": 100.0
+      },
+      "por_100g": {
+        "kcal": 46.0,
+        "prot": 3.2,
+        "carb": 4.8,
+        "grasa": 1.6,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.9,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "azucar_blanco",
+      "nombre": "Azúcar blanco",
+      "alias": [
+        "azucar",
+        "azúcar",
+        "azucar blanco"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "cucharada_postre": 5.0,
+        "cucharadita": 5.0,
+        "cucharada": 15.0,
+        "sobre": 8.0,
+        "racion": 10.0
+      },
+      "por_100g": {
+        "kcal": 400.0,
+        "prot": 0.0,
+        "carb": 100.0,
+        "grasa": 0.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 1.2,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "queso_lonchas_cremoso_light_havarti_hacendado",
+      "nombre": "Queso lonchas cremoso light Havarti (Hacendado)",
+      "alias": [
+        "havarti light",
+        "queso cremoso light"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0,
+        "loncha": 22.5,
+        "2_lonchas": 45.0
+      },
+      "por_100g": {
+        "kcal": 267.0,
+        "prot": 27.0,
+        "carb": 1.6,
+        "grasa": 17.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "merluza_empanada_pan_fino_hacendado",
+      "nombre": "Merluza empanada pan fino (Hacendado)",
+      "alias": [
+        "merluza empanada"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 168.0,
+        "prot": 10.3,
+        "carb": 16.3,
+        "grasa": 6.9,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "yogur_+proteinas_10g_hacendado",
+      "nombre": "Yogur +Proteínas 10g (Hacendado)",
+      "alias": [
+        "yogur proteina",
+        "yogurt de proteina"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 52.0,
+        "prot": 8.3,
+        "carb": 4.0,
+        "grasa": 0.1,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "claras_de_huevo",
+      "nombre": "Claras de huevo",
+      "alias": [
+        "claras",
+        "clara de huevo",
+        "claras de huevo"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 50.0,
+        "prot": 11.0,
+        "carb": 0.7,
+        "grasa": 0.2,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "natilla_high_protein_milbona",
+      "nombre": "Natilla High Protein (Milbona)",
+      "alias": [
+        "natilla proteica",
+        "natilla milbona",
+        "natilla high protein milbona"
+      ],
+      "tienda": "lidl",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 120.0,
+        "tarrina": 120.0
+      },
+      "por_100g": {
+        "kcal": 82.0,
+        "prot": 10.0,
+        "carb": 8.0,
+        "grasa": 1.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "tarta_helada_sabor_nata_y_chocolate_hacendado",
+      "nombre": "Tarta helada sabor nata y chocolate Hacendado",
+      "alias": [
+        "tarta_contesa_mercadona",
+        "tarta_helada_hacendado"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 251.0,
+        "prot": 3.2,
+        "carb": 25.5,
+        "grasa": 14.9,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "pizza_de_pollo_hacendado",
+      "nombre": "Pizza de pollo Hacendado",
+      "alias": [
+        "pizza_pollo_mercadona",
+        "pizza_pollo_hacendado"
+      ],
+      "tienda": "mercadona",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 229.0,
+        "prot": 14.0,
+        "carb": 27.0,
+        "grasa": 7.1,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "pan_de_maiz",
+      "nombre": "Pan de maiz",
+      "alias": [
+        "pan_maiz"
+      ],
+      "tienda": "generico",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 269.0,
+        "prot": 8.0,
+        "carb": 48.0,
+        "grasa": 4.0,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "batido_sustitutivo_comida_500ml_lidl",
+      "nombre": "Batido sustitutivo comida 500ml (Lidl)",
+      "alias": [
+        "batido comida lidl",
+        "1 bottle 1 meal lidl",
+        "sustitutivo comida lidl"
+      ],
+      "tienda": "lidl",
+      "raciones": {
+        "botella": 500.0,
+        "unidad": 500.0,
+        "racion": 500.0
+      },
+      "por_100g": {
+        "kcal": 100.0,
+        "prot": 7.0,
+        "carb": 6.8,
+        "grasa": 4.6,
+        "fibra": 1.7
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "choco_shells_lidl",
+      "nombre": "Choco Shells (Lidl)",
+      "alias": [
+        "choco shells",
+        "cereales choco shells"
+      ],
+      "tienda": "lidl",
+      "raciones": {
+        "racion": 100.0,
+        "unidad": 100.0
+      },
+      "por_100g": {
+        "kcal": 377.0,
+        "prot": 9.6,
+        "carb": 74.4,
+        "grasa": 2.7,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado"
+      ]
+    },
+    {
+      "id": "pan_molde_rustico_lidl",
+      "nombre": "Pan de molde estilo rstico (Lidl)",
+      "alias": [
+        "pan rustico lidl",
+        "pan de molde rustico lidl",
+        "pan molde rustico",
+        "pan rustico"
+      ],
+      "tienda": "lidl",
+      "raciones": {
+        "rebanada": 34.5,
+        "2_rebanadas": 69.0,
+        "paquete": 450
+      },
+      "por_100g": {
+        "kcal": 257.0,
+        "prot": 8.9,
+        "carb": 47.0,
+        "grasa": 2.9,
+        "fibra": 3.4
+      },
+      "eur_kg": 0.0,
+      "eur_unidad": 0.0,
+      "etiquetas": [
+        "pan",
+        "carbohidrato",
+        "lidl"
+      ]
+    }
+  ]
+}

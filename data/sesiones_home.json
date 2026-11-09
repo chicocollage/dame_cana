@@ -1,0 +1,82 @@
+{
+ "schema": "sesiones_home.v1",
+ "etiqueta": "HOME_IMPROVISADO",
+ "regla_uso": "Cuenta como estimulo real (volumen/fatiga 72-120 h) pero NO comparable en carga con estaciones del gimnasio: sin transferir kg por nombre; load_basis=unknown (barra de mancuerna sin pesar). No altera data/programa.json.",
+ "sesiones": [
+  {
+   "session_id": "home-2026-11-06-a",
+   "fecha": "2026-11-06",
+   "origen": "casa, material casero (silla, mancuerna 8 kg + barra, TRX, divan)",
+   "ejercicios": [
+    {
+     "orden": 1,
+     "nombre_usuario": "Curl borracho",
+     "oficial": "Curl de biceps inclinado (incline DB curl)",
+     "musculo": "biceps (porcion larga, estirado)",
+     "logica": "Silla con respaldo, deslizado: hombro en extension -> brazo por detras del tronco, igual que banco inclinado 45-60 grados",
+     "carga": "8 kg + barra (total no pesado)",
+     "series": null,
+     "reps": null,
+     "rir": null,
+     "equivalencia": "alta"
+    },
+    {
+     "orden": 2,
+     "nombre_usuario": "Press katana sentado",
+     "oficial": "Extension de triceps sobre cabeza unilateral con codo elevado (axila expuesta), sentado con respaldo; analogo a overhead extension con mancuerna/polea",
+     "musculo": "triceps (porcion larga), deltoides anterior secundario",
+     "carga": "8 kg + barra",
+     "series": 4,
+     "reps": 12,
+     "rir": 1,
+     "equivalencia": "alta"
+    },
+    {
+     "orden": 3,
+     "nombre_usuario": "Martillo + drag curl (8+8)",
+     "oficial": "Curl martillo + drag curl (combinada)",
+     "musculo": "braquial, braquiorradial, biceps largo (drag: codos atras)",
+     "carga": "8 kg + barra",
+     "series": 3,
+     "reps": "8+8",
+     "rir": null,
+     "equivalencia": "alta"
+    },
+    {
+     "orden": 4,
+     "nombre_usuario": "Elevaciones divan",
+     "oficial": "Elevacion lateral en decubito lateral / lateral raise con polea cruzada (tension en estiramiento)",
+     "musculo": "deltoides lateral",
+     "logica": "Apoyo en codo, mancuerna desde detras de cadera: aducido y detras del plano -> perfil de resistencia en rango estirado similar a polea baja cruzada",
+     "carga": "mancuerna (kg sin registrar)",
+     "series": null,
+     "reps": null,
+     "rir": null,
+     "equivalencia": "media-alta"
+    },
+    {
+     "orden": 5,
+     "nombre_usuario": "Extension sobre cabeza TRX",
+     "oficial": "Extension de triceps sobre cabeza en polea (overhead cable extension)",
+     "musculo": "triceps porcion larga",
+     "carga": "peso corporal, inclinacion TRX no registrada",
+     "series": 3,
+     "reps": 15,
+     "rir": null,
+     "equivalencia": "alta"
+    },
+    {
+     "orden": 6,
+     "nombre_usuario": "Posterior TRX",
+     "oficial": "Pajaro / reverse fly (deltoides posterior)",
+     "musculo": "deltoides posterior, trapecio medio",
+     "carga": "peso corporal",
+     "series": 3,
+     "reps": 12,
+     "rir": 1,
+     "equivalencia": "alta"
+    }
+   ]
+  }
+ ]
+}

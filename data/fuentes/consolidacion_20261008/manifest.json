@@ -1,0 +1,61 @@
+{
+  "schema": "dame_cana_fuentes_consolidadas.v1",
+  "fecha": "2026-10-08",
+  "origen_biblioteca": "https://chatgpt.com/library/share/6ac79ebc1c04819184295c089c3ceafa?account_id=personal",
+  "archivos": [
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/2026-10-06-sesion-en-vivo-registro-ia.json",
+      "sha256": "b37f9cce75cdb2989de6fb25f20f6483ab5ff3365f4f7e1eea50e7b0a3c8179d",
+      "bytes": 8512,
+      "origen_descargado": "C:\\Users\\Daniel\\Downloads\\2026-10-06-sesion-en-vivo-registro-ia.json"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/historial-entrenamientos-ia (1).json",
+      "sha256": "1d7ff2a55192c06374a2ac46e7e6bb0523e5aa3f58953862d9c3b27142301ef0",
+      "bytes": 189822,
+      "origen_descargado": "C:\\Users\\Daniel\\Downloads\\historial-entrenamientos-ia (1).json"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/2026-09-30-dia-b-registro-ia.json",
+      "sha256": "e3aa339815e23d050215f767aa9d34aeb0d46be4b9267fd83da27e8fcf3a1dcf",
+      "bytes": 11432,
+      "origen_descargado": "C:\\Users\\Daniel\\Downloads\\2026-09-30-dia-b-registro-ia.json"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/historial_entrenamientos_reconstruido_hasta_2026-08-01.json",
+      "sha256": "8f7fbf380d81d44809a113aa4483cd2682f3bdc41392fb8e073bb8682fbf6047",
+      "bytes": 11876,
+      "origen_descargado": "C:\\Users\\Daniel\\Downloads\\historial_entrenamientos_reconstruido_hasta_2026-08-01.json"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/historial-entrenamientos_este_chat_2026-08-12.json",
+      "sha256": "82796b177b1b614fe5d6febda58667de0479d2016b6719a8ccf3a093e43ca8f4",
+      "bytes": 25390,
+      "origen_descargado": "C:\\Users\\Daniel\\Downloads\\historial-entrenamientos_este_chat_2026-08-12.json"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/biblioteca/2026-08-05-entrenamiento-de-hoy-registro-ia (1).json",
+      "sha256": "168e5ce14c3ee6af775b095d38063bfe007e0501f40a8d4e7c60f6d81ea1160b",
+      "bytes": 3903,
+      "origen_descargado": "C:\\Users\\Daniel\\Downloads\\2026-08-05-entrenamiento-de-hoy-registro-ia (1).json"
+    },
+    {
+      "ruta": "data/fuentes/consolidacion_20261008/drive/DIRECT_SYNC_20261003_105229.json",
+      "sha256": "3c6373438564363544f70598e746f847b9620fc3e27e5e7fae435d521bc2d3ba",
+      "bytes": 8391,
+      "origen_descargado": "C:\\Users\\Daniel\\Documents\\Codex\\2026-10-07\\quie\\work\\consolidacion_preparada\\DIRECT_SYNC_20261003_105229.json"
+    },
+    {
+      "ruta": "data/originales_app/DIRECT_SYNC_20261003_105229__3c6373438564.json",
+      "sha256": "3c6373438564363544f70598e746f847b9620fc3e27e5e7fae435d521bc2d3ba",
+      "bytes": 8391,
+      "origen_descargado": "C:\\Users\\Daniel\\Documents\\Codex\\2026-10-07\\quie\\work\\consolidacion_preparada\\DIRECT_SYNC_20261003_105229.json"
+    },
+    {
+      "ruta": "data/originales_app/2026-10-06-sesion-en-vivo-registro-ia__b37f9cce75cd.json",
+      "sha256": "b37f9cce75cdb2989de6fb25f20f6483ab5ff3365f4f7e1eea50e7b0a3c8179d",
+      "bytes": 8512,
+      "origen_descargado": "C:\\Users\\Daniel\\Downloads\\2026-10-06-sesion-en-vivo-registro-ia.json"
+    }
+  ]
+}

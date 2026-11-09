@@ -1,0 +1,332 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-10T16:30:04.192Z",
+  "event_id": "EVENT-1791649804192-ynig0",
+  "session": {
+    "id": "mv22v4oh-ml7jna",
+    "date": "2026-10-10",
+    "title": "Día B · Cadena posterior y torso",
+    "finished": true,
+    "exercise_count": 7,
+    "planned_set_count": 19,
+    "recorded_set_count": 19
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Peso muerto rumano en Smith",
+      "identity": {
+        "variant": "Smith",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 75,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 75,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 75,
+            "reps": 9,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Curl femoral sentado",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 29,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 29,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 29,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Remo con pecho apoyado",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": "Asiento 4"
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 60,
+            "reps": 11,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 60,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 60,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Peck-deck inverso",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": "Asiento 1"
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "Con agarre mano invertido (pulgar abajo)",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 27,
+            "reps": 15,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 27,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 27,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Curl predicador en máquina",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 36,
+            "reps": 12,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 36,
+            "reps": 14,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "Extensión de rodilla",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": "Respaldo 6"
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 43,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 43,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "Gemelo con rodilla extendida en Hack",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 80,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 80,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 80,
+            "reps": 14,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "dame_cana_taxonomia_operativa.v1",
+  "version_programa_referencia": "M5-5D-v1.0",
+  "proposito": "Agrupar funciones biomecánicas del programa activo (M5-5D-v1.0) y orientar sustituciones. No identifica una estación ni autoriza transferir cargas.",
+  "familias_movimiento": {
+    "extension_cadera": ["A01", "D02"],
+    "sentadilla_bilateral": ["A02"],
+    "sentadilla_unilateral": ["D01"],
+    "flexion_rodilla": ["D03"],
+    "extension_rodilla": ["D04"],
+    "abduccion_cadera": ["A03", "D05", "E05"],
+    "empuje_torso": ["C01", "C03"],
+    "traccion_vertical": ["C02"],
+    "traccion_horizontal": ["C04"],
+    "extension_hombro": ["C05"],
+    "deltoides_lateral": ["B03", "E04"],
+    "deltoides_posterior": ["E03"],
+    "flexion_codo": ["B02", "E01"],
+    "extension_codo": ["B01", "E02"],
+    "flexion_tronco": ["A05", "B04"],
+    "flexion_plantar": ["A04"]
+  },
+  "base_de_carga": ["total_kg", "per_side_kg", "bodyweight", "unknown_kg_basis", "unknown"],
+  "estados_identidad": ["sin_identificar", "provisional", "confirmada", "no_comparable"],
+  "nota": "Clasificación funcional alineada con los 24 puestos de M5-5D-v1.0; no sustituye identidad física de máquina, ajustes ni base de carga."
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-02T12:00:00.000Z",
+  "session": {
+    "id": "current-trx",
+    "title": "Sesión TRX",
+    "date": "2026-08-02T10:00:00.000Z",
+    "updated_at": "2026-08-02T11:00:00.000Z",
+    "finished": false,
+    "source_note": "# Sesión TRX"
+  },
+  "exercises": [
+    {
+      "name": "Remo",
+      "identity": {
+        "resistance_mode": "trx",
+        "variant": "TRX",
+        "machine_settings": "Correas altura 5",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": 10,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "2",
+        "rest": "90 s",
+        "coach_cue": "Cuerpo estable"
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "",
+            "resistance": { "mode": "trx", "difficulty": "Pies en marca 3" },
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-29T16:24:00.000Z",
+  "session": {
+    "id": "mvtlu8d0-rescue",
+    "title": "Día D",
+    "date": "2026-10-29T15:00:00.000Z",
+    "updated_at": "2026-10-29T16:24:00.000Z",
+    "finished": true,
+    "source_note": "# Día D — Nuclear 3 · Glúteo y Cadena Posterior (Unilateral y cadera)\n\nSentadilla búlgara en Smith — 3 × 8–12/lado\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-21; 30 kg × 11 @0; 30 kg × 10 @1; 30 kg × 10 @1.\nHoy: Mantener 30 kg. Objetivo hoy: progresar a 12 reps por serie con RIR 1–2 hacia el tope de 12.\nConfiguración: Smith (banco trasero altura tibia media — discos añadidos) — Ajuste tope de · altura tibia\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nPeso muerto rumano en Smith (RDL) — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-21; 70 kg × 11 @1; 70 kg × 10 @1; 70 kg × 10 @1.\nHoy: Doble progresión completada (3 series a 11, 10, 10 reps con 70 kg). Sugerencia hoy: subir al siguiente incremento disponible (+2.5 a +5 kg discos totales) y consolidar 6–8 reps @1–2.\nConfiguración: Smith (discos añadidos de ambos lados, barra no incluida)\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nCurl femoral sentado — 3 × 8–12\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-21; 36 kg × 10 @1; 36 kg × 10 @0; 36 kg × 9 @1.\nHoy: Mantener 36 kg. Objetivo hoy: progresar a 11–12 reps por serie con RIR 1–2 hacia el tope de 12.\nConfiguración: Máquina de placas con selector en kg\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nExtensión de rodilla en máquina — 2 × 12–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-21; 50 kg × 11 @0; 50 kg × 10 @1; 50 kg × 10 @0.\nHoy: Mantener 50 kg. Asegurar que todas las series entren limpias en el rango 12–15 reps manteniendo RIR 1–2.\nConfiguración: Máquina con placas — Respaldo 6\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nAbducción unilateral en cable — 2 × 15–20/lado\nRIR 1–2 · Descanso 60–90 s\nÚltimo registro: 2026-10-15; 14 kg × 14 @1; 14 kg × 12 @1; 14 kg × 12 @1.\nHoy: Mantener 14 kg. Asegurar que todas las series entren limpias en el rango 15–20 reps manteniendo RIR 1–2.\nConfiguración: Polea baja con tobillera\nRegistra: Carga, reps, RIR y ajustes exactos si varían.",
+    "exercise_count": 5,
+    "planned_set_count": 13,
+    "recorded_set_count": 13
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Sentadilla búlgara en Smith",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Smith",
+        "machine_settings": "tope de · altura tibia",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": true,
+        "target_rir": "1–2",
+        "rest": "2–4 min",
+        "coach_cue": "Hoy: Mantener 30 kg. Objetivo hoy: progresar a 12 reps por serie con RIR 1–2 hacia el tope de 12. · Configuración: Smith (banco trasero altura tibia media — discos añadidos) — Ajuste tope de · altura tibia. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "Me fue muy bien en sentadillas búlgaras, conseguí gestionar el aire (usé tira de expansión nasal). También realicé protocolos de hacks pre-entrenamiento. Una buena sesión en general sin molestias.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "30",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "30",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "30",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Peso muerto rumano en Smith (RDL)",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Smith",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–4 min",
+        "coach_cue": "Hoy: Doble progresión completada (3 series a 11, 10, 10 reps con 70 kg). Sugerencia hoy: subir al siguiente incremento disponible (+2.5 a +5 kg discos totales) y consolidar 6–8 reps @1–2. · Configuración: Smith (discos añadidos de ambos lados, barra no incluida). · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Curl femoral sentado",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 36 kg. Objetivo hoy: progresar a 11–12 reps por serie con RIR 1–2 hacia el tope de 12. · Configuración: Máquina de placas con selector en kg. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Extensión de rodilla en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Respaldo 6",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 50 kg. Asegurar que todas las series entren limpias en el rango 12–15 reps manteniendo RIR 1–2. · Configuración: Máquina con placas — Respaldo 6. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Abducción unilateral en cable",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable / polea",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 15,
+        "reps_max": 20,
+        "per_side": true,
+        "target_rir": "1–2",
+        "rest": "60–90 s",
+        "coach_cue": "Hoy: Mantener 14 kg. Asegurar que todas las series entren limpias en el rango 15–20 reps manteniendo RIR 1–2. · Configuración: Polea baja con tobillera. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": ""
+          }
+        ]
+      }
+    }
+  ]
+}

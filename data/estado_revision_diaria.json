@@ -1,0 +1,11 @@
+{
+  "schema": "dame_cana_revision_diaria.v1",
+  "ultima_revision_utc": "2026-11-08T08:44:01+00:00",
+  "registro_sha256": "2c94c388191d7f74b7402e5f52f009c0a9ac59a34745e69321d64236a8a363ed",
+  "hoja_sha256": "d6f5f0d321050a8da8418262a1643144530ea4c67dbf4a6ae6f3ea7fd6e4167c",
+  "incidencias_vistas": [
+    "7eb05222ad3492d67de10b05c498ce669943657f4bfce0db47e4f0a7527eda87",
+    "979f7e080d5362aacbf3ab9ea2a5c31246944140787732e003e9b16f11cd861b",
+    "fd38f35f0eb81b813c14ab1e15599b6a062e5e8870b1b88d12ec9853df5461a2"
+  ]
+}

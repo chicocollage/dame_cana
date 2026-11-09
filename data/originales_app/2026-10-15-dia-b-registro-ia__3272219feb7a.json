@@ -1,0 +1,267 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-15T17:10:42.085Z",
+  "session": {
+    "id": "mv9je1v2-8zzzhy",
+    "title": "Día B",
+    "date": "2026-10-15T12:50:26.414Z",
+    "updated_at": "2026-10-15T17:10:29.137Z",
+    "finished": true,
+    "source_note": "# Día B — Satélite de Detalle, Congestión & Movilidad\n\nElevación lateral unilateral en cable — 3 × 12–15\nRIR 1 · Descanso 90 s\nÚltimo registro: ninguno comparable.\nHoy: Carga ligera-moderada (~5–9 kg).\nConfiguración: Polea a la altura de la rodilla · agarre por detrás del cuerpo · inclinación lateral de 15° colgándote del poste.\nObjetivo: Torso abierto, pecho proyectado alto; elevación en plano escapular con parada de 1 s arriba mostrando la redondez del deltoides.\nRegistra: Carga, reps y RIR.\n\nKickback diagonal de glúteo en polea baja — 3 × 12–15/lado\nRIR 1 · Descanso 60–90 s\nÚltimo registro: ninguno comparable.\nHoy: Calibrar carga inicial moderada (~7–12 kg con tobillera).\nConfiguración: Polea baja · tobillera fijada · torso flexionado a 45° apoyando antebrazos en la columna con la pelvis neutra.\nObjetivo: Extensión y abducción simultánea (patio de 30° hacia fuera); contracción máxima del glúteo arriba con pierna casi extendida y descenso en 3 s.\nRegistra: Carga por lado, reps y sensación de bombeo.\n\nPeck-deck inverso — 3 × 12–15\nRIR 1 · Descanso 90 s\nÚltimo registro: ninguno comparable.\nHoy: Carga moderada buscando congestión neta en deltoides posterior.\nConfiguración: Asiento regulado para que los brazos queden paralelos al suelo a la altura del hombro.\nObjetivo: Pecho pegado al tapizado, apertura amplia manteniendo los codos ligeramente desbloqueados; sensación de ensanchar la espalda alta.\nRegistra: Carga, reps y RIR.\n\nCossack squat fluida (peso corporal) — 2 × 8–10/lado\nRIR 2 · Descanso 60 s\nÚltimo registro: ninguno comparable.\nHoy: Peso corporal (opcional mancuerna ligera de 4–6 kg al pecho).\nConfiguración: Posición de pies muy amplia (doble ancho de hombros) en zona despejada frente al espejo.\nObjetivo: Descenso profundo y controlado sobre una pierna mientras la otra queda extendida con talón apoyado; cambio de lado fluido a ras de suelo sin subir el centro de gravedad.\nRegistra: Sensaciones de apertura de cadera y fluidez.",
+    "exercise_count": 5,
+    "planned_set_count": 13,
+    "recorded_set_count": 13
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Elevación lateral unilateral en cable",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable / polea",
+        "machine_settings": "altura de",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90 s",
+        "coach_cue": "Hoy: Carga ligera-moderada (~5–9 kg). · Configuración: Polea a la altura de la rodilla · agarre por detrás del cuerpo · inclinación lateral de 15° colgándote del poste. · Objetivo: Torso abierto, pecho proyectado alto; elevación en plano escapular con parada de 1 s arriba mostrando la redondez del deltoides. · Registra: Carga, reps y RIR."
+      },
+      "result": {
+        "movement_notes": "No hice el agarre por detrás, si no por delante. Corregiré la próxima",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "0"
+          },
+          {
+            "index": 3,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "0"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Kickback diagonal de glúteo en polea baja",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable / polea",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "60–90 s",
+        "coach_cue": "Hoy: Calibrar carga inicial moderada (~7–12 kg con tobillera). · Configuración: Polea baja · tobillera fijada · torso flexionado a 45° apoyando antebrazos en la columna con la pelvis neutra. · Objetivo: Extensión y abducción simultánea (patio de 30° hacia fuera); contracción máxima del glúteo arriba con pierna casi extendida y descenso en 3 s. · Registra: Carga por lado, reps y sensación de bombeo."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Peck-deck inverso",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "",
+        "machine_settings": "Asiento regulado · altura del",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90 s",
+        "coach_cue": "Hoy: Carga moderada buscando congestión neta en deltoides posterior. · Configuración: Asiento regulado para que los brazos queden paralelos al suelo a la altura del hombro. · Objetivo: Pecho pegado al tapizado, apertura amplia manteniendo los codos ligeramente desbloqueados; sensación de ensanchar la espalda alta. · Registra: Carga, reps y RIR."
+      },
+      "result": {
+        "movement_notes": "El agarre lo tomó con las palmas empujando el agarre (pulgar abajo), con rotación interna del brazo (comprueba si es realmente efectivo esta técnica y si es así. Conviertela en la canónica",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "23",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "index": 2,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Cossack squat fluida (peso corporal)",
+      "identity": {
+        "resistance_mode": "bodyweight",
+        "variant": "Mancuernas",
+        "machine_settings": "Posición de",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 8,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "2",
+        "rest": "1 min",
+        "coach_cue": "Hoy: Peso corporal (opcional mancuerna ligera de 4–6 kg al pecho). · Configuración: Posición de pies muy amplia (doble ancho de hombros) en zona despejada frente al espejo. · Objetivo: Descenso profundo y controlado sobre una pierna mientras la otra queda extendida con talón apoyado; cambio de lado fluido a ras de suelo sin subir el centro de gravedad. · Registra: Sensaciones de apertura de cadera y fluidez."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "",
+            "resistance": {
+              "mode": "bodyweight",
+              "difficulty": "N/a"
+            },
+            "reps": "15",
+            "rir": "0"
+          },
+          {
+            "index": 2,
+            "load_kg": "",
+            "resistance": {
+              "mode": "bodyweight",
+              "difficulty": "N/a"
+            },
+            "reps": "15",
+            "rir": "0"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Encogimientos trapecio en Smith con inclinacion hacia delante",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Smith",
+        "machine_settings": "N/a",
+        "load_basis": "added_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "Este ejercicio lo he añadido porque parece que en la app no estaba registrado. Cuando procese este registro, comprueba si está el ejercicio en el sistema, si no añádelo, teniendo en cuenta esta variedad en la que se inclina el cuerpo hacia delante. Añade técnicas, y todo lo que debe tener un ejércicio registrado en el sistema. Para cambiarlo y que aparezca también recogido en la app, no hagas cambio de momento. Recoge este tipo de pequeños cambios para ir acumulando hasta que sea necesaria una actualización de la app.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "30",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "30",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "0"
+          }
+        ]
+      }
+    }
+  ]
+}

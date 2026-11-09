@@ -1,0 +1,267 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-24T05:10:05.186Z",
+  "session": {
+    "id": "mvktzbvn-2y6q1m",
+    "title": "Día E",
+    "date": "2026-10-23T10:32:23.267Z",
+    "updated_at": "2026-10-24T05:10:00.178Z",
+    "finished": true,
+    "source_note": "# Día E – Satélite 2 – Brazos, Deltoides Posterior y Detalle (Acortamiento y bombeo)\n\nCurl predicador en cable o máquina – 3 × 8–12\nRIR 1 · Descanso 90–150 s\nÚltimo registro: 2026-10-14; 36 kg × 12 @1; 36 kg × 12 @1; 36 kg × 11 @1.\nHoy: Mantener 36 kg. Objetivo hoy: cerrar las 12 reps en todas las series (11 -> 12 reps) con RIR 1 para completar doble progresión antes de subir carga.\nConfiguración: Máquina con placas y selector en kg (banco Scott) · Ajuste Posición 4\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nExtensión de tríceps en polea con cuerda – 3 × 10–15\nRIR 1 · Descanso 90–150 s\nÚltimo registro: 2026-10-14; 9 kg × 11 @0; 14 kg × 8 @1; 9 kg × 10 @1 (Variante anterior: Polea (unilateral con posición bilateral); Las dos series las hice unilateralmente manteniendo posiciones bilateral.).\nHoy: Iniciar con 14 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 15 reps @1 con esa carga.\nConfiguración: Polea alta con cuerda · Separando muñecas abajo · Las dos series las hice unilateralmente manteniendo posiciones bilateral.\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nPeck-deck inverso o remo posterior abierto – 3 × 12–15\nRIR 1 · Descanso 90–150 s\nÚltimo registro: 2026-10-15; 23 kg × 15 @2; 27 kg × 15 @1; 27 kg × 12 @1 (Variante anterior: El agarre lo tomé con las palmas empujando el agarre (pulgar abajo), con rotación interna del brazo (comprueba si es realmente efectivo esta técnica y si es así. Conviertela en la canónica).\nHoy: Iniciar con 27 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 15 reps @1 con esa carga.\nConfiguración: Máquina Peck-deck inverso o poleas cruzadas · Asiento regulado a altura del hombro.\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nElevación lateral en máquina – 3 × 15–20\nRIR 1 · Descanso 90–150 s\nÚltimo registro: 2026-10-20; 27 kg × 18 @1; 27 kg × 15 @1 (Máquina de elevación lateral).\nHoy: Mantener 27 kg en selector de placas. Objetivo: consolidar las series hacia 18–20 reps con RIR 1.\nConfiguración: Máquina de elevación lateral con placas · Eje del hombro alineado con el pivote de giro.\nRegistra: Carga, reps, RIR y ajustes de asiento si varían.\n\nAbducción sentada en máquina (vaciado metabólico) – 1 × 25–30\nRIR 0–1 · Descanso Fin de sesión\nÚltimo registro: 2026-10-21; 43 kg × 14 @1; 43 kg × 14 @1; 43 kg × 14 @1.\nHoy: Mantener 43 kg. Asegurar que la serie entre limpia en el rango 25–30 reps manteniendo RIR 0–1.\nConfiguración: Máquina con placas · Asiento y respaldo apoyados · Asiento pegado a respaldo.\nRegistra: Carga, reps, RIR y ajustes exactos si varían.",
+    "exercise_count": 5,
+    "planned_set_count": 13,
+    "recorded_set_count": 13
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Curl predicador en cable o máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable / polea",
+        "machine_settings": "Posición 4",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 36 kg. Objetivo hoy: cerrar las 12 reps en todas las series (11 -> 12 reps) con RIR 1 para completar doble progresión antes de subir carga. · Configuración: Máquina con placas y selector en kg (banco Scott) · Ajuste Posición 4 · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Extensión de tríceps en polea con cuerda",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable / polea",
+        "machine_settings": "posiciones · posición bilateral",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Iniciar con 14 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 15 reps @1 con esa carga. · Configuración: Polea alta con cuerda · Separando muñecas abajo · Las dos series las hice unilateralmente manteniendo posiciones bilateral. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Peck-deck inverso o remo posterior abierto",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Asiento regulado · altura del",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Iniciar con 27 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 15 reps @1 con esa carga. · Configuración: Máquina Peck-deck inverso o poleas cruzadas · Asiento regulado a altura del hombro. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "La próxima placa 36 y la siguiente 41",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "32",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "32",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "32",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "16",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Elevación lateral en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "asiento si",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 15,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 27 kg en selector de placas. Objetivo: consolidar las series hacia 18–20 reps con RIR 1. · Configuración: Máquina de elevación lateral con placas · Eje del hombro alineado con el pivote de giro. · Registra: Carga, reps, RIR y ajustes de asiento si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "18",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Abducción sentada en máquina (vaciado metabólico)",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Asiento y · respaldo apoyados · Asiento pegado · respaldo.",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": 25,
+        "reps_max": 30,
+        "per_side": false,
+        "target_rir": "0–1",
+        "rest": "",
+        "coach_cue": "Hoy: Mantener 43 kg. Asegurar que la serie entre limpia en el rango 25–30 reps manteniendo RIR 0–1. · Configuración: Máquina con placas · Asiento y respaldo apoyados · Asiento pegado a respaldo. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "30",
+            "rir": ""
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-09-30T12:22:43.907Z",
+  "session": {
+    "id": "munxepbz-x9ubyx",
+    "title": "Día B",
+    "date": "2026-09-30T09:51:55.583Z",
+    "updated_at": "2026-09-30T12:22:38.513Z",
+    "finished": true,
+    "source_note": "# Día B\n\nPrograma M4-3D-v2.0 · 18 series · Corte: 30/09/2026.\nRecuperación buena; mismas máquinas; última sesión realizada el 26/09.\n\nCargas de referencia condicionadas a los mismos ajustes, recorrido y forma de contar los kilos. Dejar 1–2 repeticiones en reserva; ajustar la carga si hoy no permite ese margen.\n\n1. Peso muerto rumano en Smith — 3 × 6–10 · RIR 1–2 · descanso 2–4 min\nReferencia: 70 kg registrados el 14/09.\nBisagra controlada; no ampliar el recorrido doblando la espalda. No subir kilos hoy.\n\n2. Curl femoral sentado — 3 × 8–15 · RIR 1–2 · descanso 90–150 s\nReferencia: 29 kg registrados el 14/09.\nPelvis sujeta; completar las tres series sin buscar el fallo.\n\n3. Remo con pecho apoyado — 3 × 8–12 · RIR 1–2 · descanso 2–3 min\nReferencias: 50 y 55 kg registrados el 14/09.\nComprobar primero 50 kg. Usar 55 solo si permite mantener apoyo, recorrido y RIR 1–2.\n\n4. Peck-deck inverso — 3 × 12–20 · RIR 1–2 · descanso 90–150 s\nReferencia: 27 kg registrados el 14/09.\nTrayectoria estable, sin impulso. Priorizar repeticiones limpias.\n\n5. Curl predicador — 2 × 8–15 · RIR 1–2 · descanso 90–150 s\nCarga por calibrar: el registro anterior de 36 kg tiene una variante y contabilización ambiguas.\nElegir una carga cómoda para el rango; registrar el implemento y cómo se cuenta el peso.\n\n6. Extensión de rodilla — 2 × 10–15 · RIR 1–2 · descanso 90–150 s\nReferencia: 43 kg registrados el 14/09.\nAlinear el eje de la máquina y mantener el recorrido. Realizar dos series.\n\n7. Gemelo con rodilla extendida — 2 × 8–15 · RIR 1–2 · descanso 90–150 s\nReferencia: 60 kg registrados el 16/09.\nConfirmar la misma estación y forma de contar la carga. Recorrido controlado.\n\nLas filas vacías y las dos series anotadas con una repetición del 14/09 no justifican aumentos de carga. Registrar únicamente lo realizado, con repeticiones y RIR reales.\n\nAntes de iniciar: comprobar que el borrador contiene siete ejercicios y 18 series.",
+    "exercise_count": 7,
+    "planned_set_count": 18,
+    "recorded_set_count": 18
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Peso muerto rumano en Smith",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Smith",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": "Nota: Referencia: 70 kg registrados el 14/09. · Nota: Bisagra controlada; no ampliar el recorrido doblando la espalda. No subir kilos hoy."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Curl femoral sentado",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": "Nota: Referencia: 29 kg registrados el 14/09. · Nota: Pelvis sujeta; completar las tres series sin buscar el fallo."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "29",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "29",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "23",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "16",
+            "rir": "2"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Remo con pecho apoyado",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Asiento 4",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "",
+        "coach_cue": "Nota: Referencias: 50 y 55 kg registrados el 14/09."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "55",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Peck-deck inverso",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": "Nota: Referencia: 27 kg registrados el 14/09. · Nota: Trayectoria estable, sin impulso. Priorizar repeticiones limpias."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Curl predicador",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 8,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": "Nota: Carga por calibrar: el registro anterior de 36 kg tiene una variante y contabilización ambiguas. · Nota: Elegir una carga cómoda para el rango; registrar el implemento y cómo se cuenta el peso."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "Extensión de rodilla",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": "Nota: Referencia: 43 kg registrados el 14/09. · Nota: Alinear el eje de la máquina y mantener el recorrido. Realizar dos series."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "Gemelo con rodilla extendida",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 8,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": "Nota: Referencia: 60 kg registrados el 16/09. · Nota: Confirmar la misma estación y forma de contar la carga. Recorrido controlado. · Nota: Las filas vacías y las dos series anotadas con una repetición del 14/09 no justifican aumentos de carga. Registrar únicamente lo realizado, con repeticiones y RIR reales. · Nota: Antes de iniciar: comprobar que el borrador contiene siete ejercicios y 18 series."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "80",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

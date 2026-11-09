@@ -1,0 +1,378 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-03T08:52:26.128Z",
+  "event_id": "EVENT-1791017546128-s77kh",
+  "session": {
+    "id": "muqxr7gm-o3rbuo",
+    "date": "2026-10-02",
+    "title": "Día C · Glúteos y brazos",
+    "finished": true,
+    "exercise_count": 9,
+    "planned_set_count": 20,
+    "recorded_set_count": 20
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Sentadilla búlgara en Smith",
+      "identity": {
+        "variant": "Smith",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": true
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 30,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 30,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 30,
+            "reps": 9,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Abducción sentada en máquina",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": "Asiento y"
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 43,
+            "reps": 18,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 43,
+            "reps": 18,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 43,
+            "reps": 20,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Press horizontal convergente",
+      "identity": {
+        "variant": "",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 60,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 60,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 60,
+            "reps": 9,
+            "rir": null,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Curl bayesiano en cable",
+      "identity": {
+        "variant": "Cable",
+        "load_basis": "per_side_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 9,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 14,
+            "reps": 8,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Extensión de tríceps Katana unilateral",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": true
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 9,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 9,
+            "reps": 9,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "Pullover en polea con ambos brazos",
+      "identity": {
+        "variant": "Cable / polea",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 36,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 36,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "Elevación lateral en máquina",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 27,
+            "reps": 19,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 27,
+            "reps": 18,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "name": "Remo posterior con pecho apoyado",
+      "identity": {
+        "variant": "",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 20,
+            "reps": 12,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "name": "Gemelo con rodilla extendida",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 60,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 80,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

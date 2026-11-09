@@ -1,0 +1,322 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-16T08:38:35.374Z",
+  "event_id": "EVENT-1786869515374-oxg1w",
+  "session": {
+    "id": "msvek8wz-k1lvmc",
+    "date": "2026-08-16",
+    "title": "Día A",
+    "finished": true,
+    "exercise_count": 7,
+    "planned_set_count": 18,
+    "recorded_set_count": 15
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Hip thrust en máquina",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "Aún puedo mejorar tecnica",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 60,
+            "reps": 10,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 60,
+            "reps": 9,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 60,
+            "reps": 9,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Sentadilla Hack Matrix profunda",
+      "identity": {
+        "variant": "Máquina Matrix",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": "posición de"
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "Creo que puedo con más, aunque al bajar cuesta más",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 20,
+            "reps": 11,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": null,
+            "reps": null,
+            "rir": null,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Press inclinado moderado",
+      "identity": {
+        "variant": "Convergente",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "Creo que en la próxima podre subir",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 40,
+            "reps": 10,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 50,
+            "reps": 8,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": null,
+            "reps": null,
+            "rir": null,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Jalón medio o neutro",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 29,
+            "reps": 12,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 36,
+            "reps": 11,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 36,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Elevación lateral",
+      "identity": {
+        "variant": "Maquina",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "Hice una serie con polea a 5 kilos, voy sobrado pero la siguiente placa es demasiado ya para más de 4 re",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 23,
+            "reps": 15,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 23,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": null,
+            "reps": null,
+            "rir": null,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "Extensión de tríceps overhead",
+      "identity": {
+        "variant": "Polea con cuerda (1 mano)",
+        "load_basis": "per_side_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 18,
+            "reps": 7,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 14,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "Crunch cargado",
+      "identity": {
+        "variant": "Maquina",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "No me convence demasiado la máquina (adjuntaré foto)",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 29,
+            "reps": 12,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 29,
+            "reps": 12,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

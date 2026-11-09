@@ -1,0 +1,44 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-01T12:00:00.000Z",
+  "session": {
+    "id": "current-external",
+    "title": "Carga externa",
+    "date": "2026-08-01T10:00:00.000Z",
+    "updated_at": "2026-08-01T11:00:00.000Z",
+    "finished": true,
+    "source_note": "# Carga externa"
+  },
+  "exercises": [
+    {
+      "name": "Hip thrust",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina Technogym",
+        "machine_settings": "Respaldo 3",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": 8,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "2",
+        "rest": "2 min",
+        "coach_cue": "Pausa arriba"
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "120",
+            "resistance": { "mode": "external", "difficulty": "" },
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      }
+    }
+  ]
+}

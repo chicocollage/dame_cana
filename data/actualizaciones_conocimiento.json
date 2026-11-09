@@ -1,0 +1,96 @@
+{
+  "schema": "dame_cana_actualizaciones_conocimiento.v1",
+  "revision": 2,
+  "base": "biblioteca/EMPEZAR_AQUI.md",
+  "fecha_inicio": "2026-10-11",
+  "estudios": [
+    {
+      "id": "DOSSIER-SUPPLEATHLETE-20261018",
+      "titulo": "Evaluación biomecánica de 5 variantes de cadera y glúteos (@thesuppleathlete) + literatura asociada (Krause Neto 2025, Song 2025, Retractación Copenhagen 2026)",
+      "fuente": "Dossier de transferencia técnica (2026-10-18) sobre reel @thesuppleathlete y literatura PubMed/PMC",
+      "archivo": "biblioteca/ampliaciones/entradas/DOSSIER-SUPPLEATHLETE-20261018.md",
+      "sha256": "75c6d249593103ecac2f10fd8894e8909b0a9fbc844ae55d03a8938d311fb543",
+      "fecha_ingreso": "2026-10-18T12:40:45+00:00",
+      "estado": "verificado",
+      "tipo": "dossier_biomecanico_y_literatura",
+      "poblacion": "Adultos entrenados / EMG y ensayos clínicos de fuerza",
+      "resultado": "Los 5 ejercicios del vídeo (Kickstand RDL KB, Abducción 6D en suelo, Loaded Hip Airplane, Copenhagen dinámico elevado y Squat unilateral 2 KB) presentan menor estabilidad externa y peor capacidad de sobrecarga progresiva que los equivalentes actuales en M5-5D-v1.0. Se registra además Krause Neto 2025 (SMD 0.71 hipertrofia GMax) y retractación 2026 de metaanálisis Copenhagen.",
+      "limitaciones": "Estudios de EMG aguda (Song 2025, Moore 2020) no equivalen a hipertrofia longitudinal; ausencia de ensayos sobre las variantes híbridas exactas del vídeo.",
+      "aplicabilidad": "Descartados como reemplazo de series efectivas en M5-5D-v1.0. Solo Hip Airplane asistido sin carga (03) tiene transferencia útil como micro-dosis de movilidad capsular y rotación interna de cadera fuera de sesión o en calentamiento.",
+      "decisiones_a_revisar": [],
+      "contraste": "Contrastado contra slots activos A01, A02 (Hack G04-V1), A03, D01 (Búlgara Smith G08-V1), D02 (RDL Smith) y D05 (Abducción cable 30°).",
+      "revisado_por": "Antigravity (Agente Entrenador)",
+      "fecha_revision": "2026-10-18T12:40:47+00:00"
+    }
+  ],
+  "historial": [
+    {
+      "revision": 1,
+      "fecha": "2026-10-18T12:40:45+00:00",
+      "id": "DOSSIER-SUPPLEATHLETE-20261018",
+      "accion": "incorporacion_pendiente",
+      "antes": null,
+      "despues": {
+        "id": "DOSSIER-SUPPLEATHLETE-20261018",
+        "titulo": "Evaluación biomecánica de 5 variantes de cadera y glúteos (@thesuppleathlete) + literatura asociada (Krause Neto 2025, Song 2025, Retractación Copenhagen 2026)",
+        "fuente": "Dossier de transferencia técnica (2026-10-18) sobre reel @thesuppleathlete y literatura PubMed/PMC",
+        "archivo": "biblioteca/ampliaciones/entradas/DOSSIER-SUPPLEATHLETE-20261018.md",
+        "sha256": "75c6d249593103ecac2f10fd8894e8909b0a9fbc844ae55d03a8938d311fb543",
+        "fecha_ingreso": "2026-10-18T12:40:45+00:00",
+        "estado": "pendiente_contraste",
+        "tipo": "dossier_biomecanico_y_literatura",
+        "poblacion": "Adultos entrenados / EMG y ensayos clínicos de fuerza",
+        "resultado": null,
+        "limitaciones": null,
+        "aplicabilidad": null,
+        "decisiones_a_revisar": [],
+        "contraste": null,
+        "revisado_por": null
+      },
+      "programa_modificado": false
+    },
+    {
+      "revision": 2,
+      "fecha": "2026-10-18T12:40:47+00:00",
+      "id": "DOSSIER-SUPPLEATHLETE-20261018",
+      "accion": "revision_documentada",
+      "antes": {
+        "id": "DOSSIER-SUPPLEATHLETE-20261018",
+        "titulo": "Evaluación biomecánica de 5 variantes de cadera y glúteos (@thesuppleathlete) + literatura asociada (Krause Neto 2025, Song 2025, Retractación Copenhagen 2026)",
+        "fuente": "Dossier de transferencia técnica (2026-10-18) sobre reel @thesuppleathlete y literatura PubMed/PMC",
+        "archivo": "biblioteca/ampliaciones/entradas/DOSSIER-SUPPLEATHLETE-20261018.md",
+        "sha256": "75c6d249593103ecac2f10fd8894e8909b0a9fbc844ae55d03a8938d311fb543",
+        "fecha_ingreso": "2026-10-18T12:40:45+00:00",
+        "estado": "pendiente_contraste",
+        "tipo": "dossier_biomecanico_y_literatura",
+        "poblacion": "Adultos entrenados / EMG y ensayos clínicos de fuerza",
+        "resultado": null,
+        "limitaciones": null,
+        "aplicabilidad": null,
+        "decisiones_a_revisar": [],
+        "contraste": null,
+        "revisado_por": null
+      },
+      "despues": {
+        "id": "DOSSIER-SUPPLEATHLETE-20261018",
+        "titulo": "Evaluación biomecánica de 5 variantes de cadera y glúteos (@thesuppleathlete) + literatura asociada (Krause Neto 2025, Song 2025, Retractación Copenhagen 2026)",
+        "fuente": "Dossier de transferencia técnica (2026-10-18) sobre reel @thesuppleathlete y literatura PubMed/PMC",
+        "archivo": "biblioteca/ampliaciones/entradas/DOSSIER-SUPPLEATHLETE-20261018.md",
+        "sha256": "75c6d249593103ecac2f10fd8894e8909b0a9fbc844ae55d03a8938d311fb543",
+        "fecha_ingreso": "2026-10-18T12:40:45+00:00",
+        "estado": "verificado",
+        "tipo": "dossier_biomecanico_y_literatura",
+        "poblacion": "Adultos entrenados / EMG y ensayos clínicos de fuerza",
+        "resultado": "Los 5 ejercicios del vídeo (Kickstand RDL KB, Abducción 6D en suelo, Loaded Hip Airplane, Copenhagen dinámico elevado y Squat unilateral 2 KB) presentan menor estabilidad externa y peor capacidad de sobrecarga progresiva que los equivalentes actuales en M5-5D-v1.0. Se registra además Krause Neto 2025 (SMD 0.71 hipertrofia GMax) y retractación 2026 de metaanálisis Copenhagen.",
+        "limitaciones": "Estudios de EMG aguda (Song 2025, Moore 2020) no equivalen a hipertrofia longitudinal; ausencia de ensayos sobre las variantes híbridas exactas del vídeo.",
+        "aplicabilidad": "Descartados como reemplazo de series efectivas en M5-5D-v1.0. Solo Hip Airplane asistido sin carga (03) tiene transferencia útil como micro-dosis de movilidad capsular y rotación interna de cadera fuera de sesión o en calentamiento.",
+        "decisiones_a_revisar": [],
+        "contraste": "Contrastado contra slots activos A01, A02 (Hack G04-V1), A03, D01 (Búlgara Smith G08-V1), D02 (RDL Smith) y D05 (Abducción cable 30°).",
+        "revisado_por": "Antigravity (Agente Entrenador)",
+        "fecha_revision": "2026-10-18T12:40:47+00:00"
+      },
+      "programa_modificado": false
+    }
+  ],
+  "regla": "El corpus previo permanece en sus fuentes y sus verificaciones originales. Un estudio nuevo comienza pendiente de contraste; una conclusion verificada propone revisar decisiones, no cambia programa por si sola."
+}

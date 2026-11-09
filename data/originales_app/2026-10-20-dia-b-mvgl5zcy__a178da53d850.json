@@ -1,0 +1,388 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-20T13:15:07.207Z",
+  "session": {
+    "id": "mvgl5zcy-i7blk2",
+    "title": "Día B",
+    "date": "2026-10-20T11:14:32.386Z",
+    "updated_at": "2026-10-20T13:15:07.207Z",
+    "finished": true,
+    "exercise_count": 8,
+    "planned_set_count": 18,
+    "recorded_set_count": 18
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Extensión de tríceps overhead en cable (Katana)",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Polea / cable con cuerda / Tipo katana unilateral",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90-150 s",
+        "coach_cue": "Hoy: Iniciar con 14 kg desde la primera serie (o placa intermedia de ~11.5 kg si notas fatiga residual de los presses de ayer). Objetivo: consolidar 10-12 reps limpias en RIR 1 sin llegar al fallo prematuro (@0). / Configuración: Polea / cable con cuerda / Tipo katana unilateral / Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "NOTAS Generales(No vinculada solo a este movimiento) para este entrenamiento realice hacks de zumo remolacha, y tb el de bicarbonato en tiempo correcto. He notado un buen entrenamiento sin quemazón en las últimas repeticiones, aunque no una gran congestión... Tambien realice el de calmar el cuerpo tumbado y respirando. Nota técnica. A la app seria conveniente añadirle un slot para notas generales del entrenamiento como esta.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Curl bayesiano en cable",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Polea baja (posición 3) con maneral D / Brazo detrás del torso",
+        "machine_settings": "Polea baja (posición 3)",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 10,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90-150 s",
+        "coach_cue": "Hoy: Mantener 9 kg en las 3 series. Objetivo: progresar hacia las 12 reps por serie con RIR 1 antes de subir de placa. / Configuración: Polea baja (posición 3) con maneral D / Brazo detrás del torso / Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Elevación lateral unilateral en cable",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Polea a altura de rodilla / Unilateral con maneral o muñequera / Cable por detrás del torso",
+        "machine_settings": "Polea altura rodilla",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90-150 s",
+        "coach_cue": "Hoy: Mantener 9 kg corrigiendo hoy el pase del cable por detrás del cuerpo. Asegurar que las 3 series entren limpias en el rango 12-15 reps manteniendo RIR 1. / Configuración: Polea a altura de rodilla / Unilateral con maneral o muñequera / Cable por detrás del torso / Registra: Carga, reps, RIR y sensaciones con el cable por detrás."
+      },
+      "result": {
+        "movement_notes": "Quite una serie de aquí e hice dos Serie de elevación lateral con máquina Registrada más abajo, pero en realidad fue el cuarto ejercicio",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Reverse crunch o elevación de piernas",
+      "identity": {
+        "resistance_mode": "bodyweight",
+        "variant": "Banco inclinado, con rotación lateral alterada y espiracion forzada en bloqueo arriba",
+        "machine_settings": "Banco inclinado",
+        "load_basis": "bodyweight"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 15,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90 s",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "En banco inclinado, con rotación lateral alterada y espiracion forzada en bloqueo arriba.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "",
+            "resistance": {
+              "mode": "bodyweight",
+              "difficulty": ""
+            },
+            "reps": "6",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "",
+            "resistance": {
+              "mode": "bodyweight",
+              "difficulty": ""
+            },
+            "reps": "6",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Pressdown en cable",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cruces en X en centro de dos poleas (Dual-cable cross pushdown)",
+        "machine_settings": "Centro de dos poleas cruzadas en X",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "Lo hice en centro de dos poleas, cruces en X. No se si este es el slot adecuado... Analízalo.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "9",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "Elevación lateral en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina de elevación lateral",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "Registrada aquí pero ejecutada como cuarto ejercicio en realidad (2 series complementarias)",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "Apertura inversa en cable",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cruce de poleas para deltoides posterior",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "20",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "32",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "32",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "name": "Forward-Lean Shrug en Smith",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Encogimientos en Smith con inclinación hacia delante",
+        "machine_settings": "Smith",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

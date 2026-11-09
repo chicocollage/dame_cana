@@ -1,0 +1,277 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-17T17:53:42.828Z",
+  "session": {
+    "id": "mvck2kbr-igojma",
+    "title": "Día A",
+    "date": "2026-10-17T15:32:48.615Z",
+    "updated_at": "2026-10-17T17:53:36.456Z",
+    "finished": true,
+    "source_note": "# Día A — Nuclear 1 · Glúteo y Cuádriceps (Cadera y rodilla pesadas)\n\nHip thrust en máquina / discos — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-08; 80 kg × 10 @1; 85 kg × 10 @1; 85 kg × 10 @1.\nHoy: Doble progresión completada el 08/10 (3 × 10 con 85 kg). Hoy subir a 87.5–90 kg y consolidar 6–8 reps @1–2.\nConfiguración: Máquina de discos · almohadilla pélvica densa · distancia pies para 90° de rodilla en bloqueo.\nObjetivo: Bloqueo horizontal puro con retroversión pélvica; cero hiperextensión lumbar.\nRegistra: Carga, reps, RIR y sensaciones.\n\nSentadilla Hack Matrix profunda — 3 × 8–12\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-08; 40 kg × 11 @1; 40 kg × 10 @1; 40 kg × 10 @1.\nHoy: Mantener 40 kg de discos añadidos. Objetivo: buscar el tope del rango (11–12 reps) en las 3 series dentro de RIR 1–2.\nConfiguración: Hack Matrix · pies en tercio medio/bajo para flexión de rodilla profunda sin despegue de talón.\nObjetivo: Descenso controlado de 3 s hasta tope seguro de profundidad; inversión fluida sin rebote.\nRegistra: Carga, reps y RIR.\n\nAbducción sentada en máquina — 3 × 15–20\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-13; 43 kg × 19 @1; 43 kg × 19 @1; 43 kg × 19 @1.\nHoy: Mantener 43 kg. Buscar 18–20 reps estrictas con 1 s de parada en máxima apertura.\nConfiguración: Asiento pegado al respaldo · almohadillas en cara externa de rodillas.\nObjetivo: Isometría en cumbre manteniendo la pelvis inmóvil contra el respaldo.\nRegistra: Carga, reps y RIR.\n\nGemelo en Hack con piernas estiradas — 3 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-13; 80 kg × 11 @1.\nHoy: 80 kg para 3 × 10–12 @1–2.\nConfiguración: Apoyo en punteras sobre plataforma de la Hack · rodillas fijadas en extensión casi completa.\nObjetivo: Pausa de 2 s abajo en estiramiento máximo del tendón de Aquiles antes de empujar.\nRegistra: Carga, reps y RIR.\n\nCrunch cargado en máquina — 2 × 10–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-08; 43 kg × 15 @1; 43 kg × 15 @1.\nHoy: Doble progresión completada (2 × 15 con 43 kg). Subir al siguiente selector (~45–48 kg) para 10–12 reps @1–2.\nConfiguración: Máquina con placas · rodillas fijadas.\nObjetivo: Enrollamiento espinal activo; cadera fija sin tirar con flexores de cadera.\nRegistra: Carga, reps y RIR.",
+    "exercise_count": 5,
+    "planned_set_count": 14,
+    "recorded_set_count": 11
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Hip thrust en máquina / discos",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–4 min",
+        "coach_cue": "Hoy: Doble progresión completada el 08/10 (3 × 10 con 85 kg). Hoy subir a 87.5–90 kg y consolidar 6–8 reps @1–2. · Configuración: Máquina de discos · almohadilla pélvica densa · distancia pies para 90° de rodilla en bloqueo. · Objetivo: Bloqueo horizontal puro con retroversión pélvica; cero hiperextensión lumbar. · Registra: Carga, reps, RIR y sensaciones."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "90",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "7",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "90",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "90",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Sentadilla Hack Matrix profunda",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina Matrix",
+        "machine_settings": "tope del · tope seguro",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–4 min",
+        "coach_cue": "Hoy: Mantener 40 kg de discos añadidos. Objetivo: buscar el tope del rango (11–12 reps) en las 3 series dentro de RIR 1–2. · Configuración: Hack Matrix · pies en tercio medio/bajo para flexión de rodilla profunda sin despegue de talón. · Objetivo: Descenso controlado de 3 s hasta tope seguro de profundidad; inversión fluida sin rebote. · Registra: Carga, reps y RIR."
+      },
+      "result": {
+        "movement_notes": "he disminuido repeticiones porque he hecho una parada de 0,5 s abajo. Y el Agotamiento era mayor.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Abducción sentada en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Asiento pegado · respaldo.",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 15,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 43 kg. Buscar 18–20 reps estrictas con 1 s de parada en máxima apertura. · Configuración: Asiento pegado al respaldo · almohadillas en cara externa de rodillas. · Objetivo: Isometría en cumbre manteniendo la pelvis inmóvil contra el respaldo. · Registra: Carga, reps y RIR."
+      },
+      "result": {
+        "movement_notes": "Aquí también es ajustado la ejecución y he realizado una isometría más marcada  de 2 s. , por lo que el agotamiento es mayor.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Gemelo en Hack con piernas estiradas",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "No hice el ejercicio, porque al comenzar sentía una contracción muy intensa del gemelo, como si me fuera a montar o algo. No sé, muy raro. ¿Me sabrias decir qué puede ser?",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          },
+          {
+            "index": 3,
+            "load_kg": "",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Crunch cargado en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Doble progresión completada (2 × 15 con 43 kg). Subir al siguiente selector (~45–48 kg) para 10–12 reps @1–2. · Configuración: Máquina con placas · rodillas fijadas. · Objetivo: Enrollamiento espinal activo; cadera fija sin tirar con flexores de cadera. · Registra: Carga, reps y RIR."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": "2"
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-26T08:50:27.619Z",
+  "session": {
+    "id": "mvnryssk-6js0us",
+    "title": "Día A - Nuclear 1 / Glúteo y Cuádriceps",
+    "date": "2026-10-25T11:59:17.828Z",
+    "updated_at": "2026-10-26T08:50:27.619Z",
+    "finished": true,
+    "source_note": null,
+    "exercise_count": 4,
+    "planned_set_count": 11,
+    "recorded_set_count": 8
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Hip thrust en máquina / discos",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": null,
+        "load_basis": "unknown",
+        "slot_id": "A01"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "1-2",
+        "rest": "2-4 min",
+        "coach_cue": "Pelvis estable; bloqueo con extensión de cadera, no lumbar; recorrido reproducible"
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          },
+          {
+            "index": 3,
+            "load_kg": "",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Sentadilla Hack Matrix profunda",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "G04-V1",
+        "machine_settings": "pies en tercio medio-alto, pausa 0.5-1 s abajo sin retroversión pélvica",
+        "load_basis": "unknown",
+        "slot_id": "A02"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1-2",
+        "rest": "2-4 min",
+        "coach_cue": "Variante G04-V1 (pies en tercio medio-alto, pausa 0.5-1 s abajo sin retroversión pélvica; discos añadidos) ? Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo"
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "45",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "45",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Abducción sentada en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Pelvis fija contra el respaldo",
+        "load_basis": "unknown",
+        "slot_id": "A03"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 15,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "1-2",
+        "rest": "90-150 s",
+        "coach_cue": "Pelvis fija contra el respaldo; pausa de 1 s en máxima abducción"
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "47",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "47",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "47",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "18",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Crunch cargado en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": null,
+        "load_basis": "unknown",
+        "slot_id": "A05"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1-2",
+        "rest": "90-150 s",
+        "coach_cue": "Flexión espinal activa; cadera inmóvil"
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

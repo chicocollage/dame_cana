@@ -1,0 +1,332 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-09-04T06:22:44.766Z",
+  "event_id": "EVENT-1788502964766-swkrk",
+  "session": {
+    "id": "mtmhisng-ph5o0c",
+    "date": "2026-09-04",
+    "title": "Día B",
+    "finished": true,
+    "exercise_count": 7,
+    "planned_set_count": 19,
+    "recorded_set_count": 19
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "​B01. Peso muerto rumano en Smith",
+      "identity": {
+        "variant": "Smith",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 70,
+            "reps": 9,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 70,
+            "reps": 9,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 70,
+            "reps": 9,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "​B02. Curl femoral sentado",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": "asiento."
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 29,
+            "reps": 12,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 29,
+            "reps": 11,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 29,
+            "reps": 11,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "​B03. Remo con pecho apoyado",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": "tope del"
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 50,
+            "reps": 12,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 55,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 55,
+            "reps": 8,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "​B04. Peck-deck inverso",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 23,
+            "reps": 18,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 23,
+            "reps": 18,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 23,
+            "reps": 18,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "​B05. Curl predicador (o Kinesiológico)",
+      "identity": {
+        "variant": "Mancuernas",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 36,
+            "reps": 10,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 36,
+            "reps": 12,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "​B06. Extensión de rodilla",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 43,
+            "reps": 12,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 43,
+            "reps": 14,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 43,
+            "reps": 14,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "​B07. Gemelo con rodilla extendida",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 80,
+            "reps": 12,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 80,
+            "reps": 10,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+"""Orquestador unificado de DAME CAÑA para Antigravity / Gemini.
+
+Proporciona comandos directos y libres de dependencias de terceros:
+  python tools/operativo.py resumen      -> Estado actual, sesiones y siguiente día
+  python tools/operativo.py sesion [DIA] -> Genera borrador Note v1 para la PWA
+  python tools/operativo.py actualizar   -> Procesa inbox_app, actualiza registro y hojas
+  python tools/operativo.py regenerar    -> Regenera contexto, vistas HTML y libros XLSX
+  python tools/operativo.py respaldo     -> Genera paquete ZIP con manifiesto SHA-256
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import subprocess
+import sys
+from pathlib import Path
+
+import registro_local
+import operativo_contexto
+import generar_hojas
+import revision_diaria
+import compilar_app_data
+import generar_programa
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def cmd_resumen():
+    reg = registro_local.leer_json(ROOT / "data/registro.json")
+    res = registro_local.resumen(reg)
+    inbox_files = list((ROOT / "data/inbox_app").glob("*.json"))
+    
+    print("\n" + "="*50)
+    print("DAME CAÑA · Estado Operativo Local")
+    print("="*50)
+    print(f"Sesiones registradas:        {res['sesiones']}")
+    print(f"Filas de series:             {res['series']} ({res['series_con_repeticiones']} con reps)")
+    if res.get('ultima_sesion'):
+        u = res['ultima_sesion']
+        print(f"Última sesión:               {u.get('fecha')} · Día {u.get('dia')} ({u.get('titulo')})")
+    print(f"Siguiente día sugerido:      Día {res.get('siguiente_dia')}")
+    print(f"Archivos en data/inbox_app/: {len(inbox_files)}")
+    print("="*50 + "\n")
+    return res
+
+
+def cmd_ejercicio(query: str):
+    ind_path = ROOT / "data/indicaciones_tecnicas.json"
+    if not ind_path.exists():
+        print("data/indicaciones_tecnicas.json no existe. Ejecute tools/construir_indicaciones.py", file=sys.stderr)
+        return
+    data = registro_local.leer_json(ind_path)
+    ejercicios = data.get("ejercicios", {})
+    
+    match = None
+    q = query.strip().lower()
+    if query.upper() in ejercicios:
+        match = ejercicios[query.upper()]
+    else:
+        for ex in ejercicios.values():
+            if q in ex["nombre"].lower() or q == ex["id"].lower():
+                match = ex
+                break
+                
+    if not match:
+        print(f"No se encontró ningún ejercicio que coincida con '{query}'", file=sys.stderr)
+        return
+        
+    print("\n" + "="*70)
+    print(f"FICHA TÉCNICA: [{match['id']}] {match['nombre']}")
+    print(f"Familia: {match.get('familia')} | Región: {match.get('region_principal')}")
+    print("="*70)
+    b = match["base"]
+    print(f"\n[CONFIGURACIÓN BASE]\n{b['configuracion']}")
+    print(f"\n[OBJETIVO BIOMECÁNICO]\n{b['objetivo']}")
+    
+    if match.get("variantes"):
+        print("\n[VARIANTES DE ÁNGULO / SENSACIÓN DISPONIBLES]")
+        for v in match["variantes"]:
+            print(f"  • {v['id']}: {v['cambio']}")
+            print(f"    - Sensación: {v['sensacion_buscada']}")
+            print(f"    - Setup:     {v['configuracion']}")
+            print(f"    - Objetivo:  {v['objetivo']}\n")
+            
+    resp = match.get("respaldo_cientifico", {})
+    if resp:
+        print("[RESPALDO CIENTÍFICO]")
+        for f in resp.get("fuentes", []):
+            print(f"  - {f}")
+        print(f"  Justificación: {resp.get('justificacion_biomecanica')}")
+    print("="*70 + "\n")
+
+
+COMPUESTOS_PESADOS = {"A02", "C01", "C02", "C03", "C04", "D01", "D02"}
+ANALITICOS_ELONGACION = {"B01", "B02", "B03", "E01", "D03"}
+
+def _doble_progresion_base(series_previas: list[dict], repeticiones_str: str, rir_objetivo: str, series_base: int, slot_id: str = "") -> str:
+    import re
+    match = re.search(r'(\d+)\s*[–-]\s*(\d+)', repeticiones_str or '')
+    rep_min, rep_max = (int(match.group(1)), int(match.group(2))) if match else (8, 12)
+    
+    series_con_reps = [r for r in series_previas if isinstance(r.get('reps'), (int, float)) and r['reps'] > 0]
+    if not series_con_reps:
+        return f"Calibrar carga inicial: {series_base} series de {repeticiones_str} reps, RIR {rir_objetivo}. Iniciar con peso moderado para fijar base sin exceder RIR 2."
+
+    cargas = [r['load_kg'] for r in series_con_reps if r.get('load_kg') is not None]
+    base_incierta = any(r.get('load_basis') in (None, '', 'unknown', 'unknown_kg_basis') for r in series_con_reps)
+    reps_list = [int(r['reps']) for r in series_con_reps]
+    carga_ref = cargas[-1] if cargas else None
+    carga_max = max(cargas) if cargas else None
+    carga_str = f"{carga_ref:g} kg" if carga_ref is not None else "la misma carga"
+
+    # Caso 1: Todas las series alcanzaron o superaron el límite superior del rango
+    if all(rp >= rep_max for rp in reps_list):
+        reps_str = ", ".join(str(r) for r in reps_list)
+        return (f"Doble progresión completada ({len(reps_list)} series a {reps_str} reps con {(f'{carga_max:g} kg' if carga_max is not None else 'la misma carga')}). "
+                f"Sugerencia hoy: subir al menor incremento físico disponible de esa estación (confírmalo; no lo inventes) "
+                f"y consolidar {rep_min}–{min(rep_min + 2, rep_max)} reps @{rir_objetivo}.")
+
+    # Caso 2: Cargas escalonadas en la última sesión (ej. serie 1 ligera y series 2-3 más pesadas)
+    if len(set(cargas)) > 1 and carga_max is not None:
+        return (f"Iniciar con {carga_max:g} kg desde la primera serie. "
+                f"Objetivo hoy: sumar repeticiones hacia {rep_max} reps @{rir_objetivo} con esa carga.")
+
+    # Caso 3: Casi completado el rango (ej. 10, 10, 9 en rango 6-10)
+    min_rp, max_rp = min(reps_list), max(reps_list)
+    if max_rp >= rep_max and min_rp >= rep_max - 1:
+        return (f"Mantener {carga_str}. Objetivo hoy: cerrar las {rep_max} reps en todas las series "
+                f"({min_rp} -> {rep_max} reps) con RIR {rir_objetivo} para completar doble progresión antes de subir carga.")
+
+    # Caso 4: Repeticiones en rango medio (ej. 15 reps en rango 12-20)
+    if min_rp >= rep_min:
+        prox_target = min(max_rp + 2, rep_max)
+        reps_obj = f"{prox_target} reps" if max_rp + 1 >= prox_target else f"{max_rp + 1}–{prox_target} reps"
+        return (f"Mantener {carga_str}. Objetivo hoy: progresar a {reps_obj} por serie "
+                f"con RIR {rir_objetivo} hacia el tope de {rep_max}.")
+
+    # Caso 5: Alguna serie por debajo de rep_min
+    return (f"Mantener {carga_str}. Asegurar que todas las series entren limpias en el rango "
+            f"{rep_min}–{rep_max} reps manteniendo RIR {rir_objetivo}.")
+
+
+def sufijo_sfr_40plus(slot_id: str) -> str:
+    if slot_id == "A01":
+        return " [SFR 40+: pausa ~1 s en bloqueo (acortamiento); sin RIR 0 en la serie principal]."
+    if slot_id in COMPUESTOS_PESADOS:
+        return " [SFR 40+: pausa ~1 s en estiramiento sin rebote; prohibido RIR 0; si hay fatiga axial/articular, aplicar orden inverso tras el analítico del día]."
+    if slot_id in ANALITICOS_ELONGACION:
+        return " [SFR 40+: pausa ~1 s en máximo estiramiento sin rebote; RIR 0 solo en la última serie y sin molestia tendinosa]."
+    return " [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%]."
+
+
+def aconsejar_doble_progresion(series_previas: list[dict], repeticiones_str: str, rir_objetivo: str, series_base: int, slot_id: str = "") -> str:
+    consejo = _doble_progresion_base(series_previas, repeticiones_str, rir_objetivo, series_base, slot_id)
+    con_reps = [r for r in series_previas if isinstance(r.get('reps'), (int, float)) and r['reps'] > 0]
+    if con_reps and any(r.get('load_basis') in (None, '', 'unknown', 'unknown_kg_basis') for r in con_reps) and "Calibrar" not in consejo:
+        consejo += " (Base de carga del registro previo no confirmada: calibra con la 1ª serie antes de aplicar cualquier subida.)"
+    return consejo
+
+
+def _sin_patron_nxm(texto: str) -> str:
+    """Evita que notas libres del tipo '3x10' se lean como cabecera de ejercicio en la PWA."""
+    import re
+    return re.sub(r"(\d)\s*[x×]\s*(\d)", r"\1 por \2", texto or "")
+
+
+def describir_configuracion_registro(series_previas: list[dict], slot_id: str, ejercicio: str, m_info: dict, ficha: dict | None, variante_obj: dict | None) -> str:
+    if variante_obj:
+        return f"{variante_obj.get('configuracion')} [Variante hoy {variante_obj['id']}: {variante_obj['cambio']}]"
+
+    estaciones_conocidas = {
+        # DÍA A: Nuclear 1 · Glúteo & Cuádriceps
+        'A01': 'Máquina de discos / hip thrust (almohadilla pélvica, distancia pies para 90° en bloqueo)',
+        'A02': 'Hack Matrix (discos añadidos)',
+        'A03': 'Máquina de placas · Asiento y respaldo apoyados',
+        'A04': 'Máquina Hack (discos añadidos, piernas estiradas)',
+        'A05': 'Máquina con placas (kg junto a lb)',
+        # DÍA B: Satélite 1 · Brazos & Deltoides Lateral (Estiramiento)
+        'B01': 'Polea / cable con cuerda · Tipo katana unilateral',
+        'B02': 'Polea baja con maneral D · Brazo detrás del torso',
+        'B03': 'Polea a altura de rodilla · Unilateral con maneral o muñequera',
+        'B04': 'Suelo o barra de dominadas',
+        # DÍA C: Nuclear 2 · Torso Pesado
+        'C01': 'DHZ Chest Press con banco integrado (discos ZIVA · respaldo posición 3 desde abajo)',
+        'C02': 'Polea alta con agarre medio o neutro',
+        'C03': 'Máquina convergente horizontal',
+        'C04': 'Máquina ROW con pecho apoyado (discos · asiento 4)',
+        'C05': 'Polea alta con brazos rectos',
+        # DÍA D: Nuclear 3 · Glúteo & Cadena Posterior
+        'D01': 'Smith (banco trasero altura tibia media · discos añadidos)',
+        'D02': 'Smith (discos añadidos de ambos lados, barra no incluida)',
+        'D03': 'Máquina de placas con selector en kg',
+        'D04': 'Máquina con placas · Respaldo 6',
+        'D05': 'Polea baja con tobillera',
+        # DÍA E: Satélite 2 · Brazos, Deltoides Posterior & Detalle
+        'E01': 'Máquina con placas y selector en kg (banco Scott)',
+        'E02': 'Polea alta con cuerda · Separando muñecas abajo',
+        'E03': 'Máquina Peck-deck inverso o poleas cruzadas',
+        'E04': 'Máquina de elevación lateral con placas · Eje del hombro alineado con pivote',
+        'E05': 'Máquina con placas · Asiento y respaldo apoyados'
+    }
+
+    base = estaciones_conocidas.get(slot_id)
+    if base:
+        extras = []
+        for r in series_previas:
+            sett = r.get('machine_settings')
+            if sett and sett.lower() not in base.lower():
+                extras.append(sett if sett.lower().startswith('asiento') or sett.lower().startswith('respaldo') else f"Ajuste {sett}")
+            note = r.get('movement_notes')
+            if note and any(k in note.lower() for k in ['agarre', 'katana', 'mano', 'pausa', 'banco', 'cadencia', 'unilateral', 'inclinad']) and note.lower() not in base.lower():
+                extras.append(note)
+        if extras:
+            return f"{base} · {' · '.join(dict.fromkeys(extras))}"
+        return base
+
+    if series_previas:
+        detalles = []
+        for r in series_previas:
+            var = r.get('variant')
+            if var and var.strip().lower() not in ('máquina', 'maquina', 'variante/máquina no registrada') and var not in detalles:
+                detalles.append(var)
+        for r in series_previas:
+            sett = r.get('machine_settings')
+            if sett and sett not in detalles:
+                detalles.append(sett if sett.lower().startswith('asiento') or sett.lower().startswith('respaldo') else f"Ajuste {sett}")
+        for r in series_previas:
+            note = r.get('movement_notes')
+            if note and note not in detalles:
+                detalles.append(note)
+        if detalles:
+            return " · ".join(dict.fromkeys(detalles))
+
+    if m_info.get('nombre_visible_estacion'):
+        return f"{m_info['nombre_visible_estacion']} · {m_info.get('tipo_carga', '')}".strip(' ·')
+    if ficha:
+        return f"{ficha.get('familia', 'Estación habitual')} (ajustes reproducibles por calibrar)"
+    return "Estación habitual y ajustes reproducibles."
+
+
+def cmd_sesion(dia_objetivo: str | None = None, variantes_args: list[str] | None = None, incluir_calentamiento: bool = True):
+    reg = registro_local.leer_json(ROOT / "data/registro.json")
+    res = registro_local.resumen(reg)
+    prog = registro_local.leer_json(ROOT / "data/programa.json")
+    maquinas = registro_local.leer_json(ROOT / "data/maquinas.json")
+    
+    ind_path = ROOT / "data/indicaciones_tecnicas.json"
+    ind_data = registro_local.leer_json(ind_path) if ind_path.exists() else {}
+    mapeo_slots = ind_data.get("mapeo_slots_programa", {})
+    fichas_ejercicios = ind_data.get("ejercicios", {})
+
+    variantes_map = {}
+    if variantes_args:
+        for item in variantes_args:
+            if ":" in item:
+                slot, var_id = item.split(":", 1)
+                variantes_map[slot.strip().upper()] = var_id.strip().upper()
+
+    dia = (dia_objetivo or res.get('siguiente_dia') or 'A').upper()
+    titulos_dia = {
+        'A': 'Nuclear 1 · Glúteo y Cuádriceps (Cadera y rodilla pesadas)',
+        'B': 'Satélite 1 · Brazos y Deltoides Lateral (Tensión en estiramiento)',
+        'C': 'Nuclear 2 · Torso Pesado (Espalda y pectoral)',
+        'D': 'Nuclear 3 · Glúteo y Cadena Posterior (Unilateral y cadera)',
+        'E': 'Satélite 2 · Brazos, Deltoides Posterior y Detalle (Acortamiento y bombeo)'
+    }
+    
+    slots_dia = [s for s in prog.get('slots', []) if s.get('dia') == dia]
+    if not slots_dia:
+        print(f"No se encontraron slots para el Día {dia} en data/programa.json", file=sys.stderr)
+        return
+
+    sesiones_validas = {
+        s['session_id']: s
+        for s in reg['sesiones']
+        if s.get('finished') and not str(s.get('session_id', '')).startswith('TEST-')
+    }
+
+    estaciones_map = {m.get('machine_id'): m for m in maquinas.get('estaciones', []) if m.get('machine_id')}
+
+    print(f"# Día {dia} — {titulos_dia.get(dia, 'Sesión')}\n")
+    
+    alias_por_slot = {
+        'B01': ['katana', 'tríceps overhead en cable', 'triceps overhead en cable'],
+        'B02': ['curl bayesiano'],
+        'B03': ['elevación lateral unilateral en cable', 'elevacion lateral unilateral en cable'],
+        'B04': ['reverse crunch', 'elevación de piernas'],
+        'C01': ['press convergente inclinado moderado'],
+        'C02': ['jalón medio', 'jalon medio'],
+        'C03': ['press horizontal convergente', 'press convergente horizontal'],
+        'C04': ['remo con pecho apoyado'],
+        'C05': ['pullover en polea'],
+        'D01': ['sentadilla búlgara en smith', 'sentadilla bulgara en smith'],
+        'D02': ['peso muerto rumano en smith'],
+        'D03': ['curl femoral sentado'],
+        'D04': ['extensión de rodilla', 'extension de rodilla'],
+        'D05': ['abducción unilateral en cable', 'kickback diagonal de glúteo en polea baja'],
+        'E01': ['curl predicador'],
+        'E02': ['extensión de tríceps en polea con cuerda', 'dual-cable cross pushdown'],
+        'E03': ['peck-deck inverso'],
+        'E04': ['elevación lateral en máquina', 'elevacion lateral en maquina', 'elevación lateral', 'elevacion lateral'],
+        'E05': ['abducción sentada en máquina']
+    }
+
+    for s in slots_dia:
+        slot_id = s.get('slot_id')
+        ejercicio = s.get('ejercicio_selector')
+        series_base = s.get('series_base', 3)
+        reps = s.get('repeticiones', '8–12')
+        rir = s.get('rir_operativo', '1–2')
+        descanso = s.get('descanso', '2–3 min')
+        m_id = s.get('machine_id')
+        m_info = estaciones_map.get(m_id, {})
+
+        # Buscar ficha técnica
+        ex_id = mapeo_slots.get(slot_id)
+        ficha = fichas_ejercicios.get(ex_id) if ex_id else None
+
+        regla_programa = (s.get("regla_tecnica_estado") or "").strip()
+        var_solicitada = variantes_map.get(slot_id)
+        if not var_solicitada and regla_programa:
+            import re as _re
+            m_var = _re.search(r"\b([A-Z]\d{2}-V\d+)\b", regla_programa.upper())
+            if m_var:
+                var_solicitada = m_var.group(1)
+        variante_obj = None
+        if ficha and var_solicitada:
+            for v in ficha.get("variantes", []):
+                if v["id"].upper() == var_solicitada:
+                    variante_obj = v
+                    break
+
+        # Buscar series previas para este ejercicio en todo el historial válido
+        def match_ejercicio(row):
+            if row.get('session_id') not in sesiones_validas:
+                return False
+            if row.get('slot_id'):
+                if row.get('slot_id') == slot_id:
+                    return True
+                if row.get('slot_id') != slot_id:
+                    return False
+            row_name = (row.get('exercise_name') or '').replace('\u200b', '').strip().lower()
+            slot_name = ejercicio.strip().lower()
+            if row_name == slot_name:
+                return True
+            for alias in alias_por_slot.get(slot_id, []):
+                if alias in row_name:
+                    return True
+            base_slot = slot_name.split(';')[0].split('(')[0].strip()
+            if base_slot and (base_slot in row_name or (len(row_name) > 6 and row_name in base_slot)):
+                return True
+            return False
+
+        candidatas = [
+            row for row in reg['series']
+            if match_ejercicio(row) and isinstance(row.get('reps'), (int, float)) and row['reps'] > 0
+        ]
+        series_previas = []
+        fecha_ultima_ex = None
+        if candidatas:
+            ultimo_sid = max(
+                set(r['session_id'] for r in candidatas),
+                key=lambda sid: (str(sesiones_validas[sid].get('fecha', ''))[:10], str(sesiones_validas[sid].get('exported_at', '')))
+            )
+            fecha_ultima_ex = str(sesiones_validas[ultimo_sid].get('fecha', ''))[:10]
+            series_previas = [r for r in candidatas if r['session_id'] == ultimo_sid]
+        
+        historial_str = "ninguno comparable."
+        if series_previas and fecha_ultima_ex:
+            partes = []
+            for row in series_previas:
+                carga = row.get('load_kg')
+                r = row.get('reps')
+                r_rir = row.get('rir')
+                if r is not None and r > 0:
+                    rir_part = f" @{r_rir:g}" if isinstance(r_rir, (int, float)) else (f" @{r_rir}" if r_rir is not None else "")
+                    carga_part = f"{carga:g} kg" if isinstance(carga, (int, float)) else (f"{carga} kg" if carga is not None else "sin kg")
+                    partes.append(f"{carga_part} × {int(r)}{rir_part}")
+            if partes:
+                historial_str = f"{fecha_ultima_ex}; " + "; ".join(partes)
+
+                # Identificar si en la sesión anterior se registró una variante técnica explícita
+                variantes_previas = []
+                for row in series_previas:
+                    var = row.get('variant')
+                    if var and var.strip().lower() not in (
+                        'máquina', 'maquina', 'cable', 'polea', 'smith', 'smith/multipower',
+                        'cable / polea', 'variante/máquina no registrada', 'mancuernas', 'autocarga'
+                    ):
+                        if var not in variantes_previas:
+                            variantes_previas.append(var)
+                    note = row.get('movement_notes')
+                    if note and any(k in note.lower() for k in ['variante', 'ángulo', 'angulo', 'torso', 'apoyo', 'agarre', 'cadencia', 'unilateral', 'tempo']) and note not in variantes_previas:
+                        variantes_previas.append(note)
+
+                if variantes_previas:
+                    historial_str += f" (Variante anterior: {'; '.join(variantes_previas)})"
+                historial_str += "."
+
+        print(f"{ejercicio} — {series_base} × {reps}")
+        print(f"RIR {rir} · Descanso {descanso}")
+        print(f"Último registro: {historial_str}")
+
+        # Indicaciones de la sesión presente:
+        consejo_hoy = aconsejar_doble_progresion(series_previas, reps, rir, series_base, slot_id) + sufijo_sfr_40plus(slot_id)
+        config_linea = describir_configuracion_registro(series_previas, slot_id, ejercicio, m_info, ficha, variante_obj)
+
+        if variante_obj:
+            print(f"Hoy: {consejo_hoy}")
+            print(f"Configuración: {_sin_patron_nxm(config_linea)}")
+            print(f"Objetivo: {variante_obj['sensacion_buscada']} — {variante_obj['objetivo']}")
+            print(f"Registra: Carga, reps, RIR y sensaciones con variante {variante_obj['id']}.")
+        else:
+            print(f"Hoy: {consejo_hoy}")
+            print(f"Configuración: {_sin_patron_nxm(config_linea)}")
+            if regla_programa and ("→" in regla_programa or "pausa" in regla_programa.lower()):
+                print(f"Objetivo: {regla_programa}")
+            print(f"Registra: Carga, reps, RIR y ajustes exactos si varían.")
+        print()
+
+    if incluir_calentamiento:
+        print()
+        print("```text")
+        print(obtener_protocolo_calentamiento(dia))
+        print("```")
+
+
+def obtener_protocolo_calentamiento(dia: str) -> str:
+    dia_u = dia.upper()
+    protocolos = {
+        "A": """# Protocolo de Calentamiento — Día A (Glúteo y Cuádriceps)
+
+1. Preparación articular y movilidad dirigida (3–4 min):
+• Descompresión coxofemoral y dorsiflexión de tobillo: Círculos de cadera y sentadilla profunda asistida (20–30 s en fondo; opcional 30–45 s de mini pistola percutora en flexores/cuádriceps si hay rigidez).
+• Activación glútea en acortamiento: 10–12 puentes de glúteo en suelo con pausa 1 s arriba.
+
+2. Rampas de aproximación neuromuscular (A01 Hip Thrust + transición A02 Hack Matrix):
+• A01 Rampa 1 (~50% carga efectiva): 6 reps calibrando tibia vertical a 90° en bloqueo y pelvis neutra (RIR > 4).
+• A01 Rampa 2 (~75% carga efectiva): 3 reps concéntrico potente + pausa 1 s arriba (RIR > 4).
+• Transición a A02 (Hack Matrix G04-V1): 1 rampa al ~50% × 5 reps + 1 rampa al ~75% × 2–3 reps ensayando pies medio-altos y pausa estricta de 1 s en fondo sin rebote.
+• A04 Gemelo (antes de la carga de trabajo): 1 serie de aproximación al ~50% × 8 reps, rango completo, sin rebote, para evitar espasmo por entrar en frío.""",
+        "B": """# Protocolo de Calentamiento — Día B (Brazos y Deltoides Lateral)
+
+1. Preparación articular específica (3–4 min):
+• Rotación glenohumeral y descompresión escapular: Círculos suaves y rotación externa con banda elástica (10–12 reps).
+• Flexo-extensión activa de codo y muñeca: 10–15 reps dinámicas para irrigar inserciones distal de bíceps y tríceps previo a elongación máxima.
+
+2. Series de aproximación neuromuscular (Katana Overhead en cable):
+• Rampa 1 (~50% carga = 7 kg): 8–10 reps muy controladas, 2 s en estiramiento máximo.
+• Rampa 2 (~75% carga = 10–11 kg): 3–4 reps a velocidad real de empuje (RIR > 4).
+• Para Bayesian curl y Elevaciones laterales: 1 rampa de adaptación al 70% × 4 reps basta por temperatura acumulada.""",
+        "C": """# Protocolo de Calentamiento — Día C (Torso Pesado: Espalda y Pectoral)
+
+1. Preparación articular y cintura escapular (3–4 min):
+• Dislocaciones de hombro con goma y retracción/protracción escapular colgado o en cuadrupedia (8–10 reps).
+• Extensión y rotación torácica para asegurar arco estable y retracción apoyada bajo carga.
+
+2. Rampas de aproximación neuromuscular (Press convergente inclinado DHZ):
+• Rampa 0 (brazos máquina sin discos): 8–10 reps sintiendo trayectoria convergente y posición del respaldo.
+• Rampa 1 (~50% carga efectiva): 5 reps a tempo controlado.
+• Rampa 2 (~75% carga efectiva): 3 reps concéntrico vivo (RIR > 4).
+• Para Jalón medio: 1 rampa al 60–70% × 4–5 reps antes de la primera serie efectiva.""",
+        "D": """# Protocolo de Calentamiento — Día D (Glúteo y Cadena Posterior)
+
+1. Movilidad activa y apertura de cadera (3–4 min):
+• 90/90 dinámico: 6–8 transiciones lentas por lado para movilidad femoroacetabular y disociación lumbo-pélvica.
+• Bisagra de cadera pasiva/activa (hip hinge sin peso): 8–10 reps buscando estiramiento de isquiotibiales proximales.
+• Activación glútea terminal: 1 serie de 10 puentes de glúteo unipodales en suelo.
+
+2. Series de aproximación neuromuscular (Sentadilla búlgara en Smith):
+• Rampa 0 (autocarga o barra vacía): 5 reps por lado calibrando distancia al banco trasero (altura tibia media).
+• Rampa 1 (~50% carga efectiva = 15 kg): 4 reps por lado con pausa de 1 s en el fondo.
+• Rampa 2 (~75% carga efectiva = 22.5 kg): 2 reps por lado a velocidad concéntrica real (RIR > 4).
+• Para Peso Muerto Rumano (RDL): 1 rampa con 45–50 kg × 4 reps antes de la carga de trabajo.""",
+        "E": """# Protocolo de Calentamiento — Día E (Brazos, Deltoides Post y Detalle)
+
+1. Preparación escapulohumeral y articular (3–4 min):
+• Y-T-W con banda suave o sin carga: 10 reps activando deltoides posterior, trapecio inferior y rotadores.
+• Círculos de codo y muñeca dinámicos sin carga.
+
+2. Aproximación neuromuscular (Primer ejercicio de brazos / predicador o polea):
+• Rampa 1 (~50% carga): 8 reps controlando el pico de contracción en acortamiento.
+• Rampa 2 (~75% carga): 3–4 reps concéntrico vivo (RIR > 4)."""
+    }
+    return protocolos.get(dia_u, "1. Movilidad articular específica (3–4 min).\n2. Dos rampas de aproximación (50% y 75%) en el primer ejercicio.")
+
+
+def cmd_actualizar():
+    print("Ejecutando revisión e importación diaria...")
+    res = revision_diaria.ejecutar()
+    print(f"Archivos examinados: {res['archivos_examinados']}")
+    print(f"Sesiones importadas: {len(res['sesiones_importadas'])}")
+    if res['detalle_importado']:
+        for d in res['detalle_importado']:
+            print(f"  + {d.get('fecha')} · Día {d.get('dia')} ({d.get('session_id')})")
+    print(f"Duplicados omitidos: {res['duplicados_iguales']}")
+    print(f"Incidencias:        {len(res['incidencias_nuevas'])}")
+    
+    print("\nRegenerando contexto, vistas HTML, libros Excel y clientes PWA...")
+    generar_programa.generar_vista_programa()
+    operativo_contexto.generate()
+    generar_hojas.generar_hoja_registro()
+    compilar_app_data.compilar_todo()
+    print("Sistema actualizado con éxito.")
+
+
+def cmd_regenerar():
+    print("Regenerando vistas operativas, HTML y hojas Excel...")
+    generar_programa.generar_vista_programa()
+    operativo_contexto.generate()
+    generar_hojas.generar_hoja_registro()
+    print("Sincronizando clientes PWA (DameCañaTN y app base desde data/)...")
+    res_pwa = compilar_app_data.compilar_todo()
+    mod = res_pwa.get("total_archivos_modificados", 0)
+    if mod > 0:
+        print(f"  -> {mod} archivos JS de clientes PWA actualizados.")
+    else:
+        print("  -> Clientes PWA ya estaban 100% alineados con data/.")
+    print("Regeneración completa.")
+
+
+def cmd_sincronizar_app(desplegar: bool = False):
+    print("Sincronizando datos de clientes PWA directamente desde 'data/'...")
+    res = compilar_app_data.compilar_todo()
+    mod = res.get("total_archivos_modificados", 0)
+    if mod > 0:
+        print(f"OK: {mod} archivos sincronizados en DameCañaTN y pwa/public/app.")
+    else:
+        print("OK: Los clientes PWA ya estaban 100% al día con data/.")
+
+    if desplegar:
+        print("Lanzando despliegue a Firebase Hosting...")
+        cmd = "npx -y firebase-tools deploy --only hosting"
+        pwa_dir = ROOT / "pwa"
+        ret = subprocess.run(cmd, cwd=pwa_dir, shell=True)
+        if ret.returncode == 0:
+            print("Despliegue a Firebase completado con éxito.")
+        else:
+            print(f"Error al desplegar en Firebase (código {ret.returncode}).", file=sys.stderr)
+
+
+def cmd_respaldo():
+    print("Regenerando contexto...")
+    generar_programa.generar_vista_programa()
+    operativo_contexto.generate()
+    generar_hojas.generar_hoja_registro()
+    data = registro_local.leer_json(ROOT / "outputs/operativo/CONTEXTO_ENTRENADOR.json")
+    print("Empaquetando respaldo operativo...")
+    operativo_contexto.backup(data)
+    print("Respaldo completado en outputs/operativo/RESPALDO_OPERATIVO_LOCAL.zip")
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Orquestador operativo DAME CAÑA")
+    subparsers = parser.add_subparsers(dest="subcomando")
+
+    subparsers.add_parser("resumen", help="Muestra resumen del sistema")
+    p_ses = subparsers.add_parser("sesion", help="Prepara la siguiente sesión en formato Note v1")
+    p_ses.add_argument("dia", nargs="?", default=None, help="Día específico (A, B, C, D o E)")
+    p_ses.add_argument("--variante", action="append", dest="variantes", help="Aplica variante a un slot: SLOT:VAR_ID (ej. C01:G08-V1)")
+    p_ses.add_argument("--calentamiento", action="store_true", default=True, help="Incluye bloque de calentamiento (activo por defecto)")
+    p_ses.add_argument("--sin-calentamiento", action="store_false", dest="calentamiento", help="Omite el segundo bloque de calentamiento")
+    
+    p_ej = subparsers.add_parser("ejercicio", help="Muestra la ficha técnica completa y variantes de un ejercicio")
+    p_ej.add_argument("query", help="ID (ej. G01, S04) o nombre del ejercicio")
+    
+    subparsers.add_parser("actualizar", help="Importa sesiones de inbox y regenera vistas")
+    subparsers.add_parser("regenerar", help="Regenera contexto, vistas, libros y clientes PWA")
+    subparsers.add_parser("respaldo", help="Genera paquete ZIP con manifiesto")
+    
+    p_sync = subparsers.add_parser("sincronizar_app", help="Compila data/ hacia clientes PWA (DameCañaTN y app)")
+    p_sync.add_argument("--desplegar", action="store_true", help="Despliega a Firebase Hosting tras sincronizar")
+
+    args = parser.parse_args()
+    if args.subcomando == "resumen" or not args.subcomando:
+        cmd_resumen()
+    elif args.subcomando == "sesion":
+        cmd_sesion(args.dia, args.variantes, incluir_calentamiento=args.calentamiento)
+    elif args.subcomando == "ejercicio":
+        cmd_ejercicio(args.query)
+    elif args.subcomando == "actualizar":
+        cmd_actualizar()
+    elif args.subcomando == "regenerar":
+        cmd_regenerar()
+    elif args.subcomando == "sincronizar_app":
+        cmd_sincronizar_app(desplegar=args.desplegar)
+    elif args.subcomando == "respaldo":
+        cmd_respaldo()
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,312 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-30T11:22:41.963Z",
+  "event_id": "EVENT-1788088961963-43dlj",
+  "session": {
+    "id": "mtban7s7-musmsz",
+    "date": "2026-08-27",
+    "title": "Día C",
+    "finished": true,
+    "exercise_count": 7,
+    "planned_set_count": 17,
+    "recorded_set_count": 17
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "​Sentadilla búlgara en Smith",
+      "identity": {
+        "variant": "Smith",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 30,
+            "reps": 10,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 30,
+            "reps": 10,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "​Abducción sentada en máquina",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": "Asiento y"
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 43,
+            "reps": 18,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 43,
+            "reps": 18,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 43,
+            "reps": 18,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "​Press horizontal convergente / máquina",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "per_side_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "Las cargas anteriores registrada son dobles a las que aparecen",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 60,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 70,
+            "reps": 8,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 60,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "​Pullover en polea con brazos rectos",
+      "identity": {
+        "variant": "Cable / polea",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "1 mano",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 14,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 9,
+            "reps": 12,
+            "rir": 2,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "​Elevación lateral",
+      "identity": {
+        "variant": "Maquina",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 23,
+            "reps": 20,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 27,
+            "reps": 15,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 27,
+            "reps": 12,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "Remo bajo con maquina",
+      "identity": {
+        "variant": "",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 20,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 20,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "​Gemelo con rodilla extendida",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "unknown",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "per_side": false
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 40,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 40,
+            "reps": 15,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

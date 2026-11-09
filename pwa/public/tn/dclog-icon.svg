@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Top arc: left to right over the top -->
+    <path id="topArc" d="M 118 256 A 138 138 0 0 1 394 256" fill="none" />
+    <!-- Bottom arc: concentric at R=148 -->
+    <path id="bottomArc" d="M 150 372 A 148 148 0 0 0 362 372" fill="none" />
+  </defs>
+
+  <!-- Base Card Surface (Aire Redondeado Warm Paper #E9E8E1 with Ink Border) -->
+  <rect x="10" y="10" width="492" height="492" rx="116" fill="#E9E8E1" stroke="#16181C" stroke-width="12" />
+  <rect x="26" y="26" width="460" height="460" rx="102" fill="none" stroke="#16181C" stroke-width="2" stroke-dasharray="8 8" opacity="0.25" />
+
+  <!-- Corner Editorial Badge [01] & Orange Biomechanical Vector -->
+  <rect x="48" y="48" width="56" height="40" rx="12" fill="#F5F4EF" stroke="#16181C" stroke-width="4" />
+  <text x="76" y="75" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="21" font-weight="900" fill="#16181C" text-anchor="middle">TN</text>
+  <circle cx="446" cy="66" r="10" fill="#EB4818" stroke="#16181C" stroke-width="3.5" />
+
+  <!-- Acid Lime Marker Highlight Swipe (Mano 3 Highlighter Underlay) -->
+  <path d="M 154 132 A 168 168 0 0 1 388 188 L 348 214 A 122 122 0 0 0 182 172 Z" fill="#CCFF00" opacity="0.92" />
+  <path d="M 134 334 A 168 168 0 0 0 356 382 L 328 342 A 122 122 0 0 1 168 306 Z" fill="#CCFF00" opacity="0.65" />
+
+  <!-- Outer Calibrated Olympic Plate (Technical Ink #16181C on Paper) -->
+  <circle cx="256" cy="256" r="196" fill="none" stroke="#16181C" stroke-width="10" />
+  <circle cx="256" cy="256" r="184" fill="none" stroke="#16181C" stroke-width="2.5" />
+
+  <!-- Hand-drawn Style Radial Cross-Hatching -->
+  <g>
+    <line x1="379.0" y1="345.3" x2="406.5" y2="365.3" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="374.9" y1="363.1" x2="394.2" y2="380.5" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="357.7" y1="369.0" x2="380.5" y2="394.2" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="350.0" y1="385.4" x2="365.3" y2="406.5" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="332.0" y1="387.6" x2="349.0" y2="417.1" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="321.1" y1="402.2" x2="331.7" y2="425.9" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="303.0" y1="400.6" x2="313.5" y2="432.9" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="289.3" y1="412.5" x2="294.7" y2="437.9" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="271.9" y1="407.2" x2="275.4" y2="441.0" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="256.0" y1="416.0" x2="256.0" y2="442.0" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="240.1" y1="407.2" x2="236.6" y2="441.0" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="222.7" y1="412.5" x2="217.3" y2="437.9" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="209.0" y1="400.6" x2="198.5" y2="432.9" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="190.9" y1="402.2" x2="180.3" y2="425.9" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="180.0" y1="387.6" x2="163.0" y2="417.1" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="162.0" y1="385.4" x2="146.7" y2="406.5" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="154.3" y1="369.0" x2="131.5" y2="394.2" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="137.1" y1="363.1" x2="117.8" y2="380.5" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="133.0" y1="345.3" x2="105.5" y2="365.3" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="133.0" y1="166.7" x2="105.5" y2="146.7" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="137.1" y1="148.9" x2="117.8" y2="131.5" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="154.3" y1="143.0" x2="131.5" y2="117.8" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="162.0" y1="126.6" x2="146.7" y2="105.5" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="180.0" y1="124.4" x2="163.0" y2="94.9" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="190.9" y1="109.8" x2="180.3" y2="86.1" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="209.0" y1="111.4" x2="198.5" y2="79.1" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="222.7" y1="99.5" x2="217.3" y2="74.1" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="240.1" y1="104.8" x2="236.6" y2="71.0" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="256.0" y1="96.0" x2="256.0" y2="70.0" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="271.9" y1="104.8" x2="275.4" y2="71.0" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="289.3" y1="99.5" x2="294.7" y2="74.1" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="303.0" y1="111.4" x2="313.5" y2="79.1" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="321.1" y1="109.8" x2="331.7" y2="86.1" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="332.0" y1="124.4" x2="349.0" y2="94.9" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="350.0" y1="126.6" x2="365.3" y2="105.5" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="357.7" y1="143.0" x2="380.5" y2="117.8" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="374.9" y1="148.9" x2="394.2" y2="131.5" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+    <line x1="379.0" y1="166.7" x2="406.5" y2="146.7" stroke="#16181C" stroke-width="1.6" stroke-linecap="round" opacity="0.22" />
+  </g>
+
+  <!-- Calibration Notches (Top & Bottom) -->
+  <g stroke="#16181C" stroke-width="4.5" stroke-linecap="round">
+    <line x1="256" y1="60" x2="256" y2="78" />
+    <line x1="162" y1="86" x2="170" y2="102" />
+    <line x1="350" y1="86" x2="342" y2="102" />
+    <line x1="256" y1="452" x2="256" y2="434" />
+    <line x1="162" y1="426" x2="170" y2="410" />
+    <line x1="350" y1="426" x2="342" y2="410" />
+  </g>
+
+  <!-- Dual Precision Grip Cutouts (Stone Background #DAD7CD with Ink Rim) -->
+  <path d="M 103.5 328.0 A 168 168 0 0 1 103.5 184.0 A 14 14 0 0 1 129.5 196.5 A 140 140 0 0 0 129.5 315.5 A 14 14 0 0 1 103.5 328.0 Z" fill="#DAD7CD" stroke="#16181C" stroke-width="6.5" stroke-linejoin="round" />
+  <path d="M 408.5 184.0 A 168 168 0 0 1 408.5 328.0 A 14 14 0 0 1 382.5 315.5 A 140 140 0 0 0 382.5 196.5 A 14 14 0 0 1 408.5 184.0 Z" fill="#DAD7CD" stroke="#16181C" stroke-width="6.5" stroke-linejoin="round" />
+
+  <!-- Recessed Center Hub Area (#F5F4EF Cream Paper) -->
+  <circle cx="256" cy="256" r="122" fill="#F5F4EF" stroke="#16181C" stroke-width="6" />
+
+  <!-- Top Lettering: DAME CAÑA -->
+  <text font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+        font-size="27" font-weight="900" letter-spacing="4.5" fill="#16181C" text-anchor="middle">
+    <textPath href="#topArc" startOffset="50%">DAME CAÑA</textPath>
+  </text>
+
+  <!-- Bottom Lettering: AIRE · 3D -->
+  <text font-family="ui-monospace, 'JetBrains Mono', monospace"
+        font-size="18.5" font-weight="800" letter-spacing="5" fill="#EB4818" text-anchor="middle">
+    <textPath href="#bottomArc" startOffset="50%">DC · LOG</textPath>
+  </text>
+
+  <!-- Central Collar Hub (Acid Lime #CCFF00 + Ink #16181C) -->
+  <circle cx="256" cy="256" r="78" fill="#CCFF00" stroke="#16181C" stroke-width="8" />
+  <circle cx="256" cy="256" r="62" fill="#F5F4EF" stroke="#16181C" stroke-width="3.5" />
+
+  <!-- Center DC Brand Mark -->
+  <text x="256" y="275" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+        font-size="52" font-weight="950" letter-spacing="-1" fill="#16181C" text-anchor="middle">DC</text>
+</svg>

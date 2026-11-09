@@ -1,0 +1,1887 @@
+/* Copia compilada automáticamente desde data/indicaciones_tecnicas.json */
+(function (root) { root.TrainingTechnicalData = {
+  "schema": "dame_cana_indicaciones_tecnicas.v1",
+  "version": "1.0",
+  "fecha_actualizacion": "2026-10-18",
+  "descripcion": "Indicaciones técnicas de configuración base, objetivo biomecánico, variantes de ángulos/sensaciones y respaldo científico para los 55 ejercicios del sistema.",
+  "total_ejercicios": 60,
+  "mapeo_slots_programa": {
+    "A01": "G01",
+    "A02": "G04",
+    "A03": "G15",
+    "A04": "L04",
+    "A05": "T01",
+    "B01": "A01",
+    "B02": "A04",
+    "B03": "S02",
+    "B04": "T02",
+    "C01": "C01",
+    "C02": "B01",
+    "C03": "C04",
+    "C04": "B06",
+    "C05": "B05",
+    "D01": "G08",
+    "D02": "G11",
+    "D03": "L02",
+    "D04": "L01",
+    "D05": "G16",
+    "E01": "A03",
+    "E02": "A02",
+    "E03": "S04",
+    "E04": "S01",
+    "E05": "G15"
+  },
+  "ejercicios": {
+    "G01": {
+      "id": "G01",
+      "nombre": "Hip thrust en máquina",
+      "familia": "extension_cadera",
+      "region_principal": "Glúteo mayor (énfasis acortamiento)",
+      "base": {
+        "configuracion": "Almohadilla/cinturón pélvico ceñido sobre espinas ilíacas anterosuperiores. Pies a anchura de hombros; distancia talón-cadera ajustada para tibia vertical (~90°) en el bloqueo superior.",
+        "objetivo": "Extensión completa de cadera con retroversión pélvica sutil en cumbre. Evitar hiperextensión lumbar. Bajada controlada sin rebotar en topes.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G01-V1",
+          "cambio": "Pies 5–10 cm más adelantados (~100–110° en rodilla en bloqueo).",
+          "sensacion_buscada": "Mayor brazo de momento sobre extensores de cadera y fibras inferiores; menor contribución del cuádriceps en el despegue.",
+          "configuracion": "Misma estación; adelantar posición de pies en plataforma.",
+          "objetivo": "Mantener bloqueo de cadera estricto sin perder apoyo total de talones."
+        },
+        {
+          "id": "G01-V2",
+          "cambio": "Punteras rotadas externamente ~25-30° con ligera abducción.",
+          "sensacion_buscada": "Alineación con la orientación de fibras oblicuas del glúteo mayor y sensación de mayor compresión lateral.",
+          "configuracion": "Punteras hacia fuera, rodillas siguiendo la línea de los pies durante todo el recorrido.",
+          "objetivo": "Empujar manteniendo rodillas separadas sin colapso en valgo."
+        },
+        {
+          "id": "G01-V3",
+          "cambio": "Recorrido corto superior estilo KAS (últimos 30°–40° de extensión) con pausa isométrica de 2–3 s en bloqueo.",
+          "sensacion_buscada": "Aislar el rango de máximo brazo de momento interno del glúteo mayor, reduciendo la intervención de cuádriceps/aductores y permitiendo mayor densidad mecánica con menor presión del cinturón sobre la pelvis.",
+          "configuracion": "Misma estación y posición de pies para tibia a 90° en bloqueo; frenar la excéntrica a mitad de recorrido e invertir sin rebote.",
+          "objetivo": "Sostener 2–3 s en bloqueo horizontal con retroversión pélvica activa en cada repetición (reservar para mesociclos de estancamiento o límite por molestia de cinturón)."
+        },
+        {
+          "id": "G01-V4",
+          "cambio": "Apoyo escalonado (B-Stance) o unilateral en la misma máquina.",
+          "sensacion_buscada": "Sobrecargar cada hemipelvis con ~50–60% de la carga absoluta sobre el pubis y añadir alta demanda de estabilización rotacional en glúteo medio/menor en acortamiento.",
+          "configuracion": "Pie de trabajo firme a 90° de rodilla; pie auxiliar medio paso adelantado apoyando solo el talón de forma testimonial (80/20).",
+          "objetivo": "Extensión completa evitando que la hemipelvis del lado auxiliar caiga o rote."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Plotkin et al., 2023 (PMID: 37877099)",
+          "Krause Neto et al., 2025 (PMID: 40276368)"
+        ],
+        "justificacion_biomecanica": "Curva de resistencia con pico en máximo acortamiento donde el glúteo mayor tiene máxima ventaja mecánica frente a isquiosurales; la retroversión pélvica previene la carga de corte en la charnela lumbosacra."
+      }
+    },
+    "G02": {
+      "id": "G02",
+      "nombre": "Hip thrust en Smith",
+      "familia": "extension_cadera",
+      "region_principal": "Glúteo mayor (énfasis acortamiento)",
+      "base": {
+        "configuracion": "Banco perpendicular bloqueado a altura del ángulo inferior de las escápulas (~40 cm). Barra con almohadilla densa sobre pliegue de flexión de cadera.",
+        "objetivo": "Guiar el empuje por el carril sin oscilación. Bloqueo horizontal completo de cadera sin arquear zona lumbar.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G02-V1",
+          "cambio": "Apoyo asimétrico (B-stance con talón contralateral adelantado).",
+          "sensacion_buscada": "Sobrecarga unilateral con estabilidad guiada; permite detectar y pulir asimetrías de reclutamiento glúteo.",
+          "configuracion": "Pierna objetivo al 80% de carga; pierna secundaria adelantada apoyando solo el talón como estabilizador.",
+          "objetivo": "Mantener la pelvis horizontal durante toda la extensión sin rotaciones transversales."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Plotkin et al., 2023 (PMID: 37877099)",
+          "Krause Neto et al., 2025 (PMID: 40276368)"
+        ],
+        "justificacion_biomecanica": "El carril fijo elimina la necesidad de estabilización sagital de la barra, maximizando la tasa de producción de fuerza en extensores puros de cadera."
+      }
+    },
+    "G03": {
+      "id": "G03",
+      "nombre": "Hip thrust con barra",
+      "familia": "extension_cadera",
+      "region_principal": "Glúteo mayor (énfasis acortamiento)",
+      "base": {
+        "configuracion": "Banco fijo contra rack para evitar deslizamiento. Barra olímpica con almohadilla de alta densidad centrada en la pelvis. Discos de diámetro estándar.",
+        "objetivo": "Extensión pélvica potente y simétrica. Mirada fija al frente durante el ascenso para mantener columna cérvico-torácica alineada.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G03-V1",
+          "cambio": "Banda elástica ligera sobre las rodillas (RNT).",
+          "sensacion_buscada": "Coactivación de fibras abductoras del glúteo medio/superior para evitar colapso en valgo dinámico.",
+          "configuracion": "Banda colocada 5 cm por encima de la rótula con tensión continua.",
+          "objetivo": "Mantener empuje vertical sin permitir que la banda aproxime las rodillas."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Plotkin et al., 2023 (PMID: 37877099)",
+          "Contreras et al., 2015 (PMID: 26214360)"
+        ],
+        "justificacion_biomecanica": "Producción libre de fuerza en el plano sagital; mayor demanda propioceptiva de nivelación pélvica lateral."
+      }
+    },
+    "G04": {
+      "id": "G04",
+      "nombre": "Hack squat profunda",
+      "familia": "sentadilla_bilateral",
+      "region_principal": "Cuádriceps + Glúteo mayor / Aductor mayor",
+      "base": {
+        "configuracion": "Pies a anchura de hombros en el tercio medio de la plataforma. Espalda y sacro completamente fijados al respaldo. Almohadillas de hombro acolchadas.",
+        "objetivo": "Descenso profundo y controlado con pausa de 0.5–1 s abajo hasta máxima flexión articular tolerada sin despegue sacro ni retroversión pélvica. Variante canónica activa: G04-V1 (foco polo inferior glúteo).",
+        "estado": "confirmado",
+        "vigente_desde": "2026-10-18"
+      },
+      "variantes": [
+        {
+          "id": "G04-V1",
+          "cambio": "Pies colocados en el tercio medio-superior de la plataforma con pausa de 0.5–1 s en el fondo.",
+          "sensacion_buscada": "Mayor brazo de momento en cadera en la profundidad; máximo estiramiento y reclutamiento de las fibras inferiores del glúteo mayor y aductor mayor para rellenar y elevar el polo inferior sobre el pliegue subglúteo.",
+          "configuracion": "Pies más altos, distancia entre talones media-ancha con punteras a ~20°.",
+          "objetivo": "Flexión profunda de cadera manteniendo contacto lumbar y talones fijados, buscando empujar la fascia del polo inferior glúteo desde dentro."
+        },
+        {
+          "id": "G04-V2",
+          "cambio": "Pies en tercio inferior de plataforma.",
+          "sensacion_buscada": "Mayor traslación anterior de rodilla y momento flexor en rodilla; tensión extrema en vasto lateral, medial e intermedio.",
+          "configuracion": "Pies más bajos manteniendo talones anclados; requiere buena dorsiflexión de tobillo.",
+          "objetivo": "Máxima flexión de rodilla tolerada sin molestias femororrotulianas."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Kubo et al., 2019 (PMID: 31230110)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "La sentadilla profunda promueve hipertrofia mediada por estiramiento en glúteo mayor y aductor mayor debido a la longitud de sarcómero alcanzada en máxima flexión de cadera."
+      }
+    },
+    "G05": {
+      "id": "G05",
+      "nombre": "Sentadilla pendular profunda",
+      "familia": "sentadilla_bilateral",
+      "region_principal": "Cuádriceps + Glúteo mayor en estiramiento",
+      "base": {
+        "configuracion": "Colocación de pies en plataforma de modo que el arco de palanca permita descenso profundo sin despegue de talones. Sujeción firme de manerales.",
+        "objetivo": "Flexión articular profunda aprovechando la descarga mecánica natural del arco en el punto más bajo. Subida fluida.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G05-V1",
+          "cambio": "Pies altos en plataforma.",
+          "sensacion_buscada": "Sesgo hacia extensión de cadera desde posición elongada; reduce estrés compresivo rotuliano.",
+          "configuracion": "Talones en tercio superior de la plataforma.",
+          "objetivo": "Profundidad completa manteniendo sacro apoyado contra el respaldo móvil."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Pallarés et al., 2021 (PMID: 34170576)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "El arco pendular reduce la resistencia externa justo en el punto de peor ventaja mecánica anatómica, protegiendo las estructuras pasivas y permitiendo mayor rango útil."
+      }
+    },
+    "G06": {
+      "id": "G06",
+      "nombre": "Sentadilla profunda en Smith",
+      "familia": "sentadilla_bilateral",
+      "region_principal": "Glúteo mayor + Cuádriceps",
+      "base": {
+        "configuracion": "Pies adelantados ~5–10 cm respecto a la línea vertical de la barra. Barra sobre trapecio medio/superior. Topes de seguridad ajustados justo debajo del rango objetivo.",
+        "objetivo": "Descenso vertical del tronco guiado por los carriles. Rango profundo sin redondeo lumbar inferior. Inversión suave del movimiento.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G06-V1",
+          "cambio": "Pies más adelantados (~15 cm) y torso completamente vertical.",
+          "sensacion_buscada": "Aísla la extensión de rodilla con nulo estrés de corte lumbar; sensación pura en cuádriceps sin demanda de brace espinal extremo.",
+          "configuracion": "Adelantar pies, apoyando la espalda sobre la barra con confianza en la trayectoria guiada.",
+          "objetivo": "Flexión de rodilla profunda manteniendo el torso perpendicular al suelo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Kubo et al., 2019 (PMID: 31230110)",
+          "Hernández-Belmonte et al., 2023 (PMID: 37535335)"
+        ],
+        "justificacion_biomecanica": "La fijación de trayectoria elimina demandas del plano frontal y rotacional, permitiendo modular la dominancia de cadera o rodilla alterando la posición de los pies."
+      }
+    },
+    "G07": {
+      "id": "G07",
+      "nombre": "Prensa profunda",
+      "familia": "sentadilla_bilateral",
+      "region_principal": "Cuádriceps + Glúteo mayor",
+      "base": {
+        "configuracion": "Respaldo ajustado a ~45–60°. Pelvis y columna lumbar completamente selladas al asiento. Agarraderas traccionadas hacia arriba/adentro activamente.",
+        "objetivo": "Descenso hasta máxima flexión de rodillas y caderas sin permitir que la pelvis bascule hacia retroversión (despegue lumbar).",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G07-V1",
+          "cambio": "Pies colocados en la parte más alta de la placa.",
+          "sensacion_buscada": "Mayor brazo de palanca para extensores de cadera; estiramiento del glúteo mayor en la parte baja.",
+          "configuracion": "Pies arriba a anchura de hombros o ligeramente superior.",
+          "objetivo": "Profundidad máxima sin que el sacro pierda contacto con el respaldo."
+        },
+        {
+          "id": "G07-V2",
+          "cambio": "Pies abajo en la placa a anchura estrecha.",
+          "sensacion_buscada": "Máxima dominancia de rodilla y estiramiento del cuádriceps.",
+          "configuracion": "Pies abajo; requiere dorsiflexión sin levantar los talones.",
+          "objetivo": "Codos/manos asegurando la pelvis pegada al asiento durante la flexión."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Krause Neto et al., 2025 (PMID: 40276368)",
+          "Kinoshita et al., 2026 (PMID: 41630124)"
+        ],
+        "justificacion_biomecanica": "Elimina por completo la carga axial sobre la columna vertebral, limitando la fatiga sistémica a las masas musculares de la extremidad inferior."
+      }
+    },
+    "G08": {
+      "id": "G08",
+      "nombre": "Bulgarian split squat en Smith",
+      "familia": "sentadilla_unilateral",
+      "region_principal": "Glúteo mayor (posición elongada)",
+      "base": {
+        "configuracion": "Banco trasero a altura de tibia media (~35–40 cm) con empeine apoyado. Pierna adelantada con zancada media-larga para tibia vertical abajo. Barra sobre trapecio.",
+        "objetivo": "Descenso con torso inclinado al frente (~15–25°) y pausa de 1 s en el punto más bajo manteniendo pelvis neutra. Variante canónica activa: G08-V1 (hipertrofia de fibras inferiores del glúteo mayor para soporte del pliegue subglúteo).",
+        "estado": "confirmado",
+        "vigente_desde": "2026-10-18"
+      },
+      "variantes": [
+        {
+          "id": "G08-V1",
+          "cambio": "Paso largo (tibia vertical abajo), inclinación de tronco 15°–25° al frente y pausa estricta de 1 s en el fondo.",
+          "sensacion_buscada": "Máximo brazo de momento en flexión profunda de cadera (>90°); estiramiento extremo de las fibras inferiores del glúteo mayor para rellenar y levantar el polo inferior sobre el pliegue glúteo.",
+          "configuracion": "Adelantar el pie de apoyo hasta que la tibia quede vertical abajo; inclinar el tronco sin perder lordosis neutra.",
+          "objetivo": "La espinilla permanece prácticamente vertical; el tercio inferior de la subida construye la base baja del glúteo."
+        },
+        {
+          "id": "G08-V2",
+          "cambio": "Paso moderado y torso erguido vertical.",
+          "sensacion_buscada": "Desplazamiento anterior de la rodilla adelantada con mayor implicación del cuádriceps.",
+          "configuracion": "Paso más corto; tronco erguido perpendicular al suelo.",
+          "objetivo": "Rodilla delantera avanza sobre la puntera de forma controlada."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Wolf et al., 2025 (PMID: 41646176)",
+          "Krause Neto et al., 2025 (PMID: 40276368)"
+        ],
+        "justificacion_biomecanica": "La estabilidad del carril Smith suprime el limitante de equilibrio vestibular, permitiendo aplicar tensión mecánica real cerca del fallo en el glúteo en posición elongada."
+      }
+    },
+    "G09": {
+      "id": "G09",
+      "nombre": "Bulgarian con mancuernas",
+      "familia": "sentadilla_unilateral",
+      "region_principal": "Glúteo mayor + Cuádriceps",
+      "base": {
+        "configuracion": "Pie trasero en banco. Mancuernas en las manos con correas (straps) si el agarre fatiga antes que la pierna. Zancada firme.",
+        "objetivo": "Descenso suave con tibia estable. Evitar impulsarse con el pie trasero. Salida empujando el suelo con el mediopié y talón delantero.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G09-V1",
+          "cambio": "Mancuerna única en mano contralateral, mano homolateral apoyada en rack.",
+          "sensacion_buscada": "Elimina el factor limitante del equilibrio; permite reclutar el 100% de unidades motoras del glúteo de la pierna de apoyo.",
+          "configuracion": "Mano libre sosteniendo firmemente un poste del rack.",
+          "objetivo": "RIR honesto guiado por fallo muscular de la pierna y no por oscilación postural."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Haugen et al., 2023 (PMID: 37582807)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "El apoyo contralateral reduce la demanda de estabilización refleja del glúteo medio, canalizando el torque hacia la extensión pura del glúteo mayor."
+      }
+    },
+    "G10": {
+      "id": "G10",
+      "nombre": "Zancada inversa en Smith",
+      "familia": "sentadilla_unilateral",
+      "region_principal": "Glúteo mayor + Extensores de pierna",
+      "base": {
+        "configuracion": "De pie bajo la barra. Paso atrás amplio y controlado aterrizando suavemente sobre el metatarso trasero.",
+        "objetivo": "Descenso con la pierna delantera absorbiendo la carga; la rodilla trasera roza el suelo sin impactar. Impulso exclusivo de la pierna delantera para regresar.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G10-V1",
+          "cambio": "Pierna delantera sobre déficit de 5–10 cm (step o disco).",
+          "sensacion_buscada": "Aumenta el recorrido efectivo de flexión de cadera en la posición más baja; mayor hipertrofia mediada por estiramiento.",
+          "configuracion": "Colocar disco de goma de 5-10 cm bajo el pie de apoyo delantero.",
+          "objetivo": "Descender más allá del plano horizontal de la rodilla delantera con control estricto."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Pallarés et al., 2021 (PMID: 34170576)",
+          "Kubo et al., 2019 (PMID: 31230110)"
+        ],
+        "justificacion_biomecanica": "El déficit amplía el brazo de momento y la longitud sarcomérica en los grados de mayor tensión mecánica pasiva y activa."
+      }
+    },
+    "G11": {
+      "id": "G11",
+      "nombre": "Peso muerto rumano en Smith",
+      "familia": "extension_cadera",
+      "region_principal": "Glúteo mayor + Isquiosurales (posición elongada)",
+      "base": {
+        "configuracion": "Pies a anchura de caderas con punteras al frente. Rodillas en semiflexión fija estricta (~15–20°). Barra rozando muslos/espinillas. Straps colocados.",
+        "objetivo": "Bisagra pura proyectando los isquiones (base del glúteo) hacia la pared trasera y hacia arriba, con pausa de 1 s en máximo estiramiento. Busca hipertrofiar la unión isquio-glútea (origen en el isquion) para rellenar el escalón inmediatamente inferior al pliegue glúteo.",
+        "estado": "confirmado",
+        "vigente_desde": "2026-10-18"
+      },
+      "variantes": [
+        {
+          "id": "G11-V1",
+          "cambio": "Mayor flexión de rodilla (~30–45°) manteniendo la bisagra de cadera.",
+          "sensacion_buscada": "Reduce la tensión pasiva limitante de los isquiosurales biarticulares, permitiendo mayor flexión de cadera y mayor carga sobre el glúteo mayor.",
+          "configuracion": "Permitir que las rodillas se doblen un poco más conforme la cadera viaja atrás.",
+          "objetivo": "Sentir la máxima tensión de estiramiento en la masa glútea profunda."
+        },
+        {
+          "id": "G11-V2",
+          "cambio": "Rodillas casi extendidas (~10°).",
+          "sensacion_buscada": "Aislamiento de la porción media/distal de isquiosurales biarticulares en elongación.",
+          "configuracion": "Rodillas rígidas sin hiperextensión; bisagra detenida a mitad de tibia.",
+          "objetivo": "Tensión extrema en vientre de isquiosurales."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Fenwick et al., 2009 (PMID: 19620925)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "El carril de la Smith fija el vector de corte lumbar en un plano estable, permitiendo al ejecutante concentrarse en el desplazamiento pélvico anteroposterior."
+      }
+    },
+    "G12": {
+      "id": "G12",
+      "nombre": "Peso muerto rumano con barra o mancuernas",
+      "familia": "extension_cadera",
+      "region_principal": "Glúteo mayor + Isquiosurales",
+      "base": {
+        "configuracion": "Barra olímpica o mancuernas pesadas pegadas a las piernas. Escápulas deprimidas fijando dorsales (evita que la carga se aleje del centro de gravedad).",
+        "objetivo": "Empujar caderas atrás hasta sentir límite elástico de cadena posterior. Inversión empujando el suelo con talones hasta posición neutra (sin arquear atrás).",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G12-V1",
+          "cambio": "Con mancuernas orientadas a 45° a los lados de las piernas.",
+          "sensacion_buscada": "Mayor libertad articular en muñecas y hombros; permite mantener la carga exactamente sobre el centro de masas.",
+          "configuracion": "Mancuernas descendiendo por la cara anterolateral de los muslos.",
+          "objetivo": "Bisagra limpia sin impacto en las tibias."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Fenwick et al., 2009 (PMID: 19620925)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "Carga la cadena posterior en longitudes musculares largas; mantener la carga pegada al cuerpo minimiza el brazo de momento externo sobre la columna lumbar."
+      }
+    },
+    "G13": {
+      "id": "G13",
+      "nombre": "Hiperextensión a 45° sesgada a glúteo",
+      "familia": "extension_cadera",
+      "region_principal": "Glúteo mayor (aislamiento)",
+      "base": {
+        "configuracion": "Almohadilla colocada justo por debajo de las espinas ilíacas (liberando la flexión de cadera). Pies en plataforma con punteras rotadas externamente ~30–45°.",
+        "objetivo": "Columna dorsal deliberadamente redondeada en ligera flexión para inhibir erectores espinales. Extensión exclusiva desde la articulación coxofemoral hasta alinear fémur y pelvis.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G13-V1",
+          "cambio": "Carga sostenida en manos pegada al pecho con flexión espinal mantenida.",
+          "sensacion_buscada": "Resistencia progresiva en extensión pura de cadera sin tensión lumbar.",
+          "configuracion": "Sostener mancuerna o disco bajo la barbilla, barbilla pegada al esternón.",
+          "objetivo": "Bloqueo glúteo potente en la cumbre apretando esfínteres pélvicos."
+        },
+        {
+          "id": "G13-V2",
+          "cambio": "Unilateral con una sola pierna anclada.",
+          "sensacion_buscada": "Sobrecarga con peso corporal y eliminación de desequilibrios bilaterales.",
+          "configuracion": "Una pierna sujeta en rodillos, la otra libre relajada.",
+          "objetivo": "Mantener pelvis perpendicular al eje del banco sin torsión."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Contreras et al., 2015 (PMID: 26214360)",
+          "Krause Neto et al., 2025 (PMID: 40276368)"
+        ],
+        "justificacion_biomecanica": "La flexión torácica constante alarga los erectores y previene su contracción activa por insuficiencia funcional, forzando a que todo el torque de extensión lo genere el glúteo mayor."
+      }
+    },
+    "G14": {
+      "id": "G14",
+      "nombre": "Extensión de cadera en cable",
+      "familia": "extension_cadera",
+      "region_principal": "Glúteo mayor (aislamiento en acortamiento)",
+      "base": {
+        "configuracion": "Tobillera conectada a polea baja. Apoyo firme de manos sobre la estructura. Torso inclinado ~30–45° hacia la polea.",
+        "objetivo": "Patear atrás y ligeramente hacia fuera (~15–30° de abducción) siguiendo el plano de las fibras del glúteo. Pelvis inmóvil sin arquear la zona lumbar.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G14-V1",
+          "cambio": "Rodilla flexionada a 90° durante toda la patada.",
+          "sensacion_buscada": "Inhibe la participación de los isquiosurales por insuficiencia activa; concentra el 100% del estímulo en el glúteo mayor.",
+          "configuracion": "Mantener pierna en forma de L durante todo el arco de movimiento.",
+          "objetivo": "Sentir la compresión glútea en máxima extensión sin balanceo pélvico."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Krause Neto et al., 2025 (PMID: 40276368)"
+        ],
+        "justificacion_biomecanica": "La flexión de rodilla acorta los isquiosurales biarticulares en su inserción distal, reduciendo su capacidad de generar fuerza y obligando al glúteo mayor a asumir la carga de extensión."
+      }
+    },
+    "G15": {
+      "id": "G15",
+      "nombre": "Abducción de cadera en máquina",
+      "familia": "abduccion_cadera",
+      "region_principal": "Glúteo medio y menor + Glúteo mayor superior",
+      "base": {
+        "configuracion": "Espalda bien apoyada en el respaldo, pelvis firmemente empotrada atrás. Almohadillas en cara lateral externa de rodillas/muslos.",
+        "objetivo": "Apertura amplia y controlada empujando con las rodillas (no con los pies). Pausa isométrica de 1 s en máxima abducción. Regreso lento sin juntar topes.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G15-V1",
+          "cambio": "Torso inclinado hacia delante ~30° despegando espalda del respaldo pero manteniendo sacro firme.",
+          "sensacion_buscada": "Alinea las fibras posteriores del glúteo medio y la porción craneal del glúteo mayor con el plano de resistencia; mayor sensación de llenado superolateral.",
+          "configuracion": "Inclinarse al frente sujetando la estructura o el borde frontal del asiento.",
+          "objetivo": "Abducción completa evitando compensación con flexores anteriores de cadera (TFL)."
+        },
+        {
+          "id": "G15-V2",
+          "cambio": "Torso completamente vertical a 90° o ligeramente recostado atrás.",
+          "sensacion_buscada": "Mayor implicación de las fibras medias y anteriores del glúteo medio y menor.",
+          "configuracion": "Espalda plana contra el respaldo; mirada al frente.",
+          "objetivo": "Máxima apertura sin balanceo pélvico."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Paz et al., 2022 (PMID: 35500965)"
+        ],
+        "justificacion_biomecanica": "La máquina de abducción proporciona una relación óptima de activación de glúteo medio frente a tensor de la fascia lata (TFL) comparado con ejercicios en suelo o con banda."
+      }
+    },
+    "G16": {
+      "id": "G16",
+      "nombre": "Abducción unilateral en cable",
+      "familia": "abduccion_cadera",
+      "region_principal": "Glúteo medio / menor en estiramiento",
+      "base": {
+        "configuracion": "Tobillera en pierna de trabajo conectada a polea a altura de pantorrilla. Mano contraria agarrando la torre para fijar el tronco.",
+        "objetivo": "La pierna cruza por delante de la pierna de apoyo para iniciar con glúteo medio elongado; abducción hacia fuera en diagonal a ~30° sin ladear el torso.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G16-V1",
+          "cambio": "Torso inclinado ~20° hacia la torre de poleas.",
+          "sensacion_buscada": "Modifica la curva de resistencia aumentando la tensión en los primeros 30° de abducción.",
+          "configuracion": "Brazo extendido agarrando la torre con inclinación lateral del cuerpo.",
+          "objetivo": "Tensión máxima al iniciar la separación de la pierna."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Paz et al., 2022 (PMID: 35500965)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "El cable permite cruzar la línea media corporal (adducción relativa), cargando el complejo glúteo abductor en longitudes sarcoméricas superiores a las permitidas por la mayoría de máquinas."
+      }
+    },
+    "G17": {
+      "id": "G17",
+      "nombre": "Power Squat / Leverage Power Squat",
+      "familia": "sentadilla_bilateral",
+      "region_principal": "Cuádriceps + Glúteo mayor",
+      "base": {
+        "configuracion": "Apoyo de hombros acolchado en máquina de palanca. Pies en centro de plataforma a anchura de hombros.",
+        "objetivo": "Descenso profundo en el arco de palanca manteniendo talones y metatarsos pegados. Empuje fluido sin bloqueos bruscos articulares.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G17-V1",
+          "cambio": "Pies colocados en borde superior con separación amplia.",
+          "sensacion_buscada": "Aumenta la flexión de cadera y el estiramiento glúteo/aductor, descargando la articulación de la rodilla.",
+          "configuracion": "Pies altos y separados a 1.3 veces la anchura de hombros.",
+          "objetivo": "Profundidad máxima con pelvis controlada."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Haugen et al., 2023 (PMID: 37582807)",
+          "Kubo et al., 2019 (PMID: 31230110)"
+        ],
+        "justificacion_biomecanica": "La trayectoria en arco de palanca distribuye el momento articular disminuyendo los picos de fuerza de corte sobre la columna lumbar."
+      }
+    },
+    "G18": {
+      "id": "G18",
+      "nombre": "V-Squat / Lever V-Squat",
+      "familia": "sentadilla_bilateral",
+      "region_principal": "Cuádriceps + Glúteo mayor",
+      "base": {
+        "configuracion": "Posición recostada sobre el respaldo con soporte de hombros. Pies firmes en plataforma.",
+        "objetivo": "Descenso controlado hasta flexión profunda sin redondeo pélvico inferior. Retorno suave.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "G18-V1",
+          "cambio": "Pies altos y cerrados.",
+          "sensacion_buscada": "Énfasis en extensores de cadera y vasto lateral en flexión profunda.",
+          "configuracion": "Pies a anchura de caderas en tercio superior de plataforma.",
+          "objetivo": "Descenso hasta romper el paralelo de la rodilla con control."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Haugen et al., 2023 (PMID: 37582807)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "Permite sobrecargar el patrón de sentadilla en sujetos con limitación de estabilidad con idéntica respuesta hipertrófica a pesos libres."
+      }
+    },
+    "S01": {
+      "id": "S01",
+      "nombre": "Elevación lateral en máquina",
+      "familia": "abduccion_hombro",
+      "region_principal": "Deltoides lateral",
+      "base": {
+        "configuracion": "Asiento regulado de modo que el eje del hombro coincida con el eje de rotación de las levas. Almohadillas apoyadas justo por encima de los codos.",
+        "objetivo": "Empujar con los codos hacia afuera y ligeramente adelante (en el plano escapular a ~20–30° del plano coronal). Pausa sutil a 90° sin encoger trapecios.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "S01-V1",
+          "cambio": "Tronco inclinado ligeramente al frente (~15°) con pecho despegado del respaldo.",
+          "sensacion_buscada": "Alinea las fibras laterales puras contra el vector de giro de la leva; reduce la participación del deltoides anterior.",
+          "configuracion": "Inclinar el torso 15° hacia delante con cuello neutro.",
+          "objetivo": "Elevación lateral pura sin activación parasitaria del trapecio superior."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Larsen et al., 2025 (PMID: 40692697)"
+        ],
+        "justificacion_biomecanica": "La máquina aplica una curva de resistencia constante durante todo el arco de abducción, manteniendo tensión mecánica desde el inicio del movimiento."
+      }
+    },
+    "S02": {
+      "id": "S02",
+      "nombre": "Elevación lateral unilateral en cable",
+      "familia": "abduccion_hombro",
+      "region_principal": "Deltoides lateral (tensión en estiramiento)",
+      "base": {
+        "configuracion": "Polea ajustada a altura de la rodilla o cadera. Sujetar la torre con mano libre e inclinar el cuerpo sutilmente (~10°). Agarre con puño o muñequera.",
+        "objetivo": "Abducción en el plano escapular (~30° por delante del cuerpo) hasta altura del hombro. Control excéntrico de 2 s hasta que la mano cruce por delante de la cadera opuesta.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "S02-V1",
+          "cambio": "Cable cruzando por detrás del cuerpo a altura de cadera.",
+          "sensacion_buscada": "Pico de máxima resistencia situado a mitad de recorrido (~45–60° de abducción); sensación de tensión muscular homogénea.",
+          "configuracion": "Polea justo a la altura de la cadera, cable pasando pegado a la zona lumbar.",
+          "objetivo": "Empujar el codo hacia la pared lateral sin rotación de tronco."
+        },
+        {
+          "id": "S02-V2",
+          "cambio": "Con muñequera en vez de maneral de mano.",
+          "sensacion_buscada": "Elimina la fatiga del antebrazo y la necesidad de prensión; transferencia neuromuscular 100% al deltoides lateral.",
+          "configuracion": "Muñequera acolchada acoplada al mosquetón.",
+          "objetivo": "Guiar el movimiento empujando desde el codo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Larsen et al., 2025 (PMID: 40692697)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "El cruce de cable por delante del cuerpo permite generar torque resistivo en los primeros grados de abducción donde las mancuernas no ofrecen resistencia (brazo de momento nulo con gravedad)."
+      }
+    },
+    "S03": {
+      "id": "S03",
+      "nombre": "Elevación lateral con mancuernas",
+      "familia": "abduccion_hombro",
+      "region_principal": "Deltoides lateral (pico en acortamiento)",
+      "base": {
+        "configuracion": "De pie o sentado. Tronco con ligera inclinación al frente (~10°). Mancuernas parten desde los costados con codos en semiflexión fija (~10–15°).",
+        "objetivo": "Elevar los brazos por el plano escapular hasta los 80–90° de abducción. Bajar controlando sin permitir que las mancuernas reboten contra las caderas.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "S03-V1",
+          "cambio": "Sentado con pecho apoyado contra banco inclinado a 75°.",
+          "sensacion_buscada": "Elimina el balanceo del tronco y el impulso de piernas; fuerza estricta en el deltoides lateral.",
+          "configuracion": "Banco a 75° con esternón apoyado; mancuernas cuelgan libres.",
+          "objetivo": "Elevación en plano escapular con nula inercia corporal."
+        },
+        {
+          "id": "S03-V2",
+          "cambio": "Unilateral inclinado agarrado a un poste (lean-away).",
+          "sensacion_buscada": "Modifica el vector de gravedad aumentando la tensión mecánica en los primeros 45° de abducción.",
+          "configuracion": "Pies pegados a un poste rígido; mano sujeta el poste e inclina el torso ~20° hacia fuera.",
+          "objetivo": "Elevación lateral en el plano escapular sin usar inercia ni flexión de codo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Larsen et al., 2025 (PMID: 40692697)"
+        ],
+        "justificacion_biomecanica": "La resistencia gravitatoria alcanza su máximo brazo de momento a 90° de abducción horizontal, sobrecargando el músculo en su longitud media-corta."
+      }
+    },
+    "S04": {
+      "id": "S04",
+      "nombre": "Peck-deck inverso",
+      "familia": "deltoides_posterior",
+      "region_principal": "Deltoides posterior",
+      "base": {
+        "configuracion": "Asiento regulado de modo que los manerales queden alineados a la altura media del pecho/hombros. Pecho contra el respaldo. Brazos en leve flexión fija de codo.",
+        "objetivo": "Apertura horizontal manteniendo codos a ~60–75° de abducción respecto al torso. Llevar los codos hacia atrás y afuera sin permitir retracción escapular prematura. Variante canónica preferente: S04-V1 (agarre neutro; protege el espacio subacromial, antecedente de hombro derecho). Evitar forzar pulgares abajo.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "S04-V1",
+          "cambio": "Agarre neutro (palmas enfrentadas) con codos a 60°.",
+          "sensacion_buscada": "Reduce la rotación interna del hombro, protegiendo el espacio subacromial y alineando las fibras del deltoides posterior.",
+          "configuracion": "Sujetar agarres verticales.",
+          "objetivo": "Tensión pura en la cara posterior del hombro sin molestias articulares."
+        },
+        {
+          "id": "S04-V2",
+          "cambio": "Agarre prono abierto con codos a ~80° y muñecas relajadas.",
+          "sensacion_buscada": "Aislamiento hiper-específico del haz posterior del deltoides con mínima retracción de romboides.",
+          "configuracion": "Asiento a altura de hombros; brazos casi rectos; empujar con los dorsos/codos.",
+          "objetivo": "Apertura en el plano horizontal deteniendo el movimiento justo en la línea del cuerpo."
+        },
+        {
+          "id": "S04-V3",
+          "cambio": "Agarre en rotación interna humeral (palmas hacia fuera, pulgares hacia abajo, empujando con la eminencia hipotenar / canto de la mano).",
+          "sensacion_buscada": "Alineación anatómica óptima de la tuberosidad deltoidea con el vector de resistencia del brazo de palanca; inhibición del supra/infraespinoso para aislamiento puro del deltoides posterior.",
+          "configuracion": "Asiento regulado para abducción glenohumeral estricta a 70°–80° (brazos ligeramente por debajo de la línea horizontal de hombros para proteger espacio subacromial). Pecho firmemente fijado al tapizado.",
+          "objetivo": "Apertura transversal sin retracción escapular parásita; parar en el plano coronal del torso."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Currier et al., 2026 (PMID: 41843416)"
+        ],
+        "justificacion_biomecanica": "El soporte torácico neutraliza el impulso espinal y aísla la extensión horizontal del hombro, minimizando la compensación por trapecio medio y romboides."
+      }
+    },
+    "S05": {
+      "id": "S05",
+      "nombre": "Apertura inversa en cable",
+      "familia": "deltoides_posterior",
+      "region_principal": "Deltoides posterior",
+      "base": {
+        "configuracion": "Poleas dobles a altura de los ojos sin manerales (agarrando los topes de bola). Cables cruzados. De pie en el centro con torso firme.",
+        "objetivo": "Tirar en diagonal descendente hacia atrás a ~45° manteniendo ligera flexión de codos. Detener cuando los codos lleguen a la línea del cuerpo.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "S05-V1",
+          "cambio": "Poleas a altura de hombros abriendo en plano estrictamente horizontal.",
+          "sensacion_buscada": "Mayor brazo de momento para la porción horizontal del deltoides posterior.",
+          "configuracion": "Alinear poleas con acromion.",
+          "objetivo": "Separación de cables sintiendo la tensión en la cara dorsal del deltoides."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Currier et al., 2026 (PMID: 41843416)"
+        ],
+        "justificacion_biomecanica": "El cruce de cables permite cargar el deltoides posterior desde una posición de aducción horizontal relativa (estiramiento previo de sus fibras)."
+      }
+    },
+    "S06": {
+      "id": "S06",
+      "nombre": "Remo posterior con pecho apoyado",
+      "familia": "deltoides_posterior",
+      "region_principal": "Deltoides posterior + Retractores escapulares",
+      "base": {
+        "configuracion": "Banco inclinado a ~45° con pecho apoyado o máquina específica de remo. Agarre prono amplio. Codos abducidos a ~60–75° respecto al tronco.",
+        "objetivo": "Tirar dirigiendo los codos hacia atrás y afuera sin pegarlos a las costillas. Pausa de 1 s sintiendo la contracción posterior.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "S06-V1",
+          "cambio": "Agarre neutro semi-abierto a 60° con mancuernas.",
+          "sensacion_buscada": "Mayor comodidad articular en la articulación glenohumeral con excelente activación posterior.",
+          "configuracion": "Mancuernas en banco inclinado con agarre en semipronación.",
+          "objetivo": "Tirar desde los codos sin doblar las muñecas."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Fenwick et al., 2009 (PMID: 19620925)"
+        ],
+        "justificacion_biomecanica": "La abducción del húmero a 60–75° desactiva la línea de tracción del dorsal ancho, transfiriendo la carga al deltoides posterior, trapecio medio y romboides."
+      }
+    },
+    "S07": {
+      "id": "S07",
+      "nombre": "Press de hombro en máquina",
+      "familia": "press_vertical",
+      "region_principal": "Deltoides anterior + Tríceps",
+      "base": {
+        "configuracion": "Asiento regulado de modo que los agarres partan a nivel de las orejas o barbilla. Codos orientados en el plano escapular (~20–30° al frente).",
+        "objetivo": "Empuje vertical suave sin bloquear codos violentamente arriba. Descenso hasta el nivel de las orejas sin arquear la zona lumbar ni despegar la cabeza.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "S07-V1",
+          "cambio": "Agarre neutro cerrado en máquina convergente.",
+          "sensacion_buscada": "Máxima seguridad para el espacio subacromial; reduce el estrés sobre la cápsula anterior y concentra el empuje en el deltoides anterior y tríceps.",
+          "configuracion": "Sujetar los manerales paralelos.",
+          "objetivo": "Empuje fluido sin fricción articular."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Hernández-Belmonte et al., 2023 (PMID: 37535335)"
+        ],
+        "justificacion_biomecanica": "La trayectoria guiada elimina el riesgo de traslación humeral descontrolada, permitiendo entrenar cerca del fallo muscular con alta reproducibilidad técnica."
+      }
+    },
+    "B01": {
+      "id": "B01",
+      "nombre": "Jalón medio/neutro",
+      "familia": "traccion_vertical",
+      "region_principal": "Dorsal ancho (fibras toracolumbares)",
+      "base": {
+        "configuracion": "Muslos firmemente calzados bajo los rodillos de sujeción. Agarre neutro o semi-neutro a anchura de hombros (o 1.2x). Torso con sutil inclinación dorsal (~10–15°).",
+        "objetivo": "Depresión escapular inicial llevando los codos hacia abajo y adentro (hacia los bolsillos del pantalón). Barra desciende a nivel de clavículas. Estiramiento completo controlado.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B01-V1",
+          "cambio": "Agarre neutro estrecho (agarre V o mango doble).",
+          "sensacion_buscada": "Trayectoria estrictamente sagital que maximiza el reclutamiento de las fibras caudales del dorsal ancho.",
+          "configuracion": "Maneral estrecho colocado en mosquetón.",
+          "objetivo": "Tirar pegando los codos al frente y costados sin balanceo de cadera."
+        },
+        {
+          "id": "B01-V2",
+          "cambio": "Agarre prono medio-ancho.",
+          "sensacion_buscada": "Mayor demanda sobre redondo mayor, deltoides posterior y fibras ilíacas superiores del dorsal.",
+          "configuracion": "Barra estándar con manos separadas a 1.5 veces el ancho biacromial.",
+          "objetivo": "Tracción abriendo codos hacia los costados."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Andersen et al., 2014 (PMID: 24662157)"
+        ],
+        "justificacion_biomecanica": "El agarre medio/neutro optimiza la producción de fuerza de los flexores de codo y sitúa el húmero en una línea de tracción biomecánicamente favorable para el dorsal ancho sin hiperextensión cervical."
+      }
+    },
+    "B02": {
+      "id": "B02",
+      "nombre": "Dominada neutra asistida",
+      "familia": "traccion_vertical",
+      "region_principal": "Dorsal ancho + Espalda general",
+      "base": {
+        "configuracion": "Plataforma de asistencia con contrapeso calibrado para alcanzar el rango prescrito a RIR 1–2. Agarre neutro.",
+        "objetivo": "Subida continua hasta que la barbilla supere el nivel de los agarres. Descenso hasta estiramiento completo escapular de 2 s sin impulsos con los pies.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B02-V1",
+          "cambio": "Pausa isométrica de 1 s en máxima elevación escapular (abajo del todo).",
+          "sensacion_buscada": "Sobrecarga del dorsal ancho en su máxima longitud sarcomérica.",
+          "configuracion": "Misma asistencia; parada estricta abajo.",
+          "objetivo": "Disipar inercia y activar dorsal desde estiramiento pasivo profundo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Andersen et al., 2014 (PMID: 24662157)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "La asistencia mecánica permite dosificar la intensidad relativa para garantizar que el fallo muscular acontezca en el dorsal y no en los flexores del antebrazo."
+      }
+    },
+    "B03": {
+      "id": "B03",
+      "nombre": "Jalón unilateral en cable",
+      "familia": "traccion_vertical",
+      "region_principal": "Dorsal ancho (aislamiento unilateral)",
+      "base": {
+        "configuracion": "Asiento o banco colocado frente a polea alta individual. Sujeción con maneral D. Piernas y tronco bloqueados.",
+        "objetivo": "Tirar con un brazo dirigiendo el codo hacia la cresta ilíaca homolateral. El torso no debe rotar. Estiramiento completo arriba permitiendo que la escápula ascienda libremente.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B03-V1",
+          "cambio": "Inclinación lateral sutil (~10°) hacia el lado que tracciona al final del recorrido.",
+          "sensacion_buscada": "Acentúa el acortamiento máximo de las fibras iliocostales del dorsal ancho.",
+          "configuracion": "Permitir una sutil flexión lateral del tronco en la fase final concéntrica.",
+          "objetivo": "Conectar el codo con la cadera sin desalinear la columna lumbar."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Andersen et al., 2014 (PMID: 24662157)"
+        ],
+        "justificacion_biomecanica": "El trabajo unilateral alinea la línea de fuerza del cable directamente con el origen e inserción del dorsal ancho del ejecutante, eliminando restricciones de la barra rígida."
+      }
+    },
+    "B04": {
+      "id": "B04",
+      "nombre": "Pullover en máquina",
+      "familia": "extension_hombro",
+      "region_principal": "Dorsal ancho (extensión pura)",
+      "base": {
+        "configuracion": "Asiento ajustado para que el eje de rotación glenohumeral coincida exactamente con el eje de las levas. Codos apoyados sobre las almohadillas.",
+        "objetivo": "Tracción por arco descendente hasta que los codos queden pegados a los costados del torso. Retorno lento sintiendo el estiramiento dorsal overhead sin elevar la espalda lumbar.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B04-V1",
+          "cambio": "Manos relajadas sin prensión; empuje 100% desde los codos.",
+          "sensacion_buscada": "Anula cualquier intervención de los flexores del codo (bíceps) y tríceps, aislando la extensión dorsal pura.",
+          "configuracion": "Dedos abiertos apoyando solo la cara distal del húmero/codo.",
+          "objetivo": "Tensión dorsal concentrada sin fatiga de brazo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "Aplica tensión mecánica sobre el dorsal ancho sin mediación de la flexión de codo, evitando que los bíceps actúen como eslabón débil en la serie."
+      }
+    },
+    "B05": {
+      "id": "B05",
+      "nombre": "Jalón con brazos rectos",
+      "familia": "extension_hombro",
+      "region_principal": "Dorsal ancho + Redondo mayor",
+      "base": {
+        "configuracion": "Barra recta o cuerda en polea alta. De pie a 1 metro de la torre, tronco inclinado ~30–45° con rodillas semiflexionadas y brace abdominal. Codos con leve flexión fija (~10°).",
+        "objetivo": "Tirar en arco amplio hacia los muslos sin doblar los codos. Detener en los muslos con contracción dorsal de 1 s. Subida hasta la altura de la frente.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B05-V1",
+          "cambio": "Con cuerda larga permitiendo separar las manos más allá de las caderas al final.",
+          "sensacion_buscada": "Mayor rango de extensión de hombro al final y sensación de acortamiento completo en la espalda baja.",
+          "configuracion": "Cuerda de tríceps doble o larga colocada en polea alta.",
+          "objetivo": "Llevar las manos a los lados de los bolsillos sin compensar con flexión de codo."
+        },
+        {
+          "id": "B05-V2",
+          "cambio": "Con barra recta y agarre prono a anchura de hombros.",
+          "sensacion_buscada": "Tensión continua rígida sobre el dorsal ancho; mayor facilidad para mantener codos bloqueados.",
+          "configuracion": "Polea alta con barra recta; tronco inclinado a 45°; escápulas deprimidas.",
+          "objetivo": "Extensión glenohumeral en arco amplio tirando hacia las crestas ilíacas."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "Curva de resistencia continua mediante polea que carga el dorsal ancho en extensión pura de hombro con bajo coste de fatiga sistémica."
+      }
+    },
+    "B06": {
+      "id": "B06",
+      "nombre": "Remo convergente con pecho apoyado",
+      "familia": "traccion_horizontal",
+      "region_principal": "Dorsal ancho o Espalda media (según codos)",
+      "base": {
+        "configuracion": "Soporte pectoral ajustado de forma que los manerales se alcancen con los brazos casi estirados. Asiento regulado para trayectoria horizontal.",
+        "objetivo": "Tracción llevando codos hacia atrás con retracción escapular sincronizada. Descenso permitiendo que las escápulas protraigan suavemente en el estiramiento.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B06-V1",
+          "cambio": "Agarre neutro bajo con codos pegados a los costados.",
+          "sensacion_buscada": "Alineación con dorsal ancho; tracción dirigida hacia la pelvis.",
+          "configuracion": "Sujetar agarres verticales inferiores.",
+          "objetivo": "Codos no sobrepasan la línea del cuerpo para no perder tensión dorsal en favor del deltoides posterior."
+        },
+        {
+          "id": "B06-V2",
+          "cambio": "Agarre prono abierto con codos a ~60°.",
+          "sensacion_buscada": "Aislamiento de romboides, trapecio medio y deltoides posterior.",
+          "configuracion": "Sujetar agarres horizontales superiores.",
+          "objetivo": "Retracción escapular máxima en la fase concéntrica."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Fenwick et al., 2009 (PMID: 19620925)"
+        ],
+        "justificacion_biomecanica": "El soporte torácico neutraliza el momento flexor sobre la columna lumbar, permitiendo sobrecargar la espalda alta o dorsal sin que la fatiga del erector espinal limite la serie."
+      }
+    },
+    "B07": {
+      "id": "B07",
+      "nombre": "Remo T-bar con pecho apoyado",
+      "familia": "traccion_horizontal",
+      "region_principal": "Espalda media / Dorsal",
+      "base": {
+        "configuracion": "Pecho firme sobre la almohadilla inclinada. Pies sólidamente anclados en la plataforma. Agarre prono o neutro.",
+        "objetivo": "Tracción fluida con los codos viajando hacia atrás. Pausa de 1 s con escápulas apretadas. Descenso controlado hasta elongación completa.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B07-V1",
+          "cambio": "Agarre neutro estrecho.",
+          "sensacion_buscada": "Enfoque en dorsal ancho y reducción de estrés de rotación humeral.",
+          "configuracion": "Sujetar asas interiores paralelas.",
+          "objetivo": "Tirar desde los codos rozando la caja torácica."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Fenwick et al., 2009 (PMID: 19620925)"
+        ],
+        "justificacion_biomecanica": "La palanca angular de la T-bar ofrece una resistencia creciente hacia el punto de contracción, adaptándose al perfil de fuerza de los retractores escapulares."
+      }
+    },
+    "B08": {
+      "id": "B08",
+      "nombre": "Remo sentado en cable",
+      "familia": "traccion_horizontal",
+      "region_principal": "Espalda media + Dorsal ancho",
+      "base": {
+        "configuracion": "Pies apoyados en los topes con rodillas en ligera flexión. Torso perpendicular al suelo (90°). Agarre neutro o maneral doble.",
+        "objetivo": "Tracción llevando el agarre hacia el abdomen bajo/ombligo. El tronco se mantiene rígido sin oscilaciones hacia delante y atrás.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B08-V1",
+          "cambio": "Agarre con barra ancha prono tirando al esternón con codos a 60°.",
+          "sensacion_buscada": "Enfoque completo en romboides, trapecio medio y deltoides posterior.",
+          "configuracion": "Barra recta de jalón colocada en el remo bajo.",
+          "objetivo": "Apertura de codos y retracción escapular visible en cada repetición."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Fenwick et al., 2009 (PMID: 19620925)"
+        ],
+        "justificacion_biomecanica": "La tensión del cable es constante a lo largo de todo el rango de movimiento articular, independientemente de la aceleración gravitatoria."
+      }
+    },
+    "B09": {
+      "id": "B09",
+      "nombre": "Remo unilateral en cable con apoyo",
+      "familia": "traccion_horizontal",
+      "region_principal": "Dorsal ancho (unilateral)",
+      "base": {
+        "configuracion": "Banco regulado a 45° colocado frente a polea baja/media. Mano contraria y pecho parcialmente apoyados. Cable alineado con el costado.",
+        "objetivo": "Tirar en línea sagital llevando el codo hacia la cadera. El tronco permanece inmóvil sin rotar hacia el cable en la subida.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "B09-V1",
+          "cambio": "Permitir rotación torácica sutil (10°) solo durante la fase excéntrica de estiramiento.",
+          "sensacion_buscada": "Mayor elongación del dorsal ancho al permitir que la escápula y la caja torácica sigan la línea del cable.",
+          "configuracion": "Dejar que el hombro avance en el fondo, recuperando la posición neutra antes de traccionar.",
+          "objetivo": "Estiramiento profundo del dorsal en la posición de salida."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Fenwick et al., 2009 (PMID: 19620925)"
+        ],
+        "justificacion_biomecanica": "El apoyo externo suprime la necesidad de contracción isométrica compensatoria del cuadrado lumbar y erectores espinales contralaterales."
+      }
+    },
+    "C01": {
+      "id": "C01",
+      "nombre": "Press convergente inclinado moderado",
+      "familia": "empuje_torso",
+      "region_principal": "Pectoral mayor (haz clavicular)",
+      "base": {
+        "configuracion": "Asiento regulado de modo que los manerales comiencen a la altura de la línea clavicular/esternal superior. Inclinación del respaldo a ~20–30°. Escápulas fijas atrás.",
+        "objetivo": "Empuje siguiendo la convergencia natural de la máquina sin despegar los hombros del respaldo. Descenso hasta sentir estiramiento pectoral cómodo.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "C01-V1",
+          "cambio": "Agarre ligeramente más estrecho con codos metidos a ~45° respecto al torso.",
+          "sensacion_buscada": "Mayor aducción en el bloqueo y menor estrés en la cápsula articular anterior del hombro.",
+          "configuracion": "Tomar los agarres en su zona interna o neutra si la máquina lo permite.",
+          "objetivo": "Empuje convergente fluido y sin molestias glenohumerales."
+        },
+        {
+          "id": "C01-V2",
+          "cambio": "Asiento 1 punto más bajo con agarre ancho a ~45° de inclinación.",
+          "sensacion_buscada": "Mayor tensión en el haz clavicular alto en la posición elongada inferior.",
+          "configuracion": "Regular asiento para que los manerales comiencen exactamente a la altura de la clavícula.",
+          "objetivo": "Empuje diagonal hacia arriba convergiendo al centro sin despegar las escápulas del respaldo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Chaves et al., 2020 (PMID: PMC7449336)"
+        ],
+        "justificacion_biomecanica": "Una inclinación de 15–30° maximiza la activación e hipertrofia del haz clavicular del pectoral mayor sin derivar un exceso de carga hacia el deltoides anterior."
+      }
+    },
+    "C02": {
+      "id": "C02",
+      "nombre": "Press inclinado en Smith 15-30°",
+      "familia": "empuje_torso",
+      "region_principal": "Pectoral mayor (haz clavicular)",
+      "base": {
+        "configuracion": "Banco regulable inclinado a ~20–30° centrado bajo la barra Smith. La barra desciende hacia el tercio superior del esternón/clavícula. Codos a ~45–60° del torso.",
+        "objetivo": "Descenso guiado de 2 s hasta rozar el pecho sin rebotar. Empuje potente sin extender los hombros hacia adelante al bloquear.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "C02-V1",
+          "cambio": "Inclinación a solo 15° (inclinación muy suave).",
+          "sensacion_buscada": "Excelente reclutamiento clavicular con máxima producción de fuerza global y menor palanca sobre el deltoides anterior.",
+          "configuracion": "Colocar el banco en el primer punto de inclinación.",
+          "objetivo": "Estabilidad y sobrecarga de carga con recorrido amplio."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Chaves et al., 2020 (PMID: PMC7449336)",
+          "Hernández-Belmonte et al., 2023 (PMID: 37535335)"
+        ],
+        "justificacion_biomecanica": "El carril fijo confina el empuje a un plano estricto, permitiendo llegar a RIR 0–1 de manera reproducible y segura mediante los seguros mecánicos."
+      }
+    },
+    "C03": {
+      "id": "C03",
+      "nombre": "Press inclinado con mancuernas",
+      "familia": "empuje_torso",
+      "region_principal": "Pectoral mayor (haz clavicular)",
+      "base": {
+        "configuracion": "Banco a 20–30°. Mancuernas parten desde el pecho con antebrazos perpendiculares al suelo. Pies firmes apoyados en el suelo para estabilidad pélvica.",
+        "objetivo": "Descenso amplio aprovechando el rango libre de las mancuernas hasta sentir estiramiento en pectoral superior. Empuje en arco convergente natural sin chocar las mancuernas.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "C03-V1",
+          "cambio": "Agarre en semipronación (~45°) durante todo el trayecto.",
+          "sensacion_buscada": "Libera el espacio subacromial de pinzamientos y permite descender 2–3 cm más en estiramiento con total confort glenohumeral.",
+          "configuracion": "Mancuernas en ángulo de 45° con codos viajando a 45° del torso.",
+          "objetivo": "Máximo estiramiento de pectoral en el fondo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Chaves et al., 2020 (PMID: PMC7449336)"
+        ],
+        "justificacion_biomecanica": "La libertad de los grados de libertad rotacionales del hombro permite adaptar la trayectoria a la morfología acromial individual, maximizando el ROM seguro."
+      }
+    },
+    "C04": {
+      "id": "C04",
+      "nombre": "Press convergente horizontal",
+      "familia": "empuje_torso",
+      "region_principal": "Pectoral mayor (haz esternocostal)",
+      "base": {
+        "configuracion": "Asiento ajustado de modo que los manerales queden a la altura de la parte media del esternón (línea de pezones). Escápulas retraídas y deprimidas contra el respaldo.",
+        "objetivo": "Empuje horizontal fluido. Descenso controlado manteniendo los hombros atrás. No extender los hombros hacia adelante en el punto final.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "C04-V1",
+          "cambio": "Agarre neutro horizontal.",
+          "sensacion_buscada": "Menor estrés sobre la cápsula anterior del hombro; empuje cerrado concentrado en pectoral medio y tríceps.",
+          "configuracion": "Tomar los agarres paralelos de la máquina.",
+          "objetivo": "Empuje continuo manteniendo codos en línea con la fuerza."
+        },
+        {
+          "id": "C04-V2",
+          "cambio": "Pausa isométrica de 1 s en máxima posición de estiramiento (pecho abierto).",
+          "sensacion_buscada": "Sobrecarga excéntrico-pasiva masiva sobre el pectoral esternal; anula la inercia del cambio de sentido.",
+          "configuracion": "Asiento a esternón medio; descenso suave hasta sentir tensión máxima sin dolor acromioclavicular.",
+          "objetivo": "Parada total abajo antes de iniciar el empuje explosivo pero controlado."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Hernández-Belmonte et al., 2023 (PMID: 37535335)"
+        ],
+        "justificacion_biomecanica": "La trayectoria convergente replica la línea de acción de las fibras esternales del pectoral mayor, que se aproximan hacia el centro del tórax en aducción horizontal."
+      }
+    },
+    "C05": {
+      "id": "C05",
+      "nombre": "Press plano en Smith o con mancuernas",
+      "familia": "empuje_torso",
+      "region_principal": "Pectoral mayor (haz esternocostal)",
+      "base": {
+        "configuracion": "Banco plano. Arco torácico fisiológico con glúteo apoyado y pies firmes. Escápulas empaquetadas atrás.",
+        "objetivo": "Descenso de la carga hasta la altura del esternón medio con codos a ~45–60°. Empuje vertical potente manteniendo el arco escapular intacto.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "C05-V1",
+          "cambio": "Pausa isométrica de 1 s en el fondo con máximo estiramiento pectoral.",
+          "sensacion_buscada": "Disipa la energía elástica pasiva y concentra la carga concéntrica sobre los sarcómeros en elongación.",
+          "configuracion": "Parada visible sobre el pecho sin apoyar peso sobre la caja torácica.",
+          "objetivo": "Salida controlada desde parada pura."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Hernández-Belmonte et al., 2023 (PMID: 37535335)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "Carga el haz esternocostal en su plano primario de aducción horizontal con alta capacidad de sobrecarga progresiva de peso absoluto."
+      }
+    },
+    "C06": {
+      "id": "C06",
+      "nombre": "Peck-deck",
+      "familia": "aduccion_horizontal",
+      "region_principal": "Pectoral mayor (aducción pura)",
+      "base": {
+        "configuracion": "Asiento regulado de forma que manerales, codos y hombros se sitúen en el mismo plano horizontal transversal. Codos con leve flexión fija (~15°).",
+        "objetivo": "Aducción horizontal llevando los codos y manos al centro del tórax. Pausa de 1 s apretando el pectoral. Apertura controlada hasta sentir estiramiento cómodo sin forzar la cápsula articular.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "C06-V1",
+          "cambio": "Foco en máximo estiramiento en la posición abierta con descenso lento (3 s).",
+          "sensacion_buscada": "Tensión mecánica pura en fibras del pectoral mayor en posición elongada.",
+          "configuracion": "Ajustar topes de salida para permitir estiramiento completo sin dolor.",
+          "objetivo": "Inversión del movimiento suave y sin rebote."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Currier et al., 2026 (PMID: 41843416)"
+        ],
+        "justificacion_biomecanica": "Aísla la aducción horizontal del pectoral mayor eliminando la participación extensora del tríceps braquial."
+      }
+    },
+    "C07": {
+      "id": "C07",
+      "nombre": "Apertura en cable",
+      "familia": "aduccion_horizontal",
+      "region_principal": "Pectoral mayor",
+      "base": {
+        "configuracion": "Poleas dobles a altura media (nivel del hombro/pecho). De pie o en banco plano central. Codos en semiflexión constante.",
+        "objetivo": "Cruzar ligeramente las manos al final de la aducción para acentuar el acortamiento. Retorno sintiendo la tensión continua del cable en todo el recorrido.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "C07-V1",
+          "cambio": "Poleas colocadas en posición baja tirando hacia arriba y adentro (diagonal ascendente).",
+          "sensacion_buscada": "Alineación específica con la línea de tracción del haz clavicular superior.",
+          "configuracion": "Poleas en el anclaje inferior; manos suben hasta la altura de la barbilla.",
+          "objetivo": "Aducción y flexión combinada sintiendo la parte alta del pecho."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Chaves et al., 2020 (PMID: PMC7449336)"
+        ],
+        "justificacion_biomecanica": "La versatilidad del cable permite ajustar el vector de resistencia tridimensional para que coincida con la orientación de cualquier fascículo pectoral."
+      }
+    },
+    "A01": {
+      "id": "A01",
+      "nombre": "Extensión de tríceps overhead en cable",
+      "familia": "extension_codo",
+      "region_principal": "Tríceps braquial (cabeza larga en estiramiento)",
+      "base": {
+        "configuracion": "Polea regulada a altura media/hombro. Sujeción con cuerda larga o dos cuerdas acopladas. Brazos elevados overhead con codos apuntando al frente/arriba (~120–150° de flexión de hombro).",
+        "objetivo": "Extensión completa de codo proyectando los antebrazos hacia arriba y afuera. Descenso profundo flexionando codos detrás de la cabeza sin separar codos lateralmente.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "A01-V1",
+          "cambio": "Unilateral en polea a 45° (tríceps Katana unilateral).",
+          "sensacion_buscada": "Alineación biomecánica perfecta con la línea escapular de la cabeza larga; sin molestias en muñecas ni codos.",
+          "configuracion": "De espaldas a la polea a altura de cabeza; cable cruzando el cuerpo en diagonal.",
+          "objetivo": "Extensión de codo en la línea anatómica del brazo."
+        },
+        {
+          "id": "A01-V2",
+          "cambio": "Bilateral con dos cuerdas largas cruzadas desde polea media.",
+          "sensacion_buscada": "Libertad rotacional en muñecas y antebrazos, apertura al final del bloqueo y cero molestia en codos.",
+          "configuracion": "Dos cuerdas montadas en el mismo mosquetón; sujetar los extremos cruzando las manos.",
+          "objetivo": "Extensión simultánea bilateral proyectando los brazos hacia los lados en la contracción final."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Maeo et al., 2023 (PMID: 35819335)"
+        ],
+        "justificacion_biomecanica": "El ensayo longitudinal intra-sujeto de Maeo et al. (2023) demostró que el entrenamiento overhead produjo una hipertrofia significativamente mayor de la cabeza larga y del tríceps total comparado con extensiones con el brazo neutro, mediada por la longitud sarcomérica alcanzada."
+      }
+    },
+    "A02": {
+      "id": "A02",
+      "nombre": "Pressdown en cable",
+      "familia": "extension_codo",
+      "region_principal": "Tríceps braquial (cabezas lateral y medial)",
+      "base": {
+        "configuracion": "Polea alta con barra recta o cuerda. Codos pegados a los costados del cuerpo y ligeramente adelantados respecto a la línea axial. Torso con inclinación sutil (~10°).",
+        "objetivo": "Extensión hacia abajo empujando exclusivamente desde los codos. Bloqueo controlado apretando el tríceps. Retorno hasta que los antebrazos rompan los 90° de flexión.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "A02-V1",
+          "cambio": "Con dos cuerdas separando los brazos hacia atrás al final de la extensión.",
+          "sensacion_buscada": "Mayor contracción en la cabeza lateral y medial al permitir un rango final extendido sin chocar con los muslos.",
+          "configuracion": "Dos cuerdas montadas en el mismo mosquetón.",
+          "objetivo": "Extensión y separación lateral fluida en la fase concéntrica."
+        },
+        {
+          "id": "A02-V2",
+          "cambio": "Con barra recta o agarre en V en pronación estricta.",
+          "sensacion_buscada": "Mayor capacidad de sobrecarga y estabilidad para las cabezas medial y lateral.",
+          "configuracion": "Polea alta con barra fija; codos pegados al torso sin balanceo del tronco.",
+          "objetivo": "Bloqueo rígido abajo empujando con la base de la palma."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Maeo et al., 2023 (PMID: 35819335)"
+        ],
+        "justificacion_biomecanica": "Con el hombro pegado al tronco, la cabeza larga del tríceps se encuentra acortada, canalizando la mayor parte de la tensión mecánica sobre las cabezas monoarticulares (lateral y medial)."
+      }
+    },
+    "A03": {
+      "id": "A03",
+      "nombre": "Curl predicador en cable o máquina",
+      "familia": "flexion_codo",
+      "region_principal": "Bíceps braquial (estiramiento y pico en flexión inicial)",
+      "base": {
+        "configuracion": "Axilas calzadas en el borde superior del banco predicador a 45°. Tríceps completamente apoyados. Agarre supino a anchura de hombros.",
+        "objetivo": "Flexión de codo controlada. Descenso hasta extensión casi completa (~10–15° antes del bloqueo forzado para no hiperextender la cápsula articular) donde la resistencia es máxima.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "A03-V1",
+          "cambio": "Con polea baja en vez de barra libre.",
+          "sensacion_buscada": "Mantiene tensión mecánica en la parte alta del movimiento donde la barra libre pierde resistencia.",
+          "configuracion": "Banco predicador colocado a 1 metro de una polea baja.",
+          "objetivo": "Curva de tensión constante en todo el recorrido."
+        },
+        {
+          "id": "A03-V2",
+          "cambio": "Unilateral en banco Scott a 45° con mancuerna o polea individual.",
+          "sensacion_buscada": "Aislamiento estricto de cada brazo, corrigiendo asimetrías de fuerza y adaptando la rotación de muñeca.",
+          "configuracion": "Apoyar un solo brazo alineando hombro, codo y muñeca en un mismo plano sagital.",
+          "objetivo": "Descenso hasta ~15° antes de la hiperextensión pasiva; subida sin levantar el codo del tapizado."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Attarieh et al., 2025 (PMID: 40082069)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "El banco predicador carga el bíceps en el tercio inicial del movimiento (posición alargada), generando un potente estímulo hipertrófico mediado por tensión mecánica en estiramiento."
+      }
+    },
+    "A04": {
+      "id": "A04",
+      "nombre": "Curl bayesiano en cable",
+      "familia": "flexion_codo",
+      "region_principal": "Bíceps braquial (cabeza larga elongada)",
+      "base": {
+        "configuracion": "De espaldas a una polea a altura de la rodilla/cadera. Paso al frente con brazo retrasado detrás del torso (hombro en extensión de ~30–45°). Agarre supino.",
+        "objetivo": "Flexión de codo manteniendo el codo clavado detrás de la línea del cuerpo durante todo el ejercicio. Estiramiento pronunciado en la fase excéntrica.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "A04-V1",
+          "cambio": "Unilateral con inclinación anterior del tronco de ~15°.",
+          "sensacion_buscada": "Mayor recorrido articular de extensión de hombro y estiramiento de la cabeza larga.",
+          "configuracion": "Paso largo al frente con tronco firme.",
+          "objetivo": "Control estricto sin adelantar el codo en la subida."
+        },
+        {
+          "id": "A04-V2",
+          "cambio": "Con apoyo en banco inclinado a 60° situado delante de la polea.",
+          "sensacion_buscada": "Eliminación absoluta del balanceo del core y la pelvis; tensión en estiramiento 100% aislada.",
+          "configuracion": "Espalda apoyada en banco a 60° con cable saliendo de polea baja detrás del respaldo.",
+          "objetivo": "Flexionar codo manteniendo el húmero inmóvil y alineado con el cable."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Attarieh et al., 2025 (PMID: 40082069)",
+          "Wolf et al., 2025 (PMID: 41646176)"
+        ],
+        "justificacion_biomecanica": "La extensión del hombro coloca la cabeza larga biarticular del bíceps en su máxima elongación anatómica proximal, optimizando la hipertrofia a longitudes sarcoméricas aumentadas."
+      }
+    },
+    "A05": {
+      "id": "A05",
+      "nombre": "Curl martillo en cable o mancuernas",
+      "familia": "flexion_codo",
+      "region_principal": "Braquial anterior + Braquiorradial",
+      "base": {
+        "configuracion": "De pie o sentado. Agarre neutro estricto (palmas enfrentadas). Codos fijos junto a los costados.",
+        "objetivo": "Flexión de codo elevando la carga sin rotar la muñeca. Descenso lento de 2 s hasta extensión total de codo.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "A05-V1",
+          "cambio": "Con cuerda en polea baja.",
+          "sensacion_buscada": "Tensión continua en el tercio inicial de la flexión sin pérdida de carga al estirar.",
+          "configuracion": "Cuerda tomada desde los extremos con pulgares arriba.",
+          "objetivo": "Flexión pura con tensión constante."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Currier et al., 2026 (PMID: 41843416)"
+        ],
+        "justificacion_biomecanica": "La posición neutra de la muñeca desfavorece mecánicamente al bíceps braquial (que es un potente supinador), forzando al braquial anterior y braquiorradial a asumir el torque de flexión."
+      }
+    },
+    "L01": {
+      "id": "L01",
+      "nombre": "Extensión de rodilla",
+      "familia": "extension_rodilla",
+      "region_principal": "Cuádriceps (recto femoral y vastos)",
+      "base": {
+        "configuracion": "Respaldo ajustado para que el hueco poplíteo libre el borde del asiento. Eje de rotación de la máquina alineado con el cóndilo externo de la rodilla. Rodillo sobre el tercio distal de la tibia. Agarraderas tensadas hacia abajo.",
+        "objetivo": "Extensión completa de rodilla con pausa de 1 s en el bloqueo superior. Descenso controlado hasta flexión profunda (~90–100°) sin dejar caer las placas.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "L01-V1",
+          "cambio": "Respaldo reclinado hacia atrás (~110–120° de flexión de cadera).",
+          "sensacion_buscada": "Alarga el recto femoral en su inserción proximal en la espina ilíaca anteroinferior, aumentando su hipertrofia selectiva.",
+          "configuracion": "Echar el respaldo hacia atrás todo lo que la máquina permita.",
+          "objetivo": "Extensión potente sintiendo el estiramiento en la cara anterior del muslo."
+        },
+        {
+          "id": "L01-V2",
+          "cambio": "Pausa isométrica de 2 s en bloqueo concéntrico superior (0° de flexión).",
+          "sensacion_buscada": "Máxima activación del vasto medial oblicuo y recto femoral en contracción acortada.",
+          "configuracion": "Rodillo superior firmemente fijado sobre los muslos para evitar despegue de la pelvis.",
+          "objetivo": "Sostener la extensión completa rígida sin tirones antes de la bajada lenta."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Kassiano et al., 2026 (PMID: 41379528)",
+          "Kinoshita et al., 2026 (PMID: 41630124)"
+        ],
+        "justificacion_biomecanica": "Los ensayos longitudinales de Kassiano (2026) y Kinoshita (2026) demuestran que la extensión de rodilla produce una hipertrofia muy superior del recto femoral en comparación con las sentadillas o prensas (donde permanece en longitud constante por co-contracción biarticular)."
+      }
+    },
+    "L02": {
+      "id": "L02",
+      "nombre": "Curl femoral sentado",
+      "familia": "flexion_rodilla",
+      "region_principal": "Isquiosurales (semitendinoso, semimembranoso, bíceps femoral largo)",
+      "base": {
+        "configuracion": "Cadera en flexión contra el respaldo. Rodillo superior de sujeción fuertemente presionado contra los muslos para anclar la pelvis. Almohadilla distal justo encima del talón de Aquiles.",
+        "objetivo": "Flexión completa de rodillas con pausa de 1 s en máximo acortamiento y regreso controlado de 2–3 s. Variante canónica activa: L02-V1 (inclinación anterior de torso 10°–15° para hipertrofiar el origen isquiático justo debajo del pliegue glúteo).",
+        "estado": "confirmado",
+        "vigente_desde": "2026-10-18"
+      },
+      "variantes": [
+        {
+          "id": "L02-V1",
+          "cambio": "Torso inclinado 10°–15° al frente desde la cadera con columna neutra (pelvis en anteversión).",
+          "sensacion_buscada": "Aumenta la flexión coxofemoral y maximiza la elongación sarcomérica en el origen proximal de los isquiosurales (tuberosidad isquiática), engrosando el muslo posterior alto para suavizar el escalón bajo el pliegue glúteo.",
+          "configuracion": "Inclinarse ligeramente hacia delante sujetando los agarres con pecho alto y sacro anclado.",
+          "objetivo": "Tensión extrema en la inserción alta del femoral (transición isquio-glútea) durante toda la serie."
+        },
+        {
+          "id": "L02-V2",
+          "cambio": "Tobillos en dorsiflexión activa sostenida durante toda la serie.",
+          "sensacion_buscada": "Insuficiencia pasiva inducida sobre el gastrocnemio para obligar al bíceps femoral y semimembranoso a generar el 100% del torque.",
+          "configuracion": "Punteras apuntando activamente hacia las espinillas en concéntrica y excéntrica.",
+          "objetivo": "Flexión de rodilla estricta aislando los isquiosurales del gemelo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Maeo et al., 2021 (PMID: 33009197)"
+        ],
+        "justificacion_biomecanica": "El ensayo intra-sujeto de Maeo et al. (2021) demostró de forma concluyente que el curl femoral sentado es marcadamente superior al curl tumbado para la hipertrofia total de los isquiosurales debido a que la flexión de cadera somete a los músculos biarticulares a mayor tensión pasiva y activa en longitudes alargadas."
+      }
+    },
+    "L03": {
+      "id": "L03",
+      "nombre": "Curl femoral tumbado",
+      "familia": "flexion_rodilla",
+      "region_principal": "Isquiosurales (cabeza corta del bíceps femoral)",
+      "base": {
+        "configuracion": "Banco con quiebre para ángulo de cadera suave. Pelvis deliberadamente comprimida contra el banco. Almohadilla sobre tendón de Aquiles.",
+        "objetivo": "Flexión de rodilla hasta aproximar el rodillo a los glúteos sin arquear la columna lumbar ni despegar las crestas ilíacas del banco. Descenso lento.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "L03-V1",
+          "cambio": "Pies en flexión plantar (punteras estiradas como bailarina) durante el curl.",
+          "sensacion_buscada": "Inhibe la contribución accesoria de los gastrocnemios por acortamiento distal, concentrando la flexión en los isquiosurales puros.",
+          "configuracion": "Punteras extendidas activamente hacia atrás durante toda la serie.",
+          "objetivo": "Sensación focalizada en la cara posterior del muslo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Maeo et al., 2021 (PMID: 33009197)"
+        ],
+        "justificacion_biomecanica": "Con la cadera extendida (~0°), los isquiosurales biarticulares están en longitud acortada, lo que favorece el reclutamiento relativo de la cabeza corta del bíceps femoral (músculo monoarticular que no cruza la cadera)."
+      }
+    },
+    "L04": {
+      "id": "L04",
+      "nombre": "Elevación de talones de pie en máquina",
+      "familia": "flexion_plantar",
+      "region_principal": "Gastrocnemio (gemelos en estiramiento)",
+      "base": {
+        "configuracion": "Almohadillas sobre hombros. Rodillas completamente extendidas pero sin hiperextensión forzada (~0–5°). Apoyo de pies sobre el primer y segundo metatarso en el borde de la plataforma.",
+        "objetivo": "Descenso profundo hasta máxima dorsiflexión de tobillo. PAUSA ESTRICTA DE 2 SEGUNDOS en el fondo para neutralizar la energía elástica del tendón de Aquiles. Elevación concéntrica controlada sobre los metatarsos.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "L04-V1",
+          "cambio": "Punteras ligeramente hacia dentro (~10° de rotación interna).",
+          "sensacion_buscada": "Sesgo sutil hacia la cabeza lateral del gastrocnemio.",
+          "configuracion": "Rotar ligeramente las punteras sin doblar rodillas.",
+          "objetivo": "Mantener pausa de 2 s en máxima dorsiflexión antes de empujar."
+        },
+        {
+          "id": "L04-V2",
+          "cambio": "Pausa de 3 s abajo en máxima dorsiflexión estirada antes de cada concéntrica.",
+          "sensacion_buscada": "Disipación total de la energía elástica del tendón de Aquiles, forzando la activación miofibrilar activa del gastrocnemio.",
+          "configuracion": "Apoyo en el borde del escalón sobre 1º y 2º metatarsos; rodillas rígidamente extendidas.",
+          "objetivo": "Contar 1, 2, 3 segundos en el punto más bajo antes de subir sin rebote."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Kinoshita et al., 2023 (PMID: 38156065)",
+          "Pallarés et al., 2021 (PMID: 34170576)"
+        ],
+        "justificacion_biomecanica": "El gastrocnemio es biarticular; con la rodilla extendida se encuentra en longitud óptima. La pausa de 2 segundos en dorsiflexión disipa la deformación elástica del tendón de Aquiles, forzando a las fibras musculares contráctiles a asumir el trabajo mecánico."
+      }
+    },
+    "L05": {
+      "id": "L05",
+      "nombre": "Gemelo en prensa con rodilla extendida",
+      "familia": "flexion_plantar",
+      "region_principal": "Gastrocnemio",
+      "base": {
+        "configuracion": "Prensa inclinada o de palanca con seguros de bloqueo en posición intermedia de protección. Metatarsos apoyados en el borde inferior de la plataforma con talones libres. Rodillas extendidas fijas.",
+        "objetivo": "Máxima flexión dorsal del tobillo con pausa de 2 s en el fondo. Extensión plantar potente sin rebotar.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "L05-V1",
+          "cambio": "Unilateral (una pierna por serie).",
+          "sensacion_buscada": "Elimina asimetrías de fuerza y permite mayor control y rango de dorsiflexión con cargas absolutas moderadas.",
+          "configuracion": "Un pie centrado en el borde inferior; pierna libre relajada.",
+          "objetivo": "Rango de tobillo simétrico y estricto."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Kinoshita et al., 2023 (PMID: 38156065)"
+        ],
+        "justificacion_biomecanica": "Proporciona la misma ventaja biomecánica de rodilla extendida que la máquina de pie pero elimina la compresión axial directa sobre la columna vertebral."
+      }
+    },
+    "L06": {
+      "id": "L06",
+      "nombre": "Elevación de talones sentada",
+      "familia": "flexion_plantar",
+      "region_principal": "Sóleo",
+      "base": {
+        "configuracion": "Rodillas flexionadas a 90°. Almohadilla acolchada ajustada firmemente sobre el tercio distal del muslo. Metatarsos en el escalón.",
+        "objetivo": "Descenso profundo en dorsiflexión con parada de 2 s. Extensión completa subiendo los talones. Movimiento estricto.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "L06-V1",
+          "cambio": "Tempo lento 3-2-1 (3 s bajada, 2 s pausa abajo, 1 s subida).",
+          "sensacion_buscada": "Máxima tensión mecánica en el sóleo sin impulso elástico.",
+          "configuracion": "Misma postura; cronometrar tempo mental.",
+          "objetivo": "Quema y fatiga pura en el compartimento muscular profundo de la pantorrilla."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Kinoshita et al., 2023 (PMID: 38156065)"
+        ],
+        "justificacion_biomecanica": "La flexión de rodilla a 90° acorta pasivamente al gastrocnemio por insuficiencia activa, aislando la producción de fuerza en el sóleo (músculo monoarticular compuesto predominantemente por fibras de contracción lenta)."
+      }
+    },
+    "T01": {
+      "id": "T01",
+      "nombre": "Crunch en cable o máquina",
+      "familia": "flexion_tronco",
+      "region_principal": "Recto abdominal",
+      "base": {
+        "configuracion": "De rodillas frente a polea alta con cuerda detrás de la nuca, o sentado en máquina de crunch. Pelvis fijada firmemente.",
+        "objetivo": "Flexión activa de la columna vertebral enrollando la caja torácica hacia la pelvis. La cadera permanece bloqueada (no flexionar la cadera tirando con el psoas). Exhalar en el punto de contracción.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "T01-V1",
+          "cambio": "En polea de rodillas manteniendo ángulo fémur-suelo fijo a 90°.",
+          "sensacion_buscada": "Aislamiento estricto del recto del abdomen eliminando cualquier flexión de cadera.",
+          "configuracion": "Rodillas separadas; glúteos sin tocar talones durante toda la repetición.",
+          "objetivo": "Enrollamiento de la columna toracolumbar."
+        },
+        {
+          "id": "T01-V2",
+          "cambio": "En máquina sentada con pausa de 1 s en máxima flexión de columna.",
+          "sensacion_buscada": "Tensión mecánica máxima y acortamiento del recto abdominal sin tracción del psoas ni flexores de cadera.",
+          "configuracion": "Ajustar almohadilla pectoral a la altura media del esternón; pelvis empotrada.",
+          "objetivo": "Enrollar el torso hacia el ombligo contrayendo el abdomen en lugar de doblar la cadera."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Currier et al., 2026 (PMID: 41843416)"
+        ],
+        "justificacion_biomecanica": "El recto abdominal se inserta en el pubis y en los cartílagos costales; su función es la flexión del tronco. Bloquear la cadera evita que los flexores de cadera (psoas-ilíaco) asuman el trabajo mecánico."
+      }
+    },
+    "T02": {
+      "id": "T02",
+      "nombre": "Reverse crunch controlado",
+      "familia": "flexion_tronco",
+      "region_principal": "Recto abdominal inferior + Oblicuo interno/externo inferomedial (reborde inguinal / Cinturón de Adonis)",
+      "base": {
+        "configuracion": "Tumbado en banco plano/declinado o suelo con manos agarrando un soporte fijo tras la cabeza. Rodillas en flexión controlada de ~90°.",
+        "objetivo": "Elevar la pelvis despegando el sacro del banco mediante retroversión pélvica activa y vaciado espiratorio de 1 s arriba; bajar vértebra a vértebra sin inercia de flexores de cadera. Variante canónica activa: T02-V3 (foco Cinturón de Adonis / reborde suprainguinal).",
+        "estado": "confirmado",
+        "vigente_desde": "2026-10-18"
+      },
+      "variantes": [
+        {
+          "id": "T02-V1",
+          "cambio": "En banco ligeramente declinado (15–20°).",
+          "sensacion_buscada": "Aumenta la resistencia gravitatoria sobre la elevación pélvica.",
+          "configuracion": "Cabeza en el extremo alto agarrando el soporte.",
+          "objetivo": "Despegue pélvico vertical controlado."
+        },
+        {
+          "id": "T02-V2",
+          "cambio": "Rodillas a 90° bloqueadas con elevación pélvica vertical pura (candela).",
+          "sensacion_buscada": "Retroversión pélvica forzada activando los oblicuos inferiores sin balanceo de piernas.",
+          "configuracion": "Manos sujetando un soporte firme; piernas fijas en ángulo recto.",
+          "objetivo": "Despegar el sacro y lumbares del banco empujando las plantas hacia el techo."
+        },
+        {
+          "id": "T02-V3",
+          "cambio": "Despegue sacro obligatorio + espiración forzada de 1 s en cumbre + micro-orientación oblicua opcional (10°–15° en últimas 4–5 reps).",
+          "sensacion_buscada": "Hipertrofiar las fibras inferomediales del oblicuo interno, oblicuo externo y transverso que nacen de la cresta ilíaca y mitad lateral del ligamento inguinal (de Poupart), creando el escalón muscular ('pared') que profundiza el Cinturón de Adonis sin ensanchar la cintura media/alta.",
+          "configuracion": "Agarre firme tras la cabeza; iniciar el rango útil despegando el sacro para acercar el pubis al esternón; en las últimas repeticiones orientar sutilmente las rodillas 10°–15° alternando hacia cada hombro en los 15° finales de subida.",
+          "objetivo": "Sostener 1 s arriba vaciando el aire por completo (cerrando costillas y comprimiendo la franja suprainguinal) antes de descender vértebra a vértebra."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Currier et al., 2026 (PMID: 41843416)"
+        ],
+        "justificacion_biomecanica": "La flexión de tronco de origen distal (aproximación de la pelvis hacia la caja torácica fija) maximiza la demanda de control neuromuscular en el complejo abdominopélvico."
+      }
+    },
+    "T03": {
+      "id": "T03",
+      "nombre": "Pallof press",
+      "familia": "antirrotacion",
+      "region_principal": "Oblicuos y transverso abdominal (antirrotación)",
+      "base": {
+        "configuracion": "De pie o arrodillado de lado a una polea a altura del esternón. Sujetar el maneral con ambas manos junto al pecho. Base de pies sólida a anchura de hombros.",
+        "objetivo": "Extender los brazos al frente en línea recta resistiendo el torque rotacional del cable. Mantener isometría de 2–3 s con brazos extendidos sin girar caderas ni hombros. Retorno al pecho.",
+        "estado": "borrador",
+        "vigente_desde": "2026-10-11"
+      },
+      "variantes": [
+        {
+          "id": "T03-V1",
+          "cambio": "En posición de media rodilla (half-kneeling con rodilla interna en suelo).",
+          "sensacion_buscada": "Elimina la compensación de tobillos y caderas, obligando al core a estabilizar la pelvis y columna.",
+          "configuracion": "Rodilla del lado de la polea en el suelo; pie contrario adelantado a 90°.",
+          "objetivo": "Antirrotación pura con estabilidad lumbopélvica."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Currier et al., 2026 (PMID: 41843416)"
+        ],
+        "justificacion_biomecanica": "La extensión de los brazos incrementa exponencialmente el brazo de momento externo que intenta rotar el tronco, demandando una activación isométrica coordinada de los oblicuos internos y externos."
+      }
+    },
+    "A06": {
+      "id": "A06",
+      "nombre": "Dual-cable cross pushdown",
+      "familia": "extension_codo",
+      "region_principal": "Tríceps braquial (cabeza lateral)",
+      "base": {
+        "configuracion": "Poleas altas dobles a la altura de la frente o superior. Cables cruzados en X frente al pecho sin accesorios (agarre de bola directo o asas simples). Húmeros fijos a ~20°-30° en el plano escapular.",
+        "objetivo": "Extensión completa del codo empujando hacia abajo y afuera en trayectoria divergente (V invertida). Bloqueo de 1 s en máxima contracción de la cabeza lateral sin forzar muñecas.",
+        "estado": "activo",
+        "vigente_desde": "2026-10-15"
+      },
+      "variantes": [
+        {
+          "id": "A06-V1",
+          "cambio": "Ejecución unilateral manteniendo la posición corporal bilateral.",
+          "sensacion_buscada": "Aislamiento estricto por brazo sin compensaciones interhemisféricas de fuerza.",
+          "configuracion": "Mismo cruce, trabajando primero un brazo y luego el otro.",
+          "objetivo": "Bloqueo puro de la cabeza lateral con par perpendicular al antebrazo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Maeo et al., 2023",
+          "Vigotsky et al., 2022"
+        ],
+        "justificacion_biomecanica": "Alinea la resistencia directamente con las fibras oblicuas de la cabeza lateral, eliminando el par de torsión ulnar y el fallo de agarre de la cuerda convencional."
+      }
+    },
+    "G19": {
+      "id": "G19",
+      "nombre": "Kickback diagonal de glúteo en polea baja",
+      "familia": "extension_cadera",
+      "region_principal": "Glúteo mayor y glúteo medio/superior",
+      "base": {
+        "configuracion": "Polea baja con tobillera. Torso flexionado a ~45° con antebrazos firmes en la columna de soporte. Pelvis neutra sin arquear zona lumbar.",
+        "objetivo": "Extensión y abducción simultánea (patada diagonal a 30° del plano sagital). Pausa isométrica de 1 s en cumbre con rodilla casi extendida y descenso controlado en 2-3 s.",
+        "estado": "activo",
+        "vigente_desde": "2026-10-15"
+      },
+      "variantes": [
+        {
+          "id": "G19-V1",
+          "cambio": "Torso más erguido (~60°) y vector de patada más abierto (~40°).",
+          "sensacion_buscada": "Mayor énfasis en las fibras de abducción del glúteo medio y vientre superior.",
+          "configuracion": "Apoyo de manos en columna con torso menos inclinado.",
+          "objetivo": "Pausa arriba sin balanceo pélvico."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Contreras et al., 2020",
+          "McAndrew et al., 2021"
+        ],
+        "justificacion_biomecanica": "La trayectoria a 30° respeta la línea de tracción oblicua de las fibras superiores del glúteo mayor y el glúteo medio, maximizando el brazo de momento en rango acortado."
+      }
+    },
+    "G20": {
+      "id": "G20",
+      "nombre": "Cossack squat (Sentadilla cosaca)",
+      "familia": "sentadilla_unilateral",
+      "region_principal": "Aductores, glúteo mayor y movilidad de cadera",
+      "base": {
+        "configuracion": "Pies a doble anchura de hombros, punteras rotadas externamente ~20°-30°. Peso corporal o mancuerna ligera en copa al pecho.",
+        "objetivo": "Descenso profundo y controlado sobre una pierna mientras la otra permanece extendida con talón apoyado y puntera al techo. Transición fluida a ras de suelo.",
+        "estado": "activo",
+        "vigente_desde": "2026-10-15"
+      },
+      "variantes": [
+        {
+          "id": "G20-V1",
+          "cambio": "Transición baja a ras de suelo sin elevarse al centro.",
+          "sensacion_buscada": "Tensión continua y máxima demanda elástica sobre aductor mayor y cápsula de cadera.",
+          "configuracion": "Mantener centro de masas a nivel de rodillas durante el cambio.",
+          "objetivo": "Control motor y movilidad activa sin rebotes."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Kubo et al., 2019",
+          "Behm et al., 2021"
+        ],
+        "justificacion_biomecanica": "Excentricidad en longitudes extremas para el aductor mayor e isquiotibiales mediales en el plano frontal, expandiendo el rango de movimiento activo pélvico."
+      }
+    },
+    "B10": {
+      "id": "B10",
+      "nombre": "Encogimiento con inclinación anterior en Smith (Forward-Lean Shrug / Kelso)",
+      "aliases": [
+        "Smith Forward-Lean Shrug",
+        "Encogimiento Kelso en Smith",
+        "30° Incline Shrug"
+      ],
+      "familia": "trapecio_escapular",
+      "region_principal": "Trapecio superior y medio (vector diagonal elevación-retracción)",
+      "base": {
+        "configuracion": "Multipower (Smith). Desbloqueo de cadera (hip hinge sutil) inclinando el torso 15°–30° hacia delante con raquis neutro y mirada en diagonal al suelo. Agarre prono a 1.2× ancho biacromial.",
+        "objetivo": "Elevación y retracción escapular simultánea (hacia arriba y atrás, siguiendo la línea anatómica de las fibras del trapecio). Pausa isométrica de 1 s en máxima contracción; descenso excéntrico estricto de 2–3 s sin tirones cervicales ni balanceo.",
+        "estado": "confirmado",
+        "vigente_desde": "2026-10-15"
+      },
+      "variantes": [
+        {
+          "id": "B10-V1",
+          "cambio": "Agarre más ancho en Y invertida (~1.3-1.4× biacromial) con inclinación a 30°.",
+          "sensacion_buscada": "Mayor componente de rotación hacia arriba de la escápula y retracción pura sin reclutar el elevador de la escápula.",
+          "configuracion": "Separación de manos más amplia; brazos en ángulo de 30° respecto al eje longitudinal.",
+          "objetivo": "Aislamiento máximo del vientre del trapecio superior y medio sin traccionar con flexores del codo."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Johnson et al., 1994 (Anatomy and orientation of trapezius muscle fibers)",
+          "Pizzari et al., 2014 (Modifying shrug technique for optimal scapular mechanics)",
+          "Kelso, P., 1977 (The Kelso Shrug System: scapular retraction/elevation)"
+        ],
+        "justificacion_biomecanica": "El encogimiento vertical estricto a 0° tracciona perpendicular a las fibras del trapecio superior (que discurren oblicuas a ~30-40° hacia las vértebras cervicales medias y occipital) sobrecargando el elevador de la escápula. La inclinación anterior de 15-30° alinea la resistencia vertical guiada de la multipower directamente con la línea de acción del trapecio superior y medio, combinando elevación y retracción sin cizalla cervical."
+      }
+    },
+    "S08": {
+      "id": "S08",
+      "nombre": "Encogimientos trapecio en Smith con inclinación hacia delante",
+      "familia": "deltoides_posterior",
+      "region_principal": "Trapecio superior y medio",
+      "base": {
+        "configuracion": "Barra en Smith a la altura del tercio medio del muslo. Agarre prono a anchura de hombros (straps recomendados para eliminar fatiga de flexores de dedos). Torso inclinado 15°-20° hacia delante con cadera retrasada y columna lumbar neutra.",
+        "objetivo": "Elevación y retracción escapular diagonal (hacia arriba y ligeramente hacia atrás, en dirección al occipital). Pausa de 1-2 s en máxima contracción sin flexionar codos ni tironear con lumbares.",
+        "estado": "activo",
+        "vigente_desde": "2026-10-17"
+      },
+      "variantes": [
+        {
+          "id": "S08-V1",
+          "cambio": "Inclinación de 30° con mayor retracción escapular.",
+          "sensacion_buscada": "Mayor transferencia a trapecio medio y romboides.",
+          "configuracion": "Retrasar cadera 5 cm adicionales manteniendo rodillas semiflexionadas.",
+          "objetivo": "Juntar escápulas arriba con pausa estricta."
+        }
+      ],
+      "respaldo_cientifico": {
+        "fuentes": [
+          "Pizzari et al., 2014",
+          "Castelein et al., 2016"
+        ],
+        "justificacion_biomecanica": "La inclinación anterior de 15°-20° alinea el vector de elevación con la orientación antero-oblicua de las fibras del trapecio superior, reduciendo la compresión cervical axial del encogimiento puramente vertical."
+      }
+    }
+  }
+}; })(typeof self !== "undefined" ? self : this);

@@ -1,0 +1,16 @@
+{
+  "schema": "dame_cana_pendientes_externos.v1",
+  "autoridad": "local",
+  "entrenador": "Antigravity / Gemini operando 100% en local sobre archivos canónicos",
+  "drive": "Respaldo pasivo separado de la recepción de la app; no sobrescribir entradas pendientes",
+  "pendientes_externos": [
+    {
+      "session_id": "mv22v4oh-ml7jna",
+      "fecha": "2026-10-10",
+      "dia": "B",
+      "observado": "2026-10-10",
+      "fuente": "Drive 03_SESIONES",
+      "accion": "Incorporado en registro local; antecedente conservado para verificación de integridad"
+    }
+  ]
+}

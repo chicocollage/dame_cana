@@ -1,0 +1,41 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-15T16:42:20.289159",
+  "event_id": "EVENT-WORKOUT-1786804940",
+  "session": {
+    "id": "TEST-SES-1786804940",
+    "date": "2026-08-15",
+    "title": "Prueba de Validación Automatizada (Día A)",
+    "finished": true,
+    "exercise_count": 1,
+    "planned_set_count": 2,
+    "recorded_set_count": 2
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Sentadilla Hack",
+      "identity": {
+        "variant": "Pies neutros media altura",
+        "load_basis": "total_kg"
+      },
+      "result": {
+        "movement_notes": "Técnica limpia, prueba de conexión",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 100,
+            "reps": 10,
+            "rir": 2
+          },
+          {
+            "index": 2,
+            "load_kg": 110,
+            "reps": 8,
+            "rir": 1
+          }
+        ]
+      }
+    }
+  ]
+}

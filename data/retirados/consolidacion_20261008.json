@@ -1,0 +1,121 @@
+{
+  "schema": "dame_cana_registros_retirados.v1",
+  "fecha": "2026-10-08",
+  "motivo": "Prueba de validación automatizada, no entrenamiento real",
+  "sesiones": [
+    {
+      "session_id": "TEST-SES-1786804940",
+      "fecha": "2026-08-14T17:00:00",
+      "dia": "A",
+      "titulo": "Prueba de Validación Automatizada (Día A)",
+      "finished": true,
+      "record_quality": null,
+      "exercise_count": 1,
+      "planned_set_count": 2,
+      "recorded_set_count": 2,
+      "source_note": null,
+      "exported_at": "2026-08-15T07:42:20",
+      "source_file": "DIRECT_SYNC",
+      "source_file_id": "EVENT-WORKOUT-1786804940",
+      "imported_at": "2026-08-15T07:42:24",
+      "program_version": "M4-3D-v2.0",
+      "_fila_fuente": 8
+    }
+  ],
+  "series": [
+    {
+      "set_id": "TEST-SES-1786804940__E1__S1",
+      "session_id": "TEST-SES-1786804940",
+      "fecha": "2026-08-14T17:00:00",
+      "dia": "A",
+      "exercise_order": 1,
+      "exercise_name": "Sentadilla Hack",
+      "exercise_id": null,
+      "slot_id": null,
+      "machine_id": null,
+      "variant": "Pies neutros media altura",
+      "machine_settings": null,
+      "load_basis": "total_kg",
+      "resistance_mode": null,
+      "set_index": 1,
+      "load_kg": 100,
+      "reps": 10,
+      "rir": 2,
+      "per_side": false,
+      "movement_notes": "Técnica limpia, prueba de conexión",
+      "comparability_group": null,
+      "source_file": "DIRECT_SYNC",
+      "_fila_fuente": 41
+    },
+    {
+      "set_id": "TEST-SES-1786804940__E1__S2",
+      "session_id": "TEST-SES-1786804940",
+      "fecha": "2026-08-14T17:00:00",
+      "dia": "A",
+      "exercise_order": 1,
+      "exercise_name": "Sentadilla Hack",
+      "exercise_id": null,
+      "slot_id": null,
+      "machine_id": null,
+      "variant": "Pies neutros media altura",
+      "machine_settings": null,
+      "load_basis": "total_kg",
+      "resistance_mode": null,
+      "set_index": 2,
+      "load_kg": 110,
+      "reps": 8,
+      "rir": 1,
+      "per_side": false,
+      "movement_notes": "Técnica limpia, prueba de conexión",
+      "comparability_group": null,
+      "source_file": "DIRECT_SYNC",
+      "_fila_fuente": 42
+    }
+  ],
+  "borradores_no_importados": [
+    {
+      "archivo": "historial-entrenamientos-ia (1).json",
+      "id": "msyxr22c-4d6cx1",
+      "fecha": "2026-08-18T17:27:35.220Z",
+      "titulo": "Sesión libre",
+      "finished": false,
+      "filas": 0,
+      "recorded_declared": 0
+    },
+    {
+      "archivo": "historial-entrenamientos-ia (1).json",
+      "id": "mt0n152u-hrygmg",
+      "fecha": "2026-08-19T22:03:02.262Z",
+      "titulo": "Día B — Cadena Posterior & Tracción / Isquios",
+      "finished": false,
+      "filas": 18,
+      "recorded_declared": 0
+    },
+    {
+      "archivo": "historial-entrenamientos-ia (1).json",
+      "id": "mt1sw8s9-k67xzz",
+      "fecha": "2026-08-20T17:34:57.662Z",
+      "titulo": "Sesión libre",
+      "finished": false,
+      "filas": 0,
+      "recorded_declared": 0
+    },
+    {
+      "archivo": "historial-entrenamientos-ia (1).json",
+      "id": "mt1uya1u-q3doq6",
+      "fecha": "2026-08-20T18:32:31.842Z",
+      "titulo": "Día C — Unilateral & Densidad / Glúteo",
+      "finished": false,
+      "filas": 18,
+      "recorded_declared": 0
+    }
+  ],
+  "alias_no_importados": [
+    {
+      "id": "reconstructed-2026-08-01-m4-b",
+      "equivale_a": "reconstructed-2026-08-01-m4-dia-b",
+      "motivo": "11 series de trabajo coincidentes; fila adicional etiquetada approximation",
+      "archivo_original": "data/fuentes/consolidacion_20261008/biblioteca/historial_entrenamientos_reconstruido_hasta_2026-08-01.json"
+    }
+  ]
+}

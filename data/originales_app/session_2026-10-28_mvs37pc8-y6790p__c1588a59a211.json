@@ -1,0 +1,277 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-28T14:45:43.702Z",
+  "session": {
+    "id": "mvs37pc8-y6790p",
+    "title": "Día C",
+    "date": "2026-10-28T12:25:13.736Z",
+    "updated_at": "2026-10-28T14:45:04.493Z",
+    "finished": true,
+    "source_note": "Día C — Nuclear 2 — Torso Pesado (Espalda y pectoral)\n\nPress convergente inclinado moderado — 3 × 6–10\nRIR 1–2 — Descanso 2–3 min\nÚltimo registro: 2026-10-19; 40 kg × 10 @1; 40 kg × 9 @1; 40 kg × 9 @0 (DHZ Chest Press banco inclinado (discos)).\nHoy: Mantener 40 kg. Objetivo: cerrar las 10 reps en todas las series (9 -> 10 reps) con RIR 1–2 para completar doble progresión antes de subir carga.\nConfiguración: DHZ Chest Press con banco integrado (discos ZIVA — respaldo posición 3 desde abajo, 2 agujeros libres debajo).\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nJalón medio o neutro — 3 × 8–12\nRIR 1–2 — Descanso 2–3 min\nÚltimo registro: 2026-10-19; 50 kg × 8 @0; 43 kg × 10 @1; 43 kg × 10 @1 (Polea alta agarre neutro/medio).\nHoy: Iniciar con 50 kg desde la primera serie. Objetivo: sumar repeticiones hacia 12 reps @1–2 con esa carga.\nConfiguración: Polea alta con agarre medio o neutro.\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nPress horizontal convergente / máquina — 3 × 8–12\nRIR 1–2 — Descanso 2–3 min\nÚltimo registro: 2026-10-19; 50 kg × 9 @1; 50 kg × 9 @1; 50 kg × 10 @0 (Máquina convergente horizontal).\nHoy: Mantener 50 kg. Objetivo: progresar a 11–12 reps por serie con RIR 1–2 hacia el tope de 12.\nConfiguración: Máquina convergente horizontal.\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nRemo con pecho apoyado (banco o máquina) — 3 × 8–12\nRIR 1–2 — Descanso 2–3 min\nÚltimo registro: 2026-10-19; 60 kg × 11 @0; 60 kg × 10 @1; 60 kg × 10 @1 (Máquina ROW pecho apoyado).\nHoy: Mantener 60 kg. Objetivo: progresar a 12 reps por serie con RIR 1–2 hacia el tope de 12.\nConfiguración: Máquina ROW con pecho apoyado (discos — asiento posición 4).\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nPullover en polea alta con brazos rectos — 2 × 10–15\nRIR 1–2 — Descanso 90–150 s\nÚltimo registro: 2026-10-19; 41 kg × 10 @1; 41 kg × 10 @1 (Polea alta brazos rectos).\nHoy: Mantener 41 kg. Objetivo: progresar a 11–12 reps por serie con RIR 1–2 hacia el tope de 15.\nConfiguración: Polea alta con brazos rectos.\nRegistra: Carga, reps, RIR y ajustes exactos si varían.",
+    "exercise_count": 5,
+    "planned_set_count": 14,
+    "recorded_set_count": 14
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Press convergente inclinado moderado",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "",
+        "machine_settings": "respaldo posici",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–3 min",
+        "coach_cue": "Hoy: Mantener 40 kg. Objetivo: cerrar las 10 reps en todas las series (9 -> 10 reps) con RIR 1–2 para completar doble progresión antes de subir carga. · Configuración: DHZ Chest Press con banco integrado (discos ZIVA — respaldo posición 3 desde abajo, 2 agujeros libres debajo). · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "No puedo poner los rir por problemas de esta versión (TN) de la aplicación, el selector no aparece correctamente. habría que arreglarlo. Junto a los botones inferiores, el primero sale cortado y ese foot donde están no se desplaza",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": ""
+          },
+          {
+            "index": 3,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Jalón medio o neutro",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable / polea",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–3 min",
+        "coach_cue": "Hoy: Iniciar con 50 kg desde la primera serie. Objetivo: sumar repeticiones hacia 12 reps @1–2 con esa carga. · Configuración: Polea alta con agarre medio o neutro. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": ""
+          },
+          {
+            "index": 3,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Press horizontal convergente / máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "tope de",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–3 min",
+        "coach_cue": "Hoy: Mantener 50 kg. Objetivo: progresar a 11–12 reps por serie con RIR 1–2 hacia el tope de 12. · Configuración: Máquina convergente horizontal. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": ""
+          },
+          {
+            "index": 3,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Remo con pecho apoyado (banco o máquina)",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "tope de · asiento posici",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–3 min",
+        "coach_cue": "Hoy: Mantener 60 kg. Objetivo: progresar a 12 reps por serie con RIR 1–2 hacia el tope de 12. · Configuración: Máquina ROW con pecho apoyado (discos — asiento posición 4). · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": ""
+          },
+          {
+            "index": 3,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": ""
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Pullover en polea alta con brazos rectos",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable / polea",
+        "machine_settings": "tope de",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 41 kg. Objetivo: progresar a 11–12 reps por serie con RIR 1–2 hacia el tope de 15. · Configuración: Polea alta con brazos rectos. · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": ""
+          }
+        ]
+      }
+    }
+  ]
+}

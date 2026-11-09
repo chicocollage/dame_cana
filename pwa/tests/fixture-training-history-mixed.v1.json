@@ -1,0 +1,63 @@
+{
+  "schema": "training_history.v1",
+  "exported_at": "2026-08-03T12:00:00.000Z",
+  "session_schema": "training_log.v1",
+  "summary": {
+    "session_count": 2,
+    "finished_session_count": 1,
+    "recorded_set_count": 2,
+    "date_from": "2026-07-20T10:00:00.000Z",
+    "date_to": "2026-08-03T10:00:00.000Z"
+  },
+  "sessions": [
+    {
+      "schema": "training_log.v1",
+      "session": {
+        "id": "history-legacy",
+        "title": "Histórica",
+        "date": "2026-07-20T10:00:00.000Z",
+        "updated_at": "2026-07-20T11:00:00.000Z",
+        "finished": true
+      },
+      "exercises": [
+        {
+          "name": "Press banca",
+          "prescription": { "sets": 1, "reps_min": 8, "reps_max": 8 },
+          "result": { "sets": [{ "load_kg": "60", "reps": "8", "rir": "2" }] }
+        }
+      ]
+    },
+    {
+      "schema": "training_log.v1",
+      "session": {
+        "id": "history-trx",
+        "title": "TRX",
+        "date": "2026-08-03T10:00:00.000Z",
+        "updated_at": "2026-08-03T11:00:00.000Z",
+        "finished": false
+      },
+      "exercises": [
+        {
+          "name": "Remo",
+          "identity": {
+            "resistance_mode": "trx",
+            "variant": "TRX",
+            "machine_settings": "Correas altura 5",
+            "load_basis": "unknown"
+          },
+          "prescription": { "sets": 1, "reps_min": 10, "reps_max": 12 },
+          "result": {
+            "sets": [
+              {
+                "load_kg": "",
+                "resistance": { "mode": "trx", "difficulty": "Pies en marca 3" },
+                "reps": "10",
+                "rir": "2"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

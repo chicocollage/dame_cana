@@ -1,0 +1,91 @@
+{
+  "schema": "dame_cana_conflictos_fuentes.v1",
+  "fecha_revision": "2026-10-10",
+  "criterio": "Conservar el valor importado del libro y el JSON original sin decidir cuál prevalece; excluir los campos afectados de comparaciones hasta aclaración documentada.",
+  "conflictos": [
+    {
+      "session_id": "TEST-SES-1786804940",
+      "campo": "fecha",
+      "valor_registro_hoja": "2026-08-14T17:00:00",
+      "valor_json_app": "2026-08-15",
+      "json_original": "data/originales_app/DIRECT_SYNC_20260815_164222.json",
+      "estado": "retirado_del_registro_activo",
+      "nota": "Sesión de prueba; excluida de análisis de rendimiento.",
+      "resolucion": "Sesión de prueba y dos series archivadas; discrepancia de fecha sin efecto en análisis activo."
+    },
+    {
+      "session_id": "msuivxba-0iepej",
+      "campo": "fecha",
+      "valor_registro_hoja": "2026-08-14T17:00:00",
+      "valor_json_app": "2026-08-15",
+      "json_original": "data/originales_app/DIRECT_SYNC_20260815_172049.json",
+      "estado": "resuelto_por_usuario",
+      "nota": "La fecha de esta sesión no debe usarse para decidir intervalos de recuperación hasta aclarar el desfase.",
+      "valor_confirmado": "2026-08-14",
+      "fecha_resolucion": "2026-10-10",
+      "fuente_resolucion": "Daniel: 1. 14/08; 2. Peso total; 3. 1 rir. Deja esas incidencias resueltas.",
+      "resolucion": "Confirmación expresa de Daniel prevalece sobre variantes anteriores. No reabrir por reimportación de esas mismas variantes.",
+      "cambios_aplicados": [
+        {
+          "id": "msuivxba-0iepej",
+          "antes": "2026-08-14",
+          "despues": "2026-08-14"
+        }
+      ]
+    },
+    {
+      "session_id": "msvek8wz-k1lvmc",
+      "set_ids": [
+        "msvek8wz-k1lvmc__E6__S1",
+        "msvek8wz-k1lvmc__E6__S2"
+      ],
+      "campo": "load_basis",
+      "valor_registro_hoja": "total_kg",
+      "valor_json_app": "per_side_kg",
+      "json_original": "data/originales_app/DIRECT_SYNC_20260816_103838.json",
+      "estado": "resuelto_por_usuario",
+      "nota": "No comparar la carga de estas series ni convertirla entre total y por lado sin confirmar la estación y la anotación original.",
+      "valor_confirmado": "total_kg",
+      "fecha_resolucion": "2026-10-10",
+      "fuente_resolucion": "Daniel: 1. 14/08; 2. Peso total; 3. 1 rir. Deja esas incidencias resueltas.",
+      "resolucion": "Confirmación expresa de Daniel prevalece sobre variantes anteriores. No reabrir por reimportación de esas mismas variantes.",
+      "cambios_aplicados": [
+        {
+          "id": "msvek8wz-k1lvmc__E6__S1",
+          "antes": "total_kg",
+          "despues": "total_kg"
+        },
+        {
+          "id": "msvek8wz-k1lvmc__E6__S2",
+          "antes": "total_kg",
+          "despues": "total_kg"
+        }
+      ]
+    },
+    {
+      "session_id": "mu18ew6n-pil4bv",
+      "set_ids": [
+        "mu18ew6n-pil4bv__E6__S3"
+      ],
+      "campo": "rir",
+      "valor_registro_hoja": null,
+      "valor_json_original": null,
+      "valor_historial_biblioteca": 1,
+      "json_original": "data/originales_app/DIRECT_SYNC_20260914_160631.json",
+      "fuente_candidata": "data/fuentes/consolidacion_20261008/biblioteca/historial-entrenamientos-ia (1).json",
+      "estado": "resuelto_por_usuario",
+      "nota": "El original y Drive tienen null; exportación posterior tiene 1. Conservar null hasta confirmar corrección; no alterar carga ni reps.",
+      "valor_confirmado": 1,
+      "fecha_resolucion": "2026-10-10",
+      "fuente_resolucion": "Daniel: 1. 14/08; 2. Peso total; 3. 1 rir. Deja esas incidencias resueltas.",
+      "resolucion": "Confirmación expresa de Daniel prevalece sobre variantes anteriores. No reabrir por reimportación de esas mismas variantes.",
+      "cambios_aplicados": [
+        {
+          "id": "mu18ew6n-pil4bv__E6__S3",
+          "antes": null,
+          "despues": 1
+        }
+      ]
+    }
+  ]
+}

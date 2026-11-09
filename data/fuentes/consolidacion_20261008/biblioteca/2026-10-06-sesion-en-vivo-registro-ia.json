@@ -1,0 +1,375 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-08T13:39:37.027Z",
+  "session": {
+    "id": "muwivoul-amrtj0",
+    "title": "Sesión en vivo",
+    "date": "2026-10-06T10:15:09.453Z",
+    "updated_at": "2026-10-08T13:37:52.441Z",
+    "finished": true,
+    "source_note": "",
+    "exercise_count": 7,
+    "planned_set_count": 19,
+    "recorded_set_count": 19
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Hip thrust en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "80",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "85",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "85",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Hack squat profunda",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "40",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Press convergente horizontal",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Jalón medio/neutro",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Elevación lateral en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "20",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "27",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "19",
+            "rir": "0"
+          }
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "Extensión de tríceps overhead en cable",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "Tipo katana a una mano",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "14",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "Crunch en cable o máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Maquina",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": null,
+        "reps_max": null,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

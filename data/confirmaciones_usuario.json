@@ -1,0 +1,441 @@
+{
+  "schema": "dame_cana_confirmaciones.v1",
+  "confirmaciones": [
+    {
+      "fecha": "2026-09-29",
+      "dato": "ultima_sesion_hasta_hoy",
+      "valor": "2026-09-26",
+      "fuente": "Daniel, conversación de migración local"
+    },
+    {
+      "fecha": "2026-09-29",
+      "dato": "captura_diaria",
+      "valor": "seguir_usando_app_actual",
+      "fuente": "Daniel, conversación de migración local"
+    },
+    {
+      "fecha": "2026-09-29",
+      "dato": "transferencia_a_carpeta",
+      "valor": "exportar_json_manualmente_desde_app",
+      "fuente": "Daniel, conversación de migración local"
+    },
+    {
+      "fecha": "2026-09-29",
+      "dato": "ubicacion_app",
+      "valor": "permanece_en_su_proyecto_actual",
+      "fuente": "Daniel, conversación de migración local"
+    },
+    {
+      "fecha": "2026-10-02",
+      "dato": "estado_previo_dia_C",
+      "valor": {
+        "agujetas": "algo de agujetas en femorales",
+        "estaciones": "usara las mismas maquinas",
+        "ultima_sesion_hasta_hoy": "2026-09-30"
+      },
+      "fuente": "Daniel, respuesta directa al preparar Dia C el 02/10/2026"
+    },
+    {
+      "fecha": "2026-10-02",
+      "dato": "base_carga_press_horizontal_20260916",
+      "valor": {
+        "session_id": "mu42lknz-kvq0wx",
+        "exercise_order": 3,
+        "carga_total_kg": 70,
+        "carga_por_lado_kg": 35
+      },
+      "fuente": "Daniel: entre ambos, al aclarar los 70 kg del press del 16/09",
+      "alcance": "Confirmacion especifica de esa exposicion; el registro y JSON original se conservan sin modificar. No extender a otras fechas."
+    },
+    {
+      "fecha": "2026-10-02",
+      "dato": "variante_pullover_20260916",
+      "valor": {
+        "session_id": "mu42lknz-kvq0wx",
+        "exercise_order": 4,
+        "load_kg_registrado": 36,
+        "ejecucion": "ambos brazos"
+      },
+      "fuente": "Daniel: con ambos brazos, al aclarar el pullover de 36 kg del 16/09",
+      "alcance": "Confirmacion especifica de esa exposicion; no identifica modelo, ajustes ni relacion de polea."
+    },
+    {
+      "fecha": "2026-10-02",
+      "dato": "brazos_en_C_20261002",
+      "valor": {
+        "molestias_codo_hombro": "sin molestias",
+        "triceps_elegido": "Katana",
+        "peticion": "ajustar el entrenamiento C anterior para añadir más brazos"
+      },
+      "fuente": "Daniel, conversación local del 02/10/2026"
+    },
+    {
+      "fecha": "2026-10-08",
+      "dato": "fecha_realizacion_ultimo_dia_A",
+      "valor": {
+        "session_id": "muwivoul-amrtj0",
+        "fecha_realizacion": "2026-10-08",
+        "fecha_exportacion_original_sesion": "2026-10-06",
+        "dia": "A"
+      },
+      "fuente": "Daniel, mensaje directo: el ultimo entrenamiento A lo he hecho hoy, dia 8",
+      "alcance": "Corrección del último A identificado; no nueva sesión ni cambio de series."
+    },
+    {
+      "fecha": "2026-10-09",
+      "dato": "aclaraciones_dia_B_20261009",
+      "valor": {
+        "fecha_prevista": [
+          "2026-10-10",
+          "2026-10-11"
+        ],
+        "peso_discos": {
+          "regla": "En Smith y otras máquinas o barras con discos, el registro expresa discos añadidos. La barra no cuenta salvo indicación expresa.",
+          "barra_incluida_por_defecto": false,
+          "suma_ambos_lados_o_por_lado": "pendiente_confirmacion"
+        },
+        "remo": {
+          "tipo": "Máquina cargada con discos",
+          "misma_estacion_y_ajustes": true,
+          "asiento_4": "Consta en registro del 30/09; igualdad de ajustes confirmada por Daniel"
+        },
+        "predicador": {
+          "tipo_literal": "Máquina con placas",
+          "bloque_selector_o_discos": "pendiente_confirmacion"
+        },
+        "gemelo": {
+          "estacion": "Máquina de sentadilla Hack",
+          "rodillas": "Piernas estiradas",
+          "misma_estacion_y_ajustes": "pendiente_confirmacion_especifica"
+        },
+        "femoral_peckdeck_extension": {
+          "mismas_estaciones_y_ajustes_que_20260930": true,
+          "kilos_seleccionados_en_bloques": "pendiente_confirmacion_explicita"
+        },
+        "recuperacion_y_molestias_actuales": "no_informadas"
+      },
+      "fuente": "Daniel, respuestas numeradas 1–6 en esta conversación",
+      "alcance": "Preparación del próximo B y regla personal de anotación de discos. No se reinterpretan retrospectivamente cargas ni se asume equivalencia entre máquinas."
+    },
+    {
+      "fecha": "2026-10-09",
+      "dato": "cierre_aclaraciones_dia_B_20261009",
+      "sustituye_pendientes_de": "aclaraciones_dia_B_20261009",
+      "valor": {
+        "fecha_prevista": [
+          "2026-10-10",
+          "2026-10-11"
+        ],
+        "discos": {
+          "cuenta": "suma de discos añadidos de ambos lados",
+          "excluye_barra_o_resistencia_base": true,
+          "salvedad": "salvo indicación expresa de inclusión",
+          "aplica_a": [
+            "Smith",
+            "remo cargado con discos",
+            "Hack usada para gemelos"
+          ]
+        },
+        "predicador": {
+          "variante": "Máquina con bloque de placas y selector",
+          "carga": "Número marcado en el bloque"
+        },
+        "femoral_peckdeck_extension": {
+          "carga": "Número marcado en el bloque",
+          "misma_estacion_y_ajustes_que_20260930": true
+        },
+        "recuperacion": {
+          "dolor_referido": "No",
+          "agujetas": "Apenas unas leves agujetas",
+          "fecha_estado": "2026-10-09"
+        }
+      },
+      "fuente": "Daniel, respuesta directa: 1 suma; 2 con selector, sí; 3 no, apenas unas leves agujetas",
+      "alcance": "Interpretación de cargas del B y regla personal de anotación; no valida otras estaciones, ajustes desconocidos, recuperación futura ni discrepancias antiguas no preguntadas."
+    },
+    {
+      "fecha": "2026-10-09",
+      "dato": "unidad_y_selector_placas_ejemplo",
+      "valor": {
+        "unidad_registro_usuario": "kg indicados junto al valor en libras en la etiqueta",
+        "declaracion_usuario": "Va de 10 en 10 libras, con incremento intermedio de 5 libras",
+        "observacion_foto": {
+          "pares_legibles_lb_kg": [
+            [
+              20,
+              9
+            ],
+            [
+              30,
+              14
+            ],
+            [
+              40,
+              18
+            ],
+            [
+              50,
+              23
+            ],
+            [
+              110,
+              50
+            ],
+            [
+              170,
+              77
+            ],
+            [
+              185,
+              84
+            ],
+            [
+              200,
+              90
+            ],
+            [
+              215,
+              97
+            ],
+            [
+              230,
+              104
+            ]
+          ],
+          "secuencia_lb_visible": [
+            20,
+            30,
+            40,
+            50,
+            65,
+            80,
+            95,
+            110,
+            170,
+            185,
+            200,
+            215,
+            230
+          ],
+          "saltos": "10 lb entre 20 y 50; 15 lb entre 50,65,80,95,110 y en tramo inferior visible",
+          "suplemento_visible": "Palanca superior marcada 0 / 5; unidad de 5 lb declarada por usuario"
+        },
+        "conversion_lb_kg": 0.45359237,
+        "incremento_5_lb_kg_aproximado": 2.27,
+        "criterio_registro": "Conservar kg de etiqueta sin reconvertir ni reemplazar cifras históricas. Si activa suplemento, conservar posición base y suplemento de 5 lb aparte; confirmar cómo anota el total antes de aplicarlo.",
+        "machine_id": null,
+        "ejercicio_de_la_foto": "pendiente_identificar"
+      },
+      "fuente": "Daniel y foto 21890.jpg, 09/10/2026",
+      "evidencia_local": "data/fotos_maquinas/2026-10-09_selector_placas_ejemplo.jpg",
+      "alcance": "Ejemplo de selector; no establece escalones idénticos, relación de polea ni equivalencia de resistencia en otras estaciones."
+    },
+    {
+      "fecha": "2026-10-09",
+      "dato": "identificacion_foto_selector_abdominales_20261009",
+      "aclara": "unidad_y_selector_placas_ejemplo",
+      "valor": {
+        "ejercicio": "Abdominales en máquina",
+        "foto": "data/fotos_maquinas/2026-10-09_selector_placas_ejemplo.jpg",
+        "identificacion_usuario": "Esa es de la de abdominales",
+        "escalones_observados": "Los escalones de 10/15 lb y suplemento de 5 lb observados corresponden a esta máquina",
+        "unidad_registro": "kg impresos en la etiqueta",
+        "anotacion_suplemento_5_lb": "pendiente_confirmar"
+      },
+      "fuente": "Daniel, mensaje directo del 09/10/2026",
+      "alcance": "Identifica el ejercicio de la foto; no asigna marca/modelo, machine_id, relación de polea ni escalones de otras máquinas."
+    },
+    {
+      "fecha": "2026-10-09",
+      "dato": "suplemento_5lb_abdominales_no_usado_20261009",
+      "aclara": "identificacion_foto_selector_abdominales_20261009",
+      "valor": {
+        "estacion": "Máquina de abdominales de la foto 21890.jpg",
+        "suplemento_5_lb_usado_hasta_la_fecha": false,
+        "interpretacion_registros_previos": "Kg impresos del bloque principal; sin añadir 5 lb",
+        "anotacion_futura_con_suplemento": "No establecida; documentar bloque base y suplemento cuando se utilice"
+      },
+      "fuente": "Daniel: aún no he usado las 5 libras intermedias",
+      "alcance": "Máquina de abdominales identificada; no modifica cargas históricas ni confirma uso en otras estaciones."
+    },
+    {
+      "fecha": "2026-10-10",
+      "dato": "resolucion_msuivxba-0iepej_fecha",
+      "session_id": "msuivxba-0iepej",
+      "campo": "fecha",
+      "set_ids": [],
+      "valor": "2026-08-14",
+      "fuente": "Daniel: 1. 14/08; 2. Peso total; 3. 1 rir. Deja esas incidencias resueltas.",
+      "alcance": "Solo los IDs y el campo indicados; originales conservados"
+    },
+    {
+      "fecha": "2026-10-10",
+      "dato": "resolucion_msvek8wz-k1lvmc_load_basis",
+      "session_id": "msvek8wz-k1lvmc",
+      "campo": "load_basis",
+      "set_ids": [
+        "msvek8wz-k1lvmc__E6__S1",
+        "msvek8wz-k1lvmc__E6__S2"
+      ],
+      "valor": "total_kg",
+      "fuente": "Daniel: 1. 14/08; 2. Peso total; 3. 1 rir. Deja esas incidencias resueltas.",
+      "alcance": "Solo los IDs y el campo indicados; originales conservados"
+    },
+    {
+      "fecha": "2026-10-10",
+      "dato": "resolucion_mu18ew6n-pil4bv_rir",
+      "session_id": "mu18ew6n-pil4bv",
+      "campo": "rir",
+      "set_ids": [
+        "mu18ew6n-pil4bv__E6__S3"
+      ],
+      "valor": 1,
+      "fuente": "Daniel: 1. 14/08; 2. Peso total; 3. 1 rir. Deja esas incidencias resueltas.",
+      "alcance": "Solo los IDs y el campo indicados; originales conservados"
+    },
+    {
+      "fecha": "2026-10-19",
+      "dato": "pesaje_matutino_renpho_20261019",
+      "valor": {
+        "peso_kg": 76.65,
+        "imc": 23.1,
+        "grasa_corporal_pct": 16.7,
+        "grasa_corporal_kg": 12.8,
+        "musculo_esqueletico_pct": 53.8,
+        "musculo_esqueletico_kg": 41.24,
+        "peso_sin_grasa_kg": 63.85,
+        "grasa_subcutanea_pct": 14.7,
+        "grasa_visceral": 6,
+        "agua_corporal_pct": 60.1,
+        "agua_corporal_kg": 46.07,
+        "masa_muscular_pct": 79.1,
+        "masa_muscular_kg": 60.63,
+        "masa_osea_pct": 4.2,
+        "masa_osea_kg": 3.22,
+        "proteina_pct": 19.0,
+        "proteina_kg": 14.56,
+        "tmb_kcal": 1760,
+        "edad_metabolica": 39,
+        "dispositivo": "Báscula Renpho",
+        "momento": "matutino"
+      },
+      "fuente": "Daniel, imagen informe de métricas app Renpho el 19/10/2026",
+      "alcance": "Pesaje matutino BIA; registro de composición corporal vigente"
+    },
+    {
+      "fecha": "2026-10-19",
+      "dato": "reclasificacion_press_inclinado_ciclo_3d_y_alta_dhz",
+      "valor": {
+        "nueva_estacion_c01": {
+          "machine_id": "GYM-PRESS-INC-DHZ-01",
+          "marca_modelo": "DHZ Fitness Chest Press multiposición con banco integrado (discos ZIVA)",
+          "ajuste_respaldo": "Posición 3 desde abajo (2 agujeros libres debajo, 4 encima)",
+          "load_basis": "total_kg (suma total de discos de ambos lados, 20+20 kg)",
+          "estreno_real": "2026-10-19 (mvf9pzi4-ncfadp: 40 kg × 10 @1, 9 @1, 9 @0)"
+        },
+        "rir_serie_3_press_horizontal": {
+          "set_id": "mvf9pzi4-ncfadp__E3__S3",
+          "load_kg": 50,
+          "reps": 10,
+          "rir_confirmado": 0
+        },
+        "reclasificacion_historica_a_press_horizontal": [
+          "msvek8wz-k1lvmc (2026-08-16)",
+          "mt5hniss-pe1osb (2026-08-23)",
+          "muij7gzj-1lj5ny (2026-09-26)"
+        ]
+      },
+      "fuente": "Daniel, notas en sesión mvf9pzi4-ncfadp, fotos de máquina DHZ y confirmación directa: 1 RIR@0, 2. suma total (19/10/2026)",
+      "alcance": "Reclasifica las exposiciones previas de press del ciclo 3D como Press horizontal convergente / máquina, confirma RIR 0 en serie 3 de C03 y establece GYM-PRESS-INC-DHZ-01 (load_basis: total_kg) como estación canónica del slot C01 en M5-5D."
+    },
+    {
+      "fecha": "2026-10-21",
+      "dato": "disponibilidad_suplementacion_proteina",
+      "valor": {
+        "disponible": false,
+        "tipo": "polvos_proteina",
+        "detalle": "Actualmente no dispone de proteína en polvo (whey u otras). Priorizar fuentes enteras/lácteos proteicos."
+      },
+      "fuente": "Daniel, chat 21/10/2026: resta los 25 gramos de whey. y apunta que actualmente no dispongo de polvos de proteina",
+      "alcance": "Excluir polvos de proteína de las sugerencias y prescripciones nutricionales hasta nueva indicación."
+    },
+    {
+      "fecha": "2026-10-21",
+      "dato": "importacion_dia_d_mvi0p79k",
+      "valor": {
+        "session_id": "mvi0p79k-or5h82",
+        "dia": "D",
+        "fecha": "2026-10-21",
+        "ejercicios_completados": 5,
+        "series_completadas": 15,
+        "nota_bulgara": "Parece que me cuesta avanzar en este ejercicio (30kg: 11@0, 10@1, 10@1)"
+      },
+      "fuente": "Daniel, subida directa de JSON en chat tras finalizar sesión en app (21/10/2026)",
+      "alcance": "Sesión canónica importada en registro local"
+    },
+    {
+      "fecha": "2026-10-22",
+      "dato": "anexo_estiramientos_en_prescripcion_sesion",
+      "valor": {
+        "activo": true,
+        "requisito": "Al pedir la rutina/sesion de entrenamiento, anexar siempre una seccion especifica de estiramientos: indicar si procede o no hacer estiramientos ese dia, y detallar el tipo exacto de estiramiento/movilidad adecuado para esa sesion (descompresion, movilidad activa o PNF en satelites)."
+      },
+      "fuente": "Daniel, chat 22/10/2026: Cuando te las pidas Anexa una parte con consejos de si debo o hacer estiramientos Y que tipo de estiramientos me aconsejas cada vez",
+      "alcance": "Regla operativa permanente para todas las entregas de sesion."
+    },
+    {
+      "fecha": "2026-10-22",
+      "dato": "alias_comida_desayuno_lo_habitual",
+      "valor": {
+        "alias": "desayuno lo habitual",
+        "composicion": "3 huevos revueltos (aprox. 3 huevos L revueltos)",
+        "hora_habitual": "08:30"
+      },
+      "fuente": "Daniel, chat 22/10/2026: 3 huevos revueltos (cuando diga desayuno lo habitual se referira a esto)",
+      "alcance": "Convencion fija para registrar desayuno habitual cuando se mencione esa frase."
+    },
+    {
+      "fecha": "2026-10-22",
+      "dato": "preferencia_legumbres_no_tradicionales",
+      "valor": {
+        "rechazo": "Legumbres en plato tradicional / cuchara / potaje / guiso",
+        "preferencias_alternativas": [
+          "hummus",
+          "pastas/arroces con carnes magras o picadas",
+          "ensaladas frias o salteados",
+          "queso fresco batido"
+        ]
+      },
+      "fuente": "Daniel, chat 22/10/2026: No me gusta las lentejas ni garbanzo de manera tradicional. Seria posible cambiarlo por hummus, o otros alimentos",
+      "alcance": "Excluir platos tradicionales de lenteja/garbanzo de las sugerencias y priorizar hummus y combinaciones palatables."
+    },
+    {
+      "fecha": "2026-10-24",
+      "dato": "dispositivo_recuperacion_mini_pistola_masaje",
+      "valor": {
+        "dispositivo": "Mini pistola de masaje percutor",
+        "adquisicion": "2026-10-24",
+        "utilidad_prevista": [
+          "Modulación neurosensorial y preparación de rango en calentamiento",
+          "Alivio de rigidez percibida y activación parasimpática post-sesión o en descanso"
+        ],
+        "criterio_operativo": "Modulador neurosensorial y de tono; no sustituye la activación térmica activa ni la cinética biológica de reparación tisular."
+      },
+      "fuente": "Daniel, chat 24/10/2026: me he comprado una mini pistola de masaje, por si nos puede servir en algun momento, lo incluyas en tus consejos, ya sea prepararse, recuperarse...",
+      "alcance": "Integrar en prescripciones/indicaciones de calentamiento, movilidad y descarga cuando haya tirantez o rigidez declarada."
+    },
+    {
+      "fecha": "2026-10-31",
+      "dato": "marco_operativo_40plus_escultura_antigravity",
+      "valor": {
+        "entorno_ia": "Operación 100% local con Antigravity / Gemini; ChatGPT y Codex quedan descartados del circuito.",
+        "estado_motivacion_adherencia": "Alta motivación y adherencia actual en gimnasio; se revoca la premisa histórica de baja motivación / rescate a 3 días y se prioriza optimizar el punto biológico estímulo-recuperación.",
+        "respuesta_observada": "Avances estéticos visibles y satisfactorios, especialmente en glúteos, con el bloque M5-5D-v1.0 actual.",
+        "rol_asesor_proporciones": "El entrenador actúa proactivamente como escultor de simetría y proporciones masculinas por ciclos rotativos (regla 70% retención activa / 30% aceleración regional), preparando transiciones de mesociclo sin alterar las sesiones activas actuales hasta decidir cambio de bloque.",
+        "fisiologia_40plus": "Aplicación estricta de Alto SFR 40+ (techo 3-6 series/grupo/sesión a RIR 1-2, RIR 0 solo última serie analítica/estable, pausa 1s en estiramiento como seguro tendinoso, orden inverso táctico ante peaje axial/articular, agarres con libertad rotacional y bolos proteicos de 40-50g / >3-4g leucina en 3-4 tomas)."
+      },
+      "fuente": "Daniel, sesión de auditoría de bases del sistema del 31/10/2026",
+      "alcance": "Directriz transversal de gobierno para prescripción diaria, nutrición y diseño de próximos mesociclos."
+    }
+  ]
+}

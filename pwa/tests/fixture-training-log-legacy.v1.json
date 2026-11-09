@@ -1,0 +1,33 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-07-20T12:00:00.000Z",
+  "session": {
+    "id": "legacy-external",
+    "title": "Sesión histórica",
+    "date": "2026-07-20T10:00:00.000Z",
+    "updated_at": "2026-07-20T11:00:00.000Z",
+    "finished": true,
+    "source_note": "# Sesión histórica"
+  },
+  "exercises": [
+    {
+      "name": "Hip thrust",
+      "prescription": {
+        "sets": 2,
+        "reps_min": 8,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "2",
+        "rest": "2 min",
+        "coach_cue": "Pausa arriba"
+      },
+      "result": {
+        "movement_notes": "Técnica estable",
+        "sets": [
+          { "index": 1, "load_kg": "100", "reps": "10", "rir": "2" },
+          { "index": 2, "load_kg": "100", "reps": "9", "rir": "1" }
+        ]
+      }
+    }
+  ]
+}

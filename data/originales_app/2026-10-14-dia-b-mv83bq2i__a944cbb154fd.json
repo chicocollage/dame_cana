@@ -1,0 +1,276 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-14T13:40:08.264Z",
+  "session": {
+    "id": "mv83bq2i-em72t9",
+    "date": "2026-10-14",
+    "title": "Día B",
+    "finished": true,
+    "exercise_count": 5,
+    "planned_set_count": 14,
+    "recorded_set_count": 11,
+    "source_note": "Sesión adaptada satélite B foco tríceps"
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Extensión de tríceps Katana unilateral",
+      "identity": {
+        "variant": "Polea",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 10,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90-120 s",
+        "coach_cue": "Hoy: 9 kg. Mantener en las 3 series si el RIR se estabiliza en 1."
+      },
+      "result": {
+        "movement_notes": "Bb",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 9.0,
+            "reps": 12,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 14.0,
+            "reps": 10,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 14.0,
+            "reps": 10,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Dual-cable cross pushdown",
+      "identity": {
+        "variant": "Polea (unilateral con posición bilateral)",
+        "load_basis": "per_side",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 10,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90-120 s",
+        "coach_cue": "Hoy: Calibrar carga inicial (~10-14 kg por polea)."
+      },
+      "result": {
+        "movement_notes": "Las dos series las hice unilateralmente manteniendo posiciones bilateral.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 9.0,
+            "reps": 11,
+            "rir": 0,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 14.0,
+            "reps": 8,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 9.0,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Curl bayesiano en cable",
+      "identity": {
+        "variant": "Polea",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 10,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90-120 s",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "Realizado en posicion número 3",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 9.0,
+            "reps": 11,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 9.0,
+            "reps": 10,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Curl predicador en máquina",
+      "identity": {
+        "variant": "Máquina",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": "Posición 4"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90-120 s",
+        "coach_cue": "Hoy: 36 kg para 3 series buscando RIR 1 estricto."
+      },
+      "result": {
+        "movement_notes": "Realizada en posición número 4. Hoy la carga baja debido a que añadí un par de series de bayesianoio",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": 36.0,
+            "reps": 12,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": 36.0,
+            "reps": 12,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": 36.0,
+            "reps": 11,
+            "rir": 1,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Elevación lateral unilateral en cable",
+      "identity": {
+        "variant": "Polea",
+        "load_basis": "total_kg",
+        "resistance_mode": "external",
+        "machine_settings": ""
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90 s",
+        "coach_cue": "Hoy: Calibrar carga inicial ligera para 12-15 reps @1."
+      },
+      "result": {
+        "movement_notes": "No lo he realizado. Informa al sistema y propon nueva ubicacion",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": null,
+            "reps": null,
+            "rir": null,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 2,
+            "load_kg": null,
+            "reps": null,
+            "rir": null,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          },
+          {
+            "index": 3,
+            "load_kg": null,
+            "reps": null,
+            "rir": null,
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

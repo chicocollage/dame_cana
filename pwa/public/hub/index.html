@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DC Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="studio-header">
+    <div class="header-inner">
+      <div class="studio-brand">
+        <div class="brand-badge">DC</div>
+        <div class="brand-titles"><h1>DC Studio</h1><span>Tu entrenamiento de un vistazo</span></div>
+      </div>
+      <div class="header-status-strip">
+        <a href="/app/index.html" class="status-pill" style="text-decoration:none;color:inherit;background:#CCFF00;">🏋️ App Entreno</a>
+        <a href="/app/checkin.html" class="status-pill" style="text-decoration:none;color:inherit;">📋 Check-in</a>
+        <a href="/app/biohacks.html" class="status-pill" style="text-decoration:none;color:inherit;">⚡ 25 Biohacks</a>
+        <div class="status-pill">Te toca: <strong id="headerNextDay">—</strong></div>
+        <div class="status-pill">Último entreno: <strong id="headerLastDate">—</strong></div>
+        <div class="status-pill"><strong id="headerTotalSeries">—</strong></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="studio-nav" aria-label="Secciones">
+    <button type="button" class="nav-tab active" data-tab="home">Inicio</button>
+    <button type="button" class="nav-tab" data-tab="progress">Progreso</button>
+    <button type="button" class="nav-tab" data-tab="history">Historial</button>
+    <button type="button" class="nav-tab" data-tab="machines">Máquinas</button>
+    <button type="button" class="nav-tab" data-tab="program">Programa</button>
+    <button type="button" class="nav-tab" data-tab="checkin">Revisión semanal</button>
+    <button type="button" class="nav-tab" data-tab="importer">Añadir sesión</button>
+  </nav>
+
+  <main class="studio-main">
+    <section id="view-home" class="view-section active"></section>
+    <section id="view-progress" class="view-section"></section>
+    <section id="view-history" class="view-section"></section>
+    <section id="view-machines" class="view-section"></section>
+    <section id="view-program" class="view-section"></section>
+    <section id="view-checkin" class="view-section"></section>
+    <section id="view-importer" class="view-section"></section>
+  </main>
+
+  <script src="data-seed.js"></script>
+  <script src="modules/metrics.js"></script>
+  <script src="modules/machines.js"></script>
+  <script src="modules/importer.js"></script>
+  <script src="hub.js"></script>
+</body>
+</html>
+

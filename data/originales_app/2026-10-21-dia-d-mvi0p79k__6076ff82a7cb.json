@@ -1,0 +1,287 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-10-21T13:49:22.861Z",
+  "session": {
+    "id": "mvi0p79k-or5h82",
+    "title": "Día D",
+    "date": "2026-10-21T11:17:09.512Z",
+    "updated_at": "2026-10-21T13:49:16.835Z",
+    "finished": true,
+    "source_note": "text\n# Día D — Nuclear 3 · Glúteo y Cadena Posterior (Unilateral y cadera)\n\nSentadilla búlgara en Smith — 3 × 8–12/lado\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-13; 30 kg × 10 @1; 30 kg × 10 @1; 30 kg × 10 @1.\nHoy: Mantener 30 kg. Objetivo hoy: progresar a 11–12 reps por serie con RIR 1–2 hacia el tope de 12.\nConfiguración: Smith (banco trasero altura tibia media – discos añadidos)\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nPeso muerto rumano en Smith (RDL) — 3 × 6–10\nRIR 1–2 · Descanso 2–4 min\nÚltimo registro: 2026-10-10; 75 kg × 10 @1; 75 kg × 10 @1; 75 kg × 9 @1.\nHoy: Mantener 75 kg. Objetivo hoy: cerrar las 10 reps en todas las series (9 -> 10 reps) con RIR 1–2 para completar doble progresión antes de subir carga.\nConfiguración: Smith (discos añadidos de ambos lados, barra no incluida)\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nCurl femoral sentado — 3 × 8–12\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-10; 29 kg × 15 @1; 29 kg × 15 @1; 29 kg × 15 @1.\nHoy: Doble progresión completada (3 series a 15, 15, 15 reps con 29 kg). Sugerencia hoy: subir al siguiente incremento disponible (+1 a +2.5 kg en placas/mancuernas, o +2.5 a +5 kg en barras/discos) y consolidar 8–10 reps @1–2.\nConfiguración: Máquina de placas con selector en kg\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nExtensión de rodilla en máquina — 2 × 12–15\nRIR 1–2 · Descanso 90–150 s\nÚltimo registro: 2026-10-10; 43 kg × 15 @1; 43 kg × 15 @1.\nHoy: Doble progresión completada (2 series a 15, 15 reps con 43 kg). Sugerencia hoy: subir al siguiente incremento disponible (+1 a +2.5 kg en placas/mancuernas, o +2.5 a +5 kg en barras/discos) y consolidar 12–14 reps @1–2.\nConfiguración: Máquina con placas – Respaldo 6\nRegistra: Carga, reps, RIR y ajustes exactos si varían.\n\nAbducción sentada en máquina — 3 × 12–15\nRIR 1–2 · Descanso 60–90 s\nÚltimo registro: 2026-10-17; 43 kg × 14 @1; 43 kg × 12 @1; 43 kg × 12 @1.\nHoy: Mantener 43 kg. Consolidar el rango 14–15 reps en todas las series manteniendo la isometría de 1–2 s en máxima apertura.\nConfiguración: Máquina sentada – Asiento pegado al respaldo\nRegistra: Carga, reps, RIR e isometría.",
+    "exercise_count": 5,
+    "planned_set_count": 15,
+    "recorded_set_count": 15
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Sentadilla búlgara en Smith",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Smith",
+        "machine_settings": "tope de · altura tibia",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–4 min",
+        "coach_cue": "Hoy: Mantener 30 kg. Objetivo hoy: progresar a 11–12 reps por serie con RIR 1–2 hacia el tope de 12. · Configuración: Smith (banco trasero altura tibia media – discos añadidos) · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "Parece que me cuesta avanzar en este ejercicio.",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "30",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "0"
+          },
+          {
+            "index": 2,
+            "load_kg": "30",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "30",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Peso muerto rumano en Smith (RDL)",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Smith",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "2–4 min",
+        "coach_cue": "Hoy: Mantener 75 kg. Objetivo hoy: cerrar las 10 reps en todas las series (9 -> 10 reps) con RIR 1–2 para completar doble progresión antes de subir carga. · Configuración: Smith (discos añadidos de ambos lados, barra no incluida) · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "70",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Curl femoral sentado",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Mancuernas",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Doble progresión completada (3 series a 15, 15, 15 reps con 29 kg). Sugerencia hoy: subir al siguiente incremento disponible (+1 a +2.5 kg en placas/mancuernas, o +2.5 a +5 kg en barras/discos) y consolidar 8–10 reps @1–2. · Configuración: Máquina de placas con selector en kg · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "0"
+          },
+          {
+            "index": 3,
+            "load_kg": "36",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Extensión de rodilla en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Mancuernas",
+        "machine_settings": "Respaldo 6",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Doble progresión completada (2 series a 15, 15 reps con 43 kg). Sugerencia hoy: subir al siguiente incremento disponible (+1 a +2.5 kg en placas/mancuernas, o +2.5 a +5 kg en barras/discos) y consolidar 12–14 reps @1–2. · Configuración: Máquina con placas – Respaldo 6 · Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "11",
+            "rir": "0"
+          },
+          {
+            "index": 2,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "50",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Abducción sentada en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Asiento pegado · respaldo.",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1–2",
+        "rest": "60–90 s",
+        "coach_cue": "Hoy: Mantener 43 kg. Consolidar el rango 14–15 reps en todas las series manteniendo la isometría de 1–2 s en máxima apertura. · Configuración: Máquina sentada – Asiento pegado al respaldo · Registra: Carga, reps, RIR e isometría."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "index": 2,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "index": 3,
+            "load_kg": "43",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

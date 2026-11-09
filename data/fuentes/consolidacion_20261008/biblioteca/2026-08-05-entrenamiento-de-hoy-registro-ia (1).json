@@ -1,0 +1,149 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-08-05T10:17:10.339Z",
+  "session": {
+    "id": "msfxj864-pqo9dw",
+    "title": "Entrenamiento de hoy",
+    "date": "2026-08-05T10:13:52.540Z",
+    "updated_at": "2026-08-05T10:16:59.941Z",
+    "finished": true,
+    "source_note": "Día A1 — Glúteo, femoral y abdomen\nHip thrust en máquina — 2 × 6–10\nRIR 2–3 · Descanso 2–4 min\nSi es la misma máquina y montaje, 60 kg es la referencia previa; realiza antes 1–2 aproximaciones.\nCurl femoral sentado — 2 × 8–15\nRIR 2 · Descanso 90–150 s\nReferencia: 23 kg, siempre que sea la misma máquina y ajustes.\nGemelo con rodilla extendida — 1–2 × 8–15\nRIR 1–2 · Descanso 90–150 s\nReferencia: 40 kg si coincide la variante del sábado.\nCrunch cargado — 2 × 8–15\nRIR 2 · Descanso 90–150 s",
+    "exercise_count": 3,
+    "planned_set_count": 6,
+    "recorded_set_count": 6
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Hip thrust en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 6,
+        "reps_max": 10,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "No focus total (por Félix)",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "index": 2,
+            "load_kg": "60",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Curl femoral sentado",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Technogym",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 8,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "23",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "index": 2,
+            "load_kg": "23",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "12",
+            "rir": "2"
+          }
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Crunch cargado",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "",
+        "machine_settings": "",
+        "load_basis": "unknown"
+      },
+      "prescription": {
+        "sets": 2,
+        "reps_min": 8,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "",
+        "rest": "",
+        "coach_cue": ""
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {
+            "index": 1,
+            "load_kg": "0",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": ""
+          },
+          {
+            "index": 2,
+            "load_kg": "0",
+            "resistance": {
+              "mode": "external",
+              "difficulty": ""
+            },
+            "reps": "15",
+            "rir": ""
+          }
+        ]
+      }
+    }
+  ]
+}
