@@ -1,0 +1,8168 @@
+[
+  {
+    "id": "hist-2026-11-05-C",
+    "title": "Día C — Nuclear 2 · Torso Pesado (Espalda y pectoral)",
+    "date": "2026-11-05",
+    "updatedAt": "2026-11-05T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Press convergente inclinado moderado",
+        "catalogId": "E035",
+        "slotId": "C01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "C02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "2"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Primera vez con pausa en estiramiento. Quizás por eso bajada en número de repeticiones",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-11-03-A",
+    "title": "Día A — Nuclear 1 · Glúteo y Cuádriceps (Cadera y rodilla pesadas)",
+    "date": "2026-11-03",
+    "updatedAt": "2026-11-03T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina Matrix (G04-V1)",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Abriendo sesión con Hack. Control total y sin asfixia aplicando Valsalva y tiras nasales.",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "A01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "90",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "90",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "90",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "A03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Pausa isométrica al final (en máxima abducción)",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "17",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "A04",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina Hack",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "A05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "13",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-30-E",
+    "title": "Día E",
+    "date": "2026-10-30",
+    "updatedAt": "2026-10-30T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Curl predicador en cable o máquina",
+        "catalogId": "E044",
+        "slotId": "E01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina de palanca con carga por discos lateral",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Nueva máquina con carga por discos en un lateral.",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "25",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "25",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Pressdown en cable",
+        "catalogId": "E043",
+        "slotId": "E02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea con cuerda bilateral",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Hecha con cuerda, con las dos manos",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl bayesiano en cable",
+        "catalogId": "E045",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl martillo en cable o mancuernas",
+        "catalogId": "E046",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea unilateral con cuerda",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "24",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "E03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "13",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-29-D",
+    "title": "Día D — Nuclear 3 · Glúteo y Cadena Posterior (Unilateral y cadera)",
+    "date": "2026-10-29",
+    "updatedAt": "2026-10-29T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "D01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "Con tira de expansión nasal.",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "D02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "D03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "D04",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción unilateral en cable",
+        "catalogId": "E016",
+        "slotId": "D05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-28-C",
+    "title": "Día C — Nuclear 2 — Torso Pesado (Espalda y pectoral)",
+    "date": "2026-10-28",
+    "updatedAt": "2026-10-28T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Press convergente inclinado moderado",
+        "catalogId": "E035",
+        "slotId": "C01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "DHZ Chest Press banco inclinado (discos)",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "C02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-25-A",
+    "title": "Día A - Nuclear 1 / Glúteo y Cuádriceps",
+    "date": "2026-10-25",
+    "updatedAt": "2026-10-25T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "G04-V1",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "45",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "45",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "A03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Placa real 43 kg (la torre salta 36 -> 43 -> 50 kg).",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "A05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-23-E",
+    "title": "Día E – Satélite 2 – Brazos, Deltoides Posterior y Detalle",
+    "date": "2026-10-23",
+    "updatedAt": "2026-10-23T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Curl predicador en cable o máquina",
+        "catalogId": "E044",
+        "slotId": "E01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Pressdown en cable",
+        "catalogId": "E043",
+        "slotId": "E02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "E03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "La próxima placa 36 y la siguiente 41",
+        "entries": [
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "16",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "E05",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "30",
+            "rir": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-21-D",
+    "title": "Día D",
+    "date": "2026-10-21",
+    "updatedAt": "2026-10-21T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "D01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "0"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "D02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "D03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "D04",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "0"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-20-B",
+    "title": "Día B",
+    "date": "2026-10-20",
+    "updatedAt": "2026-10-20T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "B01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea / cable con cuerda / Tipo katana unilateral",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Protocolo remolacha + bicarbonato + respiración parasimpática.",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl bayesiano en cable",
+        "catalogId": "E045",
+        "slotId": "B02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea baja (posición 3) con maneral D / Brazo detrás del torso",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "B03",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea a altura de rodilla / Unilateral con maneral o muñequera / Cable por detrás del torso",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Reverse crunch controlado",
+        "catalogId": "E054",
+        "slotId": "B04",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "bodyweight",
+          "variant": "Banco inclinado, con rotación lateral alterada y espiracion forzada en bloqueo arriba",
+          "settings": "",
+          "loadBasis": "unknown",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "6",
+            "rir": "1"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "6",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Pressdown en cable",
+        "catalogId": "E043",
+        "slotId": "",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cruces en X en centro de dos poleas (Dual-cable cross pushdown)",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "B03",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina de elevación lateral",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Apertura inversa en cable",
+        "catalogId": "E023",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cruce de poleas para deltoides posterior",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "1"
+          },
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Forward-Lean Shrug en Smith",
+        "catalogId": "E056",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Encogimientos en Smith con inclinación hacia delante",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-19-C",
+    "title": "Día C",
+    "date": "2026-10-19",
+    "updatedAt": "2026-10-19T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Press convergente inclinado moderado",
+        "catalogId": "E035",
+        "slotId": "C01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "DHZ Chest Press banco inclinado (discos)",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "DHZ Chest Press banco inclinado (discos)",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "C02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea alta agarre neutro/medio",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "0"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina convergente horizontal",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina ROW pecho apoyado",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "0"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea alta brazos rectos",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "41",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "41",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-17-A",
+    "title": "Día A — Nuclear 1 · Glúteo y Cuádriceps (Cadera y rodilla pesadas)",
+    "date": "2026-10-17",
+    "updatedAt": "2026-10-17T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "A01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "90",
+            "difficulty": "",
+            "reps": "7",
+            "rir": "1"
+          },
+          {
+            "load": "90",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "90",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina Matrix",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "he disminuido repeticiones porque he hecho una parada de 0,5 s abajo.",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "A03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Isometría marcada de 2 s.",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "A05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "2"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-15-B",
+    "title": "Día B — Satélite de Detalle, Congestión & Movilidad",
+    "date": "2026-10-15",
+    "updatedAt": "2026-10-15T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "B03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "No hice el agarre por detrás, si no por delante. Corregiré la próxima",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          },
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Kickback diagonal de glúteo en polea baja",
+        "catalogId": "E058",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "El agarre lo tomó con las palmas empujando el agarre (pulgar abajo), con rotación interna del brazo",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de cadera en cable",
+        "catalogId": "E014",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Mancuernas",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Forward-Lean Shrug en Smith",
+        "catalogId": "E056",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Forward-Lean Shrug en Smith con inclinación hacia delante.",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-14-B",
+    "title": "Día B",
+    "date": "2026-10-14",
+    "updatedAt": "2026-10-14T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "B01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Bb",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Dual-cable cross pushdown",
+        "catalogId": "E057",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea (unilateral con posición bilateral)",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Las dos series las hice unilateralmente manteniendo posiciones bilateral.",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "0"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl bayesiano en cable",
+        "catalogId": "E045",
+        "slotId": "B02",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "Realizado en posicion número 3",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl predicador en cable o máquina",
+        "catalogId": "E044",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Realizada en posición número 4. Hoy la carga baja debido a que añadí un par de series de bayesianoio",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-13-C",
+    "title": "Día C",
+    "date": "2026-10-13",
+    "updatedAt": "2026-10-13T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Última serie rest pause 15segundo,",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "41",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "1"
+          },
+          {
+            "load": "24",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Low row máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Low row máquina (foto)",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-10-B",
+    "title": "Día B · Cadena posterior y torso",
+    "date": "2026-10-10",
+    "updatedAt": "2026-10-10T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "75",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "75",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "75",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Con agarre mano invertido (pulgar abajo)",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl predicador en cable o máquina",
+        "catalogId": "E044",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-08-A",
+    "title": "Sesión en vivo",
+    "date": "2026-10-08",
+    "updatedAt": "2026-10-08T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "A01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "85",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "85",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Tipo katana a una mano",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "A05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-10-02-C",
+    "title": "Día C · Glúteos y brazos",
+    "date": "2026-10-02",
+    "updatedAt": "2026-10-02T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "2"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "2"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "9",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Curl bayesiano en cable",
+        "catalogId": "E045",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "19",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-09-30-B",
+    "title": "Día B",
+    "date": "2026-09-30",
+    "updatedAt": "2026-09-30T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "16",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "55",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Curl predicador en cable o máquina",
+        "catalogId": "E044",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-09-26-A",
+    "title": "Día A",
+    "date": "2026-09-26",
+    "updatedAt": "2026-09-26T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "A01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina Matrix",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "16",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "16",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "A05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-09-16-C",
+    "title": "Día C",
+    "date": "2026-09-16",
+    "updatedAt": "2026-09-16T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "16",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "13",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "0"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "16",
+            "rir": "2"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-09-14-B",
+    "title": "Día B",
+    "date": "2026-09-14",
+    "updatedAt": "2026-09-14T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "1",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "1",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "3"
+          },
+          {
+            "load": "55",
+            "difficulty": "",
+            "reps": "13",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-09-12-A",
+    "title": "Día A",
+    "date": "2026-09-12",
+    "updatedAt": "2026-09-12T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "A01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "2"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "2"
+          },
+          {
+            "load": "85",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina Matrix",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Dejando en tensión una mano",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "18",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "A05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-09-08-A",
+    "title": "unilateral + abducción + torso + pantorrilla",
+    "date": "2026-09-08",
+    "updatedAt": "2026-09-08T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "A03",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "17",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "No la hice, apunto el peso de referencia anterior",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-09-04-B",
+    "title": "Día B",
+    "date": "2026-09-04",
+    "updatedAt": "2026-09-04T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "55",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "55",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl predicador en cable o máquina",
+        "catalogId": "E044",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Mancuernas",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "0"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "14",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          },
+          {
+            "load": "80",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-31-A",
+    "title": "Día A — Cadena Anterior & Empuje / Glúteo",
+    "date": "2026-08-31",
+    "updatedAt": "2026-08-31T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "A01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Es La primera vez que tengo que sustitutir la máquina por barra",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "45",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "45",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "16",
+            "rir": "0"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-27-B",
+    "title": "Día B",
+    "date": "2026-08-27",
+    "updatedAt": "2026-08-27T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl predicador en cable o máquina",
+        "catalogId": "E044",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "10",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "10",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-27-C",
+    "title": "Día C",
+    "date": "2026-08-27",
+    "updatedAt": "2026-08-27T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Las cargas anteriores registrada son dobles a las que aparecen",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "0"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "1 mano",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "9",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "0"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "0"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-23-A",
+    "title": "Día A",
+    "date": "2026-08-23",
+    "updatedAt": "2026-08-23T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "A01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Parece que controlo mejor el movimiento",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "2"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina Matrix",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "7",
+            "rir": "0"
+          },
+          {
+            "load": "70",
+            "difficulty": "",
+            "reps": "6",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "13",
+            "rir": "2"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "0"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "18",
+            "rir": "0"
+          },
+          {
+            "load": "18",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "A un mano, con cuerda",
+        "entries": [
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "A05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Cadencia estricta",
+        "entries": [
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "",
+            "rir": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-21-C",
+    "title": "Día C",
+    "date": "2026-08-21",
+    "updatedAt": "2026-08-21T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "3"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "43",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Cable / polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "3"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "27",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "30",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          },
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-18-B",
+    "title": "Día B",
+    "date": "2026-08-18",
+    "updatedAt": "2026-08-18T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "15",
+            "rir": ""
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "15",
+            "rir": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-17-B",
+    "title": "Día B",
+    "date": "2026-08-17",
+    "updatedAt": "2026-08-17T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-16-A",
+    "title": "Día A",
+    "date": "2026-08-16",
+    "updatedAt": "2026-08-16T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "A01",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Aún puedo mejorar tecnica",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "1"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Hack squat profunda",
+        "catalogId": "E004",
+        "slotId": "A02",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina Matrix",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Creo que puedo con más, aunque al bajar cuesta más",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Convergente",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Creo que en la próxima podre subir",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "50",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "1"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Jalón medio/neutro",
+        "catalogId": "E026",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "11",
+            "rir": "1"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "Hice una serie con polea a 5 kilos, voy sobrado pero la siguiente placa es demasiado ya para más de 4 re",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "1"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Extensión de tríceps overhead en cable",
+        "catalogId": "E042",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea con cuerda (1 mano)",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "18",
+            "difficulty": "",
+            "reps": "7",
+            "rir": "0"
+          },
+          {
+            "load": "14",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "A05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Maquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "No me convence demasiado la máquina (adjuntaré foto)",
+        "entries": [
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "29",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-14-A",
+    "title": "Día extra",
+    "date": "2026-08-14",
+    "updatedAt": "2026-08-14T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Apertura en cable",
+        "catalogId": "E041",
+        "slotId": "",
+        "sets": 4,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Autocarga",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-12-C",
+    "title": "Día C — Glúteo y torso",
+    "date": "2026-08-12",
+    "updatedAt": "2026-08-12T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina de abducción sentada",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Press convergente horizontal",
+        "catalogId": "E038",
+        "slotId": "C03",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina convergente",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Se añadió una tercera serie por gusto. Tercera serie: 20 kg × 8; RIR no registrado.",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "1"
+          },
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "8",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Jalón con brazos rectos (Pullover cable)",
+        "catalogId": "E030",
+        "slotId": "C05",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Polea",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Se realizaron 2 series. Primera: 32 kg × 12 @2. Segunda confirmada como realizada, pero carga/repeticiones/RIR no registrados.",
+        "entries": [
+          {
+            "load": "32",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "",
+            "rir": ""
+          }
+        ]
+      },
+      {
+        "name": "Elevación lateral unilateral en cable",
+        "catalogId": "E020",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "5",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          },
+          {
+            "load": "5",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "C04",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Pecho apoyado",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "RIR no registrado.",
+        "entries": [
+          {
+            "load": "7.5",
+            "difficulty": "",
+            "reps": "10",
+            "rir": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-05-s35",
+    "title": "Día A1 — Glúteo, femoral y abdomen",
+    "date": "2026-08-05",
+    "updatedAt": "2026-08-05T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "No focus total (por Félix)",
+        "entries": [
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Technogym",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Crunch en cable o máquina",
+        "catalogId": "E053",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "El archivo original exportó load_kg='0' en ambas series; no se reinterpreta como autocarga ni como carga externa distinta. RIR no registrado.",
+        "entries": [
+          {
+            "load": "0",
+            "difficulty": "",
+            "reps": "15",
+            "rir": ""
+          },
+          {
+            "load": "0",
+            "difficulty": "",
+            "reps": "15",
+            "rir": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-08-01-B",
+    "title": "Día B — Cadena posterior y torso",
+    "date": "2026-08-01",
+    "updatedAt": "2026-08-01T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Peso muerto rumano en Smith",
+        "catalogId": "E011",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith/multipower",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Cuádriceps demasiado presentes; ligera carga lumbar transitoria al terminar; técnica y recorrido por recalibrar.",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "4"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Curl femoral sentado",
+        "catalogId": "E048",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina de curl femoral sentado",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Remo convergente con pecho apoyado",
+        "catalogId": "E031",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina con pecho apoyado",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Ajustes y encaje de la máquina pendientes.",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "3"
+          },
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "8",
+            "rir": "3"
+          }
+        ]
+      },
+      {
+        "name": "Peck-deck inverso",
+        "catalogId": "E022",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Peck-deck inverso",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "3"
+          },
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "3"
+          }
+        ]
+      },
+      {
+        "name": "Curl predicador en cable o máquina",
+        "catalogId": "E044",
+        "slotId": "",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina de curl predicador",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "23×10 @4 se realizó como aproximación y no se cuenta como serie de trabajo. Serie de trabajo válida: 36×10 @2.",
+        "entries": [
+          {
+            "load": "36",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Extensión de rodilla",
+        "catalogId": "E047",
+        "slotId": "",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina de extensión de rodilla",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Incluyó una pausa; próxima exposición debe ser continua para comparabilidad.",
+        "entries": [
+          {
+            "load": "23",
+            "difficulty": "",
+            "reps": "13",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Elevación de talones de pie en máquina",
+        "catalogId": "E050",
+        "slotId": "",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Variante/máquina no registrada",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Rango completo; variante exacta pendiente.",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "15",
+            "rir": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hist-2026-07-29-s37",
+    "title": "Sesión exploratoria de gimnasio",
+    "date": "2026-07-29",
+    "updatedAt": "2026-07-29T20:00:00Z",
+    "finished": true,
+    "sourceNote": "Historial real Danié",
+    "exercises": [
+      {
+        "name": "Hip thrust en máquina",
+        "catalogId": "E001",
+        "slotId": "",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina hip thrust/glute drive con discos",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Primera referencia; ajustes y contabilización exacta de la carga no registrados.",
+        "entries": [
+          {
+            "load": "40",
+            "difficulty": "",
+            "reps": "12",
+            "rir": "2"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "2"
+          },
+          {
+            "load": "60",
+            "difficulty": "",
+            "reps": "9",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Bulgarian split squat en Smith",
+        "catalogId": "E008",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Smith/multipower",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "Dos series por lado. Peso efectivo de la guía y montaje pendientes.",
+        "entries": [
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0-1"
+          },
+          {
+            "load": "20",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "0-1"
+          }
+        ]
+      },
+      {
+        "name": "Kickback diagonal de glúteo en polea baja",
+        "catalogId": "E058",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Matrix Rear Kick; identificación parcial",
+          "settings": "",
+          "loadBasis": "per_side_kg",
+          "detected": true
+        },
+        "note": "Dos series por lado; carga no registrada; dificultad para localizar el glúteo.",
+        "entries": [
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "10",
+            "rir": "2"
+          }
+        ]
+      },
+      {
+        "name": "Abducción de cadera en máquina",
+        "catalogId": "E015",
+        "slotId": "",
+        "sets": 1,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Máquina de abducción sentada",
+          "settings": "",
+          "loadBasis": "total_kg",
+          "detected": true
+        },
+        "note": "Observación parcial: carga referida entre 18 y 22 kg; 20 repeticiones @0. Número real de series y correspondencia carga-serie no documentados.",
+        "entries": [
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "20",
+            "rir": "0"
+          }
+        ]
+      },
+      {
+        "name": "Hiperextensión a 45º sesgada a glúteo",
+        "catalogId": "E013",
+        "slotId": "",
+        "sets": 2,
+        "repsMin": 8,
+        "repsMax": 12,
+        "perSide": false,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "",
+        "identity": {
+          "resistanceMode": "external",
+          "variant": "Banco 45°",
+          "settings": "",
+          "loadBasis": "added_kg",
+          "detected": true
+        },
+        "note": "Dos series por lado; RIR no registrado.",
+        "entries": [
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "20",
+            "rir": ""
+          },
+          {
+            "load": "",
+            "difficulty": "",
+            "reps": "20",
+            "rir": ""
+          }
+        ]
+      }
+    ]
+  }
+]

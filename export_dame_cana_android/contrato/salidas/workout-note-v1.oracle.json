@@ -1,0 +1,5236 @@
+{
+  "01-header-hyphen.txt": {
+    "input": "Día B - Espalda + hombro\n\nRemo sentado — 3 × 6–10\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día B",
+        "focusText": "Espalda + hombro",
+        "rawHeader": "Día B - Espalda + hombro"
+      },
+      "exercises": [
+        {
+          "name": "Remo sentado",
+          "normalizedName": "remo sentado",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 6,
+            "repsMax": 10,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Remo sentado — 3 × 6–10",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Remo sentado — 3 × 6–10\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día B - Espalda + hombro",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Remo sentado — 3 × 6–10",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día B - Espalda + hombro\n\nRemo sentado — 3 × 6–10\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Remo sentado",
+          "sets": 3,
+          "repsMin": 6,
+          "repsMax": 10,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "02-header-leg.txt": {
+    "input": "Día C — Pierna\n\nPrensa — 2 × 12\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día C",
+        "focusText": "Pierna",
+        "rawHeader": "Día C — Pierna"
+      },
+      "exercises": [
+        {
+          "name": "Prensa",
+          "normalizedName": "prensa",
+          "prescription": {
+            "sets": 2,
+            "repsMin": 12,
+            "repsMax": 12,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Prensa — 2 × 12",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Prensa — 2 × 12\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día C — Pierna",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Prensa — 2 × 12",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día C — Pierna\n\nPrensa — 2 × 12\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Prensa",
+          "sets": 2,
+          "repsMin": 12,
+          "repsMax": 12,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "03-spec-unicode-range.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 6–10\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 6,
+            "repsMax": 10,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 6–10",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 6–10\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 6–10",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 6–10\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 6,
+          "repsMax": 10,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "04-spec-ascii-range.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 x 6-10\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 6,
+            "repsMax": 10,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 x 6-10",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 x 6-10\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 x 6-10",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 x 6-10\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 6,
+          "repsMax": 10,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "05-spec-uppercase-x.txt": {
+    "input": "Día A — Prueba\n\nPress — 3X6-10\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 6,
+            "repsMax": 10,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3X6-10",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3X6-10\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3X6-10",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3X6-10\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 6,
+          "repsMax": 10,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "06-spec-single.txt": {
+    "input": "Día A — Prueba\n\nPress — 3×8\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3×8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3×8\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3×8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3×8\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "07-rir-unicode-range.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRIR 1–2\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": 1,
+            "targetRirMax": 2,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "RIR 1–2",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRIR 1–2\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "RIR 1–2",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRIR 1–2\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "08-rir-ascii-range.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRIR 1-2\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": 1,
+            "targetRirMax": 2,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "RIR 1-2",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRIR 1-2\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "RIR 1-2",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRIR 1-2\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "09-rir-single.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRIR 2\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": 2,
+            "targetRirMax": 2,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "RIR 2",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRIR 2\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "RIR 2",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRIR 2\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "10-rir-colon.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRIR: 2\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": 2,
+            "targetRirMax": 2,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "RIR: 2",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRIR: 2\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "RIR: 2",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRIR: 2\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "11-rest-unicode-range.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 3–4 min\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": 180,
+            "restSecondsMax": 240,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Descanso 3–4 min",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nDescanso 3–4 min\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Descanso 3–4 min",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 3–4 min\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "12-rest-ascii-range.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 3-4 min\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": 180,
+            "restSecondsMax": 240,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Descanso 3-4 min",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nDescanso 3-4 min\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Descanso 3-4 min",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 3-4 min\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "13-rest-single-min.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 3 min\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": 180,
+            "restSecondsMax": 180,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Descanso 3 min",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nDescanso 3 min\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Descanso 3 min",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 3 min\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "14-rest-90s.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 90 s\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": 90,
+            "restSecondsMax": 90,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Descanso 90 s",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nDescanso 90 s\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Descanso 90 s",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 90 s\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "15-rest-120s.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 120 s\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": 120,
+            "restSecondsMax": 120,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Descanso 120 s",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nDescanso 120 s\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Descanso 120 s",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nDescanso 120 s\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "16-record-at.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60 kg × 10 @2, el 05/08\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2, el 05/08",
+            "rawDate": "05/08",
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Último registro: 60 kg × 10 @2, el 05/08",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nÚltimo registro: 60 kg × 10 @2, el 05/08\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Último registro: 60 kg × 10 @2, el 05/08",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60 kg × 10 @2, el 05/08\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "17-record-tight.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60kg x10 @2\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60kg x10 @2",
+            "rawDate": null,
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60kg x10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Último registro: 60kg x10 @2",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nÚltimo registro: 60kg x10 @2\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Último registro: 60kg x10 @2",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60kg x10 @2\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "18-record-rir.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60 kg × 10 RIR 2\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 RIR 2",
+            "rawDate": null,
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 RIR 2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Último registro: 60 kg × 10 RIR 2",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nÚltimo registro: 60 kg × 10 RIR 2\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Último registro: 60 kg × 10 RIR 2",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60 kg × 10 RIR 2\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "19-record-at-one.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60 kg x 10 @1\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg x 10 @1",
+            "rawDate": null,
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 1,
+                "rawText": "60 kg x 10 @1",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Último registro: 60 kg x 10 @1",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nÚltimo registro: 60 kg x 10 @1\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Último registro: 60 kg x 10 @1",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60 kg x 10 @1\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "20-record-multiple.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60 kg × 10 @2 · 60 kg × 10 @2\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2 · 60 kg × 10 @2",
+            "rawDate": null,
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              },
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Último registro: 60 kg × 10 @2 · 60 kg × 10 @2",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nÚltimo registro: 60 kg × 10 @2 · 60 kg × 10 @2\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Último registro: 60 kg × 10 @2 · 60 kg × 10 @2",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nÚltimo registro: 60 kg × 10 @2 · 60 kg × 10 @2\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "21-date-short.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/08\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2, el 05/08",
+            "rawDate": "05/08",
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: 60 kg × 10 @2, el 05/08",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/08\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: 60 kg × 10 @2, el 05/08",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/08\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "22-date-one-digit.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 5/8\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2, el 5/8",
+            "rawDate": "5/8",
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: 60 kg × 10 @2, el 5/8",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 5/8\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: 60 kg × 10 @2, el 5/8",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 5/8\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "23-date-with-year.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/08/2026\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2, el 05/08/2026",
+            "rawDate": "05/08/2026",
+            "dateIso": "2026-08-05",
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: 60 kg × 10 @2, el 05/08/2026",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/08/2026\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: 60 kg × 10 @2, el 05/08/2026",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/08/2026\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "24-none-comparable.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: ninguno comparable.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: ninguno comparable.",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro previo: ninguno comparable.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: ninguno comparable.",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: ninguno comparable.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "25-no-tengo.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro comparable: no tengo.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro comparable: no tengo.",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro comparable: no tengo.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro comparable: no tengo.",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro comparable: no tengo.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "26-ninguno.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: ninguno.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: ninguno.",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro previo: ninguno.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: ninguno.",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: ninguno.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "27-noncomparable-press.txt": {
+    "input": "Día A — Prueba\n\nPress inclinado — 3 × 8\nEl press horizontal anterior fue a 20 kg, pero esta máquina tiene otra geometría y no es comparable.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press inclinado",
+          "normalizedName": "press inclinado",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [
+            {
+              "rawText": "El press horizontal anterior fue a 20 kg, pero esta máquina tiene otra geometría y no es comparable.",
+              "comparable": false,
+              "rawDate": null,
+              "dateIso": null,
+              "explicitLoad": {
+                "value": 20,
+                "unit": "kg"
+              }
+            }
+          ],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press inclinado — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "El press horizontal anterior fue a 20 kg, pero esta máquina tiene otra geometría y no es comparable.",
+              "status": "parsed",
+              "category": "historical-mention",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press inclinado — 3 × 8\nEl press horizontal anterior fue a 20 kg, pero esta máquina tiene otra geometría y no es comparable.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press inclinado — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "El press horizontal anterior fue a 20 kg, pero esta máquina tiene otra geometría y no es comparable.",
+          "status": "parsed",
+          "category": "historical-mention",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress inclinado — 3 × 8\nEl press horizontal anterior fue a 20 kg, pero esta máquina tiene otra geometría y no es comparable.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press inclinado",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "28-noncomparable-machine.txt": {
+    "input": "Día A — Prueba\n\nRemo en máquina — 3 × 8\nEn otra máquina hice 70 kg, pero no es comparable.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Remo en máquina",
+          "normalizedName": "remo en maquina",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [
+            {
+              "rawText": "En otra máquina hice 70 kg, pero no es comparable.",
+              "comparable": false,
+              "rawDate": null,
+              "dateIso": null,
+              "explicitLoad": {
+                "value": 70,
+                "unit": "kg"
+              }
+            }
+          ],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Remo en máquina — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "En otra máquina hice 70 kg, pero no es comparable.",
+              "status": "parsed",
+              "category": "historical-mention",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Remo en máquina — 3 × 8\nEn otra máquina hice 70 kg, pero no es comparable.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Remo en máquina — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "En otra máquina hice 70 kg, pero no es comparable.",
+          "status": "parsed",
+          "category": "historical-mention",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nRemo en máquina — 3 × 8\nEn otra máquina hice 70 kg, pero no es comparable.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Remo en máquina",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "29-partial-lost-load.txt": {
+    "input": "Día A — Prueba\n\nJalón — 3 × 8\nRegistro previo: lo hiciste el 03/08 pero se perdió la carga.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Jalón",
+          "normalizedName": "jalon",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "lo hiciste el 03/08 pero se perdió la carga.",
+            "rawDate": "03/08",
+            "dateIso": null,
+            "sets": [],
+            "status": "partial"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Jalón — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: lo hiciste el 03/08 pero se perdió la carga.",
+              "status": "partial",
+              "category": "comparable-record",
+              "reason": "incomplete-record"
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Jalón — 3 × 8\nRegistro previo: lo hiciste el 03/08 pero se perdió la carga.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Jalón — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: lo hiciste el 03/08 pero se perdió la carga.",
+          "status": "partial",
+          "category": "comparable-record",
+          "reason": "incomplete-record"
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nJalón — 3 × 8\nRegistro previo: lo hiciste el 03/08 pero se perdió la carga.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Jalón",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "30-partial-no-reps.txt": {
+    "input": "Día A — Prueba\n\nJalón — 3 × 8\nRegistro previo: 60 kg, pero no constan reps ni RIR.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Jalón",
+          "normalizedName": "jalon",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg, pero no constan reps ni RIR.",
+            "rawDate": null,
+            "dateIso": null,
+            "sets": [],
+            "status": "partial"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Jalón — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: 60 kg, pero no constan reps ni RIR.",
+              "status": "partial",
+              "category": "comparable-record",
+              "reason": "incomplete-record"
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Jalón — 3 × 8\nRegistro previo: 60 kg, pero no constan reps ni RIR.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Jalón — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: 60 kg, pero no constan reps ni RIR.",
+          "status": "partial",
+          "category": "comparable-record",
+          "reason": "incomplete-record"
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nJalón — 3 × 8\nRegistro previo: 60 kg, pero no constan reps ni RIR.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Jalón",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "31-partial-no-series.txt": {
+    "input": "Día A — Prueba\n\nJalón — 3 × 8\nRegistro previo: consta el entrenamiento pero faltan los datos de las series.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Jalón",
+          "normalizedName": "jalon",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "consta el entrenamiento pero faltan los datos de las series.",
+            "rawDate": null,
+            "dateIso": null,
+            "sets": [],
+            "status": "partial"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Jalón — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: consta el entrenamiento pero faltan los datos de las series.",
+              "status": "partial",
+              "category": "comparable-record",
+              "reason": "incomplete-record"
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Jalón — 3 × 8\nRegistro previo: consta el entrenamiento pero faltan los datos de las series.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Jalón — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: consta el entrenamiento pero faltan los datos de las series.",
+          "status": "partial",
+          "category": "comparable-record",
+          "reason": "incomplete-record"
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nJalón — 3 × 8\nRegistro previo: consta el entrenamiento pero faltan los datos de las series.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Jalón",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "32-instructions.txt": {
+    "input": "Día A — Prueba\n\nSentadilla — 3 × 8\nHoy: usa la misma técnica.\nObjetivo: quedar cerca de 8 reps @2.\nProfundidad: máxima útil y reproducible.\nRegistra: posición de pies y sensación limitante.\nHaz una primera serie de aproximación y revisa el movimiento.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "normalizedName": "sentadilla",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [
+            {
+              "type": "today",
+              "text": "usa la misma técnica.",
+              "rawText": "Hoy: usa la misma técnica."
+            },
+            {
+              "type": "target",
+              "text": "quedar cerca de 8 reps @2.",
+              "rawText": "Objetivo: quedar cerca de 8 reps @2."
+            },
+            {
+              "type": "depth",
+              "text": "máxima útil y reproducible.",
+              "rawText": "Profundidad: máxima útil y reproducible."
+            },
+            {
+              "type": "record",
+              "text": "posición de pies y sensación limitante.",
+              "rawText": "Registra: posición de pies y sensación limitante."
+            },
+            {
+              "type": "other",
+              "text": "Haz una primera serie de aproximación y revisa el movimiento.",
+              "rawText": "Haz una primera serie de aproximación y revisa el movimiento."
+            }
+          ],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Sentadilla — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Hoy: usa la misma técnica.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "Objetivo: quedar cerca de 8 reps @2.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 6,
+              "lineEnd": 6,
+              "rawText": "Profundidad: máxima útil y reproducible.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 7,
+              "lineEnd": 7,
+              "rawText": "Registra: posición de pies y sensación limitante.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 8,
+              "lineEnd": 8,
+              "rawText": "Haz una primera serie de aproximación y revisa el movimiento.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 9,
+              "lineEnd": 9,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Sentadilla — 3 × 8\nHoy: usa la misma técnica.\nObjetivo: quedar cerca de 8 reps @2.\nProfundidad: máxima útil y reproducible.\nRegistra: posición de pies y sensación limitante.\nHaz una primera serie de aproximación y revisa el movimiento.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Sentadilla — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Hoy: usa la misma técnica.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "Objetivo: quedar cerca de 8 reps @2.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 6,
+          "lineEnd": 6,
+          "rawText": "Profundidad: máxima útil y reproducible.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 7,
+          "lineEnd": 7,
+          "rawText": "Registra: posición de pies y sensación limitante.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 8,
+          "lineEnd": 8,
+          "rawText": "Haz una primera serie de aproximación y revisa el movimiento.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 9,
+          "lineEnd": 9,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nSentadilla — 3 × 8\nHoy: usa la misma técnica.\nObjetivo: quedar cerca de 8 reps @2.\nProfundidad: máxima útil y reproducible.\nRegistra: posición de pies y sensación limitante.\nHaz una primera serie de aproximación y revisa el movimiento.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Sentadilla",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "33-unknown.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nNota no estructurada que debe permanecer visible.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [
+            {
+              "type": "other",
+              "text": "Nota no estructurada que debe permanecer visible.",
+              "rawText": "Nota no estructurada que debe permanecer visible."
+            }
+          ],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Nota no estructurada que debe permanecer visible.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nNota no estructurada que debe permanecer visible.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Nota no estructurada que debe permanecer visible.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nNota no estructurada que debe permanecer visible.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "34-repeated-exercise.txt": {
+    "input": "Día A — Prueba\n\nPress banca — 3 × 8\nRIR 2\n\nPress banca — 2 × 12\nRIR 1\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press banca",
+          "normalizedName": "press banca",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": 2,
+            "targetRirMax": 2,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press banca — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "RIR 2",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press banca — 3 × 8\nRIR 2\n"
+        },
+        {
+          "name": "Press banca",
+          "normalizedName": "press banca",
+          "prescription": {
+            "sets": 2,
+            "repsMin": 12,
+            "repsMax": 12,
+            "targetRirMin": 1,
+            "targetRirMax": 1,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 6,
+              "lineEnd": 6,
+              "rawText": "Press banca — 2 × 12",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 7,
+              "lineEnd": 7,
+              "rawText": "RIR 1",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 8,
+              "lineEnd": 8,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press banca — 2 × 12\nRIR 1\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press banca — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "RIR 2",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 6,
+          "lineEnd": 6,
+          "rawText": "Press banca — 2 × 12",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 7,
+          "lineEnd": 7,
+          "rawText": "RIR 1",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 8,
+          "lineEnd": 8,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress banca — 3 × 8\nRIR 2\n\nPress banca — 2 × 12\nRIR 1\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press banca",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "35-date-short-zero-day.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/8\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2, el 05/8",
+            "rawDate": "05/8",
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: 60 kg × 10 @2, el 05/8",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/8\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: 60 kg × 10 @2, el 05/8",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 05/8\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "36-date-short-zero-month.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 5/08\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2, el 5/08",
+            "rawDate": "5/08",
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: 60 kg × 10 @2, el 5/08",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 5/08\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: 60 kg × 10 @2, el 5/08",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 5/08\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "37-date-with-year-invalid.txt": {
+    "input": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 31/02/2026\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Prueba",
+        "rawHeader": "Día A — Prueba"
+      },
+      "exercises": [
+        {
+          "name": "Press",
+          "normalizedName": "press",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 8,
+            "targetRirMin": null,
+            "targetRirMax": null,
+            "restSecondsMin": null,
+            "restSecondsMax": null,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2, el 31/02/2026",
+            "rawDate": "31/02/2026",
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Press — 3 × 8",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "Registro previo: 60 kg × 10 @2, el 31/02/2026",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 31/02/2026\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Prueba",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Press — 3 × 8",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "Registro previo: 60 kg × 10 @2, el 31/02/2026",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Prueba\n\nPress — 3 × 8\nRegistro previo: 60 kg × 10 @2, el 31/02/2026\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Press",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 8,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  },
+  "principal.txt": {
+    "input": "Día A — Glúteo + pecho, dorsal y hombro\n\nHip thrust en máquina — 3 × 6–10\nRIR 1–2 · Descanso 3–4 min\nÚltimo registro: 60 kg × 10 @2 · 60 kg × 10 @2, el 05/08.\nHoy: si es exactamente la misma máquina/montaje, sube al menor incremento disponible sobre 60 kg.\nObjetivo: quedar aproximadamente en 7–10 reps @1–2.\nSi el siguiente salto fuese excesivo, mantén 60 kg y haz la primera serie más cerca de @1.\n\nSentadilla Hack Matrix — 2 × 8–12\nRIR 1–2 · Descanso 3–4 min\nRegistro previo: ninguno comparable.\nLa primera exposición será de calibración real: aproxima progresivamente hasta encontrar una carga para unas 9–11 reps @2.\nProfundidad: máxima útil y reproducible, sin pinzamiento ni pérdida de control pélvico.\nRegistra: modelo/foto, posición de pies, ajuste/tope, carga y sensación limitante.\n\nPress inclinado convergente en máquina — 3 × 6–10\nRIR 1–2 · Descanso 2–3 min\nRegistro comparable: no tengo.\nSí tenemos press horizontal reciente a 20 kg, pero no trasladaría esa carga porque es otra geometría.\nPrimera serie efectiva: busca 8–9 reps @2 y ajustamos desde ahí.\n\nJalón al pecho agarre medio/neutro — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nRegistro previo: consta que lo hiciste el 03/08, pero se perdieron carga, reps y RIR por el fallo de la app.\n",
+    "workoutNoteV1": {
+      "schema": "workout_note_draft.v1",
+      "session": {
+        "label": "Día A",
+        "focusText": "Glúteo + pecho, dorsal y hombro",
+        "rawHeader": "Día A — Glúteo + pecho, dorsal y hombro"
+      },
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "normalizedName": "hip thrust en maquina",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 6,
+            "repsMax": 10,
+            "targetRirMin": 1,
+            "targetRirMax": 2,
+            "restSecondsMin": 180,
+            "restSecondsMax": 240,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "60 kg × 10 @2 · 60 kg × 10 @2, el 05/08.",
+            "rawDate": "05/08",
+            "dateIso": null,
+            "sets": [
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              },
+              {
+                "load": 60,
+                "loadUnit": "kg",
+                "reps": 10,
+                "rir": 2,
+                "rawText": "60 kg × 10 @2",
+                "status": "parsed"
+              }
+            ],
+            "status": "parsed"
+          },
+          "historicalMentions": [],
+          "instructions": [
+            {
+              "type": "today",
+              "text": "si es exactamente la misma máquina/montaje, sube al menor incremento disponible sobre 60 kg.",
+              "rawText": "Hoy: si es exactamente la misma máquina/montaje, sube al menor incremento disponible sobre 60 kg."
+            },
+            {
+              "type": "target",
+              "text": "quedar aproximadamente en 7–10 reps @1–2.",
+              "rawText": "Objetivo: quedar aproximadamente en 7–10 reps @1–2."
+            },
+            {
+              "type": "other",
+              "text": "Si el siguiente salto fuese excesivo, mantén 60 kg y haz la primera serie más cerca de @1.",
+              "rawText": "Si el siguiente salto fuese excesivo, mantén 60 kg y haz la primera serie más cerca de @1."
+            }
+          ],
+          "fragments": [
+            {
+              "lineStart": 3,
+              "lineEnd": 3,
+              "rawText": "Hip thrust en máquina — 3 × 6–10",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 4,
+              "lineEnd": 4,
+              "rawText": "RIR 1–2 · Descanso 3–4 min",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 5,
+              "lineEnd": 5,
+              "rawText": "Último registro: 60 kg × 10 @2 · 60 kg × 10 @2, el 05/08.",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 6,
+              "lineEnd": 6,
+              "rawText": "Hoy: si es exactamente la misma máquina/montaje, sube al menor incremento disponible sobre 60 kg.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 7,
+              "lineEnd": 7,
+              "rawText": "Objetivo: quedar aproximadamente en 7–10 reps @1–2.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 8,
+              "lineEnd": 8,
+              "rawText": "Si el siguiente salto fuese excesivo, mantén 60 kg y haz la primera serie más cerca de @1.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 9,
+              "lineEnd": 9,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Hip thrust en máquina — 3 × 6–10\nRIR 1–2 · Descanso 3–4 min\nÚltimo registro: 60 kg × 10 @2 · 60 kg × 10 @2, el 05/08.\nHoy: si es exactamente la misma máquina/montaje, sube al menor incremento disponible sobre 60 kg.\nObjetivo: quedar aproximadamente en 7–10 reps @1–2.\nSi el siguiente salto fuese excesivo, mantén 60 kg y haz la primera serie más cerca de @1.\n"
+        },
+        {
+          "name": "Sentadilla Hack Matrix",
+          "normalizedName": "sentadilla hack matrix",
+          "prescription": {
+            "sets": 2,
+            "repsMin": 8,
+            "repsMax": 12,
+            "targetRirMin": 1,
+            "targetRirMax": 2,
+            "restSecondsMin": 180,
+            "restSecondsMax": 240,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [],
+          "instructions": [
+            {
+              "type": "other",
+              "text": "La primera exposición será de calibración real: aproxima progresivamente hasta encontrar una carga para unas 9–11 reps @2.",
+              "rawText": "La primera exposición será de calibración real: aproxima progresivamente hasta encontrar una carga para unas 9–11 reps @2."
+            },
+            {
+              "type": "depth",
+              "text": "máxima útil y reproducible, sin pinzamiento ni pérdida de control pélvico.",
+              "rawText": "Profundidad: máxima útil y reproducible, sin pinzamiento ni pérdida de control pélvico."
+            },
+            {
+              "type": "record",
+              "text": "modelo/foto, posición de pies, ajuste/tope, carga y sensación limitante.",
+              "rawText": "Registra: modelo/foto, posición de pies, ajuste/tope, carga y sensación limitante."
+            }
+          ],
+          "fragments": [
+            {
+              "lineStart": 10,
+              "lineEnd": 10,
+              "rawText": "Sentadilla Hack Matrix — 2 × 8–12",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 11,
+              "lineEnd": 11,
+              "rawText": "RIR 1–2 · Descanso 3–4 min",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 12,
+              "lineEnd": 12,
+              "rawText": "Registro previo: ninguno comparable.",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 13,
+              "lineEnd": 13,
+              "rawText": "La primera exposición será de calibración real: aproxima progresivamente hasta encontrar una carga para unas 9–11 reps @2.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 14,
+              "lineEnd": 14,
+              "rawText": "Profundidad: máxima útil y reproducible, sin pinzamiento ni pérdida de control pélvico.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 15,
+              "lineEnd": 15,
+              "rawText": "Registra: modelo/foto, posición de pies, ajuste/tope, carga y sensación limitante.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 16,
+              "lineEnd": 16,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Sentadilla Hack Matrix — 2 × 8–12\nRIR 1–2 · Descanso 3–4 min\nRegistro previo: ninguno comparable.\nLa primera exposición será de calibración real: aproxima progresivamente hasta encontrar una carga para unas 9–11 reps @2.\nProfundidad: máxima útil y reproducible, sin pinzamiento ni pérdida de control pélvico.\nRegistra: modelo/foto, posición de pies, ajuste/tope, carga y sensación limitante.\n"
+        },
+        {
+          "name": "Press inclinado convergente en máquina",
+          "normalizedName": "press inclinado convergente en maquina",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 6,
+            "repsMax": 10,
+            "targetRirMin": 1,
+            "targetRirMax": 2,
+            "restSecondsMin": 120,
+            "restSecondsMax": 180,
+            "perSide": false
+          },
+          "comparableRecord": null,
+          "historicalMentions": [
+            {
+              "rawText": "Sí tenemos press horizontal reciente a 20 kg, pero no trasladaría esa carga porque es otra geometría.",
+              "comparable": false,
+              "rawDate": null,
+              "dateIso": null,
+              "explicitLoad": {
+                "value": 20,
+                "unit": "kg"
+              }
+            }
+          ],
+          "instructions": [
+            {
+              "type": "other",
+              "text": "Primera serie efectiva: busca 8–9 reps @2 y ajustamos desde ahí.",
+              "rawText": "Primera serie efectiva: busca 8–9 reps @2 y ajustamos desde ahí."
+            }
+          ],
+          "fragments": [
+            {
+              "lineStart": 17,
+              "lineEnd": 17,
+              "rawText": "Press inclinado convergente en máquina — 3 × 6–10",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 18,
+              "lineEnd": 18,
+              "rawText": "RIR 1–2 · Descanso 2–3 min",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 19,
+              "lineEnd": 19,
+              "rawText": "Registro comparable: no tengo.",
+              "status": "parsed",
+              "category": "comparable-record",
+              "reason": null
+            },
+            {
+              "lineStart": 20,
+              "lineEnd": 20,
+              "rawText": "Sí tenemos press horizontal reciente a 20 kg, pero no trasladaría esa carga porque es otra geometría.",
+              "status": "parsed",
+              "category": "historical-mention",
+              "reason": null
+            },
+            {
+              "lineStart": 21,
+              "lineEnd": 21,
+              "rawText": "Primera serie efectiva: busca 8–9 reps @2 y ajustamos desde ahí.",
+              "status": "parsed",
+              "category": "instruction",
+              "reason": null
+            },
+            {
+              "lineStart": 22,
+              "lineEnd": 22,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Press inclinado convergente en máquina — 3 × 6–10\nRIR 1–2 · Descanso 2–3 min\nRegistro comparable: no tengo.\nSí tenemos press horizontal reciente a 20 kg, pero no trasladaría esa carga porque es otra geometría.\nPrimera serie efectiva: busca 8–9 reps @2 y ajustamos desde ahí.\n"
+        },
+        {
+          "name": "Jalón al pecho agarre medio/neutro",
+          "normalizedName": "jalon al pecho agarre medio neutro",
+          "prescription": {
+            "sets": 3,
+            "repsMin": 8,
+            "repsMax": 12,
+            "targetRirMin": 1,
+            "targetRirMax": 2,
+            "restSecondsMin": 120,
+            "restSecondsMax": 180,
+            "perSide": false
+          },
+          "comparableRecord": {
+            "rawText": "consta que lo hiciste el 03/08, pero se perdieron carga, reps y RIR por el fallo de la app.",
+            "rawDate": "03/08",
+            "dateIso": null,
+            "sets": [],
+            "status": "partial"
+          },
+          "historicalMentions": [],
+          "instructions": [],
+          "fragments": [
+            {
+              "lineStart": 23,
+              "lineEnd": 23,
+              "rawText": "Jalón al pecho agarre medio/neutro — 3 × 8–12",
+              "status": "parsed",
+              "category": "exercise-header",
+              "reason": null
+            },
+            {
+              "lineStart": 24,
+              "lineEnd": 24,
+              "rawText": "RIR 1–2 · Descanso 2–3 min",
+              "status": "parsed",
+              "category": "prescription",
+              "reason": null
+            },
+            {
+              "lineStart": 25,
+              "lineEnd": 25,
+              "rawText": "Registro previo: consta que lo hiciste el 03/08, pero se perdieron carga, reps y RIR por el fallo de la app.",
+              "status": "partial",
+              "category": "comparable-record",
+              "reason": "incomplete-record"
+            },
+            {
+              "lineStart": 26,
+              "lineEnd": 26,
+              "rawText": "",
+              "status": "parsed",
+              "category": "unknown",
+              "reason": null
+            }
+          ],
+          "rawText": "Jalón al pecho agarre medio/neutro — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nRegistro previo: consta que lo hiciste el 03/08, pero se perdieron carga, reps y RIR por el fallo de la app.\n"
+        }
+      ],
+      "fragments": [
+        {
+          "lineStart": 1,
+          "lineEnd": 1,
+          "rawText": "Día A — Glúteo + pecho, dorsal y hombro",
+          "status": "parsed",
+          "category": "session-header",
+          "reason": null
+        },
+        {
+          "lineStart": 2,
+          "lineEnd": 2,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 3,
+          "lineEnd": 3,
+          "rawText": "Hip thrust en máquina — 3 × 6–10",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 4,
+          "lineEnd": 4,
+          "rawText": "RIR 1–2 · Descanso 3–4 min",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 5,
+          "lineEnd": 5,
+          "rawText": "Último registro: 60 kg × 10 @2 · 60 kg × 10 @2, el 05/08.",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 6,
+          "lineEnd": 6,
+          "rawText": "Hoy: si es exactamente la misma máquina/montaje, sube al menor incremento disponible sobre 60 kg.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 7,
+          "lineEnd": 7,
+          "rawText": "Objetivo: quedar aproximadamente en 7–10 reps @1–2.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 8,
+          "lineEnd": 8,
+          "rawText": "Si el siguiente salto fuese excesivo, mantén 60 kg y haz la primera serie más cerca de @1.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 9,
+          "lineEnd": 9,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 10,
+          "lineEnd": 10,
+          "rawText": "Sentadilla Hack Matrix — 2 × 8–12",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 11,
+          "lineEnd": 11,
+          "rawText": "RIR 1–2 · Descanso 3–4 min",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 12,
+          "lineEnd": 12,
+          "rawText": "Registro previo: ninguno comparable.",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 13,
+          "lineEnd": 13,
+          "rawText": "La primera exposición será de calibración real: aproxima progresivamente hasta encontrar una carga para unas 9–11 reps @2.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 14,
+          "lineEnd": 14,
+          "rawText": "Profundidad: máxima útil y reproducible, sin pinzamiento ni pérdida de control pélvico.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 15,
+          "lineEnd": 15,
+          "rawText": "Registra: modelo/foto, posición de pies, ajuste/tope, carga y sensación limitante.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 16,
+          "lineEnd": 16,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 17,
+          "lineEnd": 17,
+          "rawText": "Press inclinado convergente en máquina — 3 × 6–10",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 18,
+          "lineEnd": 18,
+          "rawText": "RIR 1–2 · Descanso 2–3 min",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 19,
+          "lineEnd": 19,
+          "rawText": "Registro comparable: no tengo.",
+          "status": "parsed",
+          "category": "comparable-record",
+          "reason": null
+        },
+        {
+          "lineStart": 20,
+          "lineEnd": 20,
+          "rawText": "Sí tenemos press horizontal reciente a 20 kg, pero no trasladaría esa carga porque es otra geometría.",
+          "status": "parsed",
+          "category": "historical-mention",
+          "reason": null
+        },
+        {
+          "lineStart": 21,
+          "lineEnd": 21,
+          "rawText": "Primera serie efectiva: busca 8–9 reps @2 y ajustamos desde ahí.",
+          "status": "parsed",
+          "category": "instruction",
+          "reason": null
+        },
+        {
+          "lineStart": 22,
+          "lineEnd": 22,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        },
+        {
+          "lineStart": 23,
+          "lineEnd": 23,
+          "rawText": "Jalón al pecho agarre medio/neutro — 3 × 8–12",
+          "status": "parsed",
+          "category": "exercise-header",
+          "reason": null
+        },
+        {
+          "lineStart": 24,
+          "lineEnd": 24,
+          "rawText": "RIR 1–2 · Descanso 2–3 min",
+          "status": "parsed",
+          "category": "prescription",
+          "reason": null
+        },
+        {
+          "lineStart": 25,
+          "lineEnd": 25,
+          "rawText": "Registro previo: consta que lo hiciste el 03/08, pero se perdieron carga, reps y RIR por el fallo de la app.",
+          "status": "partial",
+          "category": "comparable-record",
+          "reason": "incomplete-record"
+        },
+        {
+          "lineStart": 26,
+          "lineEnd": 26,
+          "rawText": "",
+          "status": "parsed",
+          "category": "unknown",
+          "reason": null
+        }
+      ],
+      "rawText": "Día A — Glúteo + pecho, dorsal y hombro\n\nHip thrust en máquina — 3 × 6–10\nRIR 1–2 · Descanso 3–4 min\nÚltimo registro: 60 kg × 10 @2 · 60 kg × 10 @2, el 05/08.\nHoy: si es exactamente la misma máquina/montaje, sube al menor incremento disponible sobre 60 kg.\nObjetivo: quedar aproximadamente en 7–10 reps @1–2.\nSi el siguiente salto fuese excesivo, mantén 60 kg y haz la primera serie más cerca de @1.\n\nSentadilla Hack Matrix — 2 × 8–12\nRIR 1–2 · Descanso 3–4 min\nRegistro previo: ninguno comparable.\nLa primera exposición será de calibración real: aproxima progresivamente hasta encontrar una carga para unas 9–11 reps @2.\nProfundidad: máxima útil y reproducible, sin pinzamiento ni pérdida de control pélvico.\nRegistra: modelo/foto, posición de pies, ajuste/tope, carga y sensación limitante.\n\nPress inclinado convergente en máquina — 3 × 6–10\nRIR 1–2 · Descanso 2–3 min\nRegistro comparable: no tengo.\nSí tenemos press horizontal reciente a 20 kg, pero no trasladaría esa carga porque es otra geometría.\nPrimera serie efectiva: busca 8–9 reps @2 y ajustamos desde ahí.\n\nJalón al pecho agarre medio/neutro — 3 × 8–12\nRIR 1–2 · Descanso 2–3 min\nRegistro previo: consta que lo hiciste el 03/08, pero se perdieron carga, reps y RIR por el fallo de la app.\n"
+    },
+    "workout": {
+      "title": "Entrenamiento de hoy",
+      "exercises": [
+        {
+          "name": "Hip thrust en máquina",
+          "sets": 3,
+          "repsMin": 6,
+          "repsMax": 10,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        },
+        {
+          "name": "Sentadilla Hack Matrix",
+          "sets": 2,
+          "repsMin": 8,
+          "repsMax": 12,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        },
+        {
+          "name": "Press inclinado convergente en máquina",
+          "sets": 3,
+          "repsMin": 6,
+          "repsMax": 10,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        },
+        {
+          "name": "Jalón al pecho agarre medio/neutro",
+          "sets": 3,
+          "repsMin": 8,
+          "repsMax": 12,
+          "targetRir": "",
+          "rest": "",
+          "perSide": false,
+          "cue": "",
+          "identityText": ""
+        }
+      ],
+      "error": ""
+    }
+  }
+}

@@ -1,0 +1,1821 @@
+{
+  "groups": [
+    "Glúteo",
+    "Cuádriceps",
+    "Isquios",
+    "Espalda",
+    "Pecho",
+    "Hombro",
+    "Brazos",
+    "Core",
+    "Gemelo",
+    "Abdomen"
+  ],
+  "exercises": [
+    {
+      "id": "E001",
+      "name": "Hip thrust en máquina",
+      "group": "Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E002",
+      "name": "Hip thrust en Smith",
+      "group": "Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E003",
+      "name": "Hip thrust con barra",
+      "group": "Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E004",
+      "name": "Hack squat profunda",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E005",
+      "name": "Sentadilla pendular profunda",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E006",
+      "name": "Sentadilla profunda en Smith",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E007",
+      "name": "Prensa profunda",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E008",
+      "name": "Bulgarian split squat en Smith",
+      "group": "Glúteo/Cuádriceps",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "gluteo",
+      "aliases": [
+        "Sentadilla búlgara",
+        "Búlgara Smith",
+        "Búlgara",
+        "Bulgarian"
+      ],
+      "active": true
+    },
+    {
+      "id": "E009",
+      "name": "Bulgarian con mancuernas",
+      "group": "Glúteo/Cuádriceps",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "gluteo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E010",
+      "name": "Zancada inversa en Smith",
+      "group": "Glúteo/Cuádriceps",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "gluteo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E011",
+      "name": "Peso muerto rumano en Smith",
+      "group": "Isquios/Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "isquios",
+      "aliases": [
+        "RDL",
+        "RDL Smith",
+        "Peso muerto rumano"
+      ],
+      "active": true
+    },
+    {
+      "id": "E012",
+      "name": "Peso muerto rumano con mancuernas",
+      "group": "Isquios/Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "isquios",
+      "aliases": [
+        "RDL mancuernas",
+        "RDL mancuerna",
+        "Peso muerto rumano mancuernas"
+      ],
+      "active": true
+    },
+    {
+      "id": "E013",
+      "name": "Hiperextensión a 45º sesgada a glúteo",
+      "group": "Glúteo",
+      "sourceLoadBasis": "bodyweight_plus_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "added_kg",
+      "swapGroup": "gluteo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E014",
+      "name": "Extensión de cadera en cable",
+      "group": "Glúteo",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "gluteo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E015",
+      "name": "Abducción de cadera en máquina",
+      "group": "Glúteo medio",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo medio",
+      "aliases": [
+        "Abductor",
+        "Abducción sentada",
+        "Abductor máquina"
+      ],
+      "active": true
+    },
+    {
+      "id": "E016",
+      "name": "Abducción unilateral en cable",
+      "group": "Glúteo medio",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "gluteo medio",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E017",
+      "name": "Power Squat / Leverage Power Squat",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E018",
+      "name": "V-Squat / Lever V-Squat",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E019",
+      "name": "Elevación lateral en máquina",
+      "group": "Hombro lateral",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro lateral",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E020",
+      "name": "Elevación lateral unilateral en cable",
+      "group": "Hombro lateral",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "hombro lateral",
+      "aliases": [
+        "Lateral polea",
+        "Elevación lateral cable"
+      ],
+      "active": true
+    },
+    {
+      "id": "E021",
+      "name": "Elevación lateral con mancuernas",
+      "group": "Hombro lateral",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro lateral",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E022",
+      "name": "Peck-deck inverso",
+      "group": "Hombro posterior",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro posterior",
+      "aliases": [
+        "Posterior máquina",
+        "Peck deck posterior"
+      ],
+      "active": true
+    },
+    {
+      "id": "E023",
+      "name": "Apertura inversa en cable",
+      "group": "Hombro posterior",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro posterior",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E024",
+      "name": "Remo posterior con pecho apoyado",
+      "group": "Hombro posterior",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro posterior",
+      "aliases": [
+        "Low row",
+        "Remo posterior"
+      ],
+      "active": true
+    },
+    {
+      "id": "E025",
+      "name": "Press de hombro en máquina",
+      "group": "Hombro",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E026",
+      "name": "Jalón medio/neutro",
+      "group": "Espalda/Dorsal",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E027",
+      "name": "Dominada neutra asistida",
+      "group": "Espalda/Dorsal",
+      "sourceLoadBasis": "bodyweight_plus_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "added_kg",
+      "swapGroup": "espalda",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E028",
+      "name": "Jalón unilateral en cable",
+      "group": "Espalda/Dorsal",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "espalda",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E029",
+      "name": "Pullover en máquina",
+      "group": "Espalda/Dorsal",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E030",
+      "name": "Jalón con brazos rectos (Pullover cable)",
+      "group": "Espalda/Dorsal",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda",
+      "aliases": [
+        "Pullover",
+        "Pullover polea",
+        "Pullover cable"
+      ],
+      "active": true
+    },
+    {
+      "id": "E031",
+      "name": "Remo convergente con pecho apoyado",
+      "group": "Espalda media",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda media",
+      "aliases": [
+        "Row",
+        "Remo máquina",
+        "Remo discos"
+      ],
+      "active": true
+    },
+    {
+      "id": "E032",
+      "name": "Remo T-bar con pecho apoyado",
+      "group": "Espalda media",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda media",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E033",
+      "name": "Remo sentado en cable (Gironda)",
+      "group": "Espalda media",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda media",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E034",
+      "name": "Remo unilateral en cable con apoyo",
+      "group": "Espalda media",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "espalda media",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E035",
+      "name": "Press convergente inclinado moderado",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [
+        "DHZ Chest Press banco inclinado (discos)",
+        "DHZ Chest Press inclinado",
+        "DHZ Chest Press",
+        "Press convergente inclinado",
+        "Press inclinado convergente",
+        "Press inclinado en maquina convergente"
+      ],
+      "active": true
+    },
+    {
+      "id": "E036",
+      "name": "Press inclinado en Smith 15-30º",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E037",
+      "name": "Press inclinado con mancuernas",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E038",
+      "name": "Press convergente horizontal",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E039",
+      "name": "Press plano en Smith o con mancuernas",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E040",
+      "name": "Peck-deck (Aperturas)",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E041",
+      "name": "Apertura en cable",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E042",
+      "name": "Extensión de tríceps overhead en cable",
+      "group": "Tríceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "triceps",
+      "aliases": [
+        "Katana",
+        "Tríceps Katana",
+        "Extensión Katana",
+        "Extensio Katana",
+        "Overhead cable",
+        "Tríceps overhead"
+      ],
+      "active": true
+    },
+    {
+      "id": "E043",
+      "name": "Pressdown en cable",
+      "group": "Tríceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "triceps",
+      "aliases": [
+        "Tríceps cuerda",
+        "Pressdown polea",
+        "Jalón tríceps"
+      ],
+      "active": true
+    },
+    {
+      "id": "E044",
+      "name": "Curl predicador en cable o máquina",
+      "group": "Bíceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "biceps",
+      "aliases": [
+        "Predicador",
+        "Banco Scott",
+        "Curl Scott",
+        "Predicador máquina"
+      ],
+      "active": true
+    },
+    {
+      "id": "E045",
+      "name": "Curl bayesiano en cable",
+      "group": "Bíceps",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "biceps",
+      "aliases": [
+        "Bayesiano",
+        "Curl cable detrás",
+        "Bayesian curl"
+      ],
+      "active": true
+    },
+    {
+      "id": "E046",
+      "name": "Curl martillo en cable o mancuernas",
+      "group": "Bíceps/Braquial",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "biceps",
+      "aliases": [
+        "Martillo",
+        "Hammer curl",
+        "Braquial",
+        "Curl martillo en polea con cuerda",
+        "Curl martillo en polea",
+        "Curl martillo con cuerda",
+        "Hammer curl cable"
+      ],
+      "active": true
+    },
+    {
+      "id": "E047",
+      "name": "Extensión de rodilla",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E048",
+      "name": "Curl femoral sentado",
+      "group": "Isquios",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "isquios",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E049",
+      "name": "Curl femoral tumbado",
+      "group": "Isquios",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "isquios",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E050",
+      "name": "Elevación de talones de pie en máquina",
+      "group": "Gemelo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gemelo",
+      "aliases": [
+        "Gemelo Hack",
+        "Gemelo de pie"
+      ],
+      "active": true
+    },
+    {
+      "id": "E051",
+      "name": "Gemelo en prensa con rodilla extendida",
+      "group": "Gemelo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gemelo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E052",
+      "name": "Elevación de talones sentada",
+      "group": "Gemelo/Sóleo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gemelo",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E053",
+      "name": "Crunch en cable o máquina",
+      "group": "Abdomen",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "abdomen",
+      "aliases": [
+        "Crunch máquina",
+        "Crunch polea"
+      ],
+      "active": true
+    },
+    {
+      "id": "E054",
+      "name": "Reverse crunch controlado",
+      "group": "Abdomen",
+      "sourceLoadBasis": "bodyweight",
+      "resistanceMode": "bodyweight",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "unknown",
+      "swapGroup": "abdomen",
+      "aliases": [
+        "Reverse crunch",
+        "Elevación de piernas",
+        "Elevación piernas"
+      ],
+      "active": true
+    },
+    {
+      "id": "E055",
+      "name": "Pallof press",
+      "group": "Core",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "core",
+      "aliases": [],
+      "active": true
+    },
+    {
+      "id": "E056",
+      "name": "Forward-Lean Shrug en Smith",
+      "group": "Espalda/Trapecio",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda",
+      "aliases": [
+        "Encogimiento en Smith con inclinacion anterior",
+        "Encogimientos trapecio en Smith con inclinacion hacia delante",
+        "Kelso shrug en Smith",
+        "Encogimiento Kelso multipower",
+        "Shrug en Smith con inclinacion hacia delante",
+        "Encogimientos trapecio en Smith",
+        "Kelso shrug",
+        "Forward-Lean Shrug en Smith",
+        "Encogimiento en Smith con inclinacion hacia delante"
+      ],
+      "active": true
+    },
+    {
+      "id": "E057",
+      "name": "Dual-cable cross pushdown",
+      "group": "Tríceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "triceps",
+      "aliases": [
+        "Cross pushdown",
+        "Dual cable triceps",
+        "Cruces triceps"
+      ],
+      "active": true
+    },
+    {
+      "id": "E058",
+      "name": "Kickback diagonal de glúteo en polea baja",
+      "group": "Glúteo",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "gluteo",
+      "aliases": [
+        "Kickback glúteo",
+        "Patada glúteo",
+        "Patada polea",
+        "Glute kickback"
+      ],
+      "active": true
+    },
+    {
+      "id": "E059",
+      "name": "Cossack squat (Sentadilla cosaca)",
+      "group": "Cuádriceps/Glúteo",
+      "sourceLoadBasis": "bodyweight",
+      "resistanceMode": "bodyweight",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "unknown",
+      "swapGroup": "cuadriceps",
+      "aliases": [
+        "Cosaca",
+        "Sentadilla cosaca",
+        "Cossack"
+      ],
+      "active": true
+    },
+    {
+      "id": "E060",
+      "name": "Encogimientos trapecio en Smith con inclinación hacia delante",
+      "group": "Espalda/Trapecio",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda",
+      "aliases": [
+        "Shrug Smith",
+        "Encogimiento trapecio"
+      ],
+      "active": true
+    },
+    {
+      "id": "E061",
+      "name": "Press banca plano con barra",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [
+        "Banca",
+        "Bench press",
+        "Press banca",
+        "Press plano barra",
+        "Pecho plano"
+      ],
+      "active": true
+    },
+    {
+      "id": "E062",
+      "name": "Press inclinado con barra",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [
+        "Press inclinado",
+        "Incline bench",
+        "Banca inclinada"
+      ],
+      "active": true
+    },
+    {
+      "id": "E063",
+      "name": "Press declinado con barra o Smith",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Smith",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [
+        "Press declinado",
+        "Decline bench"
+      ],
+      "active": true
+    },
+    {
+      "id": "E064",
+      "name": "Press plano con mancuernas",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [
+        "Press mancuernas",
+        "Dumbbell press",
+        "Press mancuerna"
+      ],
+      "active": true
+    },
+    {
+      "id": "E065",
+      "name": "Fondos en paralelas para pecho (Dips)",
+      "group": "Pecho/Tríceps",
+      "sourceLoadBasis": "bodyweight_plus_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "added_kg",
+      "swapGroup": "pecho",
+      "aliases": [
+        "Dips",
+        "Fondos",
+        "Fondos paralelas",
+        "Paralelas"
+      ],
+      "active": true
+    },
+    {
+      "id": "E066",
+      "name": "Flexiones de pecho (Push-ups)",
+      "group": "Pecho",
+      "sourceLoadBasis": "bodyweight",
+      "resistanceMode": "bodyweight",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "unknown",
+      "swapGroup": "pecho",
+      "aliases": [
+        "Push ups",
+        "Flexiones",
+        "Lagartijas",
+        "Fondos de suelo"
+      ],
+      "active": true
+    },
+    {
+      "id": "E067",
+      "name": "Cruces de poleas de abajo hacia arriba",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [
+        "Cruces polea baja",
+        "Cable crossover low to high"
+      ],
+      "active": true
+    },
+    {
+      "id": "E068",
+      "name": "Cruces de poleas de arriba hacia abajo",
+      "group": "Pecho",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "pecho",
+      "aliases": [
+        "Cruces polea alta",
+        "Cable flyes",
+        "Crossovers"
+      ],
+      "active": true
+    },
+    {
+      "id": "E069",
+      "name": "Dominadas pronas (Pull-ups)",
+      "group": "Espalda/Dorsal",
+      "sourceLoadBasis": "bodyweight_plus_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "added_kg",
+      "swapGroup": "espalda",
+      "aliases": [
+        "Dominadas",
+        "Pull ups",
+        "Dominada prona",
+        "Dominada abierta"
+      ],
+      "active": true
+    },
+    {
+      "id": "E070",
+      "name": "Dominadas supinas (Chin-ups)",
+      "group": "Espalda/Bíceps",
+      "sourceLoadBasis": "bodyweight_plus_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "added_kg",
+      "swapGroup": "espalda",
+      "aliases": [
+        "Chin ups",
+        "Dominada supina",
+        "Dominadas supinas"
+      ],
+      "active": true
+    },
+    {
+      "id": "E071",
+      "name": "Jalón al pecho agarre ancho",
+      "group": "Espalda/Dorsal",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda",
+      "aliases": [
+        "Jalón dorsal",
+        "Lat pulldown",
+        "Jalón al pecho"
+      ],
+      "active": true
+    },
+    {
+      "id": "E072",
+      "name": "Jalón al pecho agarre supino",
+      "group": "Espalda/Dorsal",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda",
+      "aliases": [
+        "Jalón supino",
+        "Reverse lat pulldown"
+      ],
+      "active": true
+    },
+    {
+      "id": "E073",
+      "name": "Remo con barra (Pendlay / 45º)",
+      "group": "Espalda media",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda media",
+      "aliases": [
+        "Barbell row",
+        "Remo con barra",
+        "Pendlay row",
+        "Remo 45"
+      ],
+      "active": true
+    },
+    {
+      "id": "E074",
+      "name": "Remo con mancuerna a una mano",
+      "group": "Espalda media",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "espalda media",
+      "aliases": [
+        "Dumbbell row",
+        "Remo mancuerna",
+        "Remo serrucho"
+      ],
+      "active": true
+    },
+    {
+      "id": "E075",
+      "name": "Remo en punta (T-Bar libre)",
+      "group": "Espalda media",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "espalda media",
+      "aliases": [
+        "T-bar row",
+        "Remo barra T",
+        "Remo punta"
+      ],
+      "active": true
+    },
+    {
+      "id": "E076",
+      "name": "Remo al mentón (Upright row)",
+      "group": "Hombro/Trapecio",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro",
+      "aliases": [
+        "Upright row",
+        "Remo barbilla"
+      ],
+      "active": true
+    },
+    {
+      "id": "E077",
+      "name": "Face pull en polea alta",
+      "group": "Hombro posterior",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro posterior",
+      "aliases": [
+        "Face pull",
+        "Facepull",
+        "Polea cara"
+      ],
+      "active": true
+    },
+    {
+      "id": "E078",
+      "name": "Press militar de pie con barra (OHP)",
+      "group": "Hombro",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro",
+      "aliases": [
+        "OHP",
+        "Overhead press",
+        "Press militar",
+        "Militar barra"
+      ],
+      "active": true
+    },
+    {
+      "id": "E079",
+      "name": "Press militar sentado con mancuernas",
+      "group": "Hombro",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro",
+      "aliases": [
+        "Press militar mancuernas",
+        "Shoulder press"
+      ],
+      "active": true
+    },
+    {
+      "id": "E080",
+      "name": "Press Arnold con mancuernas",
+      "group": "Hombro",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro",
+      "aliases": [
+        "Arnold press",
+        "Press arnold"
+      ],
+      "active": true
+    },
+    {
+      "id": "E081",
+      "name": "Elevaciones laterales sentado con mancuernas",
+      "group": "Hombro lateral",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro lateral",
+      "aliases": [
+        "Laterales mancuernas",
+        "Vuelos",
+        "Elevaciones laterales"
+      ],
+      "active": true
+    },
+    {
+      "id": "E082",
+      "name": "Elevación lateral tumbado en banco inclinado",
+      "group": "Hombro lateral",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "hombro lateral",
+      "aliases": [
+        "Lateral banco",
+        "Lateral acostado"
+      ],
+      "active": true
+    },
+    {
+      "id": "E083",
+      "name": "Pájaros con mancuernas (Rear delt flyes)",
+      "group": "Hombro posterior",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro posterior",
+      "aliases": [
+        "Pájaros",
+        "Rear flyes",
+        "Pajaros mancuerna"
+      ],
+      "active": true
+    },
+    {
+      "id": "E084",
+      "name": "Elevación frontal con mancuernas o disco",
+      "group": "Hombro",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "hombro",
+      "aliases": [
+        "Frontales",
+        "Elevación frontal"
+      ],
+      "active": true
+    },
+    {
+      "id": "E085",
+      "name": "Press francés con barra Z",
+      "group": "Tríceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "triceps",
+      "aliases": [
+        "Skull crusher",
+        "Rompecráneos",
+        "Press francés barra"
+      ],
+      "active": true
+    },
+    {
+      "id": "E086",
+      "name": "Press francés con mancuernas",
+      "group": "Tríceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "triceps",
+      "aliases": [
+        "Press francés mancuernas",
+        "Extension triceps mancuerna"
+      ],
+      "active": true
+    },
+    {
+      "id": "E087",
+      "name": "Fondos entre bancos (Bench dips)",
+      "group": "Tríceps",
+      "sourceLoadBasis": "bodyweight_plus_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "added_kg",
+      "swapGroup": "triceps",
+      "aliases": [
+        "Fondos banco",
+        "Bench dips"
+      ],
+      "active": true
+    },
+    {
+      "id": "E088",
+      "name": "Extensión unilateral de tríceps en polea",
+      "group": "Tríceps",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Cable / polea",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "triceps",
+      "aliases": [
+        "Tríceps unilateral",
+        "Extensión tríceps una mano"
+      ],
+      "active": true
+    },
+    {
+      "id": "E089",
+      "name": "Curl de bíceps con barra recta o Z",
+      "group": "Bíceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "biceps",
+      "aliases": [
+        "Bicep curl",
+        "Curl con barra",
+        "Curl barra"
+      ],
+      "active": true
+    },
+    {
+      "id": "E090",
+      "name": "Curl de bíceps alterno con mancuernas",
+      "group": "Bíceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "biceps",
+      "aliases": [
+        "Curl alterno",
+        "Curl mancuerna"
+      ],
+      "active": true
+    },
+    {
+      "id": "E091",
+      "name": "Curl inclinado con mancuernas en banco 60º",
+      "group": "Bíceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "biceps",
+      "aliases": [
+        "Incline curl",
+        "Curl inclinado"
+      ],
+      "active": true
+    },
+    {
+      "id": "E092",
+      "name": "Curl de concentración con mancuerna",
+      "group": "Bíceps",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "biceps",
+      "aliases": [
+        "Concentration curl",
+        "Curl concentración"
+      ],
+      "active": true
+    },
+    {
+      "id": "E093",
+      "name": "Sentadilla trasera con barra (Back Squat)",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [
+        "Sentadilla",
+        "Squat",
+        "Back squat",
+        "Sentadilla libre",
+        "Sentadilla trasera"
+      ],
+      "active": true
+    },
+    {
+      "id": "E094",
+      "name": "Sentadilla frontal con barra (Front Squat)",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [
+        "Front squat",
+        "Sentadilla frontal"
+      ],
+      "active": true
+    },
+    {
+      "id": "E095",
+      "name": "Sentadilla goblet con mancuerna",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [
+        "Goblet squat",
+        "Sentadilla copa"
+      ],
+      "active": true
+    },
+    {
+      "id": "E096",
+      "name": "Sentadilla Sissy (Sissy squat)",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "bodyweight",
+      "resistanceMode": "bodyweight",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "unknown",
+      "swapGroup": "cuadriceps",
+      "aliases": [
+        "Sissy",
+        "Sissy squat"
+      ],
+      "active": true
+    },
+    {
+      "id": "E097",
+      "name": "Zancadas caminando (Walking lunges)",
+      "group": "Glúteo/Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo",
+      "aliases": [
+        "Lunges",
+        "Zancadas",
+        "Estocadas"
+      ],
+      "active": true
+    },
+    {
+      "id": "E098",
+      "name": "Step-up en cajón sesgado a glúteo",
+      "group": "Glúteo",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "gluteo",
+      "aliases": [
+        "Step up",
+        "Subidas a cajón",
+        "Subida cajón"
+      ],
+      "active": true
+    },
+    {
+      "id": "E099",
+      "name": "Prensa unilateral / a una pierna",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [
+        "Prensa una pierna",
+        "Single leg press"
+      ],
+      "active": true
+    },
+    {
+      "id": "E100",
+      "name": "Belt squat (Sentadilla con cinturón)",
+      "group": "Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "cuadriceps",
+      "aliases": [
+        "Belt squat",
+        "Sentadilla cinturón"
+      ],
+      "active": true
+    },
+    {
+      "id": "E101",
+      "name": "Peso muerto convencional con barra",
+      "group": "Isquios/Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "isquios",
+      "aliases": [
+        "Deadlift",
+        "Peso muerto",
+        "Peso muerto convencional"
+      ],
+      "active": true
+    },
+    {
+      "id": "E102",
+      "name": "Peso muerto sumo con barra",
+      "group": "Glúteo/Cuádriceps",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo",
+      "aliases": [
+        "Sumo deadlift",
+        "Peso muerto sumo"
+      ],
+      "active": true
+    },
+    {
+      "id": "E103",
+      "name": "Peso muerto rumano con barra (RDL)",
+      "group": "Isquios/Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "isquios",
+      "aliases": [
+        "RDL barra",
+        "Romanian deadlift"
+      ],
+      "active": true
+    },
+    {
+      "id": "E104",
+      "name": "Peso muerto rumano unilateral (B-Stance)",
+      "group": "Isquios/Glúteo",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "isquios",
+      "aliases": [
+        "B-stance RDL",
+        "RDL unilateral",
+        "Rumano una pierna"
+      ],
+      "active": true
+    },
+    {
+      "id": "E105",
+      "name": "Glute bridge con barra en suelo",
+      "group": "Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo",
+      "aliases": [
+        "Puente de glúteo",
+        "Hip thrust suelo",
+        "Glute bridge"
+      ],
+      "active": true
+    },
+    {
+      "id": "E106",
+      "name": "Frog pump con mancuerna o banda",
+      "group": "Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo",
+      "aliases": [
+        "Frog pump",
+        "Rana"
+      ],
+      "active": true
+    },
+    {
+      "id": "E107",
+      "name": "Nordic hamstring curl (Curl nórdico)",
+      "group": "Isquios",
+      "sourceLoadBasis": "bodyweight",
+      "resistanceMode": "bodyweight",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "unknown",
+      "swapGroup": "isquios",
+      "aliases": [
+        "Nordic curl",
+        "Curl nórdico",
+        "Nordic hamstring"
+      ],
+      "active": true
+    },
+    {
+      "id": "E108",
+      "name": "Buenos días con barra (Good Mornings)",
+      "group": "Isquios/Glúteo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "isquios",
+      "aliases": [
+        "Good morning",
+        "Buenos días"
+      ],
+      "active": true
+    },
+    {
+      "id": "E109",
+      "name": "Aducción de cadera en máquina",
+      "group": "Glúteo/Aductores",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "Máquina",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gluteo",
+      "aliases": [
+        "Aductor",
+        "Aducción máquina",
+        "Aductores"
+      ],
+      "active": true
+    },
+    {
+      "id": "E110",
+      "name": "Rueda abdominal (Ab wheel rollout)",
+      "group": "Abdomen",
+      "sourceLoadBasis": "bodyweight",
+      "resistanceMode": "bodyweight",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "unknown",
+      "swapGroup": "abdomen",
+      "aliases": [
+        "Rueda",
+        "Ab wheel",
+        "Rollout"
+      ],
+      "active": true
+    },
+    {
+      "id": "E111",
+      "name": "Elevación de piernas colgado en barra",
+      "group": "Abdomen",
+      "sourceLoadBasis": "bodyweight",
+      "resistanceMode": "bodyweight",
+      "variant": "Barra",
+      "settings": "",
+      "loadBasis": "unknown",
+      "swapGroup": "abdomen",
+      "aliases": [
+        "Leg raises",
+        "Elevaciones de piernas barra",
+        "Toes to bar"
+      ],
+      "active": true
+    },
+    {
+      "id": "E112",
+      "name": "Plancha frontal isométrica (Plank)",
+      "group": "Core",
+      "sourceLoadBasis": "bodyweight",
+      "resistanceMode": "bodyweight",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "unknown",
+      "swapGroup": "core",
+      "aliases": [
+        "Plancha",
+        "Plank",
+        "Isometría abdomen"
+      ],
+      "active": true
+    },
+    {
+      "id": "E113",
+      "name": "Paseo del granjero (Farmer walk)",
+      "group": "Core",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "core",
+      "aliases": [
+        "Farmer walk",
+        "Paseo granjero",
+        "Paseo del granjero"
+      ],
+      "active": true
+    },
+    {
+      "id": "E114",
+      "name": "Elevación de talones tipo burro (Donkey calf raise)",
+      "group": "Gemelo",
+      "sourceLoadBasis": "total_kg",
+      "resistanceMode": "external",
+      "variant": "",
+      "settings": "",
+      "loadBasis": "total_kg",
+      "swapGroup": "gemelo",
+      "aliases": [
+        "Gemelo burro",
+        "Donkey calf",
+        "Donkey"
+      ],
+      "active": true
+    },
+    {
+      "id": "E115",
+      "name": "Elevación de talones unilateral con mancuerna",
+      "group": "Gemelo",
+      "sourceLoadBasis": "per_side_kg",
+      "resistanceMode": "external",
+      "variant": "Mancuernas",
+      "settings": "",
+      "loadBasis": "per_side_kg",
+      "swapGroup": "gemelo",
+      "aliases": [
+        "Gemelo mancuerna",
+        "Gemelo unilateral"
+      ],
+      "active": true
+    }
+  ]
+}

@@ -53,3 +53,9 @@ outputs/operativo/*.tmp
 # Media e inspecciones temporales
 inspect_*.png
 *.tmp
+
+# Android build & cache
+export_dame_cana_android/.gradle/
+export_dame_cana_android/.kotlin/
+export_dame_cana_android/build/
+export_dame_cana_android/app/build/

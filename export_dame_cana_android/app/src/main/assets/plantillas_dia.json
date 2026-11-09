@@ -1,0 +1,381 @@
+{
+  "A": {
+    "id": "dame-cana-day-a",
+    "title": "Día A — Nuclear 1 · Glúteo y Cuádriceps",
+    "revision": 3,
+    "exercises": [
+      {
+        "slotId": "A02",
+        "catalogId": "E004",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "targetRir": "1–2",
+        "rest": "2–4 min",
+        "cue": "Variante G04-V1 (pies en tercio medio-alto, pausa 0.5–1 s abajo sin retroversión pélvica; discos añadidos) → Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E005",
+          "E006",
+          "E007"
+        ]
+      },
+      {
+        "slotId": "A01",
+        "catalogId": "E001",
+        "sets": 3,
+        "repsMin": 6,
+        "repsMax": 10,
+        "targetRir": "1–2",
+        "rest": "2–4 min",
+        "cue": "Pelvis estable; bloqueo con extensión de cadera, no lumbar; recorrido reproducible",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E002",
+          "E003"
+        ]
+      },
+      {
+        "slotId": "A03",
+        "catalogId": "E015",
+        "sets": 3,
+        "repsMin": 15,
+        "repsMax": 20,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Pelvis fija contra el respaldo; pausa de 1 s en máxima abducción",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E016"
+        ]
+      },
+      {
+        "slotId": "A04",
+        "catalogId": "E050",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 15,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Rodilla bloqueada en extensión; pausa de 2 s abajo en estiramiento completo",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E051"
+        ]
+      },
+      {
+        "slotId": "A05",
+        "catalogId": "E053",
+        "sets": 2,
+        "repsMin": 10,
+        "repsMax": 15,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Flexión espinal activa; cadera inmóvil",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E054"
+        ]
+      }
+    ]
+  },
+  "B": {
+    "id": "dame-cana-day-b",
+    "title": "Día B — Satélite 1 · Brazos y Deltoides Lateral",
+    "revision": 3,
+    "exercises": [
+      {
+        "slotId": "B01",
+        "catalogId": "E042",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 15,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Codo estable; flexión profunda buscando estiramiento de cabeza larga",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E043"
+        ]
+      },
+      {
+        "slotId": "B02",
+        "catalogId": "E045",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 12,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Hombro en hiperextensión ligera detrás del torso; flexión sin balanceo",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E044"
+        ]
+      },
+      {
+        "slotId": "B03",
+        "catalogId": "E020",
+        "sets": 3,
+        "repsMin": 12,
+        "repsMax": 20,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Polea a altura de rodilla; cuerpo ligeramente inclinado; plano escapular",
+        "perSide": true,
+        "recommendedAlternativeIds": [
+          "E019",
+          "E021"
+        ]
+      },
+      {
+        "slotId": "B04",
+        "catalogId": "E054",
+        "sets": 2,
+        "repsMin": 15,
+        "repsMax": 20,
+        "targetRir": "1–2",
+        "rest": "90 s",
+        "cue": "Variante T02-V3 (despegue sacro obligatorio hacia esternón + espiración forzada 1 s arriba + micro-orientación oblicua 10°–15° en últimas 4–5 reps; descenso vértebra a vértebra) → Busca: hipertrofiar fibras inferomediales del oblicuo interno/externo y transverso sobre el ligamento inguinal para marcar el escalón del Cinturón de Adonis sin ensanchar cintura",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E056"
+        ]
+      }
+    ]
+  },
+  "C": {
+    "id": "dame-cana-day-c",
+    "title": "Día C — Nuclear 2 · Torso Pesado",
+    "revision": 3,
+    "exercises": [
+      {
+        "slotId": "C01",
+        "catalogId": "E035",
+        "sets": 3,
+        "repsMin": 6,
+        "repsMax": 10,
+        "targetRir": "1–2",
+        "rest": "2–3 min",
+        "cue": "Estación DHZ Chest Press con banco en posición 3 desde abajo (~25°–30°); trayectoria hacia clavícula; retracción escapular firme",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E036",
+          "E037"
+        ]
+      },
+      {
+        "slotId": "C02",
+        "catalogId": "E026",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "targetRir": "1–2",
+        "rest": "2–3 min",
+        "cue": "Torso ligeramente inclinado; codos hacia las caderas sin impulso lumbar",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E028"
+        ]
+      },
+      {
+        "slotId": "C03",
+        "catalogId": "E038",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "targetRir": "1–2",
+        "rest": "2–3 min",
+        "cue": "Asiento alineado con esternón medio; empuje convergente controlado",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E039"
+        ]
+      },
+      {
+        "slotId": "C04",
+        "catalogId": "E031",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "targetRir": "1–2",
+        "rest": "2–3 min",
+        "cue": "Pecho firme en apoyo; tracción con separación de codos a ~60°",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E032",
+          "E033"
+        ]
+      },
+      {
+        "slotId": "C05",
+        "catalogId": "E030",
+        "sets": 2,
+        "repsMin": 10,
+        "repsMax": 15,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Codos ligeramente desbloqueados fijos; arco amplio; caja torácica contenida",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E029"
+        ]
+      }
+    ]
+  },
+  "D": {
+    "id": "dame-cana-day-d",
+    "title": "Día D — Nuclear 3 · Glúteo y Cadena Posterior",
+    "revision": 3,
+    "exercises": [
+      {
+        "slotId": "D01",
+        "catalogId": "E008",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "targetRir": "1–2",
+        "rest": "2–4 min",
+        "cue": "Variante G08-V1 (tibia delantera casi vertical, tronco 15°–25° al frente, pausa 1 s abajo; iniciar lado menos competente) → Busca: sobrecargar en elongación máxima las fibras inferiores del glúteo mayor para dar soporte interno y elevar el pliegue subglúteo",
+        "perSide": true,
+        "recommendedAlternativeIds": [
+          "E009",
+          "E010"
+        ]
+      },
+      {
+        "slotId": "D02",
+        "catalogId": "E011",
+        "sets": 3,
+        "repsMin": 6,
+        "repsMax": 10,
+        "targetRir": "1–2",
+        "rest": "2–4 min",
+        "cue": "Bisagra pura (rodilla fija 15°–20°), proyectando isquiones atrás/arriba con pausa 1 s en máximo estiramiento → Busca: hipertrofiar el origen isquiático e inserción glútea inferior para rellenar el escalón justo debajo del pliegue",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E012"
+        ]
+      },
+      {
+        "slotId": "D03",
+        "catalogId": "E048",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Variante L02-V1 (torso inclinado 10°–15° al frente desde cadera, muslo bien fijado, pausa 1 s en acortamiento) → Busca: hiperelongar los isquiosurales biarticulares en su origen proximal (isquion) para engrosar la transición alta glúteo-femoral",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E049"
+        ]
+      },
+      {
+        "slotId": "D04",
+        "catalogId": "E047",
+        "sets": 2,
+        "repsMin": 12,
+        "repsMax": 15,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Eje de giro alineado con la rodilla; pausa de 1 s arriba; bajada en 2 s",
+        "perSide": false,
+        "recommendedAlternativeIds": []
+      },
+      {
+        "slotId": "D05",
+        "catalogId": "E016",
+        "sets": 2,
+        "repsMin": 15,
+        "repsMax": 20,
+        "targetRir": "1–2",
+        "rest": "60–90 s",
+        "cue": "Polea baja con tobillera; trayectoria diagonal a 30° detrás del plano frontal",
+        "perSide": true,
+        "recommendedAlternativeIds": [
+          "E015"
+        ]
+      }
+    ]
+  },
+  "E": {
+    "id": "dame-cana-day-e",
+    "title": "Día E — Satélite 2 · Brazos, Deltoides Posterior y Detalle",
+    "revision": 3,
+    "exercises": [
+      {
+        "slotId": "E01",
+        "catalogId": "E044",
+        "sets": 3,
+        "repsMin": 8,
+        "repsMax": 12,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Apoyo a 45°; codos fijos sin despegarlos del tapizado",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E045",
+          "E046"
+        ]
+      },
+      {
+        "slotId": "E02",
+        "catalogId": "E043",
+        "sets": 3,
+        "repsMin": 10,
+        "repsMax": 15,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Codos pegados al costado; abrir la cuerda abajo separando muñecas",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E042"
+        ]
+      },
+      {
+        "slotId": "E03",
+        "catalogId": "E022",
+        "sets": 3,
+        "repsMin": 12,
+        "repsMax": 15,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Brazos casi extendidos a la altura de los hombros; apertura en plano horizontal",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E023",
+          "E024"
+        ]
+      },
+      {
+        "slotId": "E04",
+        "catalogId": "E021",
+        "sets": 3,
+        "repsMin": 15,
+        "repsMax": 20,
+        "targetRir": "1–2",
+        "rest": "90–150 s",
+        "cue": "Asiento regulado de modo que el eje del hombro coincida con el eje de rotación de las levas; almohadillas en codos",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E019",
+          "E020"
+        ]
+      },
+      {
+        "slotId": "E05",
+        "catalogId": "E015",
+        "sets": 1,
+        "repsMin": 25,
+        "repsMax": 30,
+        "targetRir": "1–2",
+        "rest": "Fin de sesión",
+        "cue": "Bombeo metabólico sin daño excéntrico; cadencia fluida hasta congestión total",
+        "perSide": false,
+        "recommendedAlternativeIds": [
+          "E016"
+        ]
+      }
+    ]
+  }
+}
