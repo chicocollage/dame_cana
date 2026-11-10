@@ -142,6 +142,12 @@ fun DameCanaMainApp(
     LaunchedEffect(activeSession?.id) {
         if (exercises.isNotEmpty()) pagerState.scrollToPage(0)
     }
+    LaunchedEffect(Unit) {
+        val (injected, msg) = TrainingRepository.syncRemotePrescription(context, forceInject = false)
+        if (injected || msg.contains("Nueva sesión")) {
+            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+        }
+    }
 
     val totalSets = exercises.sumOf { it.entries.size }
     val doneSets = exercises.sumOf { ex -> ex.entries.count { it.reps.isNotBlank() } }
@@ -374,6 +380,8 @@ private fun SessionTab(
     onOpenSwap: () -> Unit
 ) {
     val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    val activePrescription by TrainingRepository.activePrescriptionFlow.collectAsState()
     Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Column(
             modifier = Modifier.padding(horizontal = 14.dp),
@@ -405,12 +413,14 @@ private fun SessionTab(
                 }
                 AuraChip(text = "CALENT.", container = AuraColors.CyanPill, onClick = onOpenWarmup)
                 AuraChip(
-                    text = "⚡ HOY·${TrainingRepository.activePrescription?.dia ?: "B"}",
+                    text = "⚡ HOY·${activePrescription?.dia ?: "B"}",
                     container = AuraColors.Orange,
                     contentColor = AuraColors.Paper,
                     onClick = {
-                        TrainingRepository.injectTodayPrescription(context)
-                        Toast.makeText(context, "Prescripción de hoy inyectada", Toast.LENGTH_SHORT).show()
+                        scope.launch {
+                            val (_, msg) = TrainingRepository.syncRemotePrescription(context, forceInject = true)
+                            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 )
                 AuraChip(
@@ -2313,9 +2323,11 @@ private fun copyAndShareJson(context: Context, filename: String, jsonContent: St
 @Composable
 private fun SettingsTab() {
     val context = LocalContext.current
+    val scope = rememberCoroutineScope()
     val settings by TrainingRepository.settings.collectAsState()
     val history by TrainingRepository.history.collectAsState()
     val checkins by TrainingRepository.checkins.collectAsState()
+    val activePrescription by TrainingRepository.activePrescriptionFlow.collectAsState()
 
     val ringtonePickerLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.StartActivityForResult()
@@ -2500,10 +2512,27 @@ private fun SettingsTab() {
         // PANEL 3: DATOS Y ALMACENAMIENTO LOCAL
         AuraPanel {
             Column(modifier = Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Text("DATOS Y ALMACENAMIENTO LOCAL", style = AuraType.label)
+                Text("PUENTE NUBE ANTIGRAVITY & DATOS LOCALES", style = AuraType.label)
                 Text(
                     text = "${history.size} sesiones en historial · ${checkins.size} bio check-ins guardados",
                     style = AuraType.heading.copy(fontSize = 14.sp)
+                )
+                Text(
+                    text = "Prescripción activa: Día ${activePrescription?.dia ?: "-"} · ${activePrescription?.updatedAt?.take(16)?.replace('T', ' ') ?: "local"}",
+                    style = AuraType.label.copy(color = AuraColors.Ink)
+                )
+
+                AuraChip(
+                    text = "☁️ SINCRONIZAR SESIÓN Y PLANTILLAS CON AGENTE",
+                    container = AuraColors.CyanPill,
+                    modifier = Modifier.fillMaxWidth(),
+                    minHeight = 48.dp,
+                    onClick = {
+                        scope.launch {
+                            val (_, msg) = TrainingRepository.syncRemotePrescription(context, forceInject = true)
+                            Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
+                        }
+                    }
                 )
 
                 Row(horizontalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.fillMaxWidth()) {

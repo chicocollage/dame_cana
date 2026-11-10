@@ -545,7 +545,10 @@ def exportar_sesion_activa(dia: str, titulo: str, note_v1: str, warmup: str) -> 
         ROOT / "pwa/public/tn/sesion_activa.json",
         ROOT / "pwa/public/tn3d/sesion_activa.json",
         ROOT / "pwa/public/bp/sesion_activa.json",
+        ROOT / "DameCaña/sesion_activa.json",
         ROOT / "DameCañaTN/sesion_activa.json",
+        ROOT / "export_dame_cana_android/app/src/main/assets/sesion_activa.json",
+        Path(r"C:\Users\Daniel\Documents\DANIEL\00_ENTRADA\elOtro\DameCaña\sesion_activa.json"),
     ]
     for dest in destinos:
         if dest.parent.exists():
@@ -587,17 +590,17 @@ def cmd_regenerar():
 
 
 def cmd_sincronizar_app(desplegar: bool = False, dia: str | None = None):
-    print("Sincronizando datos de clientes PWA directamente desde 'data/'...")
+    print("Sincronizando datos de clientes PWA y App Nativa Android desde 'data/'...")
     cmd_sesion(dia_objetivo=dia, silencioso=True)
     res = compilar_app_data.compilar_todo()
     mod = res.get("total_archivos_modificados", 0)
     if mod > 0:
-        print(f"OK: {mod} archivos sincronizados en DameCañaTN y pwa/public/app.")
+        print(f"OK: {mod} archivos sincronizados en DameCaña (PWA) y export_dame_cana_android.")
     else:
-        print("OK: Los clientes PWA ya estaban 100% al día con data/.")
+        print("OK: Clientes PWA y App Nativa Android 100% al día con data/.")
 
     if desplegar:
-        print("Lanzando despliegue a Firebase Hosting...")
+        print("Lanzando despliegue a Firebase Hosting (PWA + Cloud Bridge Android)...")
         cmd = "npx -y firebase-tools deploy --only hosting"
         pwa_dir = ROOT / "pwa"
         ret = subprocess.run(cmd, cwd=pwa_dir, shell=True)

@@ -88,6 +88,10 @@ object TrainingRepository {
 
     private const val DEFAULT_SYNC_ENDPOINT =
         "https://script.google.com/macros/s/AKfycbwQIItMuOszCh2RmjtnoymELZky0GifsZD_0KsREs7rlBETHIzi8lDDfDFknB3XAgnt/exec"
+    private const val REMOTE_BASE_URL = "https://dame-cana-pwa.web.app"
+    private const val REMOTE_PRESCRIPTION_URL = "$REMOTE_BASE_URL/sesion_activa.json"
+    private const val REMOTE_TEMPLATES_URL = "$REMOTE_BASE_URL/plantillas_dia.json"
+    private const val REMOTE_TECH_URL = "$REMOTE_BASE_URL/tecnica.json"
 
     var technicalData: TechnicalDataRoot? = null
         private set
@@ -95,8 +99,14 @@ object TrainingRepository {
         private set
     var dayTemplates: Map<String, DayTemplate> = emptyMap()
         private set
-    var activePrescription: ActivePrescriptionAsset? = null
-        private set
+
+    private val _activePrescription = MutableStateFlow<ActivePrescriptionAsset?>(null)
+    val activePrescriptionFlow: StateFlow<ActivePrescriptionAsset?> = _activePrescription.asStateFlow()
+    var activePrescription: ActivePrescriptionAsset?
+        get() = _activePrescription.value
+        private set(value) {
+            _activePrescription.value = value
+        }
 
     private val _activeSession = MutableStateFlow<ActiveSession?>(null)
     val activeSession: StateFlow<ActiveSession?> = _activeSession.asStateFlow()
@@ -149,6 +159,30 @@ object TrainingRepository {
         } catch (_: Exception) {
         }
 
+        // Sobrescribir con caché remoto más reciente si existe en disco
+        try {
+            val fTech = remoteTechFile(appContext)
+            if (fTech.exists()) {
+                technicalData = json.decodeFromString<TechnicalDataRoot>(fTech.readText())
+            }
+        } catch (_: Exception) {}
+        try {
+            val fTpl = remoteTemplatesFile(appContext)
+            if (fTpl.exists()) {
+                dayTemplates = json.decodeFromString<Map<String, DayTemplate>>(fTpl.readText())
+            }
+        } catch (_: Exception) {}
+        try {
+            val fPresc = remotePrescriptionFile(appContext)
+            if (fPresc.exists()) {
+                val cached = json.decodeFromString<ActivePrescriptionAsset>(fPresc.readText())
+                val currentUpd = activePrescription?.updatedAt.orEmpty()
+                if (cached.updatedAt >= currentUpd && cached.noteV1.isNotBlank()) {
+                    activePrescription = cached
+                }
+            }
+        } catch (_: Exception) {}
+
         loadDiskState(appContext)
         loadAndMergeHistorialSemilla(appContext)
         if (_activeSession.value == null) {
@@ -163,6 +197,9 @@ object TrainingRepository {
     private fun historyFile(context: Context) = File(context.filesDir, "training_history_v1.json")
     private fun syncQueueFile(context: Context) = File(context.filesDir, "sync_queue_v1.json")
     private fun checkinsFile(context: Context) = File(context.filesDir, "checkins_v1.json")
+    private fun remotePrescriptionFile(context: Context) = File(context.filesDir, "remote_prescription_v1.json")
+    private fun remoteTemplatesFile(context: Context) = File(context.filesDir, "remote_templates_v1.json")
+    private fun remoteTechFile(context: Context) = File(context.filesDir, "remote_tecnica_v1.json")
 
     private fun loadAndMergeHistorialSemilla(context: Context) {
         val seedSessions = try {
@@ -263,6 +300,97 @@ object TrainingRepository {
         val presc = activePrescription ?: return null
         return importFromNoteV1(context, presc.noteV1)
     }
+
+    private fun httpGetString(urlStr: String, timeoutMs: Int = 5500): String? {
+        return try {
+            val sep = if ("?" in urlStr) "&" else "?"
+            val conn = (URL("${urlStr}${sep}t=${System.currentTimeMillis()}").openConnection() as HttpURLConnection).apply {
+                requestMethod = "GET"
+                connectTimeout = timeoutMs
+                readTimeout = timeoutMs
+                useCaches = false
+                setRequestProperty("Cache-Control", "no-cache, no-store, must-revalidate")
+                setRequestProperty("Pragma", "no-cache")
+            }
+            if (conn.responseCode in 200..299) {
+                conn.inputStream.bufferedReader(Charsets.UTF_8).use { it.readText() }
+            } else {
+                null
+            }
+        } catch (_: Exception) {
+            null
+        }
+    }
+
+    suspend fun syncRemotePrescription(context: Context, forceInject: Boolean = false): Pair<Boolean, String> =
+        withContext(Dispatchers.IO) {
+            val appContext = context.applicationContext
+
+            // 1. Actualizar plantillas y fichas técnicas en segundo plano si están disponibles
+            httpGetString(REMOTE_TEMPLATES_URL, timeoutMs = 4000)?.let { rawTpl ->
+                try {
+                    val parsedTpl = json.decodeFromString<Map<String, DayTemplate>>(rawTpl)
+                    if (parsedTpl.isNotEmpty()) {
+                        dayTemplates = parsedTpl
+                        remoteTemplatesFile(appContext).writeText(rawTpl)
+                    }
+                } catch (_: Exception) {}
+            }
+            httpGetString(REMOTE_TECH_URL, timeoutMs = 4000)?.let { rawTech ->
+                try {
+                    val parsedTech = json.decodeFromString<TechnicalDataRoot>(rawTech)
+                    if (parsedTech.ejercicios.isNotEmpty()) {
+                        technicalData = parsedTech
+                        remoteTechFile(appContext).writeText(rawTech)
+                    }
+                } catch (_: Exception) {}
+            }
+
+            // 2. Descargar prescripción activa (sesion_activa.json)
+            val rawPresc = httpGetString(REMOTE_PRESCRIPTION_URL, timeoutMs = 6000)
+            if (rawPresc != null) {
+                try {
+                    val remote = json.decodeFromString<ActivePrescriptionAsset>(rawPresc)
+                    if (remote.noteV1.isNotBlank()) {
+                        val prevUpdatedAt = activePrescription?.updatedAt.orEmpty()
+                        val prevNote = activePrescription?.noteV1.orEmpty()
+                        val isNewer = (remote.updatedAt.isNotBlank() && remote.updatedAt != prevUpdatedAt) || remote.noteV1 != prevNote
+
+                        activePrescription = remote
+                        remotePrescriptionFile(appContext).writeText(rawPresc)
+
+                        val currentSession = _activeSession.value
+                        val hasStartedSets = currentSession?.exercises?.any { ex ->
+                            ex.entries.any { it.reps.isNotBlank() }
+                        } == true
+                        val sameSourceAlreadyLoaded = currentSession?.sourceNote == remote.noteV1
+
+                        if (forceInject || (isNewer && !hasStartedSets && !sameSourceAlreadyLoaded) || currentSession == null) {
+                            withContext(Dispatchers.Main) {
+                                importFromNoteV1(appContext, remote.noteV1)
+                            }
+                            val stamp = remote.updatedAt.take(16).replace('T', ' ')
+                            return@withContext true to "☁️ Sesión Día ${remote.dia} inyectada ($stamp)"
+                        } else if (isNewer && hasStartedSets) {
+                            return@withContext false to "☁️ Nueva sesión Día ${remote.dia} lista en botón ⚡ HOY (sesión en curso respetada)"
+                        } else {
+                            return@withContext false to "☁️ Día ${remote.dia} al día con el Agente"
+                        }
+                    }
+                } catch (_: Exception) {}
+            }
+
+            // Fallback offline si el usuario pulsó explícitamente ⚡ HOY sin cobertura
+            if (forceInject) {
+                val injected = withContext(Dispatchers.Main) {
+                    injectTodayPrescription(appContext)
+                }
+                if (injected != null) {
+                    return@withContext true to "⚡ Sesión Día ${activePrescription?.dia ?: "B"} inyectada (caché local)"
+                }
+            }
+            false to "Sin conexión con servidor remoto (usando datos locales)"
+        }
 
     fun loadDayTemplate(context: Context, dayKey: String): ActiveSession? {
         val tpl = dayTemplates[dayKey] ?: return null

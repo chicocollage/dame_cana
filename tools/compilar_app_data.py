@@ -23,13 +23,21 @@ INDICACIONES_JSON = ROOT / "data/indicaciones_tecnicas.json"
 PROGRAMA_JSON = ROOT / "data/programa.json"
 CATALOGOS_JSON = ROOT / "data/catalogos.json"
 
-# Destinos
+# Destinos JS (PWA)
 DESTINOS = [
+    ROOT / "DameCaña",
     ROOT / "DameCañaTN",
+    ROOT / "pwa/public",
     ROOT / "pwa/public/app",
     ROOT / "pwa/public/tn",
     ROOT / "pwa/public/tn3d",
     ROOT / "pwa/public/bp",
+]
+
+# Destinos JSON nativos (Android APK assets + Cloud endpoint)
+DESTINOS_ANDROID_JSON = [
+    ROOT / "export_dame_cana_android/app/src/main/assets",
+    ROOT / "pwa/public",
 ]
 
 
@@ -64,6 +72,11 @@ def compilar_technical_data() -> dict:
         target = d / "technical-data.js"
         if _guardar_si_cambia(target, contenido_js):
             cambios.append(str(target.relative_to(ROOT)))
+
+    for d_json in DESTINOS_ANDROID_JSON:
+        target_json = d_json / "tecnica.json"
+        if _guardar_si_cambia(target_json, json_str + "\n"):
+            cambios.append(str(target_json.relative_to(ROOT)))
 
     return {"modulo": "technical-data.js", "total_ejercicios": total, "archivos_actualizados": cambios}
 
@@ -128,10 +141,12 @@ def compilar_day_templates() -> dict:
 
     dias = ["A", "B", "C", "D", "E"]
     bloques_dia = []
+    plantillas_json_dict = {}
 
     for d in dias:
         slots_dia = [s for s in slots if s.get("dia") == d]
         filas = []
+        ejercicios_json = []
         for s in slots_dia:
             slot_id = s.get("slot_id")
             catalog_id = s.get("exercise_id") or "E001"
@@ -141,19 +156,38 @@ def compilar_day_templates() -> dict:
             cue = s.get("regla_tecnica_estado", "")
             comp_grp = s.get("comparability_group", "").lower()
             name = s.get("ejercicio_selector", "").lower()
-            per_side = "true" if ("unilateral" in comp_grp or "bulgar" in comp_grp or "unilateral" in name or "búlgara" in name) else "false"
+            is_per_side = ("unilateral" in comp_grp or "bulgar" in comp_grp or "unilateral" in name or "búlgara" in name)
+            per_side = "true" if is_per_side else "false"
             alts = alternativas_conocidas.get(slot_id, [])
             alts_str = json.dumps(alts)
 
             filas.append(
                 f'      slot("{slot_id}","{catalog_id}",{sets},{rmin},{rmax},"{rest}",{json.dumps(cue, ensure_ascii=False)},{per_side},{alts_str})'
             )
+            ejercicios_json.append({
+                "slotId": slot_id,
+                "catalogId": catalog_id,
+                "sets": sets,
+                "repsMin": rmin,
+                "repsMax": rmax,
+                "targetRir": "1–2",
+                "rest": rest,
+                "cue": cue,
+                "perSide": is_per_side,
+                "recommendedAlternativeIds": alts,
+            })
 
         filas_str = ",\n".join(filas)
         titulo = titulos_dia.get(d, f"Día {d}")
         bloques_dia.append(
             f'    {d}: Object.freeze({{ id: "dame-cana-day-{d.lower()}", title: "{titulo}", revision: 3, exercises: Object.freeze([\n{filas_str}\n    ]) }})'
         )
+        plantillas_json_dict[d] = {
+            "id": f"dame-cana-day-{d.lower()}",
+            "title": titulo,
+            "revision": 3,
+            "exercises": ejercicios_json,
+        }
 
     todos_bloques = ",\n".join(bloques_dia)
 
@@ -177,6 +211,12 @@ def compilar_day_templates() -> dict:
         target = dest / "day-templates.js"
         if _guardar_si_cambia(target, contenido_js):
             cambios.append(str(target.relative_to(ROOT)))
+
+    contenido_plantillas_json = json.dumps(plantillas_json_dict, ensure_ascii=False, indent=2) + "\n"
+    for d_json in DESTINOS_ANDROID_JSON:
+        target_json = d_json / "plantillas_dia.json"
+        if _guardar_si_cambia(target_json, contenido_plantillas_json):
+            cambios.append(str(target_json.relative_to(ROOT)))
 
     return {"modulo": "day-templates.js", "slots_compilados": len(slots), "archivos_actualizados": cambios}
 
