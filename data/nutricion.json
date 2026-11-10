@@ -3501,12 +3501,113 @@
           ],
           "eur_est": 0.75,
           "confianza": "alta"
+        },
+        {
+          "hora": "17:35",
+          "texto": "1 batido comida lidl, 1 natilla milbona, 1 platano",
+          "items": [
+            {
+              "id": "batido_sustitutivo_comida_500ml_lidl",
+              "nombre": "Batido sustitutivo comida 500ml (Lidl)",
+              "racion": "botella",
+              "n": 1.0,
+              "gramos_est": 500.0,
+              "kcal": [
+                460.0,
+                540.0
+              ],
+              "prot": [
+                32.2,
+                37.8
+              ],
+              "carb": [
+                31.3,
+                36.7
+              ],
+              "grasa": [
+                21.2,
+                24.8
+              ],
+              "eur_est": 0.0,
+              "confianza": "alta"
+            },
+            {
+              "id": "natilla_high_protein_milbona",
+              "nombre": "Natilla High Protein (Milbona)",
+              "racion": "racion",
+              "n": 1.0,
+              "gramos_est": 100.0,
+              "kcal": [
+                61.5,
+                102.5
+              ],
+              "prot": [
+                7.5,
+                12.5
+              ],
+              "carb": [
+                6.0,
+                10.0
+              ],
+              "grasa": [
+                0.8,
+                1.2
+              ],
+              "eur_est": 0.0,
+              "confianza": "baja"
+            },
+            {
+              "id": "platano",
+              "nombre": "Plátano",
+              "racion": "platano",
+              "n": 1.0,
+              "gramos_est": 120.0,
+              "kcal": [
+                80.1,
+                133.5
+              ],
+              "prot": [
+                1.0,
+                1.7
+              ],
+              "carb": [
+                20.7,
+                34.5
+              ],
+              "grasa": [
+                0.3,
+                0.4
+              ],
+              "eur_est": 0.22,
+              "confianza": "baja"
+            }
+          ],
+          "desconocidos": [],
+          "kcal_est": [
+            601.6,
+            776.0
+          ],
+          "prot_est": [
+            40.7,
+            52.0
+          ],
+          "carb_est": [
+            58.0,
+            81.2
+          ],
+          "grasa_est": [
+            22.3,
+            26.4
+          ],
+          "eur_est": 0.22,
+          "confianza": "baja"
         }
       ]
     }
   },
   "desconocidos": [
     "140g de claras",
-    "batido de comida lidl"
+    "batido de comida lidl",
+    "1 natilla high protein"
   ]
 }
