@@ -1548,6 +1548,39 @@
       "etiquetas": [
         "personalizado"
       ]
+    },
+    {
+      "id": "bloque_boy_kibble",
+      "nombre": "Bloque Boy Kibble (Vacuno 99% + Lomo Cerdo + Gelatina)",
+      "alias": [
+        "bloque boy kibble",
+        "boy kibble",
+        "kibble",
+        "bloque kibble",
+        "bloque vacuno lomo gelatina"
+      ],
+      "tienda": "casero",
+      "raciones": {
+        "bloque": 200.0,
+        "bloque_200g": 200.0,
+        "bloque_167g": 167.0,
+        "racion": 200.0,
+        "unidad": 200.0
+      },
+      "por_100g": {
+        "kcal": 119.0,
+        "prot": 19.6,
+        "carb": 1.4,
+        "grasa": 3.8,
+        "fibra": 0.0
+      },
+      "eur_kg": 0.0,
+      "etiquetas": [
+        "personalizado",
+        "batch_cooking",
+        "proteina",
+        "carne"
+      ]
     }
   ]
 }
