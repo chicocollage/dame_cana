@@ -3451,6 +3451,56 @@
           ],
           "eur_est": 0.98,
           "confianza": "baja"
+        },
+        {
+          "hora": "14:00",
+          "texto": "35g proteina en polvo",
+          "items": [
+            {
+              "id": "proteina_whey",
+              "nombre": "Proteína en polvo (Whey concentrate)",
+              "racion": "scoop",
+              "n": 1.0,
+              "gramos_est": 30.0,
+              "kcal": [
+                104.9,
+                123.1
+              ],
+              "prot": [
+                20.7,
+                24.3
+              ],
+              "carb": [
+                1.7,
+                1.9
+              ],
+              "grasa": [
+                1.7,
+                1.9
+              ],
+              "eur_est": 0.75,
+              "confianza": "alta"
+            }
+          ],
+          "desconocidos": [],
+          "kcal_est": [
+            104.9,
+            123.1
+          ],
+          "prot_est": [
+            20.7,
+            24.3
+          ],
+          "carb_est": [
+            1.7,
+            1.9
+          ],
+          "grasa_est": [
+            1.7,
+            1.9
+          ],
+          "eur_est": 0.75,
+          "confianza": "alta"
         }
       ]
     }
