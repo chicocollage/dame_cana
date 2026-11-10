@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-11-09T16:02:35+00:00",
+  "generado_utc": "2026-11-10T16:19:27+00:00",
   "vistas": [
     {
       "name": "Inicio",
@@ -18,11 +18,11 @@
         ],
         [
           "Última sesión local",
-          "2026-11-09 · D"
+          "2026-11-10 · E"
         ],
         [
           "Siguiente día según registro local",
-          "E"
+          "A"
         ],
         [
           "Entradas conocidas pendientes",
@@ -30,15 +30,15 @@
         ],
         [
           "Sesiones",
-          42
+          43
         ],
         [
           "Filas de series",
-          604
+          617
         ],
         [
           "Filas con repeticiones positivas",
-          533
+          546
         ],
         [
           "Máquinas sin ID",
@@ -46,7 +46,7 @@
         ],
         [
           "Series sin grupo comparable",
-          601
+          614
         ],
         [
           "Entrenador y autoridad",
@@ -3982,6 +3982,61 @@
           "total_kg",
           "pendiente",
           "session-1794228597842__E5"
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Curl predicador en cable o máquina",
+          3,
+          "S1: 30.0 kg; reps 10; RIR 1.0 | S2: 30.0 kg; reps 8; RIR 1.0 | S3: 25.0 kg; reps 10; RIR 1.0",
+          null,
+          "total_kg",
+          "pendiente",
+          "mwame9pm-iwdkjw__E1"
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Extensión de tríceps en polea con cuerda",
+          3,
+          "S1: 36.0 kg; reps 12; RIR 1.0 | S2: 32.0 kg; reps 14; RIR 1.0 | S3: 32.0 kg; reps 12; RIR 1.0",
+          null,
+          "total_kg",
+          "pendiente",
+          "mwame9pm-iwdkjw__E2"
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Peck-deck inverso o remo posterior abierto",
+          3,
+          "S1: 36.0 kg; reps 15; RIR 1.0 | S2: 36.0 kg; reps 15; RIR 0.0 | S3: 36.0 kg; reps 15; RIR 0.0",
+          null,
+          "total_kg",
+          "pendiente",
+          "mwame9pm-iwdkjw__E3"
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Elevación lateral en máquina",
+          3,
+          "S1: 27.0 kg; reps 20; RIR 1.0 | S2: 27.0 kg; reps 20; RIR 1.0 | S3: 27.0 kg; reps 19; RIR 1.0",
+          null,
+          "total_kg",
+          "pendiente",
+          "mwame9pm-iwdkjw__E4"
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Abducción sentada en máquina (vaciado metabólico)",
+          1,
+          "S1: 36.0 kg; reps 30; RIR 0.0",
+          "Asiento y respaldo apoyados",
+          "machine_stack_kg",
+          "pendiente",
+          "mwame9pm-iwdkjw__E5"
         ],
         [
           "2026-07-30",

@@ -1,6 +1,6 @@
 {
   "schema": "dame_cana_contexto_entrenador.v1",
-  "generado_utc": "2026-11-09T16:02:35+00:00",
+  "generado_utc": "2026-11-10T16:19:27+00:00",
   "autoridad": "local",
   "entrenador": "Antigravity / Gemini",
   "fuentes": [
@@ -14,7 +14,7 @@
     },
     {
       "ruta": "data/registro.json",
-      "sha256": "628ab0942c494156baf0eb673bb6d95fc04df0c093d2ce27020688e1e26816ad"
+      "sha256": "c42dc0817d6d4cda8de59bfa128ca5c0575915f8d5f238f3beaae10f4187e159"
     },
     {
       "ruta": "data/programa.json",
@@ -26,7 +26,7 @@
     },
     {
       "ruta": "data/nutricion.json",
-      "sha256": "2a63177729762234c943cf3de724afe332f9c045740bba83d133823759f2680f"
+      "sha256": "7490e0365ffa066203c0752b7eef9db6def13e59543b473dc09733bb9ef2d763"
     },
     {
       "ruta": "data/maquinas.json",
@@ -100,11 +100,11 @@
     ],
     [
       "Última sesión local",
-      "2026-11-09 · D"
+      "2026-11-10 · E"
     ],
     [
       "Siguiente día según registro local",
-      "E"
+      "A"
     ],
     [
       "Entradas conocidas pendientes",
@@ -112,15 +112,15 @@
     ],
     [
       "Sesiones",
-      42
+      43
     ],
     [
       "Filas de series",
-      604
+      617
     ],
     [
       "Filas con repeticiones positivas",
-      533
+      546
     ],
     [
       "Máquinas sin ID",
@@ -128,7 +128,7 @@
     ],
     [
       "Series sin grupo comparable",
-      601
+      614
     ],
     [
       "Entrenador y autoridad",
@@ -153,10 +153,10 @@
     "nutricion_sfr": "3 a 4 bolos anabólicos de 40-50 g de proteína (>3-4 g leucina) evitando tomas fragmentadas (<25 g)"
   },
   "calidad": {
-    "sesiones": 42,
-    "series": 604,
-    "ultimo_dia": "D",
-    "siguiente_dia": "E",
+    "sesiones": 43,
+    "series": 617,
+    "ultimo_dia": "E",
+    "siguiente_dia": "A",
     "recuentos_historicos_distintos": [
       {
         "session_id": "msppelcx-yful6r",
@@ -239,29 +239,29 @@
         "filas_de_series": 13
       }
     ],
-    "series_con_repeticiones": 533,
+    "series_con_repeticiones": 546,
     "series_sin_repeticiones": 71,
     "ultima_sesion": {
-      "session_id": "session-1794228597842",
-      "fecha": "2026-11-09",
-      "dia": "D",
-      "titulo": "Día D (INCOMPLETO 1/2: solo compuestos D01+D02; faltan D03, D04, D05)"
+      "session_id": "mwame9pm-iwdkjw",
+      "fecha": "2026-11-10",
+      "dia": "E",
+      "titulo": "Día E"
     },
     "campos_ausentes_en_series": {
-      "exercise_id": 601,
-      "machine_id": 601,
-      "comparability_group": 601,
-      "machine_settings": 446
+      "exercise_id": 614,
+      "machine_id": 614,
+      "comparability_group": 614,
+      "machine_settings": 458
     },
     "bases_de_carga": {
       "unknown": 307,
       "bodyweight": 4,
-      "total_kg": 238,
+      "total_kg": 250,
       "unknown_kg_basis": 12,
       "per_side_kg": 24,
       "per_side": 3,
       "added_kg": 11,
-      "machine_stack_kg": 5
+      "machine_stack_kg": 6
     },
     "conflictos_fuentes_pendientes": 0
   },
@@ -333,11 +333,11 @@
     },
     {
       "nombre": "Sesiones",
-      "filas": 42
+      "filas": 43
     },
     {
       "nombre": "Series",
-      "filas": 604
+      "filas": 617
     },
     {
       "nombre": "Opciones",
@@ -363,7 +363,7 @@
     },
     {
       "nombre": "Mi historial",
-      "filas": 240
+      "filas": 245
     },
     {
       "nombre": "Seguimiento",

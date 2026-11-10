@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-11-09T16:02:35+00:00",
+  "generado_utc": "2026-11-10T16:19:27+00:00",
   "vistas": [
     {
       "name": "Resumen",
@@ -18,11 +18,11 @@
         ],
         [
           "Última sesión local",
-          "2026-11-09 · D"
+          "2026-11-10 · E"
         ],
         [
           "Siguiente día según registro local",
-          "E"
+          "A"
         ],
         [
           "Entradas conocidas pendientes",
@@ -30,15 +30,15 @@
         ],
         [
           "Sesiones",
-          42
+          43
         ],
         [
           "Filas de series",
-          604
+          617
         ],
         [
           "Filas con repeticiones positivas",
-          533
+          546
         ],
         [
           "Máquinas sin ID",
@@ -46,7 +46,7 @@
         ],
         [
           "Series sin grupo comparable",
-          601
+          614
         ],
         [
           "Entrenador y autoridad",
@@ -1658,6 +1658,15 @@
           true,
           "app_export",
           "2026-11-09-dia-d-parcial-1794228597842.json"
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Día E",
+          "mwame9pm-iwdkjw",
+          true,
+          "app_export",
+          "2026-11-10-dia-e-mwame9pm.json"
         ]
       ]
     },
@@ -11948,6 +11957,227 @@
           "session-1794228597842",
           "session-1794228597842__E5__S2",
           "PENDIENTE (sesión partida a la mitad)"
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Curl predicador en cable o máquina",
+          1,
+          30.0,
+          10,
+          1.0,
+          "total_kg",
+          "Máquina de palanca con carga por discos lateral",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E1__S1",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Curl predicador en cable o máquina",
+          2,
+          30.0,
+          8,
+          1.0,
+          "total_kg",
+          "Máquina de palanca con carga por discos lateral",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E1__S2",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Curl predicador en cable o máquina",
+          3,
+          25.0,
+          10,
+          1.0,
+          "total_kg",
+          "Máquina de palanca con carga por discos lateral",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E1__S3",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Extensión de tríceps en polea con cuerda",
+          1,
+          36.0,
+          12,
+          1.0,
+          "total_kg",
+          "Cable / polea con cuerda bilateral",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E2__S1",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Extensión de tríceps en polea con cuerda",
+          2,
+          32.0,
+          14,
+          1.0,
+          "total_kg",
+          "Cable / polea con cuerda bilateral",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E2__S2",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Extensión de tríceps en polea con cuerda",
+          3,
+          32.0,
+          12,
+          1.0,
+          "total_kg",
+          "Cable / polea con cuerda bilateral",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E2__S3",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Peck-deck inverso o remo posterior abierto",
+          1,
+          36.0,
+          15,
+          1.0,
+          "total_kg",
+          "Máquina",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E3__S1",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Peck-deck inverso o remo posterior abierto",
+          2,
+          36.0,
+          15,
+          0.0,
+          "total_kg",
+          "Máquina",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E3__S2",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Peck-deck inverso o remo posterior abierto",
+          3,
+          36.0,
+          15,
+          0.0,
+          "total_kg",
+          "Máquina",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E3__S3",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Elevación lateral en máquina",
+          1,
+          27.0,
+          20,
+          1.0,
+          "total_kg",
+          "Máquina",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E4__S1",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Elevación lateral en máquina",
+          2,
+          27.0,
+          20,
+          1.0,
+          "total_kg",
+          "Máquina",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E4__S2",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Elevación lateral en máquina",
+          3,
+          27.0,
+          19,
+          1.0,
+          "total_kg",
+          "Máquina",
+          null,
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E4__S3",
+          null
+        ],
+        [
+          "2026-11-10",
+          "E",
+          "Abducción sentada en máquina (vaciado metabólico)",
+          1,
+          36.0,
+          30,
+          0.0,
+          "machine_stack_kg",
+          "Máquina",
+          "Asiento y respaldo apoyados",
+          null,
+          null,
+          "mwame9pm-iwdkjw",
+          "mwame9pm-iwdkjw__E5__S1",
+          null
         ]
       ]
     },

@@ -7366,6 +7366,124 @@
         "PENDIENTE (sesión partida a la mitad)"
       ],
       "procedencia": "2026-11-09-dia-d-parcial-1794228597842.json"
+    },
+    {
+      "id": "mwame9pm-iwdkjw__E1",
+      "session_id": "mwame9pm-iwdkjw",
+      "orden": 1,
+      "fecha": "2026-11-10",
+      "dia": "E",
+      "nombre_original": "Curl predicador en cable o máquina",
+      "nombre": "Curl predicador en cable o máquina",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Máquina de palanca con carga por discos lateral",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "mwame9pm-iwdkjw__E1__S1",
+        "mwame9pm-iwdkjw__E1__S2",
+        "mwame9pm-iwdkjw__E1__S3"
+      ],
+      "series_con_reps": 3,
+      "observaciones": [],
+      "procedencia": "2026-11-10-dia-e-mwame9pm.json"
+    },
+    {
+      "id": "mwame9pm-iwdkjw__E2",
+      "session_id": "mwame9pm-iwdkjw",
+      "orden": 2,
+      "fecha": "2026-11-10",
+      "dia": "E",
+      "nombre_original": "Extensión de tríceps en polea con cuerda",
+      "nombre": "Extensión de tríceps en polea con cuerda",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Cable / polea con cuerda bilateral",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "mwame9pm-iwdkjw__E2__S1",
+        "mwame9pm-iwdkjw__E2__S2",
+        "mwame9pm-iwdkjw__E2__S3"
+      ],
+      "series_con_reps": 3,
+      "observaciones": [],
+      "procedencia": "2026-11-10-dia-e-mwame9pm.json"
+    },
+    {
+      "id": "mwame9pm-iwdkjw__E3",
+      "session_id": "mwame9pm-iwdkjw",
+      "orden": 3,
+      "fecha": "2026-11-10",
+      "dia": "E",
+      "nombre_original": "Peck-deck inverso o remo posterior abierto",
+      "nombre": "Peck-deck inverso o remo posterior abierto",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Máquina",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "mwame9pm-iwdkjw__E3__S1",
+        "mwame9pm-iwdkjw__E3__S2",
+        "mwame9pm-iwdkjw__E3__S3"
+      ],
+      "series_con_reps": 3,
+      "observaciones": [],
+      "procedencia": "2026-11-10-dia-e-mwame9pm.json"
+    },
+    {
+      "id": "mwame9pm-iwdkjw__E4",
+      "session_id": "mwame9pm-iwdkjw",
+      "orden": 4,
+      "fecha": "2026-11-10",
+      "dia": "E",
+      "nombre_original": "Elevación lateral en máquina",
+      "nombre": "Elevación lateral en máquina",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Máquina",
+      "ajustes": null,
+      "base_carga": "total_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "mwame9pm-iwdkjw__E4__S1",
+        "mwame9pm-iwdkjw__E4__S2",
+        "mwame9pm-iwdkjw__E4__S3"
+      ],
+      "series_con_reps": 3,
+      "observaciones": [],
+      "procedencia": "2026-11-10-dia-e-mwame9pm.json"
+    },
+    {
+      "id": "mwame9pm-iwdkjw__E5",
+      "session_id": "mwame9pm-iwdkjw",
+      "orden": 5,
+      "fecha": "2026-11-10",
+      "dia": "E",
+      "nombre_original": "Abducción sentada en máquina (vaciado metabólico)",
+      "nombre": "Abducción sentada en máquina (vaciado metabólico)",
+      "exercise_id": null,
+      "machine_id": null,
+      "variante": "Máquina",
+      "ajustes": "Asiento y respaldo apoyados",
+      "base_carga": "machine_stack_kg",
+      "comparabilidad": "pendiente",
+      "prescripcion": "No inferir desde el programa actual; consultar JSON original cuando contiene prescripcion.",
+      "series_ids": [
+        "mwame9pm-iwdkjw__E5__S1"
+      ],
+      "series_con_reps": 1,
+      "observaciones": [],
+      "procedencia": "2026-11-10-dia-e-mwame9pm.json"
     }
   ],
   "decisiones": [

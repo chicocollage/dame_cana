@@ -3298,6 +3298,161 @@
           "confianza": "alta"
         }
       ]
+    },
+    "2026-11-10": {
+      "estado": "abierto",
+      "ingestas": [
+        {
+          "hora": "10:47",
+          "texto": "4 huevos revueltos, 160g claras, 55g harina de avena, 1 cucharada aceite de oliva, 25g azucar",
+          "items": [
+            {
+              "id": "huevo_l",
+              "nombre": "Huevo clase L",
+              "racion": "unidad",
+              "n": 4.0,
+              "gramos_est": 220.0,
+              "kcal": [
+                289.4,
+                339.8
+              ],
+              "prot": [
+                25.5,
+                29.9
+              ],
+              "carb": [
+                1.4,
+                1.7
+              ],
+              "grasa": [
+                20.0,
+                23.5
+              ],
+              "eur_est": 0.8,
+              "confianza": "alta"
+            },
+            {
+              "id": "claras_de_huevo",
+              "nombre": "Claras de huevo",
+              "racion": "racion",
+              "n": 1.0,
+              "gramos_est": 100.0,
+              "kcal": [
+                37.5,
+                62.5
+              ],
+              "prot": [
+                8.2,
+                13.8
+              ],
+              "carb": [
+                0.5,
+                0.9
+              ],
+              "grasa": [
+                0.2,
+                0.2
+              ],
+              "eur_est": 0.0,
+              "confianza": "baja"
+            },
+            {
+              "id": "avena",
+              "nombre": "Copos de avena",
+              "racion": "tazon",
+              "n": 1.0,
+              "gramos_est": 50.0,
+              "kcal": [
+                159.4,
+                215.6
+              ],
+              "prot": [
+                5.7,
+                7.8
+              ],
+              "carb": [
+                25.5,
+                34.5
+              ],
+              "grasa": [
+                3.0,
+                4.0
+              ],
+              "eur_est": 0.08,
+              "confianza": "media"
+            },
+            {
+              "id": "aceite_oliva",
+              "nombre": "Aceite de oliva virgen extra",
+              "racion": "cucharada",
+              "n": 1.0,
+              "gramos_est": 10.0,
+              "kcal": [
+                66.3,
+                110.5
+              ],
+              "prot": [
+                0.0,
+                0.0
+              ],
+              "carb": [
+                0.0,
+                0.0
+              ],
+              "grasa": [
+                7.5,
+                12.5
+              ],
+              "eur_est": 0.09,
+              "confianza": "baja"
+            },
+            {
+              "id": "azucar_blanco",
+              "nombre": "Azúcar blanco",
+              "racion": "cucharada_postre",
+              "n": 1.0,
+              "gramos_est": 5.0,
+              "kcal": [
+                15.0,
+                25.0
+              ],
+              "prot": [
+                0.0,
+                0.0
+              ],
+              "carb": [
+                3.8,
+                6.2
+              ],
+              "grasa": [
+                0.0,
+                0.0
+              ],
+              "eur_est": 0.01,
+              "confianza": "baja"
+            }
+          ],
+          "desconocidos": [],
+          "kcal_est": [
+            567.6,
+            753.4
+          ],
+          "prot_est": [
+            39.4,
+            51.5
+          ],
+          "carb_est": [
+            31.2,
+            43.3
+          ],
+          "grasa_est": [
+            30.7,
+            40.2
+          ],
+          "eur_est": 0.98,
+          "confianza": "baja"
+        }
+      ]
     }
   },
   "desconocidos": [

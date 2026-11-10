@@ -1,0 +1,149 @@
+{
+  "schema": "training_log.v1",
+  "exported_at": "2026-11-10T16:15:00.000Z",
+  "session": {
+    "id": "mwame9pm-iwdkjw",
+    "title": "Día E",
+    "date": "2026-11-10T11:42:03.946Z",
+    "updated_at": "2026-11-10T16:14:09.095Z",
+    "finished": true,
+    "exercise_count": 5,
+    "planned_set_count": 13,
+    "recorded_set_count": 13
+  },
+  "exercises": [
+    {
+      "index": 1,
+      "name": "Curl predicador en cable o máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina de palanca con carga por discos lateral",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 8,
+        "reps_max": 12,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Iniciar con 30 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 12 reps @1 con esa carga. [SFR 40+: pausa ~1 s en máximo estiramiento sin rebote; RIR 0 solo en la última serie y sin molestia tendinosa]. / Configuración: Máquina con placas y selector en kg (banco Scott) / Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {"index": 1, "load_kg": "30", "resistance": {"mode": "external", "difficulty": ""}, "reps": "10", "rir": "1"},
+          {"index": 2, "load_kg": "30", "resistance": {"mode": "external", "difficulty": ""}, "reps": "8", "rir": "1"},
+          {"index": 3, "load_kg": "25", "resistance": {"mode": "external", "difficulty": ""}, "reps": "10", "rir": "1"}
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "Extensión de tríceps en polea con cuerda",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Cable / polea con cuerda bilateral",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 10,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Iniciar con 32 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 15 reps @1 con esa carga. [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%]. / Configuración: Polea alta con cuerda / Separando muñecas abajo / Hecha con cuerda, con las dos manos / Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {"index": 1, "load_kg": "36", "resistance": {"mode": "external", "difficulty": ""}, "reps": "12", "rir": "1"},
+          {"index": 2, "load_kg": "32", "resistance": {"mode": "external", "difficulty": ""}, "reps": "14", "rir": "1"},
+          {"index": 3, "load_kg": "32", "resistance": {"mode": "external", "difficulty": ""}, "reps": "12", "rir": "1"}
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "Peck-deck inverso o remo posterior abierto",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 12,
+        "reps_max": 15,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Mantener 36 kg. Objetivo hoy: progresar a 14-15 reps por serie con RIR 1 hacia el tope de 15. [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%]. / Configuración: Máquina Peck-deck inverso o poleas cruzadas / Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {"index": 1, "load_kg": "36", "resistance": {"mode": "external", "difficulty": ""}, "reps": "15", "rir": "1"},
+          {"index": 2, "load_kg": "36", "resistance": {"mode": "external", "difficulty": ""}, "reps": "15", "rir": "0"},
+          {"index": 3, "load_kg": "36", "resistance": {"mode": "external", "difficulty": ""}, "reps": "15", "rir": "0"}
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "Elevación lateral en máquina",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "",
+        "load_basis": "total_kg"
+      },
+      "prescription": {
+        "sets": 3,
+        "reps_min": 15,
+        "reps_max": 20,
+        "per_side": false,
+        "target_rir": "1",
+        "rest": "90–150 s",
+        "coach_cue": "Hoy: Iniciar con 27 kg desde la primera serie. Objetivo hoy: sumar repeticiones hacia 20 reps @1 con esa carga. [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%]. / Configuración: Máquina de elevación lateral con placas / Eje del hombro alineado con pivote / Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {"index": 1, "load_kg": "27", "resistance": {"mode": "external", "difficulty": ""}, "reps": "20", "rir": "1"},
+          {"index": 2, "load_kg": "27", "resistance": {"mode": "external", "difficulty": ""}, "reps": "20", "rir": "1"},
+          {"index": 3, "load_kg": "27", "resistance": {"mode": "external", "difficulty": ""}, "reps": "19", "rir": "1"}
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "Abducción sentada en máquina (vaciado metabólico)",
+      "identity": {
+        "resistance_mode": "external",
+        "variant": "Máquina",
+        "machine_settings": "Asiento y respaldo apoyados",
+        "load_basis": "machine_stack_kg"
+      },
+      "prescription": {
+        "sets": 1,
+        "reps_min": 25,
+        "reps_max": 30,
+        "per_side": false,
+        "target_rir": "0-1",
+        "rest": "",
+        "coach_cue": "Hoy: Mantener 43 kg. Asegurar que todas las series entren limpias en el rango 25-30 reps manteniendo RIR 0-1. [SFR 40+: control en la fase de mayor tensión; RIR 0 permitido solo en la última serie si tendones al 100%]. / Configuración: Máquina con placas / Asiento y respaldo apoyados / Pausa isométrica al final (en máxima abducción) / Registra: Carga, reps, RIR y ajustes exactos si varían."
+      },
+      "result": {
+        "movement_notes": "",
+        "sets": [
+          {"index": 1, "load_kg": "36", "resistance": {"mode": "external", "difficulty": ""}, "reps": "30", "rir": "0"}
+        ]
+      }
+    }
+  ]
+}
