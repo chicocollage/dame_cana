@@ -92,6 +92,7 @@ object TrainingRepository {
     private const val REMOTE_PRESCRIPTION_URL = "$REMOTE_BASE_URL/sesion_activa.json"
     private const val REMOTE_TEMPLATES_URL = "$REMOTE_BASE_URL/plantillas_dia.json"
     private const val REMOTE_TECH_URL = "$REMOTE_BASE_URL/tecnica.json"
+    private const val REMOTE_HISTORY_URL = "$REMOTE_BASE_URL/historial_semilla.json"
 
     var technicalData: TechnicalDataRoot? = null
         private set
@@ -345,6 +346,20 @@ object TrainingRepository {
                     }
                 } catch (_: Exception) {}
             }
+            httpGetString(REMOTE_HISTORY_URL, timeoutMs = 4500)?.let { rawHist ->
+                try {
+                    val remoteSessions = json.decodeFromString<List<ActiveSession>>(rawHist)
+                    if (remoteSessions.isNotEmpty()) {
+                        val currentDiskHistory = _history.value.filterNot { it.id == "seed-comparable-v1" }
+                        val merged = (currentDiskHistory + remoteSessions)
+                            .filterNot { it.id == "seed-comparable-v1" }
+                            .distinctBy { it.id }
+                            .sortedByDescending { it.date }
+                        _history.value = merged
+                        historyFile(appContext).writeText(json.encodeToString(merged))
+                    }
+                } catch (_: Exception) {}
+            }
 
             // 2. Descargar prescripción activa (sesion_activa.json)
             val rawPresc = httpGetString(REMOTE_PRESCRIPTION_URL, timeoutMs = 6000)
@@ -365,7 +380,7 @@ object TrainingRepository {
                         } == true
                         val sameSourceAlreadyLoaded = currentSession?.sourceNote == remote.noteV1
 
-                        if (forceInject || (isNewer && !hasStartedSets && !sameSourceAlreadyLoaded) || currentSession == null) {
+                        if (forceInject || (!hasStartedSets && !sameSourceAlreadyLoaded) || currentSession == null) {
                             withContext(Dispatchers.Main) {
                                 importFromNoteV1(appContext, remote.noteV1)
                             }

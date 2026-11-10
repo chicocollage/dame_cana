@@ -261,17 +261,130 @@ def compilar_technical_tools() -> dict:
     return {"modulo": "technical-tools.js", "archivos_actualizados": cambios}
 
 
+def compilar_historial_semilla() -> dict:
+    registro_path = ROOT / "data/registro.json"
+    if not registro_path.exists():
+        return {"error": "Falta data/registro.json"}
+
+    reg = json.loads(registro_path.read_text(encoding="utf-8"))
+    sesiones = reg.get("sesiones", [])
+    series = reg.get("series", [])
+
+    # Agrupar series por session_id
+    by_session: dict[str, list[dict]] = {}
+    for s in series:
+        sid = s.get("session_id")
+        if sid:
+            by_session.setdefault(sid, []).append(s)
+
+    seed_base_path = ROOT / "export_dame_cana_android/app/src/main/assets/historial_semilla.json"
+    existing_seed = []
+    if seed_base_path.exists():
+        try:
+            existing_seed = json.loads(seed_base_path.read_text(encoding="utf-8"))
+        except Exception:
+            existing_seed = []
+
+    by_id = {item["id"]: item for item in existing_seed if isinstance(item, dict) and item.get("id")}
+
+    for ses in sesiones:
+        sid = ses.get("session_id")
+        fecha = ses.get("fecha") or ""
+        dia = ses.get("dia") or ""
+        hist_id = f"hist-{fecha}-{dia}" if (fecha and dia) else (sid or f"hist-{fecha}")
+        ses_series = by_session.get(sid, [])
+        if not ses_series:
+            continue
+
+        # Agrupar por ejercicio manteniendo orden
+        ex_groups: dict[tuple, list[dict]] = {}
+        for st in sorted(ses_series, key=lambda x: (x.get("exercise_order") or 0, x.get("set_index") or 0)):
+            key = (st.get("exercise_order") or 0, st.get("exercise_name") or "Ejercicio")
+            ex_groups.setdefault(key, []).append(st)
+
+        exercises_out = []
+        for (_, ex_name), st_list in ex_groups.items():
+            first = st_list[0]
+            entries = []
+            for st in st_list:
+                lk = st.get("load_kg")
+                try:
+                    load_str = "" if lk is None else (str(int(float(lk))) if float(lk).is_integer() else str(lk))
+                except (ValueError, TypeError):
+                    load_str = str(lk or "")
+                reps_val = st.get("reps")
+                try:
+                    reps_str = "" if reps_val is None else str(int(float(reps_val)))
+                except (ValueError, TypeError):
+                    reps_str = str(reps_val or "")
+                rir_val = st.get("rir")
+                try:
+                    rir_str = "1" if rir_val is None else (str(int(float(rir_val))) if float(rir_val).is_integer() else str(rir_val))
+                except (ValueError, TypeError):
+                    rir_str = str(rir_val or "1")
+                entries.append({
+                    "load": load_str,
+                    "difficulty": st.get("resistance_difficulty") or "",
+                    "reps": reps_str,
+                    "rir": rir_str,
+                })
+            exercises_out.append({
+                "name": ex_name,
+                "catalogId": first.get("exercise_id") or "",
+                "slotId": first.get("slot_id") or "",
+                "sets": len(entries),
+                "repsMin": 8,
+                "repsMax": 12,
+                "perSide": bool(first.get("per_side")),
+                "targetRir": "1–2",
+                "rest": "90–150 s",
+                "cue": "",
+                "identity": {
+                    "resistanceMode": first.get("resistance_mode") or "external",
+                    "variant": first.get("variant") or "",
+                    "settings": first.get("machine_settings") or "",
+                    "loadBasis": first.get("load_basis") or "total_kg",
+                    "detected": True,
+                },
+                "note": "",
+                "entries": entries,
+            })
+
+        by_id[hist_id] = {
+            "id": hist_id,
+            "title": ses.get("titulo") or (f"Día {dia}" if dia else "Sesión registrada"),
+            "date": fecha,
+            "updatedAt": ses.get("exported_at") or f"{fecha}T20:00:00Z",
+            "finished": True,
+            "sourceNote": "Historial real Danié",
+            "exercises": exercises_out,
+        }
+
+    merged_list = sorted(by_id.values(), key=lambda x: x.get("date", ""), reverse=True)
+    raw_json = json.dumps(merged_list, ensure_ascii=False, indent=2) + "\n"
+
+    cambios = []
+    for d_json in DESTINOS_ANDROID_JSON:
+        target_json = d_json / "historial_semilla.json"
+        if _guardar_si_cambia(target_json, raw_json):
+            cambios.append(str(target_json.relative_to(ROOT)))
+
+    return {"modulo": "historial_semilla.json", "sesiones_totales": len(merged_list), "archivos_actualizados": cambios}
+
+
 def compilar_todo() -> dict:
-    """Ejecuta la compilación completa de todos los módulos PWA."""
+    """Ejecuta la compilación completa de todos los módulos PWA y Android."""
     r_tech = compilar_technical_data()
     r_days = compilar_day_templates()
     r_cat = compilar_exercise_catalog()
     r_tools = compilar_technical_tools()
+    r_hist = compilar_historial_semilla()
     
     total_modificados = len(r_tech.get("archivos_actualizados", [])) + \
                         len(r_days.get("archivos_actualizados", [])) + \
                         len(r_cat.get("archivos_actualizados", [])) + \
-                        len(r_tools.get("archivos_actualizados", []))
+                        len(r_tools.get("archivos_actualizados", [])) + \
+                        len(r_hist.get("archivos_actualizados", []))
 
     return {
         "ok": True,
@@ -279,7 +392,8 @@ def compilar_todo() -> dict:
         "technical_data": r_tech,
         "day_templates": r_days,
         "exercise_catalog": r_cat,
-        "technical_tools": r_tools
+        "technical_tools": r_tools,
+        "historial_semilla": r_hist,
     }
 
 
