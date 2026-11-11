@@ -3603,6 +3603,186 @@
           "confianza": "baja"
         }
       ]
+    },
+    "2026-11-11": {
+      "estado": "abierto",
+      "ingestas": [
+        {
+          "hora": "09:57",
+          "texto": "Bolo 1: 4 huevos revueltos, 96g claras, 200ml leche +proteinas, 17.5g batido whey, 60g harina de avena, 29.5g crema de cacahuete",
+          "items": [
+            {
+              "id": "huevo_l",
+              "nombre": "Huevo clase L",
+              "racion": "unidad",
+              "n": 4.0,
+              "gramos_est": 220.0,
+              "kcal": [
+                289.4,
+                339.8
+              ],
+              "prot": [
+                25.5,
+                29.9
+              ],
+              "carb": [
+                1.4,
+                1.7
+              ],
+              "grasa": [
+                20.0,
+                23.5
+              ],
+              "eur_est": 0.8,
+              "confianza": "alta"
+            },
+            {
+              "id": "claras_de_huevo",
+              "nombre": "Claras de huevo",
+              "racion": "racion",
+              "n": 0.96,
+              "gramos_est": 96.0,
+              "kcal": [
+                36.0,
+                60.0
+              ],
+              "prot": [
+                7.9,
+                13.2
+              ],
+              "carb": [
+                0.5,
+                0.8
+              ],
+              "grasa": [
+                0.1,
+                0.2
+              ],
+              "eur_est": 0.0,
+              "confianza": "baja"
+            },
+            {
+              "id": "leche_proteina_mercadona",
+              "nombre": "Leche desnatada +Proteínas (Hacendado / Mercadona)",
+              "racion": "taza",
+              "n": 1.0,
+              "gramos_est": 200.0,
+              "kcal": [
+                70.5,
+                117.5
+              ],
+              "prot": [
+                9.0,
+                15.0
+              ],
+              "carb": [
+                7.4,
+                12.2
+              ],
+              "grasa": [
+                0.4,
+                0.8
+              ],
+              "eur_est": 0.25,
+              "confianza": "baja"
+            },
+            {
+              "id": "proteina_whey",
+              "nombre": "Proteína en polvo (Whey concentrate)",
+              "racion": "scoop",
+              "n": 0.583,
+              "gramos_est": 17.5,
+              "kcal": [
+                61.1,
+                71.8
+              ],
+              "prot": [
+                12.1,
+                14.2
+              ],
+              "carb": [
+                1.0,
+                1.1
+              ],
+              "grasa": [
+                1.0,
+                1.1
+              ],
+              "eur_est": 0.44,
+              "confianza": "alta"
+            },
+            {
+              "id": "avena",
+              "nombre": "Copos de avena",
+              "racion": "tazon",
+              "n": 1.2,
+              "gramos_est": 60.0,
+              "kcal": [
+                191.2,
+                258.8
+              ],
+              "prot": [
+                6.9,
+                9.3
+              ],
+              "carb": [
+                30.6,
+                41.4
+              ],
+              "grasa": [
+                3.6,
+                4.8
+              ],
+              "eur_est": 0.1,
+              "confianza": "media"
+            },
+            {
+              "id": "cacahuetes",
+              "nombre": "Cacahuetes tostados / crema de cacahuete",
+              "racion": "puñado",
+              "n": 0.983,
+              "gramos_est": 29.5,
+              "kcal": [
+                125.4,
+                209.0
+              ],
+              "prot": [
+                5.8,
+                9.6
+              ],
+              "carb": [
+                3.5,
+                5.9
+              ],
+              "grasa": [
+                10.8,
+                18.1
+              ],
+              "eur_est": 0.1,
+              "confianza": "baja"
+            }
+          ],
+          "desconocidos": [],
+          "kcal_est": [
+            773.6,
+            1056.9
+          ],
+          "prot_est": [
+            67.2,
+            91.2
+          ],
+          "carb_est": [
+            44.4,
+            63.1
+          ],
+          "grasa_est": [
+            35.9,
+            48.5
+          ],
+          "eur_est": 1.69,
+          "confianza": "baja"
+        }
+      ]
     }
   },
   "desconocidos": [
