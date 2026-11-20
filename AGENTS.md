@@ -10,6 +10,7 @@ Para minimizar consumo de tokens y evitar dispersión de atención, **prohibido 
 4. **Auditoría metodológica, revisión de ciclo o dudas de evidencia:** Abre `docs/REGLAS_DEL_ENTRENADOR.md`, `docs/ESTUDIOS_Y_ADAPTACION_PERSONAL.md` o `docs/GOBIERNO_ENTRENAMIENTO_Y_CONOCIMIENTO.md` **solo** cuando Daniel lo pida o al diseñar una transición de mesociclo.
 5. **Nutrición reportada en chat:** Registra con `python tools/nutricion.py comer --items-json '...'` (o `--texto`) y consulta con `python tools/nutricion.py hoy`. Estima por raciones sin exigir gramos exactos; pregunta solo si la duda altera >150 kcal. Audita **bolos anabólicos de 40–50 g de proteína (>3–4 g leucina)** en 3–4 tomas diarias (evitando picoteos <25 g que no vencen la resistencia anabólica 40+). **Al registrar cualquier bolo, proyecta y sugiere opciones completas para los bolos pendientes** (proteína + carbos + grasas según macros y kcal restantes del día: si es el 1º sugiere 2º/3º/4º; si es el 2º sugiere 3º/4º, etc.). Responde de forma concisa (<= 8 líneas).
 6. **Recursos gráficos de ejercicios:** Consulta únicamente `docs/GUIA_GRAFICA_EJERCICIOS.md`.
+7. **Bloqueo emocional, psicosomático, parón con culpa o ruido de autoimagen/autoestima:** Carga la skill global `neuro-hack` (Módulo Psicosomático y Autoimagen) y la Sección 6 de `docs/REGLAS_DEL_ENTRENADOR.md`. Suspende temporalmente el modo rendimiento/RIR y aplica el Modo Regulación Somática (desfusión fisiológica, enfoque 1.ª persona sin espejo evaluativo y contrato de umbral mínimo).
 
 ## Autoridad canónica
 
