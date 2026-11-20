@@ -1,5 +1,5 @@
 {
-  "generado_utc": "2026-11-20T14:26:55+00:00",
+  "generado_utc": "2026-11-20T14:50:25+00:00",
   "vistas": [
     {
       "name": "Resumen",
@@ -81,7 +81,7 @@
           "8–12",
           "1–2",
           "2–4 min",
-          "Variante G04-V1 (pies en tercio medio-alto, pausa 0.5–1 s abajo sin retroversión pélvica; discos añadidos) → Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo",
+          "Variante G04-V1 (pies en tercio medio-alto, pausa 0.5–1 s abajo sin retroversión pélvica; Valsalva con recarga rápida arriba y bloqueo intraabdominal mantenido durante la pausa en el fondo; discos añadidos) → Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo",
           "E004",
           "GYM-SQUAT-HACK-01"
         ],
@@ -249,7 +249,7 @@
           "8–12/lado",
           "1–2",
           "2–4 min",
-          "Variante G08-V1 (tibia delantera casi vertical, tronco 15°–25° al frente, pausa 1 s abajo; iniciar lado menos competente) → Busca: sobrecargar en elongación máxima las fibras inferiores del glúteo mayor para dar soporte interno y elevar el pliegue subglúteo",
+          "Variante G08-V1 (tibia delantera casi vertical, tronco 15°–25° al frente, pausa 1 s abajo; ejecutar las 3 series seguidas del lado menos competente con 2 min de descanso completo antes de pasar a las 3 series de la otra pierna para evitar limitante cardiorrespiratoria) → Busca: sobrecargar en elongación máxima las fibras inferiores del glúteo mayor para dar soporte interno y elevar el pliegue subglúteo",
           "E008",
           null
         ],
@@ -469,8 +469,8 @@
           null,
           "Máquina de abducción sentada",
           "Identidad incompleta",
-          "Pendiente",
-          "desconocido",
+          "Pila de placas (salto real de 43 kg a 50 kg; la placa de 47 kg no existe)",
+          "pila_total",
           "No registrados",
           "Pelvis/posición pendientes",
           "Pendiente",
@@ -623,8 +623,8 @@
           null,
           "Polea / pullover brazos rectos",
           "Polea; estación exacta pendiente",
-          "Pila",
-          "desconocido",
+          "Pila en libras: 10–50 lb de 10 en 10 lb; 65–230 lb de 15 en 15 lb (65, 80, 95, 110... 230 lb / 104 kg)",
+          "pila_convertida_a_kg",
           "No registrados",
           "Agarre pendiente",
           "Pendiente",
@@ -1265,6 +1265,28 @@
           "Día C (Torso Pesado) acumula 8 días sin estímulo (desde 28/10) y el descanso del 04/11 ofrece SNC y sinergistas de brazo al 100% para los compuestos de pecho/espalda. Pequeñas agujetas en piernas no interfieren con Día C.",
           "Derivación de siguiente_dia en tools/registro_local.py (Regla 4: A -> C -> B -> D) y prescripción activa SESION_ACTIVA.json fijada en Día C.",
           "Al registrar hoy Día C, el sistema propondrá automáticamente Día B como siguiente sesión y, tras B, Día D.",
+          null
+        ],
+        [
+          "D-2026-11-09-BULGARA-BLOQUE-UNILATERAL",
+          "2026-11-09",
+          "Estrategia técnica y cardiorrespiratoria (Día D)",
+          "Estructurar la Sentadilla Búlgara en Smith (D01) en bloques unilaterales completos (3 series seguidas del lado menos competente con 2 min de descanso completo entre series, y luego 3 series del otro lado) en lugar de alternar piernas en cada serie.",
+          "ACTIVA",
+          "Daniel reporta que su barrera principal en Búlgaras es la falta de aire (disnea entre series) más que el fallo contráctil; agrupar las 3 series de un lado elimina la transición continua bajo fatiga ventilatoria y mejora la estabilidad del setup en Smith.",
+          "regla_tecnica_estado de D01 en data/programa.json.",
+          "Evaluar percepción de disnea entre series y mantenimiento de repeticiones en la 2.ª pierna.",
+          null
+        ],
+        [
+          "D-2026-11-17-PROTOCOLO-REENGANCHE-SNC",
+          "2026-11-17",
+          "Adherencia, SNC y Reenganche post-parón",
+          "Cuando exista un parón no programado (>5 días) acompañado de fatiga de SNC, mal sueño o baja motivación, el sistema priorizará una sesión puente de Torso / Bombeo de baja fricción axial (ajustando -1 serie o -5/10% carga de entrada) antes de retomar los días nucleares de pierna (A o D), y protegerá siempre la ventana de 72–96 h si los días Off alteran la distancia entre D y A.",
+          "ACTIVA",
+          "Conversaciones del 10/11, 16/11, 17/11 y 20/11 tras la última sesión registrada del 10/11 (Día E).",
+          "Criterio de prescripción reactiva post-parón y nota_operativa_activa.",
+          "Adherencia en las primeras 48 h de retorno al gimnasio.",
           null
         ]
       ]

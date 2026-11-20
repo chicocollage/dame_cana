@@ -436,6 +436,68 @@
       },
       "fuente": "Daniel, sesión de auditoría de bases del sistema del 31/10/2026",
       "alcance": "Directriz transversal de gobierno para prescripción diaria, nutrición y diseño de próximos mesociclos."
+    },
+    {
+      "fecha": "2026-11-03",
+      "dato": "nutricion_estrategia_antidulce_y_bolo_liquido",
+      "valor": {
+        "transicion_refrescos": "Sustitución progresiva de Coca-Cola / Zero por agua carbonatada de sabores sin azúcar ni edulcorantes (ej. Maison Perrier) alternada con Zero-Zero para apagar hiperestimulación de receptores de dulzor y picoteo nocturno.",
+        "bolo_baja_friccion_poco_apetito": "Cuando haya inapetencia o dificultad para masticar/tragar (ej. tras vigilia o falta de sueño), priorizar bolo líquido completo: batido proteico Lidl (Food in a bottle / +Proteínas) + harina de avena (evitar copos enteros para no ralentizar vaciado gástrico) + crema de cacahuete."
+      },
+      "fuente": "Daniel, conversaciones de nutrición y control de antojos (02/11/2026 - 10/11/2026)",
+      "alcance": "Opciones tácticas de nutrición para días de bajo apetito, post-vigilia o control de ansiedad por dulce."
+    },
+    {
+      "fecha": "2026-11-03",
+      "dato": "orden_dia_A_valsalva_hack_y_placas_abduccion",
+      "valor": {
+        "orden_dia_A": "Iniciar Día A siempre por Sentadilla Hack Matrix profunda (A02) antes de Hip Thrust (A01) por mejor disposición neural y control técnico.",
+        "valsalva_hack_pausa": "Recarga rápida de aire arriba, bloqueo intraabdominal antes de iniciar descenso y mantenimiento estricto del bracing durante la pausa isométrica de 1 s en el fondo (sin soltar aire abajo).",
+        "placas_abduccion_sentada": "La pila de la máquina de abducción salta de 43 kg directamente a 50 kg (el registro antiguo de 47 kg fue un error de anotación; la placa de 47 kg no existe)."
+      },
+      "fuente": "Daniel, preparación y feedback post-entrenamiento Día A del 03/11/2026",
+      "alcance": "Permanente para prescripción y progresión de cargas en Día A y máquina de abducción."
+    },
+    {
+      "fecha": "2026-11-07",
+      "dato": "escalones_reales_poleas_y_maquinas_libras",
+      "valor": {
+        "tramo_1_lbs": "De 10 a 50 lb en incrementos de 10 lb (10, 20, 30, 40, 50 lb -> ~4.5, 9, 13.6, 18, 22.7 kg).",
+        "tramo_2_lbs": "De 50 a 230 lb en incrementos de 15 lb (65, 80, 95, 110, 125, 140, 155, 170, 185, 200, 215, 230 lb -> ~29.5, 36.3, 43, 50, 56.7, 63.5, 70.3, 77, 84, 90.7, 97.5, 104.3 kg).",
+        "convencion_registro": "Daniel registra en kg convirtiendo desde libras; no prescribir cargas intermedias que no correspondan a una placa real."
+      },
+      "fuente": "Daniel, sesión de ajuste de selectores de carga del 07/11/2026",
+      "alcance": "Calibración y progresión de cargas en todas las poleas y máquinas con selector en libras."
+    },
+    {
+      "fecha": "2026-11-09",
+      "dato": "sentadilla_bulgara_bloque_unilateral_continuo",
+      "valor": {
+        "limitante_detectada": "Disnea / falta de aire aguda entre series al alternar piernas, más que fallo muscular local.",
+        "protocolo_acordado": "Ejecutar las 3 series completas de la primera pierna (lado menos competente) con 2 min de descanso completo entre series antes de pasar a las 3 series de la segunda pierna, acompañado de regulación respiratoria entre series."
+      },
+      "fuente": "Daniel, sesión de abordaje psicológico y fisiológico de Sentadilla Búlgara del 09/11/2026",
+      "alcance": "Regla operativa para slot D01 (Sentadilla búlgara en Smith)."
+    },
+    {
+      "fecha": "2026-11-10",
+      "dato": "amortiguacion_descansos_no_planeados_cola_rodante",
+      "valor": {
+        "casuistica": "Cuando días Off no planeados dejan una secuencia como A-Off-B-C-Off-D-E seguida inmediatamente de A sin descanso (solapando D y A con solo 48 h intermedias).",
+        "regla": "Proteger la ventana de 72-96 h entre Día D (Búlgara/RDL) y Día A (Hack/Hip Thrust) insertando descanso/movilidad o permutando el orden con Torso/Satélite."
+      },
+      "fuente": "Daniel, consulta sobre dinámica de Cola Rodante ABCDE del 10/11/2026",
+      "alcance": "Gobernanza de secuencia en Sistema Vivo."
+    },
+    {
+      "fecha": "2026-11-17",
+      "dato": "protocolo_reenganche_post_paron_o_desmotivacion",
+      "valor": {
+        "contexto": "Ante parones de varios días con mal descanso, excesos o bajón anímico/desmotivación (sensación subjetiva de pérdida de tono por depleción de glucógeno y agua intracelular, sin atrofia real <14-21 días).",
+        "estrategia_reenganche": "Reenganchar por una sesión de alta tracción dopaminérgica y bajo peaje axial/SNC (Torso o Bombeo de brazos/hombros) en lugar de chocar en frío contra pierna pesada (Día A/D), recortando 1 serie o ~5-10% la carga en la primera exposición para evitar DOMS severos y recuperar adherencia inmediata."
+      },
+      "fuente": "Daniel, sesiones de reenganche del 16/11/2026, 17/11/2026 y 20/11/2026",
+      "alcance": "Protocolo oficial de reinicio tras pausas no programadas (>5 días)."
     }
   ]
 }

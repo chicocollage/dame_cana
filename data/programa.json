@@ -28,7 +28,7 @@
       "rir_operativo": "1–2",
       "descanso": "2–4 min",
       "formato": "Tradicional",
-      "regla_tecnica_estado": "Variante G04-V1 (pies en tercio medio-alto, pausa 0.5–1 s abajo sin retroversión pélvica; discos añadidos) → Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo",
+      "regla_tecnica_estado": "Variante G04-V1 (pies en tercio medio-alto, pausa 0.5–1 s abajo sin retroversión pélvica; Valsalva con recarga rápida arriba y bloqueo intraabdominal mantenido durante la pausa en el fondo; discos añadidos) → Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo",
       "exercise_id": "E004",
       "machine_id": "GYM-SQUAT-HACK-01",
       "comparability_group": "hack_matrix"
@@ -280,7 +280,7 @@
       "rir_operativo": "1–2",
       "descanso": "2–4 min",
       "formato": "Tradicional",
-      "regla_tecnica_estado": "Variante G08-V1 (tibia delantera casi vertical, tronco 15°–25° al frente, pausa 1 s abajo; iniciar lado menos competente) → Busca: sobrecargar en elongación máxima las fibras inferiores del glúteo mayor para dar soporte interno y elevar el pliegue subglúteo",
+      "regla_tecnica_estado": "Variante G08-V1 (tibia delantera casi vertical, tronco 15°–25° al frente, pausa 1 s abajo; ejecutar las 3 series seguidas del lado menos competente con 2 min de descanso completo antes de pasar a las 3 series de la otra pierna para evitar limitante cardiorrespiratoria) → Busca: sobrecargar en elongación máxima las fibras inferiores del glúteo mayor para dar soporte interno y elevar el pliegue subglúteo",
       "exercise_id": "E008",
       "machine_id": null,
       "comparability_group": "bulgara_smith"

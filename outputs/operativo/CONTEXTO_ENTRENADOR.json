@@ -1,6 +1,6 @@
 {
   "schema": "dame_cana_contexto_entrenador.v1",
-  "generado_utc": "2026-11-20T14:26:55+00:00",
+  "generado_utc": "2026-11-20T14:50:25+00:00",
   "autoridad": "local",
   "entrenador": "Antigravity / Gemini",
   "fuentes": [
@@ -18,7 +18,7 @@
     },
     {
       "ruta": "data/programa.json",
-      "sha256": "627764edd71e7e2247886810aa7798d444218d9c9f32bad72b2e165a0a181657"
+      "sha256": "a3b01f17b76ab14c97f915d86c02de8fbe4e5b65dc83c23d72fbd6c6b58487ed"
     },
     {
       "ruta": "data/indicaciones_tecnicas.json",
@@ -30,7 +30,7 @@
     },
     {
       "ruta": "data/maquinas.json",
-      "sha256": "1e6ec10dd600a7fb12e23fba65de2fd2946296012eab011f007206e588f03d73"
+      "sha256": "37f8b0a11c1918de880840c7bb246050e3536b75bb8b20ffbf443f4b9bba4c05"
     },
     {
       "ruta": "data/catalogos.json",
@@ -46,11 +46,11 @@
     },
     {
       "ruta": "data/estado_y_decisiones.json",
-      "sha256": "16ac9e0227932c63244302dd02f61a690b9085ad2e7f357692e579af3038dec2"
+      "sha256": "aa7de8037b8b5ed85034094d30bd558b6b3efa9c1917a759d685b7ea770e81cd"
     },
     {
       "ruta": "data/confirmaciones_usuario.json",
-      "sha256": "281577019b258950101756c2cd52224f8f68b7bef04e6640e392ca49691d603c"
+      "sha256": "1bbf558d08000db11a4a4f7c5515fa4e72902bf43746fdd79f19a95215f1c99d"
     },
     {
       "ruta": "data/conflictos_fuentes.json",
@@ -329,7 +329,7 @@
     },
     {
       "nombre": "Decisiones",
-      "filas": 12
+      "filas": 14
     },
     {
       "nombre": "Sesiones",
@@ -371,7 +371,7 @@
     },
     {
       "nombre": "Cambios y decisiones",
-      "filas": 12
+      "filas": 14
     }
   ]
 }

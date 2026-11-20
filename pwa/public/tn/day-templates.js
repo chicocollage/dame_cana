@@ -7,7 +7,7 @@
   const slot = (slotId, catalogId, sets, repsMin, repsMax, rest, cue, perSide, recommendedAlternativeIds) => ({ slotId, catalogId, sets, repsMin, repsMax, targetRir: "1–2", rest, cue, perSide: Boolean(perSide), recommendedAlternativeIds: recommendedAlternativeIds || [] });
   const templates = Object.freeze({
     A: Object.freeze({ id: "dame-cana-day-a", title: "Día A — Nuclear 1 · Glúteo y Cuádriceps", revision: 3, exercises: Object.freeze([
-      slot("A02","E004",3,8,12,"2–4 min","Variante G04-V1 (pies en tercio medio-alto, pausa 0.5–1 s abajo sin retroversión pélvica; discos añadidos) → Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo",false,["E005", "E006", "E007"]),
+      slot("A02","E004",3,8,12,"2–4 min","Variante G04-V1 (pies en tercio medio-alto, pausa 0.5–1 s abajo sin retroversión pélvica; Valsalva con recarga rápida arriba y bloqueo intraabdominal mantenido durante la pausa en el fondo; discos añadidos) → Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo",false,["E005", "E006", "E007"]),
       slot("A01","E001",3,6,10,"2–4 min","Pelvis estable; bloqueo con extensión de cadera, no lumbar; recorrido reproducible",false,["E002", "E003"]),
       slot("A03","E015",3,15,20,"90–150 s","Pelvis fija contra el respaldo; pausa de 1 s en máxima abducción",false,["E016"]),
       slot("A04","E050",3,10,15,"90–150 s","Rodilla bloqueada en extensión; pausa de 2 s abajo en estiramiento completo",false,["E051"]),
@@ -27,7 +27,7 @@
       slot("C05","E030",2,10,15,"90–150 s","Codos ligeramente desbloqueados fijos; arco amplio; caja torácica contenida",false,["E029"])
     ]) }),
     D: Object.freeze({ id: "dame-cana-day-d", title: "Día D — Nuclear 3 · Glúteo y Cadena Posterior", revision: 3, exercises: Object.freeze([
-      slot("D01","E008",3,8,12,"2–4 min","Variante G08-V1 (tibia delantera casi vertical, tronco 15°–25° al frente, pausa 1 s abajo; iniciar lado menos competente) → Busca: sobrecargar en elongación máxima las fibras inferiores del glúteo mayor para dar soporte interno y elevar el pliegue subglúteo",true,["E009", "E010"]),
+      slot("D01","E008",3,8,12,"2–4 min","Variante G08-V1 (tibia delantera casi vertical, tronco 15°–25° al frente, pausa 1 s abajo; ejecutar las 3 series seguidas del lado menos competente con 2 min de descanso completo antes de pasar a las 3 series de la otra pierna para evitar limitante cardiorrespiratoria) → Busca: sobrecargar en elongación máxima las fibras inferiores del glúteo mayor para dar soporte interno y elevar el pliegue subglúteo",true,["E009", "E010"]),
       slot("D02","E011",3,6,10,"2–4 min","Bisagra pura (rodilla fija 15°–20°), proyectando isquiones atrás/arriba con pausa 1 s en máximo estiramiento → Busca: hipertrofiar el origen isquiático e inserción glútea inferior para rellenar el escalón justo debajo del pliegue",false,["E012"]),
       slot("D03","E048",3,8,12,"90–150 s","Variante L02-V1 (torso inclinado 10°–15° al frente desde cadera, muslo bien fijado, pausa 1 s en acortamiento) → Busca: hiperelongar los isquiosurales biarticulares en su origen proximal (isquion) para engrosar la transición alta glúteo-femoral",false,["E049"]),
       slot("D04","E047",2,12,15,"90–150 s","Eje de giro alineado con la rodilla; pausa de 1 s arriba; bajada en 2 s",false,[]),

@@ -329,12 +329,38 @@
       "Criterio de revisión": "Al registrar hoy Día C, el sistema propondrá automáticamente Día B como siguiente sesión y, tras B, Día D.",
       "Sustituida/cerrada por": null,
       "alcance": "Rotación actual en M5-5D-v1.0."
+    },
+    {
+      "ID": "D-2026-11-09-BULGARA-BLOQUE-UNILATERAL",
+      "Fecha": "2026-11-09",
+      "Dominio": "Estrategia técnica y cardiorrespiratoria (Día D)",
+      "Decisión": "Estructurar la Sentadilla Búlgara en Smith (D01) en bloques unilaterales completos (3 series seguidas del lado menos competente con 2 min de descanso completo entre series, y luego 3 series del otro lado) en lugar de alternar piernas en cada serie.",
+      "Estado": "ACTIVA",
+      "Motivo / datos usados": "Daniel reporta que su barrera principal en Búlgaras es la falta de aire (disnea entre series) más que el fallo contráctil; agrupar las 3 series de un lado elimina la transición continua bajo fatiga ventilatoria y mejora la estabilidad del setup en Smith.",
+      "Variable modificada": "regla_tecnica_estado de D01 en data/programa.json.",
+      "Source origen": "Daniel y Antigravity (09/11/2026)",
+      "Criterio de revisión": "Evaluar percepción de disnea entre series y mantenimiento de repeticiones en la 2.ª pierna.",
+      "Sustituida/cerrada por": null,
+      "alcance": "Slot D01 en M5-5D-v1.0."
+    },
+    {
+      "ID": "D-2026-11-17-PROTOCOLO-REENGANCHE-SNC",
+      "Fecha": "2026-11-17",
+      "Dominio": "Adherencia, SNC y Reenganche post-parón",
+      "Decisión": "Cuando exista un parón no programado (>5 días) acompañado de fatiga de SNC, mal sueño o baja motivación, el sistema priorizará una sesión puente de Torso / Bombeo de baja fricción axial (ajustando -1 serie o -5/10% carga de entrada) antes de retomar los días nucleares de pierna (A o D), y protegerá siempre la ventana de 72–96 h si los días Off alteran la distancia entre D y A.",
+      "Estado": "ACTIVA",
+      "Motivo / datos usados": "Conversaciones del 10/11, 16/11, 17/11 y 20/11 tras la última sesión registrada del 10/11 (Día E).",
+      "Variable modificada": "Criterio de prescripción reactiva post-parón y nota_operativa_activa.",
+      "Source origen": "Daniel y Antigravity (16–20/11/2026)",
+      "Criterio de revisión": "Adherencia en las primeras 48 h de retorno al gimnasio.",
+      "Sustituida/cerrada por": null,
+      "alcance": "Transversal al Sistema Vivo en Cincel."
     }
   ],
   "nota": "Las entradas de salud fechadas en agosto requieren confirmación actual antes de prescribir.",
   "nota_operativa_activa": {
-    "fecha": "2026-11-09",
-    "estado": "SESION_D_PARCIAL_PENDIENTE_MITAD_2",
-    "detalle": "El 2026-11-09 al mediodía se completó la 1.ª mitad del Día D (compuestos pesados: Sentadilla búlgara Smith 32.5 kg x 8,8,7 @1 y RDL Smith 72.5 kg x 6,6,6 @1/0.5). Queda pendiente la 2.ª mitad (analíticos: D03 Curl femoral sentado 3x8-12, D04 Extensión de rodilla 2x12-15, D05 Abducción en cable 2x15-20) para la tarde del 2026-11-09 o mañana 2026-11-10 (pudiendo completarse sola o fusionada con el Día B satélite)."
+    "fecha": "2026-11-20",
+    "estado": "LISTO_PARA_REENGANCHE_POST_PARON",
+    "detalle": "Última sesión registrada: 2026-11-10 (Día E: Brazos acortamiento / Deltoides post). La nota previa del Día D parcial del 09/11 queda cerrada. Para reiniciar tras la pausa de esta semana, valorar arranque de baja fricción (Torso / Bombeo) o Día A calibrado según energía y motivación del día."
   }
 }
