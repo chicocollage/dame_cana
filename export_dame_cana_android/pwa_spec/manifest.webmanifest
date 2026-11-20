@@ -8,8 +8,8 @@
     "client_mode": "navigate-existing"
   },
   "display": "standalone",
-  "background_color": "#DAD7CD",
-  "theme_color": "#DAD7CD",
+  "background_color": "#090B0D",
+  "theme_color": "#090B0D",
   "orientation": "portrait",
   "icons": [
     {
