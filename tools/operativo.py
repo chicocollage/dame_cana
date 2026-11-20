@@ -1,4 +1,4 @@
-"""Orquestador unificado de DAME CAÑA para Antigravity / Gemini.
+"""Orquestador unificado de CINCEL para Antigravity / Gemini.
 
 Proporciona comandos directos y libres de dependencias de terceros:
   python tools/operativo.py resumen      -> Estado actual, sesiones y siguiente día
@@ -32,7 +32,7 @@ def cmd_resumen():
     inbox_files = list((ROOT / "data/inbox_app").glob("*.json"))
     
     print("\n" + "="*50)
-    print("DAME CAÑA · Estado Operativo Local")
+    print("CINCEL · Estado Operativo Local")
     print("="*50)
     print(f"Sesiones registradas:        {res['sesiones']}")
     print(f"Filas de series:             {res['series']} ({res['series_con_repeticiones']} con reps)")
@@ -548,7 +548,6 @@ def exportar_sesion_activa(dia: str, titulo: str, note_v1: str, warmup: str) -> 
         ROOT / "DameCaña/sesion_activa.json",
         ROOT / "DameCañaTN/sesion_activa.json",
         ROOT / "export_dame_cana_android/app/src/main/assets/sesion_activa.json",
-        Path(r"C:\Users\Daniel\Documents\DANIEL\00_ENTRADA\elOtro\DameCaña\sesion_activa.json"),
     ]
     for dest in destinos:
         if dest.parent.exists():
@@ -595,7 +594,7 @@ def cmd_sincronizar_app(desplegar: bool = False, dia: str | None = None):
     res = compilar_app_data.compilar_todo()
     mod = res.get("total_archivos_modificados", 0)
     if mod > 0:
-        print(f"OK: {mod} archivos sincronizados en DameCaña (PWA) y export_dame_cana_android.")
+        print(f"OK: {mod} archivos sincronizados en Cincel (PWA) y export_dame_cana_android.")
     else:
         print("OK: Clientes PWA y App Nativa Android 100% al día con data/.")
 
@@ -821,7 +820,7 @@ def cmd_autochequeo(ejecutar_tests: bool = True) -> dict:
     out_path.write_text(json.dumps(reporte, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     print("=" * 72)
-    print(f"DAME CAÑA · AUTOCHEQUEO & MEJORA CONTINUA ({reporte['timestamp'][:16]})")
+    print(f"CINCEL · AUTOCHEQUEO & MEJORA CONTINUA ({reporte['timestamp'][:16]})")
     print("=" * 72)
     h = reporte["higiene"]
     t = reporte["tests"]
@@ -852,7 +851,7 @@ def cmd_autochequeo(ejecutar_tests: bool = True) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Orquestador operativo DAME CAÑA")
+    parser = argparse.ArgumentParser(description="Orquestador operativo CINCEL")
     subparsers = parser.add_subparsers(dest="subcomando")
 
     subparsers.add_parser("resumen", help="Muestra resumen del sistema")

@@ -1,10 +1,12 @@
 {
-  "name": "Dame Caña · Cuaderno Biomecánico",
-  "short_name": "Dame Caña",
+  "name": "Cincel · Cuaderno Biomecánico",
+  "short_name": "Cincel",
   "description": "Cuaderno biomecánico 3D, check-in y atlas de biohacks.",
   "start_url": "./index.html",
   "scope": "./",
-  "launch_handler": { "client_mode": "navigate-existing" },
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
   "display": "standalone",
   "background_color": "#DAD7CD",
   "theme_color": "#DAD7CD",

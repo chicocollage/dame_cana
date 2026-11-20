@@ -1,4 +1,4 @@
-# DAME CAÑA — Sistema Operativo Local (Antigravity / Gemini)
+# CINCEL — Sistema Operativo Local (Antigravity / Gemini)
 
 Base canónica local para prescribir, registrar y auditar el entrenamiento, la biomecánica y la nutrición de Daniel. Opera 100% en local con **Antigravity / Gemini** y scripts deterministas en Python.
 

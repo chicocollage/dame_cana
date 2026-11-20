@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-tools/nutricion.py — Módulo determinista de nutrición dentro de DAME CAÑA.
+tools/nutricion.py — Módulo determinista de nutrición dentro de Cincel.
 Opera 100% en local. Estima ingestas por raciones/alias sin exigir gramos exactos.
 Lee peso y contexto de seguimiento sin duplicar fuentes.
 """
@@ -1018,7 +1018,7 @@ def formatear_salida_humana(comando: str, data: Dict[str, Any]) -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="CLI determinista de nutrición DAME CAÑA")
+    parser = argparse.ArgumentParser(description="CLI determinista de nutrición Cincel")
     subparsers = parser.add_subparsers(dest="comando")
 
     # comer

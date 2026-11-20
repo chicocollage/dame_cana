@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\Daniel\Proyectos\01_biomecanica\dame-cana")
+ROOT = Path(__file__).resolve().parent.parent
 
 slots = [
     # DÍA A: Nuclear 1 · Glúteo & Cuádriceps (Cadera & Rodilla pesadas)

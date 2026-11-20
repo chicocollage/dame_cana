@@ -7,8 +7,8 @@
   const slot = (slotId, catalogId, sets, repsMin, repsMax, rest, cue, perSide, recommendedAlternativeIds) => ({ slotId, catalogId, sets, repsMin, repsMax, targetRir: "1–2", rest, cue, perSide: Boolean(perSide), recommendedAlternativeIds: recommendedAlternativeIds || [] });
   const templates = Object.freeze({
     A: Object.freeze({ id: "dame-cana-day-a", title: "Día A — Nuclear 1 · Glúteo y Cuádriceps", revision: 3, exercises: Object.freeze([
-      slot("A01","E001",3,6,10,"2–4 min","Pelvis estable; bloqueo con extensión de cadera, no lumbar; recorrido reproducible",false,["E002", "E003"]),
       slot("A02","E004",3,8,12,"2–4 min","Variante G04-V1 (pies en tercio medio-alto, pausa 0.5–1 s abajo sin retroversión pélvica; discos añadidos) → Busca: máxima flexión de cadera en elongación para hipertrofiar fibras inferiores del glúteo mayor y rellenar/elevar el polo inferior sobre el pliegue glúteo",false,["E005", "E006", "E007"]),
+      slot("A01","E001",3,6,10,"2–4 min","Pelvis estable; bloqueo con extensión de cadera, no lumbar; recorrido reproducible",false,["E002", "E003"]),
       slot("A03","E015",3,15,20,"90–150 s","Pelvis fija contra el respaldo; pausa de 1 s en máxima abducción",false,["E016"]),
       slot("A04","E050",3,10,15,"90–150 s","Rodilla bloqueada en extensión; pausa de 2 s abajo en estiramiento completo",false,["E051"]),
       slot("A05","E053",2,10,15,"90–150 s","Flexión espinal activa; cadera inmóvil",false,["E054"])

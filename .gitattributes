@@ -1,0 +1,2 @@
+data/originales_app/*.json text eol=lf
+data/fuentes/** -text

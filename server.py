@@ -1,5 +1,5 @@
 """
-DAME CAÑA // OS v2.0 - Micro-servidor local con API de persistencia
+CINCEL // OS v2.0 - Micro-servidor local con API de persistencia
 Sirve el Hub central (index.html, data/) y recibe POST /api/save para guardar en data/registro.json
 """
 import http.server
@@ -111,5 +111,5 @@ class HubHandler(http.server.SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     port = int(sys.argv[1]) if len(sys.argv) > 1 else PORT
     server = http.server.ThreadingHTTPServer(("", port), HubHandler)
-    print(f"Hub Central DAME CAÑA v2.0 activo en: http://localhost:{port}")
+    print(f"Hub Central CINCEL v2.0 activo en: http://localhost:{port}")
     server.serve_forever()

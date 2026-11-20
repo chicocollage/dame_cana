@@ -1,16 +1,16 @@
 {
   "schema": "dame_cana_contexto_entrenador.v1",
-  "generado_utc": "2026-11-10T16:19:27+00:00",
+  "generado_utc": "2026-11-20T14:04:44+00:00",
   "autoridad": "local",
   "entrenador": "Antigravity / Gemini",
   "fuentes": [
     {
       "ruta": "AGENTS.md",
-      "sha256": "32ef9dcdb984cd922eeeba873c093f8396d5828b3b98f1f38b00ab36b8f4cad8"
+      "sha256": "98471b0af4604f774d3f479cf856f3a1ad531cba84d09705219f2b9f61ba4455"
     },
     {
       "ruta": "README.md",
-      "sha256": "1a29ce3dc29c65c075847f87ecaf450c96c32d71cef8352606f312c7b343146e"
+      "sha256": "4d3e2ebfbd93274118a5b267088e1a696c4f238c61deb1e37d0cdc916bc32e17"
     },
     {
       "ruta": "data/registro.json",
@@ -26,7 +26,7 @@
     },
     {
       "ruta": "data/nutricion.json",
-      "sha256": "7490e0365ffa066203c0752b7eef9db6def13e59543b473dc09733bb9ef2d763"
+      "sha256": "1d3ea0130f15500e270c60400ebeeb2520e0bb6c0a22b4a450635051f9246ca2"
     },
     {
       "ruta": "data/maquinas.json",

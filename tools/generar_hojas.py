@@ -176,7 +176,7 @@ def generar_hoja_registro(destino: Path | None = None) -> Path:
     # 1. Resumen
     ws_res = wb.create_sheet(title="Resumen")
     ws_res.views.sheetView[0].showGridLines = True
-    ws_res["A1"] = "DAME CAÑA · registro local"
+    ws_res["A1"] = "CINCEL · registro local"
     ws_res["A1"].font = Font(name="Arial", size=16, bold=True, color="173D50")
     ws_res["A2"] = "Vista de consulta regenerada desde el registro JSON local"
     ws_res["A2"].font = Font(name="Arial", size=10, italic=True, color="526474")
