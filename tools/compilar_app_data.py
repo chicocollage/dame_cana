@@ -36,7 +36,7 @@ DESTINOS = [
 
 # Destinos JSON nativos (Android APK assets + Cloud endpoint)
 DESTINOS_ANDROID_JSON = [
-    ROOT / "export_dame_cana_android/app/src/main/assets",
+    ROOT / "android/app/src/main/assets",
     ROOT / "pwa/public",
 ]
 
@@ -277,7 +277,7 @@ def compilar_historial_semilla() -> dict:
         if sid:
             by_session.setdefault(sid, []).append(s)
 
-    seed_base_path = ROOT / "export_dame_cana_android/app/src/main/assets/historial_semilla.json"
+    seed_base_path = ROOT / "android/app/src/main/assets/historial_semilla.json"
     existing_seed = []
     if seed_base_path.exists():
         try:

@@ -3,7 +3,7 @@ import subprocess
 from pathlib import Path
 from PIL import Image
 
-ROOT = Path(r"C:\Users\Daniel\Proyectos\01_biomecanica\dame-cana\pwa")
+ROOT = Path(__file__).resolve().parent
 APP_DIR = ROOT / "public" / "app"
 CHROME = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
 

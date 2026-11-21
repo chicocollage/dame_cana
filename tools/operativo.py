@@ -547,7 +547,7 @@ def exportar_sesion_activa(dia: str, titulo: str, note_v1: str, warmup: str) -> 
         ROOT / "pwa/public/bp/sesion_activa.json",
         ROOT / "DameCaña/sesion_activa.json",
         ROOT / "DameCañaTN/sesion_activa.json",
-        ROOT / "export_dame_cana_android/app/src/main/assets/sesion_activa.json",
+        ROOT / "android/app/src/main/assets/sesion_activa.json",
     ]
     for dest in destinos:
         if dest.parent.exists():
@@ -594,7 +594,7 @@ def cmd_sincronizar_app(desplegar: bool = False, dia: str | None = None):
     res = compilar_app_data.compilar_todo()
     mod = res.get("total_archivos_modificados", 0)
     if mod > 0:
-        print(f"OK: {mod} archivos sincronizados en Cincel (PWA) y export_dame_cana_android.")
+        print(f"OK: {mod} archivos sincronizados en Cincel (PWA) y android.")
     else:
         print("OK: Clientes PWA y App Nativa Android 100% al día con data/.")
 

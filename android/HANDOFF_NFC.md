@@ -3,7 +3,7 @@
 ## Estado: DESPLEGADO y funcionando (caché `damecana-aura-v25`, https://dame-cana-pwa.web.app)
 
 ## Dónde está el código
-- `pwa` = enlace a `C:\Users\Daniel\Proyectos\01_biomecanica\dame-cana\pwa`. Tests: `pwa/tests/*.test.mjs` (apuntan a `public/app/`).
+- `pwa` = enlace a `C:\Users\Daniel\Proyectos\01_biomecanica\cincel\pwa`. Tests: `pwa/tests/*.test.mjs` (apuntan a `public/app/`).
 - 4 copias casi idénticas de la PWA: `pwa/public/app/` (FUENTE de mis cambios), `pwa/public/` (raíz), `/tn/`, `/tn3d/`. Tras editar `app/`, copiar a las otras 3 (`app.js`, `index.html`, `rest-timer-tools.js`, `sw.js`, `styles.css` ← cuidado: styles se añadió por append en las 4).
 - Desplegar: `python tools/operativo.py sincronizar_app --desplegar`. Subir SIEMPRE versión de caché (`aura24→25…` en `index.html` y `sw.js` de las 4 copias).
 - `DameCaña/` y `DameCañaTN/` del workspace son otras copias NO tocadas. `limpiar.html` en `pwa/public/` = página de rescate.
