@@ -23,6 +23,7 @@ import android.os.VibratorManager
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import com.damecana.app.MainActivity
+import com.damecana.app.R
 import com.damecana.app.domain.RestTimerTools
 import com.damecana.app.domain.TimerStateInput
 import kotlinx.coroutines.CoroutineScope
@@ -211,7 +212,7 @@ class RestTimerService : Service() {
         )
 
         return NotificationCompat.Builder(this, CHANNEL_COUNTDOWN)
-            .setSmallIcon(android.R.drawable.ic_lock_idle_alarm)
+            .setSmallIcon(R.drawable.ic_stat_cincel)
             .setContentTitle(if (isPaused) "Descanso en pausa · $formatted" else "Descanso activo · $formatted")
             .setContentText("Etapa: ${snap.stage.uppercase()} · Total ${snap.total.toInt()}s")
             .setContentIntent(openAppIntent)
@@ -234,8 +235,8 @@ class RestTimerService : Service() {
         )
 
         return NotificationCompat.Builder(this, CHANNEL_ALARM)
-            .setSmallIcon(android.R.drawable.ic_lock_idle_alarm)
-            .setContentTitle("¡Descanso completado! — Dame Caña")
+            .setSmallIcon(R.drawable.ic_stat_cincel)
+            .setContentTitle("¡Descanso completado! — Cincel")
             .setContentText("Hora de atacar la siguiente serie.")
             .setPriority(NotificationCompat.PRIORITY_MAX)
             .setCategory(NotificationCompat.CATEGORY_ALARM)

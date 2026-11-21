@@ -12,8 +12,8 @@ android {
     applicationId = "com.damecana.app"
     minSdk = 26
     targetSdk = 36
-    versionCode = 1
-    versionName = "1.0.0-aura"
+    versionCode = 2
+    versionName = "1.1.0-cincel"
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
   }
 

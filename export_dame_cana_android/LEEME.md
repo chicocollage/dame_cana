@@ -1,4 +1,4 @@
-# Dame Caña Android — App Nativa (Kotlin + Jetpack Compose)
+# Cincel Android — App Nativa (Kotlin + Jetpack Compose)
 
 Aplicación Android nativa funcionalmente equivalente a la PWA (`pwa_spec/`), optimizada para **Samsung Galaxy S24 Ultra (`SM-S928N`, 120 Hz, 384×832 dp)** con alarma exacta en segundo plano, NFC nativo y paridad 100 % verificada por pruebas de oro (Golden Tests).
 

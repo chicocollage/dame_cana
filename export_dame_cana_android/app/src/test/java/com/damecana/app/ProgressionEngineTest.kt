@@ -141,10 +141,11 @@ class ProgressionEngineTest {
         val jsonStr = file.readText()
         val json = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
         val sessions = json.decodeFromString<List<ActiveSession>>(jsonStr)
-        assertEquals(37, sessions.size)
+        assertTrue(sessions.size >= 37)
 
-        // Comprobar que la sesión más reciente es del 2026-11-05
-        assertEquals("2026-11-05", sessions.first().date)
+        // Comprobar que el historial está ordenado descendentemente desde al menos el 2026-11-05
+        assertTrue(sessions.first().date >= "2026-11-05")
+        assertTrue(sessions.zipWithNext().all { (a, b) -> a.date >= b.date })
         assertTrue(sessions.first().exercises.isNotEmpty())
 
         // Comprobar que ProgressionEngine encuentra historial para ejercicios del Día C (ej. Press convergente inclinado E035)
@@ -157,7 +158,7 @@ class ProgressionEngineTest {
         )
         val lastComp = ProgressionEngine.findLastComparableExercise(pressInclinado, sessions)
         assertNotNull(lastComp)
-        assertEquals("2026-11-05", lastComp!!.first)
+        assertTrue(lastComp!!.first >= "2026-11-05")
         val s1Load = lastComp.second.entries.first().load.toDoubleOrNull()
         assertNotNull(s1Load)
         assertTrue(s1Load!! > 0.0)

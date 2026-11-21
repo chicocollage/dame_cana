@@ -83,6 +83,8 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalHapticFeedback
+import androidx.compose.ui.res.painterResource
+import com.damecana.app.R
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextAlign
@@ -349,14 +351,15 @@ private fun TopBar(
             verticalAlignment = Alignment.CenterVertically
         ) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                Box(
+                Image(
+                    painter = painterResource(id = R.drawable.ic_cincel_mark),
+                    contentDescription = "Cincel",
                     modifier = Modifier
-                        .size(8.dp)
-                        .clip(RoundedCornerShape(2.dp))
-                        .background(AuraColors.Orange)
-                        .hardShadow(1.dp, AuraColors.Ink, RoundedCornerShape(2.dp))
+                        .size(18.dp)
+                        .clip(RoundedCornerShape(4.dp))
+                        .border(1.dp, AuraColors.Ink, RoundedCornerShape(4.dp))
                 )
-                Text("DAME CAÑA", style = AuraType.chip.copy(letterSpacing = 2.sp))
+                Text("CINCEL", style = AuraType.chip.copy(letterSpacing = 2.sp))
             }
             Text("$doneSets/$totalSets SERIES", style = AuraType.label)
         }
@@ -2543,7 +2546,7 @@ private fun SettingsTab() {
                         onClick = {
                             val jsonStr = JsonExporter.makeHistoryJson(history)
                             val cm = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-                            cm.setPrimaryClip(ClipData.newPlainText("Historial Dame Caña", jsonStr))
+                            cm.setPrimaryClip(ClipData.newPlainText("Historial Cincel", jsonStr))
                             Toast.makeText(context, "Historial copiado al portapapeles", Toast.LENGTH_SHORT).show()
                         }
                     )
@@ -2557,7 +2560,7 @@ private fun SettingsTab() {
                                 checkins
                             )
                             val cm = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-                            cm.setPrimaryClip(ClipData.newPlainText("Bio Checkins Dame Caña", jsonStr))
+                            cm.setPrimaryClip(ClipData.newPlainText("Bio Checkins Cincel", jsonStr))
                             Toast.makeText(context, "Bio check-ins copiados al portapapeles", Toast.LENGTH_SHORT).show()
                         }
                     )
